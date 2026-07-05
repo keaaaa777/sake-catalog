@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.geolonia-svg-map {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}

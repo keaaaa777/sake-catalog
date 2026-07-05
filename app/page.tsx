@@ -4,6 +4,8 @@ import { useState, useMemo } from 'react'
 import { MapPin, Filter, Zap, Heart, ChevronRight } from 'lucide-react'
 import { REGIONS, Sake } from '@/lib/types'
 import { SAMPLE_SAKE_DATA } from '@/lib/db'
+import { REGION_COLORS } from '@/lib/mapData'
+import JapanMap from '@/components/JapanMap'
 
 export default function Home() {
   const [step, setStep] = useState('home')
@@ -113,66 +115,99 @@ export default function Home() {
     )
   }
 
-  // 地方選択 → 都道府県選択
+  // 地方選択 → 都道府県選択（地図付き）
   if (step === 'region') {
-    if (!selectedRegion) {
-      return (
-        <div className="min-h-screen bg-gradient-to-br from-red-50 to-orange-50 p-6">
-          <div className="max-w-2xl mx-auto">
-            <button
-              onClick={goHome}
-              className="mb-6 text-gray-600 hover:text-gray-800 flex items-center gap-2"
-            >
-              ← 戻る
-            </button>
-
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">地方を選択</h2>
-
-            <div className="grid grid-cols-1 gap-3">
-              {Object.keys(REGIONS).map(region => (
-                <button
-                  key={region}
-                  onClick={() => setSelectedRegion(region)}
-                  className="p-4 bg-white rounded-lg shadow hover:shadow-lg hover:bg-orange-50 transition text-left"
-                >
-                  <div className="font-bold text-gray-800">{region}</div>
-                  <div className="text-sm text-gray-600">
-                    {REGIONS[region as keyof typeof REGIONS].join(' / ')}
-                  </div>
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-      )
-    }
-
     return (
       <div className="min-h-screen bg-gradient-to-br from-red-50 to-orange-50 p-6">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <button
-            onClick={() => setSelectedRegion(null)}
+            onClick={goHome}
             className="mb-6 text-gray-600 hover:text-gray-800 flex items-center gap-2"
           >
             ← 戻る
           </button>
 
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">{selectedRegion}から選択</h2>
+          <div className="flex flex-col lg:flex-row gap-6">
+            <div className="lg:w-80 flex-shrink-0 space-y-4">
+              <div className="bg-white rounded-lg shadow p-4">
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="px-2 py-1 bg-blue-600 text-white text-xs font-bold rounded">
+                    STEP 1
+                  </span>
+                  <span className="text-sm font-bold text-gray-700">地方を選択してください</span>
+                </div>
+                <div className="space-y-2">
+                  {Object.keys(REGIONS).map(region => (
+                    <button
+                      key={region}
+                      onClick={() => {
+                        setSelectedRegion(region)
+                        setSelectedPrefecture(null)
+                      }}
+                      className={`w-full flex items-center justify-between p-3 rounded-lg border transition text-left ${
+                        selectedRegion === region
+                          ? 'border-gray-800 bg-gray-50'
+                          : 'border-gray-200 hover:bg-gray-50'
+                      }`}
+                    >
+                      <span className="flex items-center gap-3">
+                        <span
+                          className="w-3 h-3 rounded-full"
+                          style={{ backgroundColor: REGION_COLORS[region] }}
+                        />
+                        <span className="font-bold text-gray-800">{region}地方</span>
+                      </span>
+                      <ChevronRight size={18} className="text-gray-400" />
+                    </button>
+                  ))}
+                </div>
+              </div>
 
-          <div className="grid grid-cols-1 gap-3">
-            {REGIONS[selectedRegion as keyof typeof REGIONS]?.map(pref => (
-              <button
-                key={pref}
-                onClick={() => {
+              <div className="bg-white rounded-lg shadow p-4">
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="px-2 py-1 bg-blue-600 text-white text-xs font-bold rounded">
+                    STEP 2
+                  </span>
+                  <span className="text-sm font-bold text-gray-700">都道府県を選択してください</span>
+                </div>
+                {!selectedRegion ? (
+                  <div className="p-4 text-center text-sm text-gray-400 bg-gray-50 rounded-lg">
+                    先に地方を選択してください
+                  </div>
+                ) : (
+                  <div className="space-y-2 max-h-80 overflow-y-auto">
+                    {REGIONS[selectedRegion as keyof typeof REGIONS]?.map(pref => (
+                      <button
+                        key={pref}
+                        onClick={() => {
+                          setSelectedPrefecture(pref)
+                          setStep('list')
+                        }}
+                        className="w-full flex items-center justify-between p-3 rounded-lg border border-gray-200 hover:bg-red-50 transition text-left"
+                      >
+                        <span className="font-bold text-gray-800">{pref}</span>
+                        <ChevronRight size={18} className="text-gray-400" />
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+
+            <div className="flex-1 bg-white rounded-lg shadow p-4 min-h-[500px]">
+              <JapanMap
+                selectedRegion={selectedRegion}
+                selectedPrefecture={selectedPrefecture}
+                onSelectRegion={region => {
+                  setSelectedRegion(region)
+                  setSelectedPrefecture(null)
+                }}
+                onSelectPrefecture={pref => {
                   setSelectedPrefecture(pref)
                   setStep('list')
                 }}
-                className="p-4 bg-white rounded-lg shadow hover:shadow-lg hover:bg-red-50 transition text-left flex items-center justify-between"
-              >
-                <div className="font-bold text-gray-800">{pref}</div>
-                <ChevronRight size={20} />
-              </button>
-            ))}
+              />
+            </div>
           </div>
         </div>
       </div>
