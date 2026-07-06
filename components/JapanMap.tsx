@@ -4,6 +4,14 @@ import { useEffect, useRef, useState } from 'react'
 import { REGIONS } from '@/lib/types'
 import { PREFECTURE_BY_CODE, REGION_ANCHOR, REGION_COLORS, REGION_LABEL_OFFSET } from '@/lib/mapData'
 
+interface PrefectureGroupElement extends SVGGElement {
+  __handlers?: {
+    handleClick: () => void
+    handleEnter: () => void
+    handleLeave: () => void
+  }
+}
+
 const PREFECTURE_TO_REGION: Record<string, string> = Object.entries(REGIONS).reduce(
   (acc, [region, prefs]) => {
     prefs.forEach(pref => (acc[pref] = region))
@@ -140,16 +148,14 @@ export default function JapanMap({
       g.addEventListener('click', handleClick)
       g.addEventListener('mouseenter', handleEnter)
       g.addEventListener('mouseleave', handleLeave)
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      ;(g as any).__handlers = { handleClick, handleEnter, handleLeave }
+      ;(g as PrefectureGroupElement).__handlers = { handleClick, handleEnter, handleLeave }
     })
 
     prevSelectionRef.current = { region: selectedRegion, prefecture: selectedPrefecture }
 
     return () => {
       groups.forEach(g => {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const handlers = (g as any).__handlers
+        const handlers = (g as PrefectureGroupElement).__handlers
         if (!handlers) return
         g.removeEventListener('click', handlers.handleClick)
         g.removeEventListener('mouseenter', handlers.handleEnter)
