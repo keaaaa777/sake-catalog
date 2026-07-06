@@ -1,12 +1,13 @@
+// 高級感を意識した落ち着いた宝石色のパレット
 export const REGION_COLORS: Record<string, string> = {
-  '北海道': '#6699e0',
-  '東北': '#4fb8ac',
-  '関東': '#9ccc65',
-  '中部': '#f2c14e',
-  '関西': '#b39ddb',
-  '中国': '#f2836b',
-  '四国': '#f48fb1',
-  '九州': '#a1887f',
+  '北海道': '#3f5f7a',
+  '東北': '#2f6f66',
+  '関東': '#6f7a3f',
+  '中部': '#c8a24a',
+  '関西': '#5b4b81',
+  '中国': '#a1552e',
+  '四国': '#8a3f52',
+  '九州': '#5c4a3a',
 }
 
 export const PREFECTURE_BY_CODE: Record<number, string> = {

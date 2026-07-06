@@ -41,9 +41,15 @@ export default function JapanMap({
   })
 
   useEffect(() => {
+    let cancelled = false
     fetch('/images/japan-map.svg')
       .then(res => res.text())
-      .then(setSvgMarkup)
+      .then(text => {
+        if (!cancelled) setSvgMarkup(text)
+      })
+    return () => {
+      cancelled = true
+    }
   }, [])
 
   // アニメーション用のスタイル・キーフレームをSVGに一度だけ挿入
@@ -70,7 +76,8 @@ export default function JapanMap({
     svg.insertBefore(style, svg.firstChild)
   }, [svgMarkup])
 
-  // 都道府県の塗り分け・クリック挙動の設定
+  // 都道府県の塗り分け・クリック挙動の設定、および地方名コールアウトの描画
+  // (同じ svg 要素を参照する処理なので、取りこぼしが起きないよう1つの effect にまとめている)
   useEffect(() => {
     const svg = containerRef.current?.querySelector('svg')
     if (!svg) return
@@ -153,22 +160,7 @@ export default function JapanMap({
 
     prevSelectionRef.current = { region: selectedRegion, prefecture: selectedPrefecture }
 
-    return () => {
-      groups.forEach(g => {
-        const handlers = (g as PrefectureGroupElement).__handlers
-        if (!handlers) return
-        g.removeEventListener('click', handlers.handleClick)
-        g.removeEventListener('mouseenter', handlers.handleEnter)
-        g.removeEventListener('mouseleave', handlers.handleLeave)
-      })
-    }
-  }, [svgMarkup, selectedRegion, selectedPrefecture, onSelectRegion, onSelectPrefecture])
-
-  // 地方名のコールアウトラベルを描画
-  useEffect(() => {
-    const svg = containerRef.current?.querySelector('svg')
-    if (!svg) return
-
+    // 地方名のコールアウトラベルを描画
     svg.querySelectorAll('.region-callout').forEach(el => el.remove())
 
     const regionsToShow = selectedRegion ? [selectedRegion] : Object.keys(REGIONS)
@@ -184,10 +176,10 @@ export default function JapanMap({
       const ly = cy + offset.dy
 
       const ns = 'http://www.w3.org/2000/svg'
-      const g = document.createElementNS(ns, 'g')
-      g.setAttribute('class', 'region-callout')
-      g.style.pointerEvents = 'none'
-      g.style.animation = `callout-in 0.35s ease-out ${index * 0.05}s both`
+      const calloutGroup = document.createElementNS(ns, 'g')
+      calloutGroup.setAttribute('class', 'region-callout')
+      calloutGroup.style.pointerEvents = 'none'
+      calloutGroup.style.animation = `callout-in 0.35s ease-out ${index * 0.05}s both`
 
       const line = document.createElementNS(ns, 'line')
       line.setAttribute('x1', String(cx))
@@ -196,14 +188,14 @@ export default function JapanMap({
       line.setAttribute('y2', String(ly))
       line.setAttribute('stroke', REGION_COLORS[region])
       line.setAttribute('stroke-width', '1.5')
-      g.appendChild(line)
+      calloutGroup.appendChild(line)
 
       const dot = document.createElementNS(ns, 'circle')
       dot.setAttribute('cx', String(cx))
       dot.setAttribute('cy', String(cy))
       dot.setAttribute('r', '3')
       dot.setAttribute('fill', REGION_COLORS[region])
-      g.appendChild(dot)
+      calloutGroup.appendChild(dot)
 
       const label = `${region}地方`
       const textWidth = label.length * 15 + 20
@@ -219,7 +211,7 @@ export default function JapanMap({
       rect.setAttribute('fill', '#ffffff')
       rect.setAttribute('stroke', REGION_COLORS[region])
       rect.setAttribute('stroke-width', '1.5')
-      g.appendChild(rect)
+      calloutGroup.appendChild(rect)
 
       const text = document.createElementNS(ns, 'text')
       text.setAttribute('x', String(lx))
@@ -229,11 +221,21 @@ export default function JapanMap({
       text.setAttribute('font-weight', 'bold')
       text.setAttribute('fill', REGION_COLORS[region])
       text.textContent = label
-      g.appendChild(text)
+      calloutGroup.appendChild(text)
 
-      svg.appendChild(g)
+      svg.appendChild(calloutGroup)
     })
-  }, [svgMarkup, selectedRegion])
+
+    return () => {
+      groups.forEach(g => {
+        const handlers = (g as PrefectureGroupElement).__handlers
+        if (!handlers) return
+        g.removeEventListener('click', handlers.handleClick)
+        g.removeEventListener('mouseenter', handlers.handleEnter)
+        g.removeEventListener('mouseleave', handlers.handleLeave)
+      })
+    }
+  }, [svgMarkup, selectedRegion, selectedPrefecture, onSelectRegion, onSelectPrefecture])
 
   if (!svgMarkup) {
     return (
