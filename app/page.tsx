@@ -1,9 +1,9 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { MapPin, Filter, Zap, Heart, ChevronRight } from 'lucide-react'
 import { REGIONS, Sake } from '@/lib/types'
-import { SAMPLE_SAKE_DATA } from '@/lib/db'
+import { getSakeList } from '@/lib/db'
 import { REGION_COLORS } from '@/lib/mapData'
 import JapanMap from '@/components/JapanMap'
 
@@ -15,11 +15,30 @@ export default function Home() {
   const [favorites, setFavorites] = useState<number[]>([])
   const [quizAnswers, setQuizAnswers] = useState<Record<string, string>>({})
 
-  const allSakes: Sake[] = useMemo(() => Object.values(SAMPLE_SAKE_DATA).flat(), [])
+  const [allSakes, setAllSakes] = useState<Sake[]>([])
+  const [sakesLoading, setSakesLoading] = useState(true)
+  const [sakesError, setSakesError] = useState<string | null>(null)
+
+  useEffect(() => {
+    let cancelled = false
+    getSakeList()
+      .then(data => {
+        if (!cancelled) setAllSakes(data)
+      })
+      .catch(err => {
+        if (!cancelled) setSakesError(err instanceof Error ? err.message : '日本酒データの取得に失敗しました')
+      })
+      .finally(() => {
+        if (!cancelled) setSakesLoading(false)
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [])
 
   const filteredSakes = useMemo(() => {
     let result: Sake[] = selectedPrefecture
-      ? (SAMPLE_SAKE_DATA[selectedPrefecture] || [])
+      ? allSakes.filter(sake => sake.prefecture === selectedPrefecture)
       : allSakes
 
     if (filterType !== 'all') {
@@ -170,27 +189,29 @@ export default function Home() {
                   </span>
                   <span className="text-sm font-bold text-gray-700">都道府県を選択してください</span>
                 </div>
-                {!selectedRegion ? (
-                  <div className="p-4 text-center text-sm text-gray-400 bg-gray-50 rounded-lg">
-                    先に地方を選択してください
-                  </div>
-                ) : (
-                  <div className="space-y-2 max-h-80 overflow-y-auto">
-                    {REGIONS[selectedRegion as keyof typeof REGIONS]?.map(pref => (
-                      <button
-                        key={pref}
-                        onClick={() => {
-                          setSelectedPrefecture(pref)
-                          setStep('list')
-                        }}
-                        className="w-full flex items-center justify-between p-3 rounded-lg border border-gray-200 hover:bg-red-50 transition text-left"
-                      >
-                        <span className="font-bold text-gray-800">{pref}</span>
-                        <ChevronRight size={18} className="text-gray-400" />
-                      </button>
-                    ))}
-                  </div>
-                )}
+                <div className="h-80">
+                  {!selectedRegion ? (
+                    <div className="h-full flex items-center justify-center text-center text-sm text-gray-400 bg-gray-50 rounded-lg p-4">
+                      先に地方を選択してください
+                    </div>
+                  ) : (
+                    <div className="space-y-2 h-full overflow-y-auto">
+                      {REGIONS[selectedRegion as keyof typeof REGIONS]?.map(pref => (
+                        <button
+                          key={pref}
+                          onClick={() => {
+                            setSelectedPrefecture(pref)
+                            setStep('list')
+                          }}
+                          className="w-full flex items-center justify-between p-3 rounded-lg border border-gray-200 hover:bg-red-50 transition text-left"
+                        >
+                          <span className="font-bold text-gray-800">{pref}</span>
+                          <ChevronRight size={18} className="text-gray-400" />
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
 
@@ -312,7 +333,19 @@ export default function Home() {
             ))}
           </div>
 
-          {filteredSakes.length === 0 && (
+          {sakesError && (
+            <div className="text-center py-8">
+              <p className="text-red-600">データの取得に失敗しました: {sakesError}</p>
+            </div>
+          )}
+
+          {!sakesError && sakesLoading && (
+            <div className="text-center py-8">
+              <p className="text-gray-600">読み込み中...</p>
+            </div>
+          )}
+
+          {!sakesError && !sakesLoading && filteredSakes.length === 0 && (
             <div className="text-center py-8">
               <p className="text-gray-600">該当する日本酒が見つかりません</p>
             </div>

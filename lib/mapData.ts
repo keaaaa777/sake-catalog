@@ -9,17 +9,6 @@ export const REGION_COLORS: Record<string, string> = {
   '九州': '#a1887f',
 }
 
-export const REGION_SLUGS: Record<string, string> = {
-  '北海道': 'hokkaido',
-  '東北': 'tohoku',
-  '関東': 'kanto',
-  '中部': 'chubu',
-  '関西': 'kinki',
-  '中国': 'chugoku',
-  '四国': 'shikoku',
-  '九州': 'kyushu-okinawa',
-}
-
 export const PREFECTURE_BY_CODE: Record<number, string> = {
   1: '北海道', 2: '青森県', 3: '岩手県', 4: '宮城県', 5: '秋田県', 6: '山形県', 7: '福島県',
   8: '茨城県', 9: '栃木県', 10: '群馬県', 11: '埼玉県', 12: '千葉県', 13: '東京都', 14: '神奈川県',
@@ -30,14 +19,28 @@ export const PREFECTURE_BY_CODE: Record<number, string> = {
   43: '熊本県', 44: '大分県', 45: '宮崎県', 46: '鹿児島県', 47: '沖縄県',
 }
 
-// 地方名ごとのラベル(コールアウト)のオフセット。地図の中心座標(0-1000)からの相対位置。
+// 地方ごとの重心座標(SVGのviewBox 0-1000空間)。
+// 各都道府県ポリゴンの面積で加重した実際の重心をSVGデータから事前計算した値。
+// (沖縄のように本土から離れた飛び地を含む地方でも、主要な陸地の中心に近い位置になる)
+export const REGION_ANCHOR: Record<string, { x: number; y: number }> = {
+  '北海道': { x: 734, y: 157 },
+  '東北': { x: 642, y: 445 },
+  '関東': { x: 599, y: 634 },
+  '中部': { x: 495, y: 643 },
+  '関西': { x: 376, y: 721 },
+  '中国': { x: 239, y: 717 },
+  '四国': { x: 269, y: 790 },
+  '九州': { x: 134, y: 803 },
+}
+
+// 地方名ごとのラベル(コールアウト)のオフセット。REGION_ANCHORからの相対位置。
 export const REGION_LABEL_OFFSET: Record<string, { dx: number; dy: number }> = {
-  '北海道': { dx: -170, dy: -30 },
-  '東北': { dx: 190, dy: -10 },
-  '関東': { dx: 190, dy: 40 },
-  '中部': { dx: -40, dy: -90 },
-  '関西': { dx: -70, dy: -70 },
-  '中国': { dx: -160, dy: -10 },
-  '四国': { dx: -40, dy: 110 },
-  '九州': { dx: -170, dy: 130 },
+  '北海道': { dx: -117, dy: -40 },
+  '東北': { dx: 187, dy: -11 },
+  '関東': { dx: 188, dy: 59 },
+  '中部': { dx: -53, dy: -83 },
+  '関西': { dx: -65, dy: -65 },
+  '中国': { dx: -156, dy: -16 },
+  '四国': { dx: -32, dy: 104 },
+  '九州': { dx: -167, dy: 37 },
 }

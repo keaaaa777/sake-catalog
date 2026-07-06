@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { REGIONS } from '@/lib/types'
-import { PREFECTURE_BY_CODE, REGION_COLORS, REGION_LABEL_OFFSET, REGION_SLUGS } from '@/lib/mapData'
+import { PREFECTURE_BY_CODE, REGION_ANCHOR, REGION_COLORS, REGION_LABEL_OFFSET } from '@/lib/mapData'
 
 const PREFECTURE_TO_REGION: Record<string, string> = Object.entries(REGIONS).reduce(
   (acc, [region, prefs]) => {
@@ -27,6 +27,10 @@ export default function JapanMap({
 }: JapanMapProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const [svgMarkup, setSvgMarkup] = useState<string | null>(null)
+  const prevSelectionRef = useRef<{ region: string | null; prefecture: string | null }>({
+    region: null,
+    prefecture: null,
+  })
 
   useEffect(() => {
     fetch('/images/japan-map.svg')
@@ -34,46 +38,90 @@ export default function JapanMap({
       .then(setSvgMarkup)
   }, [])
 
+  // アニメーション用のスタイル・キーフレームをSVGに一度だけ挿入
+  useEffect(() => {
+    const svg = containerRef.current?.querySelector('svg')
+    if (!svg || svg.querySelector('style[data-map-anim]')) return
+
+    const ns = 'http://www.w3.org/2000/svg'
+    const style = document.createElementNS(ns, 'style')
+    style.setAttribute('data-map-anim', 'true')
+    style.textContent = `
+      .prefecture { transform-box: fill-box; transform-origin: center; }
+      @keyframes pref-select-pulse {
+        0% { transform: scale(1); }
+        45% { transform: scale(1.06); }
+        100% { transform: scale(1); }
+      }
+      .pref-select-pulse { animation: pref-select-pulse 0.35s ease-out; }
+      @keyframes callout-in {
+        from { opacity: 0; transform: translateY(6px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    `
+    svg.insertBefore(style, svg.firstChild)
+  }, [svgMarkup])
+
   // 都道府県の塗り分け・クリック挙動の設定
   useEffect(() => {
     const svg = containerRef.current?.querySelector('svg')
     if (!svg) return
 
+    const prevSelection = prevSelectionRef.current
     const groups = Array.from(svg.querySelectorAll<SVGGElement>('.prefecture'))
 
-    groups.forEach(g => {
+    groups.forEach((g, index) => {
       const code = Number(g.getAttribute('data-code'))
       const prefName = PREFECTURE_BY_CODE[code]
       const region = PREFECTURE_TO_REGION[prefName]
       if (!region) return
 
       g.style.cursor = 'pointer'
-      g.style.transition = 'fill 0.15s ease, stroke-width 0.15s ease'
+      g.style.transition = 'fill 0.15s ease, stroke-width 0.15s ease, opacity 0.2s ease'
 
       const isSelectedPref = selectedPrefecture === prefName
       const isSelectedRegion = selectedRegion === region
+      // ホバー解除時に戻すべき「通常時」の不透明度
+      const restingOpacity = selectedRegion && isSelectedRegion ? '0.55' : '1'
 
       if (isSelectedPref) {
         g.style.fill = REGION_COLORS[region]
         g.style.stroke = '#333333'
         g.style.strokeWidth = '2'
+        g.style.opacity = '1'
       } else if (!selectedRegion) {
         g.style.fill = REGION_COLORS[region]
         g.style.stroke = '#ffffff'
         g.style.strokeWidth = '1'
+        g.style.opacity = restingOpacity
       } else if (isSelectedRegion) {
         g.style.fill = REGION_COLORS[region]
         g.style.stroke = '#ffffff'
         g.style.strokeWidth = '1'
-        g.style.opacity = '0.55'
+        g.style.opacity = restingOpacity
       } else {
         g.style.fill = '#e5e7eb'
         g.style.stroke = '#ffffff'
         g.style.strokeWidth = '1'
-        g.style.opacity = '1'
+        g.style.opacity = restingOpacity
       }
 
-      if (!isSelectedPref) g.style.opacity = selectedRegion && !isSelectedRegion ? '1' : selectedRegion ? '0.55' : '1'
+      // 選択が変わった瞬間だけパルスアニメーションを再生
+      const justSelectedPref = isSelectedPref && prevSelection.prefecture !== prefName
+      const justEnteredRegion =
+        isSelectedRegion && prevSelection.region !== region && !selectedPrefecture
+
+      if (justSelectedPref || justEnteredRegion) {
+        g.classList.remove('pref-select-pulse')
+        g.style.animationDelay = justEnteredRegion ? `${index * 25}ms` : '0ms'
+        void g.getBoundingClientRect() // reflow to allow re-triggering the animation
+        g.classList.add('pref-select-pulse')
+        const handleAnimEnd = () => {
+          g.classList.remove('pref-select-pulse')
+          g.removeEventListener('animationend', handleAnimEnd)
+        }
+        g.addEventListener('animationend', handleAnimEnd)
+      }
 
       const handleClick = () => {
         if (!selectedRegion || selectedRegion !== region) {
@@ -86,7 +134,7 @@ export default function JapanMap({
         if (!isSelectedPref) g.style.opacity = '1'
       }
       const handleLeave = () => {
-        if (!isSelectedPref) g.style.opacity = selectedRegion && !isSelectedRegion ? '0.55' : '1'
+        if (!isSelectedPref) g.style.opacity = restingOpacity
       }
 
       g.addEventListener('click', handleClick)
@@ -95,6 +143,8 @@ export default function JapanMap({
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       ;(g as any).__handlers = { handleClick, handleEnter, handleLeave }
     })
+
+    prevSelectionRef.current = { region: selectedRegion, prefecture: selectedPrefecture }
 
     return () => {
       groups.forEach(g => {
@@ -117,35 +167,12 @@ export default function JapanMap({
 
     const regionsToShow = selectedRegion ? [selectedRegion] : Object.keys(REGIONS)
 
-    regionsToShow.forEach(region => {
-      const slug = REGION_SLUGS[region]
-      const members = Array.from(svg.querySelectorAll<SVGGElement>(`.${slug}`))
-      if (members.length === 0) return
+    regionsToShow.forEach((region, index) => {
+      const anchor = REGION_ANCHOR[region]
+      if (!anchor) return
 
-      const pt = svg.createSVGPoint()
-      let sumX = 0
-      let sumY = 0
-      let count = 0
-
-      members.forEach(el => {
-        try {
-          const bbox = el.getBBox()
-          const ctm = el.getCTM()
-          if (!ctm) return
-          pt.x = bbox.x + bbox.width / 2
-          pt.y = bbox.y + bbox.height / 2
-          const transformed = pt.matrixTransform(ctm)
-          sumX += transformed.x
-          sumY += transformed.y
-          count++
-        } catch {
-          // getBBox / getCTM can fail before layout is ready; skip silently
-        }
-      })
-
-      if (count === 0) return
-      const cx = sumX / count
-      const cy = sumY / count
+      const cx = anchor.x
+      const cy = anchor.y
       const offset = REGION_LABEL_OFFSET[region] || { dx: 0, dy: 0 }
       const lx = cx + offset.dx
       const ly = cy + offset.dy
@@ -154,6 +181,7 @@ export default function JapanMap({
       const g = document.createElementNS(ns, 'g')
       g.setAttribute('class', 'region-callout')
       g.style.pointerEvents = 'none'
+      g.style.animation = `callout-in 0.35s ease-out ${index * 0.05}s both`
 
       const line = document.createElementNS(ns, 'line')
       line.setAttribute('x1', String(cx))
