@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sake Select — 清らかな一滴と、出会う。</title>
+  <meta name="description" content="画像を使わず、澄んだ水面と滴る音のデジタル表現が織りなす和の日本酒サーチポータル。あなたに最適な日本酒を地図、好み、銘柄、診断から探せます。">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='6' fill='none' stroke='%23c9b06a' stroke-width='1.5'/%3E%3Cpath d='M16,4 L16,10' stroke='%23c9b06a' stroke-width='1'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- 音響・物理水面の背景キャンバス -->
+  <div class="background-canvas-container" aria-hidden="true">
+    <canvas id="water-canvas"></canvas>
+    <canvas id="drip-canvas" style="position: absolute; inset: 0; pointer-events: none;"></canvas>
+  </div>
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- 水面トランジション演出用 -->
+  <div id="overlay-transition" aria-hidden="true"></div>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand__logo" aria-hidden="true">雫</span>
+      <span class="brand__name">SAKE SELECT</span>
+    </div>
+    <a class="hub-back-btn" href="../" aria-label="SHIZENポータルへ戻る">← 作品集へ戻る</a>
+  </header>
+
+  <!-- メインステージ -->
+  <main class="stage">
+    
+    <!-- 縦書きヒーローセクション（和・静寂） -->
+    <section class="hero-vertical">
+      <p class="hero-vertical__eyebrow">清麗なる、一滴との対話</p>
+      <h1 class="hero-vertical__title">
+        清らかな水が、<br>
+        銘酒を醸す。
+      </h1>
+      <p class="hero-vertical__lead">
+        日本酒の味わいは、その土地の澄んだ水、磨き抜かれた米、<br>
+        そして連綿と受け継がれる伝統の技から紡ぎ出されます。<br>
+        水面に指先を触れるように、あなたに合う一杯を探してみてください。
+      </p>
+    </section>
+
+    <!-- 「どうやって探すか」の選択エリア -->
+    <section class="search-selector">
+      <h2 class="search-selector__title">酒の探し方を選ぶ</h2>
+      
+      <button type="button" class="option-btn" data-panel="panel-map" aria-haspopup="dialog">
+        <div class="option-btn__content">
+          <div class="option-btn__meta">
+            <span class="option-btn__label">地図から探す</span>
+            <span class="option-btn__sub">全国の銘酒、地域ごとの個性をたどる</span>
+          </div>
+          <span class="option-btn__arrow" aria-hidden="true">→</span>
+        </div>
+      </button>
+
+      <button type="button" class="option-btn" data-panel="panel-taste" aria-haspopup="dialog">
+        <div class="option-btn__content">
+          <div class="option-btn__meta">
+            <span class="option-btn__label">好みから探す</span>
+            <span class="option-btn__sub">薫・爽・醇・熟、味わいのチャートから</span>
+          </div>
+          <span class="option-btn__arrow" aria-hidden="true">→</span>
+        </div>
+      </button>
+
+      <button type="button" class="option-btn" data-panel="panel-brand" aria-haspopup="dialog">
+        <div class="option-btn__content">
+          <div class="option-btn__meta">
+            <span class="option-btn__label">銘柄から探す</span>
+            <span class="option-btn__sub">格付け、醸造元の名前から直接探す</span>
+          </div>
+          <span class="option-btn__arrow" aria-hidden="true">→</span>
+        </div>
+      </button>
+
+      <button type="button" class="option-btn" data-panel="panel-diagnosis" aria-haspopup="dialog">
+        <div class="option-btn__content">
+          <div class="option-btn__meta">
+            <span class="option-btn__label">診断から探す</span>
+            <span class="option-btn__sub">今日の気分と料理から最適の一杯を診断</span>
+          </div>
+          <span class="option-btn__arrow" aria-hidden="true">→</span>
+        </div>
+      </button>
+
+    </section>
+
+  </main>
+
+  <!-- 各検索パネルコンテナ -->
+  <div id="panels-container" aria-label="検索結果ダイアログ" role="dialog" aria-modal="true">
+    
+    <!-- 1. 地図から探す -->
+    <div class="sake-panel" id="panel-map">
+      <div class="panel-header">
+        <h3 class="panel-header__title">地図から探す</h3>
+        <span class="panel-header__sub">REGIONAL SAKE</span>
+      </div>
+      <div class="map-grid">
+        <div class="map-region">
+          <h4 class="map-region__name">東北・北海道</h4>
+          <p class="map-region__desc">淡麗にしてきめ細やか。澄んだ雪解け水で醸された、すっきりとした辛口が多い地域。</p>
+        </div>
+        <div class="map-region">
+          <h4 class="map-region__name">関東・甲信越</h4>
+          <p class="map-region__desc">新潟を筆頭に「淡麗辛口」の一大本場。クリアでキレのある飲み口が特徴。</p>
+        </div>
+        <div class="map-region">
+          <h4 class="map-region__name">北陸・東海</h4>
+          <p class="map-region__desc">旨みと酸味のバランスが抜群。料理を引き立てる食中酒の宝庫。</p>
+        </div>
+        <div class="map-region">
+          <h4 class="map-region__name">近畿</h4>
+          <p class="map-region__desc">灘の男酒、伏見の女酒。酒造りの歴史の中心であり、芳醇で深いコクが魅力。</p>
+        </div>
+        <div class="map-region">
+          <h4 class="map-region__name">中国・四国</h4>
+          <p class="map-region__desc">甘口から個性豊かな銘柄まで様々。まろやかで旨みのある名酒が揃う。</p>
+        </div>
+        <div class="map-region">
+          <h4 class="map-region__name">九州・沖縄</h4>
+          <p class="map-region__desc">フルーティーで華やかな味わいから、濃厚な純米酒まで多様な進化を遂げる。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. 好みから探す -->
+    <div class="sake-panel" id="panel-taste">
+      <div class="panel-header">
+        <h3 class="panel-header__title">好みから探す</h3>
+        <span class="panel-header__sub">FLAVOUR PROFILE</span>
+      </div>
+      <div class="taste-chart">
+        <div class="taste-card">
+          <div class="taste-card__header">
+            <h4 class="taste-card__title">薫酒 (くんしゅ)</h4>
+            <span class="taste-card__eng">Fragrant & Light</span>
+          </div>
+          <p class="taste-card__desc">フルーティーで華やかな香りと、軽快な飲み口。大吟醸や吟醸酒がこのタイプに属します。乾杯や、フルーツを使ったオードブルと合わせて。</p>
+        </div>
+        <div class="taste-card">
+          <div class="taste-card__header">
+            <h4 class="taste-card__title">爽酒 (そうしゅ)</h4>
+            <span class="taste-card__eng">Light & Fresh</span>
+          </div>
+          <p class="taste-card__desc">すっきりとした香り、軽やかでシャープなキレ味。本醸造や生酒など、冷やすと最も良さが引き立ち、様々なお料理に万能に合います。</p>
+        </div>
+        <div class="taste-card">
+          <div class="taste-card__header">
+            <h4 class="taste-card__title">醇酒 (じゅんしゅ)</h4>
+            <span class="taste-card__eng">Rich & Savoury</span>
+          </div>
+          <p class="taste-card__desc">米本来の深いコク、ふくよかな旨みと酸味。純米酒の多くがこれに該当し、ぬる燗にするとさらに旨みが膨らみます。お肉や濃いめのお料理に。</p>
+        </div>
+        <div class="taste-card">
+          <div class="taste-card__header">
+            <h4 class="taste-card__title">熟酒 (じゅくしゅ)</h4>
+            <span class="taste-card__eng">Aged & Heavy</span>
+          </div>
+          <p class="taste-card__desc">ドライフルーツやスパイスのような複雑で濃厚な香りと、とろりとした深い味わい。古酒や長期熟成酒。食後酒として、チーズやドライフルーツと。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. 銘柄から探す -->
+    <div class="sake-panel" id="panel-brand">
+      <div class="panel-header">
+        <h3 class="panel-header__title">銘柄から探す</h3>
+        <span class="panel-header__sub">FAMOUS BRANDS</span>
+      </div>
+      <div class="brand-list">
+        <div class="brand-row">
+          <div class="brand-row__main">
+            <span class="brand-row__name">水鏡 (すいきょう)</span>
+            <span class="brand-row__type">純米大吟醸</span>
+          </div>
+          <span class="brand-row__area">新潟県</span>
+        </div>
+        <div class="brand-row">
+          <div class="brand-row__main">
+            <span class="brand-row__name">天白 (てんぱく)</span>
+            <span class="brand-row__type">特別純米</span>
+          </div>
+          <span class="brand-row__area">山形県</span>
+        </div>
+        <div class="brand-row">
+          <div class="brand-row__main">
+            <span class="brand-row__name">八重桜 (やえざくら)</span>
+            <span class="brand-row__type">無濾過生原酒</span>
+          </div>
+          <span class="brand-row__area">京都府</span>
+        </div>
+        <div class="brand-row">
+          <div class="brand-row__main">
+            <span class="brand-row__name">琥珀光 (こはくび)</span>
+            <span class="brand-row__type">十年秘蔵古酒</span>
+          </div>
+          <span class="brand-row__area">石川県</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. 診断から探す -->
+    <div class="sake-panel" id="panel-diagnosis">
+      <div class="panel-header">
+        <h3 class="panel-header__title">診断から探す</h3>
+        <span class="panel-header__sub">DIAGNOSIS</span>
+      </div>
+      <div class="diag-container">
+        
+        <!-- 質問表示エリア -->
+        <div class="diag-q-area" id="diag-question">
+          <p class="diag-q-text">今夜、合わせたいお料理は？</p>
+          <div class="diag-options">
+            <button type="button" class="diag-option">新鮮なお刺身（あっさり）</button>
+            <button type="button" class="diag-option">焼き鳥や煮込み（濃厚）</button>
+            <button type="button" class="diag-option">洋食・チーズ（脂質・酸味）</button>
+          </div>
+        </div>
+
+        <!-- 結果表示エリア -->
+        <div class="diag-result-area" id="diag-result">
+          <p class="diag-result__eyebrow">あなたにおすすめの一杯</p>
+          <h4 class="diag-result__title">「爽酒」タイプ（生酒・特別本醸造）</h4>
+          <p class="diag-result__desc">お刺身のような繊細な味を引き立てる、フレッシュでクリアな飲み口の日本酒が最適です。よく冷やして、すっきりしたキレ味をお楽しみください。</p>
+          <button type="button" class="diag-reset-btn" id="reset-diag">もう一度診断する</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 閉じる（戻る）ボタン -->
+  <button type="button" id="back-btn" aria-label="詳細パネルを閉じる">← 閉じる</button>
+
+  <!-- JS読み込み -->
+  <script src="assets/js/synthesis.js"></script>
+  <script src="assets/js/water.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

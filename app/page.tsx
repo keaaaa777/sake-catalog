@@ -1,24 +1,26 @@
 'use client'
 
 import { useState, useMemo, useEffect } from 'react'
-import { MapPin, Filter, Zap, Heart, ChevronRight } from 'lucide-react'
+import { Heart, ChevronRight } from 'lucide-react'
 import { REGIONS, Sake } from '@/lib/types'
 import { getSakeList } from '@/lib/db'
 import { REGION_COLORS } from '@/lib/mapData'
 import JapanMap from '@/components/JapanMap'
-
-const PAGE_BG = 'min-h-screen bg-gradient-to-b from-[#1c1712] to-[#0d0b09] px-6 py-10 text-washi animate-fade-in'
-const CARD = 'bg-washi rounded-2xl shadow-xl shadow-black/40 border border-gold/20'
-const BACK_BTN = 'mb-6 inline-flex items-center gap-2 text-sm text-washi/60 transition hover:text-gold'
-const STEP_BADGE = 'inline-flex items-center justify-center rounded-full bg-gold px-2.5 py-1 text-[11px] font-bold tracking-wide text-sumi'
+import WaterBackground from '@/components/WaterBackground'
+import DiagnosisPanel from '@/components/DiagnosisPanel'
 
 export default function Home() {
   const [step, setStep] = useState('home')
+  const [activePanel, setActivePanel] = useState<string | null>(null)
+  const [isTransitioning, setIsTransitioning] = useState(false)
+
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null)
   const [selectedPrefecture, setSelectedPrefecture] = useState<string | null>(null)
+  const [selectedTasteGroup, setSelectedTasteGroup] = useState<string | null>(null) // 'kunshu' | 'soshu' | 'junshu' | 'jukushu' | null
+  const [selectedSakeId, setSelectedSakeId] = useState<number | null>(null)
+  const [searchQuery, setSearchQuery] = useState('')
   const [filterType, setFilterType] = useState('all')
   const [favorites, setFavorites] = useState<number[]>([])
-  const [quizAnswers, setQuizAnswers] = useState<Record<string, string>>({})
 
   const [allSakes, setAllSakes] = useState<Sake[]>([])
   const [sakesLoading, setSakesLoading] = useState(true)
@@ -41,10 +43,60 @@ export default function Home() {
     }
   }, [])
 
+  // スクロール制御およびパネルオープン状態の body 反映
+  useEffect(() => {
+    const isFixed = ['home', 'region', 'quiz'].includes(step) || !!activePanel
+    document.body.classList.toggle('fixed-screen', isFixed)
+    document.body.classList.toggle('panel-opened', !!activePanel)
+  }, [step, activePanel])
+
+  // 水面トランジションを伴う遷移関数
+  const changeStepWithTransition = (newStep: string, targetPanel: string | null = null) => {
+    setIsTransitioning(true)
+    
+    // 水が押し寄せるトランジションのピーク時にステート更新
+    setTimeout(() => {
+      setStep(newStep)
+      setActivePanel(targetPanel)
+      
+      // 戻るボタンやトップへの遷移時はフィルターリセット
+      if (newStep === 'home' && !targetPanel) {
+        setSelectedRegion(null)
+        setSelectedPrefecture(null)
+        setSelectedTasteGroup(null)
+        setSelectedSakeId(null)
+        setSearchQuery('')
+        setFilterType('all')
+      }
+    }, 600)
+
+    // トランジション解除
+    setTimeout(() => {
+      setIsTransitioning(false)
+    }, 1100)
+  }
+
+  // フィルター処理
   const filteredSakes = useMemo(() => {
-    let result: Sake[] = selectedPrefecture
-      ? allSakes.filter(sake => sake.prefecture === selectedPrefecture)
-      : allSakes
+    let result = allSakes
+
+    if (selectedPrefecture) {
+      result = result.filter(sake => sake.prefecture === selectedPrefecture)
+    }
+
+    if (selectedTasteGroup) {
+      result = result.filter(sake => {
+        if (selectedTasteGroup === 'kunshu') return sake.type === 'daiginjo' || sake.type === 'ginjo'
+        if (selectedTasteGroup === 'soshu') return sake.dry_sweet_index < -2
+        if (selectedTasteGroup === 'junshu') return sake.type === 'pure_rice'
+        if (selectedTasteGroup === 'jukushu') return sake.type === 'honjozo' || (sake.dry_sweet_index >= -2 && sake.dry_sweet_index <= 3)
+        return true
+      })
+    }
+
+    if (selectedSakeId) {
+      result = result.filter(sake => sake.id === selectedSakeId)
+    }
 
     if (filterType !== 'all') {
       result = result.filter(sake => {
@@ -56,7 +108,7 @@ export default function Home() {
     }
 
     return result
-  }, [selectedPrefecture, filterType, allSakes])
+  }, [selectedPrefecture, selectedTasteGroup, selectedSakeId, filterType, allSakes])
 
   const toggleFavorite = (id: number) => {
     setFavorites(prev =>
@@ -64,501 +116,568 @@ export default function Home() {
     )
   }
 
-  const goHome = () => {
-    setStep('home')
-    setSelectedRegion(null)
-    setSelectedPrefecture(null)
-    setFilterType('all')
+  // ホバー時の波紋トリガー
+  const handleBtnHover = (e: React.PointerEvent<HTMLButtonElement>) => {
+    if (!window.SakeWater) return
+    const canvas = document.getElementById('water-canvas')
+    if (!canvas) return
+    const rect = canvas.getBoundingClientRect()
+    const btnRect = e.currentTarget.getBoundingClientRect()
+    const cx = btnRect.left + btnRect.width / 2 - rect.left
+    const cy = btnRect.top + btnRect.height / 2 - rect.top
+    window.SakeWater.triggerRipple(cx, cy, 0.6)
   }
 
-  // ホーム画面
-  if (step === 'home') {
-    return (
-      <div className="relative min-h-screen overflow-hidden bg-sumi">
-        <div className="absolute inset-0">
-          <video
-            className="h-full w-full object-cover opacity-70"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster="/videos/hero-poster.jpg"
+  // ホバー時の水滴音
+  const playHoverDrip = () => {
+    if (window.SakeAudio) {
+      window.SakeAudio.playDrip(0.7) // やや高めの金属的なきらめき
+    }
+  }
+
+  return (
+    <>
+      {/* 水面および音響背景 */}
+      <WaterBackground />
+
+      {/* 水面トランジション演出用 */}
+      <div id="overlay-transition" className={isTransitioning ? 'is-active' : ''} aria-hidden="true" />
+
+      {/* ヘッダー */}
+      <header className="site-header">
+        <div className="brand" onClick={() => changeStepWithTransition('home', null)} style={{ cursor: 'pointer' }}>
+          <span className="brand__logo" aria-hidden="true">雫</span>
+          <span className="brand__name">SAKE SELECT</span>
+        </div>
+        <div className="flex items-center gap-4">
+          {favorites.length > 0 && (
+            <button
+              onClick={() => changeStepWithTransition('favorites', null)}
+              className="hub-back-btn flex items-center gap-2"
+            >
+              ♥ お気に入り ({favorites.length})
+            </button>
+          )}
+        </div>
+      </header>
+
+      {/* メインステージ */}
+      <main className="stage">
+        {/* 縦書きヒーローセクション（和・静寂） */}
+        <section className="hero-vertical">
+          <p className="hero-vertical__eyebrow">清麗なる、一滴との対話</p>
+          <h1 className="hero-vertical__title">
+            清らかな水が、<br />
+            銘酒を醸す。
+          </h1>
+          <p className="hero-vertical__lead">
+            日本酒の味わいは、その土地の澄んだ水、磨き抜かれた米、<br />
+            そして連綿と受け継がれる伝統の技から紡ぎ出されます。<br />
+            水面に指先を触れるように、あなたに合う一杯を探してみてください。
+          </p>
+        </section>
+
+        {/* 「どうやって探すか」の選択エリア */}
+        <section className="search-selector">
+          <h2 className="search-selector__title">酒の探し方を選ぶ</h2>
+
+          <button
+            type="button"
+            className="option-btn"
+            onPointerEnter={(e) => { handleBtnHover(e); playHoverDrip(); }}
+            onClick={() => changeStepWithTransition('region', 'panel-map')}
           >
-            <source src="/videos/hero.mp4" type="video/mp4" />
-          </video>
-          <div className="absolute inset-0 bg-gradient-to-b from-sumi/50 via-sumi/70 to-sumi" />
-        </div>
-
-        <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 py-20 animate-fade-in">
-          <div className="mb-14 text-center">
-            <p className="mb-3 text-xs tracking-[0.35em] text-gold">JAPANESE SAKE COLLECTION</p>
-            <h1 className="font-serif text-5xl font-bold tracking-wide text-washi sm:text-6xl">
-              日本酒図鑑
-            </h1>
-            <div className="mx-auto mt-5 h-px w-16 bg-gold/60" />
-            <p className="mt-5 text-sm tracking-wide text-washi/70">全国の銘酒と、静かに向き合う。</p>
-          </div>
-
-          <div className="w-full max-w-md space-y-3">
-            <button
-              onClick={() => setStep('region')}
-              className="group w-full rounded-xl border border-gold/25 bg-white/5 p-5 text-left backdrop-blur-md transition hover:border-gold/60 hover:bg-white/10"
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <div className="text-lg font-bold text-washi">地図から探す</div>
-                  <div className="text-sm text-washi/60">地方 → 都道府県を選んで検索</div>
-                </div>
-                <span className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border border-gold/40 text-gold transition group-hover:bg-gold group-hover:text-sumi">
-                  <MapPin size={20} />
-                </span>
+            <div className="option-btn__content">
+              <div className="option-btn__meta">
+                <span className="option-btn__label">地図から探す</span>
+                <span className="option-btn__sub">全国の銘酒、地域ごとの個性をたどる</span>
               </div>
-            </button>
-
-            <button
-              onClick={() => {
-                setSelectedPrefecture(null)
-                setStep('list')
-              }}
-              className="group w-full rounded-xl border border-gold/25 bg-white/5 p-5 text-left backdrop-blur-md transition hover:border-gold/60 hover:bg-white/10"
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <div className="text-lg font-bold text-washi">好みから探す</div>
-                  <div className="text-sm text-washi/60">甘口・辛口など好みで絞り込み</div>
-                </div>
-                <span className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border border-gold/40 text-gold transition group-hover:bg-gold group-hover:text-sumi">
-                  <Filter size={20} />
-                </span>
-              </div>
-            </button>
-
-            <button
-              onClick={() => setStep('quiz')}
-              className="group w-full rounded-xl border border-gold/25 bg-white/5 p-5 text-left backdrop-blur-md transition hover:border-gold/60 hover:bg-white/10"
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <div className="text-lg font-bold text-washi">診断で見つける</div>
-                  <div className="text-sm text-washi/60">質問に答えてぴったりの酒を発見</div>
-                </div>
-                <span className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border border-gold/40 text-gold transition group-hover:bg-gold group-hover:text-sumi">
-                  <Zap size={20} />
-                </span>
-              </div>
-            </button>
-
-            {favorites.length > 0 && (
-              <button
-                onClick={() => setStep('favorites')}
-                className="flex w-full items-center justify-center gap-2 rounded-xl border border-kurenai/50 bg-kurenai/10 p-3 font-bold text-washi backdrop-blur-md transition hover:bg-kurenai/20"
-              >
-                <Heart size={16} fill="currentColor" className="text-kurenai" />
-                お気に入り ({favorites.length})
-              </button>
-            )}
-          </div>
-        </div>
-      </div>
-    )
-  }
-
-  // 地方選択 → 都道府県選択（地図付き）
-  if (step === 'region') {
-    return (
-      <div className={PAGE_BG}>
-        <div className="max-w-6xl mx-auto">
-          <button onClick={goHome} className={BACK_BTN}>
-            ← 戻る
+              <span className="option-btn__arrow" aria-hidden="true">→</span>
+            </div>
           </button>
 
-          <div className="flex flex-col lg:flex-row gap-6">
-            <div className="lg:w-80 flex-shrink-0 space-y-4">
-              <div className={`${CARD} p-4`}>
-                <div className="flex items-center gap-2 mb-4">
-                  <span className={STEP_BADGE}>STEP 1</span>
-                  <span className="text-sm font-bold text-sumi">地方を選択してください</span>
-                </div>
-                <div className="space-y-2">
-                  {Object.keys(REGIONS).map(region => (
-                    <button
-                      key={region}
-                      onClick={() => {
-                        setSelectedRegion(region)
-                        setSelectedPrefecture(null)
-                      }}
-                      className={`w-full flex items-center justify-between p-3 rounded-lg border transition text-left ${
-                        selectedRegion === region
-                          ? 'border-gold bg-gold/10'
-                          : 'border-sumi/10 hover:border-gold/40 hover:bg-gold/5'
-                      }`}
-                    >
-                      <span className="flex items-center gap-3">
-                        <span
-                          className="w-3 h-3 rounded-full"
-                          style={{ backgroundColor: REGION_COLORS[region] }}
-                        />
-                        <span className="font-bold text-sumi">{region}地方</span>
-                      </span>
-                      <ChevronRight size={18} className="text-gold/50" />
-                    </button>
-                  ))}
-                </div>
+          <button
+            type="button"
+            className="option-btn"
+            onPointerEnter={(e) => { handleBtnHover(e); playHoverDrip(); }}
+            onClick={() => changeStepWithTransition('home', 'panel-taste')}
+          >
+            <div className="option-btn__content">
+              <div className="option-btn__meta">
+                <span className="option-btn__label">好みから探す</span>
+                <span className="option-btn__sub">薫・爽・醇・熟、味わいのチャートから</span>
               </div>
+              <span className="option-btn__arrow" aria-hidden="true">→</span>
+            </div>
+          </button>
 
-              <div className={`${CARD} p-4`}>
-                <div className="flex items-center gap-2 mb-4">
-                  <span className={STEP_BADGE}>STEP 2</span>
-                  <span className="text-sm font-bold text-sumi">都道府県を選択してください</span>
-                </div>
-                <div className="h-80">
-                  {!selectedRegion ? (
-                    <div className="h-full flex items-center justify-center text-center text-sm text-sumi/40 bg-sumi/5 rounded-lg p-4">
-                      先に地方を選択してください
-                    </div>
-                  ) : (
-                    <div className="space-y-2 h-full overflow-y-auto">
-                      {REGIONS[selectedRegion as keyof typeof REGIONS]?.map(pref => (
-                        <button
-                          key={pref}
-                          onClick={() => {
-                            setSelectedPrefecture(pref)
-                            setStep('list')
-                          }}
-                          className="w-full flex items-center justify-between p-3 rounded-lg border border-sumi/10 hover:border-gold/40 hover:bg-gold/5 transition text-left"
-                        >
-                          <span className="font-bold text-sumi">{pref}</span>
-                          <ChevronRight size={18} className="text-gold/50" />
-                        </button>
-                      ))}
-                    </div>
-                  )}
-                </div>
+          <button
+            type="button"
+            className="option-btn"
+            onPointerEnter={(e) => { handleBtnHover(e); playHoverDrip(); }}
+            onClick={() => changeStepWithTransition('home', 'panel-brand')}
+          >
+            <div className="option-btn__content">
+              <div className="option-btn__meta">
+                <span className="option-btn__label">銘柄から探す</span>
+                <span className="option-btn__sub">格付け、醸造元の名前から直接探す</span>
               </div>
+              <span className="option-btn__arrow" aria-hidden="true">→</span>
+            </div>
+          </button>
+
+          <button
+            type="button"
+            className="option-btn"
+            onPointerEnter={(e) => { handleBtnHover(e); playHoverDrip(); }}
+            onClick={() => changeStepWithTransition('quiz', 'panel-diagnosis')}
+          >
+            <div className="option-btn__content">
+              <div className="option-btn__meta">
+                <span className="option-btn__label">診断から探す</span>
+                <span className="option-btn__sub">今日の気分と料理から最適の一杯を診断</span>
+              </div>
+              <span className="option-btn__arrow" aria-hidden="true">→</span>
+            </div>
+          </button>
+        </section>
+      </main>
+
+      {/* 各検索パネルコンテナ */}
+      <div id="panels-container" className={activePanel ? 'is-active' : ''} role="dialog" aria-modal="true">
+        {/* 1. 地図から探す (移植された JapanMap を表示) */}
+        {activePanel === 'panel-map' && (
+          <div className="sake-panel sake-panel--map is-active" style={{ maxWidth: '1100px', width: '95vw' }}>
+            <div className="panel-header shrink-0">
+              <h3 className="panel-header__title">地図から探す</h3>
+              <span className="panel-header__sub">REGIONAL SAKE</span>
             </div>
 
-            <div className={`flex-1 ${CARD} p-4 min-h-[500px]`}>
-              <JapanMap
-                selectedRegion={selectedRegion}
-                selectedPrefecture={selectedPrefecture}
-                onSelectRegion={region => {
-                  setSelectedRegion(region)
-                  setSelectedPrefecture(null)
+            <div className="flex flex-col lg:flex-row gap-6 text-left flex-1 lg:min-h-0">
+              <div className="lg:w-80 flex-shrink-0 flex flex-col gap-4 lg:h-full lg:min-h-0">
+                <div className="bg-[#030914]/60 p-3 rounded-xl border border-gold/20 lg:flex-1 lg:min-h-0 lg:flex lg:flex-col">
+                  <div className="flex items-center gap-2 mb-2.5 shrink-0">
+                    <span className="inline-flex items-center justify-center rounded-full bg-gold px-2.5 py-1 text-[11px] font-bold tracking-wide text-sumi">STEP 1</span>
+                    <span className="text-sm font-bold text-washi">地方を選択してください</span>
+                  </div>
+                  <div className="space-y-1.5 max-h-[180px] lg:max-h-none lg:flex-1 lg:min-h-0 overflow-y-auto pr-1">
+                    {Object.keys(REGIONS).map((region) => (
+                      <button
+                        key={region}
+                        onClick={() => {
+                          setSelectedRegion(region)
+                          setSelectedPrefecture(null)
+                          if (window.SakeAudio) window.SakeAudio.playDrip(0.5)
+                        }}
+                        className={`w-full flex items-center justify-between px-2 py-1.5 rounded-lg border transition text-left text-xs ${
+                          selectedRegion === region
+                            ? 'border-gold bg-gold/10 text-gold font-bold'
+                            : 'border-white/10 hover:border-gold/40 hover:bg-gold/5 text-washi/80'
+                        }`}
+                      >
+                        <span className="flex items-center gap-2">
+                          <span
+                            className="w-2 h-2 rounded-full"
+                            style={{ backgroundColor: REGION_COLORS[region as keyof typeof REGION_COLORS] }}
+                          />
+                          <span>{region}地方</span>
+                        </span>
+                        <ChevronRight size={14} className="text-gold/50" />
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="bg-[#030914]/60 p-3 rounded-xl border border-gold/20 lg:flex-1 lg:min-h-0 lg:flex lg:flex-col">
+                  <div className="flex items-center gap-2 mb-2.5 shrink-0">
+                    <span className="inline-flex items-center justify-center rounded-full bg-gold px-2.5 py-1 text-[11px] font-bold tracking-wide text-sumi">STEP 2</span>
+                    <span className="text-sm font-bold text-washi">都道府県を選択</span>
+                  </div>
+                  <div className="h-44 lg:h-auto lg:flex-1 lg:min-h-0">
+                    {!selectedRegion ? (
+                      <div className="h-full flex items-center justify-center text-center text-xs text-washi/40 bg-white/5 rounded-lg p-4">
+                        先に地方を選択してください
+                      </div>
+                    ) : (
+                      <div className="space-y-1.5 h-full overflow-y-auto pr-1">
+                        {REGIONS[selectedRegion as keyof typeof REGIONS]?.map((pref) => (
+                          <button
+                            key={pref}
+                            onClick={() => {
+                              setSelectedPrefecture(pref)
+                              changeStepWithTransition('list', null)
+                            }}
+                            className="w-full flex items-center justify-between px-2 py-1.5 rounded-lg border border-white/5 hover:border-gold/40 hover:bg-gold/5 transition text-left text-xs text-washi"
+                          >
+                            <span>{pref}</span>
+                            <ChevronRight size={14} className="text-gold/50" />
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex-1 bg-[#030914]/40 p-4 rounded-xl border border-gold/25 min-h-[350px] lg:min-h-0 lg:h-full">
+                <JapanMap
+                  selectedRegion={selectedRegion}
+                  selectedPrefecture={selectedPrefecture}
+                  onSelectRegion={(region) => {
+                    setSelectedRegion(region)
+                    setSelectedPrefecture(null)
+                    if (window.SakeAudio) window.SakeAudio.playDrip(0.6)
+                  }}
+                  onSelectPrefecture={(pref) => {
+                    setSelectedPrefecture(pref)
+                    changeStepWithTransition('list', null)
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* 2. 好みから探す */}
+        {activePanel === 'panel-taste' && (
+          <div className="sake-panel is-active">
+            <div className="panel-header">
+              <h3 className="panel-header__title">好みから探す</h3>
+              <span className="panel-header__sub">FLAVOUR PROFILE</span>
+            </div>
+            <div className="taste-chart">
+              <div
+                className="taste-card text-left"
+                onPointerEnter={playHoverDrip}
+                onClick={() => {
+                  setSelectedTasteGroup('kunshu')
+                  changeStepWithTransition('list', null)
                 }}
-                onSelectPrefecture={pref => {
-                  setSelectedPrefecture(pref)
-                  setStep('list')
+              >
+                <div className="taste-card__header">
+                  <h4 className="taste-card__title">薫酒 (くんしゅ)</h4>
+                  <span className="taste-card__eng">Fragrant & Light</span>
+                </div>
+                <p className="taste-card__desc">フルーティーで華やかな香りと、軽快な飲み口。大吟醸や吟醸酒がこのタイプに属します。乾杯や、フルーツを使ったオードブルと合わせて。</p>
+              </div>
+
+              <div
+                className="taste-card text-left"
+                onPointerEnter={playHoverDrip}
+                onClick={() => {
+                  setSelectedTasteGroup('soshu')
+                  changeStepWithTransition('list', null)
                 }}
+              >
+                <div className="taste-card__header">
+                  <h4 className="taste-card__title">爽酒 (そうしゅ)</h4>
+                  <span className="taste-card__eng">Light & Fresh</span>
+                </div>
+                <p className="taste-card__desc">すっきりとした香り、軽やかでシャープなキレ味。本醸造や生酒など、冷やすと最も良さが引き立ち、様々なお料理に万成に合います。</p>
+              </div>
+
+              <div
+                className="taste-card text-left"
+                onPointerEnter={playHoverDrip}
+                onClick={() => {
+                  setSelectedTasteGroup('junshu')
+                  changeStepWithTransition('list', null)
+                }}
+              >
+                <div className="taste-card__header">
+                  <h4 className="taste-card__title">醇酒 (じゅんしゅ)</h4>
+                  <span className="taste-card__eng">Rich & Savoury</span>
+                </div>
+                <p className="taste-card__desc">米本来の深いコク、ふくよかな旨みと酸味。純米酒の多くがこれに該当し、ぬる燗にするとさらに旨みが膨らみます。お肉や濃いめのお料理に。</p>
+              </div>
+
+              <div
+                className="taste-card text-left"
+                onPointerEnter={playHoverDrip}
+                onClick={() => {
+                  setSelectedTasteGroup('jukushu')
+                  changeStepWithTransition('list', null)
+                }}
+              >
+                <div className="taste-card__header">
+                  <h4 className="taste-card__title">熟酒 (じゅくしゅ)</h4>
+                  <span className="taste-card__eng">Aged & Heavy</span>
+                </div>
+                <p className="taste-card__desc">ドライフルーツやスパイスのような複雑で濃厚な香りと、とろりとした深い味わい。古酒や長期熟成酒。食後酒として、チーズやドライフルーツと。</p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* 3. 銘柄から探す */}
+        {activePanel === 'panel-brand' && (
+          <div className="sake-panel is-active">
+            <div className="panel-header">
+              <h3 className="panel-header__title">銘柄から探す</h3>
+              <span className="panel-header__sub">FAMOUS BRANDS</span>
+            </div>
+            
+            <div className="mb-6">
+              <input
+                type="text"
+                placeholder="銘柄名、都道府県、特徴などで検索..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full bg-[#030914]/80 border border-gold/30 rounded-lg px-4 py-2.5 text-sm text-washi placeholder-washi/30 focus:outline-none focus:border-gold"
               />
             </div>
-          </div>
-        </div>
-      </div>
-    )
-  }
 
-  // 日本酒リスト
-  if (step === 'list') {
-    return (
-      <div className={PAGE_BG}>
-        <div className="max-w-2xl mx-auto">
-          <button onClick={goHome} className={BACK_BTN}>
-            ← 戻る
+            <div className="brand-list max-h-[350px] overflow-y-auto pr-2">
+              {sakesLoading ? (
+                <div className="text-center py-6 text-sm text-washi/50">読み込み中...</div>
+              ) : sakesError ? (
+                <div className="text-center py-6 text-sm text-kurenai">{sakesError}</div>
+              ) : allSakes.filter(sake => 
+                sake.name.includes(searchQuery) || 
+                sake.prefecture.includes(searchQuery) ||
+                (sake.description && sake.description.includes(searchQuery))
+              ).length === 0 ? (
+                <div className="text-center py-6 text-sm text-washi/40">該当する銘柄がありません</div>
+              ) : (
+                allSakes.filter(sake => 
+                  sake.name.includes(searchQuery) || 
+                  sake.prefecture.includes(searchQuery) ||
+                  (sake.description && sake.description.includes(searchQuery))
+                ).map((sake) => (
+                  <div
+                    key={sake.id}
+                    className="brand-row"
+                    onClick={() => {
+                      setSelectedSakeId(sake.id)
+                      changeStepWithTransition('list', null)
+                    }}
+                  >
+                    <div className="brand-row__main">
+                      <span className="brand-row__name text-washi">{sake.name}</span>
+                      <span className="brand-row__type text-washi/50">
+                        {sake.type === 'daiginjo' && '純米大吟醸'}
+                        {sake.type === 'ginjo' && '吟醸酒'}
+                        {sake.type === 'pure_rice' && '純米酒'}
+                        {sake.type === 'honjozo' && '本醸造'}
+                      </span>
+                    </div>
+                    <span className="brand-row__area">{sake.prefecture}</span>
+                  </div>
+                ))
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* 4. 診断から探す */}
+        {activePanel === 'panel-diagnosis' && (
+          <div className="sake-panel is-active">
+            <div className="panel-header">
+              <h3 className="panel-header__title">診断から探す</h3>
+              <span className="panel-header__sub">DIAGNOSIS</span>
+            </div>
+            
+            <DiagnosisPanel
+              allSakes={allSakes}
+              onSelectSake={(sakeId) => {
+                setSelectedSakeId(sakeId)
+                changeStepWithTransition('list', null)
+              }}
+              onReset={() => {
+                if (window.SakeAudio) window.SakeAudio.playDrip(0.5)
+              }}
+            />
+          </div>
+        )}
+      </div>
+
+      {/* 閉じる（戻る）ボタン */}
+      <button
+        type="button"
+        id="back-btn"
+        className={activePanel ? 'is-active' : ''}
+        onClick={() => changeStepWithTransition('home', null)}
+        aria-label="詳細パネルを閉じる"
+      >
+        ← 閉じる
+      </button>
+
+      {/* 5. 日本酒一覧表示 */}
+      {step === 'list' && (
+        <div className="relative z-10 min-h-screen px-6 py-28 max-w-2xl mx-auto animate-fade-in text-left">
+          <button
+            onClick={() => changeStepWithTransition('home', null)}
+            className="mb-8 inline-flex items-center gap-2 text-sm text-washi/60 transition hover:text-gold"
+          >
+            ← トップへ戻る
           </button>
 
-          <h2 className="font-serif text-3xl font-bold text-washi mb-4">
-            {selectedPrefecture ? `${selectedPrefecture}の日本酒` : '日本酒一覧'}
+          <h2 className="font-display text-3xl font-bold text-gold mb-6 border-b border-gold/20 pb-4">
+            {selectedPrefecture ? `${selectedPrefecture}の日本酒` : 
+             selectedTasteGroup ? (
+               selectedTasteGroup === 'kunshu' ? '薫酒 (大吟醸・吟醸系)' :
+               selectedTasteGroup === 'soshu' ? '爽酒 (すっきり辛口系)' :
+               selectedTasteGroup === 'junshu' ? '醇酒 (芳醇純米系)' :
+               '熟酒 (本醸造・熟成系)'
+             ) : '日本酒一覧'}
           </h2>
 
-          <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
-            {['all', 'sweet', 'dry', 'balanced'].map(type => (
+          <div className="flex gap-2 mb-8 overflow-x-auto pb-2">
+            {[
+              { id: 'all', label: 'すべて' },
+              { id: 'sweet', label: '甘口' },
+              { id: 'dry', label: '辛口' },
+              { id: 'balanced', label: 'バランス型' },
+            ].map((type) => (
               <button
-                key={type}
-                onClick={() => setFilterType(type)}
-                className={`px-4 py-2 rounded-full whitespace-nowrap transition border ${
-                  filterType === type
-                    ? 'bg-kurenai border-kurenai text-washi'
-                    : 'bg-washi border-gold/25 text-sumi/70 hover:border-gold/50'
+                key={type.id}
+                onClick={() => {
+                  setFilterType(type.id)
+                  if (window.SakeAudio) window.SakeAudio.playDrip(0.5)
+                }}
+                className={`px-5 py-1.5 rounded-full text-xs transition border whitespace-nowrap ${
+                  filterType === type.id
+                    ? 'bg-[#c9b06a] border-[#c9b06a] text-[#030914] font-bold'
+                    : 'bg-white/5 border-white/10 text-washi/80 hover:border-gold/40'
                 }`}
               >
-                {type === 'all' && 'すべて'}
-                {type === 'sweet' && '甘口'}
-                {type === 'dry' && '辛口'}
-                {type === 'balanced' && 'バランス型'}
+                {type.label}
               </button>
             ))}
           </div>
 
+          <div className="space-y-6">
+            {sakesLoading ? (
+              <div className="text-center py-12 text-washi/50">読み込み中...</div>
+            ) : sakesError ? (
+              <div className="text-center py-12 text-kurenai">{sakesError}</div>
+            ) : filteredSakes.length === 0 ? (
+              <div className="text-center py-12 text-washi/50">該当する日本酒が見つかりません</div>
+            ) : (
+              filteredSakes.map((sake) => (
+                <div
+                  key={sake.id}
+                  className="bg-[#0a172c]/50 backdrop-blur-md rounded-xl p-6 border border-gold/15 shadow-2xl transition duration-300 hover:border-gold/40"
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex items-center gap-4">
+                      <div className="text-4xl bg-white/5 p-3 rounded-lg border border-white/5">🍶</div>
+                      <div>
+                        <div className="font-display text-xl font-bold text-washi">{sake.name}</div>
+                        <div className="text-xs text-gold/80 mt-1">
+                          {sake.prefecture} / {sake.type === 'daiginjo' ? '純米大吟醸' :
+                                               sake.type === 'ginjo' ? '吟醸酒' :
+                                               sake.type === 'pure_rice' ? '純米酒' : '本醸造'}
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() => toggleFavorite(sake.id)}
+                      className={`p-2.5 rounded-full transition ${
+                        favorites.includes(sake.id)
+                          ? 'bg-red-500/10 text-red-400 border border-red-500/20'
+                          : 'bg-white/5 text-washi/30 hover:text-red-400 border border-white/5'
+                      }`}
+                      aria-label="お気に入り"
+                    >
+                      <Heart
+                        size={18}
+                        fill={favorites.includes(sake.id) ? 'currentColor' : 'none'}
+                      />
+                    </button>
+                  </div>
+
+                  <div className="flex gap-2 mb-4">
+                    <span className="px-2.5 py-0.5 bg-gold/10 text-gold border border-gold/15 rounded text-[11px] font-medium">
+                      {sake.dry_sweet_index < -2 ? '辛口' :
+                       sake.dry_sweet_index > 3 ? '甘口' : 'バランス型'}
+                    </span>
+                    <span className="px-2.5 py-0.5 bg-white/5 text-washi/60 border border-white/10 rounded text-[11px]">
+                      アルコール分: {sake.alcohol_percentage}%
+                    </span>
+                  </div>
+
+                  <p className="text-washi/70 text-sm leading-relaxed mb-6 border-l-2 border-gold/30 pl-3">{sake.description}</p>
+
+                  <div className="flex gap-3">
+                    {sake.affiliate_amazon_link && (
+                      <a
+                        href={sake.affiliate_amazon_link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 py-2 px-4 rounded border border-gold text-gold text-xs text-center font-bold tracking-wider hover:bg-gold hover:text-[#030914] transition duration-300"
+                      >
+                        Amazon で見る
+                      </a>
+                    )}
+                    {sake.affiliate_rakuten_link && (
+                      <a
+                        href={sake.affiliate_rakuten_link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 py-2 px-4 rounded border border-gold/50 text-washi text-xs text-center tracking-wider hover:bg-gold/10 transition duration-300"
+                      >
+                        楽天市場 で見る
+                      </a>
+                    )}
+                  </div>
+                </div>
+              ))
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* 6. お気に入り表示 */}
+      {step === 'favorites' && (
+        <div className="relative z-10 min-h-screen px-6 py-28 max-w-2xl mx-auto animate-fade-in text-left">
+          <button
+            onClick={() => changeStepWithTransition('home', null)}
+            className="mb-8 inline-flex items-center gap-2 text-sm text-washi/60 transition hover:text-gold"
+          >
+            ← トップへ戻る
+          </button>
+
+          <h2 className="font-display text-3xl font-bold text-gold mb-6 border-b border-gold/20 pb-4 flex items-center gap-2">
+            <Heart size={26} className="text-red-400" fill="currentColor" />
+            お気に入り銘柄
+          </h2>
+
           <div className="space-y-4">
-            {filteredSakes.map(sake => (
-              <div
-                key={sake.id}
-                className={`${CARD} p-4 transition hover:border-gold/50`}
-              >
-                <div className="flex items-start justify-between mb-2">
-                  <div className="flex items-center gap-3">
-                    <div className="text-4xl">{sake.image_url || '🍶'}</div>
+            {allSakes.filter(sake => favorites.includes(sake.id)).length === 0 ? (
+              <div className="text-center py-12 text-washi/40">お気に入りはまだありません</div>
+            ) : (
+              allSakes.filter(sake => favorites.includes(sake.id)).map(sake => (
+                <div
+                  key={sake.id}
+                  className="bg-[#0a172c]/40 backdrop-blur-md rounded-xl p-4 border border-gold/15 flex items-center justify-between transition hover:border-gold/30"
+                >
+                  <div
+                    className="flex items-center gap-3 cursor-pointer"
+                    onClick={() => {
+                      setSelectedSakeId(sake.id)
+                      changeStepWithTransition('list', null)
+                    }}
+                  >
+                    <div className="text-2xl">🍶</div>
                     <div>
-                      <div className="font-bold text-sumi">{sake.name}</div>
-                      <div className="text-sm text-sumi/50">{sake.type}</div>
+                      <div className="font-display text-sm font-bold text-washi">{sake.name}</div>
+                      <div className="text-[11px] text-gold/80">{sake.prefecture}</div>
                     </div>
                   </div>
                   <button
                     onClick={() => toggleFavorite(sake.id)}
-                    className={`p-2 rounded-full transition ${
-                      favorites.includes(sake.id)
-                        ? 'bg-kurenai/10 text-kurenai'
-                        : 'bg-sumi/5 text-sumi/30 hover:text-kurenai'
-                    }`}
+                    className="p-2 rounded-full bg-red-500/10 text-red-400 border border-red-500/20 transition hover:bg-red-500/20"
+                    aria-label="お気に入り解除"
                   >
-                    <Heart
-                      size={20}
-                      fill={favorites.includes(sake.id) ? 'currentColor' : 'none'}
-                    />
+                    <Heart size={16} fill="currentColor" />
                   </button>
                 </div>
-
-                <div className="flex gap-2 mb-2">
-                  <span className="px-2 py-1 bg-gold/15 text-gold-dark rounded text-xs font-bold">
-                    {sake.dry_sweet_index < -2
-                      ? '辛口'
-                      : sake.dry_sweet_index > 3
-                      ? '甘口'
-                      : 'バランス型'}
-                  </span>
-                  <span className="px-2 py-1 bg-sumi/5 text-sumi/60 border border-sumi/10 rounded text-xs">
-                    {sake.alcohol_percentage}%
-                  </span>
-                </div>
-
-                <p className="text-sumi/70 text-sm mb-3">{sake.description}</p>
-
-                <div className="flex gap-2">
-                  <button className="flex-1 px-4 py-2 bg-sumi text-washi rounded hover:bg-sumi-light transition text-sm">
-                    詳しく見る
-                  </button>
-                  {sake.affiliate_amazon_link && (
-                    <a
-                      href={sake.affiliate_amazon_link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 px-4 py-2 border border-gold text-gold-dark rounded hover:bg-gold hover:text-sumi transition text-sm text-center"
-                    >
-                      購入
-                    </a>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {sakesError && (
-            <div className="text-center py-8">
-              <p className="text-kurenai">データの取得に失敗しました: {sakesError}</p>
-            </div>
-          )}
-
-          {!sakesError && sakesLoading && (
-            <div className="text-center py-8">
-              <p className="text-washi/50">読み込み中...</p>
-            </div>
-          )}
-
-          {!sakesError && !sakesLoading && filteredSakes.length === 0 && (
-            <div className="text-center py-8">
-              <p className="text-washi/50">該当する日本酒が見つかりません</p>
-            </div>
-          )}
-        </div>
-      </div>
-    )
-  }
-
-  // 診断画面
-  if (step === 'quiz') {
-    const questions = [
-      {
-        key: 'taste',
-        label: '基本的な好み',
-        options: [
-          { value: 'dry', label: '辛口が好き' },
-          { value: 'balanced', label: 'バランス型が好き' },
-          { value: 'sweet', label: '甘口が好き' }
-        ]
-      },
-      {
-        key: 'intensity',
-        label: 'アルコール度数',
-        options: [
-          { value: 'light', label: 'ライト（13%以下）' },
-          { value: 'medium', label: 'スタンダード（13-15%）' },
-          { value: 'strong', label: 'ストロング（15%以上）' }
-        ]
-      },
-      {
-        key: 'aroma',
-        label: '香りの好み',
-        options: [
-          { value: 'fruity', label: 'フルーティー' },
-          { value: 'floral', label: '華やか' },
-          { value: 'subtle', label: '上品・淡い' }
-        ]
-      },
-      {
-        key: 'occasion',
-        label: 'よく飲む場面',
-        options: [
-          { value: 'meal', label: 'ご飯と一緒に' },
-          { value: 'chat', label: 'おしゃべりしながら' },
-          { value: 'alone', label: 'ゆっくり一人で' }
-        ]
-      }
-    ]
-
-    return (
-      <div className={PAGE_BG}>
-        <div className="max-w-2xl mx-auto">
-          <button onClick={goHome} className={BACK_BTN}>
-            ← 戻る
-          </button>
-
-          <h2 className="font-serif text-3xl font-bold text-washi mb-6">あなたの好みを診断</h2>
-
-          <div className="space-y-6">
-            {questions.map(question => (
-              <div key={question.key} className={`${CARD} p-4`}>
-                <h3 className="font-bold text-sumi mb-3">{question.label}</h3>
-                <div className="space-y-2">
-                  {question.options.map(option => (
-                    <label
-                      key={option.value}
-                      className="flex items-center gap-3 cursor-pointer p-2 rounded hover:bg-gold/5"
-                    >
-                      <input
-                        type="radio"
-                        name={question.key}
-                        value={option.value}
-                        checked={quizAnswers[question.key] === option.value}
-                        onChange={(e) =>
-                          setQuizAnswers({
-                            ...quizAnswers,
-                            [question.key]: e.target.value
-                          })
-                        }
-                        className="w-4 h-4 accent-gold"
-                      />
-                      <span className="text-sumi/80">{option.label}</span>
-                    </label>
-                  ))}
-                </div>
-              </div>
-            ))}
-
-            <button
-              onClick={() => setStep('recommend')}
-              disabled={Object.keys(quizAnswers).length < 4}
-              className="w-full p-4 bg-gradient-to-r from-gold-light to-gold text-sumi rounded-lg font-bold hover:brightness-110 disabled:opacity-30 disabled:grayscale transition"
-            >
-              おすすめを見る
-            </button>
+              ))
+            )}
           </div>
         </div>
-      </div>
-    )
-  }
-
-  // おすすめ結果
-  if (step === 'recommend') {
-    return (
-      <div className={PAGE_BG}>
-        <div className="max-w-2xl mx-auto">
-          <button onClick={() => setStep('quiz')} className={BACK_BTN}>
-            ← 戻る
-          </button>
-
-          <div className={`mb-8 p-6 ${CARD}`}>
-            <h2 className="font-serif text-2xl font-bold text-sumi mb-2">
-              {quizAnswers.taste === 'sweet' && '甘口好きさん向け'}
-              {quizAnswers.taste === 'dry' && '辛口好きさん向け'}
-              {quizAnswers.taste === 'balanced' && 'バランス型好きさん向け'}
-            </h2>
-            <p className="text-sumi/60">あなたの好みに合わせたおすすめの日本酒です</p>
-          </div>
-
-          <div className="space-y-4">
-            {[
-              { name: '陸奥八仙', region: '青森県', taste: '辛口', desc: 'あなたの好みにぴったり' },
-              { name: '月桂冠', region: '京都府', taste: '中口', desc: 'バランスの良さが特徴' },
-              { name: '播州一献', region: '兵庫県', taste: '中辛口', desc: 'コクと深さがある' }
-            ].map((sake, idx) => (
-              <div key={idx} className={`p-4 ${CARD} border-l-4 border-l-gold`}>
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="text-3xl">🍶</div>
-                  <div>
-                    <div className="font-bold text-sumi">{sake.name}</div>
-                    <div className="text-sm text-sumi/50">{sake.region}</div>
-                  </div>
-                </div>
-                <div className="text-sm text-sumi/70">{sake.desc}</div>
-              </div>
-            ))}
-          </div>
-
-          <button
-            onClick={goHome}
-            className="w-full mt-6 p-4 bg-transparent text-washi rounded-lg font-bold hover:bg-white/5 transition border border-gold/30"
-          >
-            ホームに戻る
-          </button>
-        </div>
-      </div>
-    )
-  }
-
-  // お気に入り
-  if (step === 'favorites') {
-    const favoriteSakes = allSakes.filter(sake => favorites.includes(sake.id))
-    return (
-      <div className={PAGE_BG}>
-        <div className="max-w-2xl mx-auto">
-          <button onClick={goHome} className={BACK_BTN}>
-            ← 戻る
-          </button>
-
-          <h2 className="font-serif text-3xl font-bold text-washi mb-6 flex items-center gap-2">
-            <Heart size={26} className="text-kurenai" fill="currentColor" />
-            お気に入り
-          </h2>
-
-          <div className="space-y-4">
-            {favoriteSakes.map(sake => (
-              <div key={sake.id} className={`p-4 ${CARD} flex items-center justify-between`}>
-                <div className="flex items-center gap-3">
-                  <div className="text-3xl">{sake.image_url || '🍶'}</div>
-                  <div>
-                    <div className="font-bold text-sumi">{sake.name}</div>
-                    <div className="text-sm text-sumi/50">{sake.prefecture}</div>
-                  </div>
-                </div>
-                <button
-                  onClick={() => toggleFavorite(sake.id)}
-                  className="p-2 rounded-full bg-kurenai/10 text-kurenai"
-                >
-                  <Heart size={20} fill="currentColor" />
-                </button>
-              </div>
-            ))}
-          </div>
-
-          {favoriteSakes.length === 0 && (
-            <div className="text-center py-8">
-              <p className="text-washi/50">お気に入りはまだありません</p>
-            </div>
-          )}
-        </div>
-      </div>
-    )
-  }
-
-  return null
+      )}
+    </>
+  )
 }

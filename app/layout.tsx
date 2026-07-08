@@ -1,22 +1,28 @@
 import type { Metadata } from 'next'
-import { Noto_Sans_JP, Noto_Serif_JP } from 'next/font/google'
+import { Shippori_Mincho_B1, Cormorant_Garamond, Zen_Kaku_Gothic_New } from 'next/font/google'
 import './globals.css'
 
-const notoSans = Noto_Sans_JP({
+const shippori = Shippori_Mincho_B1({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
-  variable: '--font-sans',
+  variable: '--font-display',
 })
 
-const notoSerif = Noto_Serif_JP({
+const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
-  weight: ['500', '700'],
-  variable: '--font-serif',
+  weight: ['300', '400', '500'],
+  variable: '--font-latin',
+})
+
+const zenKaku = Zen_Kaku_Gothic_New({
+  subsets: ['latin'],
+  weight: ['300', '400', '500'],
+  variable: '--font-body',
 })
 
 export const metadata: Metadata = {
-  title: '日本酒図鑑',
-  description: '全国の名酒を発見できるプラットフォーム',
+  title: '雫 SAKE SELECT — 清らかな一滴と、出会う。',
+  description: '画像を使わず、澄んだ水面と滴る音のデジタル表現が織りなす和の日本酒サーチポータル。',
 }
 
 export default function RootLayout({
@@ -26,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={`${notoSans.variable} ${notoSerif.variable} font-sans bg-sumi`}>
+      <body className={`${shippori.variable} ${cormorant.variable} ${zenKaku.variable} font-body bg-[#030914]`}>
         {children}
       </body>
     </html>
