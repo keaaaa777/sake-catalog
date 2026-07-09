@@ -1,47 +1,28 @@
 'use client'
 
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 import { Heart, ChevronRight } from 'lucide-react'
-import { REGIONS, Sake } from '@/lib/types'
-import { getSakeList } from '@/lib/db'
+import { REGIONS, PREFECTURE_SLUGS } from '@/lib/types'
+import { getAllSakes } from '@/lib/data'
 import { REGION_COLORS } from '@/lib/mapData'
 import JapanMap from '@/components/JapanMap'
 import WaterBackground from '@/components/WaterBackground'
 import DiagnosisPanel from '@/components/DiagnosisPanel'
 
+const allSakes = getAllSakes()
+
 export default function Home() {
+  const router = useRouter()
   const [step, setStep] = useState('home')
   const [activePanel, setActivePanel] = useState<string | null>(null)
   const [isTransitioning, setIsTransitioning] = useState(false)
 
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null)
   const [selectedPrefecture, setSelectedPrefecture] = useState<string | null>(null)
-  const [selectedTasteGroup, setSelectedTasteGroup] = useState<string | null>(null) // 'kunshu' | 'soshu' | 'junshu' | 'jukushu' | null
-  const [selectedSakeId, setSelectedSakeId] = useState<number | null>(null)
   const [searchQuery, setSearchQuery] = useState('')
-  const [filterType, setFilterType] = useState('all')
-  const [favorites, setFavorites] = useState<number[]>([])
-
-  const [allSakes, setAllSakes] = useState<Sake[]>([])
-  const [sakesLoading, setSakesLoading] = useState(true)
-  const [sakesError, setSakesError] = useState<string | null>(null)
-
-  useEffect(() => {
-    let cancelled = false
-    getSakeList()
-      .then(data => {
-        if (!cancelled) setAllSakes(data)
-      })
-      .catch(err => {
-        if (!cancelled) setSakesError(err instanceof Error ? err.message : '日本酒データの取得に失敗しました')
-      })
-      .finally(() => {
-        if (!cancelled) setSakesLoading(false)
-      })
-    return () => {
-      cancelled = true
-    }
-  }, [])
+  const [favorites, setFavorites] = useState<string[]>([])
 
   // スクロール制御およびパネルオープン状態の body 反映
   useEffect(() => {
@@ -58,15 +39,12 @@ export default function Home() {
     setTimeout(() => {
       setStep(newStep)
       setActivePanel(targetPanel)
-      
+
       // 戻るボタンやトップへの遷移時はフィルターリセット
       if (newStep === 'home' && !targetPanel) {
         setSelectedRegion(null)
         setSelectedPrefecture(null)
-        setSelectedTasteGroup(null)
-        setSelectedSakeId(null)
         setSearchQuery('')
-        setFilterType('all')
       }
     }, 600)
 
@@ -76,41 +54,22 @@ export default function Home() {
     }, 1100)
   }
 
-  // フィルター処理
-  const filteredSakes = useMemo(() => {
-    let result = allSakes
+  // 都道府県決定 → 選択アニメーションを見せてから一覧ページへ実遷移
+  const goToPrefecture = (pref: string) => {
+    setSelectedPrefecture(pref)
+    if (window.SakeAudio) window.SakeAudio.playDrip(0.5)
+    const slug = PREFECTURE_SLUGS[pref]
+    if (!slug) return
+    setTimeout(() => router.push(`/area/${slug}`), 380)
+  }
 
-    if (selectedPrefecture) {
-      result = result.filter(sake => sake.prefecture === selectedPrefecture)
-    }
+  // 香味タイプ決定 → 一覧ページへ実遷移
+  const goToFlavorType = (flavorType: string) => {
+    if (window.SakeAudio) window.SakeAudio.playDrip(0.5)
+    router.push(`/type/${flavorType}`)
+  }
 
-    if (selectedTasteGroup) {
-      result = result.filter(sake => {
-        if (selectedTasteGroup === 'kunshu') return sake.type === 'daiginjo' || sake.type === 'ginjo'
-        if (selectedTasteGroup === 'soshu') return sake.dry_sweet_index < -2
-        if (selectedTasteGroup === 'junshu') return sake.type === 'pure_rice'
-        if (selectedTasteGroup === 'jukushu') return sake.type === 'honjozo' || (sake.dry_sweet_index >= -2 && sake.dry_sweet_index <= 3)
-        return true
-      })
-    }
-
-    if (selectedSakeId) {
-      result = result.filter(sake => sake.id === selectedSakeId)
-    }
-
-    if (filterType !== 'all') {
-      result = result.filter(sake => {
-        if (filterType === 'sweet') return sake.dry_sweet_index > 3
-        if (filterType === 'dry') return sake.dry_sweet_index < -2
-        if (filterType === 'balanced') return sake.dry_sweet_index >= -2 && sake.dry_sweet_index <= 3
-        return true
-      })
-    }
-
-    return result
-  }, [selectedPrefecture, selectedTasteGroup, selectedSakeId, filterType, allSakes])
-
-  const toggleFavorite = (id: number) => {
+  const toggleFavorite = (id: string) => {
     setFavorites(prev =>
       prev.includes(id) ? prev.filter(f => f !== id) : [...prev, id]
     )
@@ -303,10 +262,7 @@ export default function Home() {
                         {REGIONS[selectedRegion as keyof typeof REGIONS]?.map((pref) => (
                           <button
                             key={pref}
-                            onClick={() => {
-                              setSelectedPrefecture(pref)
-                              changeStepWithTransition('list', null)
-                            }}
+                            onClick={() => goToPrefecture(pref)}
                             className="w-full flex items-center justify-between px-2 py-1.5 rounded-lg border border-white/5 hover:border-gold/40 hover:bg-gold/5 transition text-left text-xs text-washi"
                           >
                             <span>{pref}</span>
@@ -328,10 +284,7 @@ export default function Home() {
                     setSelectedPrefecture(null)
                     if (window.SakeAudio) window.SakeAudio.playDrip(0.6)
                   }}
-                  onSelectPrefecture={(pref) => {
-                    setSelectedPrefecture(pref)
-                    changeStepWithTransition('list', null)
-                  }}
+                  onSelectPrefecture={(pref) => goToPrefecture(pref)}
                 />
               </div>
             </div>
@@ -346,65 +299,57 @@ export default function Home() {
               <span className="panel-header__sub">FLAVOUR PROFILE</span>
             </div>
             <div className="taste-chart">
-              <div
-                className="taste-card text-left"
+              <Link
+                href="/type/kaori"
+                className="taste-card text-left block"
                 onPointerEnter={playHoverDrip}
-                onClick={() => {
-                  setSelectedTasteGroup('kunshu')
-                  changeStepWithTransition('list', null)
-                }}
+                onClick={() => goToFlavorType('kaori')}
               >
                 <div className="taste-card__header">
                   <h4 className="taste-card__title">薫酒 (くんしゅ)</h4>
                   <span className="taste-card__eng">Fragrant & Light</span>
                 </div>
                 <p className="taste-card__desc">フルーティーで華やかな香りと、軽快な飲み口。大吟醸や吟醸酒がこのタイプに属します。乾杯や、フルーツを使ったオードブルと合わせて。</p>
-              </div>
+              </Link>
 
-              <div
-                className="taste-card text-left"
+              <Link
+                href="/type/sou"
+                className="taste-card text-left block"
                 onPointerEnter={playHoverDrip}
-                onClick={() => {
-                  setSelectedTasteGroup('soshu')
-                  changeStepWithTransition('list', null)
-                }}
+                onClick={() => goToFlavorType('sou')}
               >
                 <div className="taste-card__header">
                   <h4 className="taste-card__title">爽酒 (そうしゅ)</h4>
                   <span className="taste-card__eng">Light & Fresh</span>
                 </div>
                 <p className="taste-card__desc">すっきりとした香り、軽やかでシャープなキレ味。本醸造や生酒など、冷やすと最も良さが引き立ち、様々なお料理に万成に合います。</p>
-              </div>
+              </Link>
 
-              <div
-                className="taste-card text-left"
+              <Link
+                href="/type/jun"
+                className="taste-card text-left block"
                 onPointerEnter={playHoverDrip}
-                onClick={() => {
-                  setSelectedTasteGroup('junshu')
-                  changeStepWithTransition('list', null)
-                }}
+                onClick={() => goToFlavorType('jun')}
               >
                 <div className="taste-card__header">
                   <h4 className="taste-card__title">醇酒 (じゅんしゅ)</h4>
                   <span className="taste-card__eng">Rich & Savoury</span>
                 </div>
                 <p className="taste-card__desc">米本来の深いコク、ふくよかな旨みと酸味。純米酒の多くがこれに該当し、ぬる燗にするとさらに旨みが膨らみます。お肉や濃いめのお料理に。</p>
-              </div>
+              </Link>
 
-              <div
-                className="taste-card text-left"
+              <Link
+                href="/type/juku"
+                className="taste-card text-left block"
                 onPointerEnter={playHoverDrip}
-                onClick={() => {
-                  setSelectedTasteGroup('jukushu')
-                  changeStepWithTransition('list', null)
-                }}
+                onClick={() => goToFlavorType('juku')}
               >
                 <div className="taste-card__header">
                   <h4 className="taste-card__title">熟酒 (じゅくしゅ)</h4>
                   <span className="taste-card__eng">Aged & Heavy</span>
                 </div>
                 <p className="taste-card__desc">ドライフルーツやスパイスのような複雑で濃厚な香りと、とろりとした深い味わい。古酒や長期熟成酒。食後酒として、チーズやドライフルーツと。</p>
-              </div>
+              </Link>
             </div>
           </div>
         )}
@@ -428,41 +373,25 @@ export default function Home() {
             </div>
 
             <div className="brand-list max-h-[350px] overflow-y-auto pr-2">
-              {sakesLoading ? (
-                <div className="text-center py-6 text-sm text-washi/50">読み込み中...</div>
-              ) : sakesError ? (
-                <div className="text-center py-6 text-sm text-kurenai">{sakesError}</div>
-              ) : allSakes.filter(sake => 
-                sake.name.includes(searchQuery) || 
+              {allSakes.filter(sake =>
+                sake.name.includes(searchQuery) ||
                 sake.prefecture.includes(searchQuery) ||
                 (sake.description && sake.description.includes(searchQuery))
               ).length === 0 ? (
                 <div className="text-center py-6 text-sm text-washi/40">該当する銘柄がありません</div>
               ) : (
-                allSakes.filter(sake => 
-                  sake.name.includes(searchQuery) || 
+                allSakes.filter(sake =>
+                  sake.name.includes(searchQuery) ||
                   sake.prefecture.includes(searchQuery) ||
                   (sake.description && sake.description.includes(searchQuery))
                 ).map((sake) => (
-                  <div
-                    key={sake.id}
-                    className="brand-row"
-                    onClick={() => {
-                      setSelectedSakeId(sake.id)
-                      changeStepWithTransition('list', null)
-                    }}
-                  >
+                  <Link key={sake.id} href={`/sake/${sake.slug}`} className="brand-row">
                     <div className="brand-row__main">
                       <span className="brand-row__name text-washi">{sake.name}</span>
-                      <span className="brand-row__type text-washi/50">
-                        {sake.type === 'daiginjo' && '純米大吟醸'}
-                        {sake.type === 'ginjo' && '吟醸酒'}
-                        {sake.type === 'pure_rice' && '純米酒'}
-                        {sake.type === 'honjozo' && '本醸造'}
-                      </span>
+                      <span className="brand-row__type text-washi/50">{sake.classification}</span>
                     </div>
                     <span className="brand-row__area">{sake.prefecture}</span>
-                  </div>
+                  </Link>
                 ))
               )}
             </div>
@@ -479,10 +408,6 @@ export default function Home() {
             
             <DiagnosisPanel
               allSakes={allSakes}
-              onSelectSake={(sakeId) => {
-                setSelectedSakeId(sakeId)
-                changeStepWithTransition('list', null)
-              }}
               onReset={() => {
                 if (window.SakeAudio) window.SakeAudio.playDrip(0.5)
               }}
@@ -502,133 +427,7 @@ export default function Home() {
         ← 閉じる
       </button>
 
-      {/* 5. 日本酒一覧表示 */}
-      {step === 'list' && (
-        <div className="relative z-10 min-h-screen px-6 py-28 max-w-2xl mx-auto animate-fade-in text-left">
-          <button
-            onClick={() => changeStepWithTransition('home', null)}
-            className="mb-8 inline-flex items-center gap-2 text-sm text-washi/60 transition hover:text-gold"
-          >
-            ← トップへ戻る
-          </button>
-
-          <h2 className="font-display text-3xl font-bold text-gold mb-6 border-b border-gold/20 pb-4">
-            {selectedPrefecture ? `${selectedPrefecture}の日本酒` : 
-             selectedTasteGroup ? (
-               selectedTasteGroup === 'kunshu' ? '薫酒 (大吟醸・吟醸系)' :
-               selectedTasteGroup === 'soshu' ? '爽酒 (すっきり辛口系)' :
-               selectedTasteGroup === 'junshu' ? '醇酒 (芳醇純米系)' :
-               '熟酒 (本醸造・熟成系)'
-             ) : '日本酒一覧'}
-          </h2>
-
-          <div className="flex gap-2 mb-8 overflow-x-auto pb-2">
-            {[
-              { id: 'all', label: 'すべて' },
-              { id: 'sweet', label: '甘口' },
-              { id: 'dry', label: '辛口' },
-              { id: 'balanced', label: 'バランス型' },
-            ].map((type) => (
-              <button
-                key={type.id}
-                onClick={() => {
-                  setFilterType(type.id)
-                  if (window.SakeAudio) window.SakeAudio.playDrip(0.5)
-                }}
-                className={`px-5 py-1.5 rounded-full text-xs transition border whitespace-nowrap ${
-                  filterType === type.id
-                    ? 'bg-[#c9b06a] border-[#c9b06a] text-[#030914] font-bold'
-                    : 'bg-white/5 border-white/10 text-washi/80 hover:border-gold/40'
-                }`}
-              >
-                {type.label}
-              </button>
-            ))}
-          </div>
-
-          <div className="space-y-6">
-            {sakesLoading ? (
-              <div className="text-center py-12 text-washi/50">読み込み中...</div>
-            ) : sakesError ? (
-              <div className="text-center py-12 text-kurenai">{sakesError}</div>
-            ) : filteredSakes.length === 0 ? (
-              <div className="text-center py-12 text-washi/50">該当する日本酒が見つかりません</div>
-            ) : (
-              filteredSakes.map((sake) => (
-                <div
-                  key={sake.id}
-                  className="bg-[#0a172c]/50 backdrop-blur-md rounded-xl p-6 border border-gold/15 shadow-2xl transition duration-300 hover:border-gold/40"
-                >
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex items-center gap-4">
-                      <div className="text-4xl bg-white/5 p-3 rounded-lg border border-white/5">🍶</div>
-                      <div>
-                        <div className="font-display text-xl font-bold text-washi">{sake.name}</div>
-                        <div className="text-xs text-gold/80 mt-1">
-                          {sake.prefecture} / {sake.type === 'daiginjo' ? '純米大吟醸' :
-                                               sake.type === 'ginjo' ? '吟醸酒' :
-                                               sake.type === 'pure_rice' ? '純米酒' : '本醸造'}
-                        </div>
-                      </div>
-                    </div>
-                    <button
-                      onClick={() => toggleFavorite(sake.id)}
-                      className={`p-2.5 rounded-full transition ${
-                        favorites.includes(sake.id)
-                          ? 'bg-red-500/10 text-red-400 border border-red-500/20'
-                          : 'bg-white/5 text-washi/30 hover:text-red-400 border border-white/5'
-                      }`}
-                      aria-label="お気に入り"
-                    >
-                      <Heart
-                        size={18}
-                        fill={favorites.includes(sake.id) ? 'currentColor' : 'none'}
-                      />
-                    </button>
-                  </div>
-
-                  <div className="flex gap-2 mb-4">
-                    <span className="px-2.5 py-0.5 bg-gold/10 text-gold border border-gold/15 rounded text-[11px] font-medium">
-                      {sake.dry_sweet_index < -2 ? '辛口' :
-                       sake.dry_sweet_index > 3 ? '甘口' : 'バランス型'}
-                    </span>
-                    <span className="px-2.5 py-0.5 bg-white/5 text-washi/60 border border-white/10 rounded text-[11px]">
-                      アルコール分: {sake.alcohol_percentage}%
-                    </span>
-                  </div>
-
-                  <p className="text-washi/70 text-sm leading-relaxed mb-6 border-l-2 border-gold/30 pl-3">{sake.description}</p>
-
-                  <div className="flex gap-3">
-                    {sake.affiliate_amazon_link && (
-                      <a
-                        href={sake.affiliate_amazon_link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 py-2 px-4 rounded border border-gold text-gold text-xs text-center font-bold tracking-wider hover:bg-gold hover:text-[#030914] transition duration-300"
-                      >
-                        Amazon で見る
-                      </a>
-                    )}
-                    {sake.affiliate_rakuten_link && (
-                      <a
-                        href={sake.affiliate_rakuten_link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 py-2 px-4 rounded border border-gold/50 text-washi text-xs text-center tracking-wider hover:bg-gold/10 transition duration-300"
-                      >
-                        楽天市場 で見る
-                      </a>
-                    )}
-                  </div>
-                </div>
-              ))
-            )}
-          </div>
-        </div>
-      )}
-
-      {/* 6. お気に入り表示 */}
+      {/* 5. お気に入り表示 */}
       {step === 'favorites' && (
         <div className="relative z-10 min-h-screen px-6 py-28 max-w-2xl mx-auto animate-fade-in text-left">
           <button
@@ -652,19 +451,13 @@ export default function Home() {
                   key={sake.id}
                   className="bg-[#0a172c]/40 backdrop-blur-md rounded-xl p-4 border border-gold/15 flex items-center justify-between transition hover:border-gold/30"
                 >
-                  <div
-                    className="flex items-center gap-3 cursor-pointer"
-                    onClick={() => {
-                      setSelectedSakeId(sake.id)
-                      changeStepWithTransition('list', null)
-                    }}
-                  >
+                  <Link href={`/sake/${sake.slug}`} className="flex items-center gap-3">
                     <div className="text-2xl">🍶</div>
                     <div>
                       <div className="font-display text-sm font-bold text-washi">{sake.name}</div>
                       <div className="text-[11px] text-gold/80">{sake.prefecture}</div>
                     </div>
-                  </div>
+                  </Link>
                   <button
                     onClick={() => toggleFavorite(sake.id)}
                     className="p-2 rounded-full bg-red-500/10 text-red-400 border border-red-500/20 transition hover:bg-red-500/20"

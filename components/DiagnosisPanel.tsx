@@ -1,11 +1,11 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import Link from 'next/link'
 import { Sake } from '@/lib/types'
 
 interface DiagnosisPanelProps {
   allSakes: Sake[]
-  onSelectSake: (sakeId: number) => void
   onReset: () => void
 }
 
@@ -48,7 +48,7 @@ const QUESTIONS = [
   }
 ]
 
-export default function DiagnosisPanel({ allSakes, onSelectSake, onReset }: DiagnosisPanelProps) {
+export default function DiagnosisPanel({ allSakes, onReset }: DiagnosisPanelProps) {
   const [qIndex, setQIndex] = useState(0)
   const [answers, setAnswers] = useState<Record<string, string>>({})
   const [showResult, setShowResult] = useState(false)
@@ -83,20 +83,19 @@ export default function DiagnosisPanel({ allSakes, onSelectSake, onReset }: Diag
       let score = 0
 
       // 1. 甘辛スコア (最大 3点)
-      if (answers.taste === 'dry' && sake.dry_sweet_index < -2) score += 3
-      else if (answers.taste === 'sweet' && sake.dry_sweet_index > 3) score += 3
-      else if (answers.taste === 'balanced' && sake.dry_sweet_index >= -2 && sake.dry_sweet_index <= 3) score += 3
+      if (answers.taste === 'dry' && sake.sweetDry <= -2) score += 3
+      else if (answers.taste === 'sweet' && sake.sweetDry >= 2) score += 3
+      else if (answers.taste === 'balanced' && sake.sweetDry > -2 && sake.sweetDry < 2) score += 3
 
       // 2. アルコール度数スコア (最大 2点)
-      const alc = sake.alcohol_percentage
+      const alc = sake.specs.abv ?? 15
       if (answers.intensity === 'light' && alc <= 13.5) score += 2
       else if (answers.intensity === 'strong' && alc >= 16) score += 2
       else if (answers.intensity === 'medium' && alc > 13.5 && alc < 16) score += 2
 
       // 3. 香りスコア (最大 2点)
-      if (answers.aroma === 'fruity' && (sake.type === 'daiginjo' || sake.type === 'ginjo')) score += 2
-      else if (answers.aroma === 'floral' && (sake.type === 'daiginjo' || sake.type === 'ginjo')) score += 2
-      else if (answers.aroma === 'subtle' && (sake.type === 'pure_rice' || sake.type === 'honjozo')) score += 2
+      if ((answers.aroma === 'fruity' || answers.aroma === 'floral') && sake.flavorType === 'kaori') score += 2
+      else if (answers.aroma === 'subtle' && (sake.flavorType === 'sou' || sake.flavorType === 'jun')) score += 2
 
       // 4. シチュエーション（説明文からのマッチング） (最大 1点)
       const desc = sake.description || ''
@@ -148,7 +147,7 @@ export default function DiagnosisPanel({ allSakes, onSelectSake, onReset }: Diag
           </div>
         </div>
       ) : (
-        <div className="diag-result-area text-center block opacity-100 transform-none w-full">
+        <div className="diag-result-area is-active w-full">
           <p className="diag-result__eyebrow text-xs uppercase tracking-[0.2em] text-gold mb-2">
             DIAGNOSIS RESULT
           </p>
@@ -161,20 +160,20 @@ export default function DiagnosisPanel({ allSakes, onSelectSake, onReset }: Diag
 
           <div className="space-y-3 max-w-md mx-auto mb-8 text-left">
             {recommendations.map((sake) => (
-              <div 
-                key={sake.id} 
-                className="p-3 border border-gold/15 bg-[#030914]/60 rounded-xl flex items-center justify-between cursor-pointer hover:border-gold transition-colors duration-300"
-                onClick={() => onSelectSake(sake.id)}
+              <Link
+                key={sake.id}
+                href={`/sake/${sake.slug}`}
+                className="p-3 border border-gold/15 bg-[#030914]/60 rounded-xl flex items-center justify-between hover:border-gold transition-colors duration-300"
               >
                 <div className="flex items-center gap-3">
                   <div className="text-2xl bg-white/5 p-2 rounded-lg border border-white/5">🍶</div>
                   <div>
                     <div className="font-display text-sm font-bold text-washi">{sake.name}</div>
-                    <div className="text-[10px] text-gold/80">{sake.prefecture} / {sake.type === 'daiginjo' ? '純米大吟醸' : sake.type === 'ginjo' ? '吟醸酒' : sake.type === 'pure_rice' ? '純米酒' : '本醸造'}</div>
+                    <div className="text-[10px] text-gold/80">{sake.prefecture} / {sake.classification}</div>
                   </div>
                 </div>
                 <span className="text-xs text-gold/60 font-latin">詳細 →</span>
-              </div>
+              </Link>
             ))}
           </div>
 
