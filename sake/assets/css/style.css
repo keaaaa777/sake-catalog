@@ -131,7 +131,7 @@ body {
 /* 和の情緒を醸し出す縦書きセクション */
 .hero-vertical {
   writing-mode: vertical-rl;
-  height: 60svh;
+  height: 70svh;
   display: flex;
   flex-direction: column;
   justify-content: center;

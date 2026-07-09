@@ -33,6 +33,7 @@ export interface Sake {
   description: string
   imageUrl?: string
   affiliate: { rakuten?: string; amazon?: string; yahoo?: string; furusato?: string }[]
+  isRealData?: boolean
 }
 
 export interface Brewery {
@@ -44,6 +45,7 @@ export interface Brewery {
   description: string
   websiteUrl?: string
   imageUrl?: string
+  isRealData?: boolean
 }
 
 export interface QuizAnswers {

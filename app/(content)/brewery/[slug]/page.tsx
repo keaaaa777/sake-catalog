@@ -51,16 +51,16 @@ export default function BreweryDetailPage({ params }: { params: { slug: string }
       <div className="flex flex-col gap-8">
         <section className="content-card">
           <div className="panel-header">
-            <h2 className="panel-header__title" style={{ fontSize: '20px' }}>蔵について</h2>
+            <h2 className="panel-header__title">蔵について</h2>
             <span className="panel-header__sub">THE BREWERY</span>
           </div>
-          <p className="text-sm leading-relaxed" style={{ color: 'var(--paper-white)' }}>{brewery.description}</p>
+          <p className="text-lg leading-relaxed" style={{ color: 'var(--paper-white)' }}>{brewery.description}</p>
           {brewery.websiteUrl && (
             <a
               href={brewery.websiteUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-3 inline-block text-xs hover:underline"
+              className="mt-3 inline-block text-sm hover:underline"
               style={{ color: 'var(--gold-foil)' }}
             >
               公式サイトを見る →
@@ -70,7 +70,7 @@ export default function BreweryDetailPage({ params }: { params: { slug: string }
 
         <section className="content-card">
           <div className="panel-header">
-            <h2 className="panel-header__title" style={{ fontSize: '20px' }}>この蔵の銘柄</h2>
+            <h2 className="panel-header__title">この蔵の銘柄</h2>
             <span className="panel-header__sub">{sakes.length} SAKE</span>
           </div>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">

@@ -29,6 +29,12 @@ export default function Home() {
     const isFixed = ['home', 'region', 'quiz'].includes(step) || !!activePanel
     document.body.classList.toggle('fixed-screen', isFixed)
     document.body.classList.toggle('panel-opened', !!activePanel)
+
+    // 他ページへ実遷移してこのコンポーネントがアンマウントされた際に、
+    // body に付与した固定スクロール用クラスが残り続けないようにする
+    return () => {
+      document.body.classList.remove('fixed-screen', 'panel-opened')
+    }
   }, [step, activePanel])
 
   // 水面トランジションを伴う遷移関数

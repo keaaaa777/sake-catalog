@@ -124,7 +124,7 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
             <span className="content-pill">{flavor.label}({flavor.kana})</span>
           </div>
           <h1 className="content-title text-3xl md:text-4xl">{sake.name}</h1>
-          <p className="mt-3 text-sm" style={{ color: 'var(--mist)', textShadow: '0 1px 8px rgba(0,0,0,0.8)' }}>
+          <p className="mt-3 text-base" style={{ color: 'var(--mist)', textShadow: '0 1px 8px rgba(0,0,0,0.8)' }}>
             {sake.prefecture}
             {brewery && (
               <>
@@ -142,7 +142,7 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
         {/* 2. 味わいビジュアル */}
         <section className="content-card">
           <div className="panel-header">
-            <h2 className="panel-header__title" style={{ fontSize: '20px' }}>味わいの特徴</h2>
+            <h2 className="panel-header__title">味わいの特徴</h2>
             <span className="panel-header__sub">FLAVOR PROFILE</span>
           </div>
 
@@ -158,14 +158,14 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
           </div>
 
           <div>
-            <p className="mb-3 text-xs" style={{ color: 'var(--mist)' }}>香味レーダー(5段階)</p>
-            <div className="space-y-2.5">
+            <p className="mb-3 text-base" style={{ color: 'var(--mist)' }}>香味レーダー(5段階)</p>
+            <div className="space-y-3">
               {tasteAxes.map((axis) => (
                 <div key={axis.key} className="flex items-center gap-3">
-                  <span className="w-10 shrink-0 text-xs" style={{ color: 'var(--mist)' }}>{axis.label}</span>
-                  <div className="h-1.5 flex-1 rounded-full bg-white/5">
+                  <span className="w-12 shrink-0 text-base" style={{ color: 'var(--mist)' }}>{axis.label}</span>
+                  <div className="h-2 flex-1 rounded-full bg-white/5">
                     <div
-                      className="h-1.5 rounded-full"
+                      className="h-2 rounded-full"
                       style={{ width: `${(sake.taste[axis.key] / 5) * 100}%`, background: 'var(--gold-foil)' }}
                     />
                   </div>
@@ -178,27 +178,27 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
         {/* 3. スペック表 */}
         <section className="content-card">
           <div className="panel-header">
-            <h2 className="panel-header__title" style={{ fontSize: '20px' }}>スペック</h2>
+            <h2 className="panel-header__title">スペック</h2>
             <span className="panel-header__sub">SPECIFICATION</span>
           </div>
-          <dl className="grid grid-cols-2 gap-x-6 gap-y-4 text-sm sm:grid-cols-3">
+          <dl className="grid grid-cols-2 gap-x-6 gap-y-5 sm:grid-cols-3">
             {sake.specs.polishing != null && (
-              <div><dt className="text-xs" style={{ color: 'var(--mist)' }}>精米歩合</dt><dd className="mt-1" style={{ color: 'var(--paper-white)' }}>{sake.specs.polishing}%</dd></div>
+              <div><dt className="text-base" style={{ color: 'var(--mist)' }}>精米歩合</dt><dd className="mt-1 text-xl font-semibold" style={{ color: 'var(--paper-white)' }}>{sake.specs.polishing}%</dd></div>
             )}
             {sake.specs.rice && (
-              <div><dt className="text-xs" style={{ color: 'var(--mist)' }}>使用米</dt><dd className="mt-1" style={{ color: 'var(--paper-white)' }}>{sake.specs.rice}</dd></div>
+              <div><dt className="text-base" style={{ color: 'var(--mist)' }}>使用米</dt><dd className="mt-1 text-xl font-semibold" style={{ color: 'var(--paper-white)' }}>{sake.specs.rice}</dd></div>
             )}
             {sake.specs.yeast && (
-              <div><dt className="text-xs" style={{ color: 'var(--mist)' }}>酵母</dt><dd className="mt-1" style={{ color: 'var(--paper-white)' }}>{sake.specs.yeast}</dd></div>
+              <div><dt className="text-base" style={{ color: 'var(--mist)' }}>酵母</dt><dd className="mt-1 text-xl font-semibold" style={{ color: 'var(--paper-white)' }}>{sake.specs.yeast}</dd></div>
             )}
             {sake.specs.abv != null && (
-              <div><dt className="text-xs" style={{ color: 'var(--mist)' }}>アルコール度</dt><dd className="mt-1" style={{ color: 'var(--paper-white)' }}>{sake.specs.abv}%</dd></div>
+              <div><dt className="text-base" style={{ color: 'var(--mist)' }}>アルコール度</dt><dd className="mt-1 text-xl font-semibold" style={{ color: 'var(--paper-white)' }}>{sake.specs.abv}%</dd></div>
             )}
             {sake.specs.smv != null && (
-              <div><dt className="text-xs" style={{ color: 'var(--mist)' }}>日本酒度</dt><dd className="mt-1" style={{ color: 'var(--paper-white)' }}>{sake.specs.smv}</dd></div>
+              <div><dt className="text-base" style={{ color: 'var(--mist)' }}>日本酒度</dt><dd className="mt-1 text-xl font-semibold" style={{ color: 'var(--paper-white)' }}>{sake.specs.smv}</dd></div>
             )}
             {sake.specs.acid != null && (
-              <div><dt className="text-xs" style={{ color: 'var(--mist)' }}>酸度</dt><dd className="mt-1" style={{ color: 'var(--paper-white)' }}>{sake.specs.acid}</dd></div>
+              <div><dt className="text-base" style={{ color: 'var(--mist)' }}>酸度</dt><dd className="mt-1 text-xl font-semibold" style={{ color: 'var(--paper-white)' }}>{sake.specs.acid}</dd></div>
             )}
           </dl>
         </section>
@@ -209,7 +209,7 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
             {sake.servingTemp.length > 0 && (
               <div className="mb-6">
                 <div className="panel-header">
-                  <h2 className="panel-header__title" style={{ fontSize: '20px' }}>おすすめの飲み方</h2>
+                  <h2 className="panel-header__title">おすすめの飲み方</h2>
                   <span className="panel-header__sub">SERVING TEMPERATURE</span>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -223,7 +223,7 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
             {sake.pairings.length > 0 && (
               <div>
                 <div className="panel-header">
-                  <h2 className="panel-header__title" style={{ fontSize: '20px' }}>合う料理</h2>
+                  <h2 className="panel-header__title">合う料理</h2>
                   <span className="panel-header__sub">FOOD PAIRING</span>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -241,11 +241,11 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
         {/* 6. 紹介文 */}
         <section className="content-card">
           <div className="panel-header">
-            <h2 className="panel-header__title" style={{ fontSize: '20px' }}>紹介</h2>
+            <h2 className="panel-header__title">紹介</h2>
             <span className="panel-header__sub">ABOUT THIS SAKE</span>
           </div>
           <p
-            className="text-sm leading-relaxed"
+            className="text-lg leading-relaxed"
             style={{ color: 'var(--paper-white)', borderLeft: '2px solid var(--line-gold)', paddingLeft: '16px' }}
           >
             {sake.description}
@@ -255,10 +255,10 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
         {/* 7. 購入セクション */}
         <section className="content-card" style={{ borderColor: 'rgba(201, 176, 106, 0.4)' }}>
           <div className="panel-header">
-            <h2 className="panel-header__title" style={{ fontSize: '20px' }}>この日本酒を購入する</h2>
+            <h2 className="panel-header__title">この日本酒を購入する</h2>
             <span className="panel-header__sub">WHERE TO BUY</span>
           </div>
-          <p className="mb-4 text-[11px]" style={{ color: 'var(--mist)' }}>※本サイトはアフィリエイト広告を利用しています</p>
+          <p className="mb-4 text-sm" style={{ color: 'var(--mist)' }}>※本サイトはアフィリエイト広告を利用しています</p>
           <PurchaseButtons sakeId={sake.id} slug={sake.slug} mallLinks={mallLinks} sourceFlow="detail" />
         </section>
 
@@ -266,7 +266,7 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
         {similar.length > 0 && (
           <section className="content-card">
             <div className="panel-header">
-              <h2 className="panel-header__title" style={{ fontSize: '20px' }}>この銘柄が好きなら</h2>
+              <h2 className="panel-header__title">この銘柄が好きなら</h2>
               <span className="panel-header__sub">SIMILAR SAKE</span>
             </div>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -287,13 +287,13 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
         {brewery && (
           <section className="content-card">
             <div className="panel-header">
-              <h2 className="panel-header__title" style={{ fontSize: '20px' }}>酒蔵について</h2>
+              <h2 className="panel-header__title">酒蔵について</h2>
               <span className="panel-header__sub">THE BREWERY</span>
             </div>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--paper-white)' }}>
+            <p className="text-lg leading-relaxed" style={{ color: 'var(--paper-white)' }}>
               {brewery.description}
             </p>
-            <Link href={`/brewery/${brewery.slug}`} className="mt-3 inline-block text-xs hover:underline" style={{ color: 'var(--gold-foil)' }}>
+            <Link href={`/brewery/${brewery.slug}`} className="mt-3 inline-block text-base hover:underline" style={{ color: 'var(--gold-foil)' }}>
               {brewery.name}の詳細を見る →
             </Link>
           </section>

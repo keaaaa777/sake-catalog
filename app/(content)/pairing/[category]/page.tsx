@@ -41,7 +41,7 @@ export default function PairingPage({ params }: { params: { category: string } }
 
       <section className="content-card">
         <div className="panel-header">
-          <h2 className="panel-header__title" style={{ fontSize: '18px' }}>銘柄一覧</h2>
+          <h2 className="panel-header__title">銘柄一覧</h2>
           <span className="panel-header__sub">{sakes.length} SAKE</span>
         </div>
         {sakes.length === 0 ? (

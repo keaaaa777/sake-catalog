@@ -17,9 +17,9 @@ export default function PrivacyPage() {
       <div className="flex flex-col gap-6">
         <section className="content-card">
           <div className="panel-header">
-            <h2 className="panel-header__title" style={{ fontSize: '16px' }}>アクセス解析ツールについて</h2>
+            <h2 className="panel-header__title">アクセス解析ツールについて</h2>
           </div>
-          <p className="text-sm leading-relaxed" style={{ color: 'var(--paper-white)' }}>
+          <p className="text-base leading-relaxed" style={{ color: 'var(--paper-white)' }}>
             本サイトでは、Google Analytics(GA4)およびVercel Analyticsを利用して
             アクセス状況を解析しています。これらのツールはCookie等を利用してデータを収集しますが、
             個人を特定する情報は含まれません。収集されたデータは各サービス提供者のプライバシーポリシーに
@@ -29,9 +29,9 @@ export default function PrivacyPage() {
 
         <section className="content-card">
           <div className="panel-header">
-            <h2 className="panel-header__title" style={{ fontSize: '16px' }}>アフィリエイト広告について</h2>
+            <h2 className="panel-header__title">アフィリエイト広告について</h2>
           </div>
-          <p className="text-sm leading-relaxed" style={{ color: 'var(--paper-white)' }}>
+          <p className="text-base leading-relaxed" style={{ color: 'var(--paper-white)' }}>
             購入リンクの経由状況を計測するため、クリックログ(アクセス日時・参照元導線等)を
             サーバー側で記録する場合があります。詳細は
             <Link href="/disclosure" className="mx-1 hover:underline" style={{ color: 'var(--gold-foil)' }}>広告掲載ポリシー</Link>
@@ -41,9 +41,9 @@ export default function PrivacyPage() {
 
         <section className="content-card">
           <div className="panel-header">
-            <h2 className="panel-header__title" style={{ fontSize: '16px' }}>お問い合わせ</h2>
+            <h2 className="panel-header__title">お問い合わせ</h2>
           </div>
-          <p className="text-sm leading-relaxed" style={{ color: 'var(--paper-white)' }}>
+          <p className="text-base leading-relaxed" style={{ color: 'var(--paper-white)' }}>
             本ポリシーに関するお問い合わせは、サイト運営者までご連絡ください。
           </p>
         </section>

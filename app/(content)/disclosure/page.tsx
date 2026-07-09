@@ -14,7 +14,7 @@ export default function DisclosurePage() {
         <h1 className="content-title text-3xl md:text-4xl">広告掲載ポリシー</h1>
       </header>
 
-      <section className="content-card space-y-5 text-sm leading-relaxed" style={{ color: 'var(--paper-white)' }}>
+      <section className="content-card space-y-5 text-base leading-relaxed" style={{ color: 'var(--paper-white)' }}>
         <p>
           本サイト「雫 SAKE SELECT」は、Amazonアソシエイト・楽天アフィリエイト・
           バリューコマース・A8.netをはじめとするアフィリエイトプログラムに参加しています。

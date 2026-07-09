@@ -14,7 +14,7 @@ export default function AboutPage() {
         <h1 className="content-title text-3xl md:text-4xl">サイトについて</h1>
       </header>
 
-      <section className="content-card space-y-5 text-sm leading-relaxed" style={{ color: 'var(--paper-white)' }}>
+      <section className="content-card space-y-5 text-base leading-relaxed" style={{ color: 'var(--paper-white)' }}>
         <p>
           「雫 SAKE SELECT」は、味わい・産地・料理との相性から自分に合う日本酒を見つけ、
           そのまま購入先へ進める日本酒カタログサイトです。

@@ -41,12 +41,12 @@ export default function TypePage({ params }: { params: { flavorType: string } })
         <h1 className="content-title text-3xl md:text-4xl">
           {flavor.label} <span className="text-lg" style={{ color: 'var(--mist)' }}>({flavor.kana})</span>
         </h1>
-        <p className="mt-4 max-w-xl text-sm leading-relaxed" style={{ color: 'var(--mist)' }}>{flavor.desc}</p>
+        <p className="mt-4 max-w-xl text-base leading-relaxed" style={{ color: 'var(--mist)' }}>{flavor.desc}</p>
       </header>
 
       <section className="content-card">
         <div className="panel-header">
-          <h2 className="panel-header__title" style={{ fontSize: '18px' }}>銘柄一覧</h2>
+          <h2 className="panel-header__title">銘柄一覧</h2>
           <span className="panel-header__sub">{sakes.length} SAKE</span>
         </div>
         {sakes.length === 0 ? (

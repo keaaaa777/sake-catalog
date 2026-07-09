@@ -166,7 +166,7 @@ body.fixed-screen {
 /* 和の情緒を醸し出す縦書きセクション */
 .hero-vertical {
   writing-mode: vertical-rl;
-  height: 60svh;
+  height: 70svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -644,7 +644,7 @@ body.panel-opened .search-selector {
   align-items: center;
   gap: 8px;
   font-family: var(--font-body), sans-serif;
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 0.1em;
   color: var(--mist);
   margin-bottom: clamp(28px, 4vw, 44px);
@@ -659,7 +659,7 @@ body.panel-opened .search-selector {
 }
 .content-eyebrow {
   font-family: var(--font-latin), serif;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.3em;
   color: var(--gold-foil);
   text-transform: uppercase;
@@ -686,7 +686,7 @@ body.panel-opened .search-selector {
   align-items: center;
   gap: 8px;
   font-family: var(--font-body), sans-serif;
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 0.2em;
   color: var(--mist);
   text-decoration: none;
@@ -707,7 +707,7 @@ body.panel-opened .search-selector {
   padding: 14px 20px;
   text-align: center;
   font-family: var(--font-body), sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.1em;
   border: 1px solid var(--gold-foil);
@@ -735,8 +735,8 @@ body.panel-opened .search-selector {
   display: inline-flex;
   align-items: center;
   border-radius: 999px;
-  padding: 6px 16px;
-  font-size: 11px;
+  padding: 9px 20px;
+  font-size: 16px;
   letter-spacing: 0.08em;
   border: 1px solid var(--line-white);
   color: var(--paper-white);
@@ -774,12 +774,12 @@ body.panel-opened .search-selector {
 }
 .content-mini-card__name {
   font-family: var(--font-display), serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
   color: var(--paper-white);
 }
 .content-mini-card__meta {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--gold-foil);
   margin-top: 4px;
 }
@@ -790,14 +790,14 @@ body.panel-opened .search-selector {
   background: rgba(5, 12, 24, 0.7);
 }
 .content-stat-tile__label {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--mist);
   letter-spacing: 0.1em;
   margin-bottom: 6px;
 }
 .content-stat-tile__value {
   font-family: var(--font-display), serif;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 500;
   color: var(--paper-white);
 }

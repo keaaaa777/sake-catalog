@@ -12,8 +12,9 @@
     "slug": "hokkaido-brewery-002",
     "name": "男山株式会社",
     "prefecture": "北海道",
-    "description": "北海道の蔵元。地域の水や米を活かし、すっきりしつつふくよかな地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "旭川の伏流水と厳選した酒米で醸す蔵元。海外の酒類コンクールで長年にわたり受賞を重ね、道内屈指の知名度を誇る。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "3",
@@ -76,16 +77,18 @@
     "slug": "aomori-brewery-010",
     "name": "株式会社西田酒造店",
     "prefecture": "青森県",
-    "description": "青森県の蔵元。地域の水や米を活かし、寒冷地らしいきれいな地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "醸造アルコール無添加の純米酒造りを全国に先駆けて実践した蔵。青森県産米を用いた濃密な旨口の酒質で知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "11",
     "slug": "iwate-brewery-011",
     "name": "株式会社南部美人",
     "prefecture": "岩手県",
-    "description": "岩手県の蔵元。地域の水や米を活かし、寒冷地らしいきれいな地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "二戸市に蔵を構え、海外コンクールでの受賞歴も豊富な蔵元。地元産酒米を生かした食中酒造りに定評がある。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "12",
@@ -108,8 +111,9 @@
     "slug": "miyagi-brewery-014",
     "name": "株式会社一ノ蔵",
     "prefecture": "宮城県",
-    "description": "一ノ蔵で知られる宮城県の蔵元。日常の食卓に合う酒から特別酒まで幅広く手がける。",
-    "imageUrl": "🏛️"
+    "description": "1973年創業。級別審査を受けない「無鑑査」の発売で知られ、宮城の地酒を代表する存在として親しまれている。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "15",
@@ -124,8 +128,9 @@
     "slug": "akita-brewery-016",
     "name": "新政酒造株式会社",
     "prefecture": "秋田県",
-    "description": "秋田県の蔵元。地域の水や米を活かし、寒冷地らしいきれいな地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "協会6号酵母発祥の蔵。伝統的な木桶仕込みと現代的な酒質を融合させ、全国的なファンを持つ人気蔵。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "17",
@@ -148,8 +153,9 @@
     "slug": "yamagata-brewery-019",
     "name": "高木酒造",
     "prefecture": "山形県",
-    "description": "十四代で知られる山形県の蔵元。香りと旨味の調和に優れた銘柄で高い評価を得ている。",
-    "imageUrl": "🏛️"
+    "description": "「十四代」を醸す蔵として国内外で名高い。入手困難な希少性と一貫した高評価で知られる山形の名門蔵。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "20",
@@ -180,8 +186,9 @@
     "slug": "fukushima-brewery-023",
     "name": "大七酒造株式会社",
     "prefecture": "福島県",
-    "description": "福島県の蔵元。地域の水や米を活かし、寒冷地らしいきれいな地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "伝統技法「生酛造り」を貫く蔵として知られ、超扁平精米などの独自技術でも高く評価されている。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "24",
@@ -204,16 +211,18 @@
     "slug": "ibaraki-brewery-026",
     "name": "須藤本家株式会社",
     "prefecture": "茨城県",
-    "description": "茨城県の蔵元。地域の水や米を活かし、食事に合わせやすい地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "創業1141年と伝えられる、現存する日本最古級の酒蔵。契約栽培米のみを用いた純米大吟醸専業の蔵。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "27",
     "slug": "tochigi-brewery-027",
     "name": "株式会社せんきん",
     "prefecture": "栃木県",
-    "description": "栃木県の蔵元。地域の水や米を活かし、食事に合わせやすい地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "自社田での米作りから木桶仕込みまで手がける、テロワールを重視した酒造り。元ソムリエの蔵元が率いる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "28",
@@ -244,8 +253,9 @@
     "slug": "gunma-brewery-031",
     "name": "土田酒造株式会社",
     "prefecture": "群馬県",
-    "description": "群馬県の蔵元。地域の水や米を活かし、食事に合わせやすい地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "醸造アルコールも乳酸も使わない全量純米生酛仕込みへ転換した、伝統技術と革新性を両立する蔵。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "32",
@@ -268,8 +278,9 @@
     "slug": "saitama-brewery-034",
     "name": "神亀酒造株式会社",
     "prefecture": "埼玉県",
-    "description": "埼玉県の蔵元。地域の水や米を活かし、食事に合わせやすい地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "戦後いち早く全量純米酒化を実践した蔵。出荷前に長期熟成させる独自のスタイルで知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "35",
@@ -284,8 +295,9 @@
     "slug": "chiba-brewery-036",
     "name": "株式会社飯沼本家",
     "prefecture": "千葉県",
-    "description": "千葉県の蔵元。地域の水や米を活かし、食事に合わせやすい地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "創業300年を超える千葉県の老舗蔵。2023年にブランドを刷新し、新たな純米吟醸シリーズを展開している。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "37",
@@ -300,8 +312,9 @@
     "slug": "tokyo-brewery-038",
     "name": "小澤酒造株式会社",
     "prefecture": "東京都",
-    "description": "東京都の蔵元。地域の水や米を活かし、食事に合わせやすい地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "青梅・多摩川源流の水で仕込む、東京都内でも屈指の知名度を誇る蔵。観光地としても親しまれている。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "39",
@@ -324,8 +337,9 @@
     "slug": "kanagawa-brewery-041",
     "name": "泉橋酒造株式会社",
     "prefecture": "神奈川県",
-    "description": "神奈川県の蔵元。地域の水や米を活かし、食事に合わせやすい地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "自社で酒米栽培から手がける「栽培醸造蔵」。無農薬・減農薬栽培への取り組みでも知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "42",
@@ -364,8 +378,9 @@
     "slug": "niigata-brewery-046",
     "name": "八海醸造株式会社",
     "prefecture": "新潟県",
-    "description": "八海山で知られる新潟県の蔵元。清らかな水と雪国の風土を活かした酒造りを行う。",
-    "imageUrl": "🏛️"
+    "description": "淡麗辛口の新潟酒を象徴する蔵の一つ。全国の居酒屋や酒販店で定番となっている代表銘柄を持つ。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "47",
@@ -380,8 +395,9 @@
     "slug": "toyama-brewery-048",
     "name": "株式会社桝田酒造店",
     "prefecture": "富山県",
-    "description": "富山県の蔵元。地域の水や米を活かし、米の旨味とキレを両立した地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "富山を代表する銘酒を醸す蔵元。北陸の魚介料理との相性を意識した骨格のある酒質で知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "49",
@@ -404,8 +420,9 @@
     "slug": "ishikawa-brewery-051",
     "name": "株式会社車多酒造",
     "prefecture": "石川県",
-    "description": "石川県の蔵元。地域の水や米を活かし、米の旨味とキレを両立した地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "1980年代の山廃仕込み復興を牽引した蔵。全量自家精米にこだわった濃醇な酒質が持ち味。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "52",
@@ -428,8 +445,9 @@
     "slug": "fukui-brewery-054",
     "name": "黒龍酒造株式会社",
     "prefecture": "福井県",
-    "description": "福井県の蔵元。地域の水や米を活かし、米の旨味とキレを両立した地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "日本酒の高級化・大吟醸ブームを牽引した蔵の一つ。入手困難な希少銘柄を複数持つ名門蔵。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "55",
@@ -452,8 +470,9 @@
     "slug": "yamanashi-brewery-057",
     "name": "山梨銘醸株式会社",
     "prefecture": "山梨県",
-    "description": "山梨県の蔵元。地域の水や米を活かし、米の旨味とキレを両立した地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "南アルプス・甲斐駒ヶ岳の伏流水で仕込む「七賢」の蔵元。国内外のコンペティションでの受賞歴も多い。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "58",
@@ -468,8 +487,9 @@
     "slug": "nagano-brewery-059",
     "name": "宮坂醸造株式会社",
     "prefecture": "長野県",
-    "description": "長野県の蔵元。地域の水や米を活かし、米の旨味とキレを両立した地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "日本の醸造用酵母「協会7号」発祥の蔵。自社培養の酵母を用いた透明感のある酒質で知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "60",
@@ -492,8 +512,9 @@
     "slug": "gifu-brewery-062",
     "name": "有限会社渡辺酒造店",
     "prefecture": "岐阜県",
-    "description": "岐阜県の蔵元。地域の水や米を活かし、米の旨味とキレを両立した地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "飛騨産の契約栽培米を用いる蔵。国際線ファーストクラスの搭乗酒に採用された実績を持つ。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "63",
@@ -516,8 +537,9 @@
     "slug": "aichi-brewery-065",
     "name": "株式会社萬乗醸造",
     "prefecture": "愛知県",
-    "description": "愛知県の蔵元。地域の水や米を活かし、米の旨味とキレを両立した地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "ワイングラスでの提供を提案する洗練された酒質で、海外のソムリエからも評価が高い蔵。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "66",
@@ -540,16 +562,18 @@
     "slug": "mie-brewery-068",
     "name": "木屋正酒造合資会社",
     "prefecture": "三重県",
-    "description": "三重県の蔵元。地域の水や米を活かし、米の旨味とキレを両立した地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "「而今」を醸す蔵として全国的な人気を誇り、抽選や特約店限定販売で流通量が少ないことで知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "69",
     "slug": "shiga-brewery-069",
     "name": "冨田酒造有限会社",
     "prefecture": "滋賀県",
-    "description": "滋賀県の蔵元。地域の水や米を活かし、旨味と余韻を感じる地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "琵琶湖北端、賤ヶ岳の麓で1534年から続く老舗蔵。地元米・地元水にこだわった地酒造りを体現する。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "70",
@@ -580,8 +604,9 @@
     "slug": "kyoto-brewery-073",
     "name": "玉乃光酒造株式会社",
     "prefecture": "京都府",
-    "description": "京都府の蔵元。地域の水や米を活かし、洗練されてやわらかな地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "1964年に業界に先駆けて全量純米酒化を宣言した蔵。京料理との相性を意識した酒質で知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "74",
@@ -604,8 +629,9 @@
     "slug": "osaka-brewery-076",
     "name": "秋鹿酒造有限会社",
     "prefecture": "大阪府",
-    "description": "大阪府の蔵元。地域の水や米を活かし、旨味と余韻を感じる地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "自ら山田錦を栽培し、精米から醸造まで一貫して手がける蔵。G20大阪サミットの乾杯酒にも採用された。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "77",
@@ -636,8 +662,9 @@
     "slug": "hyogo-brewery-080",
     "name": "剣菱酒造株式会社",
     "prefecture": "兵庫県",
-    "description": "兵庫県の蔵元。地域の水や米を活かし、辛口でしっかりした地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "600年以上の歴史を持つ蔵。あえてスペックを公表しない「変わらぬ味」重視の哲学で知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "81",
@@ -676,16 +703,18 @@
     "slug": "nara-brewery-085",
     "name": "油長酒造株式会社",
     "prefecture": "奈良県",
-    "description": "奈良県の蔵元。地域の水や米を活かし、旨味と余韻を感じる地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "無濾過・無加水・生原酒の「風の森」で知られる蔵。独自の搾り技法で若々しい酒質を実現している。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "86",
     "slug": "wakayama-brewery-086",
     "name": "平和酒造株式会社",
     "prefecture": "和歌山県",
-    "description": "和歌山県の蔵元。地域の水や米を活かし、旨味と余韻を感じる地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "「紀州の風土」を体現するブランドを持つ蔵。海外への輸出でも人気が高い親しみやすい酒質が持ち味。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "87",
@@ -708,8 +737,9 @@
     "slug": "tottori-brewery-089",
     "name": "千代むすび酒造株式会社",
     "prefecture": "鳥取県",
-    "description": "鳥取県の蔵元。地域の水や米を活かし、穏やかでやわらかな地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "鳥取の希少な酒米「強力」を1990年代に復活させた蔵。骨太で濃醇な酒質を得意とする。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "90",
@@ -732,8 +762,9 @@
     "slug": "shimane-brewery-092",
     "name": "李白酒造有限会社",
     "prefecture": "島根県",
-    "description": "島根県の蔵元。地域の水や米を活かし、穏やかでやわらかな地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "出雲杜氏の伝統的な低温醸造技術を受け継ぐ小規模な蔵。海外への輸出実績も持つ。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "93",
@@ -756,8 +787,9 @@
     "slug": "okayama-brewery-095",
     "name": "宮下酒造株式会社",
     "prefecture": "岡山県",
-    "description": "岡山県の蔵元。地域の水や米を活かし、穏やかでやわらかな地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "岡山の希少な酒米「雄町」にこだわる蔵。品評会でも高評価を得る純米大吟醸を手がける。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "96",
@@ -780,8 +812,9 @@
     "slug": "hiroshima-brewery-098",
     "name": "賀茂鶴酒造株式会社",
     "prefecture": "広島県",
-    "description": "広島県の蔵元。地域の水や米を活かし、軟水由来のやわらかな地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "1958年に金箔入り大吟醸を発売した先駆的な蔵。広島を代表するギフト銘柄を多く持つ。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "99",
@@ -804,8 +837,9 @@
     "slug": "yamaguchi-brewery-101",
     "name": "株式会社 獺祭",
     "prefecture": "山口県",
-    "description": "獺祭で知られる山口県の蔵元。純米大吟醸を中心に、香り高く現代的な酒質で知られる。",
-    "imageUrl": "🏛️"
+    "description": "2025年に旭酒造から社名変更した、獺祭ブランドを世界的に知らしめた蔵。海外展開にも積極的。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "102",
@@ -828,8 +862,9 @@
     "slug": "tokushima-brewery-104",
     "name": "株式会社本家松浦酒造場",
     "prefecture": "徳島県",
-    "description": "徳島県の蔵元。地域の水や米を活かし、魚介に合う辛口寄りの地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "1804年創業、徳島県内最古とされる蔵。海外審査員も加わるコンテストでの受賞歴が続く。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "105",
@@ -852,16 +887,18 @@
     "slug": "kagawa-brewery-107",
     "name": "西野金陵株式会社",
     "prefecture": "香川県",
-    "description": "香川県の蔵元。地域の水や米を活かし、魚介に合う辛口寄りの地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "江戸時代から金刀比羅宮の御神酒を手がけてきた、「讃岐のこんぴら酒」で知られる老舗蔵。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "108",
     "slug": "ehime-brewery-108",
     "name": "石鎚酒造株式会社",
     "prefecture": "愛媛県",
-    "description": "愛媛県の蔵元。地域の水や米を活かし、魚介に合う辛口寄りの地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "西日本最高峰・石鎚山から名を取った蔵。「食中酒」を掲げる完成度の高い酒質で評価が高い。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "109",
@@ -884,8 +921,9 @@
     "slug": "kochi-brewery-111",
     "name": "酔鯨酒造株式会社",
     "prefecture": "高知県",
-    "description": "高知県の蔵元。地域の水や米を活かし、魚介に合う辛口寄りの地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "高知を代表し県外での流通量も多い蔵。はっきりとした酸とキレを特徴とする酒質で知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "112",
@@ -924,16 +962,18 @@
     "slug": "fukuoka-brewery-116",
     "name": "株式会社高橋商店",
     "prefecture": "福岡県",
-    "description": "福岡県の蔵元。地域の水や米を活かし、温暖な地域性を意識した地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "八女で300年近い歴史を持つ蔵。地元で福岡を代表する銘柄として名前が挙がることが多い。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "117",
     "slug": "saga-brewery-117",
     "name": "天山酒造株式会社",
     "prefecture": "佐賀県",
-    "description": "佐賀県の蔵元。地域の水や米を活かし、温暖な地域性を意識した地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "佐賀県産山田錦にこだわる蔵。同蔵の酒は国際線ビジネス・ファーストクラスの機内酒にも採用された。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "118",
@@ -956,8 +996,9 @@
     "slug": "nagasaki-brewery-120",
     "name": "福田酒造株式会社",
     "prefecture": "長崎県",
-    "description": "長崎県の蔵元。地域の水や米を活かし、温暖な地域性を意識した地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "日本本土最西端・平戸に蔵を構える、旧平戸藩の御用酒だった歴史を持つ蔵。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "121",
@@ -972,8 +1013,9 @@
     "slug": "kumamoto-brewery-122",
     "name": "花の香酒造株式会社",
     "prefecture": "熊本県",
-    "description": "熊本県の蔵元。地域の水や米を活かし、温暖な地域性を意識した地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "自然栽培米にこだわり、伝統技法「撥ね木搾り」を用いる蔵。海外コンクールでの受賞歴も豊富。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "123",
@@ -996,8 +1038,9 @@
     "slug": "oita-brewery-125",
     "name": "萱島酒造有限会社",
     "prefecture": "大分県",
-    "description": "大分県の蔵元。地域の水や米を活かし、温暖な地域性を意識した地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "明治期創業の蔵。両子山・文珠山からの軟水を仕込み水に使った上品な酒質で知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "126",
@@ -1020,23 +1063,26 @@
     "slug": "miyazaki-brewery-128",
     "name": "千徳酒造株式会社",
     "prefecture": "宮崎県",
-    "description": "宮崎県の蔵元。地域の水や米を活かし、温暖な地域性を意識した地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "宮崎県で唯一の清酒専門蔵。焼酎王国とされる宮崎で清酒の代表格として親しまれている。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "129",
     "slug": "kagoshima-brewery-129",
     "name": "薩摩金山蔵株式会社",
     "prefecture": "鹿児島県",
-    "description": "鹿児島県の蔵元。地域の水や米を活かし、温暖な地域性を意識した地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "坑洞内で長期貯蔵・熟成させる本格焼酎で知られる蔵。実は清酒も手がける珍しい存在。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   },
   {
     "id": "130",
     "slug": "okinawa-brewery-130",
     "name": "泰石酒造株式会社",
     "prefecture": "沖縄県",
-    "description": "沖縄県の蔵元。地域の水や米を活かし、温暖な地域性を意識した地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "description": "日本最南端の清酒蔵。泡盛が主流の沖縄で数少ない本格的な日本酒を醸す希少な蔵元。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   }
 ]
