@@ -9,7 +9,6 @@ import { getAllSakes } from '@/lib/data'
 import { REGION_COLORS } from '@/lib/mapData'
 import JapanMap from '@/components/JapanMap'
 import WaterBackground from '@/components/WaterBackground'
-import DiagnosisPanel from '@/components/DiagnosisPanel'
 
 const allSakes = getAllSakes()
 
@@ -26,7 +25,7 @@ export default function Home() {
 
   // スクロール制御およびパネルオープン状態の body 反映
   useEffect(() => {
-    const isFixed = ['home', 'region', 'quiz'].includes(step) || !!activePanel
+    const isFixed = ['home', 'region'].includes(step) || !!activePanel
     document.body.classList.toggle('fixed-screen', isFixed)
     document.body.classList.toggle('panel-opened', !!activePanel)
 
@@ -82,7 +81,7 @@ export default function Home() {
   }
 
   // ホバー時の波紋トリガー
-  const handleBtnHover = (e: React.PointerEvent<HTMLButtonElement>) => {
+  const handleBtnHover = (e: React.PointerEvent<HTMLElement>) => {
     if (!window.SakeWater) return
     const canvas = document.getElementById('water-canvas')
     if (!canvas) return
@@ -191,11 +190,10 @@ export default function Home() {
             </div>
           </button>
 
-          <button
-            type="button"
-            className="option-btn"
+          <Link
+            href="/diagnosis"
+            className="option-btn block"
             onPointerEnter={(e) => { handleBtnHover(e); playHoverDrip(); }}
-            onClick={() => changeStepWithTransition('quiz', 'panel-diagnosis')}
           >
             <div className="option-btn__content">
               <div className="option-btn__meta">
@@ -204,7 +202,7 @@ export default function Home() {
               </div>
               <span className="option-btn__arrow" aria-hidden="true">→</span>
             </div>
-          </button>
+          </Link>
         </section>
       </main>
 
@@ -404,22 +402,6 @@ export default function Home() {
           </div>
         )}
 
-        {/* 4. 診断から探す */}
-        {activePanel === 'panel-diagnosis' && (
-          <div className="sake-panel is-active">
-            <div className="panel-header">
-              <h3 className="panel-header__title">診断から探す</h3>
-              <span className="panel-header__sub">DIAGNOSIS</span>
-            </div>
-            
-            <DiagnosisPanel
-              allSakes={allSakes}
-              onReset={() => {
-                if (window.SakeAudio) window.SakeAudio.playDrip(0.5)
-              }}
-            />
-          </div>
-        )}
       </div>
 
       {/* 閉じる（戻る）ボタン */}
