@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { DIAGNOSIS_TYPE_IDS, getDiagnosisType } from '@/lib/diagnosisTypes'
 import { getSakesByFlavorType } from '@/lib/data'
 import { FLAVOR_TYPES } from '@/lib/flavor'
+import { SPECIALTY_EC_LINKS } from '@/lib/specialtyEc'
 import SakeThumb from '@/components/SakeThumb'
 
 export const revalidate = 86400
@@ -97,6 +98,28 @@ export default function DiagnosisResultPage({ params }: { params: { typeId: stri
                     <div className="content-mini-card__meta">{s.prefecture} / {s.classification}</div>
                   </div>
                 </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {SPECIALTY_EC_LINKS.length > 0 && (
+          <section className="content-card">
+            <div className="panel-header">
+              <h2 className="panel-header__title">日本酒専門EC・定期便もチェック</h2>
+              <span className="panel-header__sub">SPECIAL OFFERS</span>
+            </div>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              {SPECIALTY_EC_LINKS.map((ec) => (
+                <a
+                  key={ec.name}
+                  href={ec.url}
+                  target="_blank"
+                  rel="sponsored nofollow noopener"
+                  className="content-mall-btn flex-1"
+                >
+                  {ec.name}
+                </a>
               ))}
             </div>
           </section>

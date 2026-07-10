@@ -41,6 +41,17 @@ export function getSakesByPairing(category: string): Sake[] {
   return allSakes.filter((s) => s.pairings.includes(category))
 }
 
+export function getSakesByScene(scene: string): Sake[] {
+  return allSakes.filter((s) => s.scenes.includes(scene))
+}
+
+// 実クリックデータの蓄積前段として、実データ化済みの銘柄を都道府県順で
+// 「注目の日本酒」として掲載する(実際のクリック・購入数に基づくランキングではない)。
+export function getFeaturedSakes(limit?: number): Sake[] {
+  const sorted = [...allSakes].sort((a, b) => b.priceRange - a.priceRange || a.prefecture.localeCompare(b.prefecture, 'ja'))
+  return typeof limit === 'number' ? sorted.slice(0, limit) : sorted
+}
+
 export function getSimilarSakes(sake: Sake, limit = 4): Sake[] {
   return allSakes
     .filter((s) => s.id !== sake.id)

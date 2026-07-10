@@ -3942,5 +3942,1519 @@
     "imageUrl": "🍶",
     "affiliate": [],
     "isRealData": true
+  },
+  {
+    "id": "538",
+    "slug": "chateau-taisetsunokura-junmai-daiginjo-suisei30",
+    "name": "シャトー大雪乃蔵 純米大吟醸 彗星30",
+    "nameKana": "",
+    "breweryId": "hokkaido-brewery-001",
+    "prefecture": "北海道",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 5,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 5,
+      "sharpness": 1
+    },
+    "sweetDry": -3,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 30,
+      "rice": "彗星",
+      "abv": 15.5,
+      "smv": -6
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "旭川に工場を構える合同酒精が、大雪山系の伏流水と道産酒造好適米「彗星」で仕込む看板シリーズ「大雪乃蔵」の限定酒。60時間かけて精米歩合30%まで磨き上げ、低温でじっくり発酵させることで、洋梨を思わせる華やかな吟醸香と、甘みと酸味が調和した奥行きのある味わいを実現した。北海道産原料にこだわり抜いた造りは、白身魚のカルパッチョなど繊細な料理との相性が良い。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "539",
+    "slug": "kokushimusou-junmai-daiginjo-genshu-suisei",
+    "name": "純米大吟醸原酒 国士無双 彗星 蔵元限定酒",
+    "nameKana": "",
+    "breweryId": "hokkaido-brewery-003",
+    "prefecture": "北海道",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 45,
+      "rice": "彗星",
+      "abv": 17,
+      "smv": 3,
+      "acid": 1.3
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "大雪山の伏流水を仕込み水に、旭川で百年以上続く高砂酒造が醸す蔵元限定の原酒。道産米「彗星」を45%まで磨き、加水をせず搾ったままの状態で瓶詰めすることで、原酒ならではの重厚な旨みと骨太な味わいを表現している。後味は締まりのある辛口で、全国新酒鑑評会での受賞歴を誇る看板銘柄「国士無双」の実力を体感できる一本。脂ののった焼き魚や鍋料理と好相性。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "540",
+    "slug": "chitosetsuru-junmai-daiginjo-suisei",
+    "name": "千歳鶴 純米大吟醸 彗星",
+    "nameKana": "",
+    "breweryId": "hokkaido-brewery-005",
+    "prefecture": "北海道",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 4,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 2
+    },
+    "sweetDry": -1,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 45,
+      "rice": "彗星",
+      "abv": 15,
+      "smv": -2,
+      "acid": 1.3
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 1,
+    "description": "札幌に唯一残る蔵元、日本清酒が豊平川の伏流水で醸す代表銘柄「千歳鶴」の純米大吟醸。上川郡愛別町産の酒造好適米「彗星」を45%まで磨き、彗星らしいさらりとした軽快な口当たりに仕上げた。全国新酒鑑評会で連続金賞を重ねてきた確かな技術に裏打ちされ、優しい吟醸香と穏やかな旨みが特徴。刺身や寿司など北海道の海の幸との相性が抜群。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "541",
+    "slug": "fukutsukasa-junmai",
+    "name": "福司 純米酒",
+    "nameKana": "",
+    "breweryId": "hokkaido-brewery-006",
+    "prefecture": "北海道",
+    "classification": "純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 60,
+      "rice": "吟風",
+      "abv": 14,
+      "smv": 4,
+      "acid": 1.5
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 1,
+    "description": "道東唯一の蔵元として釧路で百年以上酒を醸してきた福司酒造の定番純米酒。道産米「吟風」を60%まで磨き、釧路の冷涼な気候の中でじっくりと低温熟成させることで、しっかりとした米の旨みとコクを引き出している。やや辛口ながら丸みのある味わいで、燗をつけても崩れない骨格の強さが持ち味。牡蠣やサンマなど道東の海の幸との相性が抜群な地酒。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "542",
+    "slug": "takaragawa-junmai-daiginjo",
+    "name": "純米大吟醸 宝川",
+    "nameKana": "",
+    "breweryId": "hokkaido-brewery-007",
+    "prefecture": "北海道",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 2,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 4
+    },
+    "sweetDry": 1,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 35,
+      "abv": 15.5,
+      "smv": 1
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "小樽運河のほとりで四季醸造を行う田中酒造が誇る看板銘柄「宝川」の最上位クラス。北海道産米を35%まで贅沢に磨き上げ、低温でゆっくりと醗酵させることで、上品な吟醸香と雑味のないなめらかな喉ごしを引き出した。小樽の観光名所としても知られる蔵の技術力が凝縮された一本で、繊細な白身魚の刺身や寿司との相性が良い。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "543",
+    "slug": "mutsuhassen-junmai-daiginjo-hanaomoi50",
+    "name": "陸奥八仙 純米大吟醸 華想い50",
+    "nameKana": "",
+    "breweryId": "aomori-brewery-009",
+    "prefecture": "青森県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 50,
+      "rice": "華想い",
+      "abv": 16,
+      "smv": -1
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "馬淵川のほとりで江戸時代から続く八戸酒造が手がける人気銘柄「陸奥八仙」の看板酒。青森県産米「華想い」を50%まで磨き、フルーティーで華やかな香りとみずみずしい甘みを引き出した。ジューシーで飲みやすい味わいは日本酒初心者にも人気が高く、若い蔵人たちの感性が息づく革新的な酒造りで全国的に注目を集めている。刺身や青森の魚介との相性が良い。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "544",
+    "slug": "urakasumi-zen-junmai-ginjo",
+    "name": "純米吟醸 浦霞禅",
+    "nameKana": "",
+    "breweryId": "miyagi-brewery-013",
+    "prefecture": "宮城県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 2,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 4
+    },
+    "sweetDry": 1,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 50,
+      "rice": "山田錦・トヨニシキ",
+      "abv": 15,
+      "smv": 2,
+      "acid": 1.5
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 1,
+    "description": "塩竈で12号酵母発祥の蔵として知られる佐浦が1973年から守り続ける辛口の代名詞「浦霞禅」。兵庫県産山田錦と宮城県産トヨニシキを50%まで磨き、キレのある辛口に仕上げている。穏やかな吟醸香と米の旨みが調和した端正な味わいで、燗酒としても評価が高い。全米日本酒歓評会での金賞受賞歴もあり、松島の新鮮な魚介との相性が抜群。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "545",
+    "slug": "hououbiden-junmai-ginjo-gohyakumangoku",
+    "name": "鳳凰美田 純米吟醸 五百万石",
+    "nameKana": "",
+    "breweryId": "tochigi-brewery-028",
+    "prefecture": "栃木県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 55,
+      "rice": "五百万石",
+      "abv": 16,
+      "smv": 3,
+      "acid": 1.4
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "明治5年創業の小林酒造が全量吟醸仕込みで醸す人気銘柄「鳳凰美田」。富山県産の酒造好適米「五百万石」を55%まで磨き、華やかで果実を思わせる香りと、透明感のあるキレの良い後味を引き出している。地元農家との契約栽培にも力を入れる丁寧な酒造りが評価され、全国の日本酒ファンから絶大な支持を得る銘柄。刺身や天ぷらなど幅広い料理と好相性。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "546",
+    "slug": "ryujin-junmai-daiginjo-39",
+    "name": "龍神 純米大吟醸39 山田錦×彗星",
+    "nameKana": "",
+    "breweryId": "gunma-brewery-030",
+    "prefecture": "群馬県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 39,
+      "rice": "山田錦・彗星",
+      "abv": 16
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "群馬県館林市の龍神酒造が醸す看板銘柄「龍神」の限定酒。兵庫県産山田錦と北海道産彗星を39%まで磨き上げ、長期醪でじっくりと仕込むことで、高精白ならではの華やかな果実香と雑味のない澄んだ味わいを実現した。異なる産地の酒米を組み合わせる意欲的な造りが特徴で、繊細な懐石料理や淡白な白身魚との相性が良い。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "547",
+    "slug": "hanaabi-junmai-daiginjo",
+    "name": "花陽浴 純米大吟醸 無濾過生原酒",
+    "nameKana": "",
+    "breweryId": "saitama-brewery-033",
+    "prefecture": "埼玉県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 48,
+      "abv": 16
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "利根川水系の伏流水と厳選した酒米を用い、48%まで磨き上げた南陽醸造の看板酒。マスカットや白桃を思わせる華やかな香りに、とろりとした甘みと繊細な酸が寄り添う現代的な味わいが持ち味。入手困難な「幻の酒」として全国の愛好家垂涎の的となっており、チーズや果物を使った前菜との相性も良い。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "548",
+    "slug": "kirinzan-dentou-karakuchi",
+    "name": "麒麟山 伝統辛口",
+    "nameKana": "",
+    "breweryId": "niigata-brewery-047",
+    "prefecture": "新潟県",
+    "classification": "普通酒",
+    "flavorType": "sou",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 3,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 65,
+      "abv": 15.5,
+      "smv": 6,
+      "acid": 1.3
+    },
+    "servingTemp": [
+      "涼冷え",
+      "常温"
+    ],
+    "pairings": [
+      "sashimi",
+      "fried"
+    ],
+    "scenes": [
+      "daily",
+      "beginner"
+    ],
+    "priceRange": 1,
+    "description": "阿賀野川源流域、奥阿賀の蔵で180年近く守られてきた淡麗辛口の系譜を体現する一本。精米歩合65%まで磨いた米を用い、日本酒度+6のキレの良さとまろやかな米の旨みを両立させている。地元で日常の晩酌酒として愛され続ける普段着の一献であり、川魚料理や郷土の煮物と合わせる晩酌にふさわしい。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "549",
+    "slug": "sasaichi-junmai-daiginjo-koshu-yumesansui",
+    "name": "笹一 純米大吟醸 甲州夢山水",
+    "nameKana": "",
+    "breweryId": "yamanashi-brewery-058",
+    "prefecture": "山梨県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 3,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 45,
+      "rice": "夢山水",
+      "abv": 16.5,
+      "smv": 5,
+      "acid": 1.45
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 1,
+    "description": "富士山の伏流水「御前水」と山梨県産の酒米・夢山水のみを使い、45%まで磨き上げた笹一酒造の看板酒。ライチを思わせる華やかな吟醸香とふくよかな旨みに、円やかな甘みが調和する濃醇な味わいが特徴。360年余の歴史を持つ蔵の技術の粋を尽くした一本で、郷土料理や川魚料理との相性が良い。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "550",
+    "slug": "keiryu-daiginjo",
+    "name": "渓流 大吟醸",
+    "nameKana": "",
+    "breweryId": "nagano-brewery-061",
+    "prefecture": "長野県",
+    "classification": "大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 2,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 39,
+      "rice": "山田錦",
+      "abv": 16,
+      "smv": 4,
+      "acid": 1.2
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "須坂の蔵に流れる清らかな伏流水にちなんで名付けられた看板銘柄。山田錦を39%まで磨き、低温でじっくり醸すことで上品な吟醸香と透明感のある淡麗な口当たりを引き出している。全国新酒鑑評会やIWCで金賞を重ねる実力派で、繊細な出汁を効かせた信州の郷土料理や白身魚との相性が良い。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "551",
+    "slug": "hyakujuro-kurozura-junmai-daiginjo",
+    "name": "百十郎 黒面 純米大吟醸",
+    "nameKana": "",
+    "breweryId": "gifu-brewery-064",
+    "prefecture": "岐阜県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 3,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 50,
+      "abv": 16,
+      "smv": 5
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 1,
+    "description": "米農家出身の初代が興した林本店を、5代目蔵元が新たな感性で受け継いで生まれた看板ブランド。隈取りを模した黒いラベルが目を引き、50%まで磨いた酒米から芳醇な香りと日本酒度+5のしっかりとした骨格が生まれる。伝統と革新を併せ持つ味わいで、鮎の塩焼きなど岐阜の川魚料理との相性が評判。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "552",
+    "slug": "zaku-miyabinotomo-nakadori-junmai-daiginjo",
+    "name": "作 雅乃智 中取り 純米大吟醸",
+    "nameKana": "",
+    "breweryId": "mie-brewery-067",
+    "prefecture": "三重県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 50,
+      "rice": "山田錦",
+      "abv": 16
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "搾りの中間、雑味のない中取り部分のみを瓶詰めした「作」シリーズを代表する看板酒。三重県産山田錦を50%まで磨き、華やかな香りと綺麗な米の旨みが澄んだ酸とともに広がる上品な味わいに仕上がっている。2016年の伊勢志摩サミットで乾杯酒に選ばれた実績を持ち、伊勢海老など地元の海の幸との相性も抜群。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "553",
+    "slug": "miyosakae-junmai-ginjo-oumimai-no-shizuku",
+    "name": "御代栄 純米吟醸 近江米のしずく",
+    "nameKana": "",
+    "breweryId": "shiga-brewery-071",
+    "prefecture": "滋賀県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 3,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 50,
+      "rice": "山田錦（近江産契約栽培）",
+      "abv": 16,
+      "smv": 5,
+      "acid": 1.4
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 1,
+    "description": "鈴鹿山系の伏流水と契約栽培の近江米・山田錦を全量使用し、生酛造りにもこだわる北島酒造の看板酒。精米歩合50%まで磨き上げ、ベリーを思わせる穏やかな吟醸香とすっきりとした辛口の後味が持ち味。琵琶湖の恵みを受けた食中酒として、鮒寿司や近江牛など滋賀の郷土料理との相性に定評がある。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "554",
+    "slug": "shotoku-junmai",
+    "name": "招德 純米酒",
+    "nameKana": "",
+    "breweryId": "kyoto-brewery-075",
+    "prefecture": "京都府",
+    "classification": "純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 70
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 1,
+    "description": "1970年代初頭から醸造アルコールを添加しない純米酒の復興に取り組んできた招德酒造の哲学を体現する一本。京都産米と伏見の名水のみで醸され、穏やかな香りと米の旨みが調和する柔らかな味わいが持ち味。京料理の繊細な出汁の風味を邪魔しない食中酒として、地元の料亭でも長く愛されている。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "555",
+    "slug": "katanosakura-junmai-daiginjo-hakuo",
+    "name": "片野桜 純米大吟醸 白櫻",
+    "nameKana": "",
+    "breweryId": "osaka-brewery-077",
+    "prefecture": "大阪府",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 40,
+      "rice": "山田錦",
+      "abv": 15
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "平安貴族が桜狩りに訪れたと伝わる交野の地で、江戸末期から酒を醸してきた山野酒造の看板酒。兵庫県産山田錦を40%まで磨き、上品な吟醸香とやや甘口のふくよかな米の旨みが調和する味わいに仕上げている。全国新酒鑑評会での金賞受賞歴も多く、大阪の郷土料理や上品な白身魚の刺身との相性が良い。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "556",
+    "slug": "kuninocho-daiginjo",
+    "name": "國乃長 大吟醸",
+    "nameKana": "",
+    "breweryId": "osaka-brewery-078",
+    "prefecture": "大阪府",
+    "classification": "大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 50,
+      "rice": "山田錦"
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "文政5年創業、摂津富田の地で200年以上の歴史を刻む壽酒造の看板酒。兵庫県産山田錦を50%まで磨き上げ、全国新酒鑑評会でも金賞を重ねてきた実力派。果実を思わせる華やかな吟醸香と、米の旨みを丁寧に引き出した奥行きのある味わいが持ち味で、慶事の贈答品としても選ばれる大阪地酒の代表格。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "557",
+    "slug": "tatsuriki-daiginjo-komenosasayaki-yk35",
+    "name": "龍力 大吟醸 米のささやき YK-35",
+    "nameKana": "",
+    "breweryId": "hyogo-brewery-081",
+    "prefecture": "兵庫県",
+    "classification": "大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 2,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 4
+    },
+    "sweetDry": 1,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 35,
+      "rice": "山田錦",
+      "abv": 17,
+      "smv": 2,
+      "acid": 1.5
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 4,
+    "description": "姫路の蔵元・本田商店が1979年に世に送り出し、冷酒文化の礎を築いたとされる大吟醸の名品。兵庫県特A地区産の山田錦を35%まで磨き抜き、華やかな吟醸香とまろやかな口当たりを実現している。40年以上にわたり愛され続ける実績は蔵の技術力の証で、上質な白身魚や吸い物との相性が良い。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "558",
+    "slug": "mimurosugi-junmai-daiginjo-yamadanishiki",
+    "name": "みむろ杉 純米大吟醸 山田錦",
+    "nameKana": "",
+    "breweryId": "nara-brewery-083",
+    "prefecture": "奈良県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 2,
+      "acidity": 4,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 4
+    },
+    "sweetDry": 1,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 50,
+      "rice": "山田錦",
+      "abv": 15,
+      "smv": 1,
+      "acid": 1.8
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "三輪山を御神体と仰ぐ大神神社の麓、日本酒発祥の地とされる桜井で醸される今西酒造の代表格。山田錦を50%まで磨き、三輪山の伏流水を仕込み水に用いることで、もぎたての白桃を思わせるジューシーな旨みと穏やかな吟醸香を引き出している。上品な酸のキレが後を引き、繊細な和食との相性に優れる。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "559",
+    "slug": "umenoyado-katsuragi-junmai-daiginjo",
+    "name": "梅乃宿 葛城 純米大吟醸",
+    "nameKana": "",
+    "breweryId": "nara-brewery-084",
+    "prefecture": "奈良県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 2,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 40,
+      "rice": "山田錦",
+      "abv": 16,
+      "smv": 3,
+      "acid": 1.1
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "1893年創業、葛城山系の超軟水を仕込み水とする梅乃宿酒造が誇る最高峰の一本。兵庫県産山田錦を100%用い40%まで磨き上げ、南部流の技で丁寧に醸すことで、淡麗でありながら米の旨みが豊かに広がる味わいに仕上げている。上品な吟醸香とやわらかな余韻が特徴で、慶事の一献にふさわしい銘酒。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "560",
+    "slug": "nihonjo-junmai-daiginjo",
+    "name": "日本城 純米大吟醸",
+    "nameKana": "",
+    "breweryId": "wakayama-brewery-087",
+    "prefecture": "和歌山県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 2,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 4
+    },
+    "sweetDry": 1,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 50,
+      "rice": "山田錦",
+      "abv": 16,
+      "smv": 1,
+      "acid": 1.6
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "大正4年創業、紀ノ川の伏流水で酒を醸す吉村秀雄商店の看板銘柄。山田錦を50%まで磨き上げ、熟したりんごを思わせるフルーティーな香りと、米由来のふくよかな旨みを丁寧に引き出している。酸のキレが味わいを引き締め、和歌山の郷土料理をはじめ様々な料理に寄り添う食中酒として親しまれている。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "561",
+    "slug": "kuroushi-junmai-ginjo",
+    "name": "黒牛 純米吟醸",
+    "nameKana": "",
+    "breweryId": "wakayama-brewery-088",
+    "prefecture": "和歌山県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 50,
+      "rice": "山田錦",
+      "abv": 16.5,
+      "smv": 4,
+      "acid": 1.4
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "紀州海南の黒江に蔵を構える名手酒造店が醸す代表銘柄。山田錦を50%まで磨き、蔵の井戸水がもたらす力強い発酵力によって、やわらかな吟醸香と米の旨みがしっかりと感じられる味わいに仕上がっている。燗からロックまで幅広く楽しめる懐の深さがあり、鮮魚や煮物など和食全般との相性が良い。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "562",
+    "slug": "suwaizumi-junmai-daiginjo-oho",
+    "name": "諏訪泉 純米大吟醸 鵬",
+    "nameKana": "",
+    "breweryId": "tottori-brewery-090",
+    "prefecture": "鳥取県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 3,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 40,
+      "rice": "山田錦",
+      "abv": 17,
+      "smv": 7,
+      "acid": 1.6
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 4,
+    "description": "安政6年創業、智頭宿に蔵を構える諏訪酒造が「幸せな食卓」を掲げて醸す蔵の最高峰。山田錦を40%まで磨き上げ、やや辛口の日本酒度+7ながら米の旨みをしっかりと感じさせる濃醇な味わいに仕上げている。華やかな香りとキレのある後口を併せ持ち、脂ののった魚料理や鍋物との相性が抜群の逸品。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "563",
+    "slug": "inatahime-junmai-daiginjo",
+    "name": "稲田姫 純米大吟醸",
+    "nameKana": "",
+    "breweryId": "tottori-brewery-091",
+    "prefecture": "鳥取県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 2,
+      "acidity": 2,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 4
+    },
+    "sweetDry": 1,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 38,
+      "rice": "山田錦",
+      "abv": 15,
+      "smv": 2.5,
+      "acid": 1.2
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "1673年創業、350年以上の歴史を持つ米子の老舗・稲田本店が、出雲神話の美女に銘を借りて醸す代表銘柄。山田錦を38%まで磨き上げ、上品でなめらかな口当たりと控えめながら華やかな吟醸香を引き出している。やわらかな酸が味わいを引き締め、繊細な白身魚の刺身や上質な和食との組み合わせが楽しめる。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "564",
+    "slug": "ouroku-junmai-daiginjo-funakake",
+    "name": "王祿 純米大吟醸 舟掛け 斗瓶囲い",
+    "nameKana": "",
+    "breweryId": "shimane-brewery-093",
+    "prefecture": "島根県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 4,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 35,
+      "rice": "山田錦",
+      "abv": 17.6,
+      "smv": 4.1,
+      "acid": 2
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 4,
+    "description": "明治期創業、境港市に蔵を構える王祿酒造が、全量無濾過・生詰めにこだわり醸す看板の一本。山田錦を35%まで磨き、斗瓶囲いで丁寧に搾ることで濃厚な旨みと芳醇な香りを凝縮させている。しっかりとした酸が味を引き締め、食後酒としても余韻が長く楽しめ、濃い味付けの料理とも堂々と渡り合う実力派。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "565",
+    "slug": "juji-asahi-junmai-daiginjo",
+    "name": "十旭日 純米大吟醸",
+    "nameKana": "",
+    "breweryId": "shimane-brewery-094",
+    "prefecture": "島根県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 3,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 35,
+      "rice": "山田錦",
+      "abv": 16,
+      "smv": 5,
+      "acid": 1.5
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "出雲杜氏の技を継ぐ旭日酒造が、山田錦を35%まで磨き上げて醸す蔵の頂点に立つ一本。日本酒度+5のキレある辛口ながら、含むと上品な吟醸香と滑らかな米の旨みがふわりと広がる。仕込み水には出雲の清らかな伏流水を用い、丁寧な低温長期発酵で雑味のない澄んだ味わいを実現している。焼き魚や白身の刺身など、素材そのものの味を活かした和食との調和が光る、島根を代表する銘酒。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "566",
+    "slug": "sakehitosuji-junmai-daiginjo-akaiwa-omachi",
+    "name": "酒一筋 純米大吟醸 赤磐雄町",
+    "nameKana": "",
+    "breweryId": "okayama-brewery-096",
+    "prefecture": "岡山県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 40,
+      "rice": "雄町（赤磐雄町）"
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "幻の酒米と呼ばれた雄町を自ら復活させた利守酒造が、地元赤磐産の雄町米を40%まで磨き上げて醸す渾身の一本。ふくよかな米の甘みと上品な香りが幾重にも重なり、全国新酒鑑評会でも高い評価を積み重ねてきた実力派の蔵の看板酒。常温からぬる燗まで温度帯によって表情を変える懐の深さも魅力で、瀬戸内の新鮮な魚介料理との相性も抜群である。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "567",
+    "slug": "gozenshu-omachi-junmai-daiginjo-genshu",
+    "name": "御前酒 雄町純米大吟醸 原酒",
+    "nameKana": "",
+    "breweryId": "okayama-brewery-097",
+    "prefecture": "岡山県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 50,
+      "rice": "雄町",
+      "abv": 17,
+      "smv": 3
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "文化元年創業、岡山県初の女性杜氏が腕を振るう辻本店の看板酒。地元真庭産の雄町米を50%まで磨き上げ、原酒ならではの豊かなコクと米の甘みを凝縮させた純米大吟醸に仕立てている。かつて美作勝山藩の御用達として献上された「御膳酒」の歴史を今に伝え、日本酒度+3のふくよかな味わいは、鰆の西京焼きなど脂ののった郷土料理との相性が良い。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "568",
+    "slug": "kirei-junmai-ginjo-senbonnishiki",
+    "name": "亀齢 純米吟醸 千本錦",
+    "nameKana": "",
+    "breweryId": "hiroshima-brewery-100",
+    "prefecture": "広島県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 3,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 60,
+      "rice": "千本錦",
+      "abv": 16,
+      "smv": 5
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "西条の名水と八反系の酒米にこだわり続ける亀齢酒造が、広島県産の千本錦を60%まで磨いて醸す純米吟醸。青リンゴを思わせる穏やかな吟醸香と、すっと消えていく淡麗でキレのある喉ごしが特徴で、日本酒度+5の辛口ながら米の旨みもしっかりと感じられる。地元杜氏が培ってきた技術が息づく食中酒として、瀬戸内の新鮮な魚介との晩酌にふさわしい一本。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "569",
+    "slug": "toyobijin-junmai-ginjo-50",
+    "name": "東洋美人 純米吟醸50",
+    "nameKana": "",
+    "breweryId": "yamaguchi-brewery-102",
+    "prefecture": "山口県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 5,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 1
+    },
+    "sweetDry": -2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 50,
+      "rice": "山田錦",
+      "abv": 15.6,
+      "smv": -5,
+      "acid": 1.6
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "萩の地で米屋から酒蔵へと転じた澄川酒造場が、山田錦を50%まで磨いて醸す代表銘柄。日本酒度-5の柔らかな甘みと酸度1.6の爽やかな酸味が調和し、無濾過生詰ならではのみずみずしい果実香がふくらむ。海外の日本酒コンクールでも評価を受け、若き蔵元が伝統と革新を両立させる象徴的な一本として知られ、鶏の唐揚げなど脂のある料理とも心地よく響き合う。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "570",
+    "slug": "miyoshikiku-junmai-ginjo-yamadanishiki",
+    "name": "三芳菊 純米吟醸 山田錦",
+    "nameKana": "",
+    "breweryId": "tokushima-brewery-105",
+    "prefecture": "徳島県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 60,
+      "rice": "山田錦",
+      "abv": 13
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "四国山間の三好市で「既成概念を壊す酒造り」を掲げる三芳菊酒造が、山田錦を60%まで磨いて醸す純米吟醸。白ぶどうやマスカットを思わせる華やかな香りと、ジューシーで瑞々しい甘酸っぱさが個性的な味わいを生み出している。従来の日本酒像にとらわれない自由なスタイルは国内外の若い世代からも支持を集め、冷やしてデザート感覚で楽しむのもおすすめの一本。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "571",
+    "slug": "kawatsuru-junmai-daiginjo",
+    "name": "川鶴 純米大吟醸",
+    "nameKana": "",
+    "breweryId": "kagawa-brewery-106",
+    "prefecture": "香川県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 50,
+      "abv": 15
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "香川を流れる財田川の伏流水を仕込み水に用いる川鶴酒造の看板、純米大吟醸。厳選した酒米を50%まで磨き上げ、丁寧な手造り麹づくりで雑味を削ぎ落とした端正な味わいに仕上げている。アルコール度数15%とやや軽やかで、上品な吟醸香とすっきりとした後味が持ち味。讃岐うどんの出汁や瀬戸内の魚介料理など、香川ならではの食卓との相性が良い一本。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "572",
+    "slug": "iyo-kagiya-junmai-ginjo",
+    "name": "伊予賀儀屋 純米吟醸",
+    "nameKana": "",
+    "breweryId": "ehime-brewery-109",
+    "prefecture": "愛媛県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 50,
+      "rice": "松山三井",
+      "smv": 3,
+      "acid": 1.6
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "「水の都」西条の柔らかな伏流水「うちぬき」で醸す成龍酒造の代表銘柄。地元産の松山三井を50%まで磨き、日本酒度+3、酸度1.6のキレある辛口に仕上げた純米吟醸で、料理の脇役に徹する軽やかな飲み口を信条としている。派手さより食中酒としての完成度を追求した造りが評価され、鯛めしやじゃこ天など愛媛の郷土料理と合わせてこそ真価を発揮する一本。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "573",
+    "slug": "sukigokoro-junmai-daiginjo",
+    "name": "寿喜心 純米大吟醸",
+    "nameKana": "",
+    "breweryId": "ehime-brewery-110",
+    "prefecture": "愛媛県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 35,
+      "rice": "山田錦",
+      "abv": 16,
+      "smv": 0,
+      "acid": 1.5
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 4,
+    "description": "杜氏を置かず三兄弟のみで酒造りを担う首藤酒造が、兵庫県産山田錦を35%まで磨き上げた渾身の純米大吟醸。日本酒度±0、酸度1.5という均整の取れた味わいに、華やかな吟醸香と滑らかな米の旨みが重なり合う。祝いの席や慶事にふさわしい銘として名付けられただけあり、鯛の昆布締めや白身の椀物など繊細な料理と静かに寄り添う上質な一本。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
   }
 ]
