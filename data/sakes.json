@@ -6178,5 +6178,1691 @@
     "imageUrl": "🍶",
     "affiliate": [],
     "isRealData": true
+  },
+  {
+    "id": "592",
+    "slug": "fukushima-hiroki-junginjo-kuro",
+    "name": "飛露喜 純米吟醸 黒ラベル",
+    "nameKana": "",
+    "breweryId": "fukushima-brewery-143",
+    "prefecture": "福島県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 45,
+      "abv": 16
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "会津坂下町の廣木酒造本店が醸す純米吟醸酒です。麹米を精米歩合40%、掛米を50%程度まで磨き、山田錦と五百万石を組み合わせて仕込んでいます。甘酸っぱいフルーティーな香りと、バランスの良い酸味・旨みが特徴で、アルコール度数16%とやや高めながら飲み口は軽やかです。冷やしてフレッシュな香りを楽しむのに向いています。刺身やカルパッチョなど、さっぱりとした前菜との相性が良い一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "593",
+    "slug": "ishikawa-noguchinaohiko-junmai-daiginjo",
+    "name": "農口尚彦研究所 純米大吟醸",
+    "nameKana": "",
+    "breweryId": "ishikawa-brewery-144",
+    "prefecture": "石川県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {},
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 4,
+    "description": "杜氏・農口尚彦氏の技術と精神を次世代に継承するため2017年に新設された研究所が醸す純米大吟醸です。「五彩シリーズ」と呼ばれるラインの一本で、伝統的な手法を守りながら丁寧に醸されています。華やかな吟醸香と、米の旨みを生かした奥行きのある味わいが特徴です。冷やして香りを楽しむのが基本ですが、常温でも味わいの変化を楽しめます。特別な日の一献や、贈答用としても選ばれる一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "594",
+    "slug": "yamaguchi-taka-junginjo-yamadanishiki",
+    "name": "貴 純米吟醸 山田錦",
+    "nameKana": "",
+    "breweryId": "yamaguchi-brewery-145",
+    "prefecture": "山口県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 50,
+      "rice": "山田錦(山口県徳佐地区産)"
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "明治21年創業の永山本家酒造場が、山口県徳佐地区産の山田錦を100%使用して醸す純米吟醸酒です。精米歩合50%まで磨き上げ、穏やかな吟醸香と米の甘みを生かした柔らかな味わいに仕上げています。「癒しと米味」をコンセプトにした造りで、飲み疲れしにくい優しい口当たりが持ち味です。冷やから常温まで幅広く楽しめ、繊細な味わいの和食との相性が良い一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "595",
+    "slug": "tokyo-okunokami-junginjo-namachozumi",
+    "name": "屋守 純米吟醸 無調整生",
+    "nameKana": "",
+    "breweryId": "tokyo-brewery-146",
+    "prefecture": "東京都",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 50,
+      "rice": "八反錦(広島県産)",
+      "abv": 16
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "1596年創業の豊島屋の酒造部門が、東京都東村山市で醸す純米吟醸酒です。広島県産の八反錦を精米歩合50%まで磨き、加水調整をしない無調整生酒として瓶詰めしています。フレッシュで瑞々しい香りと、生酒ならではのふくらみのある味わいが特徴です。要冷蔵で、冷やして飲むのが基本の一本です。都市部にある酒蔵らしい端正な味わいで、和食全般との相性が良い酒です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "596",
+    "slug": "fukushima-hirotogawa-junginjo",
+    "name": "廣戸川 純米吟醸",
+    "nameKana": "",
+    "breweryId": "fukushima-brewery-147",
+    "prefecture": "福島県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 50,
+      "rice": "夢の香(福島県産)"
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "明治25年創業の松崎酒造店が、福島県産の酒米「夢の香」を100%使用して醸す純米吟醸酒です。精米歩合50%まで磨き、梨や白桃を思わせる穏やかな吟醸香と、米の甘みを感じるやわらかな酒質に仕上げています。派手さよりも上品さを重視した味わいで、食事の邪魔をしにくいのが特徴です。冷やして香りを楽しむほか、常温でも米の旨みが感じられます。天栄村の食材を使った和食と好相性です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "597",
+    "slug": "saga-nabeshima-junginjo",
+    "name": "鍋島 純米吟醸",
+    "nameKana": "",
+    "breweryId": "saga-brewery-148",
+    "prefecture": "佐賀県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {},
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "大正12年創業の富久千代酒造が、1998年に完成させた銘柄「鍋島」の純米吟醸です。酒米・精米歩合は非公表のこだわりを持つ商品もあるなど、蔵独自の製法へのこだわりが強い蔵元として知られています。バランスの取れた香りと旨みで、国内外の鑑評会でも評価されてきた銘柄です。冷やして華やかな香りを楽しむのが基本で、幅広い料理と合わせやすい懐の深さがあります。特別な席にもふさわしい一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "598",
+    "slug": "hiroshima-taketsuru-kimoto-junmai",
+    "name": "竹鶴 生酛純米",
+    "nameKana": "",
+    "breweryId": "hiroshima-brewery-149",
+    "prefecture": "広島県",
+    "classification": "生酛純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 70,
+      "rice": "雄町(広島県産)"
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "享保18年創業、広島県竹原市の全量純米蔵・竹鶴酒造が醸す生酛純米酒です。広島県産の雄町米を精米歩合70%の低精白で使用し、酵母無添加の生酛造りで米の旨みを最大限に引き出しています。灘の伝統製法を当時のまま復活させた造りで、しっかりとした酸味と骨太な旨みが特徴です。燗にすると生酛らしい味わいがより一層引き立ちます。魚の煮つけなど、しっかりとした味付けの和食と好相性です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "599",
+    "slug": "yamaguchi-taka-nojun-karakuchi-junmai80",
+    "name": "貴 濃醇辛口純米80",
+    "nameKana": "",
+    "breweryId": "yamaguchi-brewery-145",
+    "prefecture": "山口県",
+    "classification": "純米酒",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 2,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 80
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 1,
+    "description": "永山本家酒造場が、精米歩合80%という低精白の米を使って醸す濃醇辛口の純米酒です。同じ蔵の「貴 純米吟醸」とは対照的に、米を大きく削らないことで生まれる力強い旨みとキレの良い辛口が持ち味です。飲みごたえのある骨太な味わいで、常温からぬる燗にするとさらに旨みが広がります。日常の晩酌向けの一本で、濃い味付けの家庭料理や煮物との相性が良い酒です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "600",
+    "slug": "hyogo-sawanotsuru-josen-honjozo",
+    "name": "沢の鶴 上撰 本醸造",
+    "nameKana": "",
+    "breweryId": "hyogo-brewery-150",
+    "prefecture": "兵庫県",
+    "classification": "本醸造",
+    "flavorType": "sou",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 70
+    },
+    "servingTemp": [
+      "涼冷え",
+      "常温"
+    ],
+    "pairings": [
+      "sashimi",
+      "fried"
+    ],
+    "scenes": [
+      "daily",
+      "beginner"
+    ],
+    "priceRange": 1,
+    "description": "1717年創業、灘五郷を代表する蔵元の一つ沢の鶴が醸す上撰クラスの本醸造酒です。精米歩合70%の米を使用し、灘の硬水で仕込むことでキレの良いすっきりとした辛口に仕上げています。クセの少ない飲みやすさが特徴で、冷やから燗まで幅広い温度帯に対応します。手頃な価格帯で日常使いしやすく、幅広い料理と合わせやすい懐の深さがあります。日常の晩酌に一本置いておきたい定番酒です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "601",
+    "slug": "okayama-taitenshiragiku-tokubetsuhonjozo",
+    "name": "大典白菊 特別本醸造 白い瀬",
+    "nameKana": "",
+    "breweryId": "okayama-brewery-151",
+    "prefecture": "岡山県",
+    "classification": "特別本醸造",
+    "flavorType": "sou",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 55
+    },
+    "servingTemp": [
+      "涼冷え",
+      "常温"
+    ],
+    "pairings": [
+      "sashimi",
+      "fried"
+    ],
+    "scenes": [
+      "daily",
+      "beginner"
+    ],
+    "priceRange": 1,
+    "description": "明治19年創業の白菊酒造が、岡山県高梁市成羽町で醸す特別本醸造酒です。精米歩合55%まで磨いた米を使用し、すっきりとした軽快な飲み口に仕上げています。中国山地の伏流水を仕込み水に使い、クセの少ない端正な味わいが特徴です。冷やしても燗にしても楽しめる懐の深さがあり、日常の食中酒として選びやすい一本です。瀬戸内の魚介料理など、素材の味を生かした料理との相性が良い酒です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "602",
+    "slug": "mie-wakaebisu-junmai",
+    "name": "若戎 純米酒",
+    "nameKana": "",
+    "breweryId": "mie-brewery-152",
+    "prefecture": "三重県",
+    "classification": "純米酒",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 70
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 1,
+    "description": "嘉永6年創業の若戎酒造が、三重県伊賀市で醸す純米酒です。三重県が開発した独自酵母を使い分けながら、米の旨みをしっかりと引き出す造りを続けています。精米歩合70%程度の米を使用し、コクのある味わいとしっかりとした酸味のバランスが特徴です。常温からぬる燗にすると、旨みがより豊かに感じられます。伊賀の郷土料理や、脂の乗った魚料理との相性が良い一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "603",
+    "slug": "nagano-kurouemon-kimoto-junmai",
+    "name": "十六代九郎右衛門 生もと仕込み純米",
+    "nameKana": "",
+    "breweryId": "nagano-brewery-153",
+    "prefecture": "長野県",
+    "classification": "生もと純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 2,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {},
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "慶安3年創業、標高1000mに蔵を構える湯川酒造店が、伝統の生もと仕込みで醸す純米酒です。木曽路の寒冷な気候と清らかな水を生かし、乳酸由来のしっかりとした酸味と骨太な旨みを引き出しています。生もとらしい力強さがありながら、木曽の酒らしい澄んだ後味も持ち合わせています。常温からぬる燗にすると、旨みと酸のバランスがより際立ちます。信州の山の幸を使った郷土料理との相性が良い一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "604",
+    "slug": "gifu-darumamasamune-nijunen-koshu",
+    "name": "達磨正宗 二十年古酒",
+    "nameKana": "",
+    "breweryId": "gifu-brewery-131",
+    "prefecture": "岐阜県",
+    "classification": "純米古酒",
+    "flavorType": "juku",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 2,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {},
+    "servingTemp": [
+      "ぬる燗",
+      "熱燗"
+    ],
+    "pairings": [
+      "cheese",
+      "other"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 4,
+    "description": "白木恒助商店が20年以上熟成させた、蔵の中でも最古参クラスの純米古酒です。日本晴を中心とした米で仕込んだ酒を長期間貯蔵しており、色合いは濃い琥珀色から茶褐色に達しています。極めて凝縮された甘みと旨みがあり、通常の日本酒とは別次元の味わいです。少量をリキュールのように味わうのがおすすめで、常温か軽く温めて香りを開かせると特徴がより際立ちます。特別な記念日の一献や、熟成古酒に慣れた方向けの一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "605",
+    "slug": "gifu-darumamasamune-jukusei-sannen",
+    "name": "達磨正宗 熟成三年",
+    "nameKana": "",
+    "breweryId": "gifu-brewery-131",
+    "prefecture": "岐阜県",
+    "classification": "純米古酒",
+    "flavorType": "juku",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 70,
+      "abv": 15
+    },
+    "servingTemp": [
+      "ぬる燗",
+      "熱燗"
+    ],
+    "pairings": [
+      "cheese",
+      "other"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "白木恒助商店の熟成古酒ラインの中では比較的飲みやすい、3年熟成の純米酒です。精米歩合70%の米を使用し、アルコール度数15%と穏やかな造りになっています。長期熟成古酒ほどの重厚さはありませんが、通常の日本酒にはない穏やかな熟成香とまろやかな旨みを楽しめます。熟成古酒の入門としても向いており、常温からぬる燗で香りの変化を楽しめます。中華料理やスパイスを使った料理との相性が良い一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "606",
+    "slug": "niigata-echigozakura-honjozo",
+    "name": "越後桜 本醸造",
+    "nameKana": "",
+    "breweryId": "niigata-brewery-154",
+    "prefecture": "新潟県",
+    "classification": "本醸造",
+    "flavorType": "sou",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 2,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 72
+    },
+    "servingTemp": [
+      "涼冷え",
+      "常温"
+    ],
+    "pairings": [
+      "sashimi",
+      "fried"
+    ],
+    "scenes": [
+      "daily",
+      "beginner"
+    ],
+    "priceRange": 1,
+    "description": "1890年創業の越後桜酒造が、新潟県阿賀野市「白鳥蔵」で醸す本醸造酒です。精米歩合72%の米を使用し、新潟らしいすっきりとした淡麗な味わいに仕上げています。クセの少ない飲みやすさで、冷やから燗まで幅広い温度帯に対応します。手頃な価格帯で日常使いしやすく、白鳥の飛来地としても知られる阿賀野の風土を感じさせる一本です。刺身や焼き魚など、素材の味を生かした料理との相性が良い酒です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "607",
+    "slug": "yamagata-dewanoyuki-honjozo",
+    "name": "出羽ノ雪 本醸造",
+    "nameKana": "",
+    "breweryId": "yamagata-brewery-155",
+    "prefecture": "山形県",
+    "classification": "本醸造",
+    "flavorType": "sou",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 2,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {},
+    "servingTemp": [
+      "涼冷え",
+      "常温"
+    ],
+    "pairings": [
+      "sashimi",
+      "fried"
+    ],
+    "scenes": [
+      "daily",
+      "beginner"
+    ],
+    "priceRange": 1,
+    "description": "山形県鶴岡市で400年近い歴史を刻む渡會本店が醸す本醸造酒です。庄内平野の米と水を生かし、すっきりとした軽快な飲み口に仕上げています。老舗ならではの丁寧な造りで、クセの少ない味わいが特徴です。冷やしてキレのある味わいを楽しむほか、燗にしても風味が崩れにくく、幅広い飲み方に対応します。庄内の魚介料理など、地元の食材との相性を意識した食中酒です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "608",
+    "slug": "ishikawa-okunoto-kimoto-junmai",
+    "name": "奥能登 生酛純米",
+    "nameKana": "",
+    "breweryId": "ishikawa-brewery-156",
+    "prefecture": "石川県",
+    "classification": "生酛純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 2,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {},
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "明治2年創業の数馬酒造が、能登の地で醸す生酛純米酒です。モダンな酒質を意識しながらも、伝統的な生酛造りによる乳酸由来の酸味と旨みを大切にした一本です。力強さと軽やかさを併せ持つ味わいで、生酛らしい骨格がありながら重すぎない飲み口が特徴です。常温からぬる燗にすると旨みがより広がります。能登の魚介や発酵食品との相性を意識した、食中酒として造られています。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "609",
+    "slug": "ishikawa-okunotonoshiragiku-tokubetsujunmai",
+    "name": "奥能登の白菊 特別純米酒",
+    "nameKana": "",
+    "breweryId": "ishikawa-brewery-157",
+    "prefecture": "石川県",
+    "classification": "特別純米酒",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 55,
+      "rice": "五百万石・山田錦"
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "享保7年創業、廻船問屋を起源とする白藤酒造店が、輪島の地で醸す特別純米酒です。五百万石と山田錦をブレンドし、精米歩合55%まで磨いて仕込んでいます。奥能登の気候風土を映した、しっかりとした米の旨みとコクが特徴です。常温からぬる燗にすると味わいがより豊かに感じられます。能登の海の幸や発酵食品など、地元の郷土料理との相性を意識して造られた一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "610",
+    "slug": "aichi-gikyo-enishi",
+    "name": "義侠 縁",
+    "nameKana": "",
+    "breweryId": "aichi-brewery-158",
+    "prefecture": "愛知県",
+    "classification": "特別純米",
+    "flavorType": "juku",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 4,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 60,
+      "rice": "山田錦(兵庫県東条特A地区)"
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "cheese",
+      "other"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "寛政年間創業の山忠本家酒造が、兵庫県東条特A地区産の山田錦を100%使用して醸す特別純米酒です。精米歩合60%まで磨いた酒を、常温で3年以上熟成させてから出荷しています。長期熟成によって生まれる濃縮された米の旨みと酸味が特徴で、通常の特別純米酒よりも奥行きのある味わいに仕上がっています。木曽御嶽山の伏流水を仕込み水に使い、まろやかな口当たりも持ち合わせています。常温からぬる燗にすると熟成感がより引き立ちます。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "611",
+    "slug": "shizuoka-shosetsu-honjozo",
+    "name": "正雪 本醸造",
+    "nameKana": "",
+    "breweryId": "shizuoka-brewery-159",
+    "prefecture": "静岡県",
+    "classification": "本醸造",
+    "flavorType": "sou",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 60,
+      "rice": "トヨニシキ"
+    },
+    "servingTemp": [
+      "涼冷え",
+      "常温"
+    ],
+    "pairings": [
+      "sashimi",
+      "fried"
+    ],
+    "scenes": [
+      "daily",
+      "beginner"
+    ],
+    "priceRange": 1,
+    "description": "大正元年創業の神沢川酒造場が、静岡市清水区由比で醸す本醸造酒です。地元産のトヨニシキを精米歩合60%まで磨いて仕込み、まろやかで飲み飽きしない味わいに仕上げています。名杜氏の技術を受け継ぐ蔵として知られ、日常使いの酒としての完成度を重視した造りが特徴です。冷やしても燗にしても楽しめる懐の深さがあり、由比の桜えびなど地元の海の幸との相性を意識した一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "612",
+    "slug": "fukushima-gakkimasamune-junmai",
+    "name": "楽器正宗 純米酒",
+    "nameKana": "",
+    "breweryId": "fukushima-brewery-160",
+    "prefecture": "福島県",
+    "classification": "純米酒",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 2,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 63
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 1,
+    "description": "慶応元年創業の大木代吉本店が、福島県矢吹町で醸す純米酒です。麹米精米歩合60%、掛米66%の米を使い、自然な原料での醸造にこだわって仕込んでいます。米の旨みとほどよい酸味のバランスが取れた、飲み飽きしない味わいが特徴です。常温からぬる燗にすると、じんわりとした旨みがより感じられます。日常の食卓に寄り添う一本として、煮物や焼き魚など家庭料理との相性が良い酒です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "613",
+    "slug": "akita-yukinobijin-junginjo",
+    "name": "ゆきの美人 純米吟醸",
+    "nameKana": "",
+    "breweryId": "akita-brewery-161",
+    "prefecture": "秋田県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 4,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 55
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "秋田市太平山の麓にある秋田醸造が、「酸と甘みの調和」をコンセプトに醸す純米吟醸酒です。精米歩合55%まで磨いた米を使用し、小仕込みで丁寧に管理された造りが特徴です。すっきりとした酸味と穏やかな甘みのバランスが良く、フルーティーな吟醸香も感じられます。冷やして飲むとキレの良さが際立ちます。爽やかな酸味を生かして、酢の物や柑橘を使った料理との相性も良い一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "614",
+    "slug": "shiga-matsunotsukasa-junginjo-raku",
+    "name": "松の司 純米吟醸 楽",
+    "nameKana": "",
+    "breweryId": "shiga-brewery-162",
+    "prefecture": "滋賀県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 55
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "万延元年創業の松瀬酒造が、滋賀県竜王町で醸す純米吟醸酒です。鈴鹿山系・愛知川の地下120mから汲み上げる伏流水を仕込み水に使い、精米歩合55%の米で醸しています。麹蓋を使った手作業の麹造りなど、伝統的な技法を大切にした造りが特徴です。華やかな吟醸香と、きめ細やかな米の旨みのバランスが取れた味わいです。冷やして香りを楽しむのに向いており、繊細な味わいの和食との相性が良い一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "615",
+    "slug": "tochigi-daina-chokarakuchi-junmai",
+    "name": "大那 超辛口純米 五百万石",
+    "nameKana": "",
+    "breweryId": "tochigi-brewery-029",
+    "prefecture": "栃木県",
+    "classification": "純米酒",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 2,
+      "sharpness": 5
+    },
+    "sweetDry": 3,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 60,
+      "rice": "五百万石(那須産)",
+      "abv": 15.8
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 1,
+    "description": "1866年創業の菊の里酒造が、那須産の五百万石を使って醸す超辛口の純米酒です。精米歩合60%まで磨いた米を使用し、アルコール度数15.8%とやや高めの飲みごたえのある造りになっています。同じ蔵の「大那 純米吟醸」とは対照的に、キレの良い辛口と米の旨みを前面に出した味わいが特徴です。常温からぬる燗にすると、辛さの中にある旨みがより感じられます。脂の乗った肉料理や、味の濃い家庭料理との相性が良い一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "616",
+    "slug": "niigata-yoshinogawa-junmai-daiginjo-hizoshu",
+    "name": "吉乃川 純米大吟醸 秘蔵酒",
+    "nameKana": "",
+    "breweryId": "niigata-brewery-163",
+    "prefecture": "新潟県",
+    "classification": "純米大吟醸",
+    "flavorType": "juku",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 40,
+      "rice": "新潟県産米"
+    },
+    "servingTemp": [
+      "ぬる燗",
+      "熱燗"
+    ],
+    "pairings": [
+      "cheese",
+      "other"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "天文17年創業、新潟県で最も古い歴史を持つ吉乃川が醸す純米大吟醸の秘蔵酒です。精米歩合40%まで磨いた新潟県産米を使い、マイナス5度の氷温で長期間じっくりと熟成させています。フルーティーで華やかな香りに、熟成による芳醇さと丸みのある後味が重なっているのが特徴です。冷やでも楽しめますが、常温にすると熟成由来の深みがより感じられます。特別な席の食後酒や、贈答用としても選ばれる一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "617",
+    "slug": "mie-rumikonosake-arugamama-kimoto",
+    "name": "るみ子の酒 あるがまま 生酛純米",
+    "nameKana": "",
+    "breweryId": "mie-brewery-164",
+    "prefecture": "三重県",
+    "classification": "生酛純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 4,
+      "umami": 4,
+      "aroma": 2,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 88
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "三重県伊賀市の森喜酒造場が、生酛造りにこだわって醸す純米酒です。精米歩合88%とほとんど米を削らずに仕込み、40日かけてじっくりと育てた酒母を低温でゆっくり発酵させています。米を大きく削らないことで生まれる骨太な旨みと、生酛由来のしっかりとした酸味が特徴です。無濾過生原酒として瓶詰めされることが多く、力強い飲みごたえがあります。常温からぬる燗にすると、より一層旨みが広がります。脂の乗った料理との相性が良い一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "618",
+    "slug": "fukui-hanagaki-nenpufu-daiginjo-junen-koshu",
+    "name": "花垣 年輪譜 大吟醸十年古酒",
+    "nameKana": "",
+    "breweryId": "fukui-brewery-165",
+    "prefecture": "福井県",
+    "classification": "大吟醸",
+    "flavorType": "juku",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 4,
+      "umami": 3,
+      "aroma": 4,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 45
+    },
+    "servingTemp": [
+      "ぬる燗",
+      "熱燗"
+    ],
+    "pairings": [
+      "cheese",
+      "other"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 4,
+    "description": "福井県大野市の南部酒造場が、精米歩合45%まで磨いた大吟醸酒を10年間熟成させた古酒です。長期熟成古酒でありながら、大吟醸らしい華やかな香りが失われずに残っているのが特徴で、鋭さのある酸味が全体を引き締めています。熟成による丸みと吟醸香の華やかさが同居する、他の熟成古酒とは一線を画す味わいです。冷やでも常温でも楽しめ、温度による変化も楽しめます。特別な席の食後酒としておすすめの一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "619",
+    "slug": "fukuoka-tanakarokujugo-junmai",
+    "name": "田中六五 糸島産山田錦 純米酒",
+    "nameKana": "",
+    "breweryId": "fukuoka-brewery-166",
+    "prefecture": "福岡県",
+    "classification": "純米酒",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 3,
+      "aroma": 3,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 65,
+      "rice": "山田錦(糸島産)"
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 1,
+    "description": "安政2年創業の白糸酒造が、山田錦の産地として知られる糸島の地元産山田錦を使って醸す純米酒です。精米歩合は銘柄名の由来にもなっている65%で統一されています。木製の槽に石の重しを使う「はね木搾り」という珍しい伝統製法で搾られており、きれいで丸みのある口当たりに、爽やかな酸が感じられるスムースな味わいが特徴です。冷やから常温まで幅広く楽しめ、地元糸島の魚介料理との相性を意識して造られた一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "620",
+    "slug": "shizuoka-suginishiki-kimoto-junmai90",
+    "name": "杉錦 生もと純米90",
+    "nameKana": "",
+    "breweryId": "shizuoka-brewery-167",
+    "prefecture": "静岡県",
+    "classification": "生もと純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 4,
+      "umami": 4,
+      "aroma": 2,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 90
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "天保9年創業の杉井酒造が、醸造量の8割以上を占める生酛・山廃造りで醸す純米酒です。精米歩合90%とほとんど米を削らずに仕込み、通常の1〜2倍の手間をかけた伝統製法で深みのある味わいを引き出しています。生酛らしいしっかりとした酸味と、削らない米ならではの力強い旨みが特徴です。常温からぬる燗にすると、複雑な味わいがより一層感じられます。濃い味付けの家庭料理や、発酵食品との相性が良い一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "621",
+    "slug": "ishikawa-tedorigawa-yamahai-honjozo",
+    "name": "手取川 山廃仕込 本醸造",
+    "nameKana": "",
+    "breweryId": "ishikawa-brewery-053",
+    "prefecture": "石川県",
+    "classification": "本醸造",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 4,
+      "umami": 3,
+      "aroma": 2,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {},
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 1,
+    "description": "白山市の吉田酒造店が、伝統の山廃仕込みで醸す本醸造酒です。同じ蔵の純米大吟醸とは対照的に、山廃由来のしっかりとした酸味とコクのある味わいを楽しめる一本です。手取川の伏流水を仕込み水に使い、骨太でありながら飲み飽きしない味わいに仕上げています。常温からぬる燗にすると、山廃らしい旨みがより引き立ちます。日常の食卓に寄り添う、濃いめの味付けの料理との相性が良い酒です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "622",
+    "slug": "hyogo-chikusen-yamahai-junmai-hiyaoroshi",
+    "name": "竹泉 山廃純米ひやおろし",
+    "nameKana": "",
+    "breweryId": "hyogo-brewery-168",
+    "prefecture": "兵庫県",
+    "classification": "山廃純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 4,
+      "umami": 4,
+      "aroma": 2,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 65,
+      "rice": "どんとこい(兵庫県産)"
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "元禄15年創業の田治米合名会社が、兵庫県産「どんとこい」を使って醸す山廃純米のひやおろしです。精米歩合65%まで磨いた米を山廃仕込みで醸し、ひと夏を越えて味を落ち着かせてから出荷しています。山廃らしい乳酸由来の酸味と、熟成でまろやかになった旨みのバランスが特徴です。常温からぬる燗にすると、旨みがより一層引き立ちます。秋の味覚、きのこ料理や脂の乗った秋刀魚との相性が良い一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "623",
+    "slug": "hyogo-okuharima-banshu-yamahai-junmai-namagenshu",
+    "name": "奥播磨 播秋 山廃純米生原酒",
+    "nameKana": "",
+    "breweryId": "hyogo-brewery-169",
+    "prefecture": "兵庫県",
+    "classification": "山廃純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 4,
+      "umami": 4,
+      "aroma": 2,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 55,
+      "rice": "兵庫夢錦(播州産)"
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "明治17年創業の下村酒造店が、播州産の兵庫夢錦を100%使用して醸す山廃純米の生原酒です。精米歩合55%まで磨いた米を山廃仕込みで丁寧に仕込み、加水調整をしない生原酒として瓶詰めしています。山廃由来のしっかりとした酸味と、生原酒ならではの力強い旨みが特徴です。純米酒のみを醸造する蔵らしい、米の個性を生かした濃醇な味わいです。常温からぬる燗にすると、旨みがより豊かに感じられます。秋の実りの料理との相性が良い一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "624",
+    "slug": "yamagata-hatsumago-densho-kimoto-honjozo",
+    "name": "初孫 伝承生もと本醸造",
+    "nameKana": "",
+    "breweryId": "yamagata-brewery-170",
+    "prefecture": "山形県",
+    "classification": "本醸造",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 2,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 60,
+      "smv": 0,
+      "acid": 1.5,
+      "abv": 15.5
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 1,
+    "description": "明治26年創業の東北銘醸が、全量生酛造りにこだわって醸す本醸造酒です。精米歩合60%の米を伝統の生酛造りで仕込み、日本酒度0・酸度1.5と穏やかな数値ながら、生酛由来の深みと旨みを感じられる味わいに仕上げています。燗にするとより一層旨みが引き立つのが特徴です。手頃な価格帯で、日常的に生酛造りの味わいを楽しめる一本です。家庭料理や焼き魚など、幅広い料理と合わせやすい酒です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "625",
+    "slug": "fukushima-aizumusume-honjozo-nigori-genshu",
+    "name": "会津娘 本醸造にごり原酒",
+    "nameKana": "",
+    "breweryId": "fukushima-brewery-171",
+    "prefecture": "福島県",
+    "classification": "本醸造",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 4,
+      "umami": 4,
+      "aroma": 2,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 60,
+      "rice": "五百万石・夢の香",
+      "acid": 1.5,
+      "abv": 19
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "会津若松市の高橋庄作酒造店が、地元の米と水にこだわって醸す本醸造のにごり原酒です。精米歩合60%の五百万石・夢の香を使い、加水調整をしない原酒として瓶詰めしているため、アルコール度数19%と力強い味わいになっています。もろみを粗く漉すことで生まれる濃厚な口当たりと、しっかりとした旨みが特徴です。常温からぬる燗にすると、まろやかさが増して飲みやすくなります。濃い味付けの鍋料理などとの相性が良い一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "626",
+    "slug": "yamagata-ooyama-honjozo",
+    "name": "大山 本醸造",
+    "nameKana": "",
+    "breweryId": "yamagata-brewery-172",
+    "prefecture": "山形県",
+    "classification": "本醸造",
+    "flavorType": "sou",
+    "taste": {
+      "sweetness": 2,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 4
+    },
+    "sweetDry": 1,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 65,
+      "rice": "山形県産米",
+      "abv": 15.5
+    },
+    "servingTemp": [
+      "涼冷え",
+      "常温"
+    ],
+    "pairings": [
+      "sashimi",
+      "fried"
+    ],
+    "scenes": [
+      "daily",
+      "beginner"
+    ],
+    "priceRange": 1,
+    "description": "明治5年創業の加藤嘉八郎酒造が、山形県鶴岡市大山の地で醸す本醸造酒です。山形県産米を精米歩合65%まで磨き、キレの良い辛口に仕上げています。特に燗にしたときの味わいの良さに定評があり、温めることで米の旨みがふくらむのが特徴です。冷やでもすっきりとした飲み口を楽しめます。庄内の魚介料理や、家庭的な和食との相性が良く、日常の食中酒として選びやすい一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "627",
+    "slug": "shimane-yamasanmasamune-yamahai-junmai",
+    "name": "ヤマサン正宗 山廃仕込み純米酒",
+    "nameKana": "",
+    "breweryId": "shimane-brewery-173",
+    "prefecture": "島根県",
+    "classification": "山廃純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 4,
+      "umami": 4,
+      "aroma": 2,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {},
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "明治10年創業の酒持田本店が、出雲の地で伝統の山廃仕込みで醸す純米酒です。乳酸菌を自然に取り込む昔ながらの山廃造りで、じっくりと時間をかけて仕込んでいます。山廃らしいしっかりとした酸味と、コクのある米の旨みが特徴です。常温からぬる燗にすると、旨みと酸のバランスがより豊かに感じられます。出雲そばや地元の魚料理など、しっかりとした味わいの郷土料理との相性が良い一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "628",
+    "slug": "wakayama-taiheiyo-yamahai-tokubetsujunmai",
+    "name": "太平洋 山廃仕込み 特別純米酒",
+    "nameKana": "",
+    "breweryId": "wakayama-brewery-174",
+    "prefecture": "和歌山県",
+    "classification": "特別純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 4,
+      "umami": 4,
+      "aroma": 2,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {},
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "本州最南端の蔵元として知られる尾﨑酒造が、熊野川の伏流水を使い山廃仕込みで醸す特別純米酒です。熊野三山地域で唯一の蔵元として、伝統的な手造りの酒造りを続けています。山廃由来のしっかりとした酸味と、熊野の水がもたらすまろやかな旨みが調和した味わいです。常温からぬる燗にすると、味わいがより一層引き立ちます。新宮の海の幸や、熊野の郷土料理との相性を意識して造られた一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "629",
+    "slug": "tokushima-narutotai-honjozo-kinmatsu",
+    "name": "鳴門鯛 本醸造 金松",
+    "nameKana": "",
+    "breweryId": "tokushima-brewery-104",
+    "prefecture": "徳島県",
+    "classification": "本醸造",
+    "flavorType": "sou",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {},
+    "servingTemp": [
+      "涼冷え",
+      "常温"
+    ],
+    "pairings": [
+      "sashimi",
+      "fried"
+    ],
+    "scenes": [
+      "daily",
+      "beginner"
+    ],
+    "priceRange": 1,
+    "description": "文化元年創業の本家松浦酒造場が、同蔵の看板である純米大吟醸とは対照的に、日常使いを意識して醸す本醸造酒です。鳴門海峡の鳴門鯛にちなんで名付けられた蔵の代表銘柄の一つで、クセの少ないすっきりとした味わいに仕上げています。冷やから燗まで幅広い温度帯で楽しめ、手頃な価格帯で選びやすいのが特徴です。鳴門海峡の魚介など、地元の海の幸との相性を意識して造られた一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "630",
+    "slug": "ehime-umenishiki-honjozo-yumehito",
+    "name": "梅錦 本醸造 夢人 銀ラベル",
+    "nameKana": "",
+    "breweryId": "ehime-brewery-175",
+    "prefecture": "愛媛県",
+    "classification": "本醸造",
+    "flavorType": "sou",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {},
+    "servingTemp": [
+      "涼冷え",
+      "常温"
+    ],
+    "pairings": [
+      "sashimi",
+      "fried"
+    ],
+    "scenes": [
+      "daily",
+      "beginner"
+    ],
+    "priceRange": 1,
+    "description": "明治5年創業の梅錦山川が、全国新酒鑑評会での金賞受賞歴を重ねてきた技術力で醸す本醸造酒です。「西の横綱」とも称される蔵の看板銘柄「梅錦」の中でも、日常使いしやすい価格帯とすっきりとした味わいを両立させた一本です。クセの少ない飲みやすさが特徴で、冷やから燗まで幅広く対応します。瀬戸内の魚介料理など、素材の味を生かした料理との相性が良く、普段の食卓に馴染みやすい酒です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "631",
+    "slug": "hyogo-zuisho-kuromatsukenbishi",
+    "name": "瑞祥黒松剣菱",
+    "nameKana": "",
+    "breweryId": "hyogo-brewery-080",
+    "prefecture": "兵庫県",
+    "classification": "大吟醸",
+    "flavorType": "juku",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": 1,
+    "specs": {
+      "rice": "山田錦(兵庫県産)"
+    },
+    "servingTemp": [
+      "ぬる燗",
+      "熱燗"
+    ],
+    "pairings": [
+      "cheese",
+      "other"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "創業1505年の剣菱酒造が、5年以上熟成させた酒をブレンドして仕上げる熟成タイプの限定酒です。兵庫県産の山田錦を使い、剣菱ならではの黄色く色づいた伝統の味わいをさらに深めています。凝縮された香りと穏やかな甘みが調和し、通常の黒松剣菱よりも複雑で奥行きのある味わいです。精米歩合はその年の米の出来に応じて調整するため公表していない、剣菱らしいこだわりの造りです。常温からぬる燗で、じっくりと味わうのに向いた一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "632",
+    "slug": "kanagawa-sagaminada-tokubetsuhonjozo",
+    "name": "相模灘 特別本醸造",
+    "nameKana": "",
+    "breweryId": "kanagawa-brewery-176",
+    "prefecture": "神奈川県",
+    "classification": "特別本醸造",
+    "flavorType": "sou",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 60,
+      "rice": "美山錦(長野県産)",
+      "abv": 16
+    },
+    "servingTemp": [
+      "涼冷え",
+      "常温"
+    ],
+    "pairings": [
+      "sashimi",
+      "fried"
+    ],
+    "scenes": [
+      "daily",
+      "beginner"
+    ],
+    "priceRange": 1,
+    "description": "弘化元年創業の久保田酒造が、丹沢山系の伏流水を使って醸す特別本醸造酒です。長野県産の美山錦を精米歩合60%まで磨き、すっきりとした味わいに仕上げています。相模原市の合併を機に「相模原の地酒」としても親しまれるようになった銘柄です。冷やしてキレの良さを楽しむのはもちろん、燗にしても味わいが崩れにくいのが特徴です。丹沢の清らかな水を思わせる、素材の味を生かした料理との相性が良い一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "633",
+    "slug": "saga-tenzan-shiboritatenama-honjozo",
+    "name": "天山 しぼりたて生 本醸造",
+    "nameKana": "",
+    "breweryId": "saga-brewery-117",
+    "prefecture": "佐賀県",
+    "classification": "本醸造",
+    "flavorType": "sou",
+    "taste": {
+      "sweetness": 3,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 3
+    },
+    "sweetDry": 0,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 65,
+      "rice": "日本晴(佐賀県産)",
+      "abv": 19
+    },
+    "servingTemp": [
+      "涼冷え",
+      "常温"
+    ],
+    "pairings": [
+      "sashimi",
+      "fried"
+    ],
+    "scenes": [
+      "daily",
+      "beginner"
+    ],
+    "priceRange": 1,
+    "description": "天山酒造が、佐賀県産の日本晴を使い、搾りたてをそのまま瓶詰めした生酒タイプの本醸造酒です。加水調整をしていないためアルコール度数19%と力強く、フレッシュでみずみずしい味わいが特徴です。同じ蔵の純米吟醸とは違い、日常使いしやすい価格帯と親しみやすい味わいを重視した造りになっています。要冷蔵で、冷やしてキレの良さを楽しむのに向いています。旬の魚料理との相性を意識して造られた季節限定の一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
+  },
+  {
+    "id": "634",
+    "slug": "saga-azumaichi-nama-honjozo",
+    "name": "東一 生酒 本醸造",
+    "nameKana": "",
+    "breweryId": "saga-brewery-177",
+    "prefecture": "佐賀県",
+    "classification": "本醸造",
+    "flavorType": "sou",
+    "taste": {
+      "sweetness": 4,
+      "acidity": 2,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 2
+    },
+    "sweetDry": -3,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 64,
+      "rice": "レイホウ",
+      "smv": -10,
+      "abv": 19
+    },
+    "servingTemp": [
+      "涼冷え",
+      "常温"
+    ],
+    "pairings": [
+      "sashimi",
+      "fried"
+    ],
+    "scenes": [
+      "daily",
+      "beginner"
+    ],
+    "priceRange": 1,
+    "description": "大正11年、瀬頭酒造から分家して創業した五町田酒造が醸す本醸造の生酒です。レイホウ米を精米歩合64%まで磨き、加水調整をしない生原酒として仕上げているため、アルコール度数19%と飲みごたえがあります。日本酒度-10という際立った甘口で、優しい甘みとフレッシュな香りが特徴です。要冷蔵で、冷やして飲むのが基本です。甘めの味付けの料理や、辛い料理の口休めとしても楽しめる一本です。",
+    "imageUrl": "🍶",
+    "affiliate": [],
+    "isRealData": true
   }
 ]
