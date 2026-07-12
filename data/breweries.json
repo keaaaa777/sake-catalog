@@ -1084,5 +1084,125 @@
     "description": "日本最南端の清酒蔵。泡盛が主流の沖縄で数少ない本格的な日本酒を醸す希少な蔵元。",
     "imageUrl": "🏛️",
     "isRealData": true
+  },
+  {
+    "id": "131",
+    "slug": "gifu-brewery-131",
+    "name": "白木恒助商店",
+    "prefecture": "岐阜県",
+    "foundedYear": 1835,
+    "description": "天保6年創業。熟成古酒を専門に手がける「達磨正宗」の醸造元で、長期熟成酒研究会の中心的蔵元の一つ。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "132",
+    "slug": "nara-brewery-132",
+    "name": "久保本家酒造",
+    "prefecture": "奈良県",
+    "foundedYear": 1702,
+    "description": "元禄15年創業。奈良県宇陀市で生酛造りにこだわり、熟成古酒「睡龍」を醸す蔵元。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "133",
+    "slug": "nara-brewery-133",
+    "name": "今西清兵衛商店",
+    "prefecture": "奈良県",
+    "foundedYear": 1884,
+    "description": "明治17年創業。奈良を代表する銘柄「春鹿」の醸造元。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "134",
+    "slug": "niigata-brewery-134",
+    "name": "白瀧酒造",
+    "prefecture": "新潟県",
+    "foundedYear": 1855,
+    "description": "安政2年創業。越後湯沢の蔵元で、淡麗な酒質の「上善如水」で知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "135",
+    "slug": "niigata-brewery-135",
+    "name": "宮尾酒造",
+    "prefecture": "新潟県",
+    "foundedYear": 1819,
+    "description": "文政2年創業。新潟県村上市の蔵元で、「〆張鶴」の銘柄で知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "136",
+    "slug": "hyogo-brewery-136",
+    "name": "白鶴酒造",
+    "prefecture": "兵庫県",
+    "foundedYear": 1743,
+    "description": "寛保3年創業。灘五郷を代表する大手蔵元の一つで、「白鶴」ブランドで全国に流通する。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "137",
+    "slug": "toyama-brewery-137",
+    "name": "立山酒造",
+    "prefecture": "富山県",
+    "foundedYear": 1830,
+    "description": "文政13年創業。富山県内最大規模の蔵元で、「立山」の銘柄で知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "138",
+    "slug": "kyoto-brewery-138",
+    "name": "木下酒造",
+    "prefecture": "京都府",
+    "foundedYear": 1842,
+    "description": "天保13年創業。京都府久美浜の蔵元で、山廃仕込みの「玉川」で知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "139",
+    "slug": "ishikawa-brewery-139",
+    "name": "菊姫合資会社",
+    "prefecture": "石川県",
+    "foundedYear": 1570,
+    "description": "戦国時代創業と伝わる石川県白山市の蔵元。1983年に日本で初めて「山廃仕込」表示の純米酒を発売した。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "140",
+    "slug": "fukushima-brewery-140",
+    "name": "末廣酒造",
+    "prefecture": "福島県",
+    "foundedYear": 1850,
+    "description": "嘉永3年創業。会津若松の蔵元で、伝統の山廃仕込みを継承する。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "141",
+    "slug": "miyagi-brewery-141",
+    "name": "平孝酒造",
+    "prefecture": "宮城県",
+    "foundedYear": 1861,
+    "description": "文久元年創業。宮城県石巻市の蔵元で、魚介に合う酒として「日高見」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "142",
+    "slug": "hiroshima-brewery-142",
+    "name": "賀茂泉酒造",
+    "prefecture": "広島県",
+    "foundedYear": 1912,
+    "description": "1912年創業。広島県東広島市西条の蔵元で、純米酒造りの先駆けとして知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   }
 ]

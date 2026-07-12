@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(git --version)",
+      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --eslint --no-git --import-alias @/* --app --no-src-dir --skip-install)",
+      "Bash(rm -rf /private/tmp/claude-501/-Users-nishidakenta-Desktop---------Git-------/ef4d07a6-1433-4357-b9b5-2b8d454b4fbe/scratchpad/sake-catalog-build)",
+      "Bash(npx --yes create-next-app@latest /private/tmp/claude-501/-Users-nishidakenta-Desktop---------Git-------/ef4d07a6-1433-4357-b9b5-2b8d454b4fbe/scratchpad/sake-catalog-build --typescript --tailwind --eslint --no-git --import-alias @/* --app --no-src-dir --skip-install)"
+    ]
+  }
+}

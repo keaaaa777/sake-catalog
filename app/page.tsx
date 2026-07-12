@@ -145,11 +145,11 @@ export default function Home() {
         <section className="search-selector">
           <h2 className="search-selector__title">酒の探し方を選ぶ</h2>
 
-          <button
-            type="button"
-            className="option-btn"
+          <Link
+            href="/area"
+            className="option-btn block"
             onPointerEnter={(e) => { handleBtnHover(e); playHoverDrip(); }}
-            onClick={() => changeStepWithTransition('region', 'panel-map')}
+            onClick={(e) => { e.preventDefault(); changeStepWithTransition('region', 'panel-map') }}
           >
             <div className="option-btn__content">
               <div className="option-btn__meta">
@@ -158,13 +158,13 @@ export default function Home() {
               </div>
               <span className="option-btn__arrow" aria-hidden="true">→</span>
             </div>
-          </button>
+          </Link>
 
-          <button
-            type="button"
-            className="option-btn"
+          <Link
+            href="/type"
+            className="option-btn block"
             onPointerEnter={(e) => { handleBtnHover(e); playHoverDrip(); }}
-            onClick={() => changeStepWithTransition('home', 'panel-taste')}
+            onClick={(e) => { e.preventDefault(); changeStepWithTransition('home', 'panel-taste') }}
           >
             <div className="option-btn__content">
               <div className="option-btn__meta">
@@ -173,13 +173,13 @@ export default function Home() {
               </div>
               <span className="option-btn__arrow" aria-hidden="true">→</span>
             </div>
-          </button>
+          </Link>
 
-          <button
-            type="button"
-            className="option-btn"
+          <Link
+            href="/search"
+            className="option-btn block"
             onPointerEnter={(e) => { handleBtnHover(e); playHoverDrip(); }}
-            onClick={() => changeStepWithTransition('home', 'panel-brand')}
+            onClick={(e) => { e.preventDefault(); changeStepWithTransition('home', 'panel-brand') }}
           >
             <div className="option-btn__content">
               <div className="option-btn__meta">
@@ -188,7 +188,7 @@ export default function Home() {
               </div>
               <span className="option-btn__arrow" aria-hidden="true">→</span>
             </div>
-          </button>
+          </Link>
 
           <Link
             href="/diagnosis"
@@ -404,16 +404,18 @@ export default function Home() {
 
       </div>
 
-      {/* 閉じる（戻る）ボタン */}
-      <button
-        type="button"
-        id="back-btn"
-        className={activePanel ? 'is-active' : ''}
-        onClick={() => changeStepWithTransition('home', null)}
-        aria-label="詳細パネルを閉じる"
-      >
-        ← 閉じる
-      </button>
+      {/* 閉じる（戻る）ボタン。初期HTMLにテキストを含めないよう activePanel 時のみ描画する */}
+      {activePanel && (
+        <button
+          type="button"
+          id="back-btn"
+          className="is-active"
+          onClick={() => changeStepWithTransition('home', null)}
+          aria-label="詳細パネルを閉じる"
+        >
+          ← 閉じる
+        </button>
+      )}
 
       {/* 5. お気に入り表示 */}
       {step === 'favorites' && (

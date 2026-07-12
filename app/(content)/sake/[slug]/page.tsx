@@ -259,6 +259,14 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
             <span className="panel-header__sub">WHERE TO BUY</span>
           </div>
           <p className="mb-4 text-sm" style={{ color: 'var(--mist)' }}>※本サイトはアフィリエイト広告を利用しています</p>
+          {sake.isPremium && (
+            <p
+              className="mb-4 text-sm leading-relaxed"
+              style={{ color: 'var(--kurenai, #c94a4a)', border: '1px solid rgba(201, 74, 74, 0.4)', borderRadius: '8px', padding: '10px 14px' }}
+            >
+              ※こちらは正規価格での入手が難しい銘柄です。表示価格が参考小売価格を大きく上回る場合があります。
+            </p>
+          )}
           <PurchaseButtons sakeId={sake.id} slug={sake.slug} mallLinks={mallLinks} sourceFlow="detail" />
         </section>
 
