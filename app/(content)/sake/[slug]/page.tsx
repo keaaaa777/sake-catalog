@@ -181,7 +181,7 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
             <h2 className="panel-header__title">スペック</h2>
             <span className="panel-header__sub">SPECIFICATION</span>
           </div>
-          <dl className="grid grid-cols-2 gap-x-6 gap-y-5 sm:grid-cols-3">
+          <dl className="grid grid-cols-1 gap-x-6 gap-y-5 min-[420px]:grid-cols-2 sm:grid-cols-3">
             {sake.specs.polishing != null && (
               <div><dt className="text-base" style={{ color: 'var(--mist)' }}>精米歩合</dt><dd className="mt-1 text-xl font-semibold" style={{ color: 'var(--paper-white)' }}>{sake.specs.polishing}%</dd></div>
             )}

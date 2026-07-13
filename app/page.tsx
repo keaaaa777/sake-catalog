@@ -232,7 +232,7 @@ export default function Home() {
                           setSelectedPrefecture(null)
                           if (window.SakeAudio) window.SakeAudio.playDrip(0.5)
                         }}
-                        className={`w-full flex items-center justify-between px-2 py-1.5 rounded-lg border transition text-left text-xs ${
+                        className={`w-full flex items-center justify-between px-2 py-2.5 lg:py-1.5 rounded-lg border transition text-left text-xs ${
                           selectedRegion === region
                             ? 'border-gold bg-gold/10 text-gold font-bold'
                             : 'border-white/10 hover:border-gold/40 hover:bg-gold/5 text-washi/80'
@@ -267,7 +267,7 @@ export default function Home() {
                           <button
                             key={pref}
                             onClick={() => goToPrefecture(pref)}
-                            className="w-full flex items-center justify-between px-2 py-1.5 rounded-lg border border-white/5 hover:border-gold/40 hover:bg-gold/5 transition text-left text-xs text-washi"
+                            className="w-full flex items-center justify-between px-2 py-2.5 lg:py-1.5 rounded-lg border border-white/5 hover:border-gold/40 hover:bg-gold/5 transition text-left text-xs text-washi"
                           >
                             <span>{pref}</span>
                             <ChevronRight size={14} className="text-gold/50" />
