@@ -6,8 +6,10 @@ import { FLAVOR_TYPES } from '@/lib/flavor'
 import { PAIRING_CATEGORIES } from '@/lib/pairing'
 import { PREFECTURE_SLUGS } from '@/lib/types'
 import { buildAffiliateLinks } from '@/lib/affiliate'
+import { getOffersForSake, getOffersFetchedAt } from '@/lib/offers'
 import SakeThumb from '@/components/SakeThumb'
 import PurchaseButtons from '@/components/PurchaseButtons'
+import ProductOfferCard from '@/components/ProductOfferCard'
 
 export const revalidate = 86400
 
@@ -49,6 +51,11 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
   const flavor = FLAVOR_TYPES[sake.flavorType]
   const similar = getSimilarSakes(sake)
   const mallLinks = buildAffiliateLinks(sake)
+  const offers = getOffersForSake(sake.slug)
+  const offersFetchedAt = getOffersFetchedAt()
+  // 楽天は比較カードで表示するため、その他モールのボタンからは重複を避けて除外する
+  const buttonMallLinks = offers.length > 0 ? mallLinks.filter((m) => m.mall !== 'rakuten') : mallLinks
+  const topOffer = offers[0]
   const prefSlug = PREFECTURE_SLUGS[sake.prefecture]
 
   const tasteAxes: { key: keyof typeof sake.taste; label: string }[] = [
@@ -75,6 +82,15 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
           availability: 'https://schema.org/InStock',
           seller: { '@type': 'Organization', name: m.label },
         })),
+        ...(topOffer?.reviewCount && topOffer.reviewCount > 0 && topOffer.reviewAverage != null
+          ? {
+              aggregateRating: {
+                '@type': 'AggregateRating',
+                ratingValue: topOffer.reviewAverage,
+                reviewCount: topOffer.reviewCount,
+              },
+            }
+          : {}),
       },
       {
         '@type': 'BreadcrumbList',
@@ -267,7 +283,8 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
               ※こちらは正規価格での入手が難しい銘柄です。表示価格が参考小売価格を大きく上回る場合があります。
             </p>
           )}
-          <PurchaseButtons sakeId={sake.id} slug={sake.slug} mallLinks={mallLinks} sourceFlow="detail" />
+          <ProductOfferCard sakeId={sake.id} slug={sake.slug} offers={offers} fetchedAt={offersFetchedAt} />
+          <PurchaseButtons sakeId={sake.id} slug={sake.slug} mallLinks={buttonMallLinks} sourceFlow="detail" />
         </section>
 
         {/* 8. 類似銘柄 */}
