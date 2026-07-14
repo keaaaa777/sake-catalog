@@ -3,13 +3,18 @@
 import Image from 'next/image'
 import { SakeOffer } from '@/lib/offers'
 import { trackAffiliateClick } from '@/lib/gtag'
-import { isProductionDomain } from '@/lib/is-production-domain'
 
 interface ProductOfferCardProps {
   sakeId: string
   slug: string
   offers: SakeOffer[]
   fetchedAt: string | null
+  // VERCEL_ENV は NEXT_PUBLIC_ 接頭辞が無いサーバー専用の環境変数のため、
+  // クライアントコンポーネント内で直接 process.env.VERCEL_ENV を読むと
+  // ブラウザ側では常に undefined になり判定が壊れる。呼び出し元の
+  // サーバーコンポーネント(page.tsx)で isProductionDomain() を評価し、
+  // 結果をpropとして渡すこと。
+  production: boolean
 }
 
 const STALE_DAYS = 30
@@ -28,8 +33,7 @@ function isStale(fetchedAt: string | null) {
   return (Date.now() - date.getTime()) / 86_400_000 > STALE_DAYS
 }
 
-export default function ProductOfferCard({ sakeId, slug, offers, fetchedAt }: ProductOfferCardProps) {
-  const production = isProductionDomain()
+export default function ProductOfferCard({ sakeId, slug, offers, fetchedAt, production }: ProductOfferCardProps) {
   const fetchedAtLabel = formatFetchedAt(fetchedAt)
 
   if (offers.length === 0) return null

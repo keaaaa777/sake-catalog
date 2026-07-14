@@ -7,6 +7,7 @@ import { PAIRING_CATEGORIES } from '@/lib/pairing'
 import { PREFECTURE_SLUGS } from '@/lib/types'
 import { buildAffiliateLinks } from '@/lib/affiliate'
 import { getOffersForSake, getOffersFetchedAt } from '@/lib/offers'
+import { isProductionDomain } from '@/lib/is-production-domain'
 import SakeThumb from '@/components/SakeThumb'
 import PurchaseButtons from '@/components/PurchaseButtons'
 import ProductOfferCard from '@/components/ProductOfferCard'
@@ -53,6 +54,7 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
   const mallLinks = buildAffiliateLinks(sake)
   const offers = getOffersForSake(sake.slug)
   const offersFetchedAt = getOffersFetchedAt()
+  const production = isProductionDomain()
   // 楽天は比較カードで表示するため、その他モールのボタンからは重複を避けて除外する
   const buttonMallLinks = offers.length > 0 ? mallLinks.filter((m) => m.mall !== 'rakuten') : mallLinks
   const topOffer = offers[0]
@@ -283,7 +285,7 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
               ※こちらは正規価格での入手が難しい銘柄です。表示価格が参考小売価格を大きく上回る場合があります。
             </p>
           )}
-          <ProductOfferCard sakeId={sake.id} slug={sake.slug} offers={offers} fetchedAt={offersFetchedAt} />
+          <ProductOfferCard sakeId={sake.id} slug={sake.slug} offers={offers} fetchedAt={offersFetchedAt} production={production} />
           <PurchaseButtons sakeId={sake.id} slug={sake.slug} mallLinks={buttonMallLinks} sourceFlow="detail" />
         </section>
 
