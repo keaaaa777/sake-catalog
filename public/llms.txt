@@ -9,11 +9,19 @@
 - /brewery/{slug} : 酒蔵詳細ページ。
 - /area/{prefecture} : 都道府県別の日本酒一覧。
 - /type/{kaori|sou|jun|juku} : 香味4分類(薫酒・爽酒・醇酒・熟酒)別の一覧。
-- /pairing/{category} : 料理との相性から探す一覧。
+- /pairing/{category} : 料理との相性から探す一覧(刺身・焼鳥・揚げ物・チーズ等)。
+- /scene/{daily|gift|beginner|special} : シーン別(晩酌・贈答・初心者・特別な日)の一覧。
+- /diagnosis : 好みを診断する質問フロー。
+- /diagnosis/result/{typeId} : 診断結果ページ。おすすめ銘柄と購入先を掲載。
+- /ranking : 編集部が厳選した注目の日本酒一覧。
+- /guide : 日本酒ガイド記事の一覧。
+- /guide/{slug} : 個別のガイド記事(甘辛・特定名称・保存方法など初心者向け解説)。
+- /search : 銘柄名・蔵元名からの横断検索。
 - /about : 運営者情報。
 - /disclosure : 広告掲載ポリシー(アフィリエイト表記)。
 - /privacy : プライバシーポリシー。
 
 ## 備考
 
-本サイトはアフィリエイト広告を含みます。詳細は /disclosure を参照してください。
+本サイトは楽天アフィリエイトプログラムを利用しています。詳細は /disclosure を参照してください。
+20歳未満の飲酒は法律で禁じられています。

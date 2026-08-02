@@ -137,6 +137,25 @@ body.fixed-screen {
   letter-spacing: 0.38em;
   white-space: nowrap;
 }
+.site-header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 24px;
+  pointer-events: auto;
+}
+.site-header__nav a {
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--paper-white);
+  opacity: 0.75;
+  transition: opacity 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+.site-header__nav a:hover {
+  opacity: 1;
+  color: var(--gold-foil);
+}
 .hub-back-btn {
   font-family: var(--font-body), sans-serif;
   font-size: 11px;

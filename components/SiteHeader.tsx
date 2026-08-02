@@ -7,6 +7,12 @@ export default function SiteHeader() {
         <span className="brand__logo" aria-hidden="true">雫</span>
         <span className="brand__name">SAKE SELECT</span>
       </Link>
+      <nav className="site-header__nav" aria-label="サイト内ナビゲーション">
+        <Link href="/diagnosis">1分診断</Link>
+        <Link href="/search">銘柄から探す</Link>
+        <Link href="/ranking">ランキング</Link>
+        <Link href="/guide">ガイド</Link>
+      </nav>
     </header>
   )
 }
