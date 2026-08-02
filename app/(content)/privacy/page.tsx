@@ -4,6 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'プライバシーポリシー|雫 SAKE SELECT',
   description: '雫 SAKE SELECTにおける個人情報・アクセス解析データの取り扱いについて。',
+  alternates: { canonical: '/privacy' },
 }
 
 export default function PrivacyPage() {

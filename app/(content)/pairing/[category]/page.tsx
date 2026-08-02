@@ -17,6 +17,7 @@ export function generateMetadata({ params }: { params: { category: string } }): 
   return {
     title: `${category.label}に合う日本酒|雫 SAKE SELECT`,
     description: `${category.label}と好相性の日本酒を一覧で紹介。今夜の料理に合う一杯を探せます。`,
+    alternates: { canonical: `/pairing/${params.category}` },
   }
 }
 

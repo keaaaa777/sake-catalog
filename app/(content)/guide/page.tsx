@@ -7,6 +7,7 @@ export const revalidate = 86400
 export const metadata: Metadata = {
   title: '日本酒ガイド|雫 SAKE SELECT',
   description: '日本酒度の読み方、特定名称の違い、保存方法など、日本酒をもっと楽しむための読み物記事をまとめました。',
+  alternates: { canonical: '/guide' },
 }
 
 export default function GuideListPage() {

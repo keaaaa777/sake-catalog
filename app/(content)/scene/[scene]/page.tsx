@@ -17,6 +17,7 @@ export function generateMetadata({ params }: { params: { scene: string } }): Met
   return {
     title: `${scene.label}に選びたい日本酒|雫 SAKE SELECT`,
     description: `${scene.label}のシーンにおすすめの日本酒を一覧で紹介。シーンに合わせた一杯を見つけられます。`,
+    alternates: { canonical: `/scene/${params.scene}` },
   }
 }
 

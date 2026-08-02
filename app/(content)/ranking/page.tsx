@@ -9,6 +9,7 @@ export const revalidate = 86400
 export const metadata: Metadata = {
   title: '注目の日本酒ランキング|雫 SAKE SELECT',
   description: '全国の蔵元を代表する銘柄の中から、編集部が厳選した注目の日本酒を紹介します。',
+  alternates: { canonical: '/ranking' },
 }
 
 export default function RankingPage() {

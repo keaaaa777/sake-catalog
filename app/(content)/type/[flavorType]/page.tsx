@@ -18,6 +18,7 @@ export function generateMetadata({ params }: { params: { flavorType: string } })
   return {
     title: `${flavor.label}(${flavor.eng})タイプの日本酒一覧|雫 SAKE SELECT`,
     description: `${flavor.desc} ${flavor.label}タイプの日本酒を一覧で紹介します。`,
+    alternates: { canonical: `/type/${params.flavorType}` },
   }
 }
 

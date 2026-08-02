@@ -8,6 +8,7 @@ export const revalidate = 86400
 export const metadata: Metadata = {
   title: '地図から探す|都道府県別の日本酒一覧|雫 SAKE SELECT',
   description: '全国47都道府県の日本酒を地方・都道府県ごとに探せます。地域ごとの個性豊かな銘柄をたどってみてください。',
+  alternates: { canonical: '/area' },
 }
 
 export default function AreaIndexPage() {

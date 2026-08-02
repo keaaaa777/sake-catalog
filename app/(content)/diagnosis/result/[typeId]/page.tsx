@@ -7,6 +7,8 @@ import { FLAVOR_TYPES } from '@/lib/flavor'
 import { SPECIALTY_EC_LINKS } from '@/lib/specialtyEc'
 import SakeThumb from '@/components/SakeThumb'
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
+
 export const revalidate = 86400
 
 export function generateStaticParams() {
@@ -23,6 +25,7 @@ export function generateMetadata({ params }: { params: { typeId: string } }): Me
   return {
     title,
     description,
+    alternates: { canonical: `/diagnosis/result/${params.typeId}` },
     openGraph: {
       title,
       description,
@@ -37,7 +40,7 @@ export default function DiagnosisResultPage({ params }: { params: { typeId: stri
 
   const flavor = FLAVOR_TYPES[type.flavorType]
   const recommendations = getSakesByFlavorType(type.flavorType).slice(0, 3)
-  const shareUrl = `https://sake-catalog.vercel.app/diagnosis/result/${type.id}`
+  const shareUrl = `${SITE_URL}/diagnosis/result/${type.id}`
   const shareText = `診断結果は「${type.name}」でした!🍶 #雫SAKESELECT`
   const xShareHref = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`
 

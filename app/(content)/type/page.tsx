@@ -8,6 +8,7 @@ export const revalidate = 86400
 export const metadata: Metadata = {
   title: '好みから探す|香味4分類で選ぶ日本酒|雫 SAKE SELECT',
   description: '薫酒・爽酒・醇酒・熟酒の香味4分類から、自分の好みに合う日本酒を探せます。',
+  alternates: { canonical: '/type' },
 }
 
 export default function TypeIndexPage() {

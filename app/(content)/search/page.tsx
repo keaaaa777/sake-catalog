@@ -8,6 +8,7 @@ export const revalidate = 86400
 export const metadata: Metadata = {
   title: '銘柄から探す|日本酒を名前・蔵元から検索|雫 SAKE SELECT',
   description: '格付けや醸造元の名前から、日本酒の銘柄を直接検索できます。',
+  alternates: { canonical: '/search' },
 }
 
 export default function SearchIndexPage() {

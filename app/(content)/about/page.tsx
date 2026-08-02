@@ -4,6 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'サイトについて|雫 SAKE SELECT',
   description: '雫 SAKE SELECTの運営方針と運営者情報について。',
+  alternates: { canonical: '/about' },
 }
 
 export default function AboutPage() {

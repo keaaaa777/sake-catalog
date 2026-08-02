@@ -30,6 +30,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title: `【${sake.name}】の味わい・スペック・購入先|雫 SAKE SELECT`,
     description,
+    alternates: { canonical: `/sake/${params.slug}` },
     openGraph: {
       title: sake.name,
       description,

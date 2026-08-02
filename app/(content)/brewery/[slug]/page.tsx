@@ -17,6 +17,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title: `${brewery.name}(${brewery.prefecture})の酒蔵情報|雫 SAKE SELECT`,
     description: brewery.description.slice(0, 120),
+    alternates: { canonical: `/brewery/${params.slug}` },
   }
 }
 

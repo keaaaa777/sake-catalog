@@ -15,6 +15,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title: `${article.title}|雫 SAKE SELECT`,
     description: article.description,
+    alternates: { canonical: `/guide/${params.slug}` },
   }
 }
 

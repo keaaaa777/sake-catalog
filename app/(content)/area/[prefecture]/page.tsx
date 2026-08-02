@@ -21,6 +21,7 @@ export function generateMetadata({ params }: { params: { prefecture: string } })
   return {
     title: `${pref}の日本酒一覧|雫 SAKE SELECT`,
     description: `${pref}の蔵元が醸す日本酒を一覧で紹介。味わいや購入先から自分に合う一杯を探せます。`,
+    alternates: { canonical: `/area/${params.prefecture}` },
   }
 }
 
