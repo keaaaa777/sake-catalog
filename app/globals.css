@@ -24,7 +24,9 @@
 
 .geolonia-svg-map {
   width: 100%;
-  height: auto;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   display: block;
   overflow: visible;
 }
@@ -989,6 +991,13 @@ body.panel-opened .search-selector {
 .guide-prose strong {
   color: var(--gold-foil);
   font-weight: 700;
+}
+.guide-prose img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 24px 0;
+  border-radius: 8px;
 }
 
 /* ═══════════ レスポンシブ ═══════════ */

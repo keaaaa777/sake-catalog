@@ -35,6 +35,8 @@ export default function JapanMap({
 }: JapanMapProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const [svgMarkup, setSvgMarkup] = useState<string | null>(null)
+  const [loadError, setLoadError] = useState(false)
+  const [retryCount, setRetryCount] = useState(0)
   const prevSelectionRef = useRef<{ region: string | null; prefecture: string | null }>({
     region: null,
     prefecture: null,
@@ -42,15 +44,22 @@ export default function JapanMap({
 
   useEffect(() => {
     let cancelled = false
+    setLoadError(false)
     fetch('/images/japan-map.svg')
-      .then(res => res.text())
+      .then(res => {
+        if (!res.ok) throw new Error(`Failed to load map: ${res.status}`)
+        return res.text()
+      })
       .then(text => {
         if (!cancelled) setSvgMarkup(text)
+      })
+      .catch(() => {
+        if (!cancelled) setLoadError(true)
       })
     return () => {
       cancelled = true
     }
-  }, [])
+  }, [retryCount])
 
   // アニメーション用のスタイル・キーフレームをSVGに一度だけ挿入
   useEffect(() => {
@@ -236,6 +245,21 @@ export default function JapanMap({
       })
     }
   }, [svgMarkup, selectedRegion, selectedPrefecture, onSelectRegion, onSelectPrefecture])
+
+  if (loadError) {
+    return (
+      <div className="w-full h-full flex flex-col items-center justify-center gap-3">
+        <span className="text-gray-400">地図の読み込みに失敗しました</span>
+        <button
+          type="button"
+          onClick={() => setRetryCount(count => count + 1)}
+          className="rounded-full border border-gold/40 px-4 py-1.5 text-xs text-gold transition hover:bg-gold/10"
+        >
+          再読み込み
+        </button>
+      </div>
+    )
+  }
 
   if (!svgMarkup) {
     return (

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { Heart, ChevronRight } from 'lucide-react'
@@ -24,6 +24,17 @@ export default function Home() {
   const [selectedPrefecture, setSelectedPrefecture] = useState<string | null>(null)
   const [searchQuery, setSearchQuery] = useState('')
   const [favorites, setFavorites] = useState<string[]>([])
+
+  const filteredSakes = useMemo(
+    () =>
+      allSakes.filter(
+        sake =>
+          sake.name.includes(searchQuery) ||
+          sake.prefecture.includes(searchQuery) ||
+          (sake.description && sake.description.includes(searchQuery))
+      ),
+    [searchQuery]
+  )
 
   // スクロール制御およびパネルオープン状態の body 反映
   useEffect(() => {
@@ -380,18 +391,10 @@ export default function Home() {
             </div>
 
             <div className="brand-list max-h-[350px] overflow-y-auto pr-2">
-              {allSakes.filter(sake =>
-                sake.name.includes(searchQuery) ||
-                sake.prefecture.includes(searchQuery) ||
-                (sake.description && sake.description.includes(searchQuery))
-              ).length === 0 ? (
+              {filteredSakes.length === 0 ? (
                 <div className="text-center py-6 text-sm text-washi/40">該当する銘柄がありません</div>
               ) : (
-                allSakes.filter(sake =>
-                  sake.name.includes(searchQuery) ||
-                  sake.prefecture.includes(searchQuery) ||
-                  (sake.description && sake.description.includes(searchQuery))
-                ).map((sake) => (
+                filteredSakes.map((sake) => (
                   <Link key={sake.id} href={`/sake/${sake.slug}`} className="brand-row">
                     <div className="brand-row__main">
                       <span className="brand-row__name text-washi">{sake.name}</span>
