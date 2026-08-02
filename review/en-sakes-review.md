@@ -1,0 +1,269 @@
+# English Sake Description Review
+
+Source: `data/sakes.json`  
+Data output: `data/sakes-en.json`  
+Selected bottles: **25**
+
+Review points: no facts beyond the Japanese record, unchanged numerical specifications, natural English, no superlatives or health claims, and a target length of 150–250 words.
+
+## Selection rationale
+
+The selection combines two kinds of evidence:
+
+1. **Evidence already present in `data/sakes.json`** — descriptions that explicitly mention overseas recognition, exports, international restaurant or sommelier support, or well-established nationwide recognition.
+2. **Fit with overseas specialist retail** — brands or exact products that appear in the assortments or editorial material of overseas specialists such as True Sake, Palate Project (formerly Tippsy), or Sakaya.co. True Sake's May 2026 editorial specifically identifies Dassai, Hakkaisan, Nanbu Bijin, Kubota, and Rihaku as widely recommended U.S. bestsellers ([source](https://www.truesake.com/blogs/may-2026/chris-s-corner-how-is-ai-going-to-have-an-effect-on-our-sake-industry)). Palate Project has featured Dassai 23, Nanbu Bijin, and Suigei ([Dassai/Nanbu Bijin source](https://www.tippsysake.com/blogs/tippsy-sake-blog/top-5-best-sake-for-beginners), [Nanbu Bijin/Suigei source](https://www.tippsysake.com/blogs/tippsy-sake-blog/fallen-leaves-and-flowing-sake-tippsy-s-new-seasonal-box)). Sakaya.co currently lists Denshu and Urakasumi products in its marketplace ([Denshu](https://www.sakaya.co/shop/denshu-tokubetsu-junmai-1800ml-hk-inventory-708), [Urakasumi](https://www.sakaya.co/shop/urakasumi-junmai-zen-1800ml-238)).
+
+This is a content-priority selection, not a claim that every exact bottle is continuously in stock overseas. Inventory and import allocations change, and the rarer labels may be available only intermittently or through specialist channels.
+
+| Selected bottle | Selection basis |
+|---|---|
+| 田酒 特別純米 | Current Sakaya.co marketplace listing for Denshu plus strong nationwide recognition in the source record |
+| 南部美人 特別純米酒 | Featured by Palate Project; source record explicitly mentions multiple overseas competition results |
+| 伯楽星 純米吟醸 | Source record explicitly mentions support from chefs in Japan and abroad |
+| 新政 No.6 S-type | One of the task's named priority brands and described in the source as strongly supported by sake enthusiasts nationwide |
+| 十四代 本丸 秘伝玉返し | Named by the task; source describes Juyondai as one of the most recognized brands in Japan and abroad |
+| 出羽桜 桜花吟醸酒 | Established signature label and part of a brewery represented in U.S. specialist retail/editorial coverage |
+| 楯野川 純米大吟醸 清流 | Recognizable all-junmai-daiginjo producer; useful accessible entry point in the selected set |
+| 大七 純米生酛 | Distinctive kimoto benchmark with specifications and serving guidance suitable for English editorial coverage |
+| 久保田 萬寿 純米大吟醸 | Identified by True Sake as a widely recommended U.S. bestseller; strong nationwide recognition in source data |
+| 八海山 特別本醸造 | Identified by True Sake as a widely recommended U.S. bestseller; source notes nationwide retail availability |
+| 天狗舞 山廃仕込純米酒 | Long-established yamahai reference point with a clear warm-sake and food-pairing story in source data |
+| 黒龍 石田屋 | High-recognition special-occasion label in the source; adds a scarce premium reference to the English set |
+| 梵 超吟 | Source explicitly records service at an overseas state dinner; strong premium/export relevance |
+| 七賢 純米大吟醸 絹の味 | Source explicitly records multiple domestic and overseas competition results |
+| 真澄 純米吟醸 辛口生一本 | Internationally recognizable brewery context and a clear food-oriented No.7-yeast profile in source data |
+| 醸し人九平次 純米大吟醸 山田錦50 | Source explicitly notes high recognition among overseas sommeliers and restaurants |
+| 鳳麟 純米大吟醸 | Large, internationally distributed brewery brand with a clear gift and food-pairing use case |
+| 福寿 純米吟醸 | Source explicitly records repeated service at Nobel Prize award banquets since 2008 |
+| 風の森 秋津穂657 純米 | Widely discussed modern nama-genshu style; selected for stylistic breadth using only catalog facts |
+| 李白 純米吟醸 WANDERING POET | Identified by True Sake as a U.S. bestseller family; source explicitly states export history |
+| 大吟醸 特製ゴールド賀茂鶴 | High-recognition presentation and gift label with a long-established source narrative |
+| 獺祭 純米大吟醸 磨き二割三分 | Named by the task, featured by Palate Project, and explicitly described in source data as globally recognized |
+| 酔鯨 純米吟醸 吟麗 | Brewery featured by Palate Project; strong availability and recognition outside Kochi in the source record |
+| 純米吟醸 浦霞禅 | Current Sakaya.co marketplace listing for Urakasumi Zen; flexible serving data makes it useful internationally |
+| 飛露喜 純米吟醸 黒ラベル | Named by the task and a high-interest scarce label, with sufficient local data for a factual English profile |
+
+---
+
+## 1. 田酒 特別純米
+
+- Slug: `denshu-tokubetsu-junmai`
+- Length: 163 words
+
+Denshu Tokubetsu Junmai is a junmai sake from Aomori and an important expression for Nishida Shuzoten, which shifted early to brewing without added alcohol and to a junmai-focused approach. It is made with Aomori-grown Hanafubuki rice polished to 55%. Rather than emphasizing a showy ginjo fragrance, its profile places the dense savoriness and body of rice at the center. The taste data supports that balance: umami is the strongest element, while sweetness, acidity, aroma, and sharpness sit at moderate levels. The result is slightly rich rather than light, with neither sweetness nor dryness dominating. It can be served at room temperature or gently warmed as nuru-kan, giving drinkers two ways to explore its rice-driven character. The catalog recommends it with yakitori and other savory dishes, and the Japanese description also points to hot pots and strongly flavored seafood or Japanese cuisine. It suits both everyday meals and special occasions, especially for drinkers seeking a substantial, food-oriented junmai rather than an overtly aromatic style.
+
+---
+
+## 2. 南部美人 特別純米酒
+
+- Slug: `nanbubijin-tokubetsu-junmai`
+- Length: 172 words
+
+Nanbu Bijin Tokubetsu Junmai is a core bottle from Nanbu Bijin, brewed with Gin Otome sake rice grown in Ninohe, Iwate, and polished to 55%. Its Japanese description combines a softly fruity aroma with rounded rice savoriness, followed by the clean finish suggested by a Sake Meter Value of +4. The specifications list 15% alcohol and acidity of 1.5. In the taste data, umami is prominent and sharpness is high, while sweetness is restrained; this creates a dry-leaning, slightly rich profile with a clear finish. Room temperature and nuru-kan are the recommended serving ranges, so the bottle can be explored without heavy chilling or at a gentle warmth. Yakitori and other savory foods are listed as pairings, while the source description also notes its flexibility with dishes ranging from sashimi to everyday Japanese cooking. It is positioned for daily meals as well as special occasions. For someone who wants a junmai with noticeable rice character, moderate acidity, and enough crispness to remain easy to pair with food, this is a balanced option.
+
+---
+
+## 3. 伯楽星 純米吟醸
+
+- Slug: `hakurakusei-junmai-ginjo`
+- Length: 166 words
+
+Hakurakusei Junmai Ginjo is brewed by Niizawa Brewery with Kura no Hana, a sake rice from Miyagi, polished to 55%. The brewery presents food pairing as the label's guiding idea, and the Japanese description emphasizes clear savoriness, minimal distracting flavors, and a crisp finish that supports rather than overwhelms a dish. Its specifications are 15% alcohol, a Sake Meter Value of +4, and acidity of 1.6. The taste data shows restrained sweetness, moderate aroma and acidity, and pronounced sharpness, placing it on the dry and light side of the catalog's scales. Serve it well chilled at yuki-hie or hana-hie to focus on that clean, aromatic profile. Sashimi and cheese are the listed pairings, and the source also highlights sushi and Japanese cuisine more broadly. The catalog places it in both special-occasion and gift settings. This bottle is suited to drinkers looking for a fragrant junmai ginjo whose strongest impression is not sweetness or weight, but clarity, structure, and a neat finish alongside food.
+
+---
+
+## 4. 新政 No.6 S-type
+
+- Slug: `aramasa-no6-s-type`
+- Length: 168 words
+
+Aramasa No.6 S-type is a central grade in the No.6 series from Aramasa Shuzo, the brewery where Association Yeast No.6 originated. The series takes its name from that yeast. The Japanese description characterizes this unfiltered nama genshu through a fresh aroma and transparent acidity reminiscent of Champagne, with its alcohol kept relatively light at around 13%. The listed rice polishing ratio is 50%, the Sake Meter Value is +1, and acidity is 1.6. Its taste data is aromatic and crisp, with moderate acidity, modest umami, and a light rather than rich overall profile. The recommended temperatures are yuki-hie and hana-hie, keeping it thoroughly chilled to highlight freshness and fragrance. Sashimi and cheese are the catalog's suggested pairings, while special occasions and gifting are its listed scenes. It can also be appreciated on its own, as noted in the source description. This is a suitable choice for someone who wants an aromatic, lightly built sake with clear acidity, restrained sweetness, and the vivid character of a chilled nama-style bottle.
+
+---
+
+## 5. 十四代 本丸 秘伝玉返し
+
+- Slug: `juyondai-honmaru`
+- Length: 173 words
+
+Juyondai Honmaru Hiden Tamagaeshi is a regular expression within the Juyondai series. Its defining feature in the source data is the Tamagaeshi method, which uses the brewery's own rice-koji shochu as brewer's alcohol. Gohyakumangoku rice is polished to 55%, and the bottle is listed at 15% alcohol with a Sake Meter Value of +2. The Japanese description notes a refined ginjo aroma and a soft balance of sweetness and dryness. That balance also appears in the catalog data: sweetness and umami are modest, acidity and aroma are moderate, and the finish has comparatively more sharpness. Overall it leans light and only slightly dry. Recommended service is suzu-hie or room temperature, rather than the coldest ranges. Sashimi and fried dishes are the listed pairings, providing both delicate and richer directions for the table. Although the source describes the brand as scarce and widely known in Japan and abroad, the bottle's catalog scenes are everyday drinking and beginner use. Its appeal here is a gentle, balanced profile with a clean finish and flexible food pairing.
+
+---
+
+## 6. 出羽桜 桜花吟醸酒
+
+- Slug: `dewazakura-oka-ginjo`
+- Length: 168 words
+
+Dewazakura Oka Ginjo is a signature ginjo from Dewazakura Shuzo in Tendo, Yamagata. It is brewed with locally grown Miyama Nishiki polished to 50%, using the brewery's traditional long, low-temperature fermentation. According to the Japanese description, that approach brings together a fragrant ginjo aroma and a light drinking profile. The bottle is listed at 15% alcohol, with a Sake Meter Value of +5 and acidity of 1.2. Its taste data reinforces the impression: aroma is prominent, sweetness and acidity are restrained, and sharpness is high. It therefore sits on the dry and light side of the catalog's scales, while retaining a clear sense of rice savoriness. Serve it well chilled at yuki-hie or hana-hie. Sashimi and cheese are the catalog's pairings, while the source also mentions Shonai sashimi and salt-grilled fish as compatible choices. It is listed for special occasions and gifting, yet the Japanese description also presents it as suitable for an evening drink. This is an approachable option for exploring a fragrant, crisp ginjo with food.
+
+---
+
+## 7. 楯野川 純米大吟醸 清流
+
+- Slug: `tatenokawa-junmai-daiginjo-seiryu`
+- Length: 164 words
+
+Tatenokawa Junmai Daiginjo Seiryu is an introductory staple from Tatenokawa Shuzo, a brewery known in the source data for focusing its entire output on junmai daiginjo. It uses very soft water from the Mount Chokai system and Yamagata-grown Dewasansan rice polished to 50%, fermented slowly at low temperature. The Japanese description compares its clarity to spring water and notes a gentle ginjo aroma with a smooth passage across the palate. Specifications are 14% alcohol, a Sake Meter Value of -1, and acidity of 1.5. Its taste data shows moderate sweetness and acidity, a clear aromatic presence, restrained umami, and a generally light profile. The recommended temperatures are yuki-hie and hana-hie, which suit its delicate fragrance. Sashimi and cheese are the listed pairings, and the bottle is categorized for special occasions and gifts. For a drinker approaching junmai daiginjo for the first time, the combination of a slightly sweet balance, moderate alcohol, gentle aroma, and transparent, light structure makes this a straightforward place to begin.
+
+---
+
+## 8. 大七 純米生酛
+
+- Slug: `daishichi-junmai-kimoto`
+- Length: 169 words
+
+Daishichi Junmai Kimoto is a representative bottle from Daishichi Shuzo, a brewery committed to the traditional kimoto method in which lactic acid is developed naturally. It is made with Gohyakumangoku and Chiyonishiki rice polished to 69% using the brewery's own super-flat rice-polishing technique. The specifications list 15% alcohol, a Sake Meter Value of +3, and acidity of 1.8. Its taste data is built around pronounced acidity, umami, and sharpness, with little sweetness and moderate aroma. The result is dry-leaning and somewhat rich, with a firm structure rather than a delicate or overtly fruity profile. Room temperature and nuru-kan are the recommended serving ranges. The source notes that warming brings its character further forward, while the catalog pairs it with yakitori and other savory dishes; strongly flavored and warm foods are also mentioned in the Japanese description. It is suitable for daily meals and special occasions. Choose it when you want a rice-driven junmai whose acidity and savoriness can meet substantial food and whose profile can be explored gently warmed.
+
+---
+
+## 9. 久保田 萬寿 純米大吟醸
+
+- Slug: `kubota-manju-junmai-daiginjo`
+- Length: 160 words
+
+Kubota Manju Junmai Daiginjo is a junmai daiginjo in Asahi Shuzo's Kubota series, introduced in 1986 in Nagaoka, Niigata. The source data says it is made with locally grown Gohyakumangoku rice, carefully polished, and clear snow-country spring water. The catalog gives a polishing ratio of 50%, 15% alcohol, a Sake Meter Value of +2, and acidity of 1.2. Its Japanese description highlights a rounded savory quality balanced by a slightly dry, clean finish. The taste data is consistent with that picture: aroma is prominent, sweetness, acidity, and umami are restrained, and sharpness is clear. Overall, it leans light rather than rich. Serve it well chilled at yuki-hie or hana-hie. Sashimi and cheese are the listed pairings, and the source particularly notes compatibility with Niigata fish dishes. The bottle is categorized for special occasions and gifts. It suits drinkers looking for a polished, aromatic sake whose mild sweetness and low acidity lead into a neat finish without a heavy body.
+
+---
+
+## 10. 八海山 特別本醸造
+
+- Slug: `hakkaisan-tokubetsu-honjozo`
+- Length: 160 words
+
+Hakkaisan Tokubetsu Honjozo is a representative label from Hakkaisan Brewery and a familiar presence in izakaya and sake shops across Japan. The Japanese description presents it as an emblem of Niigata's light, dry style, with a soft entry and a crisp finish. It uses Gohyakumangoku and Todorokiwase rice polished to 55%. The specifications list 15.5% alcohol, a Sake Meter Value of +4, and acidity of 1.3. In the taste data, sweetness is low, sharpness is pronounced, and acidity, aroma, and umami remain moderate or restrained. The overall result sits clearly on the dry and light side. It is recommended at suzu-hie or room temperature, while the source also notes that warming can bring out a fuller koji-derived aroma. Sashimi and fried dishes are the catalog's pairings, reflecting its ability to work with both delicate and richer foods. Listed for daily drinking and beginners, it is a practical introduction to a clean, food-friendly honjozo with little heaviness and a decisive finish.
+
+---
+
+## 11. 天狗舞 山廃仕込純米酒
+
+- Slug: `tengumai-yamahai-junmai`
+- Length: 168 words
+
+Tengumai Yamahai Junmai is a representative label from Shata Shuzo, described in the source as a brewery that helped lead the revival of yamahai brewing in the 1980s and mills all of its rice in-house. Its rice polishing ratio is 60%, alcohol is 16%, the Sake Meter Value is +3, and acidity is 2. The Japanese description emphasizes firm acidity, full body, complex yamahai aromas, and substantial savoriness. The taste data aligns closely: acidity, umami, and sharpness are all pronounced, while sweetness is low and aroma is moderate. It is therefore a dry-leaning, rich style with a sturdy structure. Room temperature and nuru-kan are the listed serving ranges; the source says it is often introduced as particularly expressive from gentle warmth through hotter kan service. Yakitori and other savory dishes are the catalog pairings, while fatty fish and simmered foods are also suggested in the Japanese description. It suits both daily meals and special occasions, especially when the food has enough richness to meet its acidity and body.
+
+---
+
+## 12. 黒龍 石田屋
+
+- Slug: `kokuryu-ishidaya`
+- Length: 169 words
+
+Kokuryu Ishidaya is a junmai daiginjo that Kokuryu Sake Brewing identifies as one of its representative, upper-tier labels. The source description presents it as a symbolic bottle from a brewery associated with the development of premium sake and the daiginjo movement. It is made with Yamada Nishiki polished to 35%, with 16% alcohol and a Sake Meter Value of +3. Slow maturation at low temperature is described as bringing calm aromas reminiscent of almond and vanilla, together with a smooth, layered palate. The taste data adds a fragrant, crisp shape: aroma is prominent, sharpness is high, sweetness is restrained, and the overall style is light rather than rich. Serve it at yuki-hie or hana-hie to explore its delicate aromatic profile. Sashimi and cheese are the listed pairings. The catalog places it firmly in special-occasion and gift settings, matching the source's description of a scarce bottle often chosen for anniversaries and presents. It suits someone seeking an aromatic, polished sake with restrained sweetness, depth from maturation, and a clean finish.
+
+---
+
+## 13. 梵 超吟
+
+- Slug: `born-chogin`
+- Length: 166 words
+
+Born Chogin is an upper-tier junmai daiginjo from Kato Kichibee Shoten. The source data says it uses Yamada Nishiki from Hyogo's Special A district, polished to 20%. Carefully selected undiluted sake matured for several years below freezing is blended for the final bottle. Its Japanese description emphasizes transparent, delicate sweetness, finely integrated rounded savoriness, and a long, rich finish. The taste data gives aroma its highest score, with moderate sweetness and acidity, modest umami, and a light overall profile. No alcohol content, Sake Meter Value, or acidity figure is provided in the catalog, so those details are not inferred here. The recommended service is well chilled at yuki-hie or hana-hie. Sashimi and cheese are the catalog pairings, while the source also proposes foie gras and high-quality wagyu for a more elaborate meal. Special occasions and gifting are its designated scenes. This bottle is aimed at a considered setting where its pronounced fragrance, polished texture, gentle sweetness, and extended finish can be given attention alongside refined food.
+
+---
+
+## 14. 七賢 純米大吟醸 絹の味
+
+- Slug: `shichiken-junmai-daiginjo-kinunoaji`
+- Length: 166 words
+
+Shichiken Junmai Daiginjo Kinunoaji is a signature bottle from Yamanashi Meijo, brewed with underground water from Mount Kaikoma in the Southern Alps. It uses locally grown Yumesansui rice polished to 47%, and the catalog lists 15% alcohol. The Japanese description likens its fragrant aroma to strawberry and banana and describes a silky, smooth texture that reflects the name Kinunoaji, or 'silken taste.' In the taste data, aroma is prominent, sweetness and acidity are moderate, umami is restrained, and the sake sits on the light side without leaning clearly sweet or dry. Serve it well chilled at yuki-hie or hana-hie to focus on its aroma and smooth entry. Sashimi and cheese are the suggested pairings, and the catalog places the bottle in special-occasion and gift settings. The source also describes it as a refined food-pairing sake that supports a meal. It is suited to drinkers who want an aromatic junmai daiginjo with an even balance, gentle fruit-like notes, and a texture that is smooth rather than weighty.
+
+---
+
+## 15. 真澄 純米吟醸 辛口生一本
+
+- Slug: `masumi-karakuchi-kiippon`
+- Length: 169 words
+
+Masumi Junmai Ginjo Karakuchi Kiippon is a signature label from Miyasaka Brewing, known in the source data as the brewery where Association Yeast No.7 originated. This sake uses the brewery's own cultured No.7-family yeast and is made with rice including Miyama Nishiki and Hitogokochi, polished to 55%. It is listed at 15% alcohol with a Sake Meter Value of +4. The Japanese description balances a dry profile with faint rice-derived sweetness, transparent savoriness, and a crisp finish. Rather than pursuing a showy ginjo fragrance, it emphasizes a calm, refined aroma. The taste data similarly shows restrained sweetness, moderate acidity and aroma, and high sharpness, placing it on the dry and light side. The recommended temperatures are yuki-hie and hana-hie. Sashimi and cheese are the catalog pairings, while the source describes it more broadly as a staple food-pairing sake suited to many meals. Special occasions and gifting are its listed scenes. Choose it for a composed, chilled junmai ginjo whose clean finish and moderate fragrance leave room for the food.
+
+---
+
+## 16. 醸し人九平次 純米大吟醸 山田錦50
+
+- Slug: `kuheiji-junmai-daiginjo-50`
+- Length: 169 words
+
+Kamoshibito Kuheiji Junmai Daiginjo Yamada Nishiki 50 is a signature sake from Banjo Jozo, made with Hyogo-grown Yamada Nishiki polished to 50%. The Japanese description identifies fragrant notes reminiscent of pear and melon together with elegant acidity. It also notes a refined flavor design informed by experience in France and recommends serving the sake in a wine glass. The specifications are 16% alcohol, a Sake Meter Value of 0, and acidity of 1.7. Its taste data shows a clear aromatic presence with moderate sweetness and acidity, restrained umami, and a light overall profile that does not lean distinctly sweet or dry. Serve it at yuki-hie or hana-hie. Sashimi and cheese are the catalog's pairings, and special occasions and gifting are the listed scenes. The source further notes recognition among sommeliers and restaurants overseas and associates the label with sake's growing international standing. For the drinker, its essential profile is fragrant and poised: ripe fruit-like aroma, clear acidity, moderate sweetness, and a light structure suited to attentive service with food.
+
+---
+
+## 17. 鳳麟 純米大吟醸
+
+- Slug: `gekkeikan-horin-junmai-daiginjo`
+- Length: 165 words
+
+Gekkeikan Horin Junmai Daiginjo is an upper-tier label from the long-established Gekkeikan brewery in Fushimi. It is made with Fushimi water and a combination of Yamada Nishiki and Gohyakumangoku rice polished to 50%. The specifications list 16.5% alcohol, a Sake Meter Value of +1, and acidity of 1.5. Its Japanese description evokes a sweet Muscat-like ginjo aroma and a fresh, savory finish that spreads across the palate, balancing refined sweetness with a somewhat full flavor. The taste data places aroma clearly forward, while sweetness, acidity, and umami remain moderate or restrained; overall it is slightly dry and light. The recommended temperatures are yuki-hie and hana-hie. Sashimi and cheese are the catalog pairings, and the source specifically mentions delicate Japanese dishes such as sea bream cured with kombu. The bottle is categorized for special occasions and gifting and is also described as a choice for celebratory presents. It suits a formal meal or gift when a fragrant, polished junmai daiginjo with a fresh palate is desired.
+
+---
+
+## 18. 福寿 純米吟醸
+
+- Slug: `fukuju-junmai-ginjo`
+- Length: 167 words
+
+Fukuju Junmai Ginjo is brewed by Kobe Shushinkan in Nada Gogo with Hyogo-grown rice polished to 60%. The Japanese description characterizes it as a composed junmai ginjo with a soft fragrance and a clean finish. The specifications list 15% alcohol, a Sake Meter Value of +3, and acidity of 1.4. Its taste data is restrained in sweetness and umami, moderate in acidity and aroma, and high in sharpness, placing the overall profile on the dry and light side. Serve it well chilled at yuki-hie or hana-hie. Sashimi and cheese are the catalog's pairings, while the source particularly highlights delicate dashi-based Japanese dishes and white fish. The catalog lists special occasions and gifts as its main scenes. The source also records that it has been served repeatedly at Nobel Prize award banquets since 2008, an episode that helped make the label known internationally. For the table, it offers a straightforward combination of gentle aroma, modest acidity, and a crisp finish designed to accompany subtle food without becoming heavy.
+
+---
+
+## 19. 風の森 秋津穂657 純米
+
+- Slug: `kazenomori-akitsuho-junmai`
+- Length: 162 words
+
+Kaze no Mori Akitsuho 657 Junmai is a representative sake from Yucho Shuzo that has continued to evolve since its 1998 release. The source identifies an unfiltered, undiluted, nama-genshu approach as central to the Kaze no Mori brand. Its proprietary ikaki-dori technique minimizes the time the sake is exposed to air, creating a youthful entry described as fresh and even lightly sparkling. It uses 100% locally contract-grown Akitsuho rice from Nara, polished to 65%. The bottle is listed at 17% alcohol, with a Sake Meter Value of +2.5 and acidity of 1.9. Taste data shows pronounced acidity and umami, clear sharpness, and a slightly rich, mildly dry balance. Room temperature and nuru-kan are listed, although the source's emphasis remains its fresh character. Yakitori and other savory foods are the catalog pairings, and it is positioned for daily drinking and special occasions. It suits someone looking for an energetic junmai with substantial rice savoriness, firm acidity, and the fuller body of nama genshu.
+
+---
+
+## 20. 李白 純米吟醸 WANDERING POET
+
+- Slug: `rihaku-wandering-poet`
+- Length: 169 words
+
+Rihaku Junmai Ginjo Wandering Poet is brewed in Shimane using the traditional low-temperature methods associated with Izumo toji. It is made with Yamada Nishiki rice polished to 55%, and the specifications list 15% alcohol, a Sake Meter Value of +4, and acidity of 1.7. The Japanese description presents a calm, rounded ginjo aroma, balanced acidity, and a clean, dry finish. The taste data follows that outline: sweetness is low, acidity and aroma are moderate, sharpness is pronounced, and the overall style is both dry-leaning and light. Serve it thoroughly chilled at yuki-hie or hana-hie. Sashimi and cheese are the catalog pairings, while special occasions and gifting are its designated scenes. The source also records that the name Rihaku was given by a former prime minister from Matsue in reference to the Tang-dynasty poet Li Bai, and states that the bottle has an export record unusual for a small Shimane brewery. For drinking, its key qualities are restraint, rounded aroma, firm acidity, and a tidy finish that can accompany food.
+
+---
+
+## 21. 大吟醸 特製ゴールド賀茂鶴
+
+- Slug: `kamotsuru-gold-daiginjo`
+- Length: 170 words
+
+Tokusei Gold Kamotsuru Daiginjo has been known as a gift-oriented signature bottle from Kamotsuru since its release in 1958 as an early gold-leaf daiginjo. It is made with Yamada Nishiki polished to 50%. The specifications list 16% alcohol, a Sake Meter Value of +2, and acidity of 1.4. Its Japanese description calls the aroma graceful and the flavor easy to drink with a slightly sweet impression. The taste data is aromatic and crisp, with modest sweetness and umami, moderate acidity, and a generally light profile. Serve it well chilled at yuki-hie or hana-hie. Sashimi and cheese are the catalog's suggested pairings, and special occasions and gifts are the intended scenes. A cherry-blossom-shaped piece of gold leaf appears in the bottle; the source says the design is associated with the golden wedding anniversary of Emperor Showa and Empress Kojun. That visual identity, together with the fragrant daiginjo profile, makes it suited to a celebratory presentation. In the glass, expect restrained sweetness, clear aroma, and a neat finish rather than heavy richness.
+
+---
+
+## 22. 獺祭 純米大吟醸 磨き二割三分
+
+- Slug: `dassai-junmai-daiginjo-23`
+- Length: 174 words
+
+Dassai Junmai Daiginjo 23 is the upper-tier expression of the Dassai brand, made with Yamada Nishiki polished to 23%. The source describes it as the label that became synonymous with Dassai as the brand gained international recognition. Its aroma is pronounced, while the palate is described as showing a honey-like sweetness followed by a clean, extended finish. The specifications list 16% alcohol, a Sake Meter Value of +4, and acidity of 1. In the taste data, aroma reaches the highest level and sharpness is also high; sweetness, acidity, and umami are restrained. The overall profile is dry-leaning and light despite the sweet aromatic impression. Serve it well chilled at yuki-hie or hana-hie. Sashimi and cheese are the catalog's pairings, and the bottle is designated for special occasions and gifting. The Japanese source also places it at the center of the brewery's strategy to expand overseas sales and describes it as exceptionally well recognized among sake from Yamaguchi. Its core appeal is the contrast between an expansive fragrance, delicate sweetness, and a long, crisp finish.
+
+---
+
+## 23. 酔鯨 純米吟醸 吟麗
+
+- Slug: `suigei-junmai-ginjo-ginrei`
+- Length: 167 words
+
+Suigei Junmai Ginjo Ginrei is identified by Suigei Brewing in the source as a representative junmai ginjo. It is brewed with Hokkaido-grown Ginpu rice polished to 50%. The specifications list 15% alcohol, a Sake Meter Value of +6, and acidity of 1.5. Its Japanese description combines a fresh citrus-like aroma with the clear acidity and crispness associated with Suigei. Although the savoriness has some breadth, the finish remains tight and dry. The taste data supports that character: sweetness is low, aroma is prominent, sharpness is high, and the overall profile is distinctly dry and light. Serve it thoroughly chilled at yuki-hie or hana-hie. Sashimi and cheese are the catalog pairings, and special occasions and gifts are the listed scenes. The source also notes strong recognition and ready availability outside Kochi, describing the bottle as a benchmark expression. It is a good fit for drinkers who value clarity and a decisive finish, but still want enough aroma and acidity to keep a chilled junmai ginjo expressive alongside food.
+
+---
+
+## 24. 純米吟醸 浦霞禅
+
+- Slug: `urakasumi-zen-junmai-ginjo`
+- Length: 163 words
+
+Urakasumi Zen Junmai Ginjo is brewed by Saura in Miyagi. Its verified catalog specifications are Yamada Nishiki and Toyonishiki rice polished to 50%, 15% alcohol, a Sake Meter Value of +2.5, and acidity of 1.4. The taste data gives aroma the clearest presence, with modest sweetness and umami, moderate acidity, and a crisp finish. Overall, the bottle leans slightly dry and light rather than rich. It also offers the broadest serving range among many aromatic selections in the catalog: yuki-hie, hana-hie, room temperature, and nuru-kan are all listed. Trying a small pour at each temperature can reveal how the balance of fragrance, sweetness, acidity, and savoriness changes. Sashimi and cheese are the recommended pairings; if either the food or sake feels too forceful, the source description suggests adjusting the temperature or serving amount. The catalog places it in special-occasion and gift settings. It is suited to someone who wants to explore serving-temperature differences while keeping the underlying profile clean, aromatic, and food friendly.
+
+---
+
+## 25. 飛露喜 純米吟醸 黒ラベル
+
+- Slug: `fukushima-hiroki-junginjo-kuro`
+- Length: 172 words
+
+Hiroki Junmai Ginjo Black Label is brewed by Hiroki Shuzoten in Aizubange, Fukushima. The source data describes a combination of Yamada Nishiki and Gohyakumangoku rice, with the koji rice polished to 40% and the kakemai to around 50%; the catalog's polishing field records 45%. Alcohol is 16%. Its Japanese description emphasizes a sweet-tart fruity aroma and a balanced combination of acidity and savoriness. Although the alcohol content is somewhat higher, the entry is characterized as light. The taste data shows moderate sweetness and acidity, a clear aromatic presence, restrained umami, and an overall balance that is neither distinctly sweet nor dry while remaining light rather than rich. Serve it well chilled at yuki-hie or hana-hie to focus on its fresh fragrance. Sashimi and cheese are the catalog pairings, while the source also suggests light starters such as carpaccio. The bottle is designated for special occasions and gifting. Choose it when you want a fragrant, fresh-feeling junmai ginjo with gentle fruit-like notes and an even palate rather than pronounced sweetness, heaviness, or sharpness.

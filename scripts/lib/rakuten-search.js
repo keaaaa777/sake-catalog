@@ -5,6 +5,23 @@
 // openapi.rakuten.co.jp 系へ移行済み。実行前に下記URL・パラメータが
 // 最新仕様と一致しているか公式ドキュメント(https://webservice.rakuten.co.jp/documentation/ichiba-item-search)
 // を確認すること。
+const fs = require('fs')
+const path = require('path')
+
+const envFile = path.join(__dirname, '..', '..', '.env.local')
+if (fs.existsSync(envFile)) {
+  if (typeof process.loadEnvFile === 'function') {
+    process.loadEnvFile(envFile)
+  } else {
+    // Node.js 20.12 未満用の最小限フォールバック。既存の環境変数は優先する。
+    for (const line of fs.readFileSync(envFile, 'utf8').split(/\r?\n/)) {
+      const match = line.match(/^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)\s*$/)
+      if (!match || process.env[match[1]] !== undefined) continue
+      process.env[match[1]] = match[2].replace(/^(['"])(.*)\1$/, '$2')
+    }
+  }
+}
+
 const ENDPOINT = 'https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260701'
 
 // 新エンドポイントは Origin/Referer ヘッダーから、楽天アフィリエイト管理画面に
@@ -23,9 +40,10 @@ async function searchRakutenItems(keyword, { hits = 5 } = {}) {
   const appId = process.env.RAKUTEN_APP_ID
   const accessKey = process.env.RAKUTEN_ACCESS_KEY
   const affiliateId = process.env.RAKUTEN_AFFILIATE_ID
-  if (!appId) throw new Error('RAKUTEN_APP_ID が .env.local に設定されていません')
-  if (!accessKey) throw new Error('RAKUTEN_ACCESS_KEY が .env.local に設定されていません')
-  if (!affiliateId || affiliateId === 'your-id-here') {
+  const isMissing = (value) => !value || /^(your-|.*placeholder|x{3,})/i.test(value)
+  if (isMissing(appId)) throw new Error('RAKUTEN_APP_ID が .env.local に設定されていません')
+  if (isMissing(accessKey)) throw new Error('RAKUTEN_ACCESS_KEY が .env.local に設定されていません')
+  if (isMissing(affiliateId)) {
     throw new Error('RAKUTEN_AFFILIATE_ID が未設定、またはプレースホルダーのままです')
   }
 

@@ -1,0 +1,248 @@
+# English Guide Translation Review
+
+Source: `lib/guides.ts`  
+Data output: `data/guides-en.json`  
+Articles: **10**
+
+Review points: factual fidelity to the Japanese source, natural English, unchanged figures, preserved HTML structure, and `/en/` on every internal link.
+
+---
+
+## 1. Sweet or Dry? How to Read the Sake Meter Value
+
+- Slug: `nihonshu-do-guide`
+- Meta description: Learn how the Sake Meter Value relates to sweetness and dryness, and why acidity matters when judging flavor.
+
+### Article body
+
+<p>You will often see the term "Sake Meter Value" on sake labels and in product descriptions. You may have heard that positive values indicate dryness and negative values indicate sweetness, but the numbers themselves can still be difficult to interpret.</p>
+<h2>What does the Sake Meter Value measure?</h2>
+<p>The Sake Meter Value expresses the amount of sugar dissolved in sake as a number, with water set as the reference point of 0. More sugar makes the liquid denser and moves the value toward the <strong>negative side</strong>. Less sugar brings its density closer to that of water and moves the value toward the <strong>positive side</strong>. In general, a higher positive value suggests a drier sake, while a larger negative value suggests a sweeter one.</p>
+<p>As a general guide, +6 or above is often described as "very dry," +3 to +6 as "dry," around -1 to +2 as "medium," and -3 or below as "sweet." These ranges are only a guide.</p>
+<h2>The number alone does not determine flavor</h2>
+<p>It is too simple to decide that a sake is sweet or dry from the Sake Meter Value alone. Even at the same value, the impression on the palate can vary greatly depending on <strong>acidity</strong>, alcohol content, and the way its aroma presents itself. Higher acidity can give the finish a crisp edge, making a sake feel drier even when it contains more sugar.</p>
+<p>Our sake detail pages show the Sake Meter Value alongside acidity, as well as flavor scales for "sweet to dry" and "light to rich." Looking at both the figures and the sensory descriptions makes it easier to imagine how the sake may taste.</p>
+<h2>See how it works with actual bottles</h2>
+<p>For example, <a href="/en/sake/hakkaisan-tokubetsu-honjozo">Hakkaisan Tokubetsu Honjozo</a> is a dry style with a Sake Meter Value of around +4, known for a light, clean profile. By contrast, another dry sake such as <a href="/en/sake/kariho-yamahai-junmai-chokarakuchi">Kariho Yamahai Junmai Chokarakuchi</a> also has acidity and body. Even within the broad category of "dry," sake can show many different expressions.</p>
+<p>If you are not yet sure whether you prefer sweet or dry sake, answer a few questions in our <a href="/en/diagnosis">one-minute quiz</a> to find a style close to your preferences. If you would rather browse by aroma and flavor profile, try the <a href="/en/type/sou">Sou (light and crisp)</a> or <a href="/en/type/jun">Jun (rich and full-bodied)</a> pages.</p>
+
+---
+
+## 2. Junmai, Ginjo, and Daiginjo: A Simple Guide
+
+- Slug: `junmai-ginjo-daiginjo-guide`
+- Meta description: A clear guide to sake classifications such as junmai, ginjo, and daiginjo, based on ingredients and rice polishing ratio.
+
+### Article body
+
+<p>Sake labels are filled with terms such as "Junmai Daiginjo" and "Honjozo" that may be unfamiliar at first. These are classifications known as designated grades, determined mainly by the <strong>ingredients</strong> and the <strong>rice polishing ratio (how much of the rice is polished away)</strong>.</p>
+<h2>First, two groups based on ingredients</h2>
+<p>Broadly speaking, sake falls into two groups. Junmai styles are made only from rice, rice koji, and water. Non-junmai styles, including honjozo, also contain a small amount of brewer's alcohol. Brewer's alcohol can lighten the flavor and lift the aroma; its use does not mean the sake is of lower quality.</p>
+<h2>How the rice polishing ratio changes the classification</h2>
+<p>The rice polishing ratio is the percentage of each brown rice grain that remains after polishing. A lower number means more of the outer portion of the grain, which can contribute less desirable flavors, has been removed.</p>
+<ul>
+<li>
+<strong>Junmai</strong>: No prescribed rice polishing ratio. Many examples emphasize the savory character of rice.</li>
+<li>
+<strong>Junmai Ginjo</strong>: Rice polishing ratio of 60% or less. More likely to develop a fragrant ginjo aroma.</li>
+<li>
+<strong>Junmai Daiginjo</strong>: Rice polishing ratio of 50% or less. Often aromatic, delicate, and low in distracting flavors.</li>
+<li>
+<strong>Honjozo</strong>: Rice polishing ratio of 70% or less, with brewer's alcohol added. Typically offers a clean drinking profile.</li>
+</ul>
+<p>
+<a href="/en/sake/dassai-junmai-daiginjo-23">Dassai Junmai Daiginjo 23</a>, for example, is polished to 23%, just as its name suggests. Removing 77% of the outer grain gives it a clear aroma and flavor with few distracting notes.</p>
+<h2>Choose between aroma and rice-driven savoriness</h2>
+<p>Sake with a lower polishing ratio, meaning a smaller number, tends to fall into the aromatic <a href="/en/type/kaori">Kaori style</a>. Junmai made with a higher polishing ratio, meaning less of the grain is removed, is more likely to have the pronounced rice character associated with the <a href="/en/type/jun">Jun style</a>. Neither is inherently better: choosing according to your mood or meal is part of the pleasure of sake.</p>
+<p>Once you understand these classifications, continue with our <a href="/en/guide/how-to-read-sake-label">guide to reading a sake label</a>.</p>
+
+---
+
+## 3. 10 Approachable Sakes for Beginners
+
+- Slug: `beginner-sake-10`
+- Meta description: Ten approachable sakes for newcomers, organized by flavor profile, region, and price range to make choosing a bottle easier.
+
+### Article body
+
+<p>We selected ten gentle, approachable bottles that can be enjoyable even if you feel that sake may not be for you. All are distributed nationwide in Japan and are relatively easy to find at accessible prices.</p>
+<h2>For a clean, crisp style</h2>
+<ul>
+<li>
+<a href="/en/sake/hakkaisan-tokubetsu-honjozo">Hakkaisan Tokubetsu Honjozo</a> (Niigata) — A classic light, dry style with little heaviness that pairs easily with food.</li>
+<li>
+<a href="/en/sake/ichinokura-mukansa-honjozo">Ichinokura Mukansa Honjozo Karakuchi</a> (Miyagi) — A light, crisp staple for an everyday evening drink.</li>
+<li>
+<a href="/en/sake/jokigen-yamahai-junmai">Jokigen Yamahai Junmai</a> (Ishikawa) — The richness associated with yamahai in an approachable profile.</li>
+</ul>
+<h2>For a fragrant, easy-drinking style</h2>
+<ul>
+<li>
+<a href="/en/sake/dewazakura-oka-ginjo">Dewazakura Oka Ginjo</a> (Yamagata) — Well regarded as an introduction to fruity ginjo aromas.</li>
+<li>
+<a href="/en/sake/asabiraki-junmai-ginjo-white-label">Asabiraki Junmai Ginjo White Label</a> (Iwate) — A gentle aroma and soft entry on the palate.</li>
+<li>
+<a href="/en/sake/hijiri-junmai-ginjo-yamadanishiki50">Hijiri Junmai Ginjo Yamada Nishiki 50</a> (Gunma) — An accessible way to enjoy the refined aroma associated with Yamada Nishiki.</li>
+</ul>
+<h2>For a gentle taste of rice</h2>
+<ul>
+<li>
+<a href="/en/sake/nanbubijin-tokubetsu-junmai">Nanbu Bijin Tokubetsu Junmai</a> (Iwate) — Well-balanced savoriness and a clean finish.</li>
+<li>
+<a href="/en/sake/kid-junmai">KID Junmai</a> (Wakayama) — A friendly, balanced bottle suited to everyday occasions.</li>
+<li>
+<a href="/en/sake/sentoku-junmai">Sentoku Junmai</a> (Miyazaki) — Tropical aromas lend it a lighter sake character.</li>
+</ul>
+<h2>For a small indulgence</h2>
+<ul>
+<li>
+<a href="/en/sake/kunimare-daiginjo">Kunimare Daiginjo</a> (Hokkaido) — Daiginjo's fragrant character at an accessible price.</li>
+</ul>
+<p>If you are unsure where to begin, use our <a href="/en/diagnosis">one-minute quiz</a> to identify a style before choosing. To browse more deliberately, visit the <a href="/en/type/sou">Sou</a> or <a href="/en/type/jun">Jun</a> category pages.</p>
+
+---
+
+## 4. How to Choose Sake for Sashimi
+
+- Slug: `sashimi-sake-guide`
+- Meta description: Learn how to pair sake with sashimi by considering aroma intensity and the richness or fat content of the fish.
+
+### Article body
+
+<p>Sashimi is one of the foods most often discussed alongside sake. Matching the style of sake to the type of fish and its fat content can make the meal feel more harmonious.</p>
+<h2>Choose a clean style for white or lean fish</h2>
+<p>Delicate white fish such as sea bream and flounder pair well with a <a href="/en/type/sou">Sou style</a> whose aroma is not too pronounced, or a light <a href="/en/type/kaori">Kaori style</a>. The key is to keep the sake's aroma from overwhelming the fish's subtle savoriness.</p>
+<h2>Choose a richer style for fattier fish</h2>
+<p>For fatty fish such as tuna belly or yellowtail, a <a href="/en/type/jun">Jun style</a> with some body and savoriness can stand up to the richness and bring the flavors together. Junmai with firm acidity can also work well.</p>
+<h2>Example pairings</h2>
+<p>A fragrant daiginjo such as <a href="/en/sake/otokoyama-junmai-daiginjo">Otokoyama Junmai Daiginjo</a>, for example, is considered a good match for delicate white-fish sashimi. A full-bodied junmai such as <a href="/en/sake/tengumai-yamahai-junmai">Tengumai Yamahai Junmai</a>, on the other hand, pairs well with fattier fish or zuke sashimi seasoned with a robust soy-based marinade.</p>
+<p>To find sake by dishes beyond sashimi, see our list of <a href="/en/pairing/sashimi">sake for sashimi and sushi</a>. The pages for <a href="/en/pairing/yakitori">yakitori and meat dishes</a> and <a href="/en/pairing/cheese">cheese and snacks</a> may also be useful.</p>
+
+---
+
+## 5. How to Store Sake Properly
+
+- Slug: `sake-storage-guide`
+- Meta description: Practical guidance on storage temperature, protection from light and vibration, and handling sake after opening.
+
+### Article body
+
+<p>Even a delicious sake can lose its character if stored incorrectly. Here are the basic steps you can take at home to preserve it.</p>
+<h2>A cool, dark place is the basic rule</h2>
+<p>Sake is sensitive to ultraviolet light and high temperatures. Avoid direct sunlight and places with large temperature swings, and keep it <strong>refrigerated whenever possible</strong>. Nama sake and nama genshu deteriorate particularly quickly and must be stored in the refrigerator.</p>
+<h2>Store bottles upright</h2>
+<p>Unlike wine, sake does not need to be stored on its side. Prolonged contact between the liquid and a crown cap or screw cap may affect the flavor, so the general rule is to <strong>store bottles upright</strong>.</p>
+<h2>Drink it reasonably soon after opening</h2>
+<p>Once a bottle is opened, exposure to air begins oxidation and gradually changes its aroma and flavor. Keep it refrigerated and aim to finish it within <strong>about two weeks to one month</strong>. The aromatic character of a <a href="/en/type/kaori">Kaori style</a> tends to show change relatively clearly, so enjoy it sooner.</p>
+<p>By contrast, sake made to express the changes brought by maturation, such as the <a href="/en/type/juku">Juku style</a>, can offer the interest of developing new facets over time.</p>
+<h2>If you cannot finish the bottle</h2>
+<p>Our guide to <a href="/en/guide/sake-shelf-life">sake shelf life and how soon to finish an opened bottle</a> explains this topic in more detail. If you are unsure about storage, starting with a size you can finish, such as 300 ml or 720 ml, is another practical option.</p>
+
+---
+
+## 6. Which Sake Works Warm? A Guide to Serving Temperatures
+
+- Slug: `atsukan-guide`
+- Meta description: Explore traditional sake temperature terms, from well chilled to hot, and learn which flavor styles suit each range.
+
+### Article body
+
+<p>Sake is unusual in how dramatically its aroma and flavor can change with temperature. It can be enjoyed both chilled and warmed, so let us look at that versatility across the main temperature ranges.</p>
+<h2>Names for each temperature range</h2>
+<ul>
+<li>
+<strong>Yuki-hie (around 5°C) and hana-hie (around 10°C)</strong>: Well-chilled temperatures that suit the fragrant <a href="/en/type/kaori">Kaori style</a>.</li>
+<li>
+<strong>Suzu-hie (around 15°C) and room temperature (around 20°C)</strong>: Temperatures that make it easier to balance aroma and savoriness, suited to the <a href="/en/type/sou">Sou style</a>.</li>
+<li>
+<strong>Nuru-kan (around 40°C)</strong>: A temperature that brings out the savoriness of rice and works well with the <a href="/en/type/jun">Jun style</a>.</li>
+<li>
+<strong>Atsu-kan (around 50°C)</strong>: A temperature that makes aroma rise strongly, suited to the <a href="/en/type/juku">Juku style</a> and full-bodied honjozo or junmai.</li>
+</ul>
+<h2>Characteristics of sake that improves when warmed</h2>
+<p>Junmai and honjozo with firm acidity or body are generally suited to warming. With a kimoto sake such as <a href="/en/sake/daishichi-junmai-kimoto">Daishichi Junmai Kimoto</a>, warming expands the rice-derived savoriness and highlights its mellow profile. Yamahai sake such as <a href="/en/sake/tengumai-yamahai-junmai">Tengumai Yamahai Junmai</a> is likewise considered well suited to temperatures from nuru-kan to atsu-kan.</p>
+<h2>Sake whose strengths may be less apparent when warmed</h2>
+<p>Conversely, aromatic and delicate styles such as daiginjo and junmai daiginjo are generally served chilled so their fragrance can be appreciated. Higher temperatures may cause their delicate aromas to dissipate, so begin by checking the serving recommendations on the label.</p>
+<p>You can also check the "Recommended serving style" section on each sake detail page to see which temperature range suits a bottle you have.</p>
+
+---
+
+## 7. How to Choose Sake as a Gift, by Price Range
+
+- Slug: `gift-sake-by-price`
+- Meta description: A practical guide to choosing sake gifts by budget and occasion, from casual visits to important celebrations.
+
+### Article body
+
+<p>Sake is also popular as a gift because of its attractive presentation and the stories associated with individual bottles. Here are some points to consider at different budgets.</p>
+<h2>Up to about ¥3,000: A casual gift</h2>
+<p>Even at an everyday price, a bottle with a sense of regional character can make a welcome gift. <a href="/en/sake/otokoyama-junmai-daiginjo">Otokoyama Junmai Daiginjo</a>, for example, offers the fragrant character of junmai daiginjo at an accessible price.</p>
+<h2>About ¥3,000–¥5,000: Seasonal greetings and anniversaries</h2>
+<p>This is a standard range for a slightly more formal gift, such as a midsummer or year-end gift for someone who has helped you. A well-known label such as <a href="/en/sake/kubota-manju-junmai-daiginjo">Kubota Manju Junmai Daiginjo</a> can be a reassuring choice.</p>
+<h2>¥5,000 and above: Special anniversaries and celebrations</h2>
+<p>For a wedding, milestone birthday, or another important occasion, consider a rarer bottle. Labels such as <a href="/en/sake/kokuryu-ishidaya">Kokuryu Ishidaya</a> and <a href="/en/sake/dassai-junmai-daiginjo-23">Dassai Junmai Daiginjo 23</a> are especially popular as gifts because their names convey a sense of occasion.</p>
+<h2>You can also choose according to the occasion</h2>
+<p>Budget is not the only guide. You can also think about when and how you would like the recipient to enjoy it. Our <a href="/en/scene/gift">gift sake list</a> brings together bottles suited to giving, while the <a href="/en/scene/special">special-occasion list</a> may help when choosing a bottle for a celebratory toast.</p>
+
+---
+
+## 8. Sake vs. Wine: What Beginners Should Know
+
+- Slug: `sake-vs-wine`
+- Meta description: Compare sake and wine through their ingredients, production methods, aromas, serving temperatures, and pairing styles.
+
+### Article body
+
+<p>"How is sake different from wine?" is a common question among people beginning to explore sake. Here are the main differences.</p>
+<h2>Different ingredients: Rice vs. grapes</h2>
+<p>The most fundamental difference is the main ingredient. Wine is made by fermenting the sugar naturally present in grapes. In sake, koji converts the starch in rice into sugar, which is then fermented. This process, called multiple parallel fermentation, is rare on a global scale. It also contributes to sake's distinctive rice-derived savoriness, or umami.</p>
+<h2>Types of aroma</h2>
+<p>While wine aromas originate in fruit, sake's fragrant ginjo aromas come from aromatic compounds produced by yeast during fermentation. A fruity <a href="/en/type/kaori">Kaori style</a> is sometimes described as approachable in a way similar to white wine.</p>
+<h2>Temperature changes the experience</h2>
+<p>Wine is also served chilled or at room temperature, but sake stands out for the exceptionally broad range at which it can be enjoyed, from yuki-hie to atsu-kan. Our <a href="/en/guide/atsukan-guide">guide to warmed sake</a> explains these temperatures in more detail.</p>
+<h2>Sake and wine share some selection cues</h2>
+<p>Both wine and sake can be chosen to accompany food, and both range gradually from light to rich. Wine drinkers approaching sake might begin with a fragrant <a href="/en/type/kaori">Kaori style</a> or a crisp <a href="/en/type/sou">Sou style</a>, which may feel more familiar and accessible. If you do not yet know your preference, try our <a href="/en/diagnosis">one-minute quiz</a>.</p>
+
+---
+
+## 9. Sake Shelf Life and How Soon to Finish an Open Bottle
+
+- Slug: `sake-shelf-life`
+- Meta description: Why sake labels often omit a best-before date, plus practical guidance for unopened and opened bottles.
+
+### Article body
+
+<p>Look closely at a sake label and you may notice a production date rather than a best-before date. There is a clear reason for this.</p>
+<h2>Why sake has no best-before date</h2>
+<p>Sake has a relatively high alcohol content of around 15%, which makes it resistant to spoilage. Under Japan's food-labeling rules, it therefore does not require a best-before date, and labels generally show the production date, meaning when the brewery bottled it. This does not mean that its quality will remain unchanged indefinitely.</p>
+<h2>A guide for unopened bottles</h2>
+<p>If an unopened bottle is kept in a cool, dark place, it is generally considered to remain relatively stable and enjoyable for about six months to one year after production. Nama sake and nama genshu deteriorate more quickly, however, so drink them sooner and always keep them refrigerated. Our guide to <a href="/en/guide/sake-storage-guide">proper sake storage</a> provides more detail.</p>
+<h2>A guide after opening</h2>
+<p>Opening the bottle begins oxidation. Keep it refrigerated and aim to finish it within <strong>about two weeks to one month</strong>. A smaller 300 ml bottle is easier to finish before flavor changes become noticeable.</p>
+<h2>You can also appreciate change over time</h2>
+<p>Not every sake is meant to be consumed as soon as possible. Some, including the <a href="/en/type/juku">Juku style</a>, are made so that changes in aroma over time become part of the experience. Start with the label or a bottle description such as the one for <a href="/en/sake/kokuryu-ishidaya">Kokuryu Ishidaya</a>, and find the approach that suits that sake.</p>
+
+---
+
+## 10. How to Read a Sake Label: Essential Terms
+
+- Slug: `how-to-read-sake-label`
+- Meta description: Understand common sake-label terms including rice polishing ratio, brewing rice, Sake Meter Value, acidity, and alcohol.
+
+### Article body
+
+<p>A sake label contains a wealth of information that can help you choose a bottle. Once you understand the terminology, the label alone can give you a general idea of how the sake may taste.</p>
+<h2>Designated grade (Junmai Daiginjo, Honjozo, and others)</h2>
+<p>This classification is determined by the ingredients and rice polishing ratio. See our guide to <a href="/en/guide/junmai-ginjo-daiginjo-guide">the differences among junmai, ginjo, and daiginjo</a> for details.</p>
+<h2>Rice polishing ratio</h2>
+<p>This number indicates how much the brown rice has been polished. A lower number means more has been removed and generally makes fragrant aromas more likely to develop. <a href="/en/sake/dassai-junmai-daiginjo-23">Dassai Junmai Daiginjo 23</a>, for example, has a polishing ratio of 23%, meaning 77% of each grain is removed.</p>
+<h2>Rice variety (sake rice)</h2>
+<p>Sake is often made with varieties developed for brewing, such as Yamada Nishiki, Gohyakumangoku, and Omachi. Even within the same designated grade, the rice variety can change the impression of the flavor.</p>
+<h2>Sake Meter Value and acidity</h2>
+<p>These figures provide a guide to sweetness and dryness. Our <a href="/en/guide/nihonshu-do-guide">Sake Meter Value guide</a> explains them in more detail.</p>
+<h2>Alcohol content</h2>
+<p>Typical sake is around 15–16% alcohol, although lower-alcohol styles at around 12–13% have become more common in recent years. This is another useful figure to check when you want something lighter.</p>
+<h2>Production terms such as nama and kimoto</h2>
+<p>Nama sake is not heat-pasteurized at any stage and is known for its fresh aroma. Kimoto refers to a traditional method of preparing the yeast starter, allowing lactic acid to develop naturally instead of adding it. Some bottles state these methods on their labels or packaging, including <a href="/en/sake/daishichi-junmai-kimoto">Daishichi Junmai Kimoto</a> and <a href="/en/sake/tengumai-yamahai-junmai">Tengumai Yamahai Junmai</a>.</p>
+<p>Once the terms begin to feel familiar, <a href="/en/">browse the sake catalog</a> and compare labels. Choosing sake becomes much more enjoyable when you know what to look for.</p>
+

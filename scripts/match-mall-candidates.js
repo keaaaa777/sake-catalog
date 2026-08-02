@@ -24,11 +24,65 @@ const REVIEW_DIR = path.join(__dirname, '..', 'review')
 const REJECT_KEYWORDS = ['セット', '飲み比べ', 'グラス', 'ペア', '福袋', 'おつまみ', '酒器', 'ギフト券', '福箱']
 const CAPACITY_PATTERN = /(720\s*ml|1800\s*ml|一升|四合)/i
 
+// 2026-08-02取得分の review/*.md を目視確認した結果。
+// 候補順は再検索で変わるため、取得時刻が一致する場合にだけ適用する。
+const REVIEWED_FETCHED_AT = {
+  rakuten: '2026-08-02T07:32:39.362Z',
+  furusato: '2026-08-02T07:37:03.644Z',
+}
+const REVIEWED_SELECTIONS = {
+  rakuten: {
+    'tenzan-junmai-daiginjo': 0,
+    'hizenkuragokoro-junmai-ginjo': 0,
+    'hououbiden-junmai-ginjo-gohyakumangoku': 0,
+    'zaku-miyabinotomo-nakadori-junmai-daiginjo': 0,
+    'tochigi-daina-chokarakuchi-junmai': 0,
+  },
+  furusato: {
+    'nanbubijin-tokubetsu-junmai': 0,
+    'shinkame-junmai': 1,
+    'tengumai-yamahai-junmai': 0,
+    'shichiken-junmai-daiginjo-kinunoaji': 0,
+    'gekkeikan-horin-junmai-daiginjo': 0,
+    'bijofu-junmai-ginjo-cel66': 0,
+    'hananoka-oka-junmai-daiginjo': 0,
+    'fukutsukasa-junmai': 0,
+    'urakasumi-zen-junmai-ginjo': 0,
+    'kirinzan-dentou-karakuchi': 0,
+    'kuninocho-daiginjo': 0,
+    'iyo-kagiya-junmai-ginjo': 0,
+    'yamagata-dewazakura-karesansui-10y': 0,
+    'miyagi-urakasumi-honjozo-karakuchi': 0,
+    'niigata-shimeharitsuru-tsuki-honjozo': 0,
+    'miyagi-hitakami-chokarakuchi-junmai': 1,
+    'yamaguchi-taka-nojun-karakuchi-junmai80': 0,
+    'shizuoka-shosetsu-honjozo': 1,
+    'yamagata-hatsumago-densho-kimoto-honjozo': 0,
+    'dewazakura-oka-ginjo': 0,
+    'masumi-karakuchi-kiippon': 0,
+    'akishika-junmai-ginjo-utagaki': 2,
+    'fukuju-junmai-ginjo': 0,
+    'rihaku-wandering-poet': 0,
+    'tenzan-junmai-daiginjo': 2,
+    'hizenkuragokoro-junmai-ginjo': 1,
+    'fukutsuru-junmai-ginjo': 7,
+    'nishinoseki-junmai-daiginjo-hannari': 1,
+    'sentoku-junmai': 0,
+    'takaragawa-junmai-daiginjo': 0,
+    'hyogo-hakutsuru-maru': 2,
+  },
+}
+
 function judge(sakeName, candidate) {
   if (!candidate || !candidate.itemName) return 'reject'
   const name = candidate.itemName
+  // 商品名では「総乃寒菊」が「寒菊」と略記される。後続の商品名まで
+  // 一致する場合だけ同一銘柄とみなす。
+  const sakeNameVariants = [sakeName, sakeName.replace(/^総乃/, '')]
+  const isKankikuIdentity = sakeName === '総乃寒菊 純米大吟醸 Identity 総の舞50'
+    && ['寒菊', '純米大吟醸', 'Identity', '総の舞50'].every((token) => name.includes(token))
   if (REJECT_KEYWORDS.some((kw) => name.includes(kw))) return 'reject'
-  if (!name.includes(sakeName)) return 'needs_review'
+  if (!isKankikuIdentity && !sakeNameVariants.some((variant) => name.includes(variant))) return 'needs_review'
   if (!CAPACITY_PATTERN.test(name)) return 'needs_review'
   if (candidate.availability === 0) return 'needs_review'
   return 'adopt'
@@ -56,16 +110,31 @@ function main() {
 
   let adoptedCount = 0
   const needsReview = []
+  const noCandidates = []
   const offersBySlug = {}
+  const existingOffers = mall === 'rakuten' && fs.existsSync(path.join(CACHE_DIR, 'sake-offers.json'))
+    ? require(path.join(CACHE_DIR, 'sake-offers.json')).offers || {}
+    : {}
 
   for (const [slug, entry] of Object.entries(candidates)) {
     const sake = sakeBySlug.get(slug)
     if (!sake) continue
 
     const judged = (entry.candidates || []).map((c) => ({ ...c, verdict: judge(entry.name, c) }))
-    const adopted = judged
+    let adopted = judged
       .filter((c) => c.verdict === 'adopt')
       .sort((a, b) => (a.itemPrice ?? Infinity) - (b.itemPrice ?? Infinity))
+
+    const reviewedIndex = fetchedAt === REVIEWED_FETCHED_AT[mall]
+      ? REVIEWED_SELECTIONS[mall]?.[slug]
+      : undefined
+    if (reviewedIndex !== undefined) {
+      const reviewedCandidate = (entry.candidates || [])[reviewedIndex]
+      if (!reviewedCandidate?.affiliateUrl) {
+        throw new Error(`手動確認済み候補が見つかりません: ${mall}:${slug}:${reviewedIndex}`)
+      }
+      adopted = [{ ...reviewedCandidate, verdict: 'adopt' }]
+    }
 
     if (adopted.length > 0) {
       const cheapest = adopted[0]
@@ -86,14 +155,36 @@ function main() {
       }
       adoptedCount += 1
     } else {
-      const reviewCandidates = judged.filter((c) => c.verdict !== 'reject')
-      if (reviewCandidates.length > 0) {
+      // 手動確認済みのリンクと価格比較データは、再実行時に消さない。
+      // 既存実装は自動採用できない全候補を再度 needs_review に戻していた。
+      if (mall === 'rakuten' && sake.affiliate?.[0]?.rakuten && existingOffers[slug]) {
+        offersBySlug[slug] = existingOffers[slug]
+      }
+
+      // セット商品等の reject 候補も最終目視の対象に残し、
+      // 候補があるのにレビューから消えることを防ぐ。
+      const reviewCandidates = judged
+      if (!sake.affiliate?.[0]?.[mall] && reviewCandidates.length > 0) {
         needsReview.push({ name: entry.name, slug, candidates: reviewCandidates })
+      } else if (!sake.affiliate?.[0]?.[mall] && (entry.candidates || []).length === 0) {
+        noCandidates.push({ name: entry.name, slug })
       }
     }
   }
 
   fs.writeFileSync(path.join(DATA_DIR, 'sakes.json'), JSON.stringify(sakes, null, 2) + '\n')
+
+  fs.writeFileSync(
+    path.join(CACHE_DIR, `${mall}-not-found.json`),
+    JSON.stringify({
+      sourceFetchedAt: fetchedAt,
+      count: noCandidates.length,
+      sakes: noCandidates.map(({ name, slug }) => {
+        const sake = sakeBySlug.get(slug)
+        return { id: sake.id, slug, name, classification: sake.classification }
+      }),
+    }, null, 2) + '\n'
+  )
 
   if (mall === 'rakuten') {
     if (!fs.existsSync(CACHE_DIR)) fs.mkdirSync(CACHE_DIR, { recursive: true })
@@ -112,10 +203,15 @@ function main() {
     }
     md += '\n'
   }
+  md += `## API候補ゼロ (${noCandidates.length}銘柄)\n\n`
+  md += `2026-08-02の再検索でも候補が1件も返らなかった銘柄です。楽天非掲載の可能性がありますが、検索語が厳密すぎる可能性もあります。\n\n`
+  for (const item of noCandidates) md += `- ${item.name} (${item.slug})\n`
+  md += '\n'
   fs.writeFileSync(path.join(REVIEW_DIR, `${mall}-review.md`), md)
 
   console.log(`自動採用: ${adoptedCount}件`)
   console.log(`要確認: ${needsReview.length}件 -> review/${mall}-review.md`)
+  console.log(`API候補ゼロ: ${noCandidates.length}件 -> review/${mall}-review.md`)
 }
 
 main()

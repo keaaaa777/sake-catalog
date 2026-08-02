@@ -10,7 +10,7 @@
 // 前提: .env.local に RAKUTEN_APP_ID / RAKUTEN_ACCESS_KEY / RAKUTEN_AFFILIATE_ID が
 // 設定されていること。
 //
-// 使い方: node -r dotenv/config scripts/fetch-furusato-links.js
+// 使い方: node scripts/fetch-furusato-links.js
 const fs = require('fs')
 const path = require('path')
 const { searchRakutenItems, sleep } = require('./lib/rakuten-search')
