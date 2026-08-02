@@ -6,6 +6,7 @@ import { PAIRING_CATEGORY_IDS } from '@/lib/pairing'
 import { DIAGNOSIS_TYPE_IDS } from '@/lib/diagnosisTypes'
 import { SCENE_IDS } from '@/lib/scenes'
 import { GUIDE_SLUGS } from '@/lib/guides'
+import { getAllEnSakeSlugs, getAllEnGuideArticles } from '@/lib/i18n/en-content'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
 
@@ -68,5 +69,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
-  return [...staticPages, ...diagnosisResultPages, ...sakePages, ...breweryPages, ...areaPages, ...typePages, ...pairingPages, ...scenePages, ...guidePages]
+  const enStaticPages: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}/en`, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${SITE_URL}/en/sake`, changeFrequency: 'weekly', priority: 0.6 },
+    { url: `${SITE_URL}/en/guide`, changeFrequency: 'weekly', priority: 0.5 },
+    { url: `${SITE_URL}/en/about`, changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${SITE_URL}/en/disclosure`, changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${SITE_URL}/en/privacy`, changeFrequency: 'yearly', priority: 0.3 },
+  ]
+
+  const enSakePages: MetadataRoute.Sitemap = getAllEnSakeSlugs().map((slug) => ({
+    url: `${SITE_URL}/en/sake/${slug}`,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }))
+
+  const enGuidePages: MetadataRoute.Sitemap = getAllEnGuideArticles().map((a) => ({
+    url: `${SITE_URL}/en/guide/${a.slug}`,
+    changeFrequency: 'monthly',
+    priority: 0.5,
+  }))
+
+  return [
+    ...staticPages,
+    ...diagnosisResultPages,
+    ...sakePages,
+    ...breweryPages,
+    ...areaPages,
+    ...typePages,
+    ...pairingPages,
+    ...scenePages,
+    ...guidePages,
+    ...enStaticPages,
+    ...enSakePages,
+    ...enGuidePages,
+  ]
 }

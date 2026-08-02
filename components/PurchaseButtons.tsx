@@ -8,9 +8,15 @@ interface PurchaseButtonsProps {
   slug: string
   mallLinks: MallLink[]
   sourceFlow?: string
+  locale?: 'ja' | 'en'
 }
 
-export default function PurchaseButtons({ sakeId, slug, mallLinks, sourceFlow = 'detail' }: PurchaseButtonsProps) {
+const EN_LABEL: Record<string, string> = {
+  '楽天市場': 'Rakuten',
+  'ふるさと納税でもらう': 'Get via Furusato Nozei (JP residents)',
+}
+
+export default function PurchaseButtons({ sakeId, slug, mallLinks, sourceFlow = 'detail', locale = 'ja' }: PurchaseButtonsProps) {
   return (
     <div className="flex flex-col gap-3 sm:flex-row">
       {mallLinks.map((m) => (
@@ -22,7 +28,7 @@ export default function PurchaseButtons({ sakeId, slug, mallLinks, sourceFlow = 
           onClick={() => trackAffiliateClick({ sake_id: sakeId, mall: m.mall, source_flow: sourceFlow })}
           className={`content-mall-btn ${m.mall === 'furusato' ? 'content-mall-btn--furusato' : ''}`}
         >
-          {m.label}で見る
+          {locale === 'en' ? `View on ${EN_LABEL[m.label] || m.label}` : `${m.label}で見る`}
         </a>
       ))}
     </div>

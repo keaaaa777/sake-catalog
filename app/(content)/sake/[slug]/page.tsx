@@ -7,6 +7,7 @@ import { PAIRING_CATEGORIES } from '@/lib/pairing'
 import { PREFECTURE_SLUGS } from '@/lib/types'
 import { buildAffiliateLinks } from '@/lib/affiliate'
 import { getOffersForSake, getOffersFetchedAt } from '@/lib/offers'
+import { getEnSakeContent } from '@/lib/i18n/en-content'
 import { isProductionDomain } from '@/lib/is-production-domain'
 import SakeThumb from '@/components/SakeThumb'
 import PurchaseButtons from '@/components/PurchaseButtons'
@@ -27,10 +28,15 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const flavor = FLAVOR_TYPES[sake.flavorType]
   const description = `${sake.prefecture}の${sake.classification}「${sake.name}」。${flavor.label}(${flavor.eng})タイプの味わいと購入先を紹介。`.slice(0, 120)
 
+  const hasEn = Boolean(getEnSakeContent(params.slug))
+
   return {
     title: `【${sake.name}】の味わい・スペック・購入先|雫 SAKE SELECT`,
     description,
-    alternates: { canonical: `/sake/${params.slug}` },
+    alternates: {
+      canonical: `/sake/${params.slug}`,
+      ...(hasEn ? { languages: { 'ja-JP': `/sake/${params.slug}`, 'en-US': `/en/sake/${params.slug}` } } : {}),
+    },
     openGraph: {
       title: sake.name,
       description,
@@ -57,6 +63,7 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
   const mallLinks = buildAffiliateLinks(sake)
   const offers = getOffersForSake(sake.slug)
   const offersFetchedAt = getOffersFetchedAt()
+  const hasEn = Boolean(getEnSakeContent(sake.slug))
   const production = isProductionDomain()
   // 楽天は比較カードで表示するため、その他モールのボタンからは重複を避けて除外する
   const buttonMallLinks = offers.length > 0 ? mallLinks.filter((m) => m.mall !== 'rakuten') : mallLinks
@@ -339,7 +346,10 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
         )}
       </div>
 
-      <div className="mt-12">
+      <div className="mt-12 flex flex-wrap gap-4">
+        {hasEn && (
+          <Link href={`/en/sake/${sake.slug}`} lang="en" className="content-back-link">Read in English</Link>
+        )}
         <Link href="/" className="content-back-link">← トップへ戻る</Link>
       </div>
     </div>

@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: '広告掲載ポリシー(アフィリエイト表記)|雫 SAKE SELECT',
   description: '雫 SAKE SELECTにおけるアフィリエイト広告の利用状況について説明します。',
-  alternates: { canonical: '/disclosure' },
+  alternates: { canonical: '/disclosure', languages: { 'ja-JP': '/disclosure', 'en-US': '/en/disclosure' } },
 }
 
 export default function DisclosurePage() {

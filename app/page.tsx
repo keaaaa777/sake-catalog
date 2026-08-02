@@ -9,6 +9,8 @@ import { getAllSakes } from '@/lib/data'
 import { REGION_COLORS } from '@/lib/mapData'
 import JapanMap from '@/components/JapanMap'
 import WaterBackground from '@/components/WaterBackground'
+import SiteFooter from '@/components/SiteFooter'
+import AgeGate from '@/components/AgeGate'
 
 const allSakes = getAllSakes()
 
@@ -122,6 +124,7 @@ export default function Home() {
               ♥ お気に入り ({favorites.length})
             </button>
           )}
+          <Link href="/en" lang="en" className="text-sm text-washi/60 hover:text-gold">EN</Link>
         </div>
       </header>
 
@@ -461,6 +464,8 @@ export default function Home() {
           </div>
         </div>
       )}
+      <SiteFooter />
+      <AgeGate />
     </>
   )
 }

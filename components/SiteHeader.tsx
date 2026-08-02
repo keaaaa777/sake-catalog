@@ -12,6 +12,7 @@ export default function SiteHeader() {
         <Link href="/search">銘柄から探す</Link>
         <Link href="/ranking">ランキング</Link>
         <Link href="/guide">ガイド</Link>
+        <Link href="/en" lang="en">EN</Link>
       </nav>
     </header>
   )
