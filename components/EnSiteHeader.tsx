@@ -8,6 +8,7 @@ export default function EnSiteHeader() {
         <span className="brand__name">SAKE SELECT</span>
       </Link>
       <nav className="site-header__nav" aria-label="Site navigation">
+        <Link href="/en/diagnosis">Quiz</Link>
         <Link href="/en/sake">Browse Sake</Link>
         <Link href="/en/guide">Guide</Link>
         <Link href="/" lang="ja">日本語</Link>

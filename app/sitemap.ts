@@ -110,6 +110,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }))
 
+  const enDiagnosisResultPages: MetadataRoute.Sitemap = DIAGNOSIS_TYPE_IDS.map((typeId) => ({
+    url: `${SITE_URL}/en/diagnosis/result/${typeId}`,
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }))
+
   return [
     ...staticPages,
     ...diagnosisResultPages,
@@ -126,5 +132,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...enTypePages,
     ...enPairingPages,
     ...enScenePages,
+    ...enDiagnosisResultPages,
   ]
 }
