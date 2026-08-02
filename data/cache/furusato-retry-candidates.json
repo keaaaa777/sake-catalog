@@ -1,0 +1,797 @@
+{
+  "fetchedAt": "2026-08-02T10:42:15.297Z",
+  "sourceCount": 113,
+  "results": {
+    "kitanonishiki-junmai-daiginjo-noren": {
+      "sakeId": "36",
+      "name": "北の錦 純米大吟醸 暖簾ラベル",
+      "classification": "純米大吟醸",
+      "keyword": "北の錦 純米大吟醸 暖簾ラベル 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "aramasa-no6-s-type": {
+      "sakeId": "69",
+      "name": "新政 No.6 S-type",
+      "classification": "純米吟醸",
+      "keyword": "新政 No.6 S-type 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "kariho-yamahai-junmai-chokarakuchi": {
+      "sakeId": "73",
+      "name": "刈穂 山廃純米 超辛口",
+      "classification": "純米",
+      "keyword": "刈穂 山廃純米 超辛口 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "juyondai-honmaru": {
+      "sakeId": "81",
+      "name": "十四代 本丸 秘伝玉返し",
+      "classification": "本醸造",
+      "keyword": "十四代 本丸 秘伝玉返し 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "tatenokawa-junmai-daiginjo-seiryu": {
+      "sakeId": "89",
+      "name": "楯野川 純米大吟醸 清流",
+      "classification": "純米大吟醸",
+      "keyword": "楯野川 純米大吟醸 清流 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "sharaku-junmai-ginjo": {
+      "sakeId": "93",
+      "name": "冩樂 純米吟醸",
+      "classification": "純米吟醸",
+      "keyword": "冩樂 純米吟醸 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "daishichi-junmai-kimoto": {
+      "sakeId": "97",
+      "name": "大七 純米生酛",
+      "classification": "純米",
+      "keyword": "大七 純米生酛 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "raifuku-junmai-ginjo-aiyama": {
+      "sakeId": "105",
+      "name": "来福 純米吟醸 愛山",
+      "classification": "純米吟醸",
+      "keyword": "来福 純米吟醸 愛山 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "satonohomare-junmai-daiginjo": {
+      "sakeId": "109",
+      "name": "郷乃譽 純米大吟醸(白ラベル)",
+      "classification": "純米大吟醸",
+      "keyword": "郷乃譽 純米大吟醸(白ラベル) 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "modern-senkin-muku": {
+      "sakeId": "113",
+      "name": "モダン仙禽 無垢",
+      "classification": "純米大吟醸",
+      "keyword": "モダン仙禽 無垢 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "daina-junmai-ginjo-nasu-gohyakumangoku": {
+      "sakeId": "121",
+      "name": "大那 純米吟醸 那須五百万石",
+      "classification": "純米吟醸",
+      "keyword": "大那 純米吟醸 那須五百万石 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "tsuchida-junmai-ginjo-kimoto": {
+      "sakeId": "129",
+      "name": "土田 純米吟醸 生酛仕込み",
+      "classification": "純米吟醸",
+      "keyword": "土田 純米吟醸 生酛仕込み 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "hijiri-junmai-ginjo-yamadanishiki50": {
+      "sakeId": "133",
+      "name": "聖 純米吟醸 山田錦50",
+      "classification": "純米吟醸",
+      "keyword": "聖 純米吟醸 山田錦50 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "musashino-black-junmai-ginjo-genshu": {
+      "sakeId": "145",
+      "name": "武蔵野ブラック 純米吟醸原酒",
+      "classification": "純米吟醸",
+      "keyword": "武蔵野ブラック 純米吟醸原酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "fusanokankiku-junmai-daiginjo-identity-fusanomai50": {
+      "sakeId": "153",
+      "name": "総乃寒菊 純米大吟醸 Identity 総の舞50",
+      "classification": "純米大吟醸",
+      "keyword": "総乃寒菊 純米大吟醸 Identity 総の舞50 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "sawanoi-junmai-daiginjo": {
+      "sakeId": "157",
+      "name": "澤乃井 純米大吟醸",
+      "classification": "純米大吟醸",
+      "keyword": "澤乃井 純米大吟醸 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "tamajiman-junmai-daiginjo": {
+      "sakeId": "161",
+      "name": "多満自慢 純米大吟醸",
+      "classification": "純米大吟醸",
+      "keyword": "多満自慢 純米大吟醸 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "edo-kaijo-junmai-daiginjo-genshu-the-premium": {
+      "sakeId": "165",
+      "name": "江戸開城 純米大吟醸原酒 The Premium",
+      "classification": "純米大吟醸",
+      "keyword": "江戸開城 純米大吟醸原酒 The Premium 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "izumibashi-tombo-junmai-daiginjo": {
+      "sakeId": "169",
+      "name": "いづみ橋 純米大吟醸 とんぼラベル 山田錦",
+      "classification": "純米大吟醸",
+      "keyword": "いづみ橋 純米大吟醸 とんぼラベル 山田錦 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "tensei-junmai-ginjo-senbou": {
+      "sakeId": "173",
+      "name": "天青 純米吟醸 千峰",
+      "classification": "純米吟醸",
+      "keyword": "天青 純米吟醸 千峰 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "matsumidori-junmai-ginjo": {
+      "sakeId": "177",
+      "name": "松みどり 純米吟醸",
+      "classification": "純米吟醸",
+      "keyword": "松みどり 純米吟醸 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "haneya-junmai-ginjo-kirabi": {
+      "sakeId": "201",
+      "name": "羽根屋 純米吟醸 煌火 生原酒",
+      "classification": "純米吟醸",
+      "keyword": "羽根屋 純米吟醸 煌火 生原酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "ginban-junmai-daiginjo-banshu50": {
+      "sakeId": "205",
+      "name": "銀盤 純米大吟醸 播州50",
+      "classification": "純米大吟醸",
+      "keyword": "銀盤 純米大吟醸 播州50 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "tedorigawa-junmai-daiginjo": {
+      "sakeId": "217",
+      "name": "手取川 純米大吟醸 白山市産山田錦",
+      "classification": "純米大吟醸",
+      "keyword": "手取川 純米大吟醸 白山市産山田錦 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "kokuryu-ishidaya": {
+      "sakeId": "221",
+      "name": "黒龍 石田屋",
+      "classification": "純米大吟醸",
+      "keyword": "黒龍 石田屋 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "born-chogin": {
+      "sakeId": "225",
+      "name": "梵 超吟",
+      "classification": "純米大吟醸",
+      "keyword": "梵 超吟 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "michisakari-honjozo": {
+      "sakeId": "257",
+      "name": "三千盛 本醸造",
+      "classification": "本醸造",
+      "keyword": "三千盛 本醸造 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "kuheiji-junmai-daiginjo-50": {
+      "sakeId": "265",
+      "name": "醸し人九平次 純米大吟醸 山田錦50",
+      "classification": "純米大吟醸",
+      "keyword": "醸し人九平次 純米大吟醸 山田錦50 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "jikon-tokubetsu-junmai": {
+      "sakeId": "277",
+      "name": "而今 特別純米",
+      "classification": "純米",
+      "keyword": "而今 特別純米 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "shichihonyari-junmai-daiginjo": {
+      "sakeId": "281",
+      "name": "七本鎗 純米大吟醸 山田錦",
+      "classification": "純米大吟醸",
+      "keyword": "七本鎗 純米大吟醸 山田錦 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "emishiki-sensation-white": {
+      "sakeId": "285",
+      "name": "笑四季 Sensation White 特別純米",
+      "classification": "純米",
+      "keyword": "笑四季 Sensation White 特別純米 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "tamanohikari-junmai-daiginjo-bizenomachi": {
+      "sakeId": "297",
+      "name": "玉乃光 純米大吟醸 備前雄町",
+      "classification": "純米大吟醸",
+      "keyword": "玉乃光 純米大吟醸 備前雄町 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "eikun-kotosennen-junmai-ginjo": {
+      "sakeId": "301",
+      "name": "英勲 純米吟醸 古都千年",
+      "classification": "純米吟醸",
+      "keyword": "英勲 純米吟醸 古都千年 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "kazenomori-akitsuho-junmai": {
+      "sakeId": "345",
+      "name": "風の森 秋津穂657 純米",
+      "classification": "純米",
+      "keyword": "風の森 秋津穂657 純米 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "kid-junmai": {
+      "sakeId": "349",
+      "name": "紀土-KID- 純米酒",
+      "classification": "純米",
+      "keyword": "紀土-KID- 純米酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "chiyomusubi-gouriki-junmai-daiginjo": {
+      "sakeId": "361",
+      "name": "千代むすび 純米大吟醸 強力50",
+      "classification": "純米大吟醸",
+      "keyword": "千代むすび 純米大吟醸 強力50 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "kiwamehijiri-omachi-junmai-daiginjo": {
+      "sakeId": "385",
+      "name": "極聖 純米大吟醸 高島雄町",
+      "classification": "純米大吟醸",
+      "keyword": "極聖 純米大吟醸 高島雄町 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "kamotsuru-gold-daiginjo": {
+      "sakeId": "397",
+      "name": "大吟醸 特製ゴールド賀茂鶴",
+      "classification": "大吟醸",
+      "keyword": "大吟醸 特製ゴールド賀茂鶴 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "ugonotsuki-junmai-daiginjo": {
+      "sakeId": "401",
+      "name": "雨後の月 純米大吟醸 山田錦",
+      "classification": "純米大吟醸",
+      "keyword": "雨後の月 純米大吟醸 山田錦 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "narutotai-junmai-daiginjo-kotobuki": {
+      "sakeId": "421",
+      "name": "鳴門鯛 純米大吟醸 寿",
+      "classification": "純米大吟醸",
+      "keyword": "鳴門鯛 純米大吟醸 寿 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "ishizuchi-junmai-daiginjo": {
+      "sakeId": "437",
+      "name": "石鎚 純米大吟醸 石鎚正宗",
+      "classification": "純米大吟醸",
+      "keyword": "石鎚 純米大吟醸 石鎚正宗 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "wakanami-junmai-ginjo-yamadanishiki": {
+      "sakeId": "466",
+      "name": "若波 純米吟醸 山田錦",
+      "classification": "純米吟醸",
+      "keyword": "若波 純米吟醸 山田錦 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "shigemasu-junmai-daiginjo-50": {
+      "sakeId": "471",
+      "name": "繁桝 純米大吟醸50",
+      "classification": "純米大吟醸",
+      "keyword": "繁桝 純米大吟醸50 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "chiyonosono-daiginjo-kuragakoi": {
+      "sakeId": "511",
+      "name": "千代の園 大吟醸 蔵囲み",
+      "classification": "大吟醸",
+      "keyword": "千代の園 大吟醸 蔵囲み 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "takakiya-junmai-ginjo-tejikuri-funeshibori": {
+      "sakeId": "521",
+      "name": "鷹来屋 純米吟醸 手造り槽しぼり",
+      "classification": "純米吟醸",
+      "keyword": "鷹来屋 純米吟醸 手造り槽しぼり 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "hojun-tokubetsu-junmai-karakuchi": {
+      "sakeId": "525",
+      "name": "豊潤 特別純米 芳醇辛口",
+      "classification": "純米",
+      "keyword": "豊潤 特別純米 芳醇辛口 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "sasshu-masamune-junmai-ginjo": {
+      "sakeId": "533",
+      "name": "清酒 薩州正宗 純米吟醸酒",
+      "classification": "純米吟醸",
+      "keyword": "清酒 薩州正宗 純米吟醸酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "chateau-taisetsunokura-junmai-daiginjo-suisei30": {
+      "sakeId": "538",
+      "name": "シャトー大雪乃蔵 純米大吟醸 彗星30",
+      "classification": "純米大吟醸",
+      "keyword": "シャトー大雪乃蔵 純米大吟醸 彗星30 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "kokushimusou-junmai-daiginjo-genshu-suisei": {
+      "sakeId": "539",
+      "name": "純米大吟醸原酒 国士無双 彗星 蔵元限定酒",
+      "classification": "純米大吟醸",
+      "keyword": "純米大吟醸原酒 国士無双 彗星 蔵元限定酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "chitosetsuru-junmai-daiginjo-suisei": {
+      "sakeId": "540",
+      "name": "千歳鶴 純米大吟醸 彗星",
+      "classification": "純米大吟醸",
+      "keyword": "千歳鶴 純米大吟醸 彗星 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "mutsuhassen-junmai-daiginjo-hanaomoi50": {
+      "sakeId": "543",
+      "name": "陸奥八仙 純米大吟醸 華想い50",
+      "classification": "純米大吟醸",
+      "keyword": "陸奥八仙 純米大吟醸 華想い50 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "hououbiden-junmai-ginjo-gohyakumangoku": {
+      "sakeId": "545",
+      "name": "鳳凰美田 純米吟醸 五百万石",
+      "classification": "純米吟醸",
+      "keyword": "鳳凰美田 純米吟醸 五百万石 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "ryujin-junmai-daiginjo-39": {
+      "sakeId": "546",
+      "name": "龍神 純米大吟醸39 山田錦×彗星",
+      "classification": "純米大吟醸",
+      "keyword": "龍神 純米大吟醸39 山田錦×彗星 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "hanaabi-junmai-daiginjo": {
+      "sakeId": "547",
+      "name": "花陽浴 純米大吟醸 無濾過生原酒",
+      "classification": "純米大吟醸",
+      "keyword": "花陽浴 純米大吟醸 無濾過生原酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "sasaichi-junmai-daiginjo-koshu-yumesansui": {
+      "sakeId": "549",
+      "name": "笹一 純米大吟醸 甲州夢山水",
+      "classification": "純米大吟醸",
+      "keyword": "笹一 純米大吟醸 甲州夢山水 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "keiryu-daiginjo": {
+      "sakeId": "550",
+      "name": "渓流 大吟醸",
+      "classification": "大吟醸",
+      "keyword": "渓流 大吟醸 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "hyakujuro-kurozura-junmai-daiginjo": {
+      "sakeId": "551",
+      "name": "百十郎 黒面 純米大吟醸",
+      "classification": "純米大吟醸",
+      "keyword": "百十郎 黒面 純米大吟醸 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "miyosakae-junmai-ginjo-oumimai-no-shizuku": {
+      "sakeId": "553",
+      "name": "御代栄 純米吟醸 近江米のしずく",
+      "classification": "純米吟醸",
+      "keyword": "御代栄 純米吟醸 近江米のしずく 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "shotoku-junmai": {
+      "sakeId": "554",
+      "name": "招德 純米酒",
+      "classification": "純米",
+      "keyword": "招德 純米酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "mimurosugi-junmai-daiginjo-yamadanishiki": {
+      "sakeId": "558",
+      "name": "みむろ杉 純米大吟醸 山田錦",
+      "classification": "純米大吟醸",
+      "keyword": "みむろ杉 純米大吟醸 山田錦 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "suwaizumi-junmai-daiginjo-oho": {
+      "sakeId": "562",
+      "name": "諏訪泉 純米大吟醸 鵬",
+      "classification": "純米大吟醸",
+      "keyword": "諏訪泉 純米大吟醸 鵬 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "inatahime-junmai-daiginjo": {
+      "sakeId": "563",
+      "name": "稲田姫 純米大吟醸",
+      "classification": "純米大吟醸",
+      "keyword": "稲田姫 純米大吟醸 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "ouroku-junmai-daiginjo-funakake": {
+      "sakeId": "564",
+      "name": "王祿 純米大吟醸 舟掛け 斗瓶囲い",
+      "classification": "純米大吟醸",
+      "keyword": "王祿 純米大吟醸 舟掛け 斗瓶囲い 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "juji-asahi-junmai-daiginjo": {
+      "sakeId": "565",
+      "name": "十旭日 純米大吟醸",
+      "classification": "純米大吟醸",
+      "keyword": "十旭日 純米大吟醸 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "sakehitosuji-junmai-daiginjo-akaiwa-omachi": {
+      "sakeId": "566",
+      "name": "酒一筋 純米大吟醸 赤磐雄町",
+      "classification": "純米大吟醸",
+      "keyword": "酒一筋 純米大吟醸 赤磐雄町 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "gozenshu-omachi-junmai-daiginjo-genshu": {
+      "sakeId": "567",
+      "name": "御前酒 雄町純米大吟醸 原酒",
+      "classification": "純米大吟醸",
+      "keyword": "御前酒 雄町純米大吟醸 原酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "kirei-junmai-ginjo-senbonnishiki": {
+      "sakeId": "568",
+      "name": "亀齢 純米吟醸 千本錦",
+      "classification": "純米吟醸",
+      "keyword": "亀齢 純米吟醸 千本錦 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "toyobijin-junmai-ginjo-50": {
+      "sakeId": "569",
+      "name": "東洋美人 純米吟醸50",
+      "classification": "純米吟醸",
+      "keyword": "東洋美人 純米吟醸50 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "miyoshikiku-junmai-ginjo-yamadanishiki": {
+      "sakeId": "570",
+      "name": "三芳菊 純米吟醸 山田錦",
+      "classification": "純米吟醸",
+      "keyword": "三芳菊 純米吟醸 山田錦 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "sukigokoro-junmai-daiginjo": {
+      "sakeId": "573",
+      "name": "寿喜心 純米大吟醸",
+      "classification": "純米大吟醸",
+      "keyword": "寿喜心 純米大吟醸 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "gifu-darumamasamune-gonen-koshu": {
+      "sakeId": "574",
+      "name": "達磨正宗 五年古酒",
+      "classification": "純米古酒",
+      "keyword": "達磨正宗 五年古酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "gifu-darumamasamune-junen-koshu": {
+      "sakeId": "575",
+      "name": "達磨正宗 十年古酒",
+      "classification": "純米古酒",
+      "keyword": "達磨正宗 十年古酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "nara-suiryu-jukusei-kimoto": {
+      "sakeId": "577",
+      "name": "睡龍 熟成生酛",
+      "classification": "純米酒",
+      "keyword": "睡龍 熟成生酛 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "oita-nishinoseki-daiginjo-hizoukoshu": {
+      "sakeId": "578",
+      "name": "西の関 大吟醸 秘蔵古酒",
+      "classification": "大吟醸",
+      "keyword": "西の関 大吟醸 秘蔵古酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "nara-harushika-junginjo-hizoukoshu": {
+      "sakeId": "579",
+      "name": "春鹿 純米吟醸 秘蔵古酒",
+      "classification": "純米吟醸",
+      "keyword": "春鹿 純米吟醸 秘蔵古酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "hiroshima-kamoizumi-daiginjo-daikoshu": {
+      "sakeId": "580",
+      "name": "賀茂泉 大吟醸 大古酒",
+      "classification": "大吟醸",
+      "keyword": "賀茂泉 大吟醸 大古酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "hiroshima-kamotsuru-honjozo-sokai": {
+      "sakeId": "586",
+      "name": "賀茂鶴 本醸造 爽快辛口",
+      "classification": "本醸造",
+      "keyword": "賀茂鶴 本醸造 爽快辛口 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "yamagata-dewazakura-kurasuzumi-honjozo": {
+      "sakeId": "587",
+      "name": "出羽桜 蔵涼み 特別本醸造",
+      "classification": "特別本醸造",
+      "keyword": "出羽桜 蔵涼み 特別本醸造 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "ishikawa-kikuhime-yamahai-junmai": {
+      "sakeId": "588",
+      "name": "菊姫 山廃純米",
+      "classification": "山廃純米",
+      "keyword": "菊姫 山廃純米 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "fukushima-suehiro-denshou-yamahai-junmai": {
+      "sakeId": "589",
+      "name": "末廣 伝承山廃純米",
+      "classification": "山廃純米",
+      "keyword": "末廣 伝承山廃純米 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "kyoto-tamagawa-shizenshikomi-yamahai": {
+      "sakeId": "591",
+      "name": "玉川 自然仕込 本醸造(山廃)",
+      "classification": "本醸造",
+      "keyword": "玉川 自然仕込 本醸造(山廃) 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "fukushima-hiroki-junginjo-kuro": {
+      "sakeId": "592",
+      "name": "飛露喜 純米吟醸 黒ラベル",
+      "classification": "純米吟醸",
+      "keyword": "飛露喜 純米吟醸 黒ラベル 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "tokyo-okunokami-junginjo-namachozumi": {
+      "sakeId": "595",
+      "name": "屋守 純米吟醸 無調整生",
+      "classification": "純米吟醸",
+      "keyword": "屋守 純米吟醸 無調整生 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "fukushima-hirotogawa-junginjo": {
+      "sakeId": "596",
+      "name": "廣戸川 純米吟醸",
+      "classification": "純米吟醸",
+      "keyword": "廣戸川 純米吟醸 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "saga-nabeshima-junginjo": {
+      "sakeId": "597",
+      "name": "鍋島 純米吟醸",
+      "classification": "純米吟醸",
+      "keyword": "鍋島 純米吟醸 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "hyogo-sawanotsuru-josen-honjozo": {
+      "sakeId": "600",
+      "name": "沢の鶴 上撰 本醸造",
+      "classification": "本醸造",
+      "keyword": "沢の鶴 上撰 本醸造 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "okayama-taitenshiragiku-tokubetsuhonjozo": {
+      "sakeId": "601",
+      "name": "大典白菊 特別本醸造 白い瀬",
+      "classification": "特別本醸造",
+      "keyword": "大典白菊 特別本醸造 白い瀬 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "nagano-kurouemon-kimoto-junmai": {
+      "sakeId": "603",
+      "name": "十六代九郎右衛門 生もと仕込み純米",
+      "classification": "生もと純米",
+      "keyword": "十六代九郎右衛門 生もと仕込み純米 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "gifu-darumamasamune-nijunen-koshu": {
+      "sakeId": "604",
+      "name": "達磨正宗 二十年古酒",
+      "classification": "純米古酒",
+      "keyword": "達磨正宗 二十年古酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "gifu-darumamasamune-jukusei-sannen": {
+      "sakeId": "605",
+      "name": "達磨正宗 熟成三年",
+      "classification": "純米古酒",
+      "keyword": "達磨正宗 熟成三年 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "niigata-echigozakura-honjozo": {
+      "sakeId": "606",
+      "name": "越後桜 本醸造",
+      "classification": "本醸造",
+      "keyword": "越後桜 本醸造 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "yamagata-dewanoyuki-honjozo": {
+      "sakeId": "607",
+      "name": "出羽ノ雪 本醸造",
+      "classification": "本醸造",
+      "keyword": "出羽ノ雪 本醸造 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "ishikawa-okunoto-kimoto-junmai": {
+      "sakeId": "608",
+      "name": "奥能登 生酛純米",
+      "classification": "生酛純米",
+      "keyword": "奥能登 生酛純米 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "ishikawa-okunotonoshiragiku-tokubetsujunmai": {
+      "sakeId": "609",
+      "name": "奥能登の白菊 特別純米酒",
+      "classification": "特別純米酒",
+      "keyword": "奥能登の白菊 特別純米酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "aichi-gikyo-enishi": {
+      "sakeId": "610",
+      "name": "義侠 縁",
+      "classification": "特別純米",
+      "keyword": "義侠 縁 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "fukushima-gakkimasamune-junmai": {
+      "sakeId": "612",
+      "name": "楽器正宗 純米酒",
+      "classification": "純米酒",
+      "keyword": "楽器正宗 純米酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "akita-yukinobijin-junginjo": {
+      "sakeId": "613",
+      "name": "ゆきの美人 純米吟醸",
+      "classification": "純米吟醸",
+      "keyword": "ゆきの美人 純米吟醸 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "tochigi-daina-chokarakuchi-junmai": {
+      "sakeId": "615",
+      "name": "大那 超辛口純米 五百万石",
+      "classification": "純米酒",
+      "keyword": "大那 超辛口純米 五百万石 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "niigata-yoshinogawa-junmai-daiginjo-hizoshu": {
+      "sakeId": "616",
+      "name": "吉乃川 純米大吟醸 秘蔵酒",
+      "classification": "純米大吟醸",
+      "keyword": "吉乃川 純米大吟醸 秘蔵酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "mie-rumikonosake-arugamama-kimoto": {
+      "sakeId": "617",
+      "name": "るみ子の酒 あるがまま 生酛純米",
+      "classification": "生酛純米",
+      "keyword": "るみ子の酒 あるがまま 生酛純米 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "fukui-hanagaki-nenpufu-daiginjo-junen-koshu": {
+      "sakeId": "618",
+      "name": "花垣 年輪譜 大吟醸十年古酒",
+      "classification": "大吟醸",
+      "keyword": "花垣 年輪譜 大吟醸十年古酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "fukuoka-tanakarokujugo-junmai": {
+      "sakeId": "619",
+      "name": "田中六五 糸島産山田錦 純米酒",
+      "classification": "純米酒",
+      "keyword": "田中六五 糸島産山田錦 純米酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "shizuoka-suginishiki-kimoto-junmai90": {
+      "sakeId": "620",
+      "name": "杉錦 生もと純米90",
+      "classification": "生もと純米",
+      "keyword": "杉錦 生もと純米90 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "ishikawa-tedorigawa-yamahai-honjozo": {
+      "sakeId": "621",
+      "name": "手取川 山廃仕込 本醸造",
+      "classification": "本醸造",
+      "keyword": "手取川 山廃仕込 本醸造 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "hyogo-chikusen-yamahai-junmai-hiyaoroshi": {
+      "sakeId": "622",
+      "name": "竹泉 山廃純米ひやおろし",
+      "classification": "山廃純米",
+      "keyword": "竹泉 山廃純米ひやおろし 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "hyogo-okuharima-banshu-yamahai-junmai-namagenshu": {
+      "sakeId": "623",
+      "name": "奥播磨 播秋 山廃純米生原酒",
+      "classification": "山廃純米",
+      "keyword": "奥播磨 播秋 山廃純米生原酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "fukushima-aizumusume-honjozo-nigori-genshu": {
+      "sakeId": "625",
+      "name": "会津娘 本醸造にごり原酒",
+      "classification": "本醸造",
+      "keyword": "会津娘 本醸造にごり原酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "shimane-yamasanmasamune-yamahai-junmai": {
+      "sakeId": "627",
+      "name": "ヤマサン正宗 山廃仕込み純米酒",
+      "classification": "山廃純米",
+      "keyword": "ヤマサン正宗 山廃仕込み純米酒 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "tokushima-narutotai-honjozo-kinmatsu": {
+      "sakeId": "629",
+      "name": "鳴門鯛 本醸造 金松",
+      "classification": "本醸造",
+      "keyword": "鳴門鯛 本醸造 金松 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "ehime-umenishiki-honjozo-yumehito": {
+      "sakeId": "630",
+      "name": "梅錦 本醸造 夢人 銀ラベル",
+      "classification": "本醸造",
+      "keyword": "梅錦 本醸造 夢人 銀ラベル 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "kanagawa-sagaminada-tokubetsuhonjozo": {
+      "sakeId": "632",
+      "name": "相模灘 特別本醸造",
+      "classification": "特別本醸造",
+      "keyword": "相模灘 特別本醸造 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "saga-tenzan-shiboritatenama-honjozo": {
+      "sakeId": "633",
+      "name": "天山 しぼりたて生 本醸造",
+      "classification": "本醸造",
+      "keyword": "天山 しぼりたて生 本醸造 1800ml ふるさと納税",
+      "candidates": []
+    },
+    "saga-azumaichi-nama-honjozo": {
+      "sakeId": "634",
+      "name": "東一 生酒 本醸造",
+      "classification": "本醸造",
+      "keyword": "東一 生酒 本醸造 1800ml ふるさと納税",
+      "candidates": []
+    }
+  }
+}

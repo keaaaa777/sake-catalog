@@ -1,13 +1,7 @@
 {
-  "sourceFetchedAt": "2026-08-02T08:14:38.590Z",
-  "count": 52,
+  "sourceFetchedAt": "2026-08-02T10:40:16.564Z",
+  "count": 35,
   "sakes": [
-    {
-      "id": "81",
-      "slug": "juyondai-honmaru",
-      "name": "十四代 本丸 秘伝玉返し",
-      "classification": "本醸造"
-    },
     {
       "id": "109",
       "slug": "satonohomare-junmai-daiginjo",
@@ -57,12 +51,6 @@
       "classification": "純米大吟醸"
     },
     {
-      "id": "325",
-      "slug": "kuromatsu-kenbishi",
-      "name": "黒松剣菱",
-      "classification": "本醸造"
-    },
-    {
       "id": "466",
       "slug": "wakanami-junmai-ginjo-yamadanishiki",
       "name": "若波 純米吟醸 山田錦",
@@ -79,12 +67,6 @@
       "slug": "takakiya-junmai-ginjo-tejikuri-funeshibori",
       "name": "鷹来屋 純米吟醸 手造り槽しぼり",
       "classification": "純米吟醸"
-    },
-    {
-      "id": "525",
-      "slug": "hojun-tokubetsu-junmai-karakuchi",
-      "name": "豊潤 特別純米 芳醇辛口",
-      "classification": "純米"
     },
     {
       "id": "538",
@@ -135,24 +117,6 @@
       "classification": "純米大吟醸"
     },
     {
-      "id": "569",
-      "slug": "toyobijin-junmai-ginjo-50",
-      "name": "東洋美人 純米吟醸50",
-      "classification": "純米吟醸"
-    },
-    {
-      "id": "574",
-      "slug": "gifu-darumamasamune-gonen-koshu",
-      "name": "達磨正宗 五年古酒",
-      "classification": "純米古酒"
-    },
-    {
-      "id": "575",
-      "slug": "gifu-darumamasamune-junen-koshu",
-      "name": "達磨正宗 十年古酒",
-      "classification": "純米古酒"
-    },
-    {
       "id": "577",
       "slug": "nara-suiryu-jukusei-kimoto",
       "name": "睡龍 熟成生酛",
@@ -165,33 +129,9 @@
       "classification": "純米吟醸"
     },
     {
-      "id": "583",
-      "slug": "hyogo-hakutsuru-maru",
-      "name": "白鶴 まる",
-      "classification": "普通酒"
-    },
-    {
-      "id": "585",
-      "slug": "hokkaido-otokoyama-josen-honjozo",
-      "name": "男山 上撰",
-      "classification": "本醸造"
-    },
-    {
       "id": "591",
       "slug": "kyoto-tamagawa-shizenshikomi-yamahai",
       "name": "玉川 自然仕込 本醸造(山廃)",
-      "classification": "本醸造"
-    },
-    {
-      "id": "596",
-      "slug": "fukushima-hirotogawa-junginjo",
-      "name": "廣戸川 純米吟醸",
-      "classification": "純米吟醸"
-    },
-    {
-      "id": "600",
-      "slug": "hyogo-sawanotsuru-josen-honjozo",
-      "name": "沢の鶴 上撰 本醸造",
       "classification": "本醸造"
     },
     {
@@ -205,18 +145,6 @@
       "slug": "gifu-darumamasamune-nijunen-koshu",
       "name": "達磨正宗 二十年古酒",
       "classification": "純米古酒"
-    },
-    {
-      "id": "605",
-      "slug": "gifu-darumamasamune-jukusei-sannen",
-      "name": "達磨正宗 熟成三年",
-      "classification": "純米古酒"
-    },
-    {
-      "id": "606",
-      "slug": "niigata-echigozakura-honjozo",
-      "name": "越後桜 本醸造",
-      "classification": "本醸造"
     },
     {
       "id": "607",
@@ -249,12 +177,6 @@
       "classification": "大吟醸"
     },
     {
-      "id": "620",
-      "slug": "shizuoka-suginishiki-kimoto-junmai90",
-      "name": "杉錦 生もと純米90",
-      "classification": "生もと純米"
-    },
-    {
       "id": "621",
       "slug": "ishikawa-tedorigawa-yamahai-honjozo",
       "name": "手取川 山廃仕込 本醸造",
@@ -273,12 +195,6 @@
       "classification": "山廃純米"
     },
     {
-      "id": "625",
-      "slug": "fukushima-aizumusume-honjozo-nigori-genshu",
-      "name": "会津娘 本醸造にごり原酒",
-      "classification": "本醸造"
-    },
-    {
       "id": "627",
       "slug": "shimane-yamasanmasamune-yamahai-junmai",
       "name": "ヤマサン正宗 山廃仕込み純米酒",
@@ -289,24 +205,6 @@
       "slug": "tokushima-narutotai-honjozo-kinmatsu",
       "name": "鳴門鯛 本醸造 金松",
       "classification": "本醸造"
-    },
-    {
-      "id": "630",
-      "slug": "ehime-umenishiki-honjozo-yumehito",
-      "name": "梅錦 本醸造 夢人 銀ラベル",
-      "classification": "本醸造"
-    },
-    {
-      "id": "631",
-      "slug": "hyogo-zuisho-kuromatsukenbishi",
-      "name": "瑞祥黒松剣菱",
-      "classification": "大吟醸"
-    },
-    {
-      "id": "632",
-      "slug": "kanagawa-sagaminada-tokubetsuhonjozo",
-      "name": "相模灘 特別本醸造",
-      "classification": "特別本醸造"
     },
     {
       "id": "633",
