@@ -73,10 +73,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/en`, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${SITE_URL}/en/sake`, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${SITE_URL}/en/guide`, changeFrequency: 'weekly', priority: 0.5 },
+    { url: `${SITE_URL}/en/type`, changeFrequency: 'weekly', priority: 0.5 },
+    { url: `${SITE_URL}/en/diagnosis`, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${SITE_URL}/en/about`, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${SITE_URL}/en/disclosure`, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${SITE_URL}/en/privacy`, changeFrequency: 'yearly', priority: 0.3 },
   ]
+
+  const enTypePages: MetadataRoute.Sitemap = FLAVOR_TYPE_IDS.map((flavorType) => ({
+    url: `${SITE_URL}/en/type/${flavorType}`,
+    changeFrequency: 'weekly',
+    priority: 0.5,
+  }))
+
+  const enPairingPages: MetadataRoute.Sitemap = PAIRING_CATEGORY_IDS.map((category) => ({
+    url: `${SITE_URL}/en/pairing/${category}`,
+    changeFrequency: 'weekly',
+    priority: 0.4,
+  }))
+
+  const enScenePages: MetadataRoute.Sitemap = SCENE_IDS.map((scene) => ({
+    url: `${SITE_URL}/en/scene/${scene}`,
+    changeFrequency: 'weekly',
+    priority: 0.4,
+  }))
 
   const enSakePages: MetadataRoute.Sitemap = getAllEnSakeSlugs().map((slug) => ({
     url: `${SITE_URL}/en/sake/${slug}`,
@@ -103,5 +123,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...enStaticPages,
     ...enSakePages,
     ...enGuidePages,
+    ...enTypePages,
+    ...enPairingPages,
+    ...enScenePages,
   ]
 }

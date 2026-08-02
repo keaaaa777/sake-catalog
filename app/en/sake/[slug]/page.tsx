@@ -13,14 +13,30 @@ import ProductOfferCard from '@/components/ProductOfferCard'
 
 export const revalidate = 86400
 
+// 英訳が無い銘柄も、日本語版が存在する限りは404にせず
+// 「翻訳準備中/日本語で見る」の簡易ページを出す(ガイド記事等からの
+// リンク切れを防ぐため)。generateStaticParamsは翻訳済み分のみ事前生成し、
+// 未翻訳分はオンデマンドでフォールバック表示する。
 export function generateStaticParams() {
   return getAllEnSakeSlugs().map((slug) => ({ slug }))
 }
+export const dynamicParams = true
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const sake = getSakeBySlug(params.slug)
+  if (!sake) return {}
   const en = getEnSakeContent(params.slug)
-  if (!sake || !en) return {}
+
+  if (!en) {
+    return {
+      title: `${sake.name} | Shizuku Sake Select`,
+      description: `English tasting notes for ${sake.name} are coming soon.`,
+      alternates: {
+        canonical: `/en/sake/${params.slug}`,
+        languages: { 'ja-JP': `/sake/${params.slug}`, 'en-US': `/en/sake/${params.slug}` },
+      },
+    }
+  }
 
   const flavor = FLAVOR_TYPES[sake.flavorType]
   const description = `${sake.prefecture} ${classificationEn(sake.classification)} sake "${sake.name}". ${flavor.eng} style — tasting notes and where to buy.`.slice(0, 155)
@@ -38,8 +54,37 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 
 export default function EnSakeDetailPage({ params }: { params: { slug: string } }) {
   const sake = getSakeBySlug(params.slug)
+  if (!sake) notFound()
   const en = getEnSakeContent(params.slug)
-  if (!sake || !en) notFound()
+
+  if (!en) {
+    return (
+      <div className="mx-auto max-w-2xl">
+        <nav className="content-breadcrumb">
+          <Link href="/en">Home</Link>
+          <span>/</span>
+          <Link href="/en/sake">Browse Sake</Link>
+          <span>/</span>
+          <span style={{ color: 'var(--paper-white)' }}>{sake.name}</span>
+        </nav>
+        <header className="mb-8">
+          <h1 className="content-title text-3xl md:text-4xl">{sake.name}</h1>
+        </header>
+        <section className="content-card">
+          <p className="text-base leading-relaxed" style={{ color: 'var(--paper-white)' }}>
+            English tasting notes for this bottle are not ready yet. In the meantime, you can
+            read the full Japanese page, which also has purchase links.
+          </p>
+          <Link href={`/sake/${sake.slug}`} lang="ja" className="content-back-link mt-4 inline-block">
+            日本語で見る (View in Japanese) →
+          </Link>
+        </section>
+        <div className="mt-12">
+          <Link href="/en/sake" className="content-back-link">← Browse translated sake</Link>
+        </div>
+      </div>
+    )
+  }
 
   const brewery = getBreweryForSake(sake)
   const flavor = FLAVOR_TYPES[sake.flavorType]
