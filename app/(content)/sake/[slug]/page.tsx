@@ -12,6 +12,8 @@ import SakeThumb from '@/components/SakeThumb'
 import PurchaseButtons from '@/components/PurchaseButtons'
 import ProductOfferCard from '@/components/ProductOfferCard'
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
+
 export const revalidate = 86400
 
 export function generateStaticParams() {
@@ -77,13 +79,17 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
         description: sake.description,
         brand: brewery ? { '@type': 'Brand', name: brewery.name } : undefined,
         category: sake.classification,
-        offers: mallLinks.map((m) => ({
-          '@type': 'Offer',
-          url: m.url,
-          priceCurrency: 'JPY',
-          availability: 'https://schema.org/InStock',
-          seller: { '@type': 'Organization', name: m.label },
-        })),
+        // 検索結果ページへのフォールバックリンクは実在する商品オファーではないため、
+        // 個別商品への直リンクが確定しているものだけを構造化データに含める。
+        offers: mallLinks
+          .filter((m) => m.isDirect)
+          .map((m) => ({
+            '@type': 'Offer',
+            url: m.url,
+            priceCurrency: 'JPY',
+            availability: 'https://schema.org/InStock',
+            seller: { '@type': 'Organization', name: m.label },
+          })),
         ...(topOffer?.reviewCount && topOffer.reviewCount > 0 && topOffer.reviewAverage != null
           ? {
               aggregateRating: {
@@ -97,8 +103,13 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'トップ', item: '/' },
-          { '@type': 'ListItem', position: 2, name: sake.prefecture, item: prefSlug ? `/area/${prefSlug}` : undefined },
+          { '@type': 'ListItem', position: 1, name: 'トップ', item: SITE_URL },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: sake.prefecture,
+            item: prefSlug ? `${SITE_URL}/area/${prefSlug}` : undefined,
+          },
           { '@type': 'ListItem', position: 3, name: sake.name },
         ],
       },
