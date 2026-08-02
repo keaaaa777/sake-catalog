@@ -7,8 +7,9 @@ export interface MallLink {
   isDirect: boolean
 }
 
-// 個別商品への直リンクが無い銘柄は、
-// 「銘柄名」でのモール内検索結果ページへフォールバックする(指示書 §6-1)。
+// 楽天のアフィリエイト収益が実際に発生するか検証する期間中は、
+// 未提携で報酬が発生しない Amazon/Yahoo の導線は表示しない(一時的な方針)。
+// 復活させる場合は amazon/yahoo の tag/PID 付与を実装してから戻すこと。
 export function buildAffiliateLinks(sake: Sake): MallLink[] {
   const direct = sake.affiliate[0] || {}
   const q = encodeURIComponent(sake.name)
@@ -19,18 +20,6 @@ export function buildAffiliateLinks(sake: Sake): MallLink[] {
       label: '楽天市場',
       url: direct.rakuten || `https://search.rakuten.co.jp/search/mall/${q}/`,
       isDirect: Boolean(direct.rakuten),
-    },
-    {
-      mall: 'amazon',
-      label: 'Amazon',
-      url: direct.amazon || `https://www.amazon.co.jp/s?k=${q}`,
-      isDirect: Boolean(direct.amazon),
-    },
-    {
-      mall: 'yahoo',
-      label: 'Yahoo!ショッピング',
-      url: direct.yahoo || `https://shopping.yahoo.co.jp/search?p=${q}`,
-      isDirect: Boolean(direct.yahoo),
     },
   ]
 

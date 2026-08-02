@@ -16,8 +16,7 @@ export default function DisclosurePage() {
 
       <section className="content-card space-y-5 text-base leading-relaxed" style={{ color: 'var(--paper-white)' }}>
         <p>
-          本サイト「雫 SAKE SELECT」は、Amazonアソシエイト・楽天アフィリエイト・
-          バリューコマース・A8.netをはじめとするアフィリエイトプログラムに参加しています。
+          本サイト「雫 SAKE SELECT」は、楽天アフィリエイトプログラムに参加しています。
         </p>
         <p>
           銘柄詳細ページの購入リンクを経由して商品が購入された場合、本サイトが各プログラムの
