@@ -1,0 +1,194 @@
+// 楽天市場で「アフィリエイトリンクを張れる日本酒商品」を横断検索し、
+// サイトへ順次追加していくための候補一覧(テーブル)を作る調査用スクリプト。
+//
+// 出力はあくまで「候補の生データ」。銘柄ページとして掲載するには、
+// 味わいプロファイル・紹介文・都道府県/蔵元の紐付け等の追加キュレーションが
+// 別途必要(既存の scripts/add-real-sakes.js などのパイプラインを参照)。
+//
+// 使い方: node scripts/build-sake-candidates.js
+const fs = require('fs')
+const path = require('path')
+const { searchRakutenItems, sleep } = require('./lib/rakuten-search')
+
+const DATA_DIR = path.join(__dirname, '..', 'data')
+const CACHE_DIR = path.join(DATA_DIR, 'cache')
+const OUT_JSON = path.join(CACHE_DIR, 'sake-affiliate-candidates.json')
+const OUT_CSV = path.join(CACHE_DIR, 'sake-affiliate-candidates.csv')
+
+// これまでに検索済みのキーワード(履歴・重複クエリを避けるための記録)。
+// 新しく母数を増やす際は PENDING_KEYWORDS に追記し、実行後にこちらへ移すこと。
+const SEARCHED_KEYWORDS = [
+  '日本酒', '地酒', '清酒',
+  '純米大吟醸', '大吟醸', '純米吟醸', '吟醸', '純米酒', '本醸造',
+  '特別純米', '特別本醸造', '生酒', '原酒', 'にごり酒', 'スパークリング日本酒',
+  '古酒', '低アルコール日本酒',
+  '辛口 日本酒', '甘口 日本酒', '新酒', 'ひやおろし',
+  '山廃 日本酒', '生酛 日本酒', '無濾過 日本酒',
+  // 主要産地(都道府県 + 日本酒)
+  '新潟 日本酒', '兵庫 日本酒', '京都 日本酒', '秋田 日本酒', '山形 日本酒',
+  '福島 日本酒', '広島 日本酒', '高知 日本酒', '福岡 日本酒', '長野 日本酒',
+  '石川 日本酒', '富山 日本酒', '岩手 日本酒', '山口 日本酒', '愛知 日本酒',
+  // 有名銘柄名
+  '獺祭', '八海山', '久保田', '十四代', '而今', '花陽浴', '新政', '飛露喜',
+  '鍋島', '出羽桜', '醸し人九平次', '黒龍', '雪の茅舎', '大七', '賀茂鶴',
+  '王祿', '磯自慢', '田酒', '東洋美人',
+  // 酒米品種
+  '山田錦 日本酒', '五百万石 日本酒', '雄町 日本酒', '美山錦 日本酒', '愛山 日本酒',
+  // 残り32都道府県
+  '北海道 日本酒', '青森 日本酒', '宮城 日本酒', '茨城 日本酒', '栃木 日本酒',
+  '群馬 日本酒', '埼玉 日本酒', '千葉 日本酒', '東京 日本酒', '神奈川 日本酒',
+  '福井 日本酒', '山梨 日本酒', '岐阜 日本酒', '静岡 日本酒', '三重 日本酒',
+  '滋賀 日本酒', '大阪 日本酒', '奈良 日本酒', '和歌山 日本酒', '鳥取 日本酒',
+  '島根 日本酒', '岡山 日本酒', '徳島 日本酒', '香川 日本酒', '愛媛 日本酒',
+  '佐賀 日本酒', '長崎 日本酒', '熊本 日本酒', '大分 日本酒', '宮崎 日本酒',
+  '鹿児島 日本酒', '沖縄 日本酒',
+  // 有名銘柄名(追加分)
+  '剣菱', '白鶴', '月桂冠', '大関', '浦霞', '一ノ蔵', '男山', '高清水',
+  '楯野川', '上喜元', '満寿泉', '立山', '天狗舞', '菊姫', '手取川', '常きげん',
+  '真澄', '伯楽星', '墨廼江', '日高見', '上善如水', '越乃寒梅', '〆張鶴', '雪中梅',
+  '鶴齢', '早瀬浦', '花垣', '開運', '喜久醉', '鳳凰美田', '会津娘', '千代の光',
+  '龍力', '奥播磨', '陸奥八仙', '豊盃', '東一', '貴',
+  // 温度帯・度数
+  '燗酒', '熱燗 日本酒', 'ぬる燗 日本酒', '冷酒 日本酒', '食中酒 日本酒',
+  '高アルコール 日本酒', '微発泡 日本酒',
+]
+
+// 次に母数を増やす際はここに新しいキーワードを追記する
+// (実行後は SEARCHED_KEYWORDS 側へ移し、重複クエリを避けること)。
+const PENDING_KEYWORDS = []
+
+// 実行時に問い合わせるキーワード。母数をさらに増やす際は PENDING_KEYWORDS を
+// 更新し、消化したキーワードは SEARCHED_KEYWORDS へ移す運用とする。
+const KEYWORDS = PENDING_KEYWORDS
+const SORTS = ['standard', '-reviewCount', '-reviewAverage']
+const PAGES = [1, 2]
+const HITS_PER_CALL = 30
+
+const VOLUME_HINT = /(\d{2,4}\s*m?l|一升|四合|300ml|720ml|1800ml)/i
+
+// セット/飲み比べ/ふるさと納税等は除外せず、タグを付けて残す
+// (該当銘柄単体としてではなく、関連おすすめ等の別導線での紹介に使える)
+const SET_HINT = /飲み比べ|飲みくらべ|セット|詰め合わせ|ふるさと納税|福袋|ギフトセット|飲み較べ/
+
+// 「本醸造」等は調味料(本醸造しょうゆ等)にも一致するため、明らかに酒類でない
+// 商品名だけは除外する。日本酒/清酒を明示している場合は誤検知として救済する。
+const NON_SAKE_HINT = /醤油|味噌|みりん|めんつゆ|ポン酢|食用酢|だし醤油/
+const SAKE_CONFIRM_HINT = /日本酒|清酒|地酒|純米|吟醸|醸造酒|酒蔵/
+
+function csvEscape(value) {
+  const s = String(value ?? '')
+  return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s
+}
+
+async function main() {
+  const sakes = require(path.join(DATA_DIR, 'sakes.json'))
+  const existingNames = sakes.map((s) => s.name)
+
+  const byItemUrl = new Map()
+
+  // 前回までの収集結果があれば読み込み、母数を維持したまま追加分だけ取得する
+  if (fs.existsSync(OUT_JSON)) {
+    const prev = JSON.parse(fs.readFileSync(OUT_JSON, 'utf8'))
+    for (const c of prev.candidates || []) {
+      byItemUrl.set(c.itemUrl, {
+        itemName: c.itemName,
+        shopName: c.shopName,
+        itemPrice: c.itemPrice,
+        reviewCount: c.reviewCount,
+        reviewAverage: c.reviewAverage,
+        mediumImageUrls: c.imageUrl ? [{ imageUrl: c.imageUrl }] : [],
+        itemUrl: c.itemUrl,
+        affiliateUrl: c.affiliateUrl,
+        matchedKeywords: c.matchedKeywords ? c.matchedKeywords.split('|') : [],
+      })
+    }
+    console.log(`前回結果を読み込み: ${byItemUrl.size}件から継続\n`)
+  }
+
+  const totalQueries = KEYWORDS.length * SORTS.length * PAGES.length
+  let queryIndex = 0
+
+  for (const keyword of KEYWORDS) {
+    for (const sort of SORTS) {
+      for (const page of PAGES) {
+        queryIndex++
+        try {
+          const items = await searchRakutenItems(keyword, { hits: HITS_PER_CALL, sort, page })
+          for (const item of items) {
+            const existing = byItemUrl.get(item.itemUrl)
+            if (existing) {
+              if (!existing.matchedKeywords.includes(keyword)) existing.matchedKeywords.push(keyword)
+            } else {
+              byItemUrl.set(item.itemUrl, { ...item, matchedKeywords: [keyword] })
+            }
+          }
+          console.log(
+            `[ok] (${queryIndex}/${totalQueries}) ${keyword} / sort=${sort} / page=${page} -> ${items.length}件 (累計候補 ${byItemUrl.size}件)`
+          )
+        } catch (err) {
+          console.error(`[error] (${queryIndex}/${totalQueries}) ${keyword} / sort=${sort} / page=${page}: ${err.message}`)
+        }
+        await sleep(1000)
+      }
+    }
+  }
+
+  const filtered = Array.from(byItemUrl.values()).filter(
+    (item) => !NON_SAKE_HINT.test(item.itemName) || SAKE_CONFIRM_HINT.test(item.itemName)
+  )
+
+  const candidates = filtered.map((item) => {
+    const alreadyOnSite = existingNames.some(
+      (name) => item.itemName.includes(name) || name.includes(item.itemName)
+    )
+    return {
+      itemName: item.itemName,
+      shopName: item.shopName,
+      itemPrice: item.itemPrice,
+      reviewCount: item.reviewCount,
+      reviewAverage: item.reviewAverage,
+      hasVolumeHint: VOLUME_HINT.test(item.itemName),
+      isSetOrGift: SET_HINT.test(item.itemName),
+      alreadyOnSite,
+      matchedKeywords: item.matchedKeywords.join('|'),
+      imageUrl: (item.mediumImageUrls && item.mediumImageUrls[0] && item.mediumImageUrls[0].imageUrl) || '',
+      itemUrl: item.itemUrl,
+      affiliateUrl: item.affiliateUrl,
+    }
+  })
+
+  // 未掲載のものを優先表示できるよう並べ替え(セット/ギフトも除外はせず含めたまま)
+  candidates.sort((a, b) => {
+    if (a.alreadyOnSite !== b.alreadyOnSite) return a.alreadyOnSite ? 1 : -1
+    if (a.isSetOrGift !== b.isSetOrGift) return a.isSetOrGift ? 1 : -1
+    return (b.reviewCount || 0) - (a.reviewCount || 0)
+  })
+
+  fs.mkdirSync(CACHE_DIR, { recursive: true })
+  fs.writeFileSync(
+    OUT_JSON,
+    JSON.stringify({ fetchedAt: new Date().toISOString(), count: candidates.length, candidates }, null, 2) + '\n'
+  )
+
+  const header = [
+    'itemName', 'shopName', 'itemPrice', 'reviewCount', 'reviewAverage',
+    'hasVolumeHint', 'isSetOrGift', 'alreadyOnSite', 'matchedKeywords', 'imageUrl', 'itemUrl', 'affiliateUrl',
+  ]
+  const rows = [header.join(',')]
+  for (const c of candidates) {
+    rows.push(header.map((key) => csvEscape(c[key])).join(','))
+  }
+  fs.writeFileSync(OUT_CSV, rows.join('\n') + '\n')
+
+  const newCount = candidates.filter((c) => !c.alreadyOnSite).length
+  const setCount = candidates.filter((c) => c.isSetOrGift).length
+  const singleCount = candidates.filter((c) => !c.isSetOrGift && !c.alreadyOnSite).length
+  console.log(`\n候補総数: ${candidates.length}件`)
+  console.log(`  うち未掲載と思われるもの: ${newCount}件`)
+  console.log(`  うちセット/ギフト系(タグのみ・除外なし): ${setCount}件`)
+  console.log(`  うち未掲載かつ単品らしきもの: ${singleCount}件`)
+  console.log(`書き出し完了: ${OUT_JSON}`)
+  console.log(`書き出し完了: ${OUT_CSV}`)
+}
+
+main()

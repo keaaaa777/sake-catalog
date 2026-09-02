@@ -1,0 +1,55 @@
+{
+  "fetchedAt": "2026-09-02T02:46:00.638Z",
+  "results": [
+    {
+      "label": "日本酒",
+      "keyword": "日本酒",
+      "count": 142441
+    },
+    {
+      "label": "焼酎",
+      "keyword": "焼酎",
+      "count": 166564
+    },
+    {
+      "label": "ビール",
+      "keyword": "ビール",
+      "count": 247136
+    },
+    {
+      "label": "発泡酒",
+      "keyword": "発泡酒",
+      "count": 14383
+    },
+    {
+      "label": "ワイン",
+      "keyword": "ワイン",
+      "count": 1194328
+    },
+    {
+      "label": "ウイスキー",
+      "keyword": "ウイスキー",
+      "count": 120434
+    },
+    {
+      "label": "梅酒",
+      "keyword": "梅酒",
+      "count": 33116
+    },
+    {
+      "label": "クラフトジン",
+      "keyword": "クラフトジン",
+      "count": 3102
+    },
+    {
+      "label": "ラム酒",
+      "keyword": "ラム酒",
+      "count": 1812
+    },
+    {
+      "label": "サワー・チューハイ",
+      "keyword": "チューハイ",
+      "count": 36649
+    }
+  ]
+}

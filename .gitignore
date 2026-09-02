@@ -28,3 +28,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 楽天商品検索の大容量スクレイピング結果(scripts/build-sake-candidates.js 等で再生成可能)
+data/cache/sake-affiliate-candidates.json
+data/cache/sake-affiliate-candidates.csv
+data/cache/sake-shortlist.json
+data/cache/sake-shortlist.csv

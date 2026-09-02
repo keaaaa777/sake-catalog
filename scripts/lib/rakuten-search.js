@@ -36,7 +36,7 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
-async function searchRakutenItems(keyword, { hits = 5 } = {}) {
+async function searchRakutenItems(keyword, { hits = 5, sort, page } = {}) {
   const appId = process.env.RAKUTEN_APP_ID
   const accessKey = process.env.RAKUTEN_ACCESS_KEY
   const affiliateId = process.env.RAKUTEN_AFFILIATE_ID
@@ -54,6 +54,8 @@ async function searchRakutenItems(keyword, { hits = 5 } = {}) {
   url.searchParams.set('keyword', keyword)
   url.searchParams.set('hits', String(hits))
   url.searchParams.set('formatVersion', '2')
+  if (sort) url.searchParams.set('sort', sort)
+  if (page) url.searchParams.set('page', String(page))
 
   const res = await fetch(url.toString(), {
     headers: {
