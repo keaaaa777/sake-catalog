@@ -1,0 +1,58 @@
+[
+  {
+    "prefecture": "広島県",
+    "breweryName": "中尾醸造",
+    "productName": "誠鏡 純米大吟醸原酒 幻",
+    "romajiSlug": "seikyo-junmai-daiginjo-genshu-maboroshi",
+    "classification": "純米大吟醸",
+    "riceVariety": "山田錦",
+    "polishingRatio": 50,
+    "abv": 17,
+    "smv": 2,
+    "acidity": 1.4,
+    "priceRange": 3,
+    "description": "広島県三原市の中尾醸造が醸す、原酒ならではの力強さを持つ純米大吟醸。山田錦を50%まで磨き、加水をせずに搾ったままの状態で瓶詰めすることで、芳醇な香りと厚みのある旨みを凝縮させている。軟水醸造法による丸みのある口当たりと、原酒らしい飲みごたえを両立させた贅沢な一本。"
+  },
+  {
+    "prefecture": "静岡県",
+    "breweryName": "磯自慢酒造",
+    "productName": "磯自慢 中取り 大吟醸",
+    "romajiSlug": "isojiman-nakadori-daiginjo",
+    "classification": "大吟醸",
+    "riceVariety": "山田錦",
+    "polishingRatio": 40,
+    "abv": 16.5,
+    "smv": 3,
+    "acidity": 1.3,
+    "priceRange": 3,
+    "description": "静岡県焼津市の磯自慢酒造が、山田錦を40%まで磨いて醸す代表銘柄。全国新酒鑑評会で長年にわたり高い評価を受けてきた実力蔵らしく、上品な吟醸香と雑味のない澄んだ旨みが際立つ。もろみを搾る過程で最も味わいが整う「中取り」部分のみを瓶詰めした、贅沢な仕上がりの一本。"
+  },
+  {
+    "prefecture": "秋田県",
+    "breweryName": "秋田酒類製造",
+    "productName": "高清水 辛口 普通酒",
+    "romajiSlug": "takashimizu-karakuchi-futsushu",
+    "classification": "普通酒",
+    "riceVariety": null,
+    "polishingRatio": null,
+    "abv": 15.5,
+    "smv": 5,
+    "acidity": 1.3,
+    "priceRange": 1,
+    "description": "秋田県秋田市の秋田酒類製造が醸す、地元で長く親しまれてきた定番の辛口酒。特定名称にこだわらない普通酒ながら、雑味の少ないすっきりとした飲み口に仕上げており、燗をつけても崩れない安定した味わいが持ち味。日常の晩酌に寄り添う秋田の定番地酒。"
+  },
+  {
+    "prefecture": "青森県",
+    "breweryName": "三浦酒造",
+    "productName": "豊盃 純米酒",
+    "romajiSlug": "hohai-junmai",
+    "classification": "純米",
+    "riceVariety": "豊盃米",
+    "polishingRatio": 60,
+    "abv": 15.5,
+    "smv": 3,
+    "acidity": 1.4,
+    "priceRange": 2,
+    "description": "青森県弘前市の三浦酒造が、自社契約栽培する希少な酒米「豊盃米」で醸す純米酒。やや辛口ながら角のない柔らかな口当たりで、津軽の食文化に寄り添う晩酌酒として地元で根強い人気を誇る。派手さはないが飲み飽きしない、実直な造りが光る一本。"
+  }
+]

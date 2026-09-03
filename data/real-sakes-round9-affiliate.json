@@ -1,0 +1,44 @@
+[
+  {
+    "prefecture": "福井県",
+    "breweryName": "三宅彦右衛門酒造",
+    "productName": "早瀬浦 純米酒",
+    "romajiSlug": "hayasenoura-junmai",
+    "classification": "純米",
+    "riceVariety": null,
+    "polishingRatio": 60,
+    "abv": 15.5,
+    "smv": 3,
+    "acidity": 1.4,
+    "priceRange": 2,
+    "description": "若狭湾に面した福井県美浜町の三宅彦右衛門酒造が醸す純米酒。地元で水揚げされる魚介との相性を第一に考えた酒質で、旨みとキレのバランスが良く、料理の味を引き立てる食中酒として定評がある。派手さはないが、飲むほどに味わいが増す実直な造り。"
+  },
+  {
+    "prefecture": "静岡県",
+    "breweryName": "青島酒造",
+    "productName": "喜久醉 特別純米",
+    "romajiSlug": "kikuyoi-tokubetsu-junmai",
+    "classification": "特別純米",
+    "riceVariety": null,
+    "polishingRatio": 60,
+    "abv": 15.5,
+    "smv": 3,
+    "acidity": 1.4,
+    "priceRange": 2,
+    "description": "静岡県藤枝市の青島酒造が醸す、静岡吟醸文化を象徴する一本。穏やかで上品な香りと、やわらかく淡麗な旨みが特徴で、料理の脇役に徹する食中酒としての完成度の高さで知られる。全国の酒販店・飲食店から根強い支持を集める銘柄。"
+  },
+  {
+    "prefecture": "和歌山県",
+    "breweryName": "尾崎酒造",
+    "productName": "太平洋 純米酒",
+    "romajiSlug": "taiheiyo-junmai",
+    "classification": "純米",
+    "riceVariety": null,
+    "polishingRatio": 65,
+    "abv": 15,
+    "smv": 2,
+    "acidity": 1.3,
+    "priceRange": 1,
+    "description": "熊野の山々に育まれた水で仕込む、和歌山県新宮市の尾崎酒造の純米酒。太平洋を望む土地の名を冠した通り、おおらかで飲みやすい味わいが持ち味。地元の新鮮な魚介料理と合わせる晩酌酒として長く親しまれている。"
+  }
+]

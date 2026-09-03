@@ -1550,5 +1550,95 @@
     "description": "大正11年、瀬頭酒造から分家して創業。佐賀県嬉野市の蔵元で、「東一」の銘柄で知られる。",
     "imageUrl": "🏛️",
     "isRealData": true
+  },
+  {
+    "id": "178",
+    "slug": "niigata-brewery-178",
+    "name": "丸山酒造場",
+    "prefecture": "新潟県",
+    "description": "新潟県上越市柿崎区の蔵元。淡麗ながら滋味あふれる味わいで知られる「雪中梅」の造り手として、地元をはじめ全国に根強いファンを持つ。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "179",
+    "slug": "yamagata-brewery-179",
+    "name": "酒田酒造",
+    "prefecture": "山形県",
+    "description": "山形県酒田市の蔵元。最上川流域の恵まれた米どころで醸す「上喜元」は、しっかりとした旨みと洗練された酸味のバランスで知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "181",
+    "slug": "miyagi-brewery-181",
+    "name": "墨廼江酒造",
+    "prefecture": "宮城県",
+    "description": "宮城県石巻市の蔵元。旧北上川の伏流水を仕込み水に、キレの良い辛口酒「墨廼江」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "184",
+    "slug": "hiroshima-brewery-184",
+    "name": "中尾醸造",
+    "prefecture": "広島県",
+    "description": "広島県三原市の蔵元。伝統的な軟水醸造法を守りながら、繊細で上品な香りの大吟醸酒「誠鏡」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "185",
+    "slug": "shizuoka-brewery-185",
+    "name": "磯自慢酒造",
+    "prefecture": "静岡県",
+    "description": "静岡県焼津市の蔵元。全国新酒鑑評会で高い評価を受け続ける「磯自慢」を醸す、静岡吟醸の代表格。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "186",
+    "slug": "akita-brewery-186",
+    "name": "秋田酒類製造",
+    "prefecture": "秋田県",
+    "description": "秋田県秋田市の蔵元。県内屈指の生産量を誇り、地元で長く愛される「高清水」を送り出している。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "187",
+    "slug": "aomori-brewery-187",
+    "name": "三浦酒造",
+    "prefecture": "青森県",
+    "description": "青森県弘前市の蔵元。自社で契約栽培する酒米「豊盃米」にこだわり、やわらかな飲み口の「豊盃」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "188",
+    "slug": "fukui-brewery-188",
+    "name": "三宅彦右衛門酒造",
+    "prefecture": "福井県",
+    "description": "福井県三方郡美浜町の蔵元。若狭湾に面した土地柄を活かし、魚介との相性を意識した「早瀬浦」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "189",
+    "slug": "shizuoka-brewery-189",
+    "name": "青島酒造",
+    "prefecture": "静岡県",
+    "description": "静岡県藤枝市の蔵元。静岡吟醸の草分け的存在として知られ、繊細で穏やかな香りの「喜久醉」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "190",
+    "slug": "wakayama-brewery-190",
+    "name": "尾崎酒造",
+    "prefecture": "和歌山県",
+    "description": "和歌山県新宮市の蔵元。熊野の山々に育まれた水で、地元に根差した「太平洋」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   }
 ]
