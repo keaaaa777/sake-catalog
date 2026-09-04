@@ -2522,5 +2522,86 @@
     "description": "埼玉県上尾市の蔵元。現代的な感性を取り入れた「文楽」を醸す。",
     "imageUrl": "🏛️",
     "isRealData": true
+  },
+  {
+    "id": "289",
+    "slug": "aichi-brewery-289",
+    "name": "長珍酒造",
+    "prefecture": "愛知県",
+    "description": "愛知県津島市の蔵元。無濾過生原酒にこだわる「長珍」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "290",
+    "slug": "aichi-brewery-290",
+    "name": "澤田酒造",
+    "prefecture": "愛知県",
+    "description": "愛知県常滑市の蔵元。全国燗酒コンテストで金賞を受賞した「白老」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "291",
+    "slug": "aichi-brewery-291",
+    "name": "原田酒造",
+    "prefecture": "愛知県",
+    "description": "愛知県知多郡東浦町の蔵元。地元産の酒米「若水」を用いた「生道井」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "292",
+    "slug": "shiga-brewery-292",
+    "name": "喜多酒造",
+    "prefecture": "滋賀県",
+    "description": "滋賀県東近江市の蔵元。「喜楽長」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "293",
+    "slug": "shiga-brewery-293",
+    "name": "平井商店",
+    "prefecture": "滋賀県",
+    "description": "滋賀県大津市の蔵元。地元産の酒米「滋賀渡船6号」で醸す「浅茅生」を送り出す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "294",
+    "slug": "shiga-brewery-294",
+    "name": "上原酒造",
+    "prefecture": "滋賀県",
+    "description": "滋賀県高島市の蔵元。「不老泉」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "295",
+    "slug": "shiga-brewery-295",
+    "name": "美冨久酒造",
+    "prefecture": "滋賀県",
+    "description": "滋賀県甲賀市水口の蔵元。「美冨久」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "296",
+    "slug": "aichi-brewery-296",
+    "name": "中埜酒造",
+    "prefecture": "愛知県",
+    "description": "愛知県半田市の蔵元。「國盛」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "297",
+    "slug": "fukui-brewery-297",
+    "name": "田嶋酒造",
+    "prefecture": "福井県",
+    "description": "福井県越前市の蔵元。山廃仕込みの「福千歳」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   }
 ]
