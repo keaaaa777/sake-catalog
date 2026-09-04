@@ -1973,5 +1973,158 @@
     "description": "山形県鶴岡市の蔵元。無濾過純米にこだわり、看板銘柄「白露垂珠」を醸す。",
     "imageUrl": "🏛️",
     "isRealData": true
+  },
+  {
+    "id": "228",
+    "slug": "niigata-brewery-228",
+    "name": "高千代酒造",
+    "prefecture": "新潟県",
+    "description": "新潟県南魚沼市の蔵元。扁平精米による辛口純米酒「高千代」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "229",
+    "slug": "fukushima-brewery-229",
+    "name": "大和川酒造",
+    "prefecture": "福島県",
+    "description": "福島県喜多方市の蔵元。会津の伝統を受け継ぎ、「弥右衛門」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "230",
+    "slug": "fukushima-brewery-230",
+    "name": "会津榮川酒造",
+    "prefecture": "福島県",
+    "description": "福島県耶麻郡の蔵元。日本酒アワードでの受賞歴を持つ「榮川」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "231",
+    "slug": "fukushima-brewery-231",
+    "name": "会津夢心酒造",
+    "prefecture": "福島県",
+    "description": "福島県喜多方市の蔵元。会津の食文化に寄り添う「奈良萬」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "232",
+    "slug": "fukushima-brewery-232",
+    "name": "玄葉本店",
+    "prefecture": "福島県",
+    "description": "福島県の蔵元。地元米を活かした「あぶくま」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "233",
+    "slug": "hiroshima-brewery-233",
+    "name": "盛川酒造",
+    "prefecture": "広島県",
+    "description": "広島県の蔵元。バランスの良い特別純米酒「白鴻」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "234",
+    "slug": "hiroshima-brewery-234",
+    "name": "三宅本店",
+    "prefecture": "広島県",
+    "description": "広島県呉市の蔵元。呉の食文化とともに親しまれてきた「千福」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "235",
+    "slug": "hiroshima-brewery-235",
+    "name": "天寶一酒造",
+    "prefecture": "広島県",
+    "description": "広島県東広島市の蔵元。辛口を軸とした「天寶一」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "236",
+    "slug": "ishikawa-brewery-236",
+    "name": "御祖酒造",
+    "prefecture": "石川県",
+    "description": "石川県羽咋市の蔵元。現代的な酒質で人気を集める「遊穂」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "237",
+    "slug": "toyama-brewery-237",
+    "name": "三笑楽酒造",
+    "prefecture": "富山県",
+    "description": "富山県南砺市の蔵元。地元に根差した「三笑楽」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "238",
+    "slug": "nagano-brewery-238",
+    "name": "佐久の花酒造",
+    "prefecture": "長野県",
+    "description": "長野県佐久市の蔵元。無ろ過生原酒にこだわる「佐久乃花」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "239",
+    "slug": "akita-brewery-239",
+    "name": "両関酒造",
+    "prefecture": "秋田県",
+    "description": "秋田県湯沢市の蔵元。看板銘柄「両関」に加え、華やかな「花邑」も手がける。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "240",
+    "slug": "yamagata-brewery-240",
+    "name": "米鶴酒造",
+    "prefecture": "山形県",
+    "description": "山形県東置賜郡の蔵元。辛口の「米鶴」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "241",
+    "slug": "yamagata-brewery-241",
+    "name": "樽平酒造",
+    "prefecture": "山形県",
+    "description": "山形県東置賜郡の蔵元。地元で長く愛される「樽平」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "242",
+    "slug": "miyagi-brewery-242",
+    "name": "蔵王酒造",
+    "prefecture": "宮城県",
+    "description": "宮城県刈田郡の蔵元。蔵王連峰の名を冠した「蔵王」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "243",
+    "slug": "kyoto-brewery-243",
+    "name": "白杉酒造",
+    "prefecture": "京都府",
+    "description": "京都府京丹後市の蔵元。個性的な銘柄名の「白木久」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "244",
+    "slug": "fukushima-brewery-244",
+    "name": "豊国酒造",
+    "prefecture": "福島県",
+    "description": "全国新酒鑑評会金賞蔵数日本一の福島県にある蔵元。「一歩己」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   }
 ]
