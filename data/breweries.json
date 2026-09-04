@@ -1874,5 +1874,104 @@
     "description": "島根県邑南町の蔵元。「邑南町三酒蔵」の一つとして、無濾過生原酒の「誉池月」を醸す。",
     "imageUrl": "🏛️",
     "isRealData": true
+  },
+  {
+    "id": "217",
+    "slug": "akita-brewery-217",
+    "name": "山本酒造",
+    "prefecture": "秋田県",
+    "description": "秋田県山本郡八峰町の蔵元。日本刀のような鋭いキレ味の「山本」と、地元で愛される「白瀑」の2ブランドを持つ。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "218",
+    "slug": "hyogo-brewery-218",
+    "name": "富久錦",
+    "prefecture": "兵庫県",
+    "description": "兵庫県加西市の蔵元。地元産米100%にこだわり、飲みやすくすっきりとした「富久錦」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "219",
+    "slug": "shimane-brewery-219",
+    "name": "隠岐酒造",
+    "prefecture": "島根県",
+    "description": "島根県隠岐郡隠岐の島町の蔵元。離島という土地柄を活かし、独自の酒質の「隠岐誉」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "220",
+    "slug": "tochigi-brewery-220",
+    "name": "富川酒造店",
+    "prefecture": "栃木県",
+    "description": "栃木県矢板市の蔵元。無濾過生原酒を中心に、力強い味わいの「忠愛」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "221",
+    "slug": "hyogo-brewery-221",
+    "name": "灘菊酒造",
+    "prefecture": "兵庫県",
+    "description": "兵庫県姫路市の蔵元。地元の名峰の名を冠した「雪彦山」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "222",
+    "slug": "fukuoka-brewery-222",
+    "name": "若竹屋酒造場",
+    "prefecture": "福岡県",
+    "description": "福岡県久留米市田主丸の老舗蔵。伝統の「博多練酒」に加え、現代的な純米原酒ブランド「Michikake」も手がける。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "223",
+    "slug": "kyoto-brewery-223",
+    "name": "北川本家",
+    "prefecture": "京都府",
+    "description": "京都府伏見の蔵元。江戸時代から続く老舗で、飲みやすい味わいの「富翁」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "224",
+    "slug": "niigata-brewery-224",
+    "name": "新潟第一酒造",
+    "prefecture": "新潟県",
+    "description": "新潟県新発田市の蔵元。秘伝仕込みの純米吟醸「越の白鳥」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "225",
+    "slug": "nara-brewery-225",
+    "name": "豊澤酒造",
+    "prefecture": "奈良県",
+    "description": "奈良県天理市の蔵元。地元に根差した味わいの「貴仙寿」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "226",
+    "slug": "tochigi-brewery-226",
+    "name": "第一酒造",
+    "prefecture": "栃木県",
+    "description": "栃木県小山市の蔵元。飲み飽きしないすっきりとした味わいの「開華」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "227",
+    "slug": "yamagata-brewery-227",
+    "name": "竹の露",
+    "prefecture": "山形県",
+    "description": "山形県鶴岡市の蔵元。無濾過純米にこだわり、看板銘柄「白露垂珠」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   }
 ]
