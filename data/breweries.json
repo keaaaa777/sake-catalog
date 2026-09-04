@@ -2351,5 +2351,86 @@
     "description": "広島県東広島市西条の蔵元。酒どころ西条の伝統を受け継ぐ「西條鶴」を醸す。",
     "imageUrl": "🏛️",
     "isRealData": true
+  },
+  {
+    "id": "270",
+    "slug": "akita-brewery-270",
+    "name": "木村酒造",
+    "prefecture": "秋田県",
+    "description": "秋田県横手市の蔵元。「福小町」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "271",
+    "slug": "miyagi-brewery-271",
+    "name": "寒梅酒造",
+    "prefecture": "宮城県",
+    "description": "宮城県黒川郡の蔵元。「宮寒梅」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "272",
+    "slug": "miyagi-brewery-272",
+    "name": "大沼酒造店",
+    "prefecture": "宮城県",
+    "description": "宮城県柴田郡の蔵元。辛口を軸とした「乾坤一」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "273",
+    "slug": "miyagi-brewery-273",
+    "name": "勝山酒造",
+    "prefecture": "宮城県",
+    "description": "仙台伊達家御用蔵として知られる宮城県仙台市の蔵元。「勝山」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "274",
+    "slug": "akita-brewery-274",
+    "name": "日の丸醸造",
+    "prefecture": "秋田県",
+    "description": "秋田県横手市の蔵元。「まんさくの花」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "275",
+    "slug": "iwate-brewery-275",
+    "name": "川村酒造店",
+    "prefecture": "岩手県",
+    "description": "岩手県花巻市の蔵元。「南部関」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "276",
+    "slug": "aomori-brewery-276",
+    "name": "桃川株式会社",
+    "prefecture": "青森県",
+    "description": "青森県上北郡の蔵元。ねぶた祭りの街らしい親しみやすい「桃川」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "277",
+    "slug": "aomori-brewery-277",
+    "name": "八戸酒類",
+    "prefecture": "青森県",
+    "description": "青森県八戸市の蔵元。同じ八戸市の八戸酒造(陸奥八仙)とは別法人で、「如空」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "278",
+    "slug": "osaka-brewery-278",
+    "name": "呉春株式会社",
+    "prefecture": "大阪府",
+    "description": "大阪府池田市の蔵元。与謝蕪村ゆかりの地で「呉春」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   }
 ]

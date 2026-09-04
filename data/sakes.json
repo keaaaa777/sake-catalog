@@ -38203,5 +38203,926 @@
       }
     ],
     "isRealData": true
+  },
+  {
+    "id": "1280",
+    "slug": "fukukomachi-junmai-ginjo",
+    "name": "福小町 純米吟醸",
+    "nameKana": "",
+    "breweryId": "akita-brewery-270",
+    "prefecture": "秋田県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 55,
+      "abv": 15.5,
+      "smv": 3,
+      "acid": 1.3
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "秋田県横手市の木村酒造が醸す純米吟醸。小野小町ゆかりの地に由来する銘柄名を持ち、上品な吟醸香とやわらかな旨みが特徴。横手盆地の恵まれた米どころが育んだ、洗練された味わいの一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qj4xn.sgrg262c.g00qj4xn.sgrg309b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fakitatokusan%2F10002858%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fakitatokusan%2Fi%2F10002858%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1281",
+    "slug": "miyakanbai-junmai-daiginjo",
+    "name": "宮寒梅 純米大吟醸",
+    "nameKana": "",
+    "breweryId": "miyagi-brewery-271",
+    "prefecture": "宮城県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 45,
+      "abv": 16.5,
+      "smv": 3,
+      "acid": 1.3
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "宮城県黒川郡の寒梅酒造が醸す純米大吟醸。華やかな香りと澄んだ旨みを持ち、近年評価を急速に高めている実力銘柄。宮城の食中酒としての完成度の高さと、贈答用にふさわしい格式を併せ持つ一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00s0kkn.sgrg2dfd.g00s0kkn.sgrg3440/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftanbo-sabun%2F10000005%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftanbo-sabun%2Fi%2F10000030%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1282",
+    "slug": "kenkonichi-tokubetsu-junmai-karakuchi",
+    "name": "乾坤一 特別純米 辛口",
+    "nameKana": "",
+    "breweryId": "miyagi-brewery-272",
+    "prefecture": "宮城県",
+    "classification": "特別純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 3,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 60,
+      "abv": 15.5,
+      "smv": 6,
+      "acid": 1.5
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "宮城県柴田郡の大沼酒造店が醸す辛口の特別純米酒。「天地の間で一番」を意味する力強い銘柄名の通り、しっかりとした骨格とキレの良い辛口が特徴。宮城の食文化に寄り添う、実直な食中酒。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00s0kkn.sgrg2dfd.g00s0kkn.sgrg3440/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftanbo-sabun%2Fsake-27%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftanbo-sabun%2Fi%2F10000069%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1283",
+    "slug": "katsuyama-junmai-ginjo-ken",
+    "name": "勝山 純米吟醸 献",
+    "nameKana": "",
+    "breweryId": "miyagi-brewery-273",
+    "prefecture": "宮城県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 55,
+      "abv": 15.5,
+      "smv": 3,
+      "acid": 1.4
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "仙台伊達家御用蔵として知られる勝山酒造が醸す純米吟醸。伊達家の美意識を受け継ぐ、洗練された上品な味わいが特徴。仙台の食文化とともに歩んできた、格式ある銘柄。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00r7kkn.sgrg2fd2.g00r7kkn.sgrg3180/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftsutsu-uraura%2Fkatsuyama-ken-1800ml%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftsutsu-uraura%2Fi%2F10003412%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1284",
+    "slug": "mansakunohana-junmai-daiginjo",
+    "name": "まんさくの花 純米大吟醸",
+    "nameKana": "",
+    "breweryId": "akita-brewery-274",
+    "prefecture": "秋田県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 45,
+      "abv": 16.5,
+      "smv": 3,
+      "acid": 1.3
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "秋田県横手市の日の丸醸造が、秋田県の県花「まんさく」の名を冠して醸す純米大吟醸。華やかな香りと澄んだ旨みを併せ持ち、雪深い横手の風土が育んだ上質な一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qj4xn.sgrg262c.g00qj4xn.sgrg309b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fakitatokusan%2F10001601%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fakitatokusan%2Fi%2F10001601%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1285",
+    "slug": "nanbuzeki-junmai",
+    "name": "南部関 純米酒",
+    "nameKana": "",
+    "breweryId": "iwate-brewery-275",
+    "prefecture": "岩手県",
+    "classification": "純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 65,
+      "abv": 15.5,
+      "smv": 3,
+      "acid": 1.4
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 1,
+    "description": "岩手県花巻市の川村酒造店が醸す純米酒。南部杜氏発祥の地らしい伝統的な酒造りを受け継ぎ、飾らない実直な味わいが持ち味。花巻の食文化に長く親しまれてきた地酒。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rki5n.sgrg2708.g00rki5n.sgrg344a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsyuraku-shop%2F74440%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsyuraku-shop%2Fi%2F10001794%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1286",
+    "slug": "momokawa-junmai-daiginjo-seitennohekireki",
+    "name": "桃川 純米大吟醸 青天の霹靂",
+    "nameKana": "",
+    "breweryId": "aomori-brewery-276",
+    "prefecture": "青森県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 45,
+      "rice": "青天の霹靂",
+      "abv": 16,
+      "smv": 3,
+      "acid": 1.3
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "青森県上北郡の桃川株式会社が、青森県産の上質米「青天の霹靂」で醸す純米大吟醸。ねぶた祭りの街らしい親しみやすさを持ちながら、華やかな香りと澄んだ旨みを備えた本格的な一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00thx8n.sgrg2c2d.g00thx8n.sgrg3ebb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fizumise%2F019489%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fizumise%2Fi%2F10003855%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1287",
+    "slug": "nyoku-junmai",
+    "name": "如空 純米酒",
+    "nameKana": "",
+    "breweryId": "aomori-brewery-277",
+    "prefecture": "青森県",
+    "classification": "純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 60,
+      "abv": 15.5,
+      "smv": 3,
+      "acid": 1.4
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "青森県八戸市の八戸酒類が醸す純米酒。同じ八戸市の八戸酒造(陸奥八仙)とは別の蔵元で、独自の酒質を追求している。数量限定で丁寧に造られる、八戸のもう一つの実力銘柄。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00s2r1n.sgrg2251.g00s2r1n.sgrg305c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsake-arai%2Fjyoku-sp-02%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsake-arai%2Fi%2F10000624%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1288",
+    "slug": "goshun-honmaru-honjozo",
+    "name": "呉春 本丸 本醸造",
+    "nameKana": "",
+    "breweryId": "osaka-brewery-278",
+    "prefecture": "大阪府",
+    "classification": "本醸造",
+    "flavorType": "sou",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 65,
+      "abv": 15.5,
+      "smv": 3,
+      "acid": 1.3
+    },
+    "servingTemp": [
+      "涼冷え",
+      "常温"
+    ],
+    "pairings": [
+      "sashimi",
+      "fried"
+    ],
+    "scenes": [
+      "daily",
+      "beginner"
+    ],
+    "priceRange": 2,
+    "description": "大阪府池田市の呉春株式会社が醸す本醸造酒。江戸時代の俳人・与謝蕪村ゆかりの地で、大阪では珍しい高い評価を誇る蔵として知られる。都市部にありながら伝統を守り続ける、貴重な地酒。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q6bhn.sgrg24c0.g00q6bhn.sgrg3257/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-liquors%2Fgosyun-honmaru%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-liquors%2Fi%2F10000470%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1289",
+    "slug": "tottori-brewery-268-tokubetsu-junmai-2nd",
+    "name": "鷹勇 特別純米",
+    "nameKana": "",
+    "breweryId": "tottori-brewery-268",
+    "prefecture": "鳥取県",
+    "classification": "特別純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 58,
+      "abv": 15.5,
+      "smv": 3,
+      "acid": 1.4
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "鳥取県の大谷酒造が醸す「鷹勇」の特別純米。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rr15n.sgrg2674.g00rr15n.sgrg3b16/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhiroshimatsuya%2F1000222%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhiroshimatsuya%2Fi%2F10000094%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1290",
+    "slug": "tottori-brewery-268-junmai-2nd",
+    "name": "鷹勇 純米",
+    "nameKana": "",
+    "breweryId": "tottori-brewery-268",
+    "prefecture": "鳥取県",
+    "classification": "純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 65,
+      "abv": 15.5,
+      "smv": 3,
+      "acid": 1.4
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "鳥取県の大谷酒造が醸す「鷹勇」の純米。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rr15n.sgrg2674.g00rr15n.sgrg3b16/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhiroshimatsuya%2F1000229%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhiroshimatsuya%2Fi%2F10000253%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1291",
+    "slug": "tottori-brewery-268-junmai-daiginjo-2nd",
+    "name": "鷹勇 純米大吟醸",
+    "nameKana": "",
+    "breweryId": "tottori-brewery-268",
+    "prefecture": "鳥取県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 45,
+      "abv": 16.5,
+      "smv": 3,
+      "acid": 1.3
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "鳥取県の大谷酒造が醸す「鷹勇」の純米大吟醸。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00s3lrn.sgrg2a07.g00s3lrn.sgrg39c0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgottuou%2F1742800%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgottuou%2Fi%2F10000104%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1292",
+    "slug": "kanagawa-brewery-266-junmai-ginjo-2nd",
+    "name": "丹沢山 純米吟醸",
+    "nameKana": "",
+    "breweryId": "kanagawa-brewery-266",
+    "prefecture": "神奈川県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 55,
+      "abv": 15.5,
+      "smv": 3,
+      "acid": 1.3
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "神奈川県の川西屋酒造店が醸す「丹沢山」の純米吟醸。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00r3g1n.sgrg2f8b.g00r3g1n.sgrg3cb1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Farch-shop%2Fkowa-gin%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Farch-shop%2Fi%2F10001780%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1293",
+    "slug": "kanagawa-brewery-266-ginjo-2nd",
+    "name": "丹沢山 吟醸",
+    "nameKana": "",
+    "breweryId": "kanagawa-brewery-266",
+    "prefecture": "神奈川県",
+    "classification": "吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 2,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 55,
+      "abv": 15.5,
+      "smv": 4,
+      "acid": 1.2
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "神奈川県の川西屋酒造店が醸す「丹沢山」の吟醸。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00uskin.sgrg2faa.g00uskin.sgrg305b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkimijimaya-online%2F1003386%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkimijimaya-online%2Fi%2F10000277%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1294",
+    "slug": "kyoto-brewery-267-junmai-daiginjo-2nd",
+    "name": "聚楽第 純米大吟醸",
+    "nameKana": "",
+    "breweryId": "kyoto-brewery-267",
+    "prefecture": "京都府",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 45,
+      "abv": 16.5,
+      "smv": 3,
+      "acid": 1.3
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "京都府の佐々木酒造が醸す「聚楽第」の純米大吟醸。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00top0n.sgrg2a68.g00top0n.sgrg3051/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyoto-sake-2940%2Fjurakudai-jd-720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkyoto-sake-2940%2Fi%2F10000055%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1295",
+    "slug": "kyoto-brewery-267-daiginjo-2nd",
+    "name": "聚楽第 大吟醸",
+    "nameKana": "",
+    "breweryId": "kyoto-brewery-267",
+    "prefecture": "京都府",
+    "classification": "大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 2,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 45,
+      "abv": 16.5,
+      "smv": 4,
+      "acid": 1.2
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "京都府の佐々木酒造が醸す「聚楽第」の大吟醸。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00uc5kn.sgrg2cef.g00uc5kn.sgrg3208/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fg-marche%2F10000763%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fg-marche%2Fi%2F10000816%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1296",
+    "slug": "tottori-brewery-268-daiginjo-2nd",
+    "name": "鷹勇 大吟醸",
+    "nameKana": "",
+    "breweryId": "tottori-brewery-268",
+    "prefecture": "鳥取県",
+    "classification": "大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 2,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 45,
+      "abv": 16.5,
+      "smv": 4,
+      "acid": 1.2
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "鳥取県の大谷酒造が醸す「鷹勇」の大吟醸。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qnh9n.sgrg2cf1.g00qnh9n.sgrg3d8a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsakenotanaka%2F100000245%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsakenotanaka%2Fi%2F10000105%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1297",
+    "slug": "hiroshima-brewery-269-junmai-2nd",
+    "name": "西條鶴 純米",
+    "nameKana": "",
+    "breweryId": "hiroshima-brewery-269",
+    "prefecture": "広島県",
+    "classification": "純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 65,
+      "abv": 15.5,
+      "smv": 3,
+      "acid": 1.4
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "広島県の西條鶴醸造が醸す「西條鶴」の純米。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rqjen.sgrg2a6c.g00rqjen.sgrg30a3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsakayainoue%2F4992169801115%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsakayainoue%2Fi%2F10000654%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1298",
+    "slug": "kyoto-brewery-267-tokubetsu-junmai-2nd",
+    "name": "聚楽第 特別純米",
+    "nameKana": "",
+    "breweryId": "kyoto-brewery-267",
+    "prefecture": "京都府",
+    "classification": "特別純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 58,
+      "abv": 15.5,
+      "smv": 3,
+      "acid": 1.4
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "京都府の佐々木酒造が醸す「聚楽第」の特別純米。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00raasn.sgrg2c81.g00raasn.sgrg3827/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyono-genzigura%2Fset11025999926%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkyono-genzigura%2Fi%2F10001580%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1299",
+    "slug": "aomori-brewery-010-tokubetsu-junmai-2nd",
+    "name": "田酒 特別純米",
+    "nameKana": "",
+    "breweryId": "aomori-brewery-010",
+    "prefecture": "青森県",
+    "classification": "特別純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 58,
+      "abv": 15.5,
+      "smv": 3,
+      "acid": 1.4
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "青森県の株式会社西田酒造店が醸す「田酒」の特別純米。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q4h0n.sgrg2b3a.g00q4h0n.sgrg3811/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fichiishop%2F8113672%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fichiishop%2Fi%2F10017267%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
   }
 ]
