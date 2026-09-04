@@ -25,12 +25,15 @@ export default function AboutPage() {
           日本酒に詳しくない方でも直感的に一杯を選べることを目指しています。
         </p>
         <p>
-          掲載している銘柄情報は公式スペックや資料をもとに独自にまとめたものです。
-          内容の正確性には努めていますが、最新情報は各蔵元・販売店の公式情報をご確認ください。
+          掲載している銘柄情報は、酒蔵の公式情報や公的資料などを優先して確認し、
+          サイト独自の味わい分類とあわせて整理しています。確認できない情報を推測で補わず、
+          出典と最終確認日を順次整備しています。
         </p>
       </section>
 
       <div className="mt-8 flex flex-wrap gap-3">
+        <Link href="/editorial-policy" className="content-pill">編集方針</Link>
+        <Link href="/corrections" className="content-pill">訂正・掲載情報</Link>
         <Link href="/disclosure" className="content-pill">広告掲載ポリシー</Link>
         <Link href="/privacy" className="content-pill">プライバシーポリシー</Link>
       </div>

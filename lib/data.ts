@@ -45,11 +45,46 @@ export function getSakesByScene(scene: string): Sake[] {
   return allSakes.filter((s) => s.scenes.includes(scene))
 }
 
-// 実クリックデータの蓄積前段として、実データ化済みの銘柄を都道府県順で
-// 「注目の日本酒」として掲載する(実際のクリック・購入数に基づくランキングではない)。
-export function getFeaturedSakes(limit?: number): Sake[] {
-  const sorted = [...allSakes].sort((a, b) => b.priceRange - a.priceRange || a.prefecture.localeCompare(b.prefecture, 'ja'))
-  return typeof limit === 'number' ? sorted.slice(0, limit) : sorted
+function informationScore(sake: Sake): number {
+  const specCount = Object.values(sake.specs).filter((value) => value != null && value !== '').length
+  const hasUsableImage = Boolean(sake.imageUrl && sake.imageUrl !== '🍶')
+  const hasPurchaseLink = sake.affiliate.some((links) => Object.values(links).some(Boolean))
+
+  return (
+    specCount * 2
+    + Math.min(sake.description.length / 50, 4)
+    + Math.min(sake.servingTemp.length, 3)
+    + Math.min(sake.pairings.length, 3)
+    + (hasPurchaseLink ? 2 : 0)
+    + (hasUsableImage ? 2 : 0)
+    + (sake.isRealData ? 1 : 0)
+  )
+}
+
+// 順位ではなく、情報の充実度を基礎に、4つの香味タイプと産地の偏りを
+// 抑えて比較しやすい銘柄を選ぶ。売上・報酬額は選定に使用しない。
+export function getFeaturedSakes(limit = 24): Sake[] {
+  const flavorOrder: FlavorType[] = ['kaori', 'sou', 'jun', 'juku']
+  const candidates = [...allSakes].sort(
+    (a, b) => informationScore(b) - informationScore(a) || a.name.localeCompare(b.name, 'ja')
+  )
+  const selected: Sake[] = []
+  const selectedIds = new Set<string>()
+  const usedPrefectures = new Set<string>()
+
+  while (selected.length < Math.min(limit, candidates.length)) {
+    const flavorType = flavorOrder[selected.length % flavorOrder.length]
+    const sameFlavor = candidates.filter((sake) => sake.flavorType === flavorType && !selectedIds.has(sake.id))
+    const next = sameFlavor.find((sake) => !usedPrefectures.has(sake.prefecture)) ?? sameFlavor[0]
+      ?? candidates.find((sake) => !selectedIds.has(sake.id))
+
+    if (!next) break
+    selected.push(next)
+    selectedIds.add(next.id)
+    usedPrefectures.add(next.prefecture)
+  }
+
+  return selected
 }
 
 export function getSimilarSakes(sake: Sake, limit = 4): Sake[] {

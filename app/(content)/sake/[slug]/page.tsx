@@ -12,6 +12,7 @@ import { isProductionDomain } from '@/lib/is-production-domain'
 import SakeThumb from '@/components/SakeThumb'
 import PurchaseButtons from '@/components/PurchaseButtons'
 import ProductOfferCard from '@/components/ProductOfferCard'
+import SourceInfo from '@/components/SourceInfo'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
 
@@ -69,6 +70,9 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
   const buttonMallLinks = offers.length > 0 ? mallLinks.filter((m) => m.mall !== 'rakuten') : mallLinks
   const topOffer = offers[0]
   const prefSlug = PREFECTURE_SLUGS[sake.prefecture]
+  const structuredImage = sake.imageRightsStatus === 'approved' && sake.imageUrl && sake.imageUrl !== '🍶'
+    ? (sake.imageUrl.startsWith('http') ? sake.imageUrl : `${SITE_URL}${sake.imageUrl}`)
+    : undefined
 
   const tasteAxes: { key: keyof typeof sake.taste; label: string }[] = [
     { key: 'sweetness', label: '甘み' },
@@ -85,6 +89,7 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
         '@type': 'Product',
         name: sake.name,
         description: sake.description,
+        image: structuredImage,
         brand: brewery ? { '@type': 'Brand', name: brewery.name } : undefined,
         category: sake.classification,
         // 検索結果ページへのフォールバックリンクは実在する商品オファーではないため、
@@ -344,6 +349,12 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
             </Link>
           </section>
         )}
+
+        <SourceInfo
+          sources={sake.sources}
+          status={sake.verificationStatus}
+          lastReviewedAt={sake.lastReviewedAt}
+        />
       </div>
 
       <div className="mt-12 flex flex-wrap gap-4">

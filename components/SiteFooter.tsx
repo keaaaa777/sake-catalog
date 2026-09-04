@@ -9,6 +9,8 @@ export default function SiteFooter() {
           <Link href="/ranking" className="hover:text-gold">注目の日本酒</Link>
           <Link href="/guide" className="hover:text-gold">日本酒ガイド</Link>
           <Link href="/about" className="hover:text-gold">サイトについて</Link>
+          <Link href="/editorial-policy" className="hover:text-gold">編集方針</Link>
+          <Link href="/corrections" className="hover:text-gold">訂正・掲載情報</Link>
           <Link href="/disclosure" className="hover:text-gold">広告掲載ポリシー</Link>
           <Link href="/privacy" className="hover:text-gold">プライバシーポリシー</Link>
         </nav>

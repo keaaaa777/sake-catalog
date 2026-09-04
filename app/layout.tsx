@@ -39,9 +39,27 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const websiteJsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        name: '雫 SAKE SELECT',
+        url: SITE_URL,
+        inLanguage: ['ja-JP', 'en-US'],
+      },
+      {
+        '@type': 'Organization',
+        name: '雫 SAKE SELECT編集部',
+        url: SITE_URL,
+      },
+    ],
+  }
+
   return (
     <html lang="ja">
       <body className={`${shippori.variable} ${cormorant.variable} ${zenKaku.variable} font-body bg-[#030914]`}>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
         {GA_MEASUREMENT_ID && (
           <>
             <Script

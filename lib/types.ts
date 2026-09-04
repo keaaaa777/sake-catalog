@@ -1,5 +1,15 @@
 export type FlavorType = 'kaori' | 'sou' | 'jun' | 'juku'
 
+export type VerificationStatus = 'verified' | 'supported' | 'conflicting' | 'unverified'
+export type ImageRightsStatus = 'approved' | 'api-only' | 'permission-pending' | 'prohibited' | 'unknown'
+
+export interface ContentSource {
+  title: string
+  url: string
+  type: 'official-product' | 'official-brewery' | 'public-record' | 'press-release' | 'retailer' | 'other'
+  checkedAt?: string
+}
+
 export interface Sake {
   id: string
   slug: string
@@ -32,6 +42,12 @@ export interface Sake {
   priceRange: number
   description: string
   imageUrl?: string
+  imageRightsStatus?: ImageRightsStatus
+  imageSourceUrl?: string
+  imageCredit?: string
+  sources?: ContentSource[]
+  verificationStatus?: VerificationStatus
+  lastReviewedAt?: string
   affiliate: { rakuten?: string; amazon?: string; yahoo?: string; furusato?: string }[]
   isRealData?: boolean
   isPremium?: boolean
@@ -46,6 +62,9 @@ export interface Brewery {
   description: string
   websiteUrl?: string
   imageUrl?: string
+  sources?: ContentSource[]
+  verificationStatus?: VerificationStatus
+  lastReviewedAt?: string
   isRealData?: boolean
 }
 

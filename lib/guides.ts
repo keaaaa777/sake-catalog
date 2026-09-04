@@ -3,6 +3,10 @@ export interface GuideArticle {
   title: string
   description: string
   publishedAt: string
+  updatedAt?: string
+  author?: string
+  reviewedBy?: string
+  references?: { title: string; url: string }[]
   bodyHtml: string
 }
 

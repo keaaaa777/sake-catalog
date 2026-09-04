@@ -4,6 +4,9 @@ import { notFound } from 'next/navigation'
 import { getAllBreweries, getBreweryBySlug, getSakesByBrewery } from '@/lib/data'
 import { PREFECTURE_SLUGS } from '@/lib/types'
 import SakeThumb from '@/components/SakeThumb'
+import SourceInfo from '@/components/SourceInfo'
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
 
 export const revalidate = 86400
 
@@ -27,9 +30,22 @@ export default function BreweryDetailPage({ params }: { params: { slug: string }
 
   const sakes = getSakesByBrewery(brewery.slug)
   const prefSlug = PREFECTURE_SLUGS[brewery.prefecture]
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: brewery.name,
+    url: brewery.websiteUrl,
+    address: {
+      '@type': 'PostalAddress',
+      addressRegion: brewery.prefecture,
+      addressCountry: 'JP',
+    },
+    mainEntityOfPage: `${SITE_URL}/brewery/${brewery.slug}`,
+  }
 
   return (
     <div className="mx-auto max-w-3xl">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <nav className="content-breadcrumb">
         <Link href="/">トップ</Link>
         <span>/</span>
@@ -86,6 +102,12 @@ export default function BreweryDetailPage({ params }: { params: { slug: string }
             ))}
           </div>
         </section>
+
+        <SourceInfo
+          sources={brewery.sources}
+          status={brewery.verificationStatus}
+          lastReviewedAt={brewery.lastReviewedAt}
+        />
       </div>
 
       <div className="mt-12">
