@@ -2243,5 +2243,77 @@
     "description": "高知県安芸市の蔵元。「安芸虎」を醸す。",
     "imageUrl": "🏛️",
     "isRealData": true
+  },
+  {
+    "id": "258",
+    "slug": "akita-brewery-258",
+    "name": "飛良泉本舗",
+    "prefecture": "秋田県",
+    "description": "秋田県にかほ市の蔵元。室町時代創業と伝わる古参蔵で、山廃仕込みの「飛良泉」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "259",
+    "slug": "fukuoka-brewery-259",
+    "name": "寒北斗酒造",
+    "prefecture": "福岡県",
+    "description": "福岡県朝倉市の蔵元。辛口を軸とした「寒北斗」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "260",
+    "slug": "yamagata-brewery-260",
+    "name": "亀の井酒造",
+    "prefecture": "山形県",
+    "description": "山形県鶴岡市の蔵元。特約店限定流通で人気の高い「くどき上手」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "261",
+    "slug": "fukushima-brewery-261",
+    "name": "鶴乃江酒造",
+    "prefecture": "福島県",
+    "description": "福島県会津若松市の蔵元。「会津中将」の銘柄で知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "262",
+    "slug": "fukushima-brewery-262",
+    "name": "南会津國権酒造",
+    "prefecture": "福島県",
+    "description": "福島県南会津郡の蔵元。全国新酒鑑評会での金賞受賞歴を持つ「国権」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "263",
+    "slug": "fukuoka-brewery-263",
+    "name": "山口酒造場",
+    "prefecture": "福岡県",
+    "description": "福岡県久留米市の蔵元。「庭のうぐいす」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "264",
+    "slug": "fukushima-brewery-264",
+    "name": "渡辺酒造本店",
+    "prefecture": "福島県",
+    "description": "福島県郡山市の蔵元。「雪小町」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "265",
+    "slug": "niigata-brewery-265",
+    "name": "越銘醸",
+    "prefecture": "新潟県",
+    "description": "新潟県十日町市の蔵元。「越の鶴」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   }
 ]
