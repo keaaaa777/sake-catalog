@@ -2432,5 +2432,95 @@
     "description": "大阪府池田市の蔵元。与謝蕪村ゆかりの地で「呉春」を醸す。",
     "imageUrl": "🏛️",
     "isRealData": true
+  },
+  {
+    "id": "279",
+    "slug": "chiba-brewery-279",
+    "name": "東薫酒造",
+    "prefecture": "千葉県",
+    "description": "千葉県香取市の蔵元。長期熟成酒にも取り組む「東薫」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "280",
+    "slug": "chiba-brewery-280",
+    "name": "鍋店",
+    "prefecture": "千葉県",
+    "description": "千葉県成田市の蔵元。フルーティーな味わいの「不動」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "281",
+    "slug": "chiba-brewery-281",
+    "name": "岩瀬酒造",
+    "prefecture": "千葉県",
+    "description": "千葉県いすみ市の蔵元。山廃仕込みの辛口「岩の井」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "282",
+    "slug": "chiba-brewery-282",
+    "name": "木戸泉酒造",
+    "prefecture": "千葉県",
+    "description": "千葉県いすみ市の蔵元。多彩な仕込みに挑戦する「木戸泉」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "283",
+    "slug": "gunma-brewery-283",
+    "name": "分福酒造",
+    "prefecture": "群馬県",
+    "description": "群馬県館林市の蔵元。分福茶釜の伝説にちなんだ「分福」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "284",
+    "slug": "yamanashi-brewery-284",
+    "name": "萬屋酒造店",
+    "prefecture": "山梨県",
+    "description": "山梨県韮崎市の蔵元。「春鶯囀」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "285",
+    "slug": "nagasaki-brewery-285",
+    "name": "潜龍酒造",
+    "prefecture": "長崎県",
+    "description": "長崎県佐世保市の蔵元。「潜龍」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "286",
+    "slug": "saitama-brewery-286",
+    "name": "五十嵐酒造",
+    "prefecture": "埼玉県",
+    "description": "埼玉県飯能市の蔵元。地元の名山の名を冠した「天覧山」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "287",
+    "slug": "saitama-brewery-287",
+    "name": "松岡醸造",
+    "prefecture": "埼玉県",
+    "description": "埼玉県小川町の蔵元。「帝松」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "288",
+    "slug": "saitama-brewery-288",
+    "name": "北西酒造",
+    "prefecture": "埼玉県",
+    "description": "埼玉県上尾市の蔵元。現代的な感性を取り入れた「文楽」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   }
 ]
