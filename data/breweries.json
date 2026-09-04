@@ -1775,5 +1775,104 @@
     "description": "元は岐阜県中津川市の蔵元だったが、2019年に北海道東川町へ移転した「三千櫻」の造り手。良質な水と米を求めて拠点を移した異色の経歴を持つ。",
     "imageUrl": "🏛️",
     "isRealData": true
+  },
+  {
+    "id": "206",
+    "slug": "yamagata-brewery-206",
+    "name": "水戸部酒造",
+    "prefecture": "山形県",
+    "description": "山形県天童市の蔵元。旨みとキレのある食中酒として親しまれる「山形正宗」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "207",
+    "slug": "shizuoka-brewery-207",
+    "name": "高嶋酒造",
+    "prefecture": "静岡県",
+    "description": "静岡県沼津市の蔵元。地元産の酒米「誉富士」を用いた「白隠正宗」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "208",
+    "slug": "nara-brewery-208",
+    "name": "美吉野醸造",
+    "prefecture": "奈良県",
+    "description": "奈良県吉野町の蔵元。伝統の水もと造りにこだわり、無濾過生原酒の「花巴」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "209",
+    "slug": "mie-brewery-209",
+    "name": "タカハシ酒造",
+    "prefecture": "三重県",
+    "description": "三重県四日市市の蔵元。瓶を藁で囲って熟成させる伝統製法「瓶囲い」の「天遊琳」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "210",
+    "slug": "yamagata-brewery-210",
+    "name": "新藤酒造店",
+    "prefecture": "山形県",
+    "description": "山形県南陽市の蔵元。無濾過生詰の個性的な酒質で知られる「雅山流」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "211",
+    "slug": "kagawa-brewery-211",
+    "name": "丸尾本店",
+    "prefecture": "香川県",
+    "description": "香川県観音寺市の蔵元。無濾過生原酒を中心に、力強い味わいの「悦凱陣」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "212",
+    "slug": "ishikawa-brewery-212",
+    "name": "宗玄酒造",
+    "prefecture": "石川県",
+    "description": "石川県珠洲市の蔵元。能登半島最先端に位置し、地元の海の幸に合う「宗玄」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "213",
+    "slug": "nagano-brewery-213",
+    "name": "大信州酒造",
+    "prefecture": "長野県",
+    "description": "長野県松本市の蔵元。キレの良い辛口を得意とし、全国的な人気を誇る「大信州」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "214",
+    "slug": "yamagata-brewery-214",
+    "name": "鈴木酒造店",
+    "prefecture": "山形県",
+    "description": "元は福島県浪江町の蔵元だったが、東日本大震災の被災を機に山形県長井市へ移転した「磐城壽」の造り手。震災を乗り越え酒造りを続けた経緯で知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "215",
+    "slug": "fukui-brewery-215",
+    "name": "宇野酒造場",
+    "prefecture": "福井県",
+    "description": "福井県大野市、小京都と称される越前大野の蔵元。全国新酒鑑評会での受賞歴を持つ「一乃谷」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "216",
+    "slug": "shimane-brewery-216",
+    "name": "岡田本店",
+    "prefecture": "島根県",
+    "description": "島根県邑南町の蔵元。「邑南町三酒蔵」の一つとして、無濾過生原酒の「誉池月」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   }
 ]

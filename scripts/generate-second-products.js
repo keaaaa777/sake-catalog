@@ -47,6 +47,18 @@ function detectClassification(itemName) {
   return null
 }
 
+const CLASSIFICATION_SLUG = {
+  '純米大吟醸': 'junmai-daiginjo',
+  '大吟醸': 'daiginjo',
+  '特別純米': 'tokubetsu-junmai',
+  '純米吟醸': 'junmai-ginjo',
+  '吟醸': 'ginjo',
+  '特別本醸造': 'tokubetsu-honjozo',
+  '本醸造': 'honjozo',
+  '純米': 'junmai',
+  '普通酒': 'futsushu',
+}
+
 const CLASSIFICATION_DEFAULTS = {
   '純米大吟醸': { abv: 16.5, smv: 3, acidity: 1.3, polishing: 45 },
   '大吟醸': { abv: 16.5, smv: 4, acidity: 1.2, polishing: 45 },
@@ -170,7 +182,7 @@ function main() {
       prefecture: matchedBrewery.prefecture,
       breweryName: matchedBrewery.name,
       productName: `${brandGuess} ${classification}`,
-      romajiSlug: romajiSlugBase(PREF_ROMAJI[matchedBrewery.prefecture] || 'unknown', idCounter++),
+      romajiSlug: `${matchedBrewery.slug}-${CLASSIFICATION_SLUG[classification]}-2nd`,
       classification,
       riceVariety: null,
       polishingRatio: defaults.polishing,
