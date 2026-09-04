@@ -1640,5 +1640,140 @@
     "description": "和歌山県新宮市の蔵元。熊野の山々に育まれた水で、地元に根差した「太平洋」を醸す。",
     "imageUrl": "🏛️",
     "isRealData": true
+  },
+  {
+    "id": "191",
+    "slug": "shizuoka-brewery-191",
+    "name": "三和酒造",
+    "prefecture": "静岡県",
+    "description": "静岡県静岡市清水区の蔵元。無濾過生原酒を得意とし、フレッシュな味わいの「臥龍梅」で知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "192",
+    "slug": "kyoto-brewery-192",
+    "name": "松本酒造",
+    "prefecture": "京都府",
+    "description": "京都府伏見の蔵元。伝統的な木桶仕込みにこだわり、澄んだ酒質の「澤屋まつもと」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "193",
+    "slug": "yamagata-brewery-193",
+    "name": "鯉川酒造",
+    "prefecture": "山形県",
+    "description": "山形県庄内町の蔵元。庄内平野の恵まれた米どころで、飲み飽きしない「鯉川」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "194",
+    "slug": "fukushima-brewery-194",
+    "name": "花泉酒造",
+    "prefecture": "福島県",
+    "description": "福島県南会津郡の蔵元。看板銘柄「花泉」の中でも人気の高い派生ブランド「ロ万」で知られる。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "195",
+    "slug": "gunma-brewery-195",
+    "name": "島岡酒造",
+    "prefecture": "群馬県",
+    "description": "群馬県館林市の蔵元。伝統の山廃仕込みによるコクのある旨みが特徴の「群馬泉」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "196",
+    "slug": "niigata-brewery-196",
+    "name": "樋木酒造",
+    "prefecture": "新潟県",
+    "description": "新潟市の蔵元。地元での消費を主とし、県外にはほとんど流通しない「鶴の友」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "197",
+    "slug": "miyagi-brewery-197",
+    "name": "大和蔵酒造",
+    "prefecture": "宮城県",
+    "description": "宮城県黒川郡大和町の蔵元。松島の景観に由来する「雪の松島」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "198",
+    "slug": "akita-brewery-198",
+    "name": "阿桜酒造",
+    "prefecture": "秋田県",
+    "description": "秋田県横手市の蔵元。無濾過原酒を中心に、旨辛口の「阿櫻」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "199",
+    "slug": "niigata-brewery-199",
+    "name": "加茂錦酒造",
+    "prefecture": "新潟県",
+    "description": "新潟県加茂市の蔵元。若手蔵元による新ブランド「荷札酒」で注目を集める「加茂錦」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "200",
+    "slug": "kumamoto-brewery-200",
+    "name": "山村酒造",
+    "prefecture": "熊本県",
+    "description": "熊本県阿蘇市の蔵元。阿蘇の伏流水で仕込む、爽快な飲み口の「れいざん」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "201",
+    "slug": "shizuoka-brewery-201",
+    "name": "土井酒造場",
+    "prefecture": "静岡県",
+    "description": "静岡県掛川市の蔵元。伝説的な杜氏・波瀬正吉の技を受け継ぎ、香り高い「開運」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "202",
+    "slug": "hiroshima-brewery-202",
+    "name": "藤井酒造",
+    "prefecture": "広島県",
+    "description": "広島県竹原市の蔵元。伝統の生もと造りを継承し、力強い味わいの「龍勢」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "203",
+    "slug": "saga-brewery-203",
+    "name": "東鶴酒造",
+    "prefecture": "佐賀県",
+    "description": "佐賀県多久市の蔵元。少量生産にこだわり、フレッシュな味わいの「東鶴」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "204",
+    "slug": "kumamoto-brewery-204",
+    "name": "通潤酒造",
+    "prefecture": "熊本県",
+    "description": "熊本県山都町の蔵元。通潤橋の名を冠し、やわらかな旨みの「通潤」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "205",
+    "slug": "hokkaido-brewery-205",
+    "name": "三千櫻酒造",
+    "prefecture": "北海道",
+    "description": "元は岐阜県中津川市の蔵元だったが、2019年に北海道東川町へ移転した「三千櫻」の造り手。良質な水と米を求めて拠点を移した異色の経歴を持つ。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   }
 ]
