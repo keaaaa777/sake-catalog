@@ -29,6 +29,9 @@ export const metadata: Metadata = {
   title: '雫 SAKE SELECT — 清らかな一滴と、出会う。',
   description: '1分の診断であなたに合う日本酒が見つかる。味わい・産地・料理から探せて、そのまま購入できる日本酒カタログ。',
   alternates: { canonical: '/', languages: { 'ja-JP': '/', 'en-US': '/en' } },
+  verification: {
+    google: 'F1PheMcBMVIMYu08RJviSNg_zYty6FZLb-zaeWVwKQs',
+  },
 }
 
 export default function RootLayout({
