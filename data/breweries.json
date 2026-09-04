@@ -2126,5 +2126,122 @@
     "description": "全国新酒鑑評会金賞蔵数日本一の福島県にある蔵元。「一歩己」を醸す。",
     "imageUrl": "🏛️",
     "isRealData": true
+  },
+  {
+    "id": "245",
+    "slug": "akita-brewery-245",
+    "name": "浅舞酒造",
+    "prefecture": "秋田県",
+    "description": "秋田県横手市の蔵元。落ち着いた味わいの「天の戸」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "246",
+    "slug": "nagano-brewery-246",
+    "name": "土屋酒造店",
+    "prefecture": "長野県",
+    "description": "長野県佐久市の蔵元。信州の食文化に寄り添う「亀の海」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "247",
+    "slug": "ibaraki-brewery-247",
+    "name": "稲葉酒造",
+    "prefecture": "茨城県",
+    "description": "茨城県つくば市の蔵元。筑波山の伏流水で醸す「男女川」が銘柄名の由来。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "248",
+    "slug": "ibaraki-brewery-248",
+    "name": "明利酒類",
+    "prefecture": "茨城県",
+    "description": "茨城県水戸市の蔵元。南部杜氏の伝統技法で醸す「副将軍」を送り出している。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "249",
+    "slug": "kochi-brewery-249",
+    "name": "土佐酒造",
+    "prefecture": "高知県",
+    "description": "高知県土佐郡の蔵元。国際的な受賞歴も持つ「桂月」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "250",
+    "slug": "kochi-brewery-250",
+    "name": "土佐鶴酒造",
+    "prefecture": "高知県",
+    "description": "高知県安芸郡の蔵元。全国新酒鑑評会での金賞最多受賞蔵として知られる「土佐鶴」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "251",
+    "slug": "kochi-brewery-251",
+    "name": "アリサワ",
+    "prefecture": "高知県",
+    "description": "高知県土佐市の蔵元。近年酒質が急上昇し注目を集める「文佳人」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "252",
+    "slug": "oita-brewery-252",
+    "name": "中野酒造",
+    "prefecture": "大分県",
+    "description": "大分県杵築市の蔵元。ワイングラスに合う日本酒アワードでの受賞歴を持つ「智恵美人」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "253",
+    "slug": "niigata-brewery-253",
+    "name": "峰乃白梅酒造",
+    "prefecture": "新潟県",
+    "description": "新潟県新発田市の蔵元。「峰乃白梅」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "254",
+    "slug": "niigata-brewery-254",
+    "name": "魚沼酒造",
+    "prefecture": "新潟県",
+    "description": "新潟県十日町市の蔵元。淡麗辛口の「天神囃子」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "255",
+    "slug": "niigata-brewery-255",
+    "name": "大洋酒造",
+    "prefecture": "新潟県",
+    "description": "新潟県上越市の蔵元。「大洋盛」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "256",
+    "slug": "ishikawa-brewery-256",
+    "name": "福光屋",
+    "prefecture": "石川県",
+    "description": "石川県金沢市の蔵元。「加賀鳶」とともに、伝統銘柄「福正宗」も手がける。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "257",
+    "slug": "kochi-brewery-257",
+    "name": "有光酒造場",
+    "prefecture": "高知県",
+    "description": "高知県安芸市の蔵元。「安芸虎」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   }
 ]
