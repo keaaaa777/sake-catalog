@@ -5,6 +5,7 @@ import { getSakesByFlavorType } from '@/lib/data'
 import { FLAVOR_TYPES, FLAVOR_TYPE_IDS } from '@/lib/flavor'
 import { FlavorType } from '@/lib/types'
 import SakeThumb from '@/components/SakeThumb'
+import { isIndexableSake } from '@/lib/indexability'
 
 export const revalidate = 86400
 
@@ -15,9 +16,11 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { flavorType: string } }): Metadata {
   const flavor = FLAVOR_TYPES[params.flavorType as FlavorType]
   if (!flavor) return {}
+  const indexable = getSakesByFlavorType(params.flavorType as FlavorType).some(isIndexableSake)
   return {
     title: `${flavor.label}(${flavor.eng})タイプの日本酒一覧|雫 SAKE SELECT`,
     description: `${flavor.desc} ${flavor.label}タイプの日本酒を一覧で紹介します。`,
+    robots: indexable ? undefined : { index: false, follow: true },
     alternates: { canonical: `/type/${params.flavorType}` },
   }
 }

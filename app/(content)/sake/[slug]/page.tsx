@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { getAllSakes, getSakeBySlug, getBreweryForSake, getSimilarSakes } from '@/lib/data'
 import { FLAVOR_TYPES } from '@/lib/flavor'
 import { PAIRING_CATEGORIES } from '@/lib/pairing'
+import { SCENES } from '@/lib/scenes'
 import { PREFECTURE_SLUGS } from '@/lib/types'
 import { buildAffiliateLinks } from '@/lib/affiliate'
 import { getOffersForSake, getOffersFetchedAt } from '@/lib/offers'
@@ -13,6 +14,7 @@ import SakeThumb from '@/components/SakeThumb'
 import PurchaseButtons from '@/components/PurchaseButtons'
 import ProductOfferCard from '@/components/ProductOfferCard'
 import SourceInfo from '@/components/SourceInfo'
+import { isIndexableSake } from '@/lib/indexability'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
 
@@ -30,10 +32,12 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const description = `${sake.prefecture}の${sake.classification}「${sake.name}」。${flavor.label}(${flavor.eng})タイプの味わいと購入先を紹介。`.slice(0, 120)
 
   const hasEn = Boolean(getEnSakeContent(params.slug))
+  const indexable = isIndexableSake(sake)
 
   return {
     title: `【${sake.name}】の味わい・スペック・購入先|雫 SAKE SELECT`,
     description,
+    robots: indexable ? undefined : { index: false, follow: true },
     alternates: {
       canonical: `/sake/${params.slug}`,
       ...(hasEn ? { languages: { 'ja-JP': `/sake/${params.slug}`, 'en-US': `/en/sake/${params.slug}` } } : {}),
@@ -163,7 +167,9 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
         <div>
           <div className="mb-4 flex flex-wrap items-center gap-2">
             <span className="content-pill content-pill--gold">{sake.classification}</span>
-            <span className="content-pill">{flavor.label}({flavor.kana})</span>
+            <Link href={`/type/${sake.flavorType}`} className="content-pill">
+              {flavor.label}({flavor.kana})
+            </Link>
           </div>
           <h1 className="content-title text-3xl md:text-4xl">{sake.name}</h1>
           <p className="mt-3 text-base" style={{ color: 'var(--mist)', textShadow: '0 1px 8px rgba(0,0,0,0.8)' }}>
@@ -246,7 +252,7 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
         </section>
 
         {/* 4. おすすめの飲み方 & 5. ペアリング */}
-        {(sake.servingTemp.length > 0 || sake.pairings.length > 0) && (
+        {(sake.servingTemp.length > 0 || sake.pairings.length > 0 || sake.scenes.length > 0) && (
           <section className="content-card">
             {sake.servingTemp.length > 0 && (
               <div className="mb-6">
@@ -263,7 +269,7 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
             )}
 
             {sake.pairings.length > 0 && (
-              <div>
+              <div className={sake.scenes.length > 0 ? 'mb-6' : undefined}>
                 <div className="panel-header">
                   <h2 className="panel-header__title">合う料理</h2>
                   <span className="panel-header__sub">FOOD PAIRING</span>
@@ -272,6 +278,22 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
                   {sake.pairings.map((p) => (
                     <Link key={p} href={`/pairing/${p}`} className="content-pill">
                       {PAIRING_CATEGORIES[p]?.label ?? p}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {sake.scenes.length > 0 && (
+              <div>
+                <div className="panel-header">
+                  <h2 className="panel-header__title">おすすめの場面</h2>
+                  <span className="panel-header__sub">OCCASION</span>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {sake.scenes.map((scene) => (
+                    <Link key={scene} href={`/scene/${scene}`} className="content-pill">
+                      {SCENES[scene]?.label ?? scene}
                     </Link>
                   ))}
                 </div>

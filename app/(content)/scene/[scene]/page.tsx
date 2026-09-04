@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { getSakesByScene } from '@/lib/data'
 import { SCENES, SCENE_IDS } from '@/lib/scenes'
 import SakeThumb from '@/components/SakeThumb'
+import { isIndexableSake } from '@/lib/indexability'
 
 export const revalidate = 86400
 
@@ -14,9 +15,11 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { scene: string } }): Metadata {
   const scene = SCENES[params.scene]
   if (!scene) return {}
+  const indexable = getSakesByScene(params.scene).some(isIndexableSake)
   return {
     title: `${scene.label}に選びたい日本酒|雫 SAKE SELECT`,
     description: `${scene.label}のシーンにおすすめの日本酒を一覧で紹介。シーンに合わせた一杯を見つけられます。`,
+    robots: indexable ? undefined : { index: false, follow: true },
     alternates: { canonical: `/scene/${params.scene}` },
   }
 }

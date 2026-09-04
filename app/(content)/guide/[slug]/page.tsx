@@ -33,17 +33,36 @@ export default function GuideArticlePage({ params }: { params: { slug: string } 
   const hasEn = Boolean(getEnGuideArticleBySlug(params.slug))
   const author = article.author ?? '雫 SAKE SELECT編集部'
   const updatedAt = article.updatedAt ?? article.publishedAt
+  const relatedArticles = GUIDE_SLUGS
+    .filter((slug) => slug !== article.slug)
+    .slice(0, 3)
+    .flatMap((slug) => {
+      const related = getGuideArticleBySlug(slug)
+      return related ? [related] : []
+    })
 
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: article.title,
-    description: article.description,
-    datePublished: article.publishedAt,
-    dateModified: updatedAt,
-    author: { '@type': 'Organization', name: author },
-    publisher: { '@type': 'Organization', name: '雫 SAKE SELECT' },
-    mainEntityOfPage: `${SITE_URL}/guide/${article.slug}`,
+    '@graph': [
+      {
+        '@type': 'Article',
+        headline: article.title,
+        description: article.description,
+        datePublished: article.publishedAt,
+        dateModified: updatedAt,
+        author: { '@type': 'Organization', name: author },
+        publisher: { '@type': 'Organization', name: '雫 SAKE SELECT' },
+        mainEntityOfPage: `${SITE_URL}/guide/${article.slug}`,
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'トップ', item: SITE_URL },
+          { '@type': 'ListItem', position: 2, name: '日本酒ガイド', item: `${SITE_URL}/guide` },
+          { '@type': 'ListItem', position: 3, name: article.title },
+        ],
+      },
+    ],
   }
 
   return (
@@ -75,6 +94,25 @@ export default function GuideArticlePage({ params }: { params: { slug: string } 
       <section className="content-card">
         <div className="guide-prose" dangerouslySetInnerHTML={{ __html: article.bodyHtml }} />
       </section>
+
+      {relatedArticles.length > 0 && (
+        <section className="content-card mt-8">
+          <div className="panel-header">
+            <h2 className="panel-header__title">あわせて読みたい記事</h2>
+            <span className="panel-header__sub">RELATED GUIDES</span>
+          </div>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+            {relatedArticles.map((related) => (
+              <Link key={related.slug} href={`/guide/${related.slug}`} className="content-mini-card">
+                <div>
+                  <div className="content-mini-card__name">{related.title}</div>
+                  <div className="content-mini-card__meta">{related.description}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="content-card mt-8 text-sm leading-relaxed" style={{ color: 'var(--mist)' }}>
         <div className="panel-header">

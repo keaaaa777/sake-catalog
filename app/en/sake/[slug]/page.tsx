@@ -10,6 +10,7 @@ import { getOffersForSake, getOffersFetchedAt } from '@/lib/offers'
 import { isProductionDomain } from '@/lib/is-production-domain'
 import PurchaseButtons from '@/components/PurchaseButtons'
 import ProductOfferCard from '@/components/ProductOfferCard'
+import { isIndexableSake } from '@/lib/indexability'
 
 export const revalidate = 86400
 
@@ -26,15 +27,14 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const sake = getSakeBySlug(params.slug)
   if (!sake) return {}
   const en = getEnSakeContent(params.slug)
+  const indexable = isIndexableSake(sake)
 
   if (!en) {
     return {
       title: `${sake.name} | Shizuku Sake Select`,
       description: `English tasting notes for ${sake.name} are coming soon.`,
-      alternates: {
-        canonical: `/en/sake/${params.slug}`,
-        languages: { 'ja-JP': `/sake/${params.slug}`, 'en-US': `/en/sake/${params.slug}` },
-      },
+      robots: { index: false, follow: true },
+      alternates: { canonical: `/en/sake/${params.slug}` },
     }
   }
 
@@ -44,6 +44,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title: `${sake.name} | Tasting Notes & Where to Buy | Shizuku Sake Select`,
     description,
+    robots: indexable ? undefined : { index: false, follow: true },
     alternates: {
       canonical: `/en/sake/${params.slug}`,
       languages: { 'ja-JP': `/sake/${params.slug}`, 'en-US': `/en/sake/${params.slug}` },

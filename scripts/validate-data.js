@@ -91,6 +91,7 @@ const missingSakeSources = sakes.filter((s) => !Array.isArray(s.sources) || s.so
 const missingSakeReviewDates = sakes.filter((s) => !s.lastReviewedAt).length
 const staleSakeReviewDates = sakes.filter((s) => isOlderThan(s.lastReviewedAt, 365)).length
 const placeholderImages = sakes.filter((s) => !s.imageUrl || s.imageUrl === '🍶').length
+const unapprovedImages = sakes.filter((s) => s.imageRightsStatus !== 'approved').length
 const missingBrewerySources = breweries.filter((b) => !Array.isArray(b.sources) || b.sources.length === 0).length
 const missingBreweryUrls = breweries.filter((b) => !b.websiteUrl).length
 const staleBreweryReviewDates = breweries.filter((b) => isOlderThan(b.lastReviewedAt, 365)).length
@@ -103,6 +104,7 @@ if (missingSakeSources) warnings.push(`銘柄の出典未登録: ${missingSakeSo
 if (missingSakeReviewDates) warnings.push(`銘柄の最終確認日未登録: ${missingSakeReviewDates}/${sakes.length}`)
 if (staleSakeReviewDates) warnings.push(`銘柄の最終確認日が1年以上前または不正: ${staleSakeReviewDates}/${sakes.length}`)
 if (placeholderImages) warnings.push(`銘柄の画像未整備: ${placeholderImages}/${sakes.length}`)
+if (unapprovedImages) warnings.push(`銘柄の画像権利ステータス未承認: ${unapprovedImages}/${sakes.length}`)
 if (missingBrewerySources) warnings.push(`酒蔵の出典未登録: ${missingBrewerySources}/${breweries.length}`)
 if (missingBreweryUrls) warnings.push(`酒蔵の公式URL未登録: ${missingBreweryUrls}/${breweries.length}`)
 if (staleBreweryReviewDates) warnings.push(`酒蔵の最終確認日が1年以上前または不正: ${staleBreweryReviewDates}/${breweries.length}`)

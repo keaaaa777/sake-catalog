@@ -5,6 +5,7 @@ import { getAllBreweries, getBreweryBySlug, getSakesByBrewery } from '@/lib/data
 import { PREFECTURE_SLUGS } from '@/lib/types'
 import SakeThumb from '@/components/SakeThumb'
 import SourceInfo from '@/components/SourceInfo'
+import { isIndexableBrewery } from '@/lib/indexability'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
 
@@ -17,9 +18,11 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const brewery = getBreweryBySlug(params.slug)
   if (!brewery) return {}
+  const indexable = isIndexableBrewery(brewery, getSakesByBrewery(brewery.slug).length)
   return {
     title: `${brewery.name}(${brewery.prefecture})の酒蔵情報|雫 SAKE SELECT`,
     description: brewery.description.slice(0, 120),
+    robots: indexable ? undefined : { index: false, follow: true },
     alternates: { canonical: `/brewery/${params.slug}` },
   }
 }
@@ -32,15 +35,32 @@ export default function BreweryDetailPage({ params }: { params: { slug: string }
   const prefSlug = PREFECTURE_SLUGS[brewery.prefecture]
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: brewery.name,
-    url: brewery.websiteUrl,
-    address: {
-      '@type': 'PostalAddress',
-      addressRegion: brewery.prefecture,
-      addressCountry: 'JP',
-    },
-    mainEntityOfPage: `${SITE_URL}/brewery/${brewery.slug}`,
+    '@graph': [
+      {
+        '@type': 'Organization',
+        name: brewery.name,
+        url: brewery.websiteUrl,
+        address: {
+          '@type': 'PostalAddress',
+          addressRegion: brewery.prefecture,
+          addressCountry: 'JP',
+        },
+        mainEntityOfPage: `${SITE_URL}/brewery/${brewery.slug}`,
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'トップ', item: SITE_URL },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: brewery.prefecture,
+            item: prefSlug ? `${SITE_URL}/area/${prefSlug}` : undefined,
+          },
+          { '@type': 'ListItem', position: 3, name: brewery.name },
+        ],
+      },
+    ],
   }
 
   return (

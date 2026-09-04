@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { getSakesByPrefecture } from '@/lib/data'
 import { PREFECTURE_SLUGS } from '@/lib/types'
 import SakeThumb from '@/components/SakeThumb'
+import { isIndexableSake } from '@/lib/indexability'
 
 export const revalidate = 86400
 
@@ -18,9 +19,11 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { prefecture: string } }): Metadata {
   const pref = SLUG_TO_PREFECTURE[params.prefecture]
   if (!pref) return {}
+  const indexable = getSakesByPrefecture(pref).some(isIndexableSake)
   return {
     title: `${pref}の日本酒一覧|雫 SAKE SELECT`,
     description: `${pref}の蔵元が醸す日本酒を一覧で紹介。味わいや購入先から自分に合う一杯を探せます。`,
+    robots: indexable ? undefined : { index: false, follow: true },
     alternates: { canonical: `/area/${params.prefecture}` },
   }
 }
