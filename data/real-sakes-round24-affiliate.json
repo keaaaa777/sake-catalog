@@ -1,0 +1,58 @@
+[
+  {
+    "prefecture": "神奈川県",
+    "breweryName": "川西屋酒造店",
+    "productName": "丹沢山 麗峰 純米酒",
+    "romajiSlug": "tanzawasan-reiho-junmai",
+    "classification": "純米",
+    "riceVariety": "山田錦",
+    "polishingRatio": 60,
+    "abv": 15.5,
+    "smv": 3,
+    "acidity": 1.4,
+    "priceRange": 2,
+    "description": "神奈川県足柄上郡の川西屋酒造店が、阿波産の山田錦で醸す純米酒。丹沢山系の伏流水を仕込み水に用い、しっかりとした旨みとキレの良さを併せ持つ。神奈川県内でも屈指の知名度を誇る地酒として親しまれている。"
+  },
+  {
+    "prefecture": "京都府",
+    "breweryName": "佐々木酒造",
+    "productName": "聚楽第 純米吟醸",
+    "romajiSlug": "jurakudai-junmai-ginjo",
+    "classification": "純米吟醸",
+    "riceVariety": null,
+    "polishingRatio": 55,
+    "abv": 15,
+    "smv": 3,
+    "acidity": 1.3,
+    "priceRange": 2,
+    "description": "京都府京都市の佐々木酒造が、豊臣秀吉の政庁「聚楽第」の名を冠して醸す純米吟醸。京都らしいやわらかな軟水由来の上品な味わいが特徴で、上品な吟醸香とすっきりとした後味を併せ持つ。京都の歴史とともに歩む一本。"
+  },
+  {
+    "prefecture": "鳥取県",
+    "breweryName": "大谷酒造",
+    "productName": "鷹勇 純米吟醸 なかだれ",
+    "romajiSlug": "takaisami-junmai-ginjo-nakadare",
+    "classification": "純米吟醸",
+    "riceVariety": null,
+    "polishingRatio": 55,
+    "abv": 16,
+    "smv": 3,
+    "acidity": 1.4,
+    "priceRange": 2,
+    "description": "鳥取県東伯郡の大谷酒造が醸す純米吟醸。もろみを搾る過程で最も味わいが整う「中垂れ」の部分のみを使った贅沢な一本で、上品な吟醸香と澄んだ旨みが特徴。鳥取の酒どころとしての実力を体現する銘柄。"
+  },
+  {
+    "prefecture": "広島県",
+    "breweryName": "西條鶴醸造",
+    "productName": "西條鶴 純米大吟醸原酒 神髄",
+    "romajiSlug": "saijoutsuru-junmai-daiginjo-genshu-shinzui",
+    "classification": "純米大吟醸",
+    "riceVariety": null,
+    "polishingRatio": 45,
+    "abv": 17,
+    "smv": 3,
+    "acidity": 1.3,
+    "priceRange": 3,
+    "description": "広島県東広島市西条の西條鶴醸造が醸す純米大吟醸原酒。加水をしない分の力強い旨みと、華やかな吟醸香を併せ持つ。酒どころ西条の伝統的な軟水醸造法によるやわらかな口当たりが特徴の、贅沢な一本。"
+  }
+]

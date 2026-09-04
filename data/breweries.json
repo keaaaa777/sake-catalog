@@ -2315,5 +2315,41 @@
     "description": "新潟県十日町市の蔵元。「越の鶴」を醸す。",
     "imageUrl": "🏛️",
     "isRealData": true
+  },
+  {
+    "id": "266",
+    "slug": "kanagawa-brewery-266",
+    "name": "川西屋酒造店",
+    "prefecture": "神奈川県",
+    "description": "神奈川県足柄上郡の蔵元。丹沢山系の名を冠した「丹沢山」と、洗練された「隆」を手がける。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "267",
+    "slug": "kyoto-brewery-267",
+    "name": "佐々木酒造",
+    "prefecture": "京都府",
+    "description": "京都府京都市の蔵元。豊臣秀吉の政庁に由来する「聚楽第」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "268",
+    "slug": "tottori-brewery-268",
+    "name": "大谷酒造",
+    "prefecture": "鳥取県",
+    "description": "鳥取県東伯郡の蔵元。「鷹勇」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "269",
+    "slug": "hiroshima-brewery-269",
+    "name": "西條鶴醸造",
+    "prefecture": "広島県",
+    "description": "広島県東広島市西条の蔵元。酒どころ西条の伝統を受け継ぐ「西條鶴」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   }
 ]
