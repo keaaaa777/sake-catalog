@@ -1,0 +1,30 @@
+[
+  {
+    "prefecture": "茨城県",
+    "breweryName": "西岡本店",
+    "productName": "花の井 純米酒 猪ラベル",
+    "romajiSlug": "hananoi-junmai-inoshishilabel",
+    "classification": "純米",
+    "riceVariety": "日本晴",
+    "polishingRatio": 65,
+    "abv": 15.5,
+    "smv": 5,
+    "acidity": 1.5,
+    "priceRange": 1,
+    "description": "茨城県桜川市の西岡本店が、地元産米「日本晴」で醸す辛口純米酒。干支をモチーフにした動物ラベルで親しまれており、キレの良い辛口ながらしっかりとした食中酒としての完成度を持つ。桜川の食文化に寄り添う一本。"
+  },
+  {
+    "prefecture": "三重県",
+    "breweryName": "瀧自慢酒造",
+    "productName": "瀧自慢 辛口純米 滝水流",
+    "romajiSlug": "takijiman-karakuchi-junmai-hayase",
+    "classification": "純米",
+    "riceVariety": null,
+    "polishingRatio": 60,
+    "abv": 15.5,
+    "smv": 5,
+    "acidity": 1.5,
+    "priceRange": 2,
+    "description": "三重県名張市の瀧自慢酒造が醸す定番の辛口純米酒。伊勢志摩サミットの食中酒にも採用された実力を持ち、キレの良い辛口と米の旨みのバランスが取れた味わいが特徴。伊賀・名張の食文化に寄り添う一本。"
+  }
+]

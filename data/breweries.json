@@ -2603,5 +2603,23 @@
     "description": "福井県越前市の蔵元。山廃仕込みの「福千歳」を醸す。",
     "imageUrl": "🏛️",
     "isRealData": true
+  },
+  {
+    "id": "298",
+    "slug": "ibaraki-brewery-298",
+    "name": "西岡本店",
+    "prefecture": "茨城県",
+    "description": "茨城県桜川市の蔵元。「花の井」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "299",
+    "slug": "mie-brewery-299",
+    "name": "瀧自慢酒造",
+    "prefecture": "三重県",
+    "description": "三重県名張市の蔵元。伊勢志摩サミットの食中酒にも採用された「瀧自慢」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   }
 ]
