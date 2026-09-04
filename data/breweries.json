@@ -2666,5 +2666,59 @@
     "description": "石川県白山市の蔵元。長期熟成の大吟醸古酒も手がける「長生舞」を醸す。",
     "imageUrl": "🏛️",
     "isRealData": true
+  },
+  {
+    "id": "305",
+    "slug": "mie-brewery-305",
+    "name": "寒紅梅酒造",
+    "prefecture": "三重県",
+    "description": "三重県松阪市の蔵元。「寒紅梅」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "306",
+    "slug": "fukui-brewery-306",
+    "name": "真名鶴酒造",
+    "prefecture": "福井県",
+    "description": "福井県大野市の蔵元。「さかほまれ」を用いた「真名鶴」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "307",
+    "slug": "nara-brewery-307",
+    "name": "千代酒造",
+    "prefecture": "奈良県",
+    "description": "奈良県御所市の蔵元。無濾過生酒にこだわる「篠峯」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "308",
+    "slug": "iwate-brewery-308",
+    "name": "磐乃井酒造",
+    "prefecture": "岩手県",
+    "description": "岩手県一関市の蔵元。「磐乃井」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "309",
+    "slug": "tokyo-brewery-309",
+    "name": "野崎酒造",
+    "prefecture": "東京都",
+    "description": "東京都福生市の蔵元。「喜正」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "310",
+    "slug": "tokushima-brewery-310",
+    "name": "日新酒類",
+    "prefecture": "徳島県",
+    "description": "徳島県の蔵元。「瓢太閤」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   }
 ]
