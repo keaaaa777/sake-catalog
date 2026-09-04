@@ -14,7 +14,18 @@
     "prefecture": "北海道",
     "description": "旭川の伏流水と厳選した酒米で醸す蔵元。海外の酒類コンクールで長年にわたり受賞を重ね、道内屈指の知名度を誇る。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.otokoyama.com/",
+    "sources": [
+      {
+        "title": "男山株式会社 公式ホームページ",
+        "url": "https://www.otokoyama.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "3",
@@ -30,7 +41,18 @@
     "name": "国稀酒造株式会社",
     "prefecture": "北海道",
     "description": "北海道の蔵元。地域の水や米を活かし、すっきりしつつふくよかな地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "imageUrl": "🏛️",
+    "websiteUrl": "https://www.kunimare.co.jp/",
+    "sources": [
+      {
+        "title": "国稀酒造株式会社",
+        "url": "https://www.kunimare.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "5",
@@ -73,7 +95,18 @@
     "name": "小林酒造株式会社",
     "prefecture": "北海道",
     "description": "北海道の蔵元。地域の水や米を活かし、すっきりしつつふくよかな地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "imageUrl": "🏛️",
+    "websiteUrl": "http://www.kitanonishiki.com/",
+    "sources": [
+      {
+        "title": "小林酒造株式会社(北の錦)",
+        "url": "http://www.kitanonishiki.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "9",
@@ -90,7 +123,18 @@
     "prefecture": "青森県",
     "description": "醸造アルコール無添加の純米酒造りを全国に先駆けて実践した蔵。青森県産米を用いた濃密な旨口の酒質で知られる。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "http://www.densyu.co.jp/",
+    "sources": [
+      {
+        "title": "西田酒造店(田酒)",
+        "url": "http://www.densyu.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "11",
@@ -146,7 +190,18 @@
     "prefecture": "宮城県",
     "description": "1973年創業。級別審査を受けない「無鑑査」の発売で知られ、宮城の地酒を代表する存在として親しまれている。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://ichinokura.co.jp/",
+    "sources": [
+      {
+        "title": "一ノ蔵",
+        "url": "https://ichinokura.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "15",
@@ -171,7 +226,18 @@
     "name": "秋田清酒株式会社",
     "prefecture": "秋田県",
     "description": "秋田県の蔵元。地域の水や米を活かし、寒冷地らしいきれいな地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "imageUrl": "🏛️",
+    "websiteUrl": "http://www.igeta.jp/",
+    "sources": [
+      {
+        "title": "秋田清酒株式会社(刈穂)",
+        "url": "http://www.igeta.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "18",
@@ -285,7 +351,18 @@
     "name": "小林酒造株式会社",
     "prefecture": "栃木県",
     "description": "栃木県の蔵元。地域の水や米を活かし、食事に合わせやすい地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "imageUrl": "🏛️",
+    "websiteUrl": "https://hououbiden.jp/",
+    "sources": [
+      {
+        "title": "鳳凰美田｜公式ウェブサイト",
+        "url": "https://hououbiden.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "29",
@@ -429,7 +506,18 @@
     "name": "石本酒造株式会社",
     "prefecture": "新潟県",
     "description": "越乃寒梅で知られる新潟県の蔵元。淡麗で澄んだ味わいを大切にした酒造りで知られる。",
-    "imageUrl": "🏛️"
+    "imageUrl": "🏛️",
+    "websiteUrl": "https://koshinokanbai.co.jp/",
+    "sources": [
+      {
+        "title": "石本酒造株式会社(越乃寒梅)",
+        "url": "https://koshinokanbai.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "45",
