@@ -43082,5 +43082,421 @@
       }
     ],
     "isRealData": true
+  },
+  {
+    "id": "1386",
+    "slug": "ibi-white-tokubetsu-junmai-muroka-genshu",
+    "name": "射美 WHITE 特別純米 無濾過生原酒",
+    "nameKana": "",
+    "breweryId": "gifu-brewery-300",
+    "prefecture": "岐阜県",
+    "classification": "特別純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 2,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 4
+    },
+    "sweetDry": 1,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 60,
+      "abv": 17,
+      "smv": 2,
+      "acid": 1.6
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "岐阜県揖斐郡池田町の所酒造が醸す、無濾過生原酒の特別純米酒。加水をしない分の力強い旨みと、フレッシュな香りが特徴で、揖斐川の伏流水が育んだみずみずしい味わいを楽しめる。少量生産の希少な一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00ruyxn.sgrg216e.g00ruyxn.sgrg3ab5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftourin-palette%2F10001141%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftourin-palette%2Fi%2F10001141%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1387",
+    "slug": "kozaemon-tokubetsu-junmai-shinanomiyamanishiki",
+    "name": "小左衛門 特別純米 信濃美山錦",
+    "nameKana": "",
+    "breweryId": "gifu-brewery-301",
+    "prefecture": "岐阜県",
+    "classification": "特別純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 60,
+      "rice": "美山錦",
+      "abv": 15.5,
+      "smv": 3,
+      "acid": 1.4
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "岐阜県瑞浪市の中島醸造が、信濃産の美山錦で醸す特別純米酒。爽やかでバランスの良い味わいが特徴で、冷酒から熱燗まで幅広い温度帯で楽しめる懐の深さを持つ。瑞浪の地酒として着実にファンを増やしている一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00tkl6n.sgrg2d5c.g00tkl6n.sgrg3116/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F46kozaemon%2F1000031%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2F46kozaemon%2Fi%2F10000033%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1388",
+    "slug": "narimasa-junmai-oyamanishiki",
+    "name": "成政 純米酒 雄山錦",
+    "nameKana": "",
+    "breweryId": "toyama-brewery-302",
+    "prefecture": "富山県",
+    "classification": "純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 60,
+      "rice": "雄山錦",
+      "abv": 15.5,
+      "smv": 3,
+      "acid": 1.4
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "富山県砺波市の成政酒造が、地元産の酒米「雄山錦」で醸す純米酒。戦国武将・佐々成政ゆかりの地で、立山連峰の雪解け水を仕込み水に用いている。砺波平野の豊かな米どころが育んだ、しっかりとした味わいの一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pn78n.sgrg22ca.g00pn78n.sgrg311c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwadaya%2F172157%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwadaya%2Fi%2F10000714%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1389",
+    "slug": "kunpeki-junmai-ginjo-genshu",
+    "name": "勲碧 純米吟醸 原酒",
+    "nameKana": "",
+    "breweryId": "aichi-brewery-303",
+    "prefecture": "愛知県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 55,
+      "abv": 17,
+      "smv": 3,
+      "acid": 1.4
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "愛知県知多郡の勲碧酒造が醸す純米吟醸原酒。氷温貯蔵によって旨みを熟成させており、加水をしない分の力強い味わいが特徴。国際的な酒コンクールでの金賞受賞歴も持つ、知多半島の実力派銘柄。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00uq4ln.sgrg2d27.g00uq4ln.sgrg339d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgrandsuk%2F5107201%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgrandsuk%2Fi%2F10000006%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1390",
+    "slug": "chosemai-daiginjo-koshu-chokodaigin20",
+    "name": "長生舞 大吟醸古酒 超古大吟20",
+    "nameKana": "",
+    "breweryId": "ishikawa-brewery-304",
+    "prefecture": "石川県",
+    "classification": "大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 45,
+      "abv": 17,
+      "smv": 3,
+      "acid": 1.3
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 3,
+    "description": "石川県白山市の久世酒造店が、20年以上じっくりと熟成させて醸す大吟醸古酒。長期熟成によって琥珀色に色づき、複雑で奥深い香りと丸みを帯びた旨みを持つ。時間が育てた、他にはない贅沢な一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00ska5n.sgrg293e.g00ska5n.sgrg38a1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnipponselect%2Fs60150005%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnipponselect%2Fi%2F10012638%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1391",
+    "slug": "mie-brewery-299-junmai-daiginjo-2nd",
+    "name": "瀧自慢 純米大吟醸",
+    "nameKana": "",
+    "breweryId": "mie-brewery-299",
+    "prefecture": "三重県",
+    "classification": "純米大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 45,
+      "abv": 16.5,
+      "smv": 3,
+      "acid": 1.3
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "三重県の瀧自慢酒造が醸す「瀧自慢」の純米大吟醸。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q1bun.sgrg2ee4.g00q1bun.sgrg3147/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjizake-watanabe%2F10007358%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjizake-watanabe%2Fi%2F10007358%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1392",
+    "slug": "mie-brewery-299-junmai-ginjo-2nd",
+    "name": "瀧自慢 純米吟醸",
+    "nameKana": "",
+    "breweryId": "mie-brewery-299",
+    "prefecture": "三重県",
+    "classification": "純米吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 2,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 55,
+      "abv": 15.5,
+      "smv": 3,
+      "acid": 1.3
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "三重県の瀧自慢酒造が醸す「瀧自慢」の純米吟醸。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q1bun.sgrg2ee4.g00q1bun.sgrg3147/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjizake-watanabe%2F10011441%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjizake-watanabe%2Fi%2F10011441%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1393",
+    "slug": "toyama-brewery-049-daiginjo-2nd",
+    "name": "羽根屋 大吟醸",
+    "nameKana": "",
+    "breweryId": "toyama-brewery-049",
+    "prefecture": "富山県",
+    "classification": "大吟醸",
+    "flavorType": "kaori",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 2,
+      "umami": 2,
+      "aroma": 4,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": -1,
+    "specs": {
+      "polishing": 45,
+      "abv": 16.5,
+      "smv": 4,
+      "acid": 1.2
+    },
+    "servingTemp": [
+      "雪冷え",
+      "花冷え"
+    ],
+    "pairings": [
+      "sashimi",
+      "cheese"
+    ],
+    "scenes": [
+      "special",
+      "gift"
+    ],
+    "priceRange": 2,
+    "description": "富山県の富美菊酒造株式会社が醸す「羽根屋」の大吟醸。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rf3en.sgrg2005.g00rf3en.sgrg3060/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmeishu-honpo%2F24700%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmeishu-honpo%2Fi%2F10003629%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
+  },
+  {
+    "id": "1394",
+    "slug": "wakayama-brewery-190-tokubetsu-junmai-2nd",
+    "name": "太平洋 特別純米",
+    "nameKana": "",
+    "breweryId": "wakayama-brewery-190",
+    "prefecture": "和歌山県",
+    "classification": "特別純米",
+    "flavorType": "jun",
+    "taste": {
+      "sweetness": 1,
+      "acidity": 3,
+      "umami": 4,
+      "aroma": 3,
+      "sharpness": 5
+    },
+    "sweetDry": 2,
+    "lightRich": 1,
+    "specs": {
+      "polishing": 58,
+      "abv": 15.5,
+      "smv": 3,
+      "acid": 1.4
+    },
+    "servingTemp": [
+      "常温",
+      "ぬる燗"
+    ],
+    "pairings": [
+      "yakitori",
+      "other"
+    ],
+    "scenes": [
+      "daily",
+      "special"
+    ],
+    "priceRange": 2,
+    "description": "和歌山県の尾崎酒造が醸す「太平洋」の特別純米。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。",
+    "imageUrl": "🍶",
+    "affiliate": [
+      {
+        "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qil3n.sgrg24ac.g00qil3n.sgrg34e3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkishuuitibanya%2Fns-173%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkishuuitibanya%2Fi%2F10000996%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
+      }
+    ],
+    "isRealData": true
   }
 ]

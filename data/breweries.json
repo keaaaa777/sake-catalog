@@ -2621,5 +2621,50 @@
     "description": "三重県名張市の蔵元。伊勢志摩サミットの食中酒にも採用された「瀧自慢」を醸す。",
     "imageUrl": "🏛️",
     "isRealData": true
+  },
+  {
+    "id": "300",
+    "slug": "gifu-brewery-300",
+    "name": "所酒造",
+    "prefecture": "岐阜県",
+    "description": "岐阜県揖斐郡池田町の蔵元。無濾過生原酒の「射美」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "301",
+    "slug": "gifu-brewery-301",
+    "name": "中島醸造",
+    "prefecture": "岐阜県",
+    "description": "岐阜県瑞浪市の蔵元。「小左衛門」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "302",
+    "slug": "toyama-brewery-302",
+    "name": "成政酒造",
+    "prefecture": "富山県",
+    "description": "富山県砺波市の蔵元。戦国武将・佐々成政の名を冠した「成政」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "303",
+    "slug": "aichi-brewery-303",
+    "name": "勲碧酒造",
+    "prefecture": "愛知県",
+    "description": "愛知県知多郡の蔵元。国際コンクールでの受賞歴を持つ「勲碧」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
+  },
+  {
+    "id": "304",
+    "slug": "ishikawa-brewery-304",
+    "name": "久世酒造店",
+    "prefecture": "石川県",
+    "description": "石川県白山市の蔵元。長期熟成の大吟醸古酒も手がける「長生舞」を醸す。",
+    "imageUrl": "🏛️",
+    "isRealData": true
   }
 ]
