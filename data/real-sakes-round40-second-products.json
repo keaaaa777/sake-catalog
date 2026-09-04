@@ -1,0 +1,58 @@
+[
+  {
+    "prefecture": "島根県",
+    "breweryName": "李白酒造有限会社",
+    "productName": "李白 純米大吟醸",
+    "romajiSlug": "shimane-brewery-092-junmai-daiginjo-2nd",
+    "classification": "純米大吟醸",
+    "riceVariety": null,
+    "polishingRatio": 45,
+    "abv": 16.5,
+    "smv": 3,
+    "acidity": 1.3,
+    "priceRange": 2,
+    "description": "島根県の李白酒造有限会社が醸す「李白」の純米大吟醸。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。"
+  },
+  {
+    "prefecture": "北海道",
+    "breweryName": "日本清酒株式会社",
+    "productName": "千歳鶴 純米吟醸",
+    "romajiSlug": "hokkaido-brewery-005-junmai-ginjo-2nd",
+    "classification": "純米吟醸",
+    "riceVariety": null,
+    "polishingRatio": 55,
+    "abv": 15.5,
+    "smv": 3,
+    "acidity": 1.3,
+    "priceRange": 2,
+    "description": "北海道の日本清酒株式会社が醸す「千歳鶴」の純米吟醸。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。"
+  },
+  {
+    "prefecture": "北海道",
+    "breweryName": "日本清酒株式会社",
+    "productName": "千歳鶴 純米",
+    "romajiSlug": "hokkaido-brewery-005-junmai-2nd",
+    "classification": "純米",
+    "riceVariety": null,
+    "polishingRatio": 65,
+    "abv": 15.5,
+    "smv": 3,
+    "acidity": 1.4,
+    "priceRange": 2,
+    "description": "北海道の日本清酒株式会社が醸す「千歳鶴」の純米。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。"
+  },
+  {
+    "prefecture": "鳥取県",
+    "breweryName": "株式会社稲田本店",
+    "productName": "稲田姫 純米吟醸",
+    "romajiSlug": "tottori-brewery-091-junmai-ginjo-2nd",
+    "classification": "純米吟醸",
+    "riceVariety": null,
+    "polishingRatio": 55,
+    "abv": 15.5,
+    "smv": 3,
+    "acidity": 1.3,
+    "priceRange": 2,
+    "description": "鳥取県の株式会社稲田本店が醸す「稲田姫」の純米吟醸。蔵の看板銘柄とはまた違う個性を持つ一本で、地元の食卓に寄り添う定番の味わいを目指して造られている。同じ蔵の他の銘柄と飲み比べることで、造り手の技の幅を感じられる一本。"
+  }
+]
