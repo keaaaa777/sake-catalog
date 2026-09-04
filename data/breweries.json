@@ -114,7 +114,18 @@
     "name": "八戸酒造株式会社",
     "prefecture": "青森県",
     "description": "青森県の蔵元。地域の水や米を活かし、寒冷地らしいきれいな地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "imageUrl": "🏛️",
+    "websiteUrl": "https://mutsu8000.com/",
+    "sources": [
+      {
+        "title": "八戸酒造株式会社(陸奥八仙)",
+        "url": "https://mutsu8000.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "10",
@@ -325,7 +336,18 @@
     "name": "来福酒造株式会社",
     "prefecture": "茨城県",
     "description": "茨城県の蔵元。地域の水や米を活かし、食事に合わせやすい地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "imageUrl": "🏛️",
+    "websiteUrl": "https://raifuku.co.jp/",
+    "sources": [
+      {
+        "title": "来福酒造株式会社",
+        "url": "https://raifuku.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "26",
@@ -457,7 +479,18 @@
     "prefecture": "東京都",
     "description": "青梅・多摩川源流の水で仕込む、東京都内でも屈指の知名度を誇る蔵。観光地としても親しまれている。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.sawanoi-sake.com/",
+    "sources": [
+      {
+        "title": "小澤酒造株式会社(澤乃井)",
+        "url": "https://www.sawanoi-sake.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "39",
@@ -498,7 +531,18 @@
     "name": "中沢酒造株式会社",
     "prefecture": "神奈川県",
     "description": "神奈川県の蔵元。地域の水や米を活かし、食事に合わせやすい地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "imageUrl": "🏛️",
+    "websiteUrl": "https://www.matsumidori.jp/",
+    "sources": [
+      {
+        "title": "中沢酒造株式会社(松みどり)",
+        "url": "https://www.matsumidori.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "44",
@@ -525,7 +569,18 @@
     "name": "朝日酒造株式会社",
     "prefecture": "新潟県",
     "description": "久保田を代表銘柄とする新潟県の蔵元。米と水の良さを活かした端正な酒質が特徴。",
-    "imageUrl": "🏛️"
+    "imageUrl": "🏛️",
+    "websiteUrl": "https://www.asahi-shuzo.co.jp/",
+    "sources": [
+      {
+        "title": "朝日酒造(久保田・朝日山)",
+        "url": "https://www.asahi-shuzo.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "46",
@@ -553,7 +608,18 @@
     "name": "麒麟山酒造株式会社",
     "prefecture": "新潟県",
     "description": "麒麟山で知られる新潟県の蔵元。辛口を軸に、食中酒として親しまれる酒造りを続ける。",
-    "imageUrl": "🏛️"
+    "imageUrl": "🏛️",
+    "websiteUrl": "https://kirinzan.co.jp/",
+    "sources": [
+      {
+        "title": "麒麟山酒造株式会社",
+        "url": "https://kirinzan.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "48",
@@ -562,7 +628,18 @@
     "prefecture": "富山県",
     "description": "富山を代表する銘酒を醸す蔵元。北陸の魚介料理との相性を意識した骨格のある酒質で知られる。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.masuizumi.co.jp/",
+    "sources": [
+      {
+        "title": "桝田酒造店(満寿泉)",
+        "url": "https://www.masuizumi.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "49",
@@ -587,7 +664,18 @@
     "prefecture": "石川県",
     "description": "1980年代の山廃仕込み復興を牽引した蔵。全量自家精米にこだわった濃醇な酒質が持ち味。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.tengumai.co.jp/",
+    "sources": [
+      {
+        "title": "車多酒造(天狗舞)",
+        "url": "https://www.tengumai.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "52",
@@ -595,7 +683,18 @@
     "name": "鹿野酒造株式会社",
     "prefecture": "石川県",
     "description": "石川県の蔵元。地域の水や米を活かし、米の旨味とキレを両立した地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "imageUrl": "🏛️",
+    "websiteUrl": "https://jokigen.co.jp/",
+    "sources": [
+      {
+        "title": "鹿野酒造株式会社(常きげん)",
+        "url": "https://jokigen.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "53",
@@ -603,7 +702,18 @@
     "name": "株式会社吉田酒造店",
     "prefecture": "石川県",
     "description": "石川県の蔵元。地域の水や米を活かし、米の旨味とキレを両立した地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "imageUrl": "🏛️",
+    "websiteUrl": "https://tedorigawa.com/",
+    "sources": [
+      {
+        "title": "吉田酒造店(手取川)",
+        "url": "https://tedorigawa.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "54",
@@ -612,7 +722,18 @@
     "prefecture": "福井県",
     "description": "日本酒の高級化・大吟醸ブームを牽引した蔵の一つ。入手困難な希少銘柄を複数持つ名門蔵。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.kokuryu.co.jp/",
+    "sources": [
+      {
+        "title": "黒龍酒造株式会社",
+        "url": "https://www.kokuryu.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "55",
@@ -637,7 +758,18 @@
     "prefecture": "山梨県",
     "description": "南アルプス・甲斐駒ヶ岳の伏流水で仕込む「七賢」の蔵元。国内外のコンペティションでの受賞歴も多い。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.sake-shichiken.co.jp/",
+    "sources": [
+      {
+        "title": "山梨銘醸株式会社(七賢)",
+        "url": "https://www.sake-shichiken.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "58",
@@ -654,7 +786,18 @@
     "prefecture": "長野県",
     "description": "日本の醸造用酵母「協会7号」発祥の蔵。自社培養の酵母を用いた透明感のある酒質で知られる。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.masumi.co.jp/",
+    "sources": [
+      {
+        "title": "宮坂醸造株式会社(真澄)",
+        "url": "https://www.masumi.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "60",
@@ -679,7 +822,18 @@
     "prefecture": "岐阜県",
     "description": "飛騨産の契約栽培米を用いる蔵。国際線ファーストクラスの搭乗酒に採用された実績を持つ。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.sake-hourai.co.jp/",
+    "sources": [
+      {
+        "title": "渡辺酒造店(蓬莱)",
+        "url": "https://www.sake-hourai.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "63",
@@ -804,7 +958,18 @@
     "name": "山野酒造株式会社",
     "prefecture": "大阪府",
     "description": "大阪府の蔵元。地域の水や米を活かし、旨味と余韻を感じる地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "imageUrl": "🏛️",
+    "websiteUrl": "https://www.katanosakura.com/",
+    "sources": [
+      {
+        "title": "山野酒造株式会社(片野桜)",
+        "url": "https://www.katanosakura.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "78",
@@ -837,7 +1002,18 @@
     "name": "株式会社本田商店",
     "prefecture": "兵庫県",
     "description": "兵庫県の蔵元。地域の水や米を活かし、辛口でしっかりした地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "imageUrl": "🏛️",
+    "websiteUrl": "https://www.taturiki.com/",
+    "sources": [
+      {
+        "title": "株式会社本田商店(龍力)",
+        "url": "https://www.taturiki.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "82",
@@ -998,7 +1174,18 @@
     "prefecture": "岡山県",
     "description": "岡山の希少な酒米「雄町」にこだわる蔵。品評会でも高評価を得る純米大吟醸を手がける。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.msb.co.jp/",
+    "sources": [
+      {
+        "title": "宮下酒造株式会社(極聖)",
+        "url": "https://www.msb.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "96",
@@ -1031,7 +1218,18 @@
     "name": "相原酒造株式会社",
     "prefecture": "広島県",
     "description": "広島県の蔵元。地域の水や米を活かし、軟水由来のやわらかな地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "imageUrl": "🏛️",
+    "websiteUrl": "https://www.ugonotsuki.com/",
+    "sources": [
+      {
+        "title": "相原酒造株式会社(雨後の月)",
+        "url": "https://www.ugonotsuki.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "100",
@@ -1039,7 +1237,18 @@
     "name": "亀齢酒造株式会社",
     "prefecture": "広島県",
     "description": "広島県の蔵元。地域の水や米を活かし、軟水由来のやわらかな地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "imageUrl": "🏛️",
+    "websiteUrl": "https://kireikireikirei.jimdofree.com/",
+    "sources": [
+      {
+        "title": "亀齢酒造(公式HP)",
+        "url": "https://kireikireikirei.jimdofree.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "101",
@@ -1092,7 +1301,18 @@
     "name": "三芳菊酒造株式会社",
     "prefecture": "徳島県",
     "description": "徳島県の蔵元。地域の水や米を活かし、魚介に合う辛口寄りの地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "imageUrl": "🏛️",
+    "websiteUrl": "https://miyoshikiku.shop/",
+    "sources": [
+      {
+        "title": "三芳菊酒造株式会社",
+        "url": "https://miyoshikiku.shop/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "106",
@@ -1109,7 +1329,18 @@
     "prefecture": "香川県",
     "description": "江戸時代から金刀比羅宮の御神酒を手がけてきた、「讃岐のこんぴら酒」で知られる老舗蔵。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.nishino-kinryo.co.jp/",
+    "sources": [
+      {
+        "title": "西野金陵株式会社(金陵)",
+        "url": "https://www.nishino-kinryo.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "108",
@@ -1126,7 +1357,18 @@
     "name": "成龍酒造株式会社",
     "prefecture": "愛媛県",
     "description": "愛媛県の蔵元。地域の水や米を活かし、魚介に合う辛口寄りの地酒づくりを行う存在として知られる。",
-    "imageUrl": "🏛️"
+    "imageUrl": "🏛️",
+    "websiteUrl": "https://www.seiryosyuzo.com/",
+    "sources": [
+      {
+        "title": "成龍酒造株式会社(伊予賀儀屋)",
+        "url": "https://www.seiryosyuzo.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "110",
@@ -1215,7 +1457,18 @@
     "prefecture": "佐賀県",
     "description": "佐賀県産山田錦にこだわる蔵。同蔵の酒は国際線ビジネス・ファーストクラスの機内酒にも採用された。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://tenzan.co.jp/",
+    "sources": [
+      {
+        "title": "天山酒造株式会社",
+        "url": "https://tenzan.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "118",
@@ -1268,7 +1521,18 @@
     "prefecture": "熊本県",
     "description": "自然栽培米にこだわり、伝統技法「撥ね木搾り」を用いる蔵。海外コンクールでの受賞歴も豊富。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.hananoka.co.jp/",
+    "sources": [
+      {
+        "title": "花の香酒造株式会社",
+        "url": "https://www.hananoka.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "123",
@@ -1329,7 +1593,18 @@
     "prefecture": "宮崎県",
     "description": "宮崎県で唯一の清酒専門蔵。焼酎王国とされる宮崎で清酒の代表格として親しまれている。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "http://www.sentoku.com/",
+    "sources": [
+      {
+        "title": "千徳酒造株式会社",
+        "url": "http://www.sentoku.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "129",
@@ -1338,7 +1613,18 @@
     "prefecture": "鹿児島県",
     "description": "坑洞内で長期貯蔵・熟成させる本格焼酎で知られる蔵。実は清酒も手がける珍しい存在。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.hamadasyuzou.co.jp/kinzan/",
+    "sources": [
+      {
+        "title": "薩摩金山蔵(濵田酒造)",
+        "url": "https://www.hamadasyuzou.co.jp/kinzan/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "130",
@@ -1347,7 +1633,18 @@
     "prefecture": "沖縄県",
     "description": "日本最南端の清酒蔵。泡盛が主流の沖縄で数少ない本格的な日本酒を醸す希少な蔵元。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.taikokushuzo.com/",
+    "sources": [
+      {
+        "title": "泰石酒造株式会社",
+        "url": "https://www.taikokushuzo.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "131",
@@ -1418,7 +1715,18 @@
     "foundedYear": 1743,
     "description": "寛保3年創業。灘五郷を代表する大手蔵元の一つで、「白鶴」ブランドで全国に流通する。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.hakutsuru.co.jp/",
+    "sources": [
+      {
+        "title": "白鶴酒造株式会社",
+        "url": "https://www.hakutsuru.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "137",
@@ -1428,7 +1736,18 @@
     "foundedYear": 1830,
     "description": "文政13年創業。富山県内最大規模の蔵元で、「立山」の銘柄で知られる。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.sake-tateyama.com/",
+    "sources": [
+      {
+        "title": "立山酒造株式会社",
+        "url": "https://www.sake-tateyama.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "138",
@@ -1448,7 +1767,18 @@
     "foundedYear": 1570,
     "description": "戦国時代創業と伝わる石川県白山市の蔵元。1983年に日本で初めて「山廃仕込」表示の純米酒を発売した。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.kikuhime.co.jp/",
+    "sources": [
+      {
+        "title": "菊姫合資会社",
+        "url": "https://www.kikuhime.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "140",
@@ -1468,7 +1798,18 @@
     "foundedYear": 1861,
     "description": "文久元年創業。宮城県石巻市の蔵元で、魚介に合う酒として「日高見」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.hirakoushuzou.jp/",
+    "sources": [
+      {
+        "title": "平孝酒造(日高見)",
+        "url": "https://www.hirakoushuzou.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "142",
@@ -1560,7 +1901,18 @@
     "foundedYear": 1923,
     "description": "大正12年創業。佐賀県鹿島市の蔵元で、「鍋島」の銘柄で知られる。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://nabeshima.biz/",
+    "sources": [
+      {
+        "title": "富久千代酒造(鍋島)",
+        "url": "https://nabeshima.biz/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "149",
@@ -1600,7 +1952,18 @@
     "foundedYear": 1853,
     "description": "嘉永6年創業。三重県伊賀市の蔵元で、三重県オリジナル酵母を使った酒造りで知られる。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.wakaebis.co.jp/",
+    "sources": [
+      {
+        "title": "若戎酒造株式会社",
+        "url": "https://www.wakaebis.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "153",
@@ -1679,7 +2042,18 @@
     "foundedYear": 1912,
     "description": "大正元年創業。静岡市清水区由比の蔵元で、「正雪」の銘柄で知られる。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "http://www.kanzawagawa.co.jp/",
+    "sources": [
+      {
+        "title": "神沢川酒造場(正雪)",
+        "url": "http://www.kanzawagawa.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "160",
@@ -1798,7 +2172,18 @@
     "foundedYear": 1893,
     "description": "明治26年創業。山形県酒田市の蔵元で、全量生酛造りを貫く「初孫」の銘柄で知られる。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "http://hatsumago.co.jp/",
+    "sources": [
+      {
+        "title": "東北銘醸株式会社(初孫)",
+        "url": "http://hatsumago.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "171",
@@ -1808,7 +2193,18 @@
     "foundedYear": 1875,
     "description": "明治初期創業。福島県会津若松市の蔵元で、地元の米と水にこだわる「地産地消」の酒造りを進める「会津娘」の銘柄で知られる。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://aizumusume.co.jp/",
+    "sources": [
+      {
+        "title": "高橋庄作酒造店(会津娘)",
+        "url": "https://aizumusume.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "172",
@@ -1888,7 +2284,18 @@
     "prefecture": "新潟県",
     "description": "新潟県上越市柿崎区の蔵元。淡麗ながら滋味あふれる味わいで知られる「雪中梅」の造り手として、地元をはじめ全国に根強いファンを持つ。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://maruyama-shuzojo.jp",
+    "sources": [
+      {
+        "title": "丸山酒造場(雪中梅)",
+        "url": "https://maruyama-shuzojo.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "179",
@@ -1897,7 +2304,18 @@
     "prefecture": "山形県",
     "description": "山形県酒田市の蔵元。最上川流域の恵まれた米どころで醸す「上喜元」は、しっかりとした旨みと洗練された酸味のバランスで知られる。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.jokigen.com/",
+    "sources": [
+      {
+        "title": "酒田酒造株式会社(上喜元)",
+        "url": "https://www.jokigen.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "181",
@@ -1915,7 +2333,18 @@
     "prefecture": "広島県",
     "description": "広島県三原市の蔵元。伝統的な軟水醸造法を守りながら、繊細で上品な香りの大吟醸酒「誠鏡」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "http://www.maboroshi.co.jp/",
+    "sources": [
+      {
+        "title": "中尾醸造(誠鏡)",
+        "url": "http://www.maboroshi.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "185",
@@ -1924,7 +2353,18 @@
     "prefecture": "静岡県",
     "description": "静岡県焼津市の蔵元。全国新酒鑑評会で高い評価を受け続ける「磯自慢」を醸す、静岡吟醸の代表格。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "http://www.isojiman-sake.jp/",
+    "sources": [
+      {
+        "title": "磯自慢酒造株式会社",
+        "url": "http://www.isojiman-sake.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "186",
@@ -1933,7 +2373,18 @@
     "prefecture": "秋田県",
     "description": "秋田県秋田市の蔵元。県内屈指の生産量を誇り、地元で長く愛される「高清水」を送り出している。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.takashimizu.co.jp/",
+    "sources": [
+      {
+        "title": "秋田酒類製造株式会社(高清水)",
+        "url": "https://www.takashimizu.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "187",
@@ -1969,7 +2420,18 @@
     "prefecture": "和歌山県",
     "description": "和歌山県新宮市の蔵元。熊野の山々に育まれた水で、地元に根差した「太平洋」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "http://ozakisyuzou.jp/",
+    "sources": [
+      {
+        "title": "尾﨑酒造株式会社(太平洋)",
+        "url": "http://ozakisyuzou.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "191",
@@ -2014,7 +2476,18 @@
     "prefecture": "群馬県",
     "description": "群馬県館林市の蔵元。伝統の山廃仕込みによるコクのある旨みが特徴の「群馬泉」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://shimaokasyuzo.com/",
+    "sources": [
+      {
+        "title": "島岡酒造(群馬泉)",
+        "url": "https://shimaokasyuzo.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "196",
@@ -2032,7 +2505,18 @@
     "prefecture": "宮城県",
     "description": "宮城県黒川郡大和町の蔵元。松島の景観に由来する「雪の松島」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://taiwagura.co.jp/",
+    "sources": [
+      {
+        "title": "大和蔵酒造(雪の松島)",
+        "url": "https://taiwagura.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "198",
@@ -2050,7 +2534,18 @@
     "prefecture": "新潟県",
     "description": "新潟県加茂市の蔵元。若手蔵元による新ブランド「荷札酒」で注目を集める「加茂錦」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://kamonishiki.com/",
+    "sources": [
+      {
+        "title": "加茂錦酒造株式会社",
+        "url": "https://kamonishiki.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "200",
@@ -2068,7 +2563,18 @@
     "prefecture": "静岡県",
     "description": "静岡県掛川市の蔵元。伝説的な杜氏・波瀬正吉の技を受け継ぎ、香り高い「開運」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://kaiunsake.com/",
+    "sources": [
+      {
+        "title": "土井酒造場(開運)",
+        "url": "https://kaiunsake.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "202",
@@ -2104,7 +2610,18 @@
     "prefecture": "北海道",
     "description": "元は岐阜県中津川市の蔵元だったが、2019年に北海道東川町へ移転した「三千櫻」の造り手。良質な水と米を求めて拠点を移した異色の経歴を持つ。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://michizakura.jp/",
+    "sources": [
+      {
+        "title": "三千櫻酒造",
+        "url": "https://michizakura.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "206",
@@ -2167,7 +2684,18 @@
     "prefecture": "石川県",
     "description": "石川県珠洲市の蔵元。能登半島最先端に位置し、地元の海の幸に合う「宗玄」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "http://www.sougen-shuzou.com/",
+    "sources": [
+      {
+        "title": "宗玄酒造株式会社",
+        "url": "http://www.sougen-shuzou.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "213",
@@ -2266,7 +2794,18 @@
     "prefecture": "京都府",
     "description": "京都府伏見の蔵元。江戸時代から続く老舗で、飲みやすい味わいの「富翁」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.tomio-sake.co.jp/",
+    "sources": [
+      {
+        "title": "株式会社北川本家(富翁)",
+        "url": "https://www.tomio-sake.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "224",
@@ -2293,7 +2832,18 @@
     "prefecture": "栃木県",
     "description": "栃木県小山市の蔵元。飲み飽きしないすっきりとした味わいの「開華」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "http://www.sakekaika.co.jp/",
+    "sources": [
+      {
+        "title": "第一酒造株式会社(開華)",
+        "url": "http://www.sakekaika.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "227",
@@ -2320,7 +2870,18 @@
     "prefecture": "福島県",
     "description": "福島県喜多方市の蔵元。会津の伝統を受け継ぎ、「弥右衛門」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.yauemon.co.jp/",
+    "sources": [
+      {
+        "title": "大和川酒造店(弥右衛門)",
+        "url": "https://www.yauemon.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "230",
@@ -2356,7 +2917,18 @@
     "prefecture": "広島県",
     "description": "広島県の蔵元。バランスの良い特別純米酒「白鴻」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://morikawa-shuzo.com/",
+    "sources": [
+      {
+        "title": "盛川酒造株式会社(白鴻)",
+        "url": "https://morikawa-shuzo.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "234",
@@ -2365,7 +2937,18 @@
     "prefecture": "広島県",
     "description": "広島県呉市の蔵元。呉の食文化とともに親しまれてきた「千福」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://sempuku.co.jp/",
+    "sources": [
+      {
+        "title": "三宅本店(千福)",
+        "url": "https://sempuku.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "235",
@@ -2392,7 +2975,18 @@
     "prefecture": "富山県",
     "description": "富山県南砺市の蔵元。地元に根差した「三笑楽」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.sansyouraku.jp/",
+    "sources": [
+      {
+        "title": "三笑楽酒造株式会社",
+        "url": "https://www.sansyouraku.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "238",
@@ -2419,7 +3013,18 @@
     "prefecture": "山形県",
     "description": "山形県東置賜郡の蔵元。辛口の「米鶴」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://yonetsuru.com/",
+    "sources": [
+      {
+        "title": "米鶴酒造",
+        "url": "https://yonetsuru.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "241",
@@ -2500,7 +3105,18 @@
     "prefecture": "高知県",
     "description": "高知県土佐郡の蔵元。国際的な受賞歴も持つ「桂月」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.keigetsu.co.jp/",
+    "sources": [
+      {
+        "title": "土佐酒造株式会社(桂月)",
+        "url": "https://www.keigetsu.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "250",
@@ -2509,7 +3125,18 @@
     "prefecture": "高知県",
     "description": "高知県安芸郡の蔵元。全国新酒鑑評会での金賞最多受賞蔵として知られる「土佐鶴」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://tosatsuru.co.jp/",
+    "sources": [
+      {
+        "title": "土佐鶴酒造公式サイト",
+        "url": "https://tosatsuru.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "251",
@@ -2545,7 +3172,18 @@
     "prefecture": "新潟県",
     "description": "新潟県十日町市の蔵元。淡麗辛口の「天神囃子」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "http://www.tenjinkk.com/",
+    "sources": [
+      {
+        "title": "魚沼酒造",
+        "url": "http://www.tenjinkk.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "255",
@@ -2554,7 +3192,18 @@
     "prefecture": "新潟県",
     "description": "新潟県上越市の蔵元。「大洋盛」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.taiyo-sake.co.jp/",
+    "sources": [
+      {
+        "title": "大洋酒造株式会社",
+        "url": "https://www.taiyo-sake.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "256",
@@ -2581,7 +3230,18 @@
     "prefecture": "秋田県",
     "description": "秋田県にかほ市の蔵元。室町時代創業と伝わる古参蔵で、山廃仕込みの「飛良泉」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.hiraizumi.co.jp/",
+    "sources": [
+      {
+        "title": "飛良泉本舗",
+        "url": "https://www.hiraizumi.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "259",
@@ -2608,7 +3268,18 @@
     "prefecture": "福島県",
     "description": "福島県会津若松市の蔵元。「会津中将」の銘柄で知られる。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.tsurunoe.com/",
+    "sources": [
+      {
+        "title": "鶴乃江酒造(会津中将)",
+        "url": "https://www.tsurunoe.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "262",
@@ -2626,7 +3297,18 @@
     "prefecture": "福岡県",
     "description": "福岡県久留米市の蔵元。「庭のうぐいす」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://niwanouguisu.com/",
+    "sources": [
+      {
+        "title": "山口酒造場(庭のうぐいす)",
+        "url": "https://niwanouguisu.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "264",
@@ -2635,7 +3317,18 @@
     "prefecture": "福島県",
     "description": "福島県郡山市の蔵元。「雪小町」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "http://www.yukikomachi.co.jp/",
+    "sources": [
+      {
+        "title": "渡辺酒造本店(雪小町)",
+        "url": "http://www.yukikomachi.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "265",
@@ -2671,7 +3364,18 @@
     "prefecture": "鳥取県",
     "description": "鳥取県東伯郡の蔵元。「鷹勇」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://takaisami.co.jp/",
+    "sources": [
+      {
+        "title": "大谷酒造株式会社(鷹勇)",
+        "url": "https://takaisami.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "269",
@@ -2770,7 +3474,18 @@
     "prefecture": "千葉県",
     "description": "千葉県香取市の蔵元。長期熟成酒にも取り組む「東薫」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "http://www.tokun.co.jp/",
+    "sources": [
+      {
+        "title": "東薫酒造株式会社",
+        "url": "http://www.tokun.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "280",
@@ -2887,7 +3602,18 @@
     "prefecture": "滋賀県",
     "description": "滋賀県東近江市の蔵元。「喜楽長」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://kirakucho.com/",
+    "sources": [
+      {
+        "title": "喜多酒造株式会社(喜楽長)",
+        "url": "https://kirakucho.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "293",
@@ -2923,7 +3649,18 @@
     "prefecture": "愛知県",
     "description": "愛知県半田市の蔵元。「國盛」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.nakanoshuzou.jp/",
+    "sources": [
+      {
+        "title": "中埜酒造株式会社",
+        "url": "https://www.nakanoshuzou.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "297",
@@ -2977,7 +3714,18 @@
     "prefecture": "富山県",
     "description": "富山県砺波市の蔵元。戦国武将・佐々成政の名を冠した「成政」を醸す。",
     "imageUrl": "🏛️",
-    "isRealData": true
+    "isRealData": true,
+    "websiteUrl": "https://www.narimasa.co.jp/",
+    "sources": [
+      {
+        "title": "成政酒造株式会社",
+        "url": "https://www.narimasa.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-04"
   },
   {
     "id": "303",
