@@ -432,7 +432,17 @@
         "furusato": "https://hb.afl.rakuten.co.jp/hgc/g00swjhn.sgrg29e8.g00swjhn.sgrg3274/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff043249-kawasaki%2F1080121%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff043249-kawasaki%2Fi%2F10000235%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "新澤醸造店 公式サイト",
+        "url": "https://niizawa-brewery.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "69",
@@ -479,7 +489,17 @@
       }
     ],
     "isRealData": true,
-    "isPremium": true
+    "isPremium": true,
+    "sources": [
+      {
+        "title": "新政酒造 公式サイト",
+        "url": "http://www.aramasa.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "73",
@@ -678,7 +698,17 @@
         "furusato": "https://hb.afl.rakuten.co.jp/hgc/g00tpl8n.sgrg2a22.g00tpl8n.sgrg3281/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff060003-yamagata%2Ff2y-1764%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff060003-yamagata%2Fi%2F10004595%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "商品紹介 - 出羽桜酒造株式会社",
+        "url": "https://www.dewazakura.co.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "89",
@@ -1463,7 +1493,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qmqpn.sgrg2ae3.g00qmqpn.sgrg3c41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fliquor-base%2F010-0019%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fliquor-base%2Fi%2F10003325%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "石川酒造 公式サイト",
+        "url": "https://www.tamajiman.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "165",
@@ -1547,7 +1587,17 @@
     "description": "自社で酒米栽培から手掛ける「栽培醸造蔵」として知られる泉橋酒造の看板ラベル「とんぼ」シリーズの最高峰。自社栽培の山田錦を35%まで磨き、やや甘口の日本酒度に穏やかな酸味が調和した、なめらかで華やかな酒質に仕上がっている。トンボのマークは無農薬・減農薬栽培への取り組みを象徴し、テロワールを重視した酒造りが評価されている。",
     "imageUrl": "🍶",
     "affiliate": [],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "泉橋酒造 公式サイト",
+        "url": "https://shop.izumibashi.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "173",
@@ -2449,7 +2499,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qpa6n.sgrg219c.g00qpa6n.sgrg3f2c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-horie%2Fmeikyou35%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-horie%2Fi%2F10000888%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "大澤酒造 公式サイト",
+        "url": "https://osawa-sake.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "253",
@@ -2552,7 +2612,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00r3r3n.sgrg2cde.g00r3r3n.sgrg3ee2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhimawariya%2Fmichisakari-honjoukara720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhimawariya%2Fi%2F10002609%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "三千盛 公式サイト",
+        "url": "https://www.michisakari.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "265",
@@ -2647,7 +2717,17 @@
         "furusato": "https://hb.afl.rakuten.co.jp/hgc/g00ul8vn.sgrg2307.g00ul8vn.sgrg344e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff235610-shitara%2F114148%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff235610-shitara%2Fi%2F10000134%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "関谷醸造(蓬莱泉) 公式サイト",
+        "url": "https://netshop.houraisen.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "277",
@@ -2883,7 +2963,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q6kmn.sgrg2dcc.g00q6kmn.sgrg30b2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbizenomati%2Fa-006%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbizenomati%2Fi%2F10000003%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "玉乃光酒造 公式サイト",
+        "url": "https://tamanohikari.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "301",
@@ -2929,7 +3019,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qkhsn.sgrg26f1.g00qkhsn.sgrg3802/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsunfeste%2F10001167%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsunfeste%2Fi%2F10001167%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "齊藤酒造(英勲) 公式サイト",
+        "url": "https://www.eikun.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "309",
@@ -3022,7 +3122,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00tij4n.sgrg2139.g00tij4n.sgrg3027/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokyo-shusui%2F3353608006%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftokyo-shusui%2Fi%2F10002073%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "辰馬本家酒造(白鹿) 公式サイト",
+        "url": "https://www.hakushika.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "325",
@@ -3066,7 +3176,17 @@
         "furusato": "https://hb.afl.rakuten.co.jp/hgc/g00sl9mn.sgrg27a0.g00sl9mn.sgrg3582/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff281000-kobe%2Fg0508-11-3%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff281000-kobe%2Fi%2F10002991%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "剣菱酒造 公式サイト",
+        "url": "https://www.kenbishi.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "333",
@@ -3273,7 +3393,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00suzwn.sgrg27ed.g00suzwn.sgrg3ab0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchiyomusubi-shuzou%2F20379%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchiyomusubi-shuzou%2Fi%2F10000062%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "千代むすび酒造株式会社",
+        "url": "https://www.chiyomusubi.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "373",
@@ -3321,7 +3451,17 @@
         "furusato": "https://hb.afl.rakuten.co.jp/hgc/g00tr4yn.sgrg215b.g00tr4yn.sgrg3a7c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff322016-matsue%2F07403-012%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff322016-matsue%2Fi%2F10001346%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "李白酒造 公式サイト",
+        "url": "https://rihaku.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "385",
@@ -3641,7 +3781,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qb1xn.sgrg2e1c.g00qb1xn.sgrg3771/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokushima-shop%2F11-301%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftokushima-shop%2Fi%2F10000278%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "本家松浦酒造場(鳴門鯛) 公式サイト",
+        "url": "https://www.narutotai-sake.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "433",
@@ -4518,7 +4668,17 @@
         "furusato": "https://hb.afl.rakuten.co.jp/hgc/g00sip0n.sgrg2f00.g00sip0n.sgrg3261/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff442143-kunisaki%2F20000-b29034%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff442143-kunisaki%2Fi%2F10000525%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "清酒 西の関 醸造元 萱島酒造有限会社",
+        "url": "https://www.nishinoseki.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "521",
@@ -5111,7 +5271,17 @@
         "furusato": "https://hb.afl.rakuten.co.jp/hgc/g00u7ohn.sgrg2dcd.g00u7ohn.sgrg371e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff040002-miyagi%2F1347304%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff040002-miyagi%2Fi%2F10000185%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "浦霞醸造元 株式会社佐浦",
+        "url": "https://www.urakasumi.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "545",
@@ -7134,7 +7304,17 @@
     "description": "旭川の男山が手がける上撰クラスの本醸造酒です。精米歩合60%の米を使用し、日本酒度-3.0とやや甘口寄りの味わいに仕上げています。酸度1.3の穏やかな酸があり、アルコール度数13度と控えめで飲みやすいのが特徴です。同じ蔵の純米大吟醸とは対照的に、日常使いしやすい軽やかな味わいで、冷やから燗まで幅広く楽しめます。北海道の郷土料理や、あっさりとした和食との相性が良い一本です。",
     "imageUrl": "🍶",
     "affiliate": [],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "男山株式会社 公式ホームページ",
+        "url": "https://www.otokoyama.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "586",
@@ -7230,7 +7410,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qhcmn.sgrg22bd.g00qhcmn.sgrg3367/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fabesaketen%2Fdewazakura61%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fabesaketen%2Fi%2F10001835%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "商品紹介 - 出羽桜酒造株式会社",
+        "url": "https://www.dewazakura.co.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "588",
@@ -7507,7 +7697,17 @@
         "furusato": "https://hb.afl.rakuten.co.jp/hgc/g00smm8n.sgrg2db9.g00smm8n.sgrg3293/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff172031-komatsu%2F035007%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff172031-komatsu%2Fi%2F10001437%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "農口尚彦研究所",
+        "url": "https://noguchi-naohiko.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "594",
@@ -7984,7 +8184,17 @@
     "description": "白木恒助商店が20年以上熟成させた、蔵の中でも最古参クラスの純米古酒です。日本晴を中心とした米で仕込んだ酒を長期間貯蔵しており、色合いは濃い琥珀色から茶褐色に達しています。極めて凝縮された甘みと旨みがあり、通常の日本酒とは別次元の味わいです。少量をリキュールのように味わうのがおすすめで、常温か軽く温めて香りを開かせると特徴がより際立ちます。特別な記念日の一献や、熟成古酒に慣れた方向けの一本です。",
     "imageUrl": "🍶",
     "affiliate": [],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "達磨正宗 蔵元の公式通販サイト",
+        "url": "https://www.daruma-masamune.co.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "605",
@@ -8028,7 +8238,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00sy1vn.sgrg2f77.g00sy1vn.sgrg3b33/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fg-callshop%2F5303%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fg-callshop%2Fi%2F10000728%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "達磨正宗 蔵元の公式通販サイト",
+        "url": "https://www.daruma-masamune.co.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "606",
@@ -9111,7 +9331,17 @@
     "description": "文化元年創業の本家松浦酒造場が、同蔵の看板である純米大吟醸とは対照的に、日常使いを意識して醸す本醸造酒です。鳴門海峡の鳴門鯛にちなんで名付けられた蔵の代表銘柄の一つで、クセの少ないすっきりとした味わいに仕上げています。冷やから燗まで幅広い温度帯で楽しめ、手頃な価格帯で選びやすいのが特徴です。鳴門海峡の魚介など、地元の海の幸との相性を意識して造られた一本です。",
     "imageUrl": "🍶",
     "affiliate": [],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "本家松浦酒造場(鳴門鯛) 公式サイト",
+        "url": "https://www.narutotai-sake.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "630",
@@ -9206,7 +9436,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rde1n.sgrg2ec7.g00rde1n.sgrg329e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fissyusouden%2F12610721%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fissyusouden%2Fi%2F10029785%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "剣菱酒造 公式サイト",
+        "url": "https://www.kenbishi.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "632",
@@ -10076,7 +10316,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00psasn.sgrg250b.g00psasn.sgrg3f3e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkunii%2F571262%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkunii%2Fi%2F10000001%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "商品紹介 - 出羽桜酒造株式会社",
+        "url": "https://www.dewazakura.co.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "649",
@@ -10178,7 +10428,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00r750n.sgrg2589.g00r750n.sgrg310b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamasake%2F10004438%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamasake%2Fi%2F10004438%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "千代むすび酒造株式会社",
+        "url": "https://www.chiyomusubi.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "651",
@@ -10439,7 +10699,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q1bun.sgrg2ee4.g00q1bun.sgrg3147/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjizake-watanabe%2F1250820%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjizake-watanabe%2Fi%2F10000090%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "株式会社南部美人",
+        "url": "https://www.nanbubijin.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "656",
@@ -10531,7 +10801,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q1bun.sgrg2ee4.g00q1bun.sgrg3147/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjizake-watanabe%2F10002961%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjizake-watanabe%2Fi%2F10002961%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "西田酒造店(田酒)",
+        "url": "http://www.densyu.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "658",
@@ -10689,7 +10969,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00ra1fn.sgrg295b.g00ra1fn.sgrg306f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyokogoshi%2F7032kanbaibessen1800%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyokogoshi%2Fi%2F10000080%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "石本酒造株式会社(越乃寒梅)",
+        "url": "https://koshinokanbai.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "661",
@@ -10827,7 +11117,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00twgdn.sgrg206b.g00twgdn.sgrg39d1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkoshino-sakekura%2Fnt-06%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkoshino-sakekura%2Fi%2F10000015%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "製品情報｜八海山",
+        "url": "https://www.hakkaisan.co.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "664",
@@ -11021,7 +11321,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qtdpn.sgrg2048.g00qtdpn.sgrg39dc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhamadaya%2F10000031%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhamadaya%2Fi%2F10000031%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "生もと造りの日本酒｜大七酒造",
+        "url": "https://www.daishichi.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "668",
@@ -11291,7 +11601,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00s0kkn.sgrg2dfd.g00s0kkn.sgrg3440/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftanbo-sabun%2F10000002%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftanbo-sabun%2Fi%2F10000017%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "新澤醸造店 公式サイト",
+        "url": "https://niizawa-brewery.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "673",
@@ -11337,7 +11657,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pzysn.sgrg2a68.g00pzysn.sgrg3c86/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftaka-sake%2Ffukuju-daiginjoh%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftaka-sake%2Fi%2F10001504%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "福寿｜神戸酒心館",
+        "url": "https://www.shushinkan.co.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "674",
@@ -11383,7 +11713,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00quiin.sgrg220e.g00quiin.sgrg3082/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsake-asanoya%2Fkanbai021%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsake-asanoya%2Fi%2F10000195%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "石本酒造株式会社(越乃寒梅)",
+        "url": "https://koshinokanbai.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "675",
@@ -11485,7 +11825,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pst9n.sgrg233b.g00pst9n.sgrg3421/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fitosaketen%2F459056%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fitosaketen%2Fi%2F10000058%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "新澤醸造店 公式サイト",
+        "url": "https://niizawa-brewery.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "677",
@@ -11531,7 +11881,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00ra1fn.sgrg295b.g00ra1fn.sgrg306f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyokogoshi%2Fkanbaisai1800%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyokogoshi%2Fi%2F10000830%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "石本酒造株式会社(越乃寒梅)",
+        "url": "https://koshinokanbai.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "678",
@@ -11745,7 +12105,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rr15n.sgrg2674.g00rr15n.sgrg3b16/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhiroshimatsuya%2F1001016%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhiroshimatsuya%2Fi%2F10000103%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "八百新酒造株式会社",
+        "url": "https://www.yaoshin.co.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "682",
@@ -11903,7 +12273,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00r750n.sgrg2589.g00r750n.sgrg310b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamasake%2F10002268%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamasake%2Fi%2F10002268%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "三千盛 公式サイト",
+        "url": "https://www.michisakari.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "685",
@@ -12005,7 +12385,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q1bun.sgrg2ee4.g00q1bun.sgrg3147/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjizake-watanabe%2F10006983%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjizake-watanabe%2Fi%2F10006983%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "株式会社南部美人",
+        "url": "https://www.nanbubijin.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "687",
@@ -12321,7 +12711,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qk96n.sgrg20ad.g00qk96n.sgrg3455/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fenjoy-sake%2F10000010%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fenjoy-sake%2Fi%2F10000010%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "八百新酒造株式会社",
+        "url": "https://www.yaoshin.co.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "693",
@@ -12636,7 +13036,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qtdpn.sgrg2048.g00qtdpn.sgrg39dc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhamadaya%2F10001753%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhamadaya%2Fi%2F10001753%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "生もと造りの日本酒｜大七酒造",
+        "url": "https://www.daishichi.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "699",
@@ -12886,7 +13296,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rki5n.sgrg2708.g00rki5n.sgrg344a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsyuraku-shop%2F50533%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsyuraku-shop%2Fi%2F10000045%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "泉橋酒造 公式サイト",
+        "url": "https://shop.izumibashi.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "704",
@@ -13258,7 +13678,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q1bun.sgrg2ee4.g00q1bun.sgrg3147/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjizake-watanabe%2F10010574%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjizake-watanabe%2Fi%2F10010574%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "大澤酒造 公式サイト",
+        "url": "https://osawa-sake.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "711",
@@ -13574,7 +14004,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rki5n.sgrg2708.g00rki5n.sgrg344a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsyuraku-shop%2F20806%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsyuraku-shop%2Fi%2F10000065%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "株式会社南部美人",
+        "url": "https://www.nanbubijin.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "717",
@@ -14272,7 +14712,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pracn.sgrg20af.g00pracn.sgrg353f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjizakenoshimaya%2F10003014%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjizakenoshimaya%2Fi%2F10003014%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "浦霞醸造元 株式会社佐浦",
+        "url": "https://www.urakasumi.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "731",
@@ -14318,7 +14768,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q34zn.sgrg20f5.g00q34zn.sgrg325b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamazakisake%2F689355%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamazakisake%2Fi%2F10000017%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "男山株式会社 公式ホームページ",
+        "url": "https://www.otokoyama.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "732",
@@ -14522,7 +14982,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00twgdn.sgrg206b.g00twgdn.sgrg39d1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkoshino-sakekura%2Fnt-04%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkoshino-sakekura%2Fi%2F10000013%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "製品情報｜八海山",
+        "url": "https://www.hakkaisan.co.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "736",
@@ -14781,7 +15251,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rf3en.sgrg2005.g00rf3en.sgrg3060/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmeishu-honpo%2F20313%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmeishu-honpo%2Fi%2F10002190%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "大澤酒造 公式サイト",
+        "url": "https://osawa-sake.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "741",
@@ -14827,7 +15307,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pro9n.sgrg2155.g00pro9n.sgrg351b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbisyoku%2Fal-0005%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbisyoku%2Fi%2F10001378%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "関谷醸造(蓬莱泉) 公式サイト",
+        "url": "https://netshop.houraisen.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "742",
@@ -14965,7 +15455,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q30jn.sgrg2b88.g00q30jn.sgrg3bb4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsakenogo%2F782289%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsakenogo%2Fi%2F10000504%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "商品紹介 - 出羽桜酒造株式会社",
+        "url": "https://www.dewazakura.co.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "745",
@@ -15234,7 +15734,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rf3en.sgrg2005.g00rf3en.sgrg3060/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmeishu-honpo%2F014810%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmeishu-honpo%2Fi%2F10000869%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "五町田酒造 東一（Azumaichi）",
+        "url": "https://azumaichi.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "750",
@@ -15336,7 +15846,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00s218n.sgrg2436.g00s218n.sgrg3526/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyusyusake%2F70201k120%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkyusyusake%2Fi%2F10001207%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "今里酒造株式会社",
+        "url": "https://rokujuyoshu.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "752",
@@ -15382,7 +15902,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q8trn.sgrg20bf.g00q8trn.sgrg3561/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshimazuya%2Fsekiya015%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshimazuya%2Fi%2F10000018%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "関谷醸造(蓬莱泉) 公式サイト",
+        "url": "https://netshop.houraisen.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "753",
@@ -15530,7 +16060,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qg1qn.sgrg27a5.g00qg1qn.sgrg368f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fm-sakaya%2F10513895%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fm-sakaya%2Fi%2F10001476%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "商品紹介 - 出羽桜酒造株式会社",
+        "url": "https://www.dewazakura.co.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "756",
@@ -15790,7 +16330,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rf3en.sgrg2005.g00rf3en.sgrg3060/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmeishu-honpo%2F04804%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmeishu-honpo%2Fi%2F10001627%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "製品情報｜八海山",
+        "url": "https://www.hakkaisan.co.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "761",
@@ -15836,7 +16386,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qg1qn.sgrg27a5.g00qg1qn.sgrg368f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fm-sakaya%2F105136412%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fm-sakaya%2Fi%2F10001261%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "商品紹介 - 出羽桜酒造株式会社",
+        "url": "https://www.dewazakura.co.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "762",
@@ -15882,7 +16442,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rienn.sgrg2c43.g00rienn.sgrg393c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnondonkai%2F10000255%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnondonkai%2Fi%2F10000255%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "生もと造りの日本酒｜大七酒造",
+        "url": "https://www.daishichi.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "763",
@@ -15984,7 +16554,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q6bhn.sgrg24c0.g00q6bhn.sgrg3257/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-liquors%2Fdensyu-jungin45%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-liquors%2Fi%2F10000900%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "西田酒造店(田酒)",
+        "url": "http://www.densyu.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "765",
@@ -16188,7 +16768,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00r750n.sgrg2589.g00r750n.sgrg310b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamasake%2F10002650%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamasake%2Fi%2F10002650%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "五町田酒造 東一（Azumaichi）",
+        "url": "https://azumaichi.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "769",
@@ -16560,7 +17150,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rki5n.sgrg2708.g00rki5n.sgrg344a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsyuraku-shop%2F66771%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsyuraku-shop%2Fi%2F10001627%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "男山株式会社 公式ホームページ",
+        "url": "https://www.otokoyama.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "776",
@@ -17043,7 +17643,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q6bhn.sgrg24c0.g00q6bhn.sgrg3257/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-liquors%2Fhakkaizann-hutuusyu%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-liquors%2Fi%2F10001003%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "製品情報｜八海山",
+        "url": "https://www.hakkaisan.co.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "785",
@@ -17089,7 +17699,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rceun.sgrg2e71.g00rceun.sgrg334f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-kuwahara%2F5244tokubetujunmai720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-kuwahara%2Fi%2F10000145%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "製品情報｜八海山",
+        "url": "https://www.hakkaisan.co.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "786",
@@ -17237,7 +17857,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qmn4n.sgrg24ea.g00qmn4n.sgrg315c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F946kitchen%2F10005310%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2F946kitchen%2Fi%2F10005310%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "福司酒造株式会社",
+        "url": "https://www.fukutsukasa.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "789",
@@ -17451,7 +18081,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qismn.sgrg26df.g00qismn.sgrg322c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-yumeikan%2F2512%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-yumeikan%2Fi%2F10001935%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "花垣｜南部酒造場",
+        "url": "https://www.hanagaki.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "793",
@@ -17655,7 +18295,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rybcn.sgrg2c96.g00rybcn.sgrg3814/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyanagiya-sake%2F10000100010%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyanagiya-sake%2Fi%2F10000414%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "風の森｜製品について｜油長酒造株式会社",
+        "url": "https://yucho-sake.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "797",
@@ -17803,7 +18453,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qg1qn.sgrg27a5.g00qg1qn.sgrg368f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fm-sakaya%2F39000127%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fm-sakaya%2Fi%2F10000627%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "千代むすび酒造株式会社",
+        "url": "https://www.chiyomusubi.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "800",
@@ -17849,7 +18509,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pzthn.sgrg2239.g00pzthn.sgrg3814/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Focean-hkd%2F1513810%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Focean-hkd%2Fi%2F10000227%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "男山株式会社 公式ホームページ",
+        "url": "https://www.otokoyama.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "801",
@@ -18109,7 +18779,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00paqin.sgrg2f50.g00paqin.sgrg3b83/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fechigo%2F111501%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fechigo%2Fi%2F10009480%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "石本酒造株式会社(越乃寒梅)",
+        "url": "https://koshinokanbai.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "806",
@@ -18267,7 +18947,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rf3en.sgrg2005.g00rf3en.sgrg3060/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmeishu-honpo%2F014974%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmeishu-honpo%2Fi%2F10001378%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "五町田酒造 東一（Azumaichi）",
+        "url": "https://azumaichi.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "809",
@@ -18451,7 +19141,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qjv3n.sgrg2c80.g00qjv3n.sgrg3cec/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fen-musubi%2F10000306%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fen-musubi%2Fi%2F10000306%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "旭日酒造有限会社",
+        "url": "http://jujiasahi.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "813",
@@ -18655,7 +19355,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00raasn.sgrg2c81.g00raasn.sgrg3827/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyono-genzigura%2Footaka720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkyono-genzigura%2Fi%2F10001463%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "齊藤酒造(英勲) 公式サイト",
+        "url": "https://www.eikun.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "817",
@@ -19129,7 +19839,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rki5n.sgrg2708.g00rki5n.sgrg344a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsyuraku-shop%2F110565-102980%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsyuraku-shop%2Fi%2F10003710%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "農口尚彦研究所",
+        "url": "https://noguchi-naohiko.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "826",
@@ -19425,7 +20145,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q4h0n.sgrg2b3a.g00q4h0n.sgrg3811/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fichiishop%2F10001885%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fichiishop%2Fi%2F10001885%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "生もと造りの日本酒｜大七酒造",
+        "url": "https://www.daishichi.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "832",
@@ -19563,7 +20293,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pwksn.sgrg2fee.g00pwksn.sgrg3606/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fs-wine%2F1539993%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fs-wine%2Fi%2F10003298%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "花垣｜南部酒造場",
+        "url": "https://www.hanagaki.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "835",
@@ -19701,7 +20441,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qj0gn.sgrg2f10.g00qj0gn.sgrg3b02/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsake-aoihonten%2Fim-100168%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsake-aoihonten%2Fi%2F10000026%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "今里酒造株式会社",
+        "url": "https://rokujuyoshu.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "838",
@@ -20231,7 +20981,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rde1n.sgrg2ec7.g00rde1n.sgrg329e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fissyusouden%2F17417262%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fissyusouden%2Fi%2F10022441%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "石川酒造 公式サイト",
+        "url": "https://www.tamajiman.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "848",
@@ -20817,7 +21577,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qmn4n.sgrg24ea.g00qmn4n.sgrg315c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F946kitchen%2F10005209%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2F946kitchen%2Fi%2F10005209%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "福司酒造株式会社",
+        "url": "https://www.fukutsukasa.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "859",
@@ -21819,7 +22589,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rijin.sgrg2a29.g00rijin.sgrg3cc1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsunshopsasaki%2F10000328%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsunshopsasaki%2Fi%2F10000327%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "株式会社南部美人",
+        "url": "https://www.nanbubijin.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "879",
@@ -21911,7 +22691,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00r750n.sgrg2589.g00r750n.sgrg310b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamasake%2F5553%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamasake%2Fi%2F10007936%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "山忠本家酒造株式会社｜GIKYO 義侠",
+        "url": "https://gikyo.net/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "881",
@@ -21957,7 +22747,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00r750n.sgrg2589.g00r750n.sgrg310b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamasake%2F5559%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamasake%2Fi%2F10007942%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "山忠本家酒造株式会社｜GIKYO 義侠",
+        "url": "https://gikyo.net/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "882",
@@ -22161,7 +22961,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00s6wdn.sgrg208e.g00s6wdn.sgrg3f57/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkamosikaya%2Fdewazakura0060%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkamosikaya%2Fi%2F10000267%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "商品紹介 - 出羽桜酒造株式会社",
+        "url": "https://www.dewazakura.co.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "886",
@@ -22207,7 +23017,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pracn.sgrg20af.g00pracn.sgrg353f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjizakenoshimaya%2F10004605%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjizakenoshimaya%2Fi%2F10004605%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "生もと造りの日本酒｜大七酒造",
+        "url": "https://www.daishichi.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "887",
@@ -22309,7 +23129,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q6bhn.sgrg24c0.g00q6bhn.sgrg3257/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-liquors%2Fa-01853%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-liquors%2Fi%2F10003264%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "西田酒造店(田酒)",
+        "url": "http://www.densyu.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "889",
@@ -22783,7 +23613,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qg1qn.sgrg27a5.g00qg1qn.sgrg368f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fm-sakaya%2F1052134110%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fm-sakaya%2Fi%2F10005461%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "三千盛 公式サイト",
+        "url": "https://www.michisakari.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "898",
@@ -23043,7 +23883,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qj0gn.sgrg2f10.g00qj0gn.sgrg3b02/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsake-aoihonten%2Fim-100236%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsake-aoihonten%2Fi%2F10000027%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "今里酒造株式会社",
+        "url": "https://rokujuyoshu.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "903",
@@ -23135,7 +23985,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qj0gn.sgrg2f10.g00qj0gn.sgrg3b02/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsake-aoihonten%2Fim-100953%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsake-aoihonten%2Fi%2F10000362%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "今里酒造株式会社",
+        "url": "https://rokujuyoshu.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "905",
@@ -23181,7 +24041,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rki5n.sgrg2708.g00rki5n.sgrg344a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsyuraku-shop%2F12227%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsyuraku-shop%2Fi%2F10001854%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "清酒 西の関 醸造元 萱島酒造有限会社",
+        "url": "https://www.nishinoseki.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "906",
@@ -23227,7 +24097,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q1bun.sgrg2ee4.g00q1bun.sgrg3147/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjizake-watanabe%2F10008781%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjizake-watanabe%2Fi%2F10008781%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "浦霞醸造元 株式会社佐浦",
+        "url": "https://www.urakasumi.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "907",
@@ -23273,7 +24153,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q4h0n.sgrg2b3a.g00q4h0n.sgrg3811/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fichiishop%2F1457407%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fichiishop%2Fi%2F10002181%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "浦霞醸造元 株式会社佐浦",
+        "url": "https://www.urakasumi.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "908",
@@ -23319,7 +24209,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00tjikn.sgrg2d3b.g00tjikn.sgrg30a3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwatashoweb%2F0006-71451%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwatashoweb%2Fi%2F10000940%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "男山株式会社 公式ホームページ",
+        "url": "https://www.otokoyama.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "909",
@@ -23858,7 +24758,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00skybn.sgrg2d50.g00skybn.sgrg3ad3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchaplin0038%2F10005380%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchaplin0038%2Fi%2F10005380%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "清酒 西の関 醸造元 萱島酒造有限会社",
+        "url": "https://www.nishinoseki.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "919",
@@ -24470,7 +25380,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rjiin.sgrg2374.g00rjiin.sgrg32f6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fko-enterprise%2Fxtype1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fko-enterprise%2Fi%2F10004883%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "新政酒造 公式サイト",
+        "url": "http://www.aramasa.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "931",
@@ -24516,7 +25436,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qnx7n.sgrg2a13.g00qnx7n.sgrg3f9c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchigiri%2Faramasa-amaneko720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchigiri%2Fi%2F10002483%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "新政酒造 公式サイト",
+        "url": "http://www.aramasa.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "932",
@@ -24664,7 +25594,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rki5n.sgrg2708.g00rki5n.sgrg344a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsyuraku-shop%2F40064%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsyuraku-shop%2Fi%2F10001729%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "生もと造りの日本酒｜大七酒造",
+        "url": "https://www.daishichi.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "935",
@@ -24822,7 +25762,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00suipn.sgrg2ad4.g00suipn.sgrg37c1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhokkaidogb%2F4283%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhokkaidogb%2Fi%2F10007099%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "小林酒造株式会社(北の錦)",
+        "url": "http://www.kitanonishiki.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "938",
@@ -24980,7 +25930,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pjuvn.sgrg2521.g00pjuvn.sgrg3d88/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fstar%2Fsinkame-004%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fstar%2Fi%2F10002502%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "神亀酒造株式会社",
+        "url": "https://shinkame.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "941",
@@ -25082,7 +26042,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pwksn.sgrg2fee.g00pwksn.sgrg3606/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fs-wine%2F26%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fs-wine%2Fi%2F10025122%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "泉橋酒造 公式サイト",
+        "url": "https://shop.izumibashi.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "943",
@@ -25479,7 +26449,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00s3lrn.sgrg2a07.g00s3lrn.sgrg39c0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgottuou%2F1817036%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgottuou%2Fi%2F10000374%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "千代むすび酒造株式会社",
+        "url": "https://www.chiyomusubi.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "951",
@@ -25571,7 +26551,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00te6an.sgrg213b.g00te6an.sgrg3acc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fatigus%2F2911430107154%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fatigus%2Fi%2F10004748%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "本家松浦酒造場(鳴門鯛) 公式サイト",
+        "url": "https://www.narutotai-sake.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "953",
@@ -25775,7 +26765,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qj0gn.sgrg2f10.g00qj0gn.sgrg3b02/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsake-aoihonten%2Fim-200165%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsake-aoihonten%2Fi%2F10000614%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "今里酒造株式会社",
+        "url": "https://rokujuyoshu.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "957",
@@ -25821,7 +26821,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qj0gn.sgrg2f10.g00qj0gn.sgrg3b02/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsake-aoihonten%2Fim-100892%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsake-aoihonten%2Fi%2F10003762%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "今里酒造株式会社",
+        "url": "https://rokujuyoshu.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "958",
@@ -25867,7 +26877,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00r8j4n.sgrg2220.g00r8j4n.sgrg3081/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faburajin%2Fhakushika-junmaikarakuti2000s%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faburajin%2Fi%2F10027650%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "辰馬本家酒造(白鹿) 公式サイト",
+        "url": "https://www.hakushika.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "959",
@@ -25913,7 +26933,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qshsn.sgrg2c87.g00qshsn.sgrg3cba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsandaime-saketarou%2F4945252137257%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsandaime-saketarou%2Fi%2F10001224%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "清酒 西の関 醸造元 萱島酒造有限会社",
+        "url": "https://www.nishinoseki.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "960",
@@ -26117,7 +27147,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qm6un.sgrg2da0.g00qm6un.sgrg3a0c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmalco%2F10000095%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmalco%2Fi%2F10000095%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "花垣｜南部酒造場",
+        "url": "https://www.hanagaki.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "964",
@@ -26163,7 +27203,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qismn.sgrg26df.g00qismn.sgrg322c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-yumeikan%2F7185%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-yumeikan%2Fi%2F10004592%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "花垣｜南部酒造場",
+        "url": "https://www.hanagaki.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "965",
@@ -26601,7 +27651,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00tqvbn.sgrg25f3.g00tqvbn.sgrg34c6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsagamarche%2F100704%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsagamarche%2Fi%2F10002677%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "五町田酒造 東一（Azumaichi）",
+        "url": "https://azumaichi.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "973",
@@ -26693,7 +27753,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q1s3n.sgrg25e7.g00q1s3n.sgrg35b2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmaruishi%2F4573116810123%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmaruishi%2Fi%2F10007837%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "神亀酒造株式会社",
+        "url": "https://shinkame.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "975",
@@ -26907,7 +27977,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00r750n.sgrg2589.g00r750n.sgrg310b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamasake%2F5683%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamasake%2Fi%2F10008067%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "山忠本家酒造株式会社｜GIKYO 義侠",
+        "url": "https://gikyo.net/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "979",
@@ -26953,7 +28033,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rienn.sgrg2c43.g00rienn.sgrg393c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnondonkai%2F10010388%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnondonkai%2Fi%2F10010662%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "剣菱酒造 公式サイト",
+        "url": "https://www.kenbishi.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "980",
@@ -27671,7 +28761,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q4h0n.sgrg2b3a.g00q4h0n.sgrg3811/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fichiishop%2F8274212%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fichiishop%2Fi%2F10017535%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "藤井酒造 公式サイト",
+        "url": "https://www.fujiishuzou.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "994",
@@ -27866,7 +28966,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rki5n.sgrg2708.g00rki5n.sgrg344a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsyuraku-shop%2F12725%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsyuraku-shop%2Fi%2F10001490%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "秋田清酒株式会社(刈穂)",
+        "url": "http://www.igeta.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "998",
@@ -27912,7 +29022,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00top0n.sgrg2a68.g00top0n.sgrg3051/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyoto-sake-2940%2Fkariho-jg-kawasemi-720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkyoto-sake-2940%2Fi%2F10000020%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "秋田清酒株式会社(刈穂)",
+        "url": "http://www.igeta.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "999",
@@ -27958,7 +29078,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rki5n.sgrg2708.g00rki5n.sgrg344a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsyuraku-shop%2F12723%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsyuraku-shop%2Fi%2F10000914%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "秋田清酒株式会社(刈穂)",
+        "url": "http://www.igeta.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1000",
@@ -28004,7 +29134,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qj4xn.sgrg262c.g00qj4xn.sgrg309b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fakitatokusan%2F10006001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fakitatokusan%2Fi%2F10006001%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "秋田清酒株式会社(刈穂)",
+        "url": "http://www.igeta.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1001",
@@ -28106,7 +29246,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00top0n.sgrg2a68.g00top0n.sgrg3051/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyoto-sake-2940%2Fkariho-gs-rokushu-1800%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkyoto-sake-2940%2Fi%2F10000025%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "秋田清酒株式会社(刈穂)",
+        "url": "http://www.igeta.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1003",
@@ -29539,7 +30689,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rbevn.sgrg246a.g00rbevn.sgrg3182/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fosakestyle-plus%2F11013866%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fosakestyle-plus%2Fi%2F10000147%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "藤井酒造 公式サイト",
+        "url": "https://www.fujiishuzou.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1031",
@@ -29585,7 +30745,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00r1een.sgrg23f3.g00r1een.sgrg3c4a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdonguriano%2Fswrmo-002348%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdonguriano%2Fi%2F10024388%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "藤井酒造 公式サイト",
+        "url": "https://www.fujiishuzou.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1032",
@@ -30227,7 +31397,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rbevn.sgrg246a.g00rbevn.sgrg3182/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fosakestyle-plus%2F11013824%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fosakestyle-plus%2Fi%2F10000945%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "藤井酒造 公式サイト",
+        "url": "https://www.fujiishuzou.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1044",
@@ -30654,7 +31834,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pn9on.sgrg2b62.g00pn9on.sgrg322d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsakemuseum%2F136187%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsakemuseum%2Fi%2F10006441%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "富久錦 公式サイト",
+        "url": "http://www.fukunishiki.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1052",
@@ -31088,7 +32278,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pyv3n.sgrg2ad6.g00pyv3n.sgrg34ff/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamagatamaru%2F1110-0008%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamagatamaru%2Fi%2F10000160%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "竹の露 公式サイト",
+        "url": "http://www.takenotsuyu.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1061",
@@ -33310,7 +34510,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q4h0n.sgrg2b3a.g00q4h0n.sgrg3811/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fichiishop%2F8128355%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fichiishop%2Fi%2F10014899%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "蔵王酒造 公式サイト",
+        "url": "https://www.zaoshuzo.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1106",
@@ -33356,7 +34566,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00top0n.sgrg2a68.g00top0n.sgrg3051/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyoto-sake-2940%2Fginshari-tjs-720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkyoto-sake-2940%2Fi%2F10001074%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "白杉酒造 公式サイト",
+        "url": "https://sake-shirakiku.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1107",
@@ -33652,7 +34872,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pyv3n.sgrg2ad6.g00pyv3n.sgrg34ff/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamagatamaru%2F1110-0066%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamagatamaru%2Fi%2F10001367%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "竹の露 公式サイト",
+        "url": "http://www.takenotsuyu.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1113",
@@ -33698,7 +34928,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pyv3n.sgrg2ad6.g00pyv3n.sgrg34ff/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamagatamaru%2F1110-0037%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamagatamaru%2Fi%2F10000437%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "竹の露 公式サイト",
+        "url": "http://www.takenotsuyu.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1114",
@@ -34060,7 +35300,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pyv3n.sgrg2ad6.g00pyv3n.sgrg34ff/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamagatamaru%2F4935408002331%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamagatamaru%2Fi%2F10010476%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "竹の露 公式サイト",
+        "url": "http://www.takenotsuyu.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1121",
@@ -34218,7 +35468,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pytqn.sgrg27fb.g00pytqn.sgrg3604/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fumeshu%2F1428-19-0720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fumeshu%2Fi%2F10011127%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "富久錦 公式サイト",
+        "url": "http://www.fukunishiki.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1124",
@@ -34616,7 +35876,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00scmzn.sgrg235b.g00scmzn.sgrg30ef/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsmile-kasai%2Fal-006%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsmile-kasai%2Fi%2F10004842%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "富久錦 公式サイト",
+        "url": "http://www.fukunishiki.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1132",
@@ -34662,7 +35932,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00scmzn.sgrg235b.g00scmzn.sgrg30ef/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsmile-kasai%2Fal-003%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsmile-kasai%2Fi%2F10004839%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "富久錦 公式サイト",
+        "url": "http://www.fukunishiki.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1133",
@@ -34708,7 +35988,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rki5n.sgrg2708.g00rki5n.sgrg344a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsyuraku-shop%2F20683%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsyuraku-shop%2Fi%2F10000112%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "浅舞酒造 公式サイト",
+        "url": "https://amanoto.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1134",
@@ -35913,7 +37203,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pytqn.sgrg27fb.g00pytqn.sgrg3604/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fumeshu%2F1260-21-0720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fumeshu%2Fi%2F10010128%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "白杉酒造 公式サイト",
+        "url": "https://sake-shirakiku.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1158",
@@ -36173,7 +37473,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qmmxn.sgrg2bb4.g00qmmxn.sgrg3ef8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcraftbeer%2F102175%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcraftbeer%2Fi%2F10004270%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "蔵王酒造 公式サイト",
+        "url": "https://www.zaoshuzo.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1163",
@@ -36219,7 +37529,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q1bun.sgrg2ee4.g00q1bun.sgrg3147/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjizake-watanabe%2Fshirakiku-baku%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjizake-watanabe%2Fi%2F10015290%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "白杉酒造 公式サイト",
+        "url": "https://sake-shirakiku.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1164",
@@ -37434,7 +38754,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00r8adn.sgrg2d3e.g00r8adn.sgrg34db/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhasegawasaketen%2F1011101%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhasegawasaketen%2Fi%2F10011187%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "蔵王酒造 公式サイト",
+        "url": "https://www.zaoshuzo.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1187",
@@ -37480,7 +38810,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rrn9n.sgrg2765.g00rrn9n.sgrg3519/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-matsusen%2Fn823-4%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-matsusen%2Fi%2F10002477%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "蔵王酒造 公式サイト",
+        "url": "https://www.zaoshuzo.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1188",
@@ -37526,7 +38866,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pytqn.sgrg27fb.g00pytqn.sgrg3604/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fumeshu%2F1260-22-0720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fumeshu%2Fi%2F10010620%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "白杉酒造 公式サイト",
+        "url": "https://sake-shirakiku.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1189",
@@ -37618,7 +38968,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00skuwn.sgrg2aca.g00skuwn.sgrg3adb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fniigatameisyuoukoku%2F20622%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fniigatameisyuoukoku%2Fi%2F10004202%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "石本酒造株式会社(越乃寒梅)",
+        "url": "https://koshinokanbai.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1191",
@@ -37868,7 +39228,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qtdpn.sgrg2048.g00qtdpn.sgrg39dc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhamadaya%2F10001697%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhamadaya%2Fi%2F10001697%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "国権酒造 公式サイト",
+        "url": "https://kokken.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1196",
@@ -38555,7 +39925,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00sqzrn.sgrg230c.g00sqzrn.sgrg3cdb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fomiyageakita%2F4930865100163%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fomiyageakita%2Fi%2F10000571%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "浅舞酒造 公式サイト",
+        "url": "https://amanoto.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1209",
@@ -38601,7 +39981,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qj4xn.sgrg262c.g00qj4xn.sgrg309b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fakitatokusan%2F10000709%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fakitatokusan%2Fi%2F10000709%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "浅舞酒造 公式サイト",
+        "url": "https://amanoto.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1210",
@@ -39594,7 +40984,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qkxzn.sgrg2585.g00qkxzn.sgrg3e80/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkishimoto%2Famanoto-gentei-016%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkishimoto%2Fi%2F10001562%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "浅舞酒造 公式サイト",
+        "url": "https://amanoto.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1229",
@@ -40299,7 +41699,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00raasn.sgrg2c81.g00raasn.sgrg3827/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyono-genzigura%2Fse000868999926%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkyono-genzigura%2Fi%2F10001579%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "佐々木酒造 公式サイト",
+        "url": "https://www.jurakudai.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1243",
@@ -40651,7 +42061,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qtdpn.sgrg2048.g00qtdpn.sgrg39dc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhamadaya%2F10001999%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhamadaya%2Fi%2F10001999%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "国権酒造 公式サイト",
+        "url": "https://kokken.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1250",
@@ -40743,7 +42163,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qtdpn.sgrg2048.g00qtdpn.sgrg39dc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhamadaya%2F10002289%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhamadaya%2Fi%2F10002289%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "国権酒造 公式サイト",
+        "url": "https://kokken.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1252",
@@ -40789,7 +42219,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qtdpn.sgrg2048.g00qtdpn.sgrg39dc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhamadaya%2F10001698%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhamadaya%2Fi%2F10001698%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "国権酒造 公式サイト",
+        "url": "https://kokken.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1253",
@@ -42102,7 +43542,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qnh9n.sgrg2cf1.g00qnh9n.sgrg3d8a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsakenotanaka%2F10000013159%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsakenotanaka%2Fi%2F10000085%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "達磨正宗 蔵元の公式通販サイト",
+        "url": "https://www.daruma-masamune.co.jp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1277",
@@ -42490,7 +43940,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qj4xn.sgrg262c.g00qj4xn.sgrg309b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fakitatokusan%2F10001601%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fakitatokusan%2Fi%2F10001601%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "日の丸醸造 公式サイト",
+        "url": "https://hinomaru-sake.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1285",
@@ -43001,7 +44461,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00top0n.sgrg2a68.g00top0n.sgrg3051/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyoto-sake-2940%2Fjurakudai-jd-720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkyoto-sake-2940%2Fi%2F10000055%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "佐々木酒造 公式サイト",
+        "url": "https://www.jurakudai.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1295",
@@ -43047,7 +44517,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00uc5kn.sgrg2cef.g00uc5kn.sgrg3208/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fg-marche%2F10000763%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fg-marche%2Fi%2F10000816%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "佐々木酒造 公式サイト",
+        "url": "https://www.jurakudai.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1296",
@@ -43195,7 +44675,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00raasn.sgrg2c81.g00raasn.sgrg3827/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyono-genzigura%2Fset11025999926%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkyono-genzigura%2Fi%2F10001580%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "佐々木酒造 公式サイト",
+        "url": "https://www.jurakudai.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1300",
@@ -43629,7 +45119,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00udksn.sgrg2301.g00udksn.sgrg3442/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmikadomatsu-matsukaze%2F10000007%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmikadomatsu-matsukaze%2Fi%2F10000007%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "松岡醸造 公式サイト",
+        "url": "https://www.mikadomatsu.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1309",
@@ -43813,7 +45313,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qj4xn.sgrg262c.g00qj4xn.sgrg309b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fakitatokusan%2F10001663%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fakitatokusan%2Fi%2F10001663%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "日の丸醸造 公式サイト",
+        "url": "https://hinomaru-sake.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1313",
@@ -44256,7 +45766,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q95fn.sgrg217b.g00q95fn.sgrg36ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbigbossshibazaki%2F4935651400014%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbigbossshibazaki%2Fi%2F10024323%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "日の丸醸造 公式サイト",
+        "url": "https://hinomaru-sake.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1322",
@@ -44348,7 +45868,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pwksn.sgrg2fee.g00pwksn.sgrg3606/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fs-wine%2F21434%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fs-wine%2Fi%2F10025630%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "日の丸醸造 公式サイト",
+        "url": "https://hinomaru-sake.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1324",
@@ -45017,7 +46547,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00top0n.sgrg2a68.g00top0n.sgrg3051/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyoto-sake-2940%2Ffurou-soma-gj-720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkyoto-sake-2940%2Fi%2F10000417%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "上原酒造 公式サイト",
+        "url": "https://furosen.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1337",
@@ -45063,7 +46603,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rthyn.sgrg2af6.g00rthyn.sgrg3a08/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fumaimon-oumi%2F11547690%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fumaimon-oumi%2Fi%2F10013879%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "美冨久酒造 公式サイト",
+        "url": "https://mifuku.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1338",
@@ -45538,7 +47088,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00ska5n.sgrg293e.g00ska5n.sgrg38a1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnipponselect%2Fs05250004%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnipponselect%2Fi%2F10010799%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "松岡醸造 公式サイト",
+        "url": "https://www.mikadomatsu.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1347",
@@ -46028,7 +47588,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00ska5n.sgrg293e.g00ska5n.sgrg38a1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnipponselect%2Fs05250007%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnipponselect%2Fi%2F10010802%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "松岡醸造 公式サイト",
+        "url": "https://www.mikadomatsu.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1357",
@@ -46074,7 +47644,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rx9fn.sgrg25e3.g00rx9fn.sgrg3ad0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamaya-shop%2F4952349310042%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamaya-shop%2Fi%2F10119113%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "松岡醸造 公式サイト",
+        "url": "https://www.mikadomatsu.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1358",
@@ -46493,7 +48073,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00top0n.sgrg2a68.g00top0n.sgrg3051/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyoto-sake-2940%2Ffurosen-tjs-720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkyoto-sake-2940%2Fi%2F10000102%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "上原酒造 公式サイト",
+        "url": "https://furosen.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1366",
@@ -46697,7 +48287,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00ut79n.sgrg2109.g00ut79n.sgrg39cd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmifuku-shop%2F239%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmifuku-shop%2Fi%2F10000019%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "美冨久酒造 公式サイト",
+        "url": "https://mifuku.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1370",
@@ -46799,7 +48399,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00top0n.sgrg2a68.g00top0n.sgrg3051/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyoto-sake-2940%2Ffurosen-yj-1800%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkyoto-sake-2940%2Fi%2F10000105%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "上原酒造 公式サイト",
+        "url": "https://furosen.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1372",
@@ -46845,7 +48455,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00u2vqn.sgrg227a.g00u2vqn.sgrg361c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokuriya%2F8412%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftokuriya%2Fi%2F10000334%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "美冨久酒造 公式サイト",
+        "url": "https://mifuku.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1373",
@@ -47457,7 +49077,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00top0n.sgrg2a68.g00top0n.sgrg3051/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyoto-sake-2940%2Ffurosen-yjdj-720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkyoto-sake-2940%2Fi%2F10000100%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "上原酒造 公式サイト",
+        "url": "https://furosen.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1385",
@@ -47503,7 +49133,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pracn.sgrg20af.g00pracn.sgrg353f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjizakenoshimaya%2F854149%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjizakenoshimaya%2Fi%2F10001490%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "美冨久酒造 公式サイト",
+        "url": "https://mifuku.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1386",
@@ -48100,7 +49740,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00riexn.sgrg2ad3.g00riexn.sgrg3e65/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-komesou%2Fshinomine_14665_720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-komesou%2Fi%2F10000340%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "千代酒造 公式サイト",
+        "url": "https://chiyoshuzo.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1398",
@@ -49072,7 +50722,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00riexn.sgrg2ad3.g00riexn.sgrg3e65/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-komesou%2Fshinomine_9219%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-komesou%2Fi%2F10000287%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "千代酒造 公式サイト",
+        "url": "https://chiyoshuzo.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1417",
@@ -49118,7 +50778,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00riexn.sgrg2ad3.g00riexn.sgrg3e65/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-komesou%2Fshinomine_17203%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-komesou%2Fi%2F10000479%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "千代酒造 公式サイト",
+        "url": "https://chiyoshuzo.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1418",
@@ -49210,7 +50880,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00riexn.sgrg2ad3.g00riexn.sgrg3e65/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-komesou%2Fshinomine_18663%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-komesou%2Fi%2F10001112%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "千代酒造 公式サイト",
+        "url": "https://chiyoshuzo.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1420",
@@ -49404,7 +51084,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qjban.sgrg2750.g00qjban.sgrg3ac7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsake-makino%2F10000293-221-t%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsake-makino%2Fi%2F10005799%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "玉乃光酒造 公式サイト",
+        "url": "https://tamanohikari.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1424",
@@ -49608,7 +51298,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00pyuan.sgrg2e41.g00pyuan.sgrg3530/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkitanomori%2Fbansyaku17-01012%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkitanomori%2Fi%2F10009032%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "国稀酒造株式会社",
+        "url": "https://www.kunimare.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1428",
@@ -49654,7 +51354,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00qq8tn.sgrg2ec3.g00qq8tn.sgrg39aa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcocodecow%2Fr220ka%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcocodecow%2Fi%2F10807833%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "玉乃光酒造 公式サイト",
+        "url": "https://tamanohikari.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1429",
@@ -49848,7 +51558,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rr15n.sgrg2674.g00rr15n.sgrg3b16/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhiroshimatsuya%2F1002165%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhiroshimatsuya%2Fi%2F10000262%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "李白酒造 公式サイト",
+        "url": "https://rihaku.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1433",
@@ -50032,7 +51752,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rr15n.sgrg2674.g00rr15n.sgrg3b16/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhiroshimatsuya%2F10021629%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhiroshimatsuya%2Fi%2F10000290%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "李白酒造 公式サイト",
+        "url": "https://rihaku.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1437",
@@ -50078,7 +51808,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00raasn.sgrg2c81.g00raasn.sgrg3827/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyono-genzigura%2Fkotosenjyungin1800%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkyono-genzigura%2Fi%2F10000929%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "齊藤酒造(英勲) 公式サイト",
+        "url": "https://www.eikun.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1438",
@@ -50124,7 +51864,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q0gqn.sgrg254d.g00q0gqn.sgrg3b8e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyushu-shouchu-club%2Fnihonshu-390%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkyushu-shouchu-club%2Fi%2F10006137%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "清酒 西の関 醸造元 萱島酒造有限会社",
+        "url": "https://www.nishinoseki.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-04"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1439",
@@ -50328,7 +52078,17 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00ubjin.sgrg2f50.g00ubjin.sgrg3aca/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fliquorshopohno%2F18669%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fliquorshopohno%2Fi%2F10001008%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "辰馬本家酒造(白鹿) 公式サイト",
+        "url": "https://www.hakushika.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1443",
@@ -50374,6 +52134,16 @@
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00so8dn.sgrg2324.g00so8dn.sgrg3688/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frcmdki%2Fqk-4905545260659%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frcmdki%2Fi%2F10414485%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "石川酒造 公式サイト",
+        "url": "https://www.tamajiman.co.jp/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   }
 ]
