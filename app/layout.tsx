@@ -52,6 +52,12 @@ export default function RootLayout({
         '@type': 'Organization',
         name: '雫 SAKE SELECT編集部',
         url: SITE_URL,
+        logo: {
+          '@type': 'ImageObject',
+          url: `${SITE_URL}/apple-icon`,
+          width: 180,
+          height: 180,
+        },
       },
     ],
   }
