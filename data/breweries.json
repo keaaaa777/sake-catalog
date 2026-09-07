@@ -4829,7 +4829,7 @@
     "slug": "niigata-brewery-255",
     "name": "大洋酒造",
     "prefecture": "新潟県",
-    "description": "新潟県上越市の蔵元。「大洋盛」を醸す。",
+    "description": "新潟県村上市の蔵元。「大洋盛」を醸す。",
     "imageUrl": "🏛️",
     "isRealData": true,
     "websiteUrl": "https://www.taiyo-sake.co.jp/",
@@ -4842,7 +4842,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-04"
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "256",

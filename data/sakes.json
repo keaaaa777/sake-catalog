@@ -33845,7 +33845,7 @@
       "special"
     ],
     "priceRange": 1,
-    "description": "栃木県小山市の第一酒造が醸す純米酒。飲み飽きしないすっきりとした味わいで、地元の食卓に長く親しまれてきた定番の晩酌酒。栃木らしい実直で飾らない酒質が持ち味。",
+    "description": "栃木県佐野市の第一酒造が延宝元年(1673年)の創業以来醸す純米酒。栃木県内最古の蔵元として「関東の三銘酒」に数えられ、自社水田の米と名水百選の水にこだわった酒造りを続けている。飲み飽きしないすっきりとした辛口の味わいで、常温からぬる燗まで楽しめる、地元に根差した定番の晩酌酒。",
     "imageUrl": "🍶",
     "affiliate": [
       {
@@ -33859,6 +33859,12 @@
         "url": "http://www.sakekaika.co.jp/",
         "type": "official-brewery",
         "checkedAt": "2026-09-04"
+      },
+      {
+        "title": "第一酒造株式会社「開華Since1673」",
+        "url": "https://www.sakekaika.co.jp/kaika",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
       }
     ],
     "verificationStatus": "supported",
@@ -36062,7 +36068,7 @@
       "special"
     ],
     "priceRange": 1,
-    "description": "富山県南砺市の三笑楽酒造が醸す純米酒。地元に根差した実直な味わいで、飲み飽きしない晩酌酒として長く親しまれている。富山の豊かな水と米が育んだ、飾らない地酒。",
+    "description": "富山県南砺市、世界遺産五箇山にある三笑楽酒造が明治13年(1880年)の創業以来醸す純米酒。中国の故事「虎渓三笑」にちなみ、「酒は笑い、楽しく飲んでほしい」との思いを込めて名付けられた。ブナ原生林から湧く仕込み水と豪雪地帯の厳しい気候が育む、飲み飽きしない実直な味わいが持ち味。",
     "imageUrl": "🍶",
     "affiliate": [
       {
@@ -36076,6 +36082,12 @@
         "url": "https://www.sansyouraku.jp/",
         "type": "official-brewery",
         "checkedAt": "2026-09-04"
+      },
+      {
+        "title": "農林水産省 北陸農政局(三笑楽酒造 紹介資料)",
+        "url": "https://www.maff.go.jp/hokuriku/food/export/attach/pdf/sake_t_8.pdf",
+        "type": "public-record",
+        "checkedAt": "2026-09-07"
       }
     ],
     "verificationStatus": "supported",
@@ -36287,7 +36299,7 @@
       "special"
     ],
     "priceRange": 1,
-    "description": "山形県東置賜郡の樽平酒造が醸す純米酒。地元で長く愛される定番銘柄で、飾らない実直な味わいが持ち味。置賜地方の食文化とともに歩んできた、飲み飽きしない晩酌酒。",
+    "description": "山形県東置賜郡の樽平酒造が醸す純米酒。300年余の歴史を持つとされる蔵で、地元で長く愛される「樽平」ブランドの一つ「住吉」は、飾らない実直な味わいの定番銘柄として親しまれている。日本酒度+3のやや辛口で、常温からぬる燗まで楽しみやすい晩酌酒。",
     "imageUrl": "🍶",
     "affiliate": [
       {
@@ -38462,7 +38474,7 @@
       "gift"
     ],
     "priceRange": 2,
-    "description": "新潟県上越市の大洋酒造が醸す大吟醸。上越の豊かな水を用いて、華やかな香りと澄んだ後味を実現している。新潟らしい淡麗な酒質を体現する、贈答用にもふさわしい一本。",
+    "description": "新潟県村上市の大洋酒造が醸す大吟醸。地元14の蔵元が合併し1945年に設立された蔵で、精米歩合45%まで磨いた米を用いて仕込まれている。華やかな吟醸香と淡麗ですっきりとした後味が持ち味で、雪冷え・花冷えでの晩酌はもちろん、贈答用にもふさわしい一本。",
     "imageUrl": "🍶",
     "affiliate": [
       {
@@ -38476,6 +38488,12 @@
         "url": "https://www.taiyo-sake.co.jp/",
         "type": "official-brewery",
         "checkedAt": "2026-09-04"
+      },
+      {
+        "title": "大洋酒造株式会社 お問合せ(所在地確認)",
+        "url": "https://www.taiyo-sake.co.jp/inquiry.asp",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
       }
     ],
     "verificationStatus": "supported",
@@ -46197,7 +46215,7 @@
       "gift"
     ],
     "priceRange": 2,
-    "description": "仙台伊達家御用蔵として知られる勝山酒造が醸す純米吟醸。伊達家の美意識を受け継ぐ、洗練された上品な味わいが特徴。仙台の食文化とともに歩んできた、格式ある銘柄。",
+    "description": "仙台伊達家御用蔵として知られる勝山酒造(宮城県仙台市)が元禄元年(1688年)の創業から守り続ける「勝山」の純米吟醸。「武家の酒に求められたのは華美ではなく礼と節、そして澄んだ旨味」という蔵の哲学を体現する一本で、洗練された上品な香りと味わいが特徴。特別な日の乾杯や贈り物にふさわしい銘柄。",
     "imageUrl": "🍶",
     "affiliate": [
       {
@@ -46209,6 +46227,12 @@
       {
         "title": "勝山酒造 公式サイト",
         "url": "https://www.katsu-yama.com/",
+        "type": "official-brewery",
+        "checkedAt": "2026-09-07"
+      },
+      {
+        "title": "勝山の歴史|仙台伊達家御用蔵 勝山酒造",
+        "url": "https://www.katsu-yama.com/dentou/",
         "type": "official-brewery",
         "checkedAt": "2026-09-07"
       }
@@ -46253,7 +46277,7 @@
       "gift"
     ],
     "priceRange": 3,
-    "description": "秋田県横手市の日の丸醸造が、秋田県の県花「まんさく」の名を冠して醸す純米大吟醸。華やかな香りと澄んだ旨みを併せ持ち、雪深い横手の風土が育んだ上質な一本。",
+    "description": "秋田県横手市の日の丸醸造が、秋田県の県花「まんさく」の名を冠して醸す純米大吟醸。「蔵人も呑み手も皆が愉しくなるような酒造り」を理念に、山田錦や秋田酒こまちなど多彩な酒米で酒質を作り分けている蔵で、精米歩合45%まで磨き込んだ華やかな香りと澄んだ旨みを併せ持つ、贈答用にもふさわしい一本。",
     "imageUrl": "🍶",
     "affiliate": [
       {
@@ -46309,14 +46333,24 @@
       "special"
     ],
     "priceRange": 1,
-    "description": "岩手県花巻市の川村酒造店が醸す純米酒。南部杜氏発祥の地らしい伝統的な酒造りを受け継ぎ、飾らない実直な味わいが持ち味。花巻の食文化に長く親しまれてきた地酒。",
+    "description": "岩手県花巻市石鳥谷町、南部杜氏発祥の地に大正11年(1922年)創業した川村酒造店が醸す純米酒。南部杜氏の伝統的な酒造りを受け継ぎ、コシが強くキレのよい味わいに仕上げている。飾らない実直な晩酌酒として、地元花巻の食卓に長く親しまれてきた一本。",
     "imageUrl": "🍶",
     "affiliate": [
       {
         "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00rki5n.sgrg2708.g00rki5n.sgrg344a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsyuraku-shop%2F74440%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsyuraku-shop%2Fi%2F10001794%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65"
       }
     ],
-    "isRealData": true
+    "isRealData": true,
+    "sources": [
+      {
+        "title": "日本酒造組合中央会 酒蔵検索(川村酒造店)",
+        "url": "https://japansake.or.jp/sakagura/jp/iwate/kawamura-shuzouten/",
+        "type": "public-record",
+        "checkedAt": "2026-09-07"
+      }
+    ],
+    "verificationStatus": "supported",
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "1286",
@@ -52509,7 +52543,7 @@
       "special"
     ],
     "priceRange": 1,
-    "description": "岩手県一関市の磐乃井酒造が醸す純米酒。「真心」を込めた酒造りをモットーに、飾らない実直な味わいが特徴。一関の食文化に長く親しまれてきた、地元愛にあふれる一本。",
+    "description": "岩手県一関市花泉町の磐乃井酒造が「真心」を込めて醸す純米酒シリーズの一本。全国新酒鑑評会をはじめ複数の受賞歴を持つ蔵で、飾らない実直な味わいが持ち味。白ラベルの純米酒は、一関の食文化とともに歩んできた地元愛あふれる晩酌酒として親しまれている。",
     "imageUrl": "🍶",
     "affiliate": [
       {
