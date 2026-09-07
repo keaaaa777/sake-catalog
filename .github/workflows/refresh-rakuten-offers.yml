@@ -1,0 +1,46 @@
+name: Refresh Rakuten offers
+
+# 楽天市場のオファー(価格・レビュー件数・評価)を定期的に再取得し、
+# data/sakes.json のアフィリエイトリンクと data/cache/sake-offers.json
+# (銘柄ページの価格比較・aggregateRating構造化データの元データ)を更新する。
+# 変更があれば main にコミット & push し、Vercelの自動デプロイに乗せる。
+on:
+  schedule:
+    # 毎週月曜 03:00 JST (= 日曜 18:00 UTC)
+    - cron: '0 18 * * 0'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Fetch Rakuten candidates
+        env:
+          RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}
+          RAKUTEN_ACCESS_KEY: ${{ secrets.RAKUTEN_ACCESS_KEY }}
+          RAKUTEN_AFFILIATE_ID: ${{ secrets.RAKUTEN_AFFILIATE_ID }}
+        run: node scripts/fetch-rakuten-links.js
+
+      - name: Match candidates and update offers cache
+        run: node scripts/match-mall-candidates.js rakuten
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/sakes.json data/cache/rakuten-candidates.json data/cache/rakuten-not-found.json data/cache/sake-offers.json review/rakuten-review.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: 楽天オファー情報を自動更新 ($(date -u +%Y-%m-%d))"
+            git push
+          fi
