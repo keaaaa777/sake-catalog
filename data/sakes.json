@@ -7505,7 +7505,9 @@
     "sweetDry": 0,
     "lightRich": 1,
     "specs": {
-      "polishing": 60
+      "polishing": 60,
+      "abv": 17,
+      "smv": -1.8
     },
     "servingTemp": [
       "ぬる燗",
@@ -7553,7 +7555,12 @@
     },
     "sweetDry": 0,
     "lightRich": 1,
-    "specs": {},
+    "specs": {
+      "polishing": 35,
+      "abv": 16,
+      "smv": 4,
+      "acid": 1.5
+    },
     "servingTemp": [
       "ぬる燗",
       "熱燗"
@@ -7584,7 +7591,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-04"
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "581",
@@ -7717,7 +7724,10 @@
     },
     "sweetDry": 0,
     "lightRich": -1,
-    "specs": {},
+    "specs": {
+      "abv": 13,
+      "smv": 1
+    },
     "servingTemp": [
       "涼冷え",
       "常温"
@@ -7748,7 +7758,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-04"
+    "lastReviewedAt": "2026-09-07"
   },
   {
     "id": "584",
@@ -7929,7 +7939,10 @@
     },
     "sweetDry": 0,
     "lightRich": -1,
-    "specs": {},
+    "specs": {
+      "polishing": 55,
+      "abv": 13
+    },
     "servingTemp": [
       "涼冷え",
       "常温"
@@ -8035,7 +8048,11 @@
     },
     "sweetDry": 0,
     "lightRich": 1,
-    "specs": {},
+    "specs": {
+      "polishing": 60,
+      "abv": 15,
+      "rice": "五百万石"
+    },
     "servingTemp": [
       "常温",
       "ぬる燗"
@@ -8548,7 +8565,10 @@
     "sweetDry": 0,
     "lightRich": 1,
     "specs": {
-      "polishing": 80
+      "polishing": 80,
+      "abv": 16,
+      "smv": 7,
+      "acid": 1.6
     },
     "servingTemp": [
       "常温",
@@ -8581,7 +8601,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-07"
+    "lastReviewedAt": "2026-09-08"
   },
   {
     "id": "600",
@@ -8602,7 +8622,10 @@
     "sweetDry": 0,
     "lightRich": -1,
     "specs": {
-      "polishing": 70
+      "polishing": 70,
+      "abv": 15.5,
+      "smv": 6,
+      "acid": 1.5
     },
     "servingTemp": [
       "涼冷え",
@@ -8634,7 +8657,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-07"
+    "lastReviewedAt": "2026-09-08"
   },
   {
     "id": "601",
@@ -8655,7 +8678,9 @@
     "sweetDry": 0,
     "lightRich": -1,
     "specs": {
-      "polishing": 55
+      "polishing": 55,
+      "smv": 5,
+      "acid": 1.3
     },
     "servingTemp": [
       "涼冷え",
@@ -8687,7 +8712,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-07"
+    "lastReviewedAt": "2026-09-08"
   },
   {
     "id": "602",
@@ -8708,7 +8733,11 @@
     "sweetDry": 0,
     "lightRich": 1,
     "specs": {
-      "polishing": 70
+      "polishing": 70,
+      "abv": 15,
+      "smv": 1.3,
+      "acid": 1.8,
+      "rice": "三重県産(みえのえみ・五百万石)"
     },
     "servingTemp": [
       "常温",
@@ -8740,7 +8769,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-04"
+    "lastReviewedAt": "2026-09-08"
   },
   {
     "id": "603",
@@ -8760,7 +8789,11 @@
     },
     "sweetDry": 0,
     "lightRich": 1,
-    "specs": {},
+    "specs": {
+      "polishing": 70,
+      "abv": 16,
+      "rice": "美山錦"
+    },
     "servingTemp": [
       "常温",
       "ぬる燗"
@@ -8787,7 +8820,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-07"
+    "lastReviewedAt": "2026-09-08"
   },
   {
     "id": "604",
@@ -8909,7 +8942,9 @@
     "sweetDry": 0,
     "lightRich": -1,
     "specs": {
-      "polishing": 72
+      "polishing": 72,
+      "abv": 16,
+      "smv": 1.1
     },
     "servingTemp": [
       "涼冷え",
@@ -8937,7 +8972,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-07"
+    "lastReviewedAt": "2026-09-08"
   },
   {
     "id": "607",
@@ -9004,7 +9039,10 @@
     },
     "sweetDry": 0,
     "lightRich": 1,
-    "specs": {},
+    "specs": {
+      "polishing": 70,
+      "abv": 15
+    },
     "servingTemp": [
       "常温",
       "ぬる燗"
@@ -9031,7 +9069,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-07"
+    "lastReviewedAt": "2026-09-08"
   },
   {
     "id": "609",
@@ -9211,7 +9249,8 @@
     "sweetDry": 0,
     "lightRich": 1,
     "specs": {
-      "polishing": 63
+      "polishing": 63,
+      "abv": 13
     },
     "servingTemp": [
       "常温",
@@ -9239,7 +9278,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-07"
+    "lastReviewedAt": "2026-09-08"
   },
   {
     "id": "613",
@@ -9260,7 +9299,10 @@
     "sweetDry": 0,
     "lightRich": -1,
     "specs": {
-      "polishing": 55
+      "polishing": 55,
+      "abv": 16,
+      "smv": 4,
+      "acid": 1.8
     },
     "servingTemp": [
       "雪冷え",
@@ -9292,7 +9334,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-07"
+    "lastReviewedAt": "2026-09-08"
   },
   {
     "id": "614",
@@ -9313,7 +9355,10 @@
     "sweetDry": 0,
     "lightRich": -1,
     "specs": {
-      "polishing": 55
+      "polishing": 55,
+      "abv": 15,
+      "smv": 0,
+      "acid": 1.3
     },
     "servingTemp": [
       "雪冷え",
@@ -9346,7 +9391,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-07"
+    "lastReviewedAt": "2026-09-08"
   },
   {
     "id": "615",
@@ -9476,7 +9521,10 @@
     "sweetDry": 0,
     "lightRich": 1,
     "specs": {
-      "polishing": 88
+      "polishing": 88,
+      "abv": 17,
+      "smv": 5.5,
+      "rice": "コシヒカリ(無農薬栽培)"
     },
     "servingTemp": [
       "常温",
@@ -9504,7 +9552,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-07"
+    "lastReviewedAt": "2026-09-08"
   },
   {
     "id": "618",
@@ -9628,7 +9676,10 @@
     "sweetDry": 0,
     "lightRich": 1,
     "specs": {
-      "polishing": 90
+      "polishing": 90,
+      "abv": 14.5,
+      "smv": 8,
+      "acid": 1.8
     },
     "servingTemp": [
       "常温",
@@ -9660,7 +9711,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-07"
+    "lastReviewedAt": "2026-09-08"
   },
   {
     "id": "621",
@@ -9680,7 +9731,13 @@
     },
     "sweetDry": 0,
     "lightRich": 1,
-    "specs": {},
+    "specs": {
+      "polishing": 65,
+      "abv": 15.5,
+      "rice": "五百万石",
+      "smv": 6,
+      "acid": 1.3
+    },
     "servingTemp": [
       "常温",
       "ぬる燗"
@@ -9707,7 +9764,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-04"
+    "lastReviewedAt": "2026-09-08"
   },
   {
     "id": "622",
@@ -9995,7 +10052,12 @@
     },
     "sweetDry": 0,
     "lightRich": 1,
-    "specs": {},
+    "specs": {
+      "polishing": 70,
+      "abv": 16,
+      "rice": "五百万石(島根県産)",
+      "smv": 0
+    },
     "servingTemp": [
       "常温",
       "ぬる燗"
@@ -10022,7 +10084,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-07"
+    "lastReviewedAt": "2026-09-08"
   },
   {
     "id": "628",
@@ -10042,7 +10104,12 @@
     },
     "sweetDry": 0,
     "lightRich": 1,
-    "specs": {},
+    "specs": {
+      "polishing": 60,
+      "abv": 15,
+      "rice": "美山錦",
+      "smv": 3
+    },
     "servingTemp": [
       "常温",
       "ぬる燗"
@@ -10074,7 +10141,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-07"
+    "lastReviewedAt": "2026-09-08"
   },
   {
     "id": "629",
@@ -10094,7 +10161,10 @@
     },
     "sweetDry": 0,
     "lightRich": -1,
-    "specs": {},
+    "specs": {
+      "polishing": 65,
+      "abv": 15
+    },
     "servingTemp": [
       "涼冷え",
       "常温"
@@ -10121,7 +10191,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-07"
+    "lastReviewedAt": "2026-09-08"
   },
   {
     "id": "630",
@@ -10141,7 +10211,13 @@
     },
     "sweetDry": 0,
     "lightRich": -1,
-    "specs": {},
+    "specs": {
+      "polishing": 65,
+      "abv": 15.5,
+      "rice": "玉栄",
+      "smv": 1.5,
+      "acid": 1.2
+    },
     "servingTemp": [
       "涼冷え",
       "常温"
@@ -10172,7 +10248,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-07"
+    "lastReviewedAt": "2026-09-08"
   },
   {
     "id": "631",
@@ -10193,7 +10269,8 @@
     "sweetDry": 0,
     "lightRich": 1,
     "specs": {
-      "rice": "山田錦(兵庫県産)"
+      "rice": "山田錦(兵庫県産)",
+      "abv": 18
     },
     "servingTemp": [
       "ぬる燗",
@@ -10226,7 +10303,7 @@
       }
     ],
     "verificationStatus": "supported",
-    "lastReviewedAt": "2026-09-07"
+    "lastReviewedAt": "2026-09-08"
   },
   {
     "id": "632",
