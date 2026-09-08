@@ -3,7 +3,9 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getSakesByPairing } from '@/lib/data'
 import { PAIRING_CATEGORIES, PAIRING_CATEGORY_IDS } from '@/lib/pairing'
+import { getGuidesLinkingTo } from '@/lib/guides'
 import SakeThumb from '@/components/SakeThumb'
+import RelatedGuides from '@/components/RelatedGuides'
 import { isIndexableSake } from '@/lib/indexability'
 
 export const revalidate = 86400
@@ -29,6 +31,7 @@ export default function PairingPage({ params }: { params: { category: string } }
   if (!category) notFound()
 
   const sakes = getSakesByPairing(params.category)
+  const relatedGuides = getGuidesLinkingTo(`/pairing/${params.category}`)
 
   return (
     <div className="mx-auto max-w-3xl">
@@ -64,6 +67,10 @@ export default function PairingPage({ params }: { params: { category: string } }
           </div>
         )}
       </section>
+
+      <div className="mt-8">
+        <RelatedGuides guides={relatedGuides} />
+      </div>
 
       <div className="mt-12">
         <Link href="/" className="content-back-link">← トップへ戻る</Link>

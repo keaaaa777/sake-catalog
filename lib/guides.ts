@@ -254,3 +254,35 @@ export function getGuideArticleBySlug(slug: string): GuideArticle | undefined {
 }
 
 export const GUIDE_SLUGS = GUIDE_ARTICLES.map((a) => a.slug)
+
+// ガイド記事の本文が内部リンクしているパス(/sake/xxx, /type/xxx 等)ごとに、
+// そのパスへ言及しているガイド記事を逆引きできるようにする。
+// 新しいガイドを追加しても本文中のリンクから自動で反映される。
+const GUIDE_BACKLINKS: Map<string, GuideArticle[]> = (() => {
+  const map = new Map<string, GuideArticle[]>()
+  const hrefPattern = /href="(\/[a-z0-9-]+(?:\/[a-z0-9-]+)*)"/g
+
+  for (const article of GUIDE_ARTICLES) {
+    const seenInArticle = new Set<string>()
+    let match: RegExpExecArray | null
+    hrefPattern.lastIndex = 0
+    while ((match = hrefPattern.exec(article.bodyHtml))) {
+      const path = match[1]
+      if (path === '/guide' || path.startsWith(`/guide/${article.slug}`)) continue
+      if (seenInArticle.has(path)) continue
+      seenInArticle.add(path)
+      const existing = map.get(path)
+      if (existing) {
+        existing.push(article)
+      } else {
+        map.set(path, [article])
+      }
+    }
+  }
+
+  return map
+})()
+
+export function getGuidesLinkingTo(path: string): GuideArticle[] {
+  return GUIDE_BACKLINKS.get(path) ?? []
+}

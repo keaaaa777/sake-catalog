@@ -10,10 +10,12 @@ import { buildAffiliateLinks } from '@/lib/affiliate'
 import { getOffersForSake, getOffersFetchedAt } from '@/lib/offers'
 import { getEnSakeContent } from '@/lib/i18n/en-content'
 import { isProductionDomain } from '@/lib/is-production-domain'
+import { getGuidesLinkingTo } from '@/lib/guides'
 import SakeThumb from '@/components/SakeThumb'
 import PurchaseButtons from '@/components/PurchaseButtons'
 import ProductOfferCard from '@/components/ProductOfferCard'
 import SourceInfo from '@/components/SourceInfo'
+import RelatedGuides from '@/components/RelatedGuides'
 import { isIndexableSake } from '@/lib/indexability'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
@@ -74,6 +76,7 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
   const buttonMallLinks = offers.length > 0 ? mallLinks.filter((m) => m.mall !== 'rakuten') : mallLinks
   const topOffer = offers[0]
   const prefSlug = PREFECTURE_SLUGS[sake.prefecture]
+  const relatedGuides = getGuidesLinkingTo(`/sake/${sake.slug}`)
   const structuredImage = sake.imageRightsStatus === 'approved' && sake.imageUrl && sake.imageUrl !== '🍶'
     ? (sake.imageUrl.startsWith('http') ? sake.imageUrl : `${SITE_URL}${sake.imageUrl}`)
     : undefined
@@ -371,6 +374,8 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
             </Link>
           </section>
         )}
+
+        <RelatedGuides guides={relatedGuides} />
 
         <SourceInfo
           sources={sake.sources}

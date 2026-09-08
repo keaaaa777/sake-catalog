@@ -3,8 +3,10 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getAllBreweries, getBreweryBySlug, getSakesByBrewery } from '@/lib/data'
 import { PREFECTURE_SLUGS } from '@/lib/types'
+import { getGuidesLinkingTo } from '@/lib/guides'
 import SakeThumb from '@/components/SakeThumb'
 import SourceInfo from '@/components/SourceInfo'
+import RelatedGuides from '@/components/RelatedGuides'
 import { isIndexableBrewery } from '@/lib/indexability'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
@@ -33,6 +35,13 @@ export default function BreweryDetailPage({ params }: { params: { slug: string }
 
   const sakes = getSakesByBrewery(brewery.slug)
   const prefSlug = PREFECTURE_SLUGS[brewery.prefecture]
+  const relatedGuides = Array.from(
+    new Map(
+      sakes
+        .flatMap((s) => getGuidesLinkingTo(`/sake/${s.slug}`))
+        .map((g) => [g.slug, g])
+    ).values()
+  ).slice(0, 5)
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -122,6 +131,8 @@ export default function BreweryDetailPage({ params }: { params: { slug: string }
             ))}
           </div>
         </section>
+
+        <RelatedGuides guides={relatedGuides} />
 
         <SourceInfo
           sources={brewery.sources}

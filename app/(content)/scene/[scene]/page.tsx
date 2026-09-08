@@ -3,7 +3,9 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getSakesByScene } from '@/lib/data'
 import { SCENES, SCENE_IDS } from '@/lib/scenes'
+import { getGuidesLinkingTo } from '@/lib/guides'
 import SakeThumb from '@/components/SakeThumb'
+import RelatedGuides from '@/components/RelatedGuides'
 import { isIndexableSake } from '@/lib/indexability'
 
 export const revalidate = 86400
@@ -29,6 +31,13 @@ export default function ScenePage({ params }: { params: { scene: string } }) {
   if (!scene) notFound()
 
   const sakes = getSakesByScene(params.scene)
+  const relatedGuides = Array.from(
+    new Map(
+      sakes
+        .flatMap((s) => getGuidesLinkingTo(`/sake/${s.slug}`))
+        .map((g) => [g.slug, g])
+    ).values()
+  ).slice(0, 5)
 
   return (
     <div className="mx-auto max-w-3xl">
@@ -64,6 +73,10 @@ export default function ScenePage({ params }: { params: { scene: string } }) {
           </div>
         )}
       </section>
+
+      <div className="mt-8">
+        <RelatedGuides guides={relatedGuides} />
+      </div>
 
       <div className="mt-12">
         <Link href="/" className="content-back-link">← トップへ戻る</Link>

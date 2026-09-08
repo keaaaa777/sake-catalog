@@ -4,7 +4,9 @@ import { notFound } from 'next/navigation'
 import { getSakesByFlavorType } from '@/lib/data'
 import { FLAVOR_TYPES, FLAVOR_TYPE_IDS } from '@/lib/flavor'
 import { FlavorType } from '@/lib/types'
+import { getGuidesLinkingTo } from '@/lib/guides'
 import SakeThumb from '@/components/SakeThumb'
+import RelatedGuides from '@/components/RelatedGuides'
 import { isIndexableSake } from '@/lib/indexability'
 
 export const revalidate = 86400
@@ -31,6 +33,7 @@ export default function TypePage({ params }: { params: { flavorType: string } })
   if (!flavor) notFound()
 
   const sakes = getSakesByFlavorType(flavorType)
+  const relatedGuides = getGuidesLinkingTo(`/type/${flavorType}`)
 
   return (
     <div className="mx-auto max-w-3xl">
@@ -69,6 +72,10 @@ export default function TypePage({ params }: { params: { flavorType: string } })
           </div>
         )}
       </section>
+
+      <div className="mt-8">
+        <RelatedGuides guides={relatedGuides} />
+      </div>
 
       <div className="mt-12">
         <Link href="/" className="content-back-link">← トップへ戻る</Link>
