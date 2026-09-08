@@ -11,6 +11,7 @@ import { getOffersForSake, getOffersFetchedAt } from '@/lib/offers'
 import { getEnSakeContent } from '@/lib/i18n/en-content'
 import { isProductionDomain } from '@/lib/is-production-domain'
 import { getGuidesLinkingTo } from '@/lib/guides'
+import { getClassificationSlug } from '@/lib/classification'
 import SakeThumb from '@/components/SakeThumb'
 import PurchaseButtons from '@/components/PurchaseButtons'
 import ProductOfferCard from '@/components/ProductOfferCard'
@@ -79,6 +80,7 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
   const topOffer = offers[0]
   const prefSlug = PREFECTURE_SLUGS[sake.prefecture]
   const relatedGuides = getGuidesLinkingTo(`/sake/${sake.slug}`)
+  const classificationSlug = getClassificationSlug(sake.classification)
   const structuredImage = sake.imageRightsStatus === 'approved' && sake.imageUrl && sake.imageUrl !== '🍶'
     ? (sake.imageUrl.startsWith('http') ? sake.imageUrl : `${SITE_URL}${sake.imageUrl}`)
     : undefined
@@ -173,7 +175,13 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
 
         <div>
           <div className="mb-4 flex flex-wrap items-center gap-2">
-            <span className="content-pill content-pill--gold">{sake.classification}</span>
+            {classificationSlug ? (
+              <Link href={`/classification/${classificationSlug}`} className="content-pill content-pill--gold">
+                {sake.classification}
+              </Link>
+            ) : (
+              <span className="content-pill content-pill--gold">{sake.classification}</span>
+            )}
             <Link href={`/type/${sake.flavorType}`} className="content-pill">
               {flavor.label}({flavor.kana})
             </Link>

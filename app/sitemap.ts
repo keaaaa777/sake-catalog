@@ -6,12 +6,14 @@ import {
   getSakesByPairing,
   getSakesByPrefecture,
   getSakesByScene,
+  getSakesByClassificationSlug,
 } from '@/lib/data'
 import { PREFECTURE_SLUGS } from '@/lib/types'
 import { FLAVOR_TYPE_IDS } from '@/lib/flavor'
 import { PAIRING_CATEGORY_IDS } from '@/lib/pairing'
 import { DIAGNOSIS_TYPE_IDS } from '@/lib/diagnosisTypes'
 import { SCENE_IDS } from '@/lib/scenes'
+import { CLASSIFICATION_SLUG_IDS } from '@/lib/classification'
 import { GUIDE_SLUGS, getGuideArticleBySlug } from '@/lib/guides'
 import { getAllEnSakeSlugs, getAllEnGuideArticles } from '@/lib/i18n/en-content'
 import { isIndexableBrewery, isIndexableSake } from '@/lib/indexability'
@@ -108,6 +110,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
+  const classificationPages: MetadataRoute.Sitemap = CLASSIFICATION_SLUG_IDS.filter((slug) =>
+    hasIndexableSakes(getSakesByClassificationSlug(slug))
+  ).map((slug) => ({
+    url: `${SITE_URL}/classification/${slug}`,
+    changeFrequency: 'weekly',
+    priority: 0.6,
+  }))
+
   const enStaticPages: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/en`, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${SITE_URL}/en/sake`, changeFrequency: 'weekly', priority: 0.6 },
@@ -165,12 +175,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticPages,
     { url: `${SITE_URL}/area`, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${SITE_URL}/type`, changeFrequency: 'weekly', priority: 0.6 },
+    { url: `${SITE_URL}/classification`, changeFrequency: 'weekly', priority: 0.6 },
     ...diagnosisResultPages,
     ...sakePages,
     ...breweryPages,
     ...areaPages,
     ...typePages,
     ...pairingPages,
+    ...classificationPages,
     ...scenePages,
     ...guidePages,
     ...enStaticPages,

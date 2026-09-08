@@ -1,6 +1,7 @@
 import sakesJson from '@/data/sakes.json'
 import breweriesJson from '@/data/breweries.json'
 import { Sake, Brewery, FlavorType } from '@/lib/types'
+import { getClassificationSlug } from '@/lib/classification'
 
 export const allSakes = sakesJson as Sake[]
 export const allBreweries = breweriesJson as Brewery[]
@@ -43,6 +44,10 @@ export function getSakesByPairing(category: string): Sake[] {
 
 export function getSakesByScene(scene: string): Sake[] {
   return allSakes.filter((s) => s.scenes.includes(scene))
+}
+
+export function getSakesByClassificationSlug(slug: string): Sake[] {
+  return allSakes.filter((s) => getClassificationSlug(s.classification) === slug)
 }
 
 function informationScore(sake: Sake): number {

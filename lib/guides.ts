@@ -41,11 +41,12 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
       <h2>精米歩合による違い</h2>
       <p>精米歩合とは、玄米を磨いた後に残る米の割合のことです。数値が小さいほど、米の外側(雑味のもとになりやすい部分)を多く削っていることになります。</p>
       <ul>
-        <li><strong>純米酒</strong>: 精米歩合の規定なし。米の旨みをしっかり感じるタイプが多い。</li>
-        <li><strong>純米吟醸酒</strong>: 精米歩合60%以下。華やかな香り(吟醸香)が生まれやすい。</li>
-        <li><strong>純米大吟醸酒</strong>: 精米歩合50%以下。香り高く、雑味の少ない繊細な味わいに。</li>
-        <li><strong>本醸造酒</strong>: 精米歩合70%以下+醸造アルコール使用。すっきりとした飲み口。</li>
+        <li><strong><a href="/classification/junmai">純米酒</a></strong>: 精米歩合の規定なし。米の旨みをしっかり感じるタイプが多い。</li>
+        <li><strong><a href="/classification/junmai-ginjo">純米吟醸酒</a></strong>: 精米歩合60%以下。華やかな香り(吟醸香)が生まれやすい。</li>
+        <li><strong><a href="/classification/junmai-daiginjo">純米大吟醸酒</a></strong>: 精米歩合50%以下。香り高く、雑味の少ない繊細な味わいに。</li>
+        <li><strong><a href="/classification/honjozo">本醸造酒</a></strong>: 精米歩合70%以下+醸造アルコール使用。すっきりとした飲み口。</li>
       </ul>
+      <p>各分類に該当する銘柄は、<a href="/classification">特定名称から探すページ</a>から一覧で確認できます。</p>
       <p>たとえば<a href="/sake/dassai-junmai-daiginjo-23">獺祭 純米大吟醸 磨き二割三分</a>は、その名の通り精米歩合23%まで磨き込んだ一本。米の外側を77%も削り落とすことで、雑味のない澄んだ香りと味わいが生まれています。</p>
       <h2>「香り重視」か「旨み重視」かで選ぶ</h2>
       <p>精米歩合が低い(数値が小さい)ほど華やかな香りの<a href="/type/kaori">薫酒タイプ</a>になりやすく、逆に精米歩合が高め(米をあまり磨かない)の純米酒は、米の旨みをしっかり感じる<a href="/type/jun">醇酒タイプ</a>になりやすい傾向があります。どちらが良い・悪いではなく、その日の気分や料理に合わせて選ぶのが日本酒の楽しみ方です。</p>
