@@ -41,6 +41,9 @@ export interface Sake {
   scenes: string[]
   priceRange: number
   description: string
+  /** 商品説明に重ねる情景・味わいのイメージ画像。実物の商品写真とは区別する。 */
+  backgroundImageUrl?: string
+  backgroundImageAlt?: string
   imageUrl?: string
   imageRightsStatus?: ImageRightsStatus
   imageSourceUrl?: string

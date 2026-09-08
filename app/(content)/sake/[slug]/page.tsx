@@ -17,6 +17,7 @@ import ProductOfferCard from '@/components/ProductOfferCard'
 import SourceInfo from '@/components/SourceInfo'
 import RelatedGuides from '@/components/RelatedGuides'
 import { isIndexableSake } from '@/lib/indexability'
+import { getSakeBackground } from '@/lib/sake-backgrounds'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
 
@@ -72,6 +73,7 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
   const offersFetchedAt = getOffersFetchedAt()
   const hasEn = Boolean(getEnSakeContent(sake.slug))
   const production = isProductionDomain()
+  const background = getSakeBackground(sake)
   // 楽天は比較カードで表示するため、その他モールのボタンからは重複を避けて除外する
   const buttonMallLinks = offers.length > 0 ? mallLinks.filter((m) => m.mall !== 'rakuten') : mallLinks
   const topOffer = offers[0]
@@ -161,10 +163,12 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
           className="content-visual mx-auto w-40 sm:mx-0 sm:w-full"
           style={{ background: `linear-gradient(150deg, ${flavor.gradient[0]}, ${flavor.gradient[1]})` }}
         >
+          <span
+            className="content-visual__image"
+            style={{ backgroundImage: `url(${JSON.stringify(background.url)})` }}
+            aria-hidden="true"
+          />
           <span className="content-visual__shine" aria-hidden="true" />
-          <span className="content-visual__emoji" role="img" aria-label={sake.classification}>
-            {sake.imageUrl || '🍶'}
-          </span>
         </div>
 
         <div>
@@ -306,17 +310,26 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
         )}
 
         {/* 6. 紹介文 */}
-        <section className="content-card">
-          <div className="panel-header">
-            <h2 className="panel-header__title">紹介</h2>
-            <span className="panel-header__sub">ABOUT THIS SAKE</span>
+        <section className="content-card content-card--story">
+          <span
+            className="content-card__story-image"
+            style={{ backgroundImage: `url(${JSON.stringify(background.url)})` }}
+            role="img"
+            aria-label={background.alt}
+          />
+          <div className="content-card__story-content">
+            <div className="panel-header">
+              <h2 className="panel-header__title">紹介</h2>
+              <span className="panel-header__sub">ABOUT THIS SAKE</span>
+            </div>
+            <p
+              className="text-lg leading-relaxed"
+              style={{ color: 'var(--paper-white)', borderLeft: '2px solid var(--line-gold)', paddingLeft: '16px' }}
+            >
+              {sake.description}
+            </p>
+            <p className="content-card__image-note">※イメージ画像</p>
           </div>
-          <p
-            className="text-lg leading-relaxed"
-            style={{ color: 'var(--paper-white)', borderLeft: '2px solid var(--line-gold)', paddingLeft: '16px' }}
-          >
-            {sake.description}
-          </p>
         </section>
 
         {/* 7. 購入セクション */}
