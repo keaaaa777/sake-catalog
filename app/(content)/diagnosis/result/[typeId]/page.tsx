@@ -6,6 +6,7 @@ import { getSakesByFlavorType } from '@/lib/data'
 import { FLAVOR_TYPES } from '@/lib/flavor'
 import { SPECIALTY_EC_LINKS } from '@/lib/specialtyEc'
 import SakeThumb from '@/components/SakeThumb'
+import ShareButtons from '@/components/ShareButtons'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
 
@@ -45,7 +46,6 @@ export default function DiagnosisResultPage({ params }: { params: { typeId: stri
   const recommendations = getSakesByFlavorType(type.flavorType).slice(0, 3)
   const shareUrl = `${SITE_URL}/diagnosis/result/${type.id}`
   const shareText = `診断結果は「${type.name}」でした!🍶 #雫SAKESELECT`
-  const xShareHref = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`
 
   return (
     <div className="mx-auto max-w-2xl">
@@ -136,14 +136,10 @@ export default function DiagnosisResultPage({ params }: { params: { typeId: stri
             <h2 className="panel-header__title">診断結果をシェアする</h2>
             <span className="panel-header__sub">SHARE</span>
           </div>
-          <a
-            href={xShareHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="content-mall-btn inline-block"
-          >
-            Xでシェアする
-          </a>
+          <p className="mb-4 text-sm" style={{ color: 'var(--mist)' }}>
+            結果を友だちに教えて、日本酒の好みを話すきっかけにしてみませんか?
+          </p>
+          <ShareButtons url={shareUrl} text={shareText} />
         </section>
       </div>
 
