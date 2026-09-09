@@ -79,6 +79,12 @@ export interface HomeSakeSummary {
   classification: string
   searchText: string
   backgroundImageUrl: string
+  flavorType: FlavorType
+  sweetDry: number
+  lightRich: number
+  priceRange: number
+  servingTemp: string[]
+  pairings: string[]
 }
 
 export interface QuizAnswers {

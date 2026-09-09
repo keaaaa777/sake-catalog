@@ -18,6 +18,12 @@ export function GET() {
     prefecture: sake.prefecture,
     classification: sake.classification,
     backgroundImageUrl: getSakeBackground(sake).url,
+    flavorType: sake.flavorType,
+    sweetDry: sake.sweetDry,
+    lightRich: sake.lightRich,
+    priceRange: sake.priceRange,
+    servingTemp: sake.servingTemp,
+    pairings: sake.pairings,
     searchText: normalizeSearchText([
       sake.name,
       sake.nameKana,

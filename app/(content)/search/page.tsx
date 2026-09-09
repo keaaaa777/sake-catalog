@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { getAllSakes } from '@/lib/data'
+import { Suspense } from 'react'
 import SearchClient from './SearchClient'
 
 export const revalidate = 86400
@@ -12,8 +12,6 @@ export const metadata: Metadata = {
 }
 
 export default function SearchIndexPage() {
-  const sakes = getAllSakes()
-
   return (
     <div className="mx-auto max-w-3xl">
       <nav className="content-breadcrumb">
@@ -30,7 +28,9 @@ export default function SearchIndexPage() {
         </p>
       </header>
 
-      <SearchClient sakes={sakes} />
+      <Suspense fallback={<section className="content-card text-center text-sm text-washi/50">検索画面を読み込んでいます...</section>}>
+        <SearchClient />
+      </Suspense>
 
       <div className="mt-12">
         <Link href="/" className="content-back-link">← トップへ戻る</Link>
