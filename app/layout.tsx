@@ -4,21 +4,27 @@ import { Shippori_Mincho_B1, Cormorant_Garamond, Zen_Kaku_Gothic_New } from 'nex
 import './globals.css'
 import { GA_MEASUREMENT_ID } from '@/lib/gtag'
 
+// 実際にCSSで使われているウェイトのみを読み込む(未使用ウェイトはフォント
+// 転送量とレンダリングブロックするCSSサイズを直接増やすため)。
+// - Shippori Mincho B1: 500(見出し類)・600(価格表示)。400は地の文が
+//   継承する既定値(300非対応のため)に最も近い実在ウェイトとして残す。
+// - Cormorant Garamond: 400(ロゴ英字)・300(パンくず等が継承する既定値)。
+// - Zen Kaku Gothic New: 300(本文既定)・700(ボタン・強調テキスト)。
 const shippori = Shippori_Mincho_B1({
   subsets: ['latin'],
-  weight: ['400', '500', '700'],
+  weight: ['400', '500', '600'],
   variable: '--font-display',
 })
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
-  weight: ['300', '400', '500'],
+  weight: ['300', '400'],
   variable: '--font-latin',
 })
 
 const zenKaku = Zen_Kaku_Gothic_New({
   subsets: ['latin'],
-  weight: ['300', '400', '500'],
+  weight: ['300', '700'],
   variable: '--font-body',
 })
 
