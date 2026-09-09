@@ -177,6 +177,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/type`, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${SITE_URL}/classification`, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${SITE_URL}/compare`, changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${SITE_URL}/data`, changeFrequency: 'weekly', priority: 0.6 },
     ...diagnosisResultPages,
     ...sakePages,
     ...breweryPages,
