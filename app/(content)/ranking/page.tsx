@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getFeaturedSakes } from '@/lib/data'
 import { FLAVOR_TYPES } from '@/lib/flavor'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 import SakeThumb from '@/components/SakeThumb'
 
 export const revalidate = 86400
@@ -17,6 +18,7 @@ export default function RankingPage() {
 
   return (
     <div className="mx-auto max-w-3xl">
+      <BreadcrumbJsonLd items={[{ name: 'トップ', path: '/' }, { name: '注目セレクション' }]} />
       <nav className="content-breadcrumb">
         <Link href="/">トップ</Link>
         <span>/</span>

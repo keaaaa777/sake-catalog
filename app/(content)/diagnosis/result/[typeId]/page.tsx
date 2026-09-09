@@ -9,6 +9,7 @@ import { getGuidesLinkingTo } from '@/lib/guides'
 import SakeThumb from '@/components/SakeThumb'
 import ShareButtons from '@/components/ShareButtons'
 import RelatedGuides from '@/components/RelatedGuides'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
 
@@ -52,6 +53,13 @@ export default function DiagnosisResultPage({ params }: { params: { typeId: stri
 
   return (
     <div className="mx-auto max-w-2xl">
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'トップ', path: '/' },
+          { name: '診断', path: '/diagnosis' },
+          { name: type.name },
+        ]}
+      />
       <nav className="content-breadcrumb">
         <Link href="/">トップ</Link>
         <span>/</span>

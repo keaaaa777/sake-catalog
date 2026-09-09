@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getAllSakes, getAllBreweries } from '@/lib/data'
 import CompareClient from './CompareClient'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 export const revalidate = 86400
 
@@ -26,6 +27,7 @@ export default function ComparePage({ searchParams }: { searchParams: { slugs?: 
 
   return (
     <div className="mx-auto max-w-4xl">
+      <BreadcrumbJsonLd items={[{ name: 'トップ', path: '/' }, { name: '比較する' }]} />
       <nav className="content-breadcrumb">
         <Link href="/">トップ</Link>
         <span>/</span>

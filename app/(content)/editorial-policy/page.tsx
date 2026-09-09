@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 export const metadata: Metadata = {
   title: '編集方針・情報の確認方法|雫 SAKE SELECT',
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function EditorialPolicyPage() {
   return (
     <div className="mx-auto max-w-3xl">
+      <BreadcrumbJsonLd items={[{ name: 'トップ', path: '/' }, { name: '編集方針' }]} />
       <nav className="content-breadcrumb">
         <Link href="/">トップ</Link><span>/</span>
         <span style={{ color: 'var(--paper-white)' }}>編集方針</span>

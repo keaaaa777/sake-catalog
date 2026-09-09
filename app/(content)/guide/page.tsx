@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { GUIDE_ARTICLES } from '@/lib/guides'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 export const revalidate = 86400
 
@@ -64,6 +65,7 @@ export default function GuideListPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
+      <BreadcrumbJsonLd items={[{ name: 'トップ', path: '/' }, { name: '日本酒ガイド' }]} />
       <nav className="content-breadcrumb">
         <Link href="/">トップ</Link>
         <span>/</span>

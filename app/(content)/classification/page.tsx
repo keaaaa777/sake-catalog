@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getSakesByClassificationSlug } from '@/lib/data'
 import { CLASSIFICATIONS, CLASSIFICATION_SLUG_IDS } from '@/lib/classification'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 export const revalidate = 86400
 
@@ -19,6 +20,7 @@ export default function ClassificationIndexPage() {
 
   return (
     <div className="mx-auto max-w-3xl">
+      <BreadcrumbJsonLd items={[{ name: 'トップ', path: '/' }, { name: '特定名称から探す' }]} />
       <nav className="content-breadcrumb">
         <Link href="/">トップ</Link>
         <span>/</span>

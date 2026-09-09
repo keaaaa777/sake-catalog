@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL
 
@@ -15,6 +16,7 @@ export default function CorrectionsPage() {
 
   return (
     <div className="mx-auto max-w-2xl">
+      <BreadcrumbJsonLd items={[{ name: 'トップ', path: '/' }, { name: '訂正・掲載情報' }]} />
       <nav className="content-breadcrumb">
         <Link href="/">トップ</Link><span>/</span>
         <span style={{ color: 'var(--paper-white)' }}>訂正・掲載情報</span>

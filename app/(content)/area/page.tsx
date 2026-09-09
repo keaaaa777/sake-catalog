@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { REGIONS, PREFECTURE_SLUGS } from '@/lib/types'
 import { getSakesByPrefecture } from '@/lib/data'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
 export const revalidate = 86400
 
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 export default function AreaIndexPage() {
   return (
     <div className="mx-auto max-w-3xl">
+      <BreadcrumbJsonLd items={[{ name: 'トップ', path: '/' }, { name: '地図から探す' }]} />
       <nav className="content-breadcrumb">
         <Link href="/">トップ</Link>
         <span>/</span>

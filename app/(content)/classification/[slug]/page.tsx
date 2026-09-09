@@ -6,6 +6,7 @@ import { CLASSIFICATIONS, CLASSIFICATION_SLUG_IDS } from '@/lib/classification'
 import { getGuidesLinkingTo } from '@/lib/guides'
 import SakeThumb from '@/components/SakeThumb'
 import RelatedGuides from '@/components/RelatedGuides'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 import { isIndexableSake } from '@/lib/indexability'
 
 export const revalidate = 86400
@@ -35,6 +36,13 @@ export default function ClassificationPage({ params }: { params: { slug: string 
 
   return (
     <div className="mx-auto max-w-3xl">
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'トップ', path: '/' },
+          { name: '特定名称から探す', path: '/classification' },
+          { name: classification.label },
+        ]}
+      />
       <nav className="content-breadcrumb">
         <Link href="/">トップ</Link>
         <span>/</span>

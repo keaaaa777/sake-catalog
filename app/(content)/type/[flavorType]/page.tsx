@@ -7,6 +7,7 @@ import { FlavorType } from '@/lib/types'
 import { getGuidesLinkingTo } from '@/lib/guides'
 import SakeThumb from '@/components/SakeThumb'
 import RelatedGuides from '@/components/RelatedGuides'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 import { isIndexableSake } from '@/lib/indexability'
 
 export const revalidate = 86400
@@ -37,6 +38,7 @@ export default function TypePage({ params }: { params: { flavorType: string } })
 
   return (
     <div className="mx-auto max-w-3xl">
+      <BreadcrumbJsonLd items={[{ name: 'トップ', path: '/' }, { name: flavor.label }]} />
       <nav className="content-breadcrumb">
         <Link href="/">トップ</Link>
         <span>/</span>

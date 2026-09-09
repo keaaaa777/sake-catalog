@@ -6,6 +6,7 @@ import { SCENES, SCENE_IDS } from '@/lib/scenes'
 import { getGuidesLinkingTo } from '@/lib/guides'
 import SakeThumb from '@/components/SakeThumb'
 import RelatedGuides from '@/components/RelatedGuides'
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 import { isIndexableSake } from '@/lib/indexability'
 
 export const revalidate = 86400
@@ -41,6 +42,7 @@ export default function ScenePage({ params }: { params: { scene: string } }) {
 
   return (
     <div className="mx-auto max-w-3xl">
+      <BreadcrumbJsonLd items={[{ name: 'トップ', path: '/' }, { name: scene.label }]} />
       <nav className="content-breadcrumb">
         <Link href="/">トップ</Link>
         <span>/</span>
