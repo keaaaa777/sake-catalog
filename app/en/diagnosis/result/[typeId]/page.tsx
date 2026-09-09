@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { DIAGNOSIS_TYPE_IDS, getDiagnosisType } from '@/lib/diagnosisTypes'
 import { DIAGNOSIS_TYPE_EN } from '@/lib/i18n/diagnosis-en'
-import { getSakesByFlavorType } from '@/lib/data'
+import { getDiagnosisRecommendations } from '@/lib/data'
 import { getAllEnSakeSlugs } from '@/lib/i18n/en-content'
 import { FLAVOR_TYPES } from '@/lib/flavor'
 import SakeThumb from '@/components/SakeThumb'
@@ -41,7 +41,7 @@ export default function EnDiagnosisResultPage({ params }: { params: { typeId: st
 
   const flavor = FLAVOR_TYPES[type.flavorType]
   const enSlugs = new Set(getAllEnSakeSlugs())
-  const recommendations = getSakesByFlavorType(type.flavorType).filter((s) => enSlugs.has(s.slug)).slice(0, 3)
+  const recommendations = getDiagnosisRecommendations(type.flavorType, 3, enSlugs)
   const shareUrl = `${SITE_URL}/en/diagnosis/result/${type.id}`
   const shareText = `My sake quiz result: "${en.name}"! 🍶 #ShizukuSakeSelect`
   const xShareHref = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`

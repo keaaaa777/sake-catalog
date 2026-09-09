@@ -92,6 +92,39 @@ export function getFeaturedSakes(limit = 24): Sake[] {
   return selected
 }
 
+// 診断結果ページのおすすめ銘柄を選ぶ。単純な先頭N件ではなく、情報の充実度で
+// 並べたうえで同じ蔵元が連続しないようにし、紹介の幅を持たせる。
+export function getDiagnosisRecommendations(
+  flavorType: FlavorType,
+  limit = 3,
+  allowedSlugs?: Set<string>
+): Sake[] {
+  const pool = allSakes.filter(
+    (s) => s.flavorType === flavorType && (!allowedSlugs || allowedSlugs.has(s.slug))
+  )
+  const candidates = [...pool].sort(
+    (a, b) => informationScore(b) - informationScore(a) || a.name.localeCompare(b.name, 'ja')
+  )
+
+  const selected: Sake[] = []
+  const usedBreweries = new Set<string>()
+
+  for (const sake of candidates) {
+    if (selected.length >= limit) break
+    if (sake.breweryId && usedBreweries.has(sake.breweryId)) continue
+    selected.push(sake)
+    if (sake.breweryId) usedBreweries.add(sake.breweryId)
+  }
+  if (selected.length < limit) {
+    for (const sake of candidates) {
+      if (selected.length >= limit) break
+      if (!selected.some((s) => s.id === sake.id)) selected.push(sake)
+    }
+  }
+
+  return selected
+}
+
 export function getSimilarSakes(sake: Sake, limit = 4): Sake[] {
   return allSakes
     .filter((s) => s.id !== sake.id)

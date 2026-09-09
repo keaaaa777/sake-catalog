@@ -2,11 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { DIAGNOSIS_TYPE_IDS, getDiagnosisType } from '@/lib/diagnosisTypes'
-import { getSakesByFlavorType } from '@/lib/data'
+import { getDiagnosisRecommendations } from '@/lib/data'
 import { FLAVOR_TYPES } from '@/lib/flavor'
 import { SPECIALTY_EC_LINKS } from '@/lib/specialtyEc'
+import { getGuidesLinkingTo } from '@/lib/guides'
 import SakeThumb from '@/components/SakeThumb'
 import ShareButtons from '@/components/ShareButtons'
+import RelatedGuides from '@/components/RelatedGuides'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
 
@@ -43,7 +45,8 @@ export default function DiagnosisResultPage({ params }: { params: { typeId: stri
   if (!type) notFound()
 
   const flavor = FLAVOR_TYPES[type.flavorType]
-  const recommendations = getSakesByFlavorType(type.flavorType).slice(0, 3)
+  const recommendations = getDiagnosisRecommendations(type.flavorType, 3)
+  const relatedGuides = getGuidesLinkingTo(`/type/${type.flavorType}`)
   const shareUrl = `${SITE_URL}/diagnosis/result/${type.id}`
   const shareText = `診断結果は「${type.name}」でした!🍶 #雫SAKESELECT`
 
@@ -130,6 +133,8 @@ export default function DiagnosisResultPage({ params }: { params: { typeId: stri
             </div>
           </section>
         )}
+
+        <RelatedGuides guides={relatedGuides} />
 
         <section className="content-card" style={{ borderColor: 'rgba(201, 176, 106, 0.4)' }}>
           <div className="panel-header">

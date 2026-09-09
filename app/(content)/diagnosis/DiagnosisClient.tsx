@@ -1,9 +1,11 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 import { FlavorType } from '@/lib/types'
-import { Occasion } from '@/lib/diagnosisTypes'
+import { DIAGNOSIS_TYPE_IDS, Occasion, getDiagnosisType } from '@/lib/diagnosisTypes'
+import { loadDiagnosisResult, saveDiagnosisResult } from '@/lib/diagnosisHistory'
 
 type FlavorVote = { flavor: FlavorType } | { occasion: Occasion }
 
@@ -74,6 +76,17 @@ export default function DiagnosisClient() {
     social: 0,
     solo: 0,
   })
+  const [started, setStarted] = useState(false)
+  const [savedTypeId, setSavedTypeId] = useState<string | null>(null)
+
+  useEffect(() => {
+    const saved = loadDiagnosisResult()
+    if (saved && DIAGNOSIS_TYPE_IDS.includes(saved.typeId)) {
+      setSavedTypeId(saved.typeId)
+    } else {
+      setStarted(true)
+    }
+  }, [])
 
   const handleSelect = (vote: FlavorVote) => {
     const nextFlavorScores = { ...flavorScores }
@@ -101,6 +114,7 @@ export default function DiagnosisClient() {
         const topOccasion = (Object.entries(nextOccasionScores) as [Occasion, number][]).sort(
           (a, b) => b[1] - a[1]
         )[0][0]
+        saveDiagnosisResult(`${topFlavor}-${topOccasion}`)
         router.push(`/diagnosis/result/${topFlavor}-${topOccasion}`)
       }
     }, 300)
@@ -116,34 +130,55 @@ export default function DiagnosisClient() {
         </p>
       </header>
 
-      <section className="content-card">
-        <div className="diag-container w-full">
-          <div
-            className={`diag-q-area w-full transition-opacity duration-300 ${animating ? 'opacity-0' : 'opacity-100'}`}
-          >
-            <div className="mb-2 text-center">
-              <span className="text-sm uppercase tracking-[0.3em] text-gold">
-                QUESTION {qIndex + 1} / {QUESTIONS.length}
-              </span>
-            </div>
-            <p className="diag-q-text text-washi text-lg md:text-xl font-display mb-8">
-              {QUESTIONS[qIndex].label}
-            </p>
-            <div className="diag-options flex flex-col items-center gap-3">
-              {QUESTIONS[qIndex].options.map((opt) => (
-                <button
-                  key={opt.label}
-                  type="button"
-                  className="diag-option w-full max-w-md border border-white/10 hover:border-gold hover:text-gold rounded-full py-3 px-6 text-base transition-all bg-[#030914]/40"
-                  onClick={() => handleSelect(opt.vote)}
-                >
-                  {opt.label}
-                </button>
-              ))}
+      {!started && savedTypeId ? (
+        <section className="content-card text-center">
+          <p className="text-sm" style={{ color: 'var(--mist)' }}>前回の診断結果</p>
+          <p className="mt-2 text-2xl font-display" style={{ color: 'var(--paper-white)' }}>
+            {getDiagnosisType(savedTypeId)?.name ?? ''}
+          </p>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <Link href={`/diagnosis/result/${savedTypeId}`} className="content-mall-btn">
+              前回の結果を見る
+            </Link>
+            <button
+              type="button"
+              className="content-back-link"
+              onClick={() => setStarted(true)}
+            >
+              もう一度診断する →
+            </button>
+          </div>
+        </section>
+      ) : (
+        <section className="content-card">
+          <div className="diag-container w-full">
+            <div
+              className={`diag-q-area w-full transition-opacity duration-300 ${animating ? 'opacity-0' : 'opacity-100'}`}
+            >
+              <div className="mb-2 text-center">
+                <span className="text-sm uppercase tracking-[0.3em] text-gold">
+                  QUESTION {qIndex + 1} / {QUESTIONS.length}
+                </span>
+              </div>
+              <p className="diag-q-text text-washi text-lg md:text-xl font-display mb-8">
+                {QUESTIONS[qIndex].label}
+              </p>
+              <div className="diag-options flex flex-col items-center gap-3">
+                {QUESTIONS[qIndex].options.map((opt) => (
+                  <button
+                    key={opt.label}
+                    type="button"
+                    className="diag-option w-full max-w-md border border-white/10 hover:border-gold hover:text-gold rounded-full py-3 px-6 text-base transition-all bg-[#030914]/40"
+                    onClick={() => handleSelect(opt.vote)}
+                  >
+                    {opt.label}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
     </div>
   )
 }
