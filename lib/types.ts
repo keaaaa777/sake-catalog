@@ -71,6 +71,16 @@ export interface Brewery {
   isRealData?: boolean
 }
 
+export interface HomeSakeSummary {
+  id: string
+  slug: string
+  name: string
+  prefecture: string
+  classification: string
+  searchText: string
+  backgroundImageUrl: string
+}
+
 export interface QuizAnswers {
   taste: 'dry' | 'balanced' | 'sweet'
   intensity: 'light' | 'medium' | 'strong'

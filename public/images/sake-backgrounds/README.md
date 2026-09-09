@@ -14,6 +14,14 @@
 | `snow-country-mountains.webp` | 雪国・寒造り |
 | `nara-deer-temple.webp` | 奈良 |
 | `moonlit-japanese-coast.webp` | 海・魚介 |
+| `pear-apple-aroma.webp` | 果実香 |
+| `fresh-yuzu-citrus.webp` | 柑橘・酸味 |
+| `misty-cedar-forest.webp` | 杉・木香 |
+| `warm-sake-hearth.webp` | 燗酒 |
+| `autumn-maple-water.webp` | 秋・ひやおろし |
+| `crescent-moon-lake.webp` | 調和・静けさ |
+| `volcanic-mineral-earth.webp` | 火山・大地 |
+| `kyoto-bamboo-temple.webp` | 京都 |
 
 共通背景の自動割り当ては `lib/sake-backgrounds.ts` で管理します。商品データに
 `backgroundImageUrl` を指定すると、自動割り当てより優先されます。
@@ -33,4 +41,4 @@
 "backgroundImageAlt": "冷たい水面を走る銀色の光のイメージ"
 ```
 
-`backgroundImageUrl` がない商品は、味わいタイプごとのグラデーションだけで表示されます。
+`backgroundImageUrl` がない商品には、産地・説明文・飲用温度・味わいタイプから共通背景が自動で割り当てられます。
