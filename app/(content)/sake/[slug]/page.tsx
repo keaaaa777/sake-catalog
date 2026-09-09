@@ -357,6 +357,9 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
           )}
           <ProductOfferCard sakeId={sake.id} slug={sake.slug} offers={offers} fetchedAt={offersFetchedAt} production={production} />
           <PurchaseButtons sakeId={sake.id} slug={sake.slug} mallLinks={buttonMallLinks} sourceFlow="detail" />
+          <Link href={`/compare?slugs=${sake.slug}`} className="mt-4 inline-block text-sm hover:underline" style={{ color: 'var(--gold-foil)' }}>
+            他の銘柄と比較する →
+          </Link>
         </section>
 
         {/* 8. 類似銘柄 */}
