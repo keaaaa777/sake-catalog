@@ -10,6 +10,7 @@ import JapanMap from '@/components/JapanMap'
 import WaterBackground from '@/components/WaterBackground'
 import SiteFooter from '@/components/SiteFooter'
 import AgeGate from '@/components/AgeGate'
+import { useFavorites } from '@/lib/useFavorites'
 
 export default function HomeClient() {
   const router = useRouter()
@@ -20,7 +21,7 @@ export default function HomeClient() {
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null)
   const [selectedPrefecture, setSelectedPrefecture] = useState<string | null>(null)
   const [searchQuery, setSearchQuery] = useState('')
-  const [favorites, setFavorites] = useState<string[]>([])
+  const { favoriteSlugs: favorites, toggleFavorite } = useFavorites()
   const [sakes, setSakes] = useState<HomeSakeSummary[]>([])
   const [isLoadingSakes, setIsLoadingSakes] = useState(false)
   const [sakesLoadError, setSakesLoadError] = useState(false)
@@ -98,12 +99,6 @@ export default function HomeClient() {
     router.push(`/type/${flavorType}`)
   }
 
-  const toggleFavorite = (id: string) => {
-    setFavorites(prev =>
-      prev.includes(id) ? prev.filter(f => f !== id) : [...prev, id]
-    )
-  }
-
   // ホバー時の波紋トリガー
   const handleBtnHover = (e: React.PointerEvent<HTMLElement>) => {
     if (!window.SakeWater) return
@@ -139,12 +134,9 @@ export default function HomeClient() {
         </div>
         <div className="flex items-center gap-4">
           {favorites.length > 0 && (
-            <button
-              onClick={() => changeStepWithTransition('favorites', null)}
-              className="hub-back-btn flex items-center gap-2"
-            >
+            <Link href="/favorites" className="hub-back-btn flex items-center gap-2">
               ♥ お気に入り ({favorites.length})
-            </button>
+            </Link>
           )}
           <Link href="/en" lang="en" className="text-sm text-washi/60 hover:text-gold">EN</Link>
         </div>
@@ -460,10 +452,10 @@ export default function HomeClient() {
           </h2>
 
           <div className="space-y-4">
-            {sakes.filter(sake => favorites.includes(sake.id)).length === 0 ? (
+            {sakes.filter(sake => favorites.includes(sake.slug)).length === 0 ? (
               <div className="text-center py-12 text-washi/40">お気に入りはまだありません</div>
             ) : (
-              sakes.filter(sake => favorites.includes(sake.id)).map(sake => (
+              sakes.filter(sake => favorites.includes(sake.slug)).map(sake => (
                 <div
                   key={sake.id}
                   className="bg-[#0a172c]/40 backdrop-blur-md rounded-xl p-4 border border-gold/15 flex items-center justify-between transition hover:border-gold/30"
@@ -480,7 +472,7 @@ export default function HomeClient() {
                     </div>
                   </Link>
                   <button
-                    onClick={() => toggleFavorite(sake.id)}
+                    onClick={() => toggleFavorite(sake.slug)}
                     className="p-2 rounded-full bg-red-500/10 text-red-400 border border-red-500/20 transition hover:bg-red-500/20"
                     aria-label="お気に入り解除"
                   >

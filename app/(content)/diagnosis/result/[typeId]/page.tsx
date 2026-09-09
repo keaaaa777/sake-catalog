@@ -6,7 +6,7 @@ import { getDiagnosisRecommendations } from '@/lib/data'
 import { FLAVOR_TYPES } from '@/lib/flavor'
 import { SPECIALTY_EC_LINKS } from '@/lib/specialtyEc'
 import { getGuidesLinkingTo } from '@/lib/guides'
-import SakeThumb from '@/components/SakeThumb'
+import SakeFavoriteCard from '@/components/SakeFavoriteCard'
 import ShareButtons from '@/components/ShareButtons'
 import RelatedGuides from '@/components/RelatedGuides'
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
@@ -108,13 +108,7 @@ export default function DiagnosisResultPage({ params }: { params: { typeId: stri
             </div>
             <div className="flex flex-col gap-3">
               {recommendations.map((s) => (
-                <Link key={s.id} href={`/sake/${s.slug}`} className="content-mini-card">
-                  <SakeThumb sake={s} size={44} />
-                  <div>
-                    <div className="content-mini-card__name">{s.name}</div>
-                    <div className="content-mini-card__meta">{s.prefecture} / {s.classification}</div>
-                  </div>
-                </Link>
+                <SakeFavoriteCard key={s.id} sake={s} size={44} meta={`${s.prefecture} / ${s.classification}`} />
               ))}
             </div>
           </section>

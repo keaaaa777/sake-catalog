@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import { getSakesByPairing } from '@/lib/data'
 import { PAIRING_CATEGORIES, PAIRING_CATEGORY_IDS } from '@/lib/pairing'
 import { getGuidesLinkingTo } from '@/lib/guides'
-import SakeThumb from '@/components/SakeThumb'
+import SakeFavoriteCard from '@/components/SakeFavoriteCard'
 import RelatedGuides from '@/components/RelatedGuides'
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 import { isIndexableSake } from '@/lib/indexability'
@@ -58,13 +58,7 @@ export default function PairingPage({ params }: { params: { category: string } }
         ) : (
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             {sakes.map((s) => (
-              <Link key={s.id} href={`/sake/${s.slug}`} className="content-mini-card">
-                <SakeThumb sake={s} size={40} />
-                <div>
-                  <div className="content-mini-card__name">{s.name}</div>
-                  <div className="content-mini-card__meta">{s.prefecture} / {s.classification}</div>
-                </div>
-              </Link>
+              <SakeFavoriteCard key={s.id} sake={s} meta={`${s.prefecture} / ${s.classification}`} />
             ))}
           </div>
         )}

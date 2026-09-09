@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import { getAllBreweries, getBreweryBySlug, getSakesByBrewery } from '@/lib/data'
 import { PREFECTURE_SLUGS } from '@/lib/types'
 import { getGuidesLinkingTo } from '@/lib/guides'
-import SakeThumb from '@/components/SakeThumb'
+import SakeFavoriteCard from '@/components/SakeFavoriteCard'
 import SourceInfo from '@/components/SourceInfo'
 import RelatedGuides from '@/components/RelatedGuides'
 import { isIndexableBrewery } from '@/lib/indexability'
@@ -121,13 +121,7 @@ export default function BreweryDetailPage({ params }: { params: { slug: string }
           </div>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             {sakes.map((s) => (
-              <Link key={s.id} href={`/sake/${s.slug}`} className="content-mini-card">
-                <SakeThumb sake={s} size={40} />
-                <div>
-                  <div className="content-mini-card__name">{s.name}</div>
-                  <div className="content-mini-card__meta">{s.classification}</div>
-                </div>
-              </Link>
+              <SakeFavoriteCard key={s.id} sake={s} meta={s.classification} />
             ))}
           </div>
         </section>

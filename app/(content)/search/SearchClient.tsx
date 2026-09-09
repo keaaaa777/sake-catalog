@@ -6,6 +6,7 @@ import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { FLAVOR_TYPES } from '@/lib/flavor'
 import { PAIRING_CATEGORIES } from '@/lib/pairing'
 import type { FlavorType, HomeSakeSummary } from '@/lib/types'
+import FavoriteButton from '@/components/FavoriteButton'
 
 const PAGE_SIZE = 30
 const SELECT_CLASS = 'w-full rounded-lg border border-gold/25 bg-[#030914]/80 px-3 py-2.5 text-sm text-washi focus:border-gold focus:outline-none'
@@ -175,10 +176,13 @@ export default function SearchClient() {
         <>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             {visible.map((sake) => (
-              <Link key={sake.id} href={`/sake/${sake.slug}`} className="content-mini-card">
-                <span className="h-10 w-10 shrink-0 rounded-lg border border-gold/20 bg-cover bg-center" style={{ backgroundImage: `url(${JSON.stringify(sake.backgroundImageUrl)})` }} aria-hidden="true" />
-                <div className="min-w-0"><div className="content-mini-card__name">{sake.name}</div><div className="content-mini-card__meta">{sake.prefecture} / {sake.classification} / {FLAVOR_TYPES[sake.flavorType].label}</div></div>
-              </Link>
+              <div key={sake.id} className="relative">
+                <Link href={`/sake/${sake.slug}`} className="content-mini-card pr-14">
+                  <span className="h-10 w-10 shrink-0 rounded-lg border border-gold/20 bg-cover bg-center" style={{ backgroundImage: `url(${JSON.stringify(sake.backgroundImageUrl)})` }} aria-hidden="true" />
+                  <div className="min-w-0"><div className="content-mini-card__name">{sake.name}</div><div className="content-mini-card__meta">{sake.prefecture} / {sake.classification} / {FLAVOR_TYPES[sake.flavorType].label}</div></div>
+                </Link>
+                <span className="absolute right-3 top-1/2 -translate-y-1/2"><FavoriteButton slug={sake.slug} name={sake.name} compact /></span>
+              </div>
             ))}
           </div>
           <div className="mt-7 text-center">

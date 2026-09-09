@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getFeaturedSakes } from '@/lib/data'
 import { FLAVOR_TYPES } from '@/lib/flavor'
+import SakeFavoriteCard from '@/components/SakeFavoriteCard'
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
-import SakeThumb from '@/components/SakeThumb'
 
 export const revalidate = 86400
 
@@ -46,18 +46,11 @@ export default function RankingPage() {
           {featured.map((s) => {
             const flavor = FLAVOR_TYPES[s.flavorType]
             return (
-              <Link key={s.id} href={`/sake/${s.slug}`} className="content-mini-card">
-                <SakeThumb sake={s} size={44} />
-                <div className="min-w-0">
-                  <div className="content-mini-card__name">{s.name}</div>
-                  <div className="content-mini-card__meta">
-                    {s.prefecture} / {s.classification} / {flavor.label}
-                  </div>
-                  <div className="mt-1 text-xs leading-relaxed" style={{ color: 'var(--mist)' }}>
-                    {s.specs.rice ? `${s.specs.rice}を使用。` : ''}{s.servingTemp.length > 0 ? `${s.servingTemp.slice(0, 2).join('・')}で楽しめる一本。` : `${flavor.label}タイプの一本。`}
-                  </div>
+              <SakeFavoriteCard key={s.id} sake={s} size={44} meta={`${s.prefecture} / ${s.classification} / ${flavor.label}`}>
+                <div className="mt-1 text-xs leading-relaxed" style={{ color: 'var(--mist)' }}>
+                  {s.specs.rice ? `${s.specs.rice}を使用。` : ''}{s.servingTemp.length > 0 ? `${s.servingTemp.slice(0, 2).join('・')}で楽しめる一本。` : `${flavor.label}タイプの一本。`}
                 </div>
-              </Link>
+              </SakeFavoriteCard>
             )
           })}
         </div>

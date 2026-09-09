@@ -13,6 +13,7 @@ import { isProductionDomain } from '@/lib/is-production-domain'
 import { getGuidesLinkingTo } from '@/lib/guides'
 import { getClassificationSlug } from '@/lib/classification'
 import SakeThumb from '@/components/SakeThumb'
+import FavoriteButton from '@/components/FavoriteButton'
 import PurchaseButtons from '@/components/PurchaseButtons'
 import ProductOfferCard from '@/components/ProductOfferCard'
 import SourceInfo from '@/components/SourceInfo'
@@ -187,6 +188,7 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
             </Link>
           </div>
           <h1 className="content-title text-3xl md:text-4xl">{sake.name}</h1>
+          <div className="mt-5"><FavoriteButton slug={sake.slug} name={sake.name} /></div>
           <p className="mt-3 text-base" style={{ color: 'var(--mist)', textShadow: '0 1px 8px rgba(0,0,0,0.8)' }}>
             {sake.prefecture}
             {brewery && (

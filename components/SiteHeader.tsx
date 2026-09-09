@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import FavoritesNavLink from '@/components/FavoritesNavLink'
 
 export default function SiteHeader() {
   return (
@@ -12,6 +13,7 @@ export default function SiteHeader() {
         <Link href="/search">銘柄から探す</Link>
         <Link href="/ranking">注目セレクション</Link>
         <Link href="/guide">ガイド</Link>
+        <FavoritesNavLink />
         <Link href="/en" lang="en">EN</Link>
       </nav>
     </header>
