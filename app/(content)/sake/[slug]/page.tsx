@@ -85,6 +85,24 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
   const structuredImage = sake.imageRightsStatus === 'approved' && sake.imageUrl && sake.imageUrl !== '🍶'
     ? (sake.imageUrl.startsWith('http') ? sake.imageUrl : `${SITE_URL}${sake.imageUrl}`)
     : undefined
+  // 自社画像が未承認の銘柄は、楽天オファーの商品画像を構造化データのimageとして代用する
+  const productImage = structuredImage ?? topOffer?.imageUrl ?? undefined
+  // Googleの商品分類(google_product_category)に準拠した固定カテゴリ。
+  // classification(純米吟醸などの特定名称)は分類として無効なため使用しない。
+  const GOOGLE_PRODUCT_CATEGORY = 'Food, Beverages & Tobacco > Beverages > Alcoholic Beverages > Rice Wine & Sake'
+  // 価格が判明している楽天オファーのみをOfferとして構造化データに含める
+  // (価格不明のオファーを含めるとGoogleの「priceがない」エラーが再発するため)
+  const structuredOffers = offers
+    .filter((o) => o.itemPrice != null)
+    .map((o) => ({
+      '@type': 'Offer',
+      url: o.affiliateUrl,
+      price: o.itemPrice,
+      priceCurrency: 'JPY',
+      availability: 'https://schema.org/InStock',
+      itemCondition: 'https://schema.org/NewCondition',
+      seller: { '@type': 'Organization', name: o.shopName ?? '楽天市場' },
+    }))
 
   const tasteAxes: { key: keyof typeof sake.taste; label: string }[] = [
     { key: 'sweetness', label: '甘み' },
@@ -101,20 +119,12 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
         '@type': 'Product',
         name: sake.name,
         description: sake.description,
-        image: structuredImage,
+        image: productImage,
         brand: brewery ? { '@type': 'Brand', name: brewery.name } : undefined,
-        category: sake.classification,
-        // 検索結果ページへのフォールバックリンクは実在する商品オファーではないため、
-        // 個別商品への直リンクが確定しているものだけを構造化データに含める。
-        offers: mallLinks
-          .filter((m) => m.isDirect)
-          .map((m) => ({
-            '@type': 'Offer',
-            url: m.url,
-            priceCurrency: 'JPY',
-            availability: 'https://schema.org/InStock',
-            seller: { '@type': 'Organization', name: m.label },
-          })),
+        category: GOOGLE_PRODUCT_CATEGORY,
+        // 価格が判明しているオファーがある場合のみ構造化データに含める。
+        // 価格不明のまま出すとGoogleの「priceがない」エラーになるため、その場合はoffers自体を省略する。
+        ...(structuredOffers.length > 0 ? { offers: structuredOffers } : {}),
         ...(topOffer?.reviewCount && topOffer.reviewCount > 0 && topOffer.reviewAverage != null
           ? {
               aggregateRating: {
