@@ -7,6 +7,7 @@ import { FlavorType } from '@/lib/types'
 import { DIAGNOSIS_TYPE_IDS, Occasion } from '@/lib/diagnosisTypes'
 import { EN_QUESTIONS, DIAGNOSIS_TYPE_EN } from '@/lib/i18n/diagnosis-en'
 import { loadDiagnosisResult, saveDiagnosisResult } from '@/lib/diagnosisHistory'
+import { trackDiagnosisComplete, trackDiagnosisStart } from '@/lib/gtag'
 
 type FlavorVote = { flavor: FlavorType } | { occasion: Occasion }
 
@@ -36,6 +37,10 @@ export default function EnDiagnosisClient() {
     }
   }, [])
 
+  useEffect(() => {
+    if (started) trackDiagnosisStart()
+  }, [started])
+
   const handleSelect = (vote: FlavorVote) => {
     const nextFlavorScores = { ...flavorScores }
     const nextOccasionScores = { ...occasionScores }
@@ -62,8 +67,10 @@ export default function EnDiagnosisClient() {
         const topOccasion = (Object.entries(nextOccasionScores) as [Occasion, number][]).sort(
           (a, b) => b[1] - a[1]
         )[0][0]
-        saveDiagnosisResult(`${topFlavor}-${topOccasion}`)
-        router.push(`/en/diagnosis/result/${topFlavor}-${topOccasion}`)
+        const typeId = `${topFlavor}-${topOccasion}`
+        saveDiagnosisResult(typeId)
+        trackDiagnosisComplete({ type_id: typeId })
+        router.push(`/en/diagnosis/result/${typeId}`)
       }
     }, 300)
   }

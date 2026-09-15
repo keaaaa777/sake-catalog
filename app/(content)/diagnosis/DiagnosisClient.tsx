@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { FlavorType } from '@/lib/types'
 import { DIAGNOSIS_TYPE_IDS, Occasion, getDiagnosisType } from '@/lib/diagnosisTypes'
 import { loadDiagnosisResult, saveDiagnosisResult } from '@/lib/diagnosisHistory'
+import { trackDiagnosisComplete, trackDiagnosisStart } from '@/lib/gtag'
 
 type FlavorVote = { flavor: FlavorType } | { occasion: Occasion }
 
@@ -88,6 +89,10 @@ export default function DiagnosisClient() {
     }
   }, [])
 
+  useEffect(() => {
+    if (started) trackDiagnosisStart()
+  }, [started])
+
   const handleSelect = (vote: FlavorVote) => {
     const nextFlavorScores = { ...flavorScores }
     const nextOccasionScores = { ...occasionScores }
@@ -114,8 +119,10 @@ export default function DiagnosisClient() {
         const topOccasion = (Object.entries(nextOccasionScores) as [Occasion, number][]).sort(
           (a, b) => b[1] - a[1]
         )[0][0]
-        saveDiagnosisResult(`${topFlavor}-${topOccasion}`)
-        router.push(`/diagnosis/result/${topFlavor}-${topOccasion}`)
+        const typeId = `${topFlavor}-${topOccasion}`
+        saveDiagnosisResult(typeId)
+        trackDiagnosisComplete({ type_id: typeId })
+        router.push(`/diagnosis/result/${typeId}`)
       }
     }, 300)
   }

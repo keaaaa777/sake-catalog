@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react'
 import { FAVORITES_CHANGED_EVENT, getFavoriteSlugs, setFavoriteSlugs } from '@/lib/favorites'
+import { trackFavoriteAdd, trackFavoriteRemove } from '@/lib/gtag'
 
 export function useFavorites() {
   const [favoriteSlugs, setState] = useState<string[]>([])
@@ -19,7 +20,13 @@ export function useFavorites() {
 
   const toggleFavorite = useCallback((slug: string) => {
     const current = getFavoriteSlugs()
-    setState(setFavoriteSlugs(current.includes(slug) ? current.filter((item) => item !== slug) : [...current, slug]))
+    const isRemoving = current.includes(slug)
+    setState(setFavoriteSlugs(isRemoving ? current.filter((item) => item !== slug) : [...current, slug]))
+    if (isRemoving) {
+      trackFavoriteRemove({ sake_slug: slug })
+    } else {
+      trackFavoriteAdd({ sake_slug: slug })
+    }
   }, [])
 
   const clearFavorites = useCallback(() => setState(setFavoriteSlugs([])), [])

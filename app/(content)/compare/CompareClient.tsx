@@ -8,6 +8,7 @@ import { FLAVOR_TYPES } from '@/lib/flavor'
 import { PAIRING_CATEGORIES } from '@/lib/pairing'
 import { getClassificationSlug } from '@/lib/classification'
 import { buildAffiliateLinks } from '@/lib/affiliate'
+import { trackCompareAdd } from '@/lib/gtag'
 import { SWEET_DRY_LABELS, LIGHT_RICH_LABELS, scaleLabel } from '@/lib/tasteScale'
 import SakeThumb from '@/components/SakeThumb'
 
@@ -38,7 +39,12 @@ export default function CompareClient({
   }, [selectedSlugs])
 
   const addSake = (slug: string) => {
-    setSelectedSlugs((prev) => (prev.includes(slug) || prev.length >= MAX_COMPARE ? prev : [...prev, slug]))
+    setSelectedSlugs((prev) => {
+      if (prev.includes(slug) || prev.length >= MAX_COMPARE) return prev
+      const next = [...prev, slug]
+      trackCompareAdd({ sake_slug: slug, compare_count: next.length })
+      return next
+    })
     setQuery('')
   }
 

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
+import { Analytics } from '@vercel/analytics/next'
 import { Shippori_Mincho_B1, Cormorant_Garamond, Zen_Kaku_Gothic_New } from 'next/font/google'
 import './globals.css'
 import { GA_MEASUREMENT_ID } from '@/lib/gtag'
@@ -92,6 +93,7 @@ export default function RootLayout({
           </>
         )}
         {children}
+        <Analytics />
       </body>
     </html>
   )

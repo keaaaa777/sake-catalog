@@ -7,6 +7,7 @@ import { FLAVOR_TYPES } from '@/lib/flavor'
 import { PAIRING_CATEGORIES } from '@/lib/pairing'
 import type { FlavorType, HomeSakeSummary } from '@/lib/types'
 import FavoriteButton from '@/components/FavoriteButton'
+import { trackSearchSubmit } from '@/lib/gtag'
 
 const PAGE_SIZE = 30
 const SELECT_CLASS = 'w-full rounded-lg border border-gold/25 bg-[#030914]/80 px-3 py-2.5 text-sm text-washi focus:border-gold focus:outline-none'
@@ -105,6 +106,15 @@ export default function SearchClient() {
       return 0
     })
   }, [classification, flavor, pairing, prefecture, price, query, sakes, sort, taste, temperature])
+
+  useEffect(() => {
+    const trimmed = query.trim()
+    if (!trimmed) return
+    const timer = window.setTimeout(() => {
+      trackSearchSubmit({ query: trimmed, result_count: filtered.length })
+    }, 600)
+    return () => window.clearTimeout(timer)
+  }, [query, filtered.length])
 
   const visible = filtered.slice(0, visibleCount)
   const hasFilters = Boolean(query || flavor || prefecture || classification || taste || price || temperature || pairing || sort !== 'recommended')
