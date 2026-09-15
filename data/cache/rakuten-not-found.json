@@ -1,6 +1,6 @@
 {
-  "sourceFetchedAt": "2026-08-02T10:40:16.564Z",
-  "count": 35,
+  "sourceFetchedAt": "2026-09-13T19:59:38.296Z",
+  "count": 47,
   "sakes": [
     {
       "id": "109",
@@ -51,10 +51,28 @@
       "classification": "純米大吟醸"
     },
     {
+      "id": "309",
+      "slug": "akishika-junmai-ginjo-utagaki",
+      "name": "秋鹿 純米吟醸 歌垣",
+      "classification": "純米吟醸"
+    },
+    {
+      "id": "325",
+      "slug": "kuromatsu-kenbishi",
+      "name": "黒松剣菱",
+      "classification": "本醸造"
+    },
+    {
       "id": "466",
       "slug": "wakanami-junmai-ginjo-yamadanishiki",
       "name": "若波 純米吟醸 山田錦",
       "classification": "純米吟醸"
+    },
+    {
+      "id": "501",
+      "slug": "hananoka-oka-junmai-daiginjo",
+      "name": "花の香 桜花 純米大吟醸",
+      "classification": "純米大吟醸"
     },
     {
       "id": "511",
@@ -69,6 +87,12 @@
       "classification": "純米吟醸"
     },
     {
+      "id": "525",
+      "slug": "hojun-tokubetsu-junmai-karakuchi",
+      "name": "豊潤 特別純米 芳醇辛口",
+      "classification": "純米"
+    },
+    {
       "id": "538",
       "slug": "chateau-taisetsunokura-junmai-daiginjo-suisei30",
       "name": "シャトー大雪乃蔵 純米大吟醸 彗星30",
@@ -78,6 +102,12 @@
       "id": "539",
       "slug": "kokushimusou-junmai-daiginjo-genshu-suisei",
       "name": "純米大吟醸原酒 国士無双 彗星 蔵元限定酒",
+      "classification": "純米大吟醸"
+    },
+    {
+      "id": "542",
+      "slug": "takaragawa-junmai-daiginjo",
+      "name": "純米大吟醸 宝川",
       "classification": "純米大吟醸"
     },
     {
@@ -117,6 +147,12 @@
       "classification": "純米大吟醸"
     },
     {
+      "id": "571",
+      "slug": "kawatsuru-junmai-daiginjo",
+      "name": "川鶴 純米大吟醸",
+      "classification": "純米大吟醸"
+    },
+    {
       "id": "577",
       "slug": "nara-suiryu-jukusei-kimoto",
       "name": "睡龍 熟成生酛",
@@ -129,10 +165,34 @@
       "classification": "純米吟醸"
     },
     {
+      "id": "583",
+      "slug": "hyogo-hakutsuru-maru",
+      "name": "白鶴 まる",
+      "classification": "普通酒"
+    },
+    {
+      "id": "585",
+      "slug": "hokkaido-otokoyama-josen-honjozo",
+      "name": "男山 上撰",
+      "classification": "本醸造"
+    },
+    {
       "id": "591",
       "slug": "kyoto-tamagawa-shizenshikomi-yamahai",
       "name": "玉川 自然仕込 本醸造(山廃)",
       "classification": "本醸造"
+    },
+    {
+      "id": "596",
+      "slug": "fukushima-hirotogawa-junginjo",
+      "name": "廣戸川 純米吟醸",
+      "classification": "純米吟醸"
+    },
+    {
+      "id": "598",
+      "slug": "hiroshima-taketsuru-kimoto-junmai",
+      "name": "竹鶴 生酛純米",
+      "classification": "生酛純米"
     },
     {
       "id": "603",
@@ -145,6 +205,12 @@
       "slug": "gifu-darumamasamune-nijunen-koshu",
       "name": "達磨正宗 二十年古酒",
       "classification": "純米古酒"
+    },
+    {
+      "id": "606",
+      "slug": "niigata-echigozakura-honjozo",
+      "name": "越後桜 本醸造",
+      "classification": "本醸造"
     },
     {
       "id": "607",
@@ -163,6 +229,12 @@
       "slug": "ishikawa-okunotonoshiragiku-tokubetsujunmai",
       "name": "奥能登の白菊 特別純米酒",
       "classification": "特別純米酒"
+    },
+    {
+      "id": "612",
+      "slug": "fukushima-gakkimasamune-junmai",
+      "name": "楽器正宗 純米酒",
+      "classification": "純米酒"
     },
     {
       "id": "617",
