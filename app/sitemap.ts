@@ -16,7 +16,7 @@ import { SCENE_IDS } from '@/lib/scenes'
 import { CLASSIFICATION_SLUG_IDS } from '@/lib/classification'
 import { GUIDE_SLUGS, getGuideArticleBySlug } from '@/lib/guides'
 import { getAllEnSakeSlugs, getAllEnGuideArticles } from '@/lib/i18n/en-content'
-import { isIndexableBrewery, isIndexableSake } from '@/lib/indexability'
+import { SITEMAP_PHASE, isIndexableBrewery, isIndexableSake } from '@/lib/indexability'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
 const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL
@@ -72,7 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }))
 
   const brewerySakeCounts = new Map<string, number>()
-  for (const sake of getAllSakes()) {
+  for (const sake of indexableSakes) {
     if (sake.breweryId) {
       brewerySakeCounts.set(sake.breweryId, (brewerySakeCounts.get(sake.breweryId) ?? 0) + 1)
     }
@@ -179,8 +179,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/compare`, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${SITE_URL}/data`, changeFrequency: 'weekly', priority: 0.6 },
     ...diagnosisResultPages,
-    ...sakePages,
-    ...breweryPages,
+    ...(SITEMAP_PHASE >= 2 ? [...breweryPages, ...sakePages] : []),
     ...areaPages,
     ...typePages,
     ...pairingPages,
@@ -188,7 +187,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...scenePages,
     ...guidePages,
     ...enStaticPages,
-    ...enSakePages,
+    ...(SITEMAP_PHASE >= 2 ? enSakePages : []),
     ...enGuidePages,
     ...enTypePages,
     ...enPairingPages,

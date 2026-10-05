@@ -7,7 +7,7 @@ import { getGuidesLinkingTo } from '@/lib/guides'
 import SakeFavoriteCard from '@/components/SakeFavoriteCard'
 import SourceInfo from '@/components/SourceInfo'
 import RelatedGuides from '@/components/RelatedGuides'
-import { isIndexableBrewery } from '@/lib/indexability'
+import { isIndexableBrewery, isIndexableSake } from '@/lib/indexability'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
 
@@ -20,7 +20,10 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const brewery = getBreweryBySlug(params.slug)
   if (!brewery) return {}
-  const indexable = isIndexableBrewery(brewery, getSakesByBrewery(brewery.slug).length)
+  const indexable = isIndexableBrewery(
+    brewery,
+    getSakesByBrewery(brewery.slug).filter(isIndexableSake).length
+  )
   return {
     title: `${brewery.name}(${brewery.prefecture})の酒蔵情報|雫 SAKE SELECT`,
     description: brewery.description.slice(0, 120),
