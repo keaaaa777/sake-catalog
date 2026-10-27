@@ -174,7 +174,7 @@ export default function EnSakeDetailPage({ params }: { params: { slug: string } 
             from outside Japan.
           </p>
           <ProductOfferCard sakeId={sake.id} slug={sake.slug} offers={offers} fetchedAt={offersFetchedAt} production={production} locale="en" />
-          <PurchaseButtons sakeId={sake.id} slug={sake.slug} mallLinks={buttonMallLinks} sourceFlow="detail-en" locale="en" />
+          <PurchaseButtons sakeId={sake.id} slug={sake.slug} mallLinks={buttonMallLinks} production={production} sourceFlow="detail-en" locale="en" />
         </section>
 
         {brewery && (

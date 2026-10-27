@@ -8,12 +8,22 @@ declare global {
 }
 
 function trackEvent(name: string, params: Record<string, unknown>) {
-  if (typeof window === 'undefined' || !window.gtag) return
+  if (typeof window === 'undefined' || !GA_MEASUREMENT_ID) return
+  window.dataLayer = window.dataLayer || []
+  if (!window.gtag) {
+    window.gtag = (...args: unknown[]) => {
+      window.dataLayer?.push(args)
+    }
+  }
   window.gtag('event', name, params)
 }
 
 export function trackAffiliateClick(params: { sake_id: string; mall: string; source_flow: string }) {
   trackEvent('affiliate_click', params)
+}
+
+export function trackAffiliateClickAttempt(params: { sake_id: string; mall: string; source_flow: string; environment: 'nonproduction' }) {
+  trackEvent('affiliate_click_attempt', params)
 }
 
 export function trackDiagnosisStart() {

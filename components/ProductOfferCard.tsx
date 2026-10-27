@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { SakeOffer } from '@/lib/offers'
-import { trackAffiliateClick } from '@/lib/gtag'
+import { trackAffiliateClick, trackAffiliateClickAttempt } from '@/lib/gtag'
 
 interface ProductOfferCardProps {
   sakeId: string
@@ -73,6 +73,12 @@ export default function ProductOfferCard({ sakeId, slug, offers, fetchedAt, prod
               onClick={(e) => {
                 if (!production) {
                   e.preventDefault()
+                  trackAffiliateClickAttempt({
+                    sake_id: sakeId,
+                    mall: 'rakuten',
+                    source_flow: 'offercard',
+                    environment: 'nonproduction',
+                  })
                   return
                 }
                 trackAffiliateClick({ sake_id: sakeId, mall: 'rakuten', source_flow: 'offercard' })

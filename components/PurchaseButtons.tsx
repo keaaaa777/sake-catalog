@@ -1,12 +1,13 @@
 'use client'
 
 import { MallLink } from '@/lib/affiliate'
-import { trackAffiliateClick } from '@/lib/gtag'
+import { trackAffiliateClick, trackAffiliateClickAttempt } from '@/lib/gtag'
 
 interface PurchaseButtonsProps {
   sakeId: string
   slug: string
   mallLinks: MallLink[]
+  production: boolean
   sourceFlow?: string
   locale?: 'ja' | 'en'
 }
@@ -16,7 +17,7 @@ const EN_LABEL: Record<string, string> = {
   'ふるさと納税でもらう': 'Get via Furusato Nozei (JP residents)',
 }
 
-export default function PurchaseButtons({ sakeId, slug, mallLinks, sourceFlow = 'detail', locale = 'ja' }: PurchaseButtonsProps) {
+export default function PurchaseButtons({ sakeId, slug, mallLinks, production, sourceFlow = 'detail', locale = 'ja' }: PurchaseButtonsProps) {
   return (
     <div className="flex flex-col gap-3 sm:flex-row">
       {mallLinks.map((m) => (
@@ -25,7 +26,11 @@ export default function PurchaseButtons({ sakeId, slug, mallLinks, sourceFlow = 
           href={`/api/out/${slug}/${m.mall}?source=${sourceFlow}`}
           target="_blank"
           rel="sponsored nofollow noopener"
-          onClick={() => trackAffiliateClick({ sake_id: sakeId, mall: m.mall, source_flow: sourceFlow })}
+          onClick={() => {
+            const event = { sake_id: sakeId, mall: m.mall, source_flow: sourceFlow }
+            if (production) trackAffiliateClick(event)
+            else trackAffiliateClickAttempt({ ...event, environment: 'nonproduction' })
+          }}
           className={`content-mall-btn ${m.mall === 'furusato' ? 'content-mall-btn--furusato' : ''}`}
         >
           {locale === 'en' ? `View on ${EN_LABEL[m.label] || m.label}` : `${m.label}で見る`}
