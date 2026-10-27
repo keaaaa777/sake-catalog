@@ -18,7 +18,7 @@ import { GUIDE_SLUGS, getGuideArticleBySlug } from '@/lib/guides'
 import { getAllEnSakeSlugs, getAllEnGuideArticles } from '@/lib/i18n/en-content'
 import { SITEMAP_PHASE, isIndexableBrewery, isIndexableSake } from '@/lib/indexability'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog-japan.vercel.app'
 const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL
 const TRUST_PAGES_UPDATED_AT = '2026-09-04'
 
@@ -171,7 +171,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
-  return [
+  const allPages: MetadataRoute.Sitemap = [
     ...staticPages,
     { url: `${SITE_URL}/area`, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${SITE_URL}/type`, changeFrequency: 'weekly', priority: 0.6 },
@@ -194,4 +194,55 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...enScenePages,
     ...enDiagnosisResultPages,
   ]
+
+  // Keep important hub pages first, while including every eligible Phase 1 URL.
+  const priorityPaths = [
+    '/',
+    '/diagnosis',
+    '/ranking',
+    '/guide',
+    '/guide/nihonshu-do-guide',
+    '/guide/junmai-ginjo-daiginjo-guide',
+    '/guide/beginner-sake-10',
+    '/guide/sashimi-sake-guide',
+    '/guide/sake-storage-guide',
+    '/about',
+    '/area',
+    '/type',
+    '/classification',
+    '/pairing/sashimi',
+    '/scene/beginner',
+    '/guide/how-to-read-sake-label',
+    '/guide/atsukan-guide',
+    '/guide/gift-sake-by-price',
+    '/diagnosis/result/kaori-social',
+    '/data',
+    '/compare',
+    '/disclosure',
+    '/editorial-policy',
+    '/pairing/yakitori',
+    '/type/kaori',
+    '/type/sou',
+    '/classification/junmai',
+    '/area/tokyo',
+    '/area/niigata',
+    '/guide/sake-shelf-life',
+    '/guide/how-to-choose-sake-for-beginners',
+  ]
+  const pagesByPath = new Map<string, MetadataRoute.Sitemap[number]>()
+  for (const page of allPages) {
+    const path = new URL(page.url).pathname
+    if (!pagesByPath.has(path)) pagesByPath.set(path, page)
+  }
+  const prioritizedPages = priorityPaths.flatMap((path) => {
+    const page = pagesByPath.get(path)
+    return page ? [page] : []
+  })
+  const prioritizedPaths = new Set(prioritizedPages.map((page) => new URL(page.url).pathname))
+  const remainingPages = [...pagesByPath.entries()]
+    .filter(([path]) => !prioritizedPaths.has(path))
+    .sort(([left], [right]) => left.localeCompare(right))
+    .map(([, page]) => page)
+
+  return [...prioritizedPages, ...remainingPages]
 }

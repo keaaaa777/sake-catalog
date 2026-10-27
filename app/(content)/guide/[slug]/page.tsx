@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import { GUIDE_SLUGS, getGuideArticleBySlug } from '@/lib/guides'
 import { getEnGuideArticleBySlug } from '@/lib/i18n/en-content'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog-japan.vercel.app'
 
 export const revalidate = 86400
 

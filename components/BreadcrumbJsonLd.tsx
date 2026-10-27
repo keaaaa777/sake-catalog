@@ -1,4 +1,4 @@
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog-japan.vercel.app'
 
 interface Crumb {
   name: string

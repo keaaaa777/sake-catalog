@@ -11,7 +11,7 @@ import ShareButtons from '@/components/ShareButtons'
 import RelatedGuides from '@/components/RelatedGuides'
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog-japan.vercel.app'
 
 export const revalidate = 86400
 

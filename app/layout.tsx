@@ -13,23 +13,26 @@ import { GA_MEASUREMENT_ID } from '@/lib/gtag'
 // - Zen Kaku Gothic New: 300(本文既定)・700(ボタン・強調テキスト)。
 const shippori = Shippori_Mincho_B1({
   subsets: ['latin'],
+  preload: false,
   weight: ['400', '500', '600'],
   variable: '--font-display',
 })
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
+  preload: false,
   weight: ['300', '400'],
   variable: '--font-latin',
 })
 
 const zenKaku = Zen_Kaku_Gothic_New({
   subsets: ['latin'],
+  preload: false,
   weight: ['300', '700'],
   variable: '--font-body',
 })
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog.vercel.app'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog-japan.vercel.app'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
