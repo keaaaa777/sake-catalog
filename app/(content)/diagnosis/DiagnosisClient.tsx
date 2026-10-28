@@ -131,9 +131,9 @@ export default function DiagnosisClient() {
     <div className="mx-auto max-w-2xl">
       <header className="mb-10 text-center">
         <p className="content-eyebrow mb-2">DIAGNOSIS</p>
-        <h1 className="content-title text-3xl md:text-4xl">1分診断</h1>
+        <h1 className="content-title text-3xl md:text-4xl">1分でわかる日本酒診断</h1>
         <p className="mt-4 text-base" style={{ color: 'var(--mist)' }}>
-          いくつかの質問に答えるだけで、あなたにぴったりの日本酒タイプが見つかります。
+          5つの質問に答えるだけで、あなた好みの日本酒タイプとおすすめの銘柄が見つかります。
         </p>
       </header>
 
