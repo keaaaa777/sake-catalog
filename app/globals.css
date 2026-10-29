@@ -110,7 +110,11 @@ body.fixed-screen {
   align-items: center;
   gap: 10px 16px;
   padding: clamp(16px, 3vw, 40px) clamp(16px, 5vw, 80px);
+  /* 帯のぼかし部分がメニューに掛からないよう、下側だけ余白を足す */
+  padding-bottom: calc(clamp(16px, 3vw, 40px) + 20px);
   pointer-events: none;
+  /* スクロールで本文が固定ヘッダーの下を通っても読めるよう、上から消えていく帯を敷く */
+  background: linear-gradient(to bottom, rgba(3, 9, 20, 0.96) 0%, rgba(3, 9, 20, 0.92) 70%, rgba(3, 9, 20, 0) 100%);
 }
 .brand {
   display: flex;
@@ -1044,6 +1048,39 @@ body.panel-opened .search-selector {
   color: var(--gold-foil);
   font-weight: 700;
 }
+.guide-prose table {
+  width: 100%;
+  margin: 8px 0 12px;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.guide-prose th,
+.guide-prose td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line-white);
+  text-align: left;
+  vertical-align: top;
+}
+.guide-prose th {
+  color: var(--gold-foil);
+  font-weight: 500;
+  border-bottom-color: var(--line-gold);
+}
+@media (max-width: 640px) {
+  .guide-prose table {
+    font-size: 13px;
+  }
+  .guide-prose th,
+  .guide-prose td {
+    padding: 8px 6px;
+  }
+}
+.guide-prose .guide-note {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--mist);
+}
 .guide-prose img {
   max-width: 100%;
   height: auto;
@@ -1114,10 +1151,6 @@ body.panel-opened .search-selector {
 }
 
 /* ═══════════ トップ索引(ヒーロー下) ═══════════ */
-/* 索引までスクロールしたとき、固定ヘッダーの下を本文が通っても読めるよう薄い帯を敷く */
-body:has(#sake-index) .site-header {
-  background: linear-gradient(to bottom, rgba(3, 9, 20, 0.92) 0%, rgba(3, 9, 20, 0.6) 65%, rgba(3, 9, 20, 0) 100%);
-}
 .stage-scroll-cue {
   position: absolute;
   bottom: 28px;
