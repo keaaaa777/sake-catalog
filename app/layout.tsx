@@ -57,14 +57,25 @@ export default function RootLayout({
     '@graph': [
       {
         '@type': 'WebSite',
+        '@id': `${SITE_URL}/#website`,
         name: '雫 SAKE SELECT',
         url: SITE_URL,
         inLanguage: ['ja-JP', 'en-US'],
+        publisher: { '@id': `${SITE_URL}/#organization` },
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: { '@type': 'EntryPoint', urlTemplate: `${SITE_URL}/search?q={search_term_string}` },
+          'query-input': 'required name=search_term_string',
+        },
       },
       {
         '@type': 'Organization',
+        '@id': `${SITE_URL}/#organization`,
         name: '雫 SAKE SELECT編集部',
         url: SITE_URL,
+        description:
+          '全国の日本酒を産地・味わい・飲むシーン・合わせる料理から探せる日本酒カタログ「雫 SAKE SELECT」の編集部。酒蔵公式サイトなどの出典と確認日を記録して掲載情報を管理しています。',
+        publishingPrinciples: `${SITE_URL}/editorial-policy`,
         logo: {
           '@type': 'ImageObject',
           url: `${SITE_URL}/apple-icon`,

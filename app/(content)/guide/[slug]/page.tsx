@@ -51,7 +51,8 @@ export default function GuideArticlePage({ params }: { params: { slug: string } 
         datePublished: article.publishedAt,
         dateModified: updatedAt,
         author: { '@type': 'Organization', name: author },
-        publisher: { '@type': 'Organization', name: '雫 SAKE SELECT' },
+        // layout.tsx の Organization(@id)を参照し、発行者の表記を一つにそろえる
+        publisher: { '@id': `${SITE_URL}/#organization` },
         mainEntityOfPage: `${SITE_URL}/guide/${article.slug}`,
       },
       {
