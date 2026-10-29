@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo, type ReactNode } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { Heart, ChevronRight } from 'lucide-react'
@@ -12,7 +12,7 @@ import SiteFooter from '@/components/SiteFooter'
 import AgeGate from '@/components/AgeGate'
 import { useFavorites } from '@/lib/useFavorites'
 
-export default function HomeClient() {
+export default function HomeClient({ children }: { children?: ReactNode }) {
   const router = useRouter()
   const [step, setStep] = useState('home')
   const [activePanel, setActivePanel] = useState<string | null>(null)
@@ -51,7 +51,8 @@ export default function HomeClient() {
 
   // スクロール制御およびパネルオープン状態の body 反映
   useEffect(() => {
-    const isFixed = ['home', 'region'].includes(step) || !!activePanel
+    // トップ(home)は索引セクションまでスクロールできるようにし、地図・パネル表示中のみ固定する
+    const isFixed = step === 'region' || !!activePanel
     document.body.classList.toggle('fixed-screen', isFixed)
     document.body.classList.toggle('panel-opened', !!activePanel)
 
@@ -225,7 +226,17 @@ export default function HomeClient() {
             </div>
           </Link>
         </section>
+
+        {children && step === 'home' && (
+          <a href="#sake-index" className="stage-scroll-cue">
+            <span>SAKE INDEX</span>
+            <span aria-hidden="true">↓</span>
+          </a>
+        )}
       </main>
+
+      {/* 索引(サーバー描画)。トップ表示中のみ */}
+      {step === 'home' && children}
 
       {/* 各検索パネルコンテナ */}
       <div id="panels-container" className={activePanel ? 'is-active' : ''} role="dialog" aria-modal="true">
