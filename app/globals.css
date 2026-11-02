@@ -1052,7 +1052,7 @@ body.panel-opened .search-selector {
   width: 100%;
   margin: 8px 0 12px;
   border-collapse: collapse;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.7;
 }
 .guide-prose th,
@@ -1066,10 +1066,31 @@ body.panel-opened .search-selector {
   color: var(--gold-foil);
   font-weight: 500;
   border-bottom-color: var(--line-gold);
+  white-space: nowrap;
+}
+/* 1列目(項目名)が細く潰れて語の途中で折り返さないようにする */
+.guide-prose th:first-child,
+.guide-prose td:first-child {
+  width: 13em;
+}
+/* 数値の多い表: 語の途中で折り返さない。収まらない幅では横スクロールにする */
+.guide-prose .guide-table-compact td {
+  word-break: keep-all;
 }
 @media (max-width: 640px) {
   .guide-prose table {
     font-size: 13px;
+  }
+  .guide-prose th {
+    white-space: normal;
+  }
+  .guide-prose th:first-child,
+  .guide-prose td:first-child {
+    width: 5.5em;
+  }
+  .guide-prose .guide-table-compact {
+    display: block;
+    overflow-x: auto;
   }
   .guide-prose th,
   .guide-prose td {
@@ -1077,9 +1098,10 @@ body.panel-opened .search-selector {
   }
 }
 .guide-prose .guide-note {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.8;
-  color: var(--mist);
+  color: var(--paper-white);
+  opacity: 0.72;
 }
 .guide-prose img {
   max-width: 100%;
