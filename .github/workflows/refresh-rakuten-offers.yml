@@ -2,7 +2,7 @@ name: Refresh Rakuten offers
 
 # 楽天市場のオファー(価格・レビュー件数・評価)を定期的に再取得し、
 # data/sakes.json のアフィリエイトリンクと data/cache/sake-offers.json
-# (銘柄ページの価格比較・aggregateRating構造化データの元データ)を更新する。
+# (銘柄ページの価格比較・Offer構造化データの元データ)を更新する。
 # 変更があれば main にコミット & push し、Vercelの自動デプロイに乗せる。
 on:
   schedule:

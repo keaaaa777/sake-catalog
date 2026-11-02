@@ -112,14 +112,11 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
     { key: 'sharpness', label: 'キレ' },
   ]
 
-  const aggregateRating =
-    topOffer?.reviewCount && topOffer.reviewCount > 0 && topOffer.reviewAverage != null
-      ? { '@type': 'AggregateRating', ratingValue: topOffer.reviewAverage, reviewCount: topOffer.reviewCount }
-      : undefined
   // GoogleはProductに offers / review / aggregateRating のいずれかを必須としており、
   // どれもない銘柄でProductを出すと「無効なアイテム」になる。その場合はProduct自体を出さない。
+  // 楽天のレビュー評価はaggregateRatingに使わない(Googleは他サイトの評価の集約を禁止している)。
   const productJsonLd =
-    structuredOffers.length > 0 || aggregateRating
+    structuredOffers.length > 0
       ? [
           {
             '@type': 'Product',
@@ -129,8 +126,7 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
             brand: brewery ? { '@type': 'Brand', name: brewery.name } : undefined,
             category: GOOGLE_PRODUCT_CATEGORY,
             // 価格が判明しているオファーのみ含める(価格不明だと「priceがない」エラーになる)
-            ...(structuredOffers.length > 0 ? { offers: structuredOffers } : {}),
-            ...(aggregateRating ? { aggregateRating } : {}),
+            offers: structuredOffers,
           },
         ]
       : []
