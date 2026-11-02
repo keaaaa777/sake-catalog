@@ -1110,6 +1110,19 @@ body.panel-opened .search-selector {
   margin: 24px 0;
   border-radius: 8px;
 }
+.guide-prose .guide-figure {
+  margin: 24px 0 28px;
+}
+.guide-prose .guide-figure img {
+  margin: 0 0 10px;
+  border: 1px solid var(--line-white);
+}
+.guide-prose .guide-figure figcaption {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--paper-white);
+  opacity: 0.72;
+}
 
 /* ═══════════ レスポンシブ ═══════════ */
 @media (max-width: 900px) {
