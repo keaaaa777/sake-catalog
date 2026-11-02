@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function EnSiteHeader() {
   return (
-    <header className="site-header">
+    <header className="site-header site-header--content">
       <Link href="/en" className="brand">
         <span className="brand__logo" aria-hidden="true">雫</span>
         <span className="brand__name">SAKE SELECT</span>

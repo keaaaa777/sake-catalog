@@ -109,29 +109,29 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
       <p>「日本酒は少し苦手かも」という方でも楽しみやすい、飲み口のやさしい銘柄を10本選びました。どれも全国で手に入りやすく、価格も手頃な定番です。先に10本を紹介し、後半で「飲みやすさ」を見分ける目安と選び方をまとめます。</p>
       <h2>すっきり系で選ぶなら</h2>
       <p>香りが穏やかで後味が軽いタイプです。食事と一緒に飲みたい方に向いています。</p>
-      <ul>
-        <li><a href="/sake/hakkaisan-tokubetsu-honjozo">八海山 特別本醸造</a>(新潟) — 淡麗辛口の代表格。クセが少なく、どんな料理にも合わせやすい。</li>
-        <li><a href="/sake/ichinokura-mukansa-honjozo">一ノ蔵無鑑査本醸造 辛口</a>(宮城) — 軽やかでキレのある、定番の晩酌酒。</li>
-      </ul>
+      <!--sake-cards
+        hakkaisan-tokubetsu-honjozo | 淡麗辛口の代表格。クセが少なく、どんな料理にも合わせやすい。
+        ichinokura-mukansa-honjozo | 軽やかでキレのある、定番の晩酌酒。
+      -->
       <h2>香り華やかで飲みやすいなら</h2>
       <p>果物のような香りがあるタイプです。日本酒らしい米の香りが苦手な方でも、親しみやすく感じることが多いはずです。</p>
-      <ul>
-        <li><a href="/sake/dewazakura-oka-ginjo">出羽桜 桜花吟醸酒</a>(山形) — フルーティーな吟醸香の入門編として定評あり。</li>
-        <li><a href="/sake/asabiraki-junmai-ginjo-white-label">あさ開 純米吟醸 白ラベル</a>(岩手) — 14度と軽めで、穏やかな香りとやさしい口当たり。</li>
-        <li><a href="/sake/hijiri-junmai-ginjo-yamadanishiki50">聖 純米吟醸 山田錦50</a>(群馬) — 山田錦らしい上品な香りを、手頃な価格で。</li>
-      </ul>
+      <!--sake-cards
+        dewazakura-oka-ginjo | フルーティーな吟醸香の入門編として定評あり。
+        asabiraki-junmai-ginjo-white-label | 14度と軽めで、穏やかな香りとやさしい口当たり。
+        hijiri-junmai-ginjo-yamadanishiki50 | 山田錦らしい上品な香りを、手頃な価格で。
+      -->
       <h2>米の旨みをやさしく感じたいなら</h2>
       <p>お米の味わいやコクを楽しむタイプです。冷やしすぎず、常温やぬる燗で飲むのがおすすめです。</p>
-      <ul>
-        <li><a href="/sake/nanbubijin-tokubetsu-junmai">南部美人 特別純米酒</a>(岩手) — バランスの良い旨みとキレ。</li>
-        <li><a href="/sake/kid-junmai">紀土-KID- 純米酒</a>(和歌山) — 普段使いしやすい、親しみやすいバランス型。</li>
-        <li><a href="/sake/sentoku-junmai">千徳 純米酒</a>(宮崎) — トロピカルな香りで、日本酒感が軽やか。</li>
-        <li><a href="/sake/jokigen-yamahai-junmai">常きげん 山廃仕込純米酒</a>(石川) — 山廃らしいコクがありながら、親しみやすい味わい。</li>
-      </ul>
+      <!--sake-cards
+        nanbubijin-tokubetsu-junmai | バランスの良い旨みとキレ。
+        kid-junmai | 普段使いしやすい、親しみやすいバランス型。
+        sentoku-junmai | トロピカルな香りで、日本酒感が軽やか。
+        jokigen-yamahai-junmai | 山廃らしいコクがありながら、親しみやすい味わい。
+      -->
       <h2>ちょっと贅沢に飲んでみたいなら</h2>
-      <ul>
-        <li><a href="/sake/kunimare-daiginjo">国稀 大吟醸</a>(北海道) — 大吟醸ならではの華やかさを手頃な価格で。</li>
-      </ul>
+      <!--sake-cards
+        kunimare-daiginjo | 大吟醸ならではの華やかさを手頃な価格で。
+      -->
       <h2>10本を数値で比べる</h2>
       <p>当サイトの掲載データで並べました。数値は製造年度などで変わることがあるので、購入時はラベルや販売店の情報も確かめてください。</p>
       <table class="guide-table-compact">
@@ -221,25 +221,25 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
       <p class="guide-note">適温と料理は日本酒造組合中央会の解説によるものです。当サイトでは4タイプを「薫酒・爽酒・醇酒・熟酒」と呼んでいます。</p>
       <h2>食前酒に向く日本酒</h2>
       <p>食前酒には、口の中をさっぱりさせる軽やかなタイプが向いています。よく冷やした香り華やかなタイプや、酸味が爽やかなもの、アルコール度数が低めのものを少量、乾杯の一杯として楽しむのがおすすめです。</p>
-      <ul>
-        <li><a href="/sake/aramasa-no6-s-type">新政 No.6 S-type</a>(秋田) — アルコール度数13度前後。シャンパンを思わせる透明感のある酸味が特徴で、冷やして単体で味わうスタイルが好まれています。</li>
-        <li><a href="/sake/tedorigawa-junmai-daiginjo">手取川 純米大吟醸 白山市産山田錦</a>(石川) — マスカットを思わせる華やかな香りに、発酵由来のほのかな微発泡感。乾杯の一杯に向く華やかさです。</li>
-        <li><a href="/sake/asabiraki-junmai-ginjo-white-label">あさ開 純米吟醸 白ラベル</a>(岩手) — 14度と軽めで、控えめでやさしい吟醸香とすっきりとした後味。</li>
-      </ul>
+      <!--sake-cards
+        aramasa-no6-s-type | アルコール度数13度前後。シャンパンを思わせる透明感のある酸味が特徴で、冷やして単体で味わうスタイルが好まれています。
+        tedorigawa-junmai-daiginjo | マスカットを思わせる華やかな香りに、発酵由来のほのかな微発泡感。乾杯の一杯に向く華やかさです。
+        asabiraki-junmai-ginjo-white-label | 14度と軽めで、控えめでやさしい吟醸香とすっきりとした後味。
+      -->
       <h2>食中酒に向く日本酒</h2>
       <p>食中酒は、料理の味を消さずに飲み続けられることが大切です。淡白な料理には香りが穏やかなすっきり系、味のしっかりした料理には旨みのあるコク系を合わせると、料理とお酒が互いを引き立てます。コクのあるタイプは適温の幅が10〜45℃ともっとも広く、料理に合わせて冷やから燗まで温度を変えられるのも食中酒向きの点です。</p>
-      <ul>
-        <li><a href="/sake/hakkaisan-tokubetsu-honjozo">八海山 特別本醸造</a>(新潟) — 日本酒度+4・酸度1.3の淡麗辛口。クセが少なく、幅広い料理に合わせやすい定番です。</li>
-        <li><a href="/sake/nanbubijin-tokubetsu-junmai">南部美人 特別純米酒</a>(岩手) — まろやかな米の旨みと、日本酒度+4のキレの良い後味。刺身から普段の和食まで幅広く合わせやすい食中酒として親しまれています。</li>
-        <li><a href="/sake/tengumai-yamahai-junmai">天狗舞 山廃仕込純米酒</a>(石川) — 酸度2.0のしっかりしたコク。ぬる燗〜熱燗で、脂ののった魚料理や煮物など濃い味の料理と合わせやすいタイプです。</li>
-      </ul>
+      <!--sake-cards
+        hakkaisan-tokubetsu-honjozo | 日本酒度+4・酸度1.3の淡麗辛口。クセが少なく、幅広い料理に合わせやすい定番です。
+        nanbubijin-tokubetsu-junmai | まろやかな米の旨みと、日本酒度+4のキレの良い後味。刺身から普段の和食まで幅広く合わせやすい食中酒として親しまれています。
+        tengumai-yamahai-junmai | 酸度2.0のしっかりしたコク。ぬる燗〜熱燗で、脂ののった魚料理や煮物など濃い味の料理と合わせやすいタイプです。
+      -->
       <p>料理から選びたい場合は、<a href="/pairing/sashimi">刺身・寿司</a>、<a href="/pairing/yakitori">焼き鳥・肉料理</a>、<a href="/pairing/fried">揚げ物</a>、<a href="/pairing/cheese">チーズ・おつまみ</a>に合う日本酒の一覧も参考にしてください。料理別の詳しい合わせ方は<a href="/guide/sashimi-sake-guide">刺身に合う日本酒の選び方</a>や<a href="/guide/yakitori-sake-pairing-guide">焼き鳥に合う日本酒</a>で解説しています。</p>
       <h2>食後酒に向く日本酒</h2>
       <p>食後酒には、熟成による複雑な香りやまろやかさのあるタイプが向いています。少量を小さめの酒器に注ぎ、時間をかけて香りの変化を楽しむのがおすすめです。熟成タイプの適温は7〜25℃と幅広く、冷やから常温くらいまでで香りの違いを試せます。</p>
-      <ul>
-        <li><a href="/sake/hiroshima-kamoizumi-daiginjo-daikoshu">賀茂泉 大吟醸 大古酒</a>(広島) — 大吟醸を蔵で長期間熟成させた古酒。とろりとした質感で、少量をじっくり味わう飲み方に向いています。</li>
-        <li><a href="/sake/nara-harushika-junginjo-hizoukoshu">春鹿 純米吟醸 秘蔵古酒</a>(奈良) — 穏やかな吟醸香に熟成由来のふくらみ。少し温度を上げると熟成香がより開きます。</li>
-      </ul>
+      <!--sake-cards
+        hiroshima-kamoizumi-daiginjo-daikoshu | 大吟醸を蔵で長期間熟成させた古酒。とろりとした質感で、少量をじっくり味わう飲み方に向いています。
+        nara-harushika-junginjo-hizoukoshu | 穏やかな吟醸香に熟成由来のふくらみ。少し温度を上げると熟成香がより開きます。
+      -->
       <p>熟成タイプは、熟成チーズやドライフルーツのような濃い味わいのおつまみとも合わせやすいタイプです。チーズとの合わせ方は<a href="/guide/cheese-sake-pairing-guide">チーズに合う日本酒</a>で紹介しています。</p>
       <h2>1本で食事を通すなら、温度で変化をつける</h2>
       <p>何本も用意できないときは、1本の日本酒の温度を変えて楽しむ方法もあります。日本酒造組合中央会も、季節やおつまみによって温度を変えて楽しめることを日本酒の魅力として紹介しています。たとえば最初はよく冷やして乾杯し、食事が進んだら常温やぬる燗にすると、同じお酒でも香りや味わいの印象が変わります。温度ごとの違いは<a href="/guide/atsukan-guide">温度帯の楽しみ方ガイド</a>で解説しています。</p>
@@ -662,6 +662,45 @@ export const GUIDE_SLUGS = GUIDE_ARTICLES.map((a) => a.slug)
 // ガイド記事の本文が内部リンクしているパス(/sake/xxx, /type/xxx 等)ごとに、
 // そのパスへ言及しているガイド記事を逆引きできるようにする。
 // 新しいガイドを追加しても本文中のリンクから自動で反映される。
+export interface GuideSakeCardItem {
+  slug: string
+  note?: string
+}
+
+export type GuideBodyPart = { type: 'html'; html: string } | { type: 'cards'; items: GuideSakeCardItem[] }
+
+// 本文中の銘柄カードの目印。1行に「銘柄slug | ひとこと」を書く(ひとことは省略可)。
+//   <!--sake-cards
+//     hakkaisan-tokubetsu-honjozo | 淡麗辛口の代表格。
+//   -->
+const SAKE_CARDS_PATTERN = /<!--sake-cards\s*([\s\S]*?)-->/g
+
+function parseSakeCardItems(block: string): GuideSakeCardItem[] {
+  return block
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .map((line) => {
+      const [slug, ...rest] = line.split('|')
+      const note = rest.join('|').trim()
+      return { slug: slug.trim(), ...(note ? { note } : {}) }
+    })
+}
+
+// 本文を、HTMLの部分と銘柄カードの部分に分ける
+export function parseGuideBody(bodyHtml: string): GuideBodyPart[] {
+  const parts: GuideBodyPart[] = []
+  let last = 0
+  for (const match of bodyHtml.matchAll(SAKE_CARDS_PATTERN)) {
+    const index = match.index ?? 0
+    if (index > last) parts.push({ type: 'html', html: bodyHtml.slice(last, index) })
+    parts.push({ type: 'cards', items: parseSakeCardItems(match[1]) })
+    last = index + match[0].length
+  }
+  if (last < bodyHtml.length) parts.push({ type: 'html', html: bodyHtml.slice(last) })
+  return parts
+}
+
 const GUIDE_BACKLINKS: Map<string, GuideArticle[]> = (() => {
   const map = new Map<string, GuideArticle[]>()
   const hrefPattern = /href="(\/[a-z0-9-]+(?:\/[a-z0-9-]+)*)"/g
@@ -670,8 +709,12 @@ const GUIDE_BACKLINKS: Map<string, GuideArticle[]> = (() => {
     const seenInArticle = new Set<string>()
     let match: RegExpExecArray | null
     hrefPattern.lastIndex = 0
-    while ((match = hrefPattern.exec(article.bodyHtml))) {
-      const path = match[1]
+    const cardPaths = parseGuideBody(article.bodyHtml).flatMap((part) =>
+      part.type === 'cards' ? part.items.map((item) => `/sake/${item.slug}`) : []
+    )
+    const linkedPaths: string[] = []
+    while ((match = hrefPattern.exec(article.bodyHtml))) linkedPaths.push(match[1])
+    for (const path of [...linkedPaths, ...cardPaths]) {
       if (path === '/guide' || path.startsWith(`/guide/${article.slug}`)) continue
       if (seenInArticle.has(path)) continue
       seenInArticle.add(path)

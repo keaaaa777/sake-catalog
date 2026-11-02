@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { GUIDE_SLUGS, getGuideArticleBySlug } from '@/lib/guides'
+import { GUIDE_SLUGS, getGuideArticleBySlug, parseGuideBody } from '@/lib/guides'
 import { getEnGuideArticleBySlug } from '@/lib/i18n/en-content'
+import { isProductionDomain } from '@/lib/is-production-domain'
+import GuideSakeCards from '@/components/GuideSakeCards'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog-japan.vercel.app'
 
@@ -33,6 +35,7 @@ export default function GuideArticlePage({ params }: { params: { slug: string } 
   const hasEn = Boolean(getEnGuideArticleBySlug(params.slug))
   const author = article.author ?? '雫 SAKE SELECT編集部'
   const updatedAt = article.updatedAt ?? article.publishedAt
+  const production = isProductionDomain()
   const relatedArticles = GUIDE_SLUGS
     .filter((slug) => slug !== article.slug)
     .slice(0, 3)
@@ -93,7 +96,13 @@ export default function GuideArticlePage({ params }: { params: { slug: string } 
       </header>
 
       <section className="content-card">
-        <div className="guide-prose" dangerouslySetInnerHTML={{ __html: article.bodyHtml }} />
+        {parseGuideBody(article.bodyHtml).map((part, i) =>
+          part.type === 'html' ? (
+            <div key={i} className={`guide-prose${i > 0 ? ' guide-prose--cont' : ''}`} dangerouslySetInnerHTML={{ __html: part.html }} />
+          ) : (
+            <GuideSakeCards key={i} items={part.items} production={production} />
+          )
+        )}
       </section>
 
       {relatedArticles.length > 0 && (

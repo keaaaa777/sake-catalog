@@ -3,7 +3,7 @@ import FavoritesNavLink from '@/components/FavoritesNavLink'
 
 export default function SiteHeader() {
   return (
-    <header className="site-header">
+    <header className="site-header site-header--content">
       <Link href="/" className="brand">
         <span className="brand__logo" aria-hidden="true">雫</span>
         <span className="brand__name">SAKE SELECT</span>
