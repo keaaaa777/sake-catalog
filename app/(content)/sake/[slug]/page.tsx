@@ -7,7 +7,7 @@ import { PAIRING_CATEGORIES } from '@/lib/pairing'
 import { SCENES } from '@/lib/scenes'
 import { PREFECTURE_SLUGS } from '@/lib/types'
 import { buildAffiliateLinks } from '@/lib/affiliate'
-import { getOffersForSake, getOffersFetchedAt } from '@/lib/offers'
+import { getOfferImageUrl, getOffersForSake, getOffersFetchedAt } from '@/lib/offers'
 import { getEnSakeContent } from '@/lib/i18n/en-content'
 import { isProductionDomain } from '@/lib/is-production-domain'
 import { getGuidesLinkingTo } from '@/lib/guides'
@@ -86,7 +86,7 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
     ? (sake.imageUrl.startsWith('http') ? sake.imageUrl : `${SITE_URL}${sake.imageUrl}`)
     : undefined
   // 自社画像が未承認の銘柄は、楽天オファーの商品画像を構造化データのimageとして代用する
-  const productImage = structuredImage ?? topOffer?.imageUrl ?? undefined
+  const productImage = structuredImage ?? topOffer?.imageUrl ?? getOfferImageUrl(sake.slug) ?? undefined
   // Googleの商品分類(google_product_category)に準拠した固定カテゴリ。
   // classification(純米吟醸などの特定名称)は分類として無効なため使用しない。
   const GOOGLE_PRODUCT_CATEGORY = 'Food, Beverages & Tobacco > Beverages > Alcoholic Beverages > Rice Wine & Sake'

@@ -23,6 +23,9 @@ const REVIEW_DIR = path.join(__dirname, '..', 'review')
 
 const REJECT_KEYWORDS = ['セット', '飲み比べ', 'グラス', 'ペア', '福袋', 'おつまみ', '酒器', 'ギフト券', '福箱']
 const CAPACITY_PATTERN = /(720\s*ml|1800\s*ml|一升|四合)/i
+// 「720ml×6本」「ケース販売」など複数本の商品(「セット」を含まないためREJECT_KEYWORDSをすり抜ける)。
+// lib/offers.ts の MULTI_PACK と同じ条件にそろえる
+const MULTI_PACK_PATTERN = /[×xX✕*]\s*([2-9]|\d{2,})\s*本|([2-9]|\d{2,})\s*本\s*(セット|組|入)|ケース販売|[×xX✕*]\s*\d*\s*ケース/
 
 // 2026-08-02取得分の review/*.md を目視確認した結果。
 // 候補順は再検索で変わるため、取得時刻が一致する場合にだけ適用する。
@@ -82,6 +85,7 @@ function judge(sakeName, candidate) {
   const isKankikuIdentity = sakeName === '総乃寒菊 純米大吟醸 Identity 総の舞50'
     && ['寒菊', '純米大吟醸', 'Identity', '総の舞50'].every((token) => name.includes(token))
   if (REJECT_KEYWORDS.some((kw) => name.includes(kw))) return 'reject'
+  if (MULTI_PACK_PATTERN.test(name)) return 'reject'
   if (!isKankikuIdentity && !sakeNameVariants.some((variant) => name.includes(variant))) return 'needs_review'
   if (!CAPACITY_PATTERN.test(name)) return 'needs_review'
   if (candidate.availability === 0) return 'needs_review'

@@ -2,12 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { getSakeBySlug } from '@/lib/data'
 import type { GuideSakeCardItem } from '@/lib/guides'
-import { getOffersForSake, getOffersFetchedAt } from '@/lib/offers'
+import { getOfferImageUrl, getOffersForSake, getOffersFetchedAt } from '@/lib/offers'
 import SakeThumb from '@/components/SakeThumb'
 import GuideOfferButton from '@/components/GuideOfferButton'
-
-// 「×6本」「6本セット」「ケース販売」など複数本の商品は、1本の価格と誤解されるためカードの価格に使わない
-const MULTI_PACK = /[×xX✕*]\s*([2-9]|\d{2,})\s*本|([2-9]|\d{2,})\s*本\s*(セット|組|入)|ケース販売|[×xX✕*]\s*\d*\s*ケース/
 
 // ガイド記事の本文中に、紹介した銘柄を写真・価格・購入ボタン付きで並べる。
 // 本文(bodyHtml)の <!--sake-cards …--> の位置に差し込まれる(書き方は lib/guides.ts の parseGuideBody)。
@@ -16,10 +13,9 @@ export default function GuideSakeCards({ items: cardItems, production }: { items
     const sake = getSakeBySlug(slug)
     if (!sake) throw new Error(`ガイドの銘柄カードに存在しない銘柄があります: ${slug}`)
     const offers = getOffersForSake(slug)
-    const offerIndex = offers.findIndex((o) => o.itemPrice != null && !MULTI_PACK.test(o.itemName))
+    const offerIndex = offers.findIndex((o) => o.itemPrice != null)
     const offer = offerIndex >= 0 ? offers[offerIndex] : undefined
-    // 写真は複数本セットの商品のものでも同じ銘柄なので使ってよい
-    const imageUrl = offer?.imageUrl ?? offers.find((o) => o.imageUrl)?.imageUrl ?? null
+    const imageUrl = offer?.imageUrl ?? getOfferImageUrl(slug)
     return { sake, note, offer, offerIndex: offer ? offerIndex : undefined, imageUrl }
   })
   if (items.length === 0) return null
