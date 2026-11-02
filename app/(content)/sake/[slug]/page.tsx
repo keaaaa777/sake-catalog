@@ -112,29 +112,33 @@ export default function SakeDetailPage({ params }: { params: { slug: string } })
     { key: 'sharpness', label: 'キレ' },
   ]
 
+  const aggregateRating =
+    topOffer?.reviewCount && topOffer.reviewCount > 0 && topOffer.reviewAverage != null
+      ? { '@type': 'AggregateRating', ratingValue: topOffer.reviewAverage, reviewCount: topOffer.reviewCount }
+      : undefined
+  // GoogleはProductに offers / review / aggregateRating のいずれかを必須としており、
+  // どれもない銘柄でProductを出すと「無効なアイテム」になる。その場合はProduct自体を出さない。
+  const productJsonLd =
+    structuredOffers.length > 0 || aggregateRating
+      ? [
+          {
+            '@type': 'Product',
+            name: sake.name,
+            description: sake.description,
+            image: productImage,
+            brand: brewery ? { '@type': 'Brand', name: brewery.name } : undefined,
+            category: GOOGLE_PRODUCT_CATEGORY,
+            // 価格が判明しているオファーのみ含める(価格不明だと「priceがない」エラーになる)
+            ...(structuredOffers.length > 0 ? { offers: structuredOffers } : {}),
+            ...(aggregateRating ? { aggregateRating } : {}),
+          },
+        ]
+      : []
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      {
-        '@type': 'Product',
-        name: sake.name,
-        description: sake.description,
-        image: productImage,
-        brand: brewery ? { '@type': 'Brand', name: brewery.name } : undefined,
-        category: GOOGLE_PRODUCT_CATEGORY,
-        // 価格が判明しているオファーがある場合のみ構造化データに含める。
-        // 価格不明のまま出すとGoogleの「priceがない」エラーになるため、その場合はoffers自体を省略する。
-        ...(structuredOffers.length > 0 ? { offers: structuredOffers } : {}),
-        ...(topOffer?.reviewCount && topOffer.reviewCount > 0 && topOffer.reviewAverage != null
-          ? {
-              aggregateRating: {
-                '@type': 'AggregateRating',
-                ratingValue: topOffer.reviewAverage,
-                reviewCount: topOffer.reviewCount,
-              },
-            }
-          : {}),
-      },
+      ...productJsonLd,
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
