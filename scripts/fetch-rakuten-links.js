@@ -38,6 +38,15 @@ async function main() {
     await sleep(1000)
   }
 
+  // 大半が失敗した結果を保存すると、価格は古いまま取得日時だけが新しくなる。
+  // ここで止めてワークフローを失敗扱いにする(既存のデータは変更しない)
+  const entries = Object.values(results)
+  const failed = entries.filter((entry) => entry.error)
+  if (failed.length > entries.length / 2) {
+    console.error(`取得失敗が多いため中止します: ${failed.length}/${entries.length}件 (例: ${failed[0].error})`)
+    process.exit(1)
+  }
+
   if (!fs.existsSync(CACHE_DIR)) fs.mkdirSync(CACHE_DIR, { recursive: true })
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify({ fetchedAt, results }, null, 2) + '\n')
   console.log(`書き出し完了: ${OUTPUT_FILE}`)
