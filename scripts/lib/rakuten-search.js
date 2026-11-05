@@ -30,7 +30,7 @@ const ENDPOINT = 'https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/2
 // 必ず実際に登録した自サイトのURLを使うこと(他ドメインへのなりすましは
 // 楽天の規約違反になるため行わない)。カスタムドメインに切り替えたら
 // RAKUTEN_REGISTERED_SITE_URL を新ドメインに更新すること(README参照)。
-const REGISTERED_SITE_URL = process.env.RAKUTEN_REGISTERED_SITE_URL || 'https://sake-catalog.vercel.app/'
+const REGISTERED_SITE_URL = process.env.RAKUTEN_REGISTERED_SITE_URL || 'https://sake-catalog-japan.vercel.app/'
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms))

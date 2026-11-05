@@ -24,7 +24,7 @@ if (fs.existsSync(envFile)) {
 }
 
 const ENDPOINT = 'https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260701'
-const REGISTERED_SITE_URL = process.env.RAKUTEN_REGISTERED_SITE_URL || 'https://sake-catalog.vercel.app/'
+const REGISTERED_SITE_URL = process.env.RAKUTEN_REGISTERED_SITE_URL || 'https://sake-catalog-japan.vercel.app/'
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms))
