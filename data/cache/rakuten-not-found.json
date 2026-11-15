@@ -1,5 +1,5 @@
 {
-  "sourceFetchedAt": "2026-11-08T21:27:46.642Z",
+  "sourceFetchedAt": "2026-11-15T22:15:56.291Z",
   "count": 40,
   "sakes": [
     {
@@ -159,12 +159,6 @@
       "classification": "本醸造"
     },
     {
-      "id": "596",
-      "slug": "fukushima-hirotogawa-junginjo",
-      "name": "廣戸川 純米吟醸",
-      "classification": "純米吟醸"
-    },
-    {
       "id": "598",
       "slug": "hiroshima-taketsuru-kimoto-junmai",
       "name": "竹鶴 生酛純米",
@@ -193,6 +187,12 @@
       "slug": "ishikawa-okunotonoshiragiku-tokubetsujunmai",
       "name": "奥能登の白菊 特別純米酒",
       "classification": "特別純米酒"
+    },
+    {
+      "id": "615",
+      "slug": "tochigi-daina-chokarakuchi-junmai",
+      "name": "大那 超辛口純米 五百万石",
+      "classification": "純米酒"
     },
     {
       "id": "617",
