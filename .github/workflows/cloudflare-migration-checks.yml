@@ -50,9 +50,11 @@ jobs:
           git worktree add --detach "$RUNNER_TEMP/sake-catalog-vinext" HEAD
           cd "$RUNNER_TEMP/sake-catalog-vinext"
           npm ci
-          npx --yes vinext init --platform=cloudflare --name=sake-catalog-preview --cdn-cache=none --data-cache=none --image-optimization=none --legacy-peer-deps
-          node -e "const fs=require('fs'); const p=require('./package.json'); p.dependencies={...p.dependencies,react:'18.3.1','react-dom':'18.3.1'}; delete p.devDependencies?.react; delete p.devDependencies?.['react-dom']; fs.writeFileSync('package.json',JSON.stringify(p,null,2)+'\n')"
-          npm install --legacy-peer-deps
+          npm pkg set 'dependencies.react=18.3.1' 'dependencies.react-dom=18.3.1'
+          npm install --package-lock-only --ignore-scripts
+          npx --yes vinext init --platform=cloudflare --name=sake-catalog-preview --cdn-cache=none --data-cache=none --image-optimization=none
+          npm install --legacy-peer-deps --ignore-scripts vinext react-server-dom-webpack @vinext/cloudflare vite @vitejs/plugin-rsc
+          npm install --legacy-peer-deps --ignore-scripts
           npm run build:vinext
         env:
           NEXT_PUBLIC_SITE_URL: https://sake-catalog-preview.invalid
