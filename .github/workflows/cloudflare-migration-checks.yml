@@ -1,0 +1,75 @@
+name: Cloudflare migration checks
+
+on:
+  push:
+    branches:
+      - cloudflare-migration
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cloudflare-migration-checks
+  cancel-in-progress: true
+
+jobs:
+  compatibility-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Checkout migration branch
+        uses: actions/checkout@v4
+        with:
+          ref: cloudflare-migration
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install current dependencies
+        run: npm ci
+
+      - name: Check current repository quality
+        run: npm run quality
+
+      - name: Build current Next.js app
+        run: npm run build
+        env:
+          NEXT_PUBLIC_SITE_URL: https://sake-catalog-preview.invalid
+          SITEMAP_PHASE: "1"
+
+      - name: Check vinext compatibility
+        run: npx --yes vinext check
+
+      - name: Prepare an isolated Cloudflare build
+        run: |
+          git worktree add --detach "$RUNNER_TEMP/sake-catalog-vinext" HEAD
+          cd "$RUNNER_TEMP/sake-catalog-vinext"
+          npm ci
+          npx --yes vinext init --platform=cloudflare --name=sake-catalog-preview --cdn-cache=none --data-cache=none --image-optimization=none
+          npm run build:vinext
+        env:
+          NEXT_PUBLIC_SITE_URL: https://sake-catalog-preview.invalid
+          SITEMAP_PHASE: "1"
+
+      - name: Save generated migration patch
+        if: always()
+        run: |
+          if [ -d "$RUNNER_TEMP/sake-catalog-vinext" ]; then
+            git -C "$RUNNER_TEMP/sake-catalog-vinext" diff --binary HEAD > "$RUNNER_TEMP/cloudflare-vinext.patch"
+          else
+            printf 'Cloudflare worktree was not created.\n' > "$RUNNER_TEMP/cloudflare-vinext.patch"
+          fi
+
+      - name: Upload generated migration patch
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cloudflare-vinext-migration-patch
+          path: ${{ runner.temp }}/cloudflare-vinext.patch
+          if-no-files-found: error
+          retention-days: 7
