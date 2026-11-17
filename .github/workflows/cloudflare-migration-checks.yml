@@ -27,7 +27,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - name: Install current dependencies
@@ -50,7 +50,9 @@ jobs:
           git worktree add --detach "$RUNNER_TEMP/sake-catalog-vinext" HEAD
           cd "$RUNNER_TEMP/sake-catalog-vinext"
           npm ci
-          npx --yes vinext init --platform=cloudflare --name=sake-catalog-preview --cdn-cache=none --data-cache=none --image-optimization=none
+          npx --yes vinext init --platform=cloudflare --name=sake-catalog-preview --cdn-cache=none --data-cache=none --image-optimization=none -- --legacy-peer-deps
+          npm pkg set 'devDependencies.react=18.3.1' 'devDependencies.react-dom=18.3.1'
+          npm install --no-save --legacy-peer-deps react@18.3.1 react-dom@18.3.1
           npm run build:vinext
         env:
           NEXT_PUBLIC_SITE_URL: https://sake-catalog-preview.invalid
