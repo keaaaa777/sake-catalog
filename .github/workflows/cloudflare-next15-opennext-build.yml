@@ -52,16 +52,16 @@ jobs:
         run: npm run quality
 
       - name: Build all Next.js routes
-        run: npm run build
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run build 2>&1 | tee "$RUNNER_TEMP/next-build.log"
         env:
           NEXT_PUBLIC_SITE_URL: https://sake-catalog-preview.invalid
           SITEMAP_PHASE: "1"
 
-      - name: Check generated static HTML count
-        run: |
-          count="$(find .next/server/app -type f -name '*.html' | wc -l | tr -d ' ')"
-          echo "Generated HTML files: $count"
-          test "$count" -ge 2585
+      - name: Check generated static page count
+        run: grep -qE 'Generating static pages \(2585/2585\)' "$RUNNER_TEMP/next-build.log"
 
       - name: Build Cloudflare Worker with OpenNext
         run: npx opennextjs-cloudflare build
