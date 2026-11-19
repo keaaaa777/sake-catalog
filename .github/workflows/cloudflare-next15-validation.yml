@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - cloudflare-next15-opennext-validation
+    paths-ignore:
+      - 'docs/**'
+      - 'CLOUDFLARE_NEXT15_VALIDATION.md'
   workflow_dispatch:
 
 permissions:
@@ -30,7 +33,7 @@ jobs:
           node-version: 22
           cache: npm
 
-      - name: Report current baseline
+      - name: Report current validation state
         run: |
           node --version
           npm --version
@@ -40,14 +43,14 @@ jobs:
       - name: Install exact lockfile dependencies
         run: npm ci
 
-      - name: Run current quality checks
+      - name: Run quality checks
         run: npm run quality
 
-      - name: Run current Next.js production build
+      - name: Run Next.js production build
         run: npm run build
         env:
           NEXT_PUBLIC_SITE_URL: https://sake-catalog-preview.invalid
           SITEMAP_PHASE: "1"
 
       # Intentionally no Cloudflare credentials, preview command, deploy command,
-      # package upgrades, codemods, or repository writes in this baseline workflow.
+      # or repository writes in this validation workflow.
