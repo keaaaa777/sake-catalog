@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: cloudflare-next15-opennext-build
@@ -33,17 +33,27 @@ jobs:
       - name: Install current locked dependencies
         run: npm ci
 
-      - name: Install candidate versions in the ephemeral runner
-        run: >-
-          npm install --no-save --ignore-scripts --no-audit --no-fund
-          next@15.5.29 react@19 react-dom@19
-          eslint-config-next@15.5.29
-          @types/react@19 @types/react-dom@19
-          @opennextjs/cloudflare@1.20.17 wrangler@4
-
-      - name: Record resolved candidate versions
+      - name: Apply candidate dependencies in the validation checkout
         run: |
-          node -e "const fs=require('fs'); for(const n of ['next','react','react-dom','eslint-config-next','@types/react','@types/react-dom','@opennextjs/cloudflare','wrangler']) console.log(n,JSON.parse(fs.readFileSync('node_modules/'+n+'/package.json','utf8')).version)"
+          npm pkg set \
+            'dependencies.next=15.5.29' \
+            'dependencies.react=19.3.1' \
+            'dependencies.react-dom=19.3.1' \
+            'devDependencies.eslint-config-next=15.5.29' \
+            'devDependencies.@types/react=19.3.0' \
+            'devDependencies.@types/react-dom=19.3.0' \
+            'devDependencies.@opennextjs/cloudflare=1.20.17' \
+            'devDependencies.wrangler=4.165.0' \
+            'scripts.preview=opennextjs-cloudflare build && opennextjs-cloudflare preview' \
+            'scripts.cf-typegen=wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts'
+          for entry in '/.open-next/' '/.wrangler/' '.dev.vars*'; do
+            grep -Fxq "$entry" .gitignore || echo "$entry" >> .gitignore
+          done
+          npm install --package-lock-only --ignore-scripts --no-audit --no-fund
+          npm ci
+
+      - name: Confirm clean resolved dependency tree
+        run: npm ls next react react-dom eslint-config-next @types/react @types/react-dom @opennextjs/cloudflare wrangler --depth=0
 
       - name: Migrate Next.js async request APIs
         run: npx --yes @next/codemod@canary next-async-request-api .
@@ -104,3 +114,15 @@ jobs:
           path: ${{ runner.temp }}/cloudflare-next15-codemod.patch
           if-no-files-found: error
           retention-days: 7
+
+      - name: Save fully validated migration changes on this branch
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --check
+          if ! git diff --cached --quiet; then
+            git commit -m "Upgrade isolated Cloudflare validation to Next.js 15"
+            git push origin HEAD:cloudflare-next15-opennext-validation
+          fi
