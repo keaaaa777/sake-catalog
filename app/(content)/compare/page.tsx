@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   alternates: { canonical: '/compare' },
 }
 
-export default function ComparePage({ searchParams }: { searchParams: { slugs?: string } }) {
+export default async function ComparePage(props: { searchParams: Promise<{ slugs?: string }> }) {
+  const searchParams = await props.searchParams;
   const sakes = getAllSakes()
   const breweryMap = Object.fromEntries(
     getAllBreweries().map((b) => [b.slug, { name: b.name, slug: b.slug }])

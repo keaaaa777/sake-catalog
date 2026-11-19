@@ -34,3 +34,6 @@ data/cache/sake-affiliate-candidates.json
 data/cache/sake-affiliate-candidates.csv
 data/cache/sake-shortlist.json
 data/cache/sake-shortlist.csv
+/.open-next/
+/.wrangler/
+.dev.vars*

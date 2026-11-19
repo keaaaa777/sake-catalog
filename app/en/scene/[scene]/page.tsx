@@ -13,7 +13,8 @@ export function generateStaticParams() {
   return SCENE_IDS.map((scene) => ({ scene }))
 }
 
-export function generateMetadata({ params }: { params: { scene: string } }): Metadata {
+export async function generateMetadata(props: { params: Promise<{ scene: string }> }): Promise<Metadata> {
+  const params = await props.params;
   const label = SCENE_LABEL_EN[params.scene]
   if (!label) return {}
   return {
@@ -26,7 +27,8 @@ export function generateMetadata({ params }: { params: { scene: string } }): Met
   }
 }
 
-export default function EnScenePage({ params }: { params: { scene: string } }) {
+export default async function EnScenePage(props: { params: Promise<{ scene: string }> }) {
+  const params = await props.params;
   const scene = SCENES[params.scene]
   const label = SCENE_LABEL_EN[params.scene]
   if (!scene || !label) notFound()

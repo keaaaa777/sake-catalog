@@ -15,7 +15,8 @@ export function generateStaticParams() {
   return SCENE_IDS.map((scene) => ({ scene }))
 }
 
-export function generateMetadata({ params }: { params: { scene: string } }): Metadata {
+export async function generateMetadata(props: { params: Promise<{ scene: string }> }): Promise<Metadata> {
+  const params = await props.params;
   const scene = SCENES[params.scene]
   if (!scene) return {}
   const indexable = getSakesByScene(params.scene).some(isIndexableSake)
@@ -27,7 +28,8 @@ export function generateMetadata({ params }: { params: { scene: string } }): Met
   }
 }
 
-export default function ScenePage({ params }: { params: { scene: string } }) {
+export default async function ScenePage(props: { params: Promise<{ scene: string }> }) {
+  const params = await props.params;
   const scene = SCENES[params.scene]
   if (!scene) notFound()
 

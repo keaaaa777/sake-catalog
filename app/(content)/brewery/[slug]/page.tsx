@@ -17,7 +17,8 @@ export function generateStaticParams() {
   return getAllBreweries().map((b) => ({ slug: b.slug }))
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+export async function generateMetadata(props: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const params = await props.params;
   const brewery = getBreweryBySlug(params.slug)
   if (!brewery) return {}
   const indexable = isIndexableBrewery(
@@ -32,7 +33,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   }
 }
 
-export default function BreweryDetailPage({ params }: { params: { slug: string } }) {
+export default async function BreweryDetailPage(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
   const brewery = getBreweryBySlug(params.slug)
   if (!brewery) notFound()
 

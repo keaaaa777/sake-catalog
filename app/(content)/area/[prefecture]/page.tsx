@@ -28,7 +28,8 @@ export function generateStaticParams() {
   return Object.values(PREFECTURE_SLUGS).map((slug) => ({ prefecture: slug }))
 }
 
-export function generateMetadata({ params }: { params: { prefecture: string } }): Metadata {
+export async function generateMetadata(props: { params: Promise<{ prefecture: string }> }): Promise<Metadata> {
+  const params = await props.params;
   const pref = SLUG_TO_PREFECTURE[params.prefecture]
   if (!pref) return {}
   const indexable = getSakesByPrefecture(pref).some(isIndexableSake)
@@ -69,7 +70,8 @@ function StatTile({ label, stat, unit, format }: { label: string; stat: SpecAver
   )
 }
 
-export default function AreaPage({ params }: { params: { prefecture: string } }) {
+export default async function AreaPage(props: { params: Promise<{ prefecture: string }> }) {
+  const params = await props.params;
   const pref = SLUG_TO_PREFECTURE[params.prefecture]
   if (!pref) notFound()
 

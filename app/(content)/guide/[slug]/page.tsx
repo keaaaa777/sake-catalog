@@ -14,7 +14,8 @@ export function generateStaticParams() {
   return GUIDE_SLUGS.map((slug) => ({ slug }))
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+export async function generateMetadata(props: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const params = await props.params;
   const article = getGuideArticleBySlug(params.slug)
   if (!article) return {}
   const hasEn = Boolean(getEnGuideArticleBySlug(params.slug))
@@ -29,7 +30,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   }
 }
 
-export default function GuideArticlePage({ params }: { params: { slug: string } }) {
+export default async function GuideArticlePage(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
   const article = getGuideArticleBySlug(params.slug)
   if (!article) notFound()
   const hasEn = Boolean(getEnGuideArticleBySlug(params.slug))

@@ -16,7 +16,8 @@ export function generateStaticParams() {
   return FLAVOR_TYPE_IDS.map((flavorType) => ({ flavorType }))
 }
 
-export function generateMetadata({ params }: { params: { flavorType: string } }): Metadata {
+export async function generateMetadata(props: { params: Promise<{ flavorType: string }> }): Promise<Metadata> {
+  const params = await props.params;
   const flavor = FLAVOR_TYPES[params.flavorType as FlavorType]
   if (!flavor) return {}
   const indexable = getSakesByFlavorType(params.flavorType as FlavorType).some(isIndexableSake)
@@ -28,7 +29,8 @@ export function generateMetadata({ params }: { params: { flavorType: string } })
   }
 }
 
-export default function TypePage({ params }: { params: { flavorType: string } }) {
+export default async function TypePage(props: { params: Promise<{ flavorType: string }> }) {
+  const params = await props.params;
   const flavorType = params.flavorType as FlavorType
   const flavor = FLAVOR_TYPES[flavorType]
   if (!flavor) notFound()

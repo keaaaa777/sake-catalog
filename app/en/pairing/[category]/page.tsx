@@ -13,7 +13,8 @@ export function generateStaticParams() {
   return PAIRING_CATEGORY_IDS.map((category) => ({ category }))
 }
 
-export function generateMetadata({ params }: { params: { category: string } }): Metadata {
+export async function generateMetadata(props: { params: Promise<{ category: string }> }): Promise<Metadata> {
+  const params = await props.params;
   const label = PAIRING_LABEL_EN[params.category]
   if (!label) return {}
   return {
@@ -26,7 +27,8 @@ export function generateMetadata({ params }: { params: { category: string } }): 
   }
 }
 
-export default function EnPairingPage({ params }: { params: { category: string } }) {
+export default async function EnPairingPage(props: { params: Promise<{ category: string }> }) {
+  const params = await props.params;
   const category = PAIRING_CATEGORIES[params.category]
   const label = PAIRING_LABEL_EN[params.category]
   if (!category || !label) notFound()

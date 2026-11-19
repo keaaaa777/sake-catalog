@@ -29,7 +29,8 @@ export function generateStaticParams() {
   return getAllSakes().map((sake) => ({ slug: sake.slug }))
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+export async function generateMetadata(props: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const params = await props.params;
   const sake = getSakeBySlug(params.slug)
   if (!sake) return {}
 
@@ -63,7 +64,8 @@ function scaleLabel(labels: string[], value: number, min: number, max: number) {
   return labels[Math.max(0, Math.min(labels.length - 1, idx))]
 }
 
-export default function SakeDetailPage({ params }: { params: { slug: string } }) {
+export default async function SakeDetailPage(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
   const sake = getSakeBySlug(params.slug)
   if (!sake) notFound()
 

@@ -15,7 +15,8 @@ export function generateStaticParams() {
   return CLASSIFICATION_SLUG_IDS.map((slug) => ({ slug }))
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+export async function generateMetadata(props: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const params = await props.params;
   const classification = CLASSIFICATIONS[params.slug]
   if (!classification) return {}
   const indexable = getSakesByClassificationSlug(params.slug).some(isIndexableSake)
@@ -27,7 +28,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   }
 }
 
-export default function ClassificationPage({ params }: { params: { slug: string } }) {
+export default async function ClassificationPage(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
   const classification = CLASSIFICATIONS[params.slug]
   if (!classification) notFound()
 

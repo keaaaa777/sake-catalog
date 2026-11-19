@@ -19,7 +19,8 @@ export function generateStaticParams() {
   return DIAGNOSIS_TYPE_IDS.map((typeId) => ({ typeId }))
 }
 
-export function generateMetadata({ params }: { params: { typeId: string } }): Metadata {
+export async function generateMetadata(props: { params: Promise<{ typeId: string }> }): Promise<Metadata> {
+  const params = await props.params;
   const type = getDiagnosisType(params.typeId)
   if (!type) return {}
 
@@ -41,7 +42,8 @@ export function generateMetadata({ params }: { params: { typeId: string } }): Me
   }
 }
 
-export default function DiagnosisResultPage({ params }: { params: { typeId: string } }) {
+export default async function DiagnosisResultPage(props: { params: Promise<{ typeId: string }> }) {
+  const params = await props.params;
   const type = getDiagnosisType(params.typeId)
   if (!type) notFound()
 

@@ -9,8 +9,9 @@ export const dynamic = 'force-dynamic'
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { slug: string; mall: string } }
+  props: { params: Promise<{ slug: string; mall: string }> }
 ) {
+  const params = await props.params;
   const sake = getSakeBySlug(params.slug)
   if (!sake) {
     return NextResponse.redirect(new URL('/', request.url), { status: 302 })
