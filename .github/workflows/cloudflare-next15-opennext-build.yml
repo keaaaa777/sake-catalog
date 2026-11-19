@@ -1,0 +1,105 @@
+name: Cloudflare Next.js 15 OpenNext build validation
+
+on:
+  push:
+    branches:
+      - cloudflare-next15-opennext-validation
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cloudflare-next15-opennext-build
+  cancel-in-progress: true
+
+jobs:
+  migrate-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout isolated validation branch
+        uses: actions/checkout@v4
+        with:
+          ref: cloudflare-next15-opennext-validation
+          fetch-depth: 1
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install current locked dependencies
+        run: npm ci
+
+      - name: Install candidate versions in the ephemeral runner
+        run: >-
+          npm install --no-save --package-lock=false --ignore-scripts --no-audit --no-fund
+          next@15.5.29 react@19 react-dom@19
+          eslint-config-next@15.5.29
+          @types/react@19 @types/react-dom@19
+          @opennextjs/cloudflare@1.20.17 wrangler@4
+
+      - name: Record resolved candidate versions
+        run: npm ls next react react-dom eslint-config-next @types/react @types/react-dom @opennextjs/cloudflare wrangler --depth=0
+
+      - name: Migrate Next.js async request APIs
+        run: npx --yes @next/codemod@canary next-async-request-api .
+
+      - name: Run quality checks
+        run: npm run quality
+
+      - name: Build all Next.js routes
+        run: npm run build
+        env:
+          NEXT_PUBLIC_SITE_URL: https://sake-catalog-preview.invalid
+          SITEMAP_PHASE: "1"
+
+      - name: Check generated static HTML count
+        run: |
+          count="$(find .next/server/app -type f -name '*.html' | wc -l | tr -d ' ')"
+          echo "Generated HTML files: $count"
+          test "$count" -ge 2585
+
+      - name: Build Cloudflare Worker with OpenNext
+        run: npx opennextjs-cloudflare build
+        env:
+          NEXT_PUBLIC_SITE_URL: https://sake-catalog-preview.invalid
+          SITEMAP_PHASE: "1"
+
+      - name: Start local Worker preview and smoke test
+        shell: bash
+        run: |
+          set -euo pipefail
+          npx wrangler dev --local --ip 127.0.0.1 --port 8787 > "$RUNNER_TEMP/wrangler-preview.log" 2>&1 &
+          preview_pid=$!
+          trap 'kill "$preview_pid" 2>/dev/null || true' EXIT
+          ready=0
+          for attempt in $(seq 1 45); do
+            if curl --silent --fail http://127.0.0.1:8787/ -o "$RUNNER_TEMP/home.html"; then
+              ready=1
+              break
+            fi
+            sleep 2
+          done
+          if [ "$ready" -ne 1 ]; then
+            cat "$RUNNER_TEMP/wrangler-preview.log"
+            exit 1
+          fi
+          grep -q "雫 SAKE SELECT" "$RUNNER_TEMP/home.html"
+          curl --silent --show-error --fail http://127.0.0.1:8787/api/sakes/search-index -o "$RUNNER_TEMP/search-index.json"
+          node -e "const d=require(process.argv[1]); if(!Array.isArray(d)) process.exit(1); console.log('Search index items:', d.length)" "$RUNNER_TEMP/search-index.json"
+
+      - name: Save migration patch for review
+        if: always()
+        run: git diff --binary HEAD > "$RUNNER_TEMP/cloudflare-next15-codemod.patch"
+
+      - name: Upload migration patch
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cloudflare-next15-codemod-patch
+          path: ${{ runner.temp }}/cloudflare-next15-codemod.patch
+          if-no-files-found: error
+          retention-days: 7
