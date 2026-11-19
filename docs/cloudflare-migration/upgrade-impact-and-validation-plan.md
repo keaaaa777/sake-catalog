@@ -1,175 +1,154 @@
 # Cloudflare移行: Next.js・Reactアップグレード影響調査と検証計画
 
 - 調査日: 2026-11-17 (JST)
-- 対象: keaaaa777/sake-catalog の cloudflare-migration ブランチ
-- 状態: 調査・計画のみ。Next.js/React更新、アプリ本体編集、デプロイは未実施。
+- 検証更新日: 2026-11-19 (JST)
+- 対象調査ブランチ: `cloudflare-migration`
+- 実装・検証ブランチ: `cloudflare-next15-opennext-validation`（隔離）
+- 状態: Next.js 15 + React 19 + OpenNextの隔離検証はCIビルドまで成功。アプリ機能全体の受入確認とCloudflareホスト上のpreview、本番移行は未実施。
 - 本番: Vercel運用中。変更しない。
 
 ## 1. 結論
 
-**推奨する段階移行先は Next.js 15.5.x（OpenNext Cloudflareが許容する最新のセキュリティ修正済みpatch）+ React/React DOM 19 + OpenNext Cloudflare** とする。検証開始時にOpenNextが指定する最低Next.js patchとReactの安全なpatchを確認し、lockfileに固定する。
+**安全な次段階の候補は Next.js 15.5.29 + React/React DOM 19.3.1 + OpenNext Cloudflare 1.20.17** とする。検証用ブランチで依存更新、Next.js非同期API変換、通常build、OpenNext build、ローカルWorker smoke testまで通過した。
+
+これは `cloudflare-migration` や `main` への統合、Cloudflareへの公開、本番切替の承認を意味しない。検証ブランチの変更をレビューし、残っている機能確認を終えた後に次段階を判断する。
 
 理由:
 1. 既存アプリはNext.js App Routerで、Next.js 15ではReact 19が前提となる。
-2. OpenNext Cloudflareの現行サポートはNext.js 15の最新minorと16。Next.js 14はEOLかつ非サポート。
-3. OpenNextはNext.jsのbuild成果物をCloudflare Workers向けに変換するため、Next APIを再実装するvinextより既存アプリとの互換性を優先できる。
-4. まずNext.js 15で検証すれば、Next.js 16の追加変更を同時に抱えず差分を限定できる。
-5. vinextはReact/React DOM/react-server-dom-webpack 19.3.1以上、Vite 8系をpeer dependencyとして要求するbetaの別実装。Next.js 14/React 18との組合せは採用しない。
-
-これは実装承認ではない。メジャー更新は別の隔離ブランチで承認後に行う。
+2. OpenNext Cloudflareを使うと既存Nextアプリ構造を保ってWorkers向けbuildへ変換できる。今回、実際にOpenNext buildとローカルWorker起動を確認できた。
+3. Next.js 15を先に安定させることで、16の追加変更を同時に抱えず移行差分を限定できる。
+4. vinextはbetaの別実装であり、初回移行ではadapter差とNext互換差を重ねない。
 
 ## 2. 現状と問題点
 
 ### 依存関係
 
-| 項目 | 現在の宣言・確認値 |
+| 項目 | `cloudflare-migration` 基準 | 検証ブランチ |
+|---|---|---|
+| Next.js | 14.2.35 | 15.5.29 |
+| React / React DOM | 18系（lock上18.3.1） | 19.3.1 |
+| eslint-config-next | 14.2.5 | 15.5.29 |
+| @types/react / @types/react-dom | 18系 | 19.3.0 |
+| @opennextjs/cloudflare | 未導入 | 1.20.17 |
+| Wrangler | 未導入 | 4.165.0 |
+| Supabase JS | 2.x | 既存rangeを維持 |
+| Node.js | CI基準22 | CI 22 |
+
+検証ブランチでは通常のpeer dependency解決を使い、`--force`や`--legacy-peer-deps`は使っていない。Vercel本番と元の`cloudflare-migration`ブランチは変更していない。
+
+### 検証結果
+
+CI run [44510052275](https://github.com/keaaaa777/sake-catalog/actions/runs/44510052275) は成功。
+
+- `npm ci`、データ/SEO検証、Lint、TypeScript: 成功
+- Next.js build: 成功。静的ページ **2,585件** を生成
+- OpenNext Cloudflare build: 成功
+- ローカルWrangler Worker smoke test: トップページHTTP 200、検索インデックスAPIがJSON配列 **997件**
+- 検証済みコード: `cloudflare-next15-opennext-validation` ブランチ、commit `36d966bb346cc187d63a4c92688f5949700d4f94`
+
+これらはframework/buildと2つのrouteの最小動作確認であり、機能全体の受入試験ではない。
+
+### アプリ機能への影響・残りの確認
+
+| 機能 | 実装・影響と次の確認 |
 |---|---|
-| Next.js | package.json固定 14.2.35 |
-| React / React DOM | package.json ^18。直近CIのlock解決は18.3.1 |
-| eslint-config-next | 14.2.5。Next.js本体より古いため更新時に揃える |
-| @types/react / @types/react-dom | ^18 |
-| TypeScript | ^5 |
-| Supabase JS | ^2.45.4。現行CIのNode 22でquality/build成功。直近インストール時の最新解決版はNode >=22を要求 |
-| @vercel/analytics | ^2.0.1。Cloudflareで計測が継続するか検証し、GA4等との二重計測を避ける |
-| lucide-react | ^0.400.0 |
-| zustand | ^4.5.4 |
-| Tailwind CSS | ^3.4.1 |
-| Wrangler / OpenNext | 未導入 |
-| vinext | アプリ依存には未導入。CIの互換チェックは成功 |
-
-直近のNext.js 14通常ビルドはNode 22で成功し、静的ページ2,585件を生成。データ/SEO/Lint/TypeScript品質チェックも成功。ただしCloudflare向けbuildは未成功であり、Next.js build成功はWorkers互換性を保証しない。
-
-### アプリ機能への影響
-
-| 機能 | 実装・影響と確認事項 |
-|---|---|
-| 静的ページ2,585件 | App Router各所にgenerateStaticParams、revalidate=86400等。Next 15で同数生成できるか、OpenNext変換後のroute manifest、Workerサイズを確認。全個別URLのHTTP statusを検査 |
-| 日本酒検索 | app/(content)/search/SearchClient.tsx。useSearchParams、URL query同期、クライアント側絞り込み。初回ロード、絞込み、並び替え、30件表示、URL復元を確認 |
-| 検索インデックスAPI | app/api/sakes/search-index/route.ts。銘柄データをJSONにして24h再検証。件数・JSON shape・日本語正規化・Cache-Controlを確認 |
-| 楽天等転送API | app/api/out/[slug]/[mall]/route.ts。force-dynamic、302、previewでは購入先への実転送を防止。Next 15の非同期params対応、未知slug/mall/offer、Location、no-storeを確認 |
-| クリック記録 | lib/affiliateLog.tsがSupabase anon keyでinsert。未設定/失敗でもredirectを壊さない。Workers env/RLS/通信失敗時も302を確認。Service Role keyは使わない |
-| Sitemap/robots | app/sitemap.ts、app/robots.ts。NEXT_PUBLIC_SITE_URL、SITEMAP_PHASE、contact emailで出力が変わる。preview URLをcanonicalに誤使用しない |
-| Metadata/構造化データ | Metadata、canonical、alternate、Organization/Article/Breadcrumb JSON-LD、next/og。主要routeのhead、hreflang、JSON-LD、OG imageを比較 |
-| 動的ルート | 銘柄、蔵、都道府県、guide、pairing、scene、type、classification、diagnosis result等。generateMetadata/paramsを含む各routeでNext 15のPromise params対応を調査。Next 16で同期互換は撤去 |
-| 画像 | next.config.mjsに楽天thumbnail remotePatterns。確認済みProductOfferCardのnext/imageはunoptimized、SakeThumbはCSS background。画像最適化サーバーへの依存を全件確認。OG PNGもpreview検査 |
-| 環境変数/外部連携 | .env.example: Supabase、楽天、GA4、site URL/contact、SITEMAP_PHASE。NEXT_PUBLIC値はbuild時、private値はWorkers secretsに分離。楽天データ収集API鍵はサイトruntimeに不要 |
-| Vercel依存 | @vercel/analyticsとVercel環境名を想定したproduction判定がある。Vercel本番を残してCloudflare previewも安全に判定し、previewではアフィリエイト転送を無効にする |
-| データ/asset量 | 2,585ページと銘柄データを生成。build時間、Worker gzipサイズ、assets、Free plan制限を測定 |
-
-### 破壊的変更の要点
-
-**Next.js 14 → 15**
-- App RouterはReact/React DOM 19が最低要件。
-- params、searchParams、cookies、headers、draftMode等のDynamic APIが非同期化。移行期間の同期互換を前提にせずawaitへ変更。
-- fetch、GET Route Handler、Client Router Cacheの既定キャッシュ挙動が変更。revalidateとCache-Controlを回帰確認。
-- generateMetadata、route context、OG/icon/apple-iconを含めparams使用箇所を調査。
-
-**Next.js 15 → 16**
-- 同期Request API互換が撤去。
-- Turbopackがdev/buildで既定化。既存 scripts にwebpack指定はないが、pluginがwebpack設定を注入していないか確認。
-- next lint CLI廃止。現在lint scriptの next lint をESLint CLIへ移行。
-- middleware規約のproxy移行/非推奨化。対象ファイルを再検索。
-- next/imageのlocal query設定、minimumCacheTTL既定変更を確認。
-- Node.js最低20.9。CI/Workers buildは22を推奨。
-
-**React 18 → 19**
-- 新JSX transformが必要。
-- function componentのdefaultProps/propTypes、element.ref、useRef()の初期値などAPI/型の変更を調査。
-- @types/reactと@types/react-domも19系へ揃える。
-- React internals依存を検索し、codemod後に型/ビルド/browser動作を確認。
-- React 18継続はNext 15 Pages Routerのケースがあるが、今回のApp Routerでは回避策にしない。
+| 静的ページ2,585件 | Next buildで件数を再確認済み。全URLのHTTP status/HTMLとOpenNextのroute mappingは未確認 |
+| 日本酒検索 | `app/(content)/search/SearchClient.tsx`。検索APIは997件を返した。実ブラウザで絞込み、並替、30件表示、URL query復元を確認 |
+| 検索インデックスAPI | ローカルWorkerからJSON arrayを確認。Cache-Control、shape、文字種/正規化、失敗応答は未確認 |
+| 楽天等転送API | `app/api/out/[slug]/[mall]/route.ts`。非同期params変換を含む。previewで外部購入先へ転送しないこと、302/Location/no-store、未知値を確認 |
+| クリック記録 | `lib/affiliateLog.ts`。Supabase未設定/成功/失敗でも転送応答を壊さないこと、RLSを確認 |
+| Sitemap/robots | `app/sitemap.ts`、`app/robots.ts`。preview hostやproduction canonical漏れがないか確認 |
+| Metadata/構造化データ | 代表ページのcanonical、alternate、JSON-LD、OG/Twitterを比較 |
+| 動的ルート | 主要routeのparamsはcodemod済み。未知slug、not-found、metadata/OG画像を確認 |
+| 画像 | ローカルWorkerで代表的な楽天画像、CSS背景、OG imageを確認。Next image optimizer有無も評価 |
+| 環境変数/外部連携 | buildではpreview URLを使った。Cloudflare binding/secretは未登録。Supabase、楽天、GA4をpreview用に分離する |
+| Vercel依存 | Vercel Analytics/production判定を確認し、previewでも本番動作にならないことを確認 |
 
 ## 3. Cloudflare方式比較
 
-| 方法 | 現行公式サポート | 互換性/既存機能 | 難易度・保守 | コスト/評価 |
-|---|---|---|---|---|
-| **Next 15.5.x + React 19 + OpenNext** | Next 15最新minorをサポート | Next build成果物変換。App Router、SSG/SSR、Route Handlers、ISR等を広くサポート。既存Nextに近い | 中。Next APIを維持しadapter差を検証 | Free範囲で開始可。**推奨** |
-| Next 15.5.x + React 19.3.1+ + vinext | Next API互換を標榜するがbeta/活発開発 | Next outputを使わずViteでNext APIを再実装。long-tail差あり。React 18不可 | 高。upstream変更追跡負担 | Free範囲可。OpenNext後の比較候補 |
-| **Next 16.x + React 19 + OpenNext** | Next 16全minor/patchをサポート。adapterが指定するsecurity floor必須 | 長期候補だが15→16追加変更と既存移行が重なる | 高。supportは良いが追加修正多い | Free範囲可。15安定化後に評価 |
-| Next 16.x + React 19.3.1+ + vinext | Workers向け経路だがvinextはbeta | Next 16 API差とvinext差を両方検証 | 非常に高 | Free範囲可。初回移行に不向き |
-| OpenNext + Next 14.2.35 | 現行OpenNextではNext 14非サポート/EOL | 旧リリース対応資料は現行supportではない | 高/低保守 | 不採用 |
-| Next static export + Cloudflare Pages | 静的export向け公式方法 | 2,585 HTMLは候補だが動的転送API、検索API、クリックログは別Worker等へ移設。画像最適化にも制約 | 中〜高 | 静的配信は低コスト。API分離を望む場合の代替 |
-| @cloudflare/next-on-pages | 現行案内はWorkers/OpenNext/vinextが中心。Edge runtime限定 | 現行Node/API機能が合わない可能性 | 高/低保守 | 不採用 |
+| 方法 | サポート・互換性 | 難易度・保守性 | 既存機能への影響 |
+|---|---|---|---|
+| **Next 15.5 + React 19 + OpenNext** | OpenNext adapter経路。今回buildとローカルWorker起動成功 | 中。Next APIを保ち、Workers固有差を検証 | 2,585件SSGと検索index routeはbuild/smoke確認。全route/API受入は残る |
+| Next 15 + React 19 + vinext | ViteでNext API互換を実装するbeta | 高。OpenNextとは異なる実行/互換性を追う | 長いtailの挙動を別途比較する必要 |
+| Next 16 + React 19 + OpenNext | 将来候補。16固有の変更も加わる | 15安定後に評価するのが保守的 | 追加のlint、routing、cache等の回帰範囲が増える |
+| Next 16 + React 19 + vinext | beta adapterと新しいNext APIの両方を検証 | 非常に高 | 初回移行の切り分けが難しい |
+| Static export + Cloudflare Pages + 別Worker API | 静的配信の公式経路 | 中〜高。API分離が必要 | 転送、検索API、クリック記録を別実装にする |
+| Next 14をOpenNextで維持 | 現行公式support対象外/EOLのため不採用 | 高・保守困難 | 互換を強制する方法は採用しない |
 
-## 4. 更新するパッケージ
+## 4. 更新対象・変更内容
 
-| パッケージ | 必要な対応 |
-|---|---|
-| next | 14.2.35からOpenNextのpeer範囲内かつセキュリティ修正済みNext 15.5.xへ固定 |
-| react / react-dom | 18からNext 15 App Routerと整合するReact 19 patchへ |
-| eslint-config-next | 14.2.5からNext本体と同じ15.5.xへ |
-| @types/react / @types/react-dom | 18から19へ。型エラー修正 |
-| @opennextjs/cloudflare | 新規追加。peer範囲と既知issueを固定versionで確認 |
-| wrangler | 新規devDependency。ローカルWorkers preview/型生成/将来deploy用 |
-| TypeScript / @types/node | 現状majorを維持可能か検査。Node runtimeを22へ |
-| @vercel/analytics | Cloudflareで継続可能か確認し、必要ならCloudflare Web Analytics/GA4へ別途置換 |
-| Supabase/Rakuten/GA等 | 一括upgradeしない。peer/engine/Workers互換性が必要なものだけ変更 |
+検証branchで実施した変更:
 
-## 5. 検証計画と順序
+- `next` 14.2.35 → 15.5.29
+- `react` / `react-dom` 18系 → 19.3.1
+- `eslint-config-next` → 15.5.29
+- `@types/react` / `@types/react-dom` → 19.3.0
+- `@opennextjs/cloudflare` 1.20.17、Wrangler 4.165.0を追加
+- Next.js async request API codemodを適用し、関連するparams利用を非同期化
+- OpenNext設定、Wrangler設定、local preview/typegen scriptsを追加
+- Next.js 14専用patch `patches/next+14.2.35.patch`を削除。Next 15のclean installと競合するため
+- Supabase、楽天、GA等のアプリ依存rangeは今回一括更新していない
 
-検証ブランチ案: cloudflare-next15-opennext-validation。親は作業時点のcloudflare-migration。mainおよびVercel本番に接続/変更せず、Cloudflare production branchにも設定しない。cloudflare-migrationは調査記録と現行基準として残す。以下はバージョン変更の承認後に開始する。
+主なレビュー対象: `package.json`、`package-lock.json`、`next.config.mjs`、`tsconfig.json`、`open-next.config.ts`、`wrangler.jsonc`、各App Router page/route内の`params`利用、`patches/`。
 
-### Phase 0: 基準値
-1. branch SHA、Node/npm、lockfile、quality/buildを記録。
-2. 2,585 route一覧、検索API JSON、sitemap件数、重要ページのmetadata/HTMLを保存。
-3. production secretsをlog/artifactへ出さない。
+## 5. 推奨する検証・移行手順
 
-### Phase 1: Next 15更新
-1. branch/worktreeに隔離。
-2. Next 15.5.x、React/DOM 19、type packages、eslint-config-nextを整合させる。OpenNext peer range/security floorを確認しlock。
-3. Next codemod適用後、params/searchParams等の非同期APIを更新。
-4. Vercel/Cloudflare preview production判定を分離。previewでは楽天実転送を無効維持。
-5. peer dependency無視なしでnpm ci成功を確認。
+### Phase 1: branch reviewと機能回帰
 
-### Phase 2: build
-- npm ci
-- npm run quality
-- npm run build (preview用NEXT_PUBLIC_SITE_URL、SITEMAP_PHASE=1)
-- opennextjs-cloudflare build
-- 公開せずローカル wrangler/OpenNext preview
-- 2,585 routes、Worker gzip size、assets size、manifest、build時間を記録
-- npm audit差分を調査。一括upgradeはしない
+1. 検証branchの差分を`cloudflare-migration`と比較してレビュー。
+2. 日本酒検索を実ブラウザで確認（検索語、かな、都道府県、味、価格、温度、料理、sort、ページング、URL復元）。
+3. 検索APIの件数、schema、cache header、エラー時挙動を確認。
+4. affiliate preview保護を先に確認し、Rakuten実転送が起きないことを確かめる。
+5. 転送APIの302/Location/no-store、未知slug/mall/offerを検査。
+6. Supabase設定なし/テスト設定あり/接続失敗それぞれでクリック記録とredirectを確認。production keyを使わない。
+7. sitemap/robots/canonical/metadata/JSON-LD/OG、代表的な動的routeと全2,585 URLを確認。
+8. 画像、スマホ主要画面、GA4/Vercel Analytics挙動を確認。
+9. Clean CIを再実行し、依存auditの差分を移行と分けて判断。
 
-### Phase 3: 回帰確認
-1. 2,585ページ生成数とroute patternsのstatus/HTML。
-2. 検索: index fetch、かな/文字/都道府県/味/価格/温度/料理、sort、30件表示、URL query復元。
-3. search-index API: response件数/shape/正規化/headers/error。
-4. affiliate route: slug/mall/offer/sourceの正常・異常、302 Location/no-store、preview転送停止。
-5. Supabase設定ありのinsert、未設定/失敗時もredirect継続、RLS確認。
-6. sitemap/robots/llms.txt host、canonical、production URL漏れ。
-7. metadata、hreflang、JSON-LD、OG/Twitter、OG画像。
-8. 日本語/英語の動的routes、未知slug/not-found。
-9. 楽天画像、unoptimized next/image、CSS画像、OG image。
-10. 診断/favorites/localStorage、GA4/Vercel Analytics、スマホ主要画面。
+### Phase 2: 非本番Cloudflare preview（別判断）
 
-### Phase 4: 非本番Cloudflare確認 (別承認)
-1. 無料枠内のnon-production Worker previewを用意。production branch/custom domain/DNSに触らない。
-2. SecretはCloudflare側で登録。GitHubへ保存しない。楽天データ取得用API鍵をruntimeへ渡さない。
-3. 固有workers.dev preview URLでsmoke testのみ。
-4. Free planの最新request/CPU/Worker gzip/assets/build/log limitsを公式表と実使用量で照合。
-5. affiliate domain approval、GA4/Search Console、広告表示/法的表示を確認。
+1. preview用のCloudflare Workerを作る。production branch、DNS、custom domainは指定しない。
+2. Cloudflare側に必要なpreview secrets/bindingsだけを登録し、GitHubには保存しない。
+3. 固有`workers.dev` URL上でsmoke/regression test。
+4. Free plan上限とWorker/assetサイズ、実際のrequest/CPUを照合。
+5. 問題時はpreview Workerだけ削除/停止。Vercelを維持。
 
-### Phase 5: 本番切替 (別承認)
-DNS、domain ownership、ASP承認、canonical/robots、Analytics、cache/rollbackを確認してから切替案を作成。今回の範囲外。
+### Phase 3: 本番切替（別途計画・別承認）
 
-## 6. ロールバック
+ドメイン、ASP審査、広告、canonical/Search Console、Analytics、cache、rollbackを整理してから実施。本番公開、DNS切替、Vercel変更は今回含めない。
 
-- 更新はCloudflare専用検証branchだけ。失敗時は検証branchを直前成功SHAへ戻す/破棄。cloudflare-migration、main、Vercelは維持。
-- Cloudflare preview失敗時はpreview停止のみでVercelへ影響なし。
-- 将来の本番切替時も旧Vercel deploymentを残し、DNS/routeを戻せる計画を別途作る。
-- DB schema/data変更を伴う場合はbackward-compatible migrationを別に設計。
-- credentials、Supabase service role、Cloudflare API tokenをGitHubに置かない。
+## 6. ビルド・確認方法
 
-## 7. 未解決事項
+検証branchのCIは以下を実行済み:
 
-1. @vercel/analyticsの導入箇所とCloudflare送信挙動を全コードで確認し、Vercel専用なら置換案を決める。
-2. params/searchParams全利用を更新branchで検索。全App Router page/route/metadata/OG/icon/apple iconが対象。
-3. next/image全利用を検索。確認済みProductOfferCardは楽天画像でunoptimized。
-4. CI dependency auditにmoderate/high/criticalが出た履歴あり。移行差分と分けて修正判断。
-5. Free planの最新上限値はpreview直前に確認。
-6. ASPにドメイン追加・再審査の要否を確認。
+```sh
+npm ci
+npm run quality
+npm run build
+npx opennextjs-cloudflare build
+npx wrangler dev --local --ip 127.0.0.1 --port 8787
+```
 
-## 8. 公式根拠
+静的件数をログの`Generating static pages (2585/2585)`で検査。ローカルWorkerはトップページと検索index APIでsmoke test。ユーザーシークレットはCIへ渡していない。
+
+## 7. ロールバック
+
+- 現状、変更は専用の検証branchに隔離。失敗時はbranchを直前成功SHAに戻すか、検証branchを破棄する。
+- `cloudflare-migration`、`main`、Vercel本番はそのまま維持。
+- 将来previewで問題が出たらpreview Workerだけ停止。
+- 将来の本番移行では旧Vercel deploymentを残し、DNS/routeの戻し方を別計画にする。
+- DB schema/data変更を含めず、Cloudflare secretsやSupabase service-role keyをGitHubに置かない。
+
+## 8. 未解決事項
+
+1. Affiliate redirect/analytics loggingの成功・失敗・未設定を確認する。
+2. 全検索操作を実ブラウザで確認する。
+3. 全2,585 URL、sitemap、metadata/JSON-LD、OG/画像を回帰確認する。
+4. Cloudflare preview用secrets/bindingsを決め、Freeプラン上限を実構成と照合する。
+5. ASPのドメイン追加/再審査条件、広告表示と法的表示を確認する。
+6. `@vercel/analytics`とproduction判定のCloudflare preview上の挙動を確定する。
+
+## 9. 公式根拠
 
 - Next 15 upgrade: https://nextjs.org/docs/app/guides/upgrading/version-15
 - Next 16 upgrade: https://nextjs.org/docs/app/guides/upgrading/version-16
@@ -181,10 +160,13 @@ DNS、domain ownership、ASP承認、canonical/robots、Analytics、cache/rollba
 - vinext repository: https://github.com/cloudflare/vinext
 - Pages static Next export: https://developers.cloudflare.com/pages/framework-guides/nextjs/deploy-a-static-nextjs-site/
 
-## 9. 作業履歴
+## 10. 作業履歴
 
 | 日付 | 内容 | 結果 |
 |---|---|---|
-| 2026-11-17 | cloudflare-migrationのpackage.json/lock/env/Next config/主要route・検索・metadataをread-only調査 | Next 14.2.35、React 18系、App Router、2,585ページ基準を確認 |
-| 2026-11-17 | Next 15/16、React 19、OpenNext、vinext、Pages static exportの公式情報比較 | Next 15 + React 19 + OpenNextを先行検証候補として推奨 |
-| 2026-11-17 | 本文書作成 | docsのみ。依存、アプリ、本番、main、デプロイ変更なし |
+| 2026-11-17 | `cloudflare-migration`の依存、環境変数、主要route/検索/metadataをread-only調査 | Next 14.2.35、React 18系、2,585ページ基準を確認 |
+| 2026-11-17 | Next 15/16、React 19、OpenNext、vinext、Pages static exportを比較 | Next 15 + React 19 + OpenNextを先行検証案として推奨 |
+| 2026-11-17 | 調査計画を作成 | docsのみ。実装は未実施 |
+| 2026-11-19 | `cloudflare-next15-opennext-validation`を作成し候補更新を実施 | 調査ブランチとmain/Vercelは変更なし |
+| 2026-11-19 | quality、2,585ページNext build、OpenNext build、Wrangler local smoke testを実行 | CI成功。home 200、search index 997件 |
+| 2026-11-19 | 検証済み差分を隔離branchにcommit | `36d966bb346cc187d63a4c92688f5949700d4f94`。Cloudflareへのdeployなし |
