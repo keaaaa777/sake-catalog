@@ -49,6 +49,7 @@ jobs:
           for entry in '/.open-next/' '/.wrangler/' '.dev.vars*'; do
             grep -Fxq "$entry" .gitignore || echo "$entry" >> .gitignore
           done
+          rm patches/next+14.2.35.patch
           npm install --package-lock-only --ignore-scripts --no-audit --no-fund
           npm ci
 
