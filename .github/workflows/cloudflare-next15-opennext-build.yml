@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - cloudflare-next15-opennext-validation
+    paths-ignore:
+      - 'docs/**'
+      - 'CLOUDFLARE_NEXT15_VALIDATION.md'
   workflow_dispatch:
 
 permissions:
@@ -52,7 +55,7 @@ jobs:
           for entry in '/.open-next/' '/.wrangler/' '.dev.vars*'; do
             grep -Fxq "$entry" .gitignore || echo "$entry" >> .gitignore
           done
-          rm patches/next+14.2.35.patch
+          rm -f patches/next+14.2.35.patch
           npm install --package-lock-only --ignore-scripts --no-audit --no-fund
           npm ci
 
@@ -116,7 +119,6 @@ jobs:
           if-no-files-found: error
           retention-days: 7
 
-
   save-validated-changes:
     needs: migrate-and-build
     if: needs.migrate-and-build.result == 'success'
@@ -137,6 +139,10 @@ jobs:
 
       - name: Commit tested dependencies and codemod changes
         run: |
+          if [ ! -s cloudflare-next15-codemod.patch ]; then
+            echo "No migration changes to commit"
+            exit 0
+          fi
           git apply --index cloudflare-next15-codemod.patch
           git diff --cached --check
           git config user.name "github-actions[bot]"
