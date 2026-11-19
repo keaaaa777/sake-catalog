@@ -33,6 +33,9 @@ jobs:
       - name: Install current locked dependencies
         run: npm ci
 
+      - name: Migrate Next.js async request APIs
+        run: npx --yes @next/codemod@canary next-async-request-api .
+
       - name: Apply candidate dependencies in the validation checkout
         run: |
           npm pkg set \
@@ -55,9 +58,6 @@ jobs:
 
       - name: Confirm clean resolved dependency tree
         run: npm ls next react react-dom eslint-config-next @types/react @types/react-dom @opennextjs/cloudflare wrangler --depth=0
-
-      - name: Migrate Next.js async request APIs
-        run: npx --yes @next/codemod@canary next-async-request-api .
 
       - name: Run quality checks
         run: npm run quality
