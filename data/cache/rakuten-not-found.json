@@ -1,5 +1,5 @@
 {
-  "sourceFetchedAt": "2026-11-15T22:15:56.291Z",
+  "sourceFetchedAt": "2026-11-22T22:56:48.680Z",
   "count": 40,
   "sakes": [
     {
@@ -36,6 +36,12 @@
       "id": "169",
       "slug": "izumibashi-tombo-junmai-daiginjo",
       "name": "いづみ橋 純米大吟醸 とんぼラベル 山田錦",
+      "classification": "純米大吟醸"
+    },
+    {
+      "id": "217",
+      "slug": "tedorigawa-junmai-daiginjo",
+      "name": "手取川 純米大吟醸 白山市産山田錦",
       "classification": "純米大吟醸"
     },
     {
@@ -187,12 +193,6 @@
       "slug": "ishikawa-okunotonoshiragiku-tokubetsujunmai",
       "name": "奥能登の白菊 特別純米酒",
       "classification": "特別純米酒"
-    },
-    {
-      "id": "615",
-      "slug": "tochigi-daina-chokarakuchi-junmai",
-      "name": "大那 超辛口純米 五百万石",
-      "classification": "純米酒"
     },
     {
       "id": "617",

@@ -2,34 +2,6 @@
 
 自動採用の確信が持てなかった銘柄です。候補を確認し、適切なURLを affiliate.rakuten (rakutenの場合はdata/cache/sake-offers.jsonも)に手動で反映してください。
 
-## 久保田 萬寿 純米大吟醸 (kubota-manju-junmai-daiginjo)
-
-- [needs_review] 【製造2026年7月以降】久保田　萬寿〔純米大吟醸〕720ml〔化粧箱付〕まんじゅ【□】【冷1】　御歳暮・包装無料・ — 4580円 — ビッグリカーズ
-  https://hb.afl.rakuten.co.jp/hgc/g00q6bhn.sgrg24c0.g00q6bhn.sgrg3257/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-liquors%2F1495768%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-liquors%2Fi%2F10000231%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 久保田 萬寿（くぼた まんじゅ）純米大吟醸 720ml【日本酒】【新潟／朝日酒造】KUBOTA — 4950円 — 虎の門 升本
-  https://hb.afl.rakuten.co.jp/hgc/g00ric0n.sgrg24fa.g00ric0n.sgrg3b2f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftoranomonnmasumoto%2F887%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftoranomonnmasumoto%2Fi%2F10000330%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 【ふるさと納税】日本酒 久保田 萬寿 純米大吟醸酒 720ml 1800ml 選べる 四合瓶 一升瓶 辛口 新潟 定期便 久保田 萬寿（純米大吟醸）越路 — 19000円 — 新潟県長岡市
-  https://hb.afl.rakuten.co.jp/hgc/g00snxen.sgrg26ac.g00snxen.sgrg3eec/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff152021-nagaoka%2F1h-072%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff152021-nagaoka%2Fi%2F10000299%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 【ふるさと納税】『久保田　萬寿』720ml×3本セット | お酒 さけ 人気 おすすめ 送料無料 ギフト — 53000円 — 新潟県
-  https://hb.afl.rakuten.co.jp/hgc/g00u01un.sgrg26f3.g00u01un.sgrg3781/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff150002-niigata%2Fdw020%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff150002-niigata%2Fi%2F10001386%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 【 2026年10月詰 】 純米大吟醸 久保田 萬寿 1800ml　720ml 万寿 萬壽 日本酒 朝日酒造 長岡市 新潟 日本酒 化粧箱付き 手提げ袋 正規特約店　高級 ギフト おすすめ 贈答 お祝い 父の日 お歳暮 誕生日 — 6212円 — えちごせきかわ丸重商店
-  https://hb.afl.rakuten.co.jp/hgc/g00uj2cn.sgrg2dd9.g00uj2cn.sgrg34a3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsekikawa-marushige%2Fkubota-man18%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsekikawa-marushige%2Fi%2F10000009%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 【正規販売店】久保田 純米大吟醸 萬寿 720ml 新潟県 朝日酒造 日本酒 化粧箱入り コンビニ受取対応商品 本州のみ送料無料 お酒 お歳暮 プレゼント — 5500円 — 酒楽SHOP
-  https://hb.afl.rakuten.co.jp/hgc/g00rki5n.sgrg2708.g00rki5n.sgrg344a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsyuraku-shop%2F5783%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsyuraku-shop%2Fi%2F10004228%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 【お歳暮】久保田　萬壽(まんじゅ)純米大吟醸専用カートン箱入【母の日】【父の日】【お中元】【敬老の日】720ml — 4950円 — Area Pro Shop 酒のはしだ
-  https://hb.afl.rakuten.co.jp/hgc/g00qrq2n.sgrg2892.g00qrq2n.sgrg343a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsake-hashida%2Fkubota-manjyu720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsake-hashida%2Fi%2F10000479%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 【正規販売店】ギフト対応 久保田 萬寿 純米大吟醸 720ml 四合瓶 朝日酒造 新潟県産 日本酒 お歳暮 御歳暮 冬ギフト 高級日本酒 退職祝い 内祝い 誕生日 お祝い プレゼント 贈り物 日本酒セット 還暦祝い 有名 人気 お酒 — 5500円 — 緑屋酒店
-  https://hb.afl.rakuten.co.jp/hgc/g00un1hn.sgrg2211.g00un1hn.sgrg303e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmidoriyasake%2Fmidoriya0046%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmidoriyasake%2Fi%2F10000129%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 【 2026-10月15日入荷分 】 久保田 萬寿 720ml 2本セット 純米大吟醸 万寿 萬 朝日酒造 KUBOTA SAKE 日本酒 — 10950円 — えちごせきかわ丸重商店
-  https://hb.afl.rakuten.co.jp/hgc/g00uj2cn.sgrg2dd9.g00uj2cn.sgrg34a3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsekikawa-marushige%2Fasa41%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsekikawa-marushige%2Fi%2F10000056%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 久保田 萬寿 （純米大吟醸酒）　720ml （化粧箱入）【クール配送をご希望の場合はクール便をご指定ください】【新潟県長岡市 朝日酒造】 — 4950円 — 酒天美禄 いとう酒店
-  https://hb.afl.rakuten.co.jp/hgc/g00pst9n.sgrg233b.g00pst9n.sgrg3421/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fitosaketen%2F10002406%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fitosaketen%2Fi%2F10002406%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-
-## 手取川 純米大吟醸 白山市産山田錦 (tedorigawa-junmai-daiginjo)
-
-- [needs_review] 醸す白山　手取川　純米大吟醸　【石川限定酒】720ml専用箱入 — 3850円 — 金沢の地酒ショップ カガヤ酒店
-  https://hb.afl.rakuten.co.jp/hgc/g00q22an.sgrg2fc5.g00q22an.sgrg3bf4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkagaya%2Ftedori-kamosi%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkagaya%2Fi%2F10005225%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-
 ## 秋鹿 純米吟醸 歌垣 (akishika-junmai-ginjo-utagaki)
 
 - [reject] 【ふるさと納税】【飲み比べセット】 《純米大吟醸45》 秋鹿 《純米大吟醸》 剣美 《純米吟醸》 歌垣 3本 セット (720ml×各1本) | 秋鹿酒造株式会社 | お酒 日本酒 純米大吟醸 秋鹿 お取り寄せ 飲み比べ セット 酒 国産 地酒 晩酌 蔵元直送 ギフト | 大阪府 能勢町 送料無料 — 39000円 — 大阪府能勢町
@@ -52,6 +24,8 @@
   https://hb.afl.rakuten.co.jp/hgc/g00tqvbn.sgrg25f3.g00tqvbn.sgrg34c6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsagamarche%2F100675%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsagamarche%2Fi%2F10002657%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 【ふるさと納税】鹿島のうまか酒飲み比べ　純米吟醸5本＋おまかせ1本 合計6本 720ml×6本 日本酒 お酒 光武 幸姫 君恩 肥前蔵心 能古見 冷蔵 飲み比べ お取り寄せ 九州 佐賀県 鹿島市 送料無料 E-28 — 47000円 — 佐賀県鹿島市
   https://hb.afl.rakuten.co.jp/hgc/g00t3jfn.sgrg2b2f.g00t3jfn.sgrg3313/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff412074-kashima%2Fe-28%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff412074-kashima%2Fi%2F10000176%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [reject] 【ふるさと納税】酒処 鹿島 馬場酒造 能古見 JOKER 純米吟醸中取り （1年熟成） 720ml ×2本 希少 限定酒 酒 日本酒 アルコール 送料無料 B-243 — 19000円 — 佐賀県鹿島市
+  https://hb.afl.rakuten.co.jp/hgc/g00t3jfn.sgrg2b2f.g00t3jfn.sgrg3313/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff412074-kashima%2Fb-243%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff412074-kashima%2Fi%2F10000871%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 【ふるさと納税】★5.0 鹿島の酒『能古見』純米吟醸・特別純米 セット 詰め合わせ 飲み比べ 純米吟醸 特別純米 720m×2本 日本酒 能古見 お酒 酒 アルコール 九州 佐賀県 鹿島市 馬場酒造場 送料無料 ギフト 手土産 B-193 — 18000円 — 佐賀県鹿島市
   https://hb.afl.rakuten.co.jp/hgc/g00t3jfn.sgrg2b2f.g00t3jfn.sgrg3313/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff412074-kashima%2Fb-193%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff412074-kashima%2Fi%2F10000314%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 【ふるさと納税】鹿島の酒『能古見』辛口2本セット（純米吟醸辛口・純米辛口） 詰め合わせ 飲み比べ 純米吟醸 裏純米吟醸 純米 720m×2本 日本酒 能古見 お酒 酒 アルコール 九州 佐賀県 鹿島市 馬場酒造場 送料無料 ギフト 手土産 B-194 — 18000円 — 佐賀県鹿島市
@@ -60,8 +34,6 @@
   https://hb.afl.rakuten.co.jp/hgc/g00uhwsn.sgrg2a8c.g00uhwsn.sgrg38e5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff410004-saga%2F41agab002%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff410004-saga%2Fi%2F10001912%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 【ふるさと納税】「かしまの日本酒&焼酎セット」コース2「能古見」 日本酒 芋焼酎 720ml×2本 セット 詰め合わせ 純米吟醸酒 焼酎 お酒 酒 アルコール 魔界への誘い 能古見 佐賀県 鹿島市 送料無料 B-56 — 16000円 — 佐賀県鹿島市
   https://hb.afl.rakuten.co.jp/hgc/g00t3jfn.sgrg2b2f.g00t3jfn.sgrg3313/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff412074-kashima%2Fb-56%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff412074-kashima%2Fi%2F10000243%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] NOGOMI ARATA 馬場酒造場 2026 720ml~1800ml 能古見 日本酒 純米大吟醸 冷卸 秋上がり 秋酒 季節限定 720ml~1800ml 敬老の日 — 2310円 — 池野酒店
-  https://hb.afl.rakuten.co.jp/hgc/g00tqqfn.sgrg20a5.g00tqqfn.sgrg3d73/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fikenosaketen%2F4948472020149%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fikenosaketen%2Fi%2F10003240%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 【ふるさと納税】かしまの地酒晩酌セット〈コース2「能古見」〉｜純米吟醸720ml×おつまみ2種（海茸粕漬・有明海苔）佐賀の地酒＆ご当地つまみ 地酒 酒蔵 アルコール 酒 飲料 ギフト 贈り物 贈答 手土産 お取り寄せ セット 佐賀県 鹿島市 人気 B-51 — 14000円 — 佐賀県鹿島市
   https://hb.afl.rakuten.co.jp/hgc/g00t3jfn.sgrg2b2f.g00t3jfn.sgrg3313/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff412074-kashima%2Fb-51%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff412074-kashima%2Fi%2F10000249%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 【ふるさと納税】《豪華定期便》 金賞受賞 地酒 岩の蔵 宮の松 能古見 東一 炎杜 720ml×2本×3回 【佐嘉蔵屋】純米大吟醸 純米吟醸 特別純米酒 純米酒 レア酒 限定 | 70000円以内 7万円以内 | dj050 — 70000円 — 佐賀県有田町
@@ -111,8 +83,12 @@
 
 ## 廣戸川 純米吟醸 (fukushima-hirotogawa-junginjo)
 
-- [needs_review] 廣戸川　特別純米酒　火入　松崎酒造　720ml — 1870円 — 矢島酒店 楽天市場店
-  https://hb.afl.rakuten.co.jp/hgc/g00s8e6n.sgrg2c90.g00s8e6n.sgrg3108/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffukazawap-sake%2Fhirotogawa_tj_hi_720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffukazawap-sake%2Fi%2F10002172%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] 廣戸川 純米大吟醸 火入 720ml【化粧箱付】 — 3850円 — 増田屋本店
+  https://hb.afl.rakuten.co.jp/hgc/g00pm3kn.sgrg207f.g00pm3kn.sgrg3707/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmashidayahonten%2F237%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmashidayahonten%2Fi%2F10003863%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] 日本酒 廣戸川 純米大吟醸 720ml ≪数量限定≫ 福島県岩瀬郡 松崎酒造店 ひろとがわ — 3850円 — 酒の志筑屋 楽天市場店
+  https://hb.afl.rakuten.co.jp/hgc/g00rhp7n.sgrg276c.g00rhp7n.sgrg3227/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshidukuya%2Fhirotogawa014%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshidukuya%2Fi%2F10001756%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] 廣戸川 純米大吟醸 720ml 箱付 松崎酒造店 — 3850円 — はせがわ酒店
+  https://hb.afl.rakuten.co.jp/hgc/g00r8adn.sgrg2d3e.g00r8adn.sgrg34db/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhasegawasaketen%2F1015430%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhasegawasaketen%2Fi%2F10016765%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 
 ## 十六代九郎右衛門 生もと仕込み純米 (nagano-kurouemon-kimoto-junmai)
 
@@ -126,12 +102,19 @@
 
 ## 楽器正宗 純米酒 (fukushima-gakkimasamune-junmai)
 
-- [needs_review] 大木代吉本店 楽器正宗 純譲 純米酒 26年3月製造 720ml ■要冷蔵 — 2480円 — お酒のちゃがたパーク 楽天市場店
-  https://hb.afl.rakuten.co.jp/hgc/g00rqoyn.sgrg20de.g00rqoyn.sgrg353c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchagatapark%2F188962026%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchagatapark%2Fi%2F10073477%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 楽器正宗 Fuzzy Green 山田錦 特別純米酒 720ml 【要冷蔵・クール便推奨】 日本酒 冬 お歳暮 御歳暮 手土産 贈り物 プレゼント あす楽 ギフト のし 贈答品 お祝 御祝 誕生日 内祝 還暦祝い — 2860円 — 日本酒・焼酎 マイティ・リカーズ
   https://hb.afl.rakuten.co.jp/hgc/g00rrxbn.sgrg2ab2.g00rrxbn.sgrg3451/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmighty-liquors%2Fsa166155%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmighty-liquors%2Fi%2F10008981%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 楽器正宗 Fuzzy Green 出羽燦々 特別純米酒 720ml 【要冷蔵・クール便推奨】 日本酒 冬 お歳暮 御歳暮 手土産 贈り物 プレゼント あす楽 ギフト のし 贈答品 お祝 御祝 誕生日 内祝 還暦祝い — 2860円 — 日本酒・焼酎 マイティ・リカーズ
   https://hb.afl.rakuten.co.jp/hgc/g00rrxbn.sgrg2ab2.g00rrxbn.sgrg3451/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmighty-liquors%2Fsa166156%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmighty-liquors%2Fi%2F10008980%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] 【ブラックフライデー期間中エントリーでポイント10倍！】大木代吉本店 楽器正宗 純譲 純米酒 26年3月製造 720ml ■要冷蔵 — 2480円 — お酒のちゃがたパーク 楽天市場店
+  https://hb.afl.rakuten.co.jp/hgc/g00rqoyn.sgrg20de.g00rqoyn.sgrg353c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchagatapark%2F188962026%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchagatapark%2Fi%2F10073477%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+
+## 大那 超辛口純米 五百万石 (tochigi-daina-chokarakuchi-junmai)
+
+- [reject] 大那 ( だいな ) 超辛口純米 + 東洋美人 純米吟醸 大辛口 720ml × 2本セット【 3484 】【 贈答用箱付き日本酒セット 】【 送料無料 】【 お歳暮 クリスマス 贈り物 ギフト プレゼント 】 — 4650円 — 酒の番人 ヤマカワ
+  https://hb.afl.rakuten.co.jp/hgc/g00r750n.sgrg2589.g00r750n.sgrg310b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamasake%2F10005391%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamasake%2Fi%2F10005391%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [reject] 大那 ( だいな ) 超辛口純米 + 東洋美人 純米吟醸 大辛口 720ml × 2本セット【 3484 】【 贈答用箱付き日本酒セット 】【 お歳暮 クリスマス 贈り物 ギフト プレゼント 】 — 4650円 — ギフト専門 酒の番人YAMAKAWA
+  https://hb.afl.rakuten.co.jp/hgc/g00uyljn.sgrg222a.g00uyljn.sgrg3aa1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgiftyamakawa%2F10005391%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgiftyamakawa%2Fi%2F10003367%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 
 ## 玉川 純米吟醸 (kyoto-second-40)
 
@@ -139,45 +122,22 @@
   https://hb.afl.rakuten.co.jp/hgc/g00twgdn.sgrg206b.g00twgdn.sgrg39d1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkoshino-sakekura%2Fnt-91%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkoshino-sakekura%2Fi%2F10000131%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 【ハーパー杜氏の力作】玉川　純米吟醸「祝」2022BY　無濾過生原酒720mL木下酒造（京都府） — 2145円 — 米惣よしむら 楽天市場店
   https://hb.afl.rakuten.co.jp/hgc/g00riexn.sgrg2ad3.g00riexn.sgrg3e65/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-komesou%2Ftama_19062%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-komesou%2Fi%2F10001258%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] (産地直送)イットキー It's the key 純米吟醸酒 720ml 玉川酒造 日本酒 純米吟醸 甘口 ワイングラスで美味しい日本酒アワード最高金賞 甘酸っぱい新感覚の日本酒 女性にもおすすめ ホワイトデー プレゼント — 1950円 — 越後銘門酒会 新潟県の酒とグルメ
-  https://hb.afl.rakuten.co.jp/hgc/g00paqin.sgrg2f50.g00paqin.sgrg3b83/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fechigo%2F106931%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fechigo%2Fi%2F10006705%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] 玉川　純米吟醸　手つけず原酒　五百万石　生酒(11月27日以降より出荷予定) 日本酒 720ml — 2530円 — 佐野屋〜日本酒・ワイン通販専門店
+  https://hb.afl.rakuten.co.jp/hgc/g00sxsun.sgrg2c9b.g00sxsun.sgrg3ff8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsanoyajizake%2Fsake3000_720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsanoyajizake%2Fi%2F10000222%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 玉川 純米吟醸　福袋　無濾過生原酒　2025BY　720ml　　販売店限定品　日本酒　京都　京丹後市 — 2035円 — Let’s enjoy酒生活.酒文化 タナカ
   https://hb.afl.rakuten.co.jp/hgc/g00qk96n.sgrg20ad.g00qk96n.sgrg3455/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fenjoy-sake%2F10001581%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fenjoy-sake%2Fi%2F10001581%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [reject] 【ブラックフライデーポイント2倍】(産地直送)イットキー It's the key 純米吟醸酒 720ml 玉川酒造 日本酒 純米吟醸 甘口 ワイングラスで美味しい日本酒アワード最高金賞 甘酸っぱい新感覚の日本酒 女性にもおすすめ ホワイトデー プレゼント — 1950円 — 越後銘門酒会 新潟県の酒とグルメ
+  https://hb.afl.rakuten.co.jp/hgc/g00paqin.sgrg2f50.g00paqin.sgrg3b83/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fechigo%2F106931%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fechigo%2Fi%2F10006705%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] イットキー(I'ts the key) 純米吟醸 720ml 【玉川酒造】新潟県 魚沼市 清酒 日本酒 — 1950円 — 越乃酒蔵
+  https://hb.afl.rakuten.co.jp/hgc/g00twgdn.sgrg206b.g00twgdn.sgrg39d1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkoshino-sakekura%2Fnt-89%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkoshino-sakekura%2Fi%2F10000129%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 玉川【純米吟醸】「雄町」無濾過〔生原酒〕720ml — 1925円 — 酒浪漫うちやま 楽天市場店
   https://hb.afl.rakuten.co.jp/hgc/g00pnz4n.sgrg2595.g00pnz4n.sgrg31eb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsakeroman%2Ftamagawa_016%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsakeroman%2Fi%2F10001087%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 玉川酒造　純米吟醸　イットキ—　720ml — 1950円 — 魚沼の里 芳屋
   https://hb.afl.rakuten.co.jp/hgc/g00pqqgn.sgrg26cc.g00pqqgn.sgrg39d2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fuonuma%2F10003246%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fuonuma%2Fi%2F10003246%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 【ふるさと納税】日本酒 最高金賞受賞酒 純米吟醸 イットキー 720ml 3本 セット 詰め合わせ 甘口 純米吟醸酒 玉川酒造 お酒 酒 清酒 地酒 日本酒セット アルコール 金賞 受賞酒 金賞受賞酒 新潟県 新潟 魚沼市 — 14000円 — 新潟県魚沼市 ふるさと納税
-  https://hb.afl.rakuten.co.jp/hgc/g00txchn.sgrg2f1c.g00txchn.sgrg33d9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff152251-uonumashi%2F57620340%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff152251-uonumashi%2Fi%2F10000039%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 玉川【純米吟醸】「祝」手つけず原酒無濾過〔生原酒〕令和7年度醸造新酒　720ml — 2530円 — 酒浪漫うちやま 楽天市場店
-  https://hb.afl.rakuten.co.jp/hgc/g00pnz4n.sgrg2595.g00pnz4n.sgrg31eb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsakeroman%2Ftamagawa_0031%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsakeroman%2Fi%2F10002152%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] イットキー(I'ts the key) 純米吟醸 720ml 【玉川酒造】新潟県 魚沼市 清酒 日本酒 — 1950円 — 越乃酒蔵
-  https://hb.afl.rakuten.co.jp/hgc/g00twgdn.sgrg206b.g00twgdn.sgrg39d1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkoshino-sakekura%2Fnt-89%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkoshino-sakekura%2Fi%2F10000129%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 【ふるさと納税】【木下酒造】玉川 純米吟醸 祝 720ml 720ml 京都 お酒 酒 酒好き お酒好き プレゼント 敬老の日 誕生日 母の日 父の日 お祝い 手土産 お祝い アルコール 京都 丹後 地酒 日本酒 送料無料 — 10500円 — 京都府京丹後市
-  https://hb.afl.rakuten.co.jp/hgc/g00to7gn.sgrg232e.g00to7gn.sgrg3122/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff262129-kyotango%2F14609-item0235%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff262129-kyotango%2Fi%2F10000241%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-
-## 蓬莱泉 特別純米 (aichi-second-84)
-
-- [needs_review] 愛知県　関谷酒造　日本酒　蓬莱泉（ほうらいせん）　特別純米　可。®べし化粧箱なし　720ml★正規特約店 — 1595円 — 地酒・焼酎専門林屋酒店
-  https://hb.afl.rakuten.co.jp/hgc/g00qko4n.sgrg2511.g00qko4n.sgrg3d9d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-8848-jizake%2F4943666300304%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-8848-jizake%2Fi%2F10003334%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 蓬莱泉「可」 特別純米 720ml 愛知☆ — 1595円 — 酒のすぎた 楽天市場店
-  https://hb.afl.rakuten.co.jp/hgc/g00rvbhn.sgrg29d5.g00rvbhn.sgrg3fee/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsake-sugita%2F11430121389%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsake-sugita%2Fi%2F10001032%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 蓬莱泉 【可。（べし） 特別純米】：関谷醸造（300ml／720ml／1800ml）(箱なし)[お取り寄せ 日本酒 愛知県]【RCP】 — 700円 — 愛知三河の佃煮専門店 美食倶楽部
-  https://hb.afl.rakuten.co.jp/hgc/g00pro9n.sgrg2155.g00pro9n.sgrg351b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbisyoku%2Fal-0005%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbisyoku%2Fi%2F10001378%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 【ふるさと納税】日本酒 特別純米 辛口「可。」 720ml 1.8L 15％ お酒 酒 純米 純米酒 コメ 米 お米 アルコール おすすめ お取り寄せ プレゼント 贈答 贈り物 ご自宅用 宅飲み 愛知県 設楽町 可 関谷醸造 蓬莱泉 ほうらいせん 有名-129 — 5000円 — 愛知県設楽町
-  https://hb.afl.rakuten.co.jp/hgc/g00ul8vn.sgrg2307.g00ul8vn.sgrg344e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff235610-shitara%2F114129%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff235610-shitara%2Fi%2F10000089%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 愛知県　関谷酒造　日本酒　蓬莱泉（ほうらいせん）　人気の（美・和・可）3本セット（純米大吟醸・純米吟醸・特別純米）720ml★正規特約店 — 7590円 — 地酒・焼酎専門林屋酒店
-  https://hb.afl.rakuten.co.jp/hgc/g00qko4n.sgrg2511.g00qko4n.sgrg3d9d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-8848-jizake%2Fhouraisen-001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-8848-jizake%2Fi%2F10003342%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 蓬莱泉　夢筺（ゆめこばこ）特別純米ひやおろし　720ml【愛知県設楽町　関谷醸造】 — 1870円 — 酒専門店 知多繁 楽天市場店
-  https://hb.afl.rakuten.co.jp/hgc/g00qk4sn.sgrg20c2.g00qk4sn.sgrg35f4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-chitashige%2F5134840-2%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-chitashige%2Fi%2F10003735%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] ギフト プレゼント 蓬莱泉 純米酒 特別純米酒 飲み比べセット 霞月かすみづき と可べし 720ml 2本 詰合せ 専用ギフト箱入 愛知県 関谷醸造 一部地域送料無料 — 3900円 — おいしく飲呑会
-  https://hb.afl.rakuten.co.jp/hgc/g00rienn.sgrg2c43.g00rienn.sgrg393c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnondonkai%2F10008028%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnondonkai%2Fi%2F10008028%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 蓬莱泉　　可。　特別純米酒　720ml　【奥三河の人気の純米酒】 — 1595円 — えんしゅうや酒店
-  https://hb.afl.rakuten.co.jp/hgc/g00rhiin.sgrg2cd2.g00rhiin.sgrg341c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fensyuyasaketen%2Fhourai009%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fensyuyasaketen%2Fi%2F10000226%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 関谷醸造 蓬莱泉 可。 べし 特別純米 720ml 日本酒 — 1710円 — サカツコーポレーション楽天市場店
-  https://hb.afl.rakuten.co.jp/hgc/g00qtchn.sgrg2622.g00qtchn.sgrg330c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsakaz-r%2F10009447%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsakaz-r%2Fi%2F10009447%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 蓬莱泉　特別純米　新米新酒しぼりたて生酒　限定品　720ML (純米酒 日本酒 酒 引越し 挨拶 ギフト プレゼント 贈答品 お返し 還暦祝い 退職祝い 結婚祝い 新築祝い 内祝い 誕生日 お酒 お礼 出産祝い 誕生祝い 定年 父 男性 お返し 上司 お父さん 粗品 新酒) — 1595円 — 美酒蔵 はなたれ屋
-  https://hb.afl.rakuten.co.jp/hgc/g00tdmfn.sgrg206c.g00tdmfn.sgrg32dd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhanatareya%2F4112306%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhanatareya%2Fi%2F10000028%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [reject] 【ふるさと納税】【冬季限定】 日本酒 最高金賞受賞酒 純米吟醸 生酒 しぼりたて イットキー 720ml 3本 セット 純米吟醸酒 玉川酒造 フルーティー お酒 酒 清酒 地酒 日本酒セット 金賞 新潟県 新潟 魚沼市　年内配送　お届け：2026年11月上旬～2027年3月下旬 — 18000円 — 新潟県魚沼市 ふるさと納税
+  https://hb.afl.rakuten.co.jp/hgc/g00txchn.sgrg2f1c.g00txchn.sgrg33d9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff152251-uonumashi%2F57620819%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff152251-uonumashi%2Fi%2F10000394%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] 玉川純米吟醸　雄町　無濾過生原酒　720mL木下酒造京都府久美浜町 — 2255円 — 米惣よしむら 楽天市場店
+  https://hb.afl.rakuten.co.jp/hgc/g00riexn.sgrg2ad3.g00riexn.sgrg3e65/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-komesou%2Ftama_16686%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-komesou%2Fi%2F10000778%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 
 ## 天山 特別純米 (saga-second-205)
 
@@ -189,7 +149,7 @@
   https://hb.afl.rakuten.co.jp/hgc/g00s67an.sgrg205d.g00s67an.sgrg343d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff413461-miyaki%2Fdv182%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff413461-miyaki%2Fi%2F10005069%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 【ギフト対応可】 天山 特別純米酒 720ml 天山酒造 佐賀県 日本酒 お酒 ギフト プレゼント 飲み比べ 内祝い 誕生日 男性 女性 お歳暮 冬ギフト — 1698円 — 酒シンドバッド楽天市場店
   https://hb.afl.rakuten.co.jp/hgc/g00qezmn.sgrg20a5.g00qezmn.sgrg393a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsake-shindobad%2Ftenzan-tokujun72%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsake-shindobad%2Fi%2F10004010%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 【ふるさと納税】【お歳暮ギフト】【選べる容量・本数】天山 特別純米酒 1本 or 2本（ 720ml / 1.8L ）【白木酒店】 [HAQ028] — 7000円 — 佐賀県江北町
+- [reject] 【ふるさと納税】【お歳暮ギフト】【選べる容量・本数】天山 特別純米酒 1本 or 2本（ 720ml / 1.8L ）【白木酒店】 [HAQ028] — 8000円 — 佐賀県江北町
   https://hb.afl.rakuten.co.jp/hgc/g00tffan.sgrg22e9.g00tffan.sgrg3e55/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff414247-kouhoku%2Fhaq028%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff414247-kouhoku%2Fi%2F10001248%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 天美 TENBI 特別純米 火当て 黒天 山口 長州酒造 720ml — 1815円 — 京都のさか屋ふくしま
   https://hb.afl.rakuten.co.jp/hgc/g00top0n.sgrg2a68.g00top0n.sgrg3051/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyoto-sake-2940%2Ftenbi-bk-720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkyoto-sake-2940%2Fi%2F10001616%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
@@ -204,40 +164,40 @@
 
 - [needs_review] 【誕生日】【ギフト】末廣　伝承 山廃純米 720ml — 1265円 — 荒牧 おいしいワイン 日本酒の店
   https://hb.afl.rakuten.co.jp/hgc/g00pmrbn.sgrg2e5f.g00pmrbn.sgrg3098/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faramaki%2F231700%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faramaki%2Fi%2F10000537%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 【送料無料】日本酒 末廣酒造 伝承山廃純米 末廣 すえひろ 720ml×1ケース/12本【北海道・沖縄県・東北・四国・九州地方は必ず送料がかかります】 — 14500円 — リカーBOSS 楽天市場店
-  https://hb.afl.rakuten.co.jp/hgc/g00rryxn.sgrg25ba.g00rryxn.sgrg3572/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fliquor-boss%2F132%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fliquor-boss%2Fi%2F10028463%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 【ふるさと納税】 能登復興応援セット つなぐ石川の酒 神泉720ml ／神泉フィーチャリング能登末廣720ml 純米吟醸 日本酒 地酒 純米酒 支援 五百万石 山田錦 セット お中元 お歳暮 ギフト 父の日 プレゼント お花見 小松市 石川県 av005n00【東酒造】 — 23000円 — 石川県小松市
-  https://hb.afl.rakuten.co.jp/hgc/g00smm8n.sgrg2db9.g00smm8n.sgrg3293/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff172031-komatsu%2F18028%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff172031-komatsu%2Fi%2F10001711%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 末廣 山廃純米 720ml — 1210円 — 開成屋
-  https://hb.afl.rakuten.co.jp/hgc/g00s2cpn.sgrg2501.g00s2cpn.sgrg3ad0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkaiseiya%2F0704199%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkaiseiya%2Fi%2F10000056%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 【末廣酒造】　純米吟醸 720ml 　末広酒造　ギフト プレゼント(4973717300274) — 1680円 — ワイン紀行
   https://hb.afl.rakuten.co.jp/hgc/g00q4h0n.sgrg2b3a.g00q4h0n.sgrg3811/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fichiishop%2F10006456%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fichiishop%2Fi%2F10006456%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 11/15限定P4倍 日本酒 末廣酒造 伝承山廃純米 末廣 すえひろ 720ml 1本【12本まで1個口配送可能】 — 1150円 — リカーBOSS 楽天市場店
-  https://hb.afl.rakuten.co.jp/hgc/g00rryxn.sgrg25ba.g00rryxn.sgrg3572/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fliquor-boss%2F132b%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fliquor-boss%2Fi%2F10028467%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [reject] 【送料無料】日本酒 末廣酒造 伝承山廃純米 末廣 すえひろ 720ml×1ケース/12本【北海道・沖縄県・東北・四国・九州地方は必ず送料がかかります】 — 14500円 — リカーBOSS 楽天市場店
+  https://hb.afl.rakuten.co.jp/hgc/g00rryxn.sgrg25ba.g00rryxn.sgrg3572/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fliquor-boss%2F132%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fliquor-boss%2Fi%2F10028463%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 【がんばれ!東北！インターナショナル・ワイン・チャレンジ金賞受賞！世界が認めた純米】末廣　伝承山廃純米　720ml [3499] — 1320円 — 日本酒 焼酎 ギフト いちむら商店
   https://hb.afl.rakuten.co.jp/hgc/g00pmzkn.sgrg2132.g00pmzkn.sgrg3be7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fichimura%2F14068651%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fichimura%2Fi%2F10001657%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [reject] 【ふるさと納税】 能登復興応援セット つなぐ石川の酒 神泉720ml ／神泉フィーチャリング能登末廣720ml 純米吟醸 日本酒 地酒 純米酒 支援 五百万石 山田錦 セット お中元 お歳暮 av005n00【東酒造】※年内発送※12月23日までの入金確認で12月25日までに年内発送します — 23000円 — 石川県小松市
+  https://hb.afl.rakuten.co.jp/hgc/g00smm8n.sgrg2db9.g00smm8n.sgrg3293/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff172031-komatsu%2F18028%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff172031-komatsu%2Fi%2F10001711%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] 【インターナショナル・ワイン・チャレンジ金賞受賞！世界が認めた純米】末廣　伝承山廃純米　720ml [3499] — 1320円 — 日本酒 焼酎 ギフト いちむら商店
+  https://hb.afl.rakuten.co.jp/hgc/g00pmzkn.sgrg2132.g00pmzkn.sgrg3be7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fichimura%2F1406865%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fichimura%2Fi%2F10001073%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] 11/21 3:00〜11/25までP4倍 日本酒 末廣酒造 伝承山廃純米 末廣 すえひろ 720ml 1本【12本まで1個口配送可能】 — 1150円 — リカーBOSS 楽天市場店
+  https://hb.afl.rakuten.co.jp/hgc/g00rryxn.sgrg25ba.g00rryxn.sgrg3572/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fliquor-boss%2F132b%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fliquor-boss%2Fi%2F10028467%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 末廣酒造 / 　伝承山廃純米　末廣　720ml　純米 / 　[J429] — 1254円 — 酒宝庫 MASHIMO
   https://hb.afl.rakuten.co.jp/hgc/g00q285n.sgrg2070.g00q285n.sgrg3e6b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmashimo%2Fjs10110028%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmashimo%2Fi%2F10009059%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 末廣　伝承山廃純米酒720ml — 1320円 — 蔵元直販「地酒の森」
   https://hb.afl.rakuten.co.jp/hgc/g00pwm5n.sgrg2f5f.g00pwm5n.sgrg3bd4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmarp-mori%2F690206%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmarp-mori%2Fi%2F10000123%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 【インターナショナル・ワイン・チャレンジ金賞受賞！世界が認めた純米】末廣　伝承山廃純米　720ml [3499] — 1320円 — 日本酒 焼酎 ギフト いちむら商店
-  https://hb.afl.rakuten.co.jp/hgc/g00pmzkn.sgrg2132.g00pmzkn.sgrg3be7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fichimura%2F1406865%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fichimura%2Fi%2F10001073%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] 【お取り寄せ】福島 末廣酒造 末廣 山廃 純米吟醸 720ml 大吟醸 吟醸 純米吟醸酒 清酒 日本酒 お酒 — 1815円 — ココデカウ
+  https://hb.afl.rakuten.co.jp/hgc/g00qq8tn.sgrg2ec3.g00qq8tn.sgrg39aa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcocodecow%2Fr601jz%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcocodecow%2Fi%2F10807997%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 
 ## 蓬莱 特別本醸造 (gifu-second-260)
 
-- [needs_review] 【11/15限定 全品P3倍】日本酒 辛口 蓬莱泉 別撰 特別本醸造 720mL 15度 清酒 愛知県 関谷醸造 酒 — 1155円 — 日本のSAKE 和泉清 楽天市場店
+- [needs_review] 日本酒 辛口 蓬莱泉 別撰 特別本醸造 720mL 15度 清酒 愛知県 関谷醸造 酒 — 1155円 — 日本のSAKE 和泉清 楽天市場店
   https://hb.afl.rakuten.co.jp/hgc/g00thx8n.sgrg2c2d.g00thx8n.sgrg3ebb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fizumise%2F015329%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fizumise%2Fi%2F10002738%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 日本酒 蓬莱 蔵元の隠し酒 黒ラベル 特別本醸造 720ml×1本『OMS』岐阜県 渡辺酒造店 — 1255円 — ドリームクラフト&ビッグボス
+- [needs_review] ＼エントリーでポイント5倍／日本酒 蓬莱 蔵元の隠し酒 黒ラベル 特別本醸造 720ml×1本『OMS』岐阜県 渡辺酒造店 — 1255円 — ドリームクラフト&ビッグボス
   https://hb.afl.rakuten.co.jp/hgc/g00rs9mn.sgrg217c.g00rs9mn.sgrg31ce/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fd-craft%2F4941392101264%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fd-craft%2Fi%2F10007004%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 2本 日本酒 【本州のみ 送料無料】蓬莱 蔵元の隠し酒 黒ラベル 特別本醸造 720ml××2本《002》『OMS』岐阜県 渡辺酒造店 — 3599円 — 酒のビッグボス
-  https://hb.afl.rakuten.co.jp/hgc/g00q95fn.sgrg217b.g00q95fn.sgrg36ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbigbossshibazaki%2F4941392101264-2%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbigbossshibazaki%2Fi%2F10030793%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 最も売れてる 1回のご注文で12本まで 北海道 沖縄と離島地域を除く。 ヤマト運輸にて 蓬莱泉 特別本醸造クラス 人生感意気 じんせいいきにかんず 720ml1本 — 1400円 — おいしく飲呑会
   https://hb.afl.rakuten.co.jp/hgc/g00rienn.sgrg2c43.g00rienn.sgrg393c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnondonkai%2F10001176%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnondonkai%2Fi%2F10001176%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 日本酒 蓬莱 蔵元の隠し酒 黒ラベル 特別本醸造 720ml×1本『OMS』岐阜県 渡辺酒造店 — 1255円 — 酒のビッグボス
+- [needs_review] ＼ブラックフライデー★P5倍／ 日本酒 蓬莱 蔵元の隠し酒 黒ラベル 特別本醸造 720ml×1本『OMS』岐阜県 渡辺酒造店 — 1255円 — 酒のビッグボス
   https://hb.afl.rakuten.co.jp/hgc/g00q95fn.sgrg217b.g00q95fn.sgrg36ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbigbossshibazaki%2F4941392101264%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbigbossshibazaki%2Fi%2F10015683%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [reject] ＼ブラックフライデー★P5倍／ 2本 日本酒 【本州のみ 送料無料】蓬莱 蔵元の隠し酒 黒ラベル 特別本醸造 720ml××2本《002》『OMS』岐阜県 渡辺酒造店 — 3599円 — 酒のビッグボス
+  https://hb.afl.rakuten.co.jp/hgc/g00q95fn.sgrg217b.g00q95fn.sgrg36ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbigbossshibazaki%2F4941392101264-2%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbigbossshibazaki%2Fi%2F10030793%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 日本酒 辛口 蓬莱泉 別撰 特別本醸造 720mL 15度 清酒 愛知県 関谷醸造 酒 — 1155円 — お酒の専門店 リカマン楽天市場店
   https://hb.afl.rakuten.co.jp/hgc/g00qo2rn.sgrg2d5a.g00qo2rn.sgrg35a6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flikaman%2F015329%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flikaman%2Fi%2F10031031%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 2本 日本酒 【本州のみ 送料無料】蓬莱 蔵元の隠し酒 黒ラベル 特別本醸造 720ml××2本《002》『OMS』岐阜県 渡辺酒造店 — 3599円 — ドリームクラフト&ビッグボス
+- [reject] ＼エントリーでポイント5倍／2本 日本酒 【本州のみ 送料無料】蓬莱 蔵元の隠し酒 黒ラベル 特別本醸造 720ml××2本《002》『OMS』岐阜県 渡辺酒造店 — 3599円 — ドリームクラフト&ビッグボス
   https://hb.afl.rakuten.co.jp/hgc/g00rs9mn.sgrg217c.g00rs9mn.sgrg31ce/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fd-craft%2F4941392101264-2%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fd-craft%2Fi%2F10022360%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 【12本セット】日本酒 特別本醸造 蓬莱 蔵元の隠し酒 黒ラベル 720ml 岐阜県 渡辺酒造店 岐阜 飛騨 古川 地酒 岐阜のお酒 sake — 22770円 — ミノクニ商店
   https://hb.afl.rakuten.co.jp/hgc/g00saudn.sgrg25a1.g00saudn.sgrg37b1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fled-neworder%2Fakty-4941392101264%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fled-neworder%2Fi%2F10062755%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
@@ -246,12 +206,12 @@
 
 - [reject] 【ふるさと納税】睡龍 生酛 純米吟醸 720ml／ 日本酒 酒 地酒 酒蔵 晩酌 久保本家酒造 奈良県 宇陀市 — 12000円 — 奈良県宇陀市
   https://hb.afl.rakuten.co.jp/hgc/g00st0zn.sgrg2916.g00st0zn.sgrg3872/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff292125-uda%2Fuda807%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff292125-uda%2Fi%2F10000801%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 【ふるさと納税】睡龍 純米大吟醸 爽辛一火 720ml／ 日本酒 酒 地酒 酒蔵 晩酌 久保本家酒造 奈良県 宇陀市 — 19000円 — 奈良県宇陀市
-  https://hb.afl.rakuten.co.jp/hgc/g00st0zn.sgrg2916.g00st0zn.sgrg3872/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff292125-uda%2Fku01005%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff292125-uda%2Fi%2F10001301%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 【大和の地酒】睡龍生もと純米吟醸火入れ酒熟成酒720mL久保本家（奈良県宇陀市） — 3520円 — 米惣よしむら 楽天市場店
-  https://hb.afl.rakuten.co.jp/hgc/g00riexn.sgrg2ad3.g00riexn.sgrg3e65/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-komesou%2Fsuiryu_13200%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-komesou%2Fi%2F10001084%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 【大和の地酒】睡龍　すいりゅう純米　一火720mL久保本家（奈良県宇陀市） — 1540円 — 米惣よしむら 楽天市場店
   https://hb.afl.rakuten.co.jp/hgc/g00riexn.sgrg2ad3.g00riexn.sgrg3e65/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-komesou%2Fsuiryu_18296%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-komesou%2Fi%2F10001012%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] 【大和の地酒】睡龍生もと純米吟醸火入れ酒熟成酒720mL久保本家（奈良県宇陀市） — 3520円 — 米惣よしむら 楽天市場店
+  https://hb.afl.rakuten.co.jp/hgc/g00riexn.sgrg2ad3.g00riexn.sgrg3e65/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-komesou%2Fsuiryu_13200%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-komesou%2Fi%2F10001084%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [reject] 【ふるさと納税】睡龍 純米大吟醸 爽辛一火 720ml／ 日本酒 酒 地酒 酒蔵 晩酌 久保本家酒造 奈良県 宇陀市 — 19000円 — 奈良県宇陀市
+  https://hb.afl.rakuten.co.jp/hgc/g00st0zn.sgrg2916.g00st0zn.sgrg3872/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff292125-uda%2Fku01005%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff292125-uda%2Fi%2F10001301%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 【大和の地酒】睡龍生もと純米火入れ酒長期熟成酒720mL久保本家（奈良県宇陀市） — 2090円 — 米惣よしむら 楽天市場店
   https://hb.afl.rakuten.co.jp/hgc/g00riexn.sgrg2ad3.g00riexn.sgrg3e65/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-komesou%2Fsuiryu_13343%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-komesou%2Fi%2F10001085%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 【500円引クーポン◆LINE友達登録】熟成酒 古酒 【睡龍 生もと純米 2016】 720ml ヴィンテージ 熟成年数 9年 食中酒 燗好適酒 ギフト 酒 公式 ギフト 内祝 贈答 高級 日本酒 プレゼント 秋ギフト ハロウィン Halloween ギフト — 3950円 — 熟と燗
@@ -282,15 +242,15 @@
 
 ## 刈穂 純米大吟醸 (akita-second-5)
 
-- [needs_review] 秋田清酒　刈穂　選抜純米大吟醸　720ml — 3300円 — 秋田空港おみやげ広場あ・えーる
-  https://hb.afl.rakuten.co.jp/hgc/g00sqzrn.sgrg230c.g00sqzrn.sgrg3cdb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fomiyageakita%2F4970916401092%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fomiyageakita%2Fi%2F10001059%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] ＼ブラックフライデー★P5倍／ 刈穂 銀千樹 純米大吟醸 720ml 日本酒 秋田県 秋田清酒『HSH』 — 2742円 — 酒のビッグボス
+  https://hb.afl.rakuten.co.jp/hgc/g00q95fn.sgrg217b.g00q95fn.sgrg36ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbigbossshibazaki%2F4970916461102%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbigbossshibazaki%2Fi%2F10030466%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 秋田清酒　刈穂　純米大吟醸　嘉永　720ml — 6600円 — 秋田空港おみやげ広場あ・えーる
   https://hb.afl.rakuten.co.jp/hgc/g00sqzrn.sgrg230c.g00sqzrn.sgrg3cdb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fomiyageakita%2F4970916412081%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fomiyageakita%2Fi%2F10002275%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 刈穂 銀千樹 純米大吟醸 720ml 日本酒 秋田県 秋田清酒『HSH』 — 2742円 — 酒のビッグボス
-  https://hb.afl.rakuten.co.jp/hgc/g00q95fn.sgrg217b.g00q95fn.sgrg36ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbigbossshibazaki%2F4970916461102%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbigbossshibazaki%2Fi%2F10030466%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] 秋田清酒　刈穂　選抜純米大吟醸　720ml — 3300円 — 秋田空港おみやげ広場あ・えーる
+  https://hb.afl.rakuten.co.jp/hgc/g00sqzrn.sgrg230c.g00sqzrn.sgrg3cdb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fomiyageakita%2F4970916401092%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fomiyageakita%2Fi%2F10001059%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 刈穂　純米大吟醸　銀千樹　720ml　【秋田の地酒　化粧箱付】 — 3300円 — えんしゅうや酒店
   https://hb.afl.rakuten.co.jp/hgc/g00rhiin.sgrg2cd2.g00rhiin.sgrg341c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fensyuyasaketen%2Fkariho020%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fensyuyasaketen%2Fi%2F10001411%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 刈穂 銀千樹 純米大吟醸 720ml 日本酒 秋田県 秋田清酒『HSH』 — 2750円 — ドリームクラフト&ビッグボス
+- [needs_review] ＼エントリーでポイント5倍／刈穂 銀千樹 純米大吟醸 720ml 日本酒 秋田県 秋田清酒『HSH』 — 2750円 — ドリームクラフト&ビッグボス
   https://hb.afl.rakuten.co.jp/hgc/g00rs9mn.sgrg217c.g00rs9mn.sgrg31ce/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fd-craft%2F4970916461102%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fd-craft%2Fi%2F10021835%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] [アウトレット]刈穂　純米大吟醸 銀千樹　720ml［ラベル破れ・汚れあり］【1〜2営業日以内に出荷】[詰め日：2025年5月] — 2530円 — 日本酒博物館
   https://hb.afl.rakuten.co.jp/hgc/g00pn9on.sgrg2b62.g00pn9on.sgrg322d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsakemuseum%2F37717-1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsakemuseum%2Fi%2F10023477%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
@@ -305,19 +265,19 @@
 
 ## 一乃谷 吟醸 (fukui-brewery-215-ginjo-2nd)
 
-- [reject] 【ふるさと納税】奥越前大野 日本酒 清酒『一乃谷』飲み比べセット「暁、勝鬼」720ml × 2本 【父の日】[A-046002] | 日本酒・飲み比べ・大吟醸・本醸造酒 父の日 — 18000円 — 福井県大野市
-  https://hb.afl.rakuten.co.jp/hgc/g00t6gmn.sgrg2c0f.g00t6gmn.sgrg30f0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff182052-ono%2F58840029%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff182052-ono%2Fi%2F10000031%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 一乃谷　暁(あかつき) 720ml 箱付き　大吟醸（宇野酒造場　福井県大野市）★このスペックでお得な大吟醸♪　何時までこの価格が維持できるのか？※日数に余裕を持ってご注文を！★在庫が0でもお取り寄せできます。 — 2310円 — 福井の地酒とワイン まるこ
-  https://hb.afl.rakuten.co.jp/hgc/g00qm6un.sgrg2da0.g00qm6un.sgrg3a0c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmalco%2F10000083%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmalco%2Fi%2F10002863%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 【その名の通り薫る大吟醸】一乃谷 大吟醸 薫 720ml 日本酒 清酒 大吟醸酒 父の日 御中元 ギフト プレゼント 贈答品 内祝い お返し お酒 Gift 酒 — 3400円 — 酒本舗はな
   https://hb.afl.rakuten.co.jp/hgc/g00qhy3n.sgrg2cca.g00qhy3n.sgrg37e0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flw-hana%2F112556%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flw-hana%2Fi%2F10000747%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] 一乃谷　暁(あかつき) 720ml 箱付き　大吟醸（宇野酒造場　福井県大野市）★このスペックでお得な大吟醸♪　何時までこの価格が維持できるのか？※日数に余裕を持ってご注文を！★在庫が0でもお取り寄せできます。 — 2310円 — 福井の地酒とワイン まるこ
+  https://hb.afl.rakuten.co.jp/hgc/g00qm6un.sgrg2da0.g00qm6un.sgrg3a0c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmalco%2F10000083%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmalco%2Fi%2F10002863%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [reject] 【ふるさと納税】奥越前大野 日本酒 清酒『一乃谷』飲み比べセット「暁、勝鬼」720ml × 2本 【父の日】[A-046002] | 日本酒・飲み比べ・大吟醸・本醸造酒 父の日 — 18000円 — 福井県大野市
+  https://hb.afl.rakuten.co.jp/hgc/g00t6gmn.sgrg2c0f.g00t6gmn.sgrg30f0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff182052-ono%2F58840029%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff182052-ono%2Fi%2F10000031%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 【ふるさと納税】奥越前大野 日本酒 清酒『一乃谷』大吟醸 さかほまれ 720ml【日本酒・大吟醸・お酒】 [A-046003] — 18000円 — 福井県大野市
   https://hb.afl.rakuten.co.jp/hgc/g00t6gmn.sgrg2c0f.g00t6gmn.sgrg30f0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff182052-ono%2Fa-046003%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff182052-ono%2Fi%2F10000590%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 日本酒 ギフト 一乃谷 大吟醸 さかほまれ 720ml 宇野酒造場【送料無料】 常温 / お酒 地酒 大吟醸酒 福井県 父親 家飲み お取り寄せ 通販 お土産 お祝い プレゼント おすすめ / — 3960円 — わが街とくさん店
   https://hb.afl.rakuten.co.jp/hgc/g00rr3hn.sgrg235a.g00rr3hn.sgrg395d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwagamachi-tokusan%2F1820500012%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwagamachi-tokusan%2Fi%2F10091503%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 一乃谷 吟醸　生貯蔵酒　酒乃國　300ml瓶　箱なし（（いちのたに）宇野酒造場　福井県大野市）◎720mlサイズなら、12本位まで混載配送OKです（60サイズ）！◆【その他・福井の蔵元】【サンデシ】 — 550円 — 福井の地酒とワイン まるこ
   https://hb.afl.rakuten.co.jp/hgc/g00qm6un.sgrg2da0.g00qm6un.sgrg3a0c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmalco%2F10001108%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmalco%2Fi%2F10002606%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 製造2025年11月一ノ蔵 特別純米酒 辛口 1800ml 一升瓶 宮城の地酒 日本酒 清酒 純米酒 父の日 御中元 ギフト プレゼント 贈答品 内祝い お返し お酒 Sake — 2200円 — 酒本舗はな
+- [needs_review] 製造2025年11月一ノ蔵 特別純米酒 辛口 1800ml 一升瓶 宮城の地酒 日本酒 清酒 純米酒 父の日 御中元 ギフト プレゼント 贈答品 内祝い お返し お酒 Sake — 2000円 — 酒本舗はな
   https://hb.afl.rakuten.co.jp/hgc/g00qhy3n.sgrg2cca.g00qhy3n.sgrg37e0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flw-hana%2F113019%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flw-hana%2Fi%2F10000665%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 
 ## 白鴻 大吟醸 (hiroshima-brewery-233-daiginjo-2nd)
@@ -331,16 +291,16 @@
 
 ## 越乃寒梅 特別純米 (niigata-brewery-044-tokubetsu-junmai-2nd)
 
-- [reject] 日本酒 飲み比べ セット 越乃寒梅 白ラベル 田酒 特別純米 720ml×2本 送料無料 クール便 — 9500円 — 日本酒と焼酎のお店 新潟銘酒王国
-  https://hb.afl.rakuten.co.jp/hgc/g00skuwn.sgrg2aca.g00skuwn.sgrg3adb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fniigatameisyuoukoku%2F21672%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fniigatameisyuoukoku%2Fi%2F10006264%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 日本酒 飲み比べ セット 越乃寒梅 吟醸 別撰 田酒 特別純米 720ml×2本 送料無料 クール便 — 10000円 — 日本酒と焼酎のお店 新潟銘酒王国
   https://hb.afl.rakuten.co.jp/hgc/g00skuwn.sgrg2aca.g00skuwn.sgrg3adb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fniigatameisyuoukoku%2F21671%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fniigatameisyuoukoku%2Fi%2F10006263%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [reject] 日本酒 飲み比べ セット 越乃寒梅 白ラベル 田酒 特別純米 720ml×2本 送料無料 クール便 — 9500円 — 日本酒と焼酎のお店 新潟銘酒王国
+  https://hb.afl.rakuten.co.jp/hgc/g00skuwn.sgrg2aca.g00skuwn.sgrg3adb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fniigatameisyuoukoku%2F21672%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fniigatameisyuoukoku%2Fi%2F10006264%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 日本酒 飲み比べ セット 越乃寒梅 純米吟醸 灑 鍋島 特別純米 720ml×2本 送料無料 — 7800円 — 日本酒と焼酎のお店 新潟銘酒王国
   https://hb.afl.rakuten.co.jp/hgc/g00skuwn.sgrg2aca.g00skuwn.sgrg3adb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fniigatameisyuoukoku%2F21716%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fniigatameisyuoukoku%2Fi%2F10006285%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 日本酒 飲み比べ セット 越乃寒梅 白ラベル 雪影 特別純米酒 720ml×2本 送料無料 — 4700円 — 日本酒と焼酎のお店 新潟銘酒王国
-  https://hb.afl.rakuten.co.jp/hgc/g00skuwn.sgrg2aca.g00skuwn.sgrg3adb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fniigatameisyuoukoku%2F20622%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fniigatameisyuoukoku%2Fi%2F10004202%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 日本酒 飲み比べ セット 越乃寒梅 吟醸 別撰 鍋島 特別純米 720ml×2本 送料無料 — 7300円 — 日本酒と焼酎のお店 新潟銘酒王国
   https://hb.afl.rakuten.co.jp/hgc/g00skuwn.sgrg2aca.g00skuwn.sgrg3adb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fniigatameisyuoukoku%2F21717%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fniigatameisyuoukoku%2Fi%2F10006286%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [reject] 日本酒 飲み比べ セット 越乃寒梅 白ラベル 雪影 特別純米酒 720ml×2本 送料無料 — 4700円 — 日本酒と焼酎のお店 新潟銘酒王国
+  https://hb.afl.rakuten.co.jp/hgc/g00skuwn.sgrg2aca.g00skuwn.sgrg3adb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fniigatameisyuoukoku%2F20622%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fniigatameisyuoukoku%2Fi%2F10004202%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 贈り物南部美人特別純米(岩手県)720mlギフトセット 石本酒造越乃寒梅吟醸(新潟県)720ml — 9083円 — 贈り物本舗じざけや
   https://hb.afl.rakuten.co.jp/hgc/g00pwkzn.sgrg265f.g00pwkzn.sgrg3584/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsake-gets%2Fgnanbu702%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsake-gets%2Fi%2F17470093%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 日本酒 飲み比べ セット 田酒 特別純米 越乃寒梅 純米吟醸 灑 720ml×2本 送料無料 クール便 — 9630円 — 日本酒と焼酎のお店 新潟銘酒王国
@@ -348,7 +308,7 @@
 
 ## 男女川 純米吟醸 (ibaraki-brewery-247-junmai-ginjo-2nd)
 
-- [needs_review] 男女川 みなのがわ 純米吟醸 しぼりたて 無濾過瓶火入れ 稲葉酒造 720ml 瓶 【箱入り】【cp】 【 日本酒 地酒 茨城 つくば 】 — 2310円 — 酒の倉之助
+- [needs_review] 【マラソン期間限定3％OFFクーポン配布中】 男女川 みなのがわ 純米吟醸 しぼりたて 無濾過瓶火入れ 稲葉酒造 720ml 瓶 【箱入り】【cp】 【 日本酒 地酒 茨城 つくば 】 — 2310円 — 酒の倉之助
   https://hb.afl.rakuten.co.jp/hgc/g00ptqon.sgrg289f.g00ptqon.sgrg3827/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkuranosuke%2F1262%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkuranosuke%2Fi%2F10006860%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 男女川 みなのがわ しぼりたて純米吟醸 箱入り 720ml 【お酒】【日本酒】｜最大200円OFFクーポン配布中 — 2310円 — 日本酒・焼酎の小野酒店
   https://hb.afl.rakuten.co.jp/hgc/g00qjbzn.sgrg263d.g00qjbzn.sgrg3a7e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fono-sake%2F000001179%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fono-sake%2Fi%2F10003235%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
@@ -363,15 +323,15 @@
 
 - [reject] 【ふるさと納税】 新潟 日本酒 H4-26B越の鶴 大吟醸 鑑評会出品酒 720ml【越銘醸株式会社】 — 24000円 — 新潟県長岡市
   https://hb.afl.rakuten.co.jp/hgc/g00snxen.sgrg26ac.g00snxen.sgrg3eec/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff152021-nagaoka%2Fh4-26%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff152021-nagaoka%2Fi%2F10000965%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 越の鶴 鑑評会出品酒 大吟醸 720ml 越銘醸 日本酒 お酒 ギフト プレゼント 贈答 贈り物 おすすめ 新潟 熱燗 冷酒 辛口 甘口 お中元 お歳暮 正月 父の日 有名 限定 話題 人気 旨い 美味しい にいがた酒の陣 — 6850円 — 越後銘門酒会 新潟県の酒とグルメ
+- [needs_review] 【ブラックフライデーポイント2倍】越の鶴 鑑評会出品酒 大吟醸 720ml 越銘醸 日本酒 お酒 ギフト プレゼント 贈答 贈り物 おすすめ 新潟 熱燗 冷酒 辛口 甘口 お中元 お歳暮 正月 父の日 有名 限定 話題 人気 旨い 美味しい にいがた酒の陣 — 6850円 — 越後銘門酒会 新潟県の酒とグルメ
   https://hb.afl.rakuten.co.jp/hgc/g00paqin.sgrg2f50.g00paqin.sgrg3b83/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fechigo%2F394862%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fechigo%2Fi%2F10003105%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 越の鶴 鑑評会出品酒 大吟醸 720ml 越銘醸 日本酒 お酒 ギフト プレゼント 贈答 贈り物 おすすめ 新潟 熱燗 冷酒 辛口 甘口 お中元 お歳暮 正月 有名 限定 話題 人気 旨い 美味しい お中元 御中元 夏ギフ — 6300円 — 長岡市公式ショップ丸ごとながおか
+- [needs_review] 【ブラックフライデーポイント2倍】越の鶴 鑑評会出品酒 大吟醸 720ml 越銘醸 日本酒 お酒 ギフト プレゼント 贈答 贈り物 おすすめ 新潟 熱燗 冷酒 辛口 甘口 お中元 お歳暮 正月 有名 限定 話題 人気 旨い 美味しい お中元 御中元 夏ギフ — 6300円 — 長岡市公式ショップ丸ごとながおか
   https://hb.afl.rakuten.co.jp/hgc/g00ubnin.sgrg2251.g00ubnin.sgrg303b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnagaokashi%2F105801%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnagaokashi%2Fi%2F10000572%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 越銘醸　domaine(ドメーヌ)越の鶴　純米大吟醸　720ml — 2310円 — 魚沼の里 芳屋
   https://hb.afl.rakuten.co.jp/hgc/g00pqqgn.sgrg26cc.g00pqqgn.sgrg39d2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fuonuma%2F10003438%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fuonuma%2Fi%2F10003438%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 越の鶴「壱醸21・twenty one」純米大吟醸・無濾過原酒 720mlカートン入り — 5940円 — 魚沼の里 芳屋
   https://hb.afl.rakuten.co.jp/hgc/g00pqqgn.sgrg26cc.g00pqqgn.sgrg39d2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fuonuma%2F10002459%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fuonuma%2Fi%2F10002459%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 【クール便発送】越の鶴 壱醸21 純米大吟醸 720ml 越銘醸 新潟県長岡市 日本酒 いちじょう トゥエンティワン日本酒 お酒 ギフト 贈り物 — 8900円 — 長岡市公式ショップ丸ごとながおか
+- [needs_review] 【ブラックフライデーポイント2倍】【クール便発送】越の鶴 壱醸21 純米大吟醸 720ml 越銘醸 新潟県長岡市 日本酒 いちじょう トゥエンティワン日本酒 お酒 ギフト 贈り物 — 8900円 — 長岡市公式ショップ丸ごとながおか
   https://hb.afl.rakuten.co.jp/hgc/g00ubnin.sgrg2251.g00ubnin.sgrg303b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnagaokashi%2F105898%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnagaokashi%2Fi%2F10000198%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 
 ## 聚楽第 特別純米 (kyoto-brewery-267-tokubetsu-junmai-2nd)
@@ -398,16 +358,16 @@
 
 ## 帝松 大吟醸 (saitama-brewery-287-daiginjo-2nd)
 
+- [reject] 【ふるさと納税】 帝松 純米大吟醸 「鳳翔」 720ml [松岡醸造 埼玉県 小川町 400] 酒 お酒 日本酒 — 22000円 — 埼玉県小川町
+  https://hb.afl.rakuten.co.jp/hgc/g00sjamn.sgrg2aa6.g00sjamn.sgrg3aea/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff113433-ogawa%2F046%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff113433-ogawa%2Fi%2F10000077%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 【ふるさと納税】 【超特選金賞受賞】帝松 大吟醸 桐箱入り 720ml [松岡醸造 埼玉県 小川町 401] 酒 お酒 日本酒 — 26000円 — 埼玉県小川町
   https://hb.afl.rakuten.co.jp/hgc/g00sjamn.sgrg2aa6.g00sjamn.sgrg3aea/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff113433-ogawa%2F050%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff113433-ogawa%2Fi%2F10000081%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] ギフト プレゼント 埼玉 小川町 松岡醸造 帝松 超特撰 大吟醸 720ml — 6600円 — まるひろオンラインショップ
+- [needs_review] エントリーでP5倍 ギフト プレゼント 埼玉 小川町 松岡醸造 帝松 超特撰 大吟醸 720ml エントリーでポイント5倍（11月25日01：59迄） — 6600円 — まるひろオンラインショップ
   https://hb.afl.rakuten.co.jp/hgc/g00rjfdn.sgrg2f4a.g00rjfdn.sgrg302f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmaruhiro-dep%2F751-6-0033%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmaruhiro-dep%2Fi%2F10028263%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] ギフト プレゼント 埼玉 小川町 松岡醸造 帝松 超特撰 大吟醸 720ml — 6600円 — マルヒロWEBショップ
   https://hb.afl.rakuten.co.jp/hgc/g00t2dhn.sgrg2aba.g00t2dhn.sgrg33f1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmaruhiro-web%2F751-6-0033%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmaruhiro-web%2Fi%2F10003212%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 日本酒 純米大吟醸酒 フルーティーな香味とまろやかな口当たりの 帝松 鳳翔 l 松岡醸造株式会社 埼玉県 720ml — 6600円 — 産直お取り寄せNセレクト
   https://hb.afl.rakuten.co.jp/hgc/g00ska5n.sgrg293e.g00ska5n.sgrg38a1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnipponselect%2Fs05250005%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnipponselect%2Fi%2F10010800%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 【ふるさと納税】 帝松 純米大吟醸 「鳳翔」 720ml [松岡醸造 埼玉県 小川町 400] 酒 お酒 日本酒 — 22000円 — 埼玉県小川町
-  https://hb.afl.rakuten.co.jp/hgc/g00sjamn.sgrg2aa6.g00sjamn.sgrg3aea/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff113433-ogawa%2F046%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff113433-ogawa%2Fi%2F10000077%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 日本酒 大吟醸酒 超特選 帝松 松岡醸造株式会社 埼玉県 鑑評会出品大吟醸原酒(桐箱入) 720ml — 7700円 — 産直お取り寄せNセレクト
   https://hb.afl.rakuten.co.jp/hgc/g00ska5n.sgrg293e.g00ska5n.sgrg38a1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnipponselect%2Fs05250004%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnipponselect%2Fi%2F10010799%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 帝松 龍躍 さけ武蔵 純米大吟醸 720ml 日本酒 お取り寄せ 埼玉 酒 やや辛口 埼玉県産 酒造好適米使用 国産米 国産米麹 — 5538円 — 産直お取り寄せNセレクト
@@ -429,6 +389,8 @@
   https://hb.afl.rakuten.co.jp/hgc/g00sjamn.sgrg2aa6.g00sjamn.sgrg3aea/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff113433-ogawa%2F383%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff113433-ogawa%2Fi%2F10000307%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 日本酒 純米大吟醸酒 フルーティーな香味とまろやかな口当たりの 帝松 鳳翔 l 松岡醸造株式会社 埼玉県 720ml — 6600円 — 産直お取り寄せNセレクト
   https://hb.afl.rakuten.co.jp/hgc/g00ska5n.sgrg293e.g00ska5n.sgrg38a1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnipponselect%2Fs05250005%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnipponselect%2Fi%2F10010800%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] 【送料無料】【直送品】松岡醸造 帝松 獅吼 山田錦 純米大吟醸原酒 720ml【カタログ掲載品】【他商品同時購入不可】 — 11000円 — 酒のやまや 楽天市場店
+  https://hb.afl.rakuten.co.jp/hgc/g00rx9fn.sgrg25e3.g00rx9fn.sgrg3ad0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamaya-shop%2F4952349310271%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamaya-shop%2Fi%2F10119114%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 【ふるさと納税】日本酒 【選べる容量 300ml・720ml】 帝松 谷津の舞 純米大吟醸 地酒 酒 お酒 [埼玉県 滑川町 純米大吟醸酒 純米大吟醸 吟醸 日本酒 濃厚 おいしい お酒 さけ 酒 美味 300ml 720ml] — 9000円 — 埼玉県滑川町
   https://hb.afl.rakuten.co.jp/hgc/g00ujxwn.sgrg288f.g00ujxwn.sgrg3015/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff113417-namegawa%2F19_mjz-01xxxx%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff113417-namegawa%2Fi%2F10000385%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 
@@ -446,14 +408,14 @@
   https://hb.afl.rakuten.co.jp/hgc/g00unlon.sgrg2ac1.g00unlon.sgrg3cc8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fumaimon-healthsalute%2F11718210%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fumaimon-healthsalute%2Fi%2F10001408%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 滋賀県 平井商店 浅茅生 純米吟醸うち呑み酒（うち呑み純米吟醸酒）720ml×5本セット 送料無料 — 8765円 — うまいもん屋 美美健康サルーテ
   https://hb.afl.rakuten.co.jp/hgc/g00unlon.sgrg2ac1.g00unlon.sgrg3cc8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fumaimon-healthsalute%2F11718210-05%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fumaimon-healthsalute%2Fi%2F10011018%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 滋賀県 平井商店 浅茅生 純米吟醸うち呑み酒（うち呑み純米吟醸酒）720ml×1ケース（全12本） 送料無料 — 19776円 — 近江うまいもん屋
-  https://hb.afl.rakuten.co.jp/hgc/g00rthyn.sgrg2af6.g00rthyn.sgrg3a08/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fumaimon-oumi%2F11718210%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fumaimon-oumi%2Fi%2F10020556%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 滋賀県 平井商店 浅茅生 純米吟醸うち呑み酒（うち呑み純米吟醸酒）720ml×3本セット 送料無料 — 5619円 — うまいもん屋 美美健康サルーテ
   https://hb.afl.rakuten.co.jp/hgc/g00unlon.sgrg2ac1.g00unlon.sgrg3cc8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fumaimon-healthsalute%2F11718210-03%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fumaimon-healthsalute%2Fi%2F10011876%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [reject] 滋賀県 平井商店 浅茅生 純米吟醸うち呑み酒（うち呑み純米吟醸酒）720ml×1ケース（全12本） 送料無料 — 19776円 — 近江うまいもん屋
+  https://hb.afl.rakuten.co.jp/hgc/g00rthyn.sgrg2af6.g00rthyn.sgrg3a08/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fumaimon-oumi%2F11718210%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fumaimon-oumi%2Fi%2F10020556%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 滋賀県 平井商店 浅茅生 純米吟醸うち呑み酒（うち呑み純米吟醸酒）720ml×1ケース（全12本） 送料無料 — 19776円 — うまいもん屋業務用プロマーケット
   https://hb.afl.rakuten.co.jp/hgc/g00usz3n.sgrg209c.g00usz3n.sgrg306b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fumaimon-gyoumupro%2F11718210%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fumaimon-gyoumupro%2Fi%2F10000043%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 滋賀県 平井商店 浅茅生 純米吟醸うち呑み酒（うち呑み純米吟醸酒）720ml×5本セット 送料無料 — 8765円 — うまいもん屋業務用プロマーケット
-  https://hb.afl.rakuten.co.jp/hgc/g00usz3n.sgrg209c.g00usz3n.sgrg306b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fumaimon-gyoumupro%2F11718210-05%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fumaimon-gyoumupro%2Fi%2F10000820%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [reject] 滋賀県 平井商店 浅茅生 純米吟醸うち呑み酒（うち呑み純米吟醸酒）720ml×6本セット 送料無料 — 10338円 — うまいもん屋業務用プロマーケット
+  https://hb.afl.rakuten.co.jp/hgc/g00usz3n.sgrg209c.g00usz3n.sgrg306b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fumaimon-gyoumupro%2F11718210-06%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fumaimon-gyoumupro%2Fi%2F10000908%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 
 ## 勲碧 純米 (aichi-brewery-303-junmai-2nd)
 
@@ -461,31 +423,31 @@
   https://hb.afl.rakuten.co.jp/hgc/g00uq4ln.sgrg2d27.g00uq4ln.sgrg339d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgrandsuk%2F4507221%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgrandsuk%2Fi%2F10000004%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 【金賞受賞】日本酒 特別純米酒 720ml 1800ml ギフト プレゼント 勲碧 蔵元直送 酒 お酒 敬老の日 お礼 お祝い 内祝い お父さん 誕生日 父の日 還暦祝い 退職祝 成人祝 愛知 地酒 食中酒 晩酌 贈り物 冷酒 熱燗 定番酒 名入れ — 1540円 — グランスック
   https://hb.afl.rakuten.co.jp/hgc/g00uq4ln.sgrg2d27.g00uq4ln.sgrg339d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgrandsuk%2F1107201%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgrandsuk%2Fi%2F10000011%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 日本酒 純米吟醸 氷温熟成酒 原酒 720ml 1800ml ギフト プレゼント 勲碧 蔵元直送 酒 お酒 敬老の日 お礼 お祝い 内祝い お父さん 誕生日 父の日 還暦祝い 退職祝 愛知 地酒 熟成酒 旨味 晩酌 贈り物 食中酒 — 1870円 — グランスック
-  https://hb.afl.rakuten.co.jp/hgc/g00uq4ln.sgrg2d27.g00uq4ln.sgrg339d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgrandsuk%2F5107201%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgrandsuk%2Fi%2F10000006%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 華やかな吟醸香とキレのある味わい｜純米大吟醸 山田錦 無濾過原酒 720ml・1800ml｜愛知 勲碧酒造 蔵元直送 食中酒 ギフトにもおすすめ — 2970円 — グランスック
-  https://hb.afl.rakuten.co.jp/hgc/g00uq4ln.sgrg2d27.g00uq4ln.sgrg339d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgrandsuk%2F1907214%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgrandsuk%2Fi%2F10000003%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 【女性が選ぶ美酒コンクール金賞受賞】日本酒 純米吟醸 夢吟香 無濾過原酒 720ml 1800ml ギフト プレゼント 勲碧 蔵元直送 酒 お酒 敬老の日 お礼 お祝い 内祝い お父さん 誕生日 父の日 還暦祝い 退職祝 愛知 地酒 華やかな香り 贈り物 辛口 甘口 — 1980円 — グランスック
   https://hb.afl.rakuten.co.jp/hgc/g00uq4ln.sgrg2d27.g00uq4ln.sgrg339d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgrandsuk%2F5507201%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgrandsuk%2Fi%2F10000007%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] 華やかな吟醸香とキレのある味わい｜純米大吟醸 山田錦 無濾過原酒 720ml・1800ml｜愛知 勲碧酒造 蔵元直送 食中酒 ギフトにもおすすめ — 2970円 — グランスック
+  https://hb.afl.rakuten.co.jp/hgc/g00uq4ln.sgrg2d27.g00uq4ln.sgrg339d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgrandsuk%2F1907214%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgrandsuk%2Fi%2F10000003%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] 日本酒 純米吟醸 氷温熟成酒 原酒 720ml 1800ml ギフト プレゼント 勲碧 蔵元直送 酒 お酒 敬老の日 お礼 お祝い 内祝い お父さん 誕生日 父の日 還暦祝い 退職祝 愛知 地酒 熟成酒 旨味 晩酌 贈り物 食中酒 — 1870円 — グランスック
+  https://hb.afl.rakuten.co.jp/hgc/g00uq4ln.sgrg2d27.g00uq4ln.sgrg339d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgrandsuk%2F5107201%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgrandsuk%2Fi%2F10000006%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 【最高級 雫取り】 日本酒 勲碧 (くんぺき) 純米大吟醸 斗瓶取り 720ml/1800ml 愛知 地酒 蔵元直送 [ 山田錦 桐箱入 贈答用 ギフト プレゼント ] — 7330円 — グランスック
   https://hb.afl.rakuten.co.jp/hgc/g00uq4ln.sgrg2d27.g00uq4ln.sgrg339d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgrandsuk%2F0207201%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgrandsuk%2Fi%2F10000010%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 【2026ミラノ酒チャレンジ金賞受賞】 日本酒 純米大吟醸 杜氏渾身ノ酒 720ml 1800ml 山田錦100% ギフト プレゼント 高級 勲碧 蔵元直送 酒 お酒 敬老の日 お礼 お祝い 内祝い お父さん 誕生日 父の日 還暦祝い 退職祝 愛知 地酒 山田錦 贈答用 食中酒 — 5230円 — グランスック
   https://hb.afl.rakuten.co.jp/hgc/g00uq4ln.sgrg2d27.g00uq4ln.sgrg339d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgrandsuk%2F1707201%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgrandsuk%2Fi%2F10000001%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [reject] 【ふるさと納税】 酒 勲碧 純米吟醸 桜酵母 五条川桜 720ml 1本 [勲碧酒造 愛知県 江南市 ko23btu470003] 純米吟醸酒 お酒 日本酒 晩酌 — 10000円 — 愛知県江南市
-  https://hb.afl.rakuten.co.jp/hgc/g00uhujn.sgrg24c8.g00uhujn.sgrg3f49/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff232173-konan%2F177%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff232173-konan%2Fi%2F10000186%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 【ふるさと納税】 酒 勲碧 純米吟醸 夢吟香 無濾過原酒 720ml 1本 [勲碧酒造 愛知県 江南市 ko23btu470002] 純米吟醸酒 お酒 日本酒 晩酌 2025美酒コンクール 金賞受賞 — 9000円 — 愛知県江南市
   https://hb.afl.rakuten.co.jp/hgc/g00uhujn.sgrg24c8.g00uhujn.sgrg3f49/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff232173-konan%2F150%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff232173-konan%2Fi%2F10000159%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 【金賞受賞】 日本酒 純米吟醸 五条川桜 720ml 1800ml ギフト プレゼント オシャレ 勲碧 蔵元直送 名入れ 酒 お酒 甘口 敬老の日 お礼 お祝い 内祝い お父さん 誕生日 父の日 還暦祝い 退職祝 成人祝 愛知 地酒 さくら 桜酵母 — 2200円 — グランスック
-  https://hb.afl.rakuten.co.jp/hgc/g00uq4ln.sgrg2d27.g00uq4ln.sgrg339d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgrandsuk%2Fkunpeki_0001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgrandsuk%2Fi%2F10005069%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [reject] 【ふるさと納税】 酒 勲碧 純米吟醸 桜酵母 五条川桜 720ml 1本 [勲碧酒造 愛知県 江南市 ko23btu470003] 純米吟醸酒 お酒 日本酒 晩酌 — 10000円 — 愛知県江南市
+  https://hb.afl.rakuten.co.jp/hgc/g00uhujn.sgrg24c8.g00uhujn.sgrg3f49/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff232173-konan%2F177%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff232173-konan%2Fi%2F10000186%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [reject] 【ふるさと納税】 酒 勲碧 純米吟醸原酒 氷温熟成酒 720ml 1本 [勲碧酒造 愛知県 江南市 ko23btu470001] 純米吟醸酒 お酒 日本酒 晩酌 — 9000円 — 愛知県江南市
+  https://hb.afl.rakuten.co.jp/hgc/g00uhujn.sgrg24c8.g00uhujn.sgrg3f49/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff232173-konan%2F151%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff232173-konan%2Fi%2F10000161%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 
 ## 勲碧 大吟醸 (aichi-brewery-303-daiginjo-2nd)
 
-- [needs_review] 【最高級 雫取り】 日本酒 勲碧 (くんぺき) 純米大吟醸 斗瓶取り 720ml/1800ml 愛知 地酒 蔵元直送 [ 山田錦 桐箱入 贈答用 ギフト プレゼント ] — 7330円 — グランスック
-  https://hb.afl.rakuten.co.jp/hgc/g00uq4ln.sgrg2d27.g00uq4ln.sgrg339d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgrandsuk%2F0207201%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgrandsuk%2Fi%2F10000010%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
-- [needs_review] 【2026ミラノ酒チャレンジ金賞受賞】 日本酒 純米大吟醸 杜氏渾身ノ酒 720ml 1800ml 山田錦100% ギフト プレゼント 高級 勲碧 蔵元直送 酒 お酒 敬老の日 お礼 お祝い 内祝い お父さん 誕生日 父の日 還暦祝い 退職祝 愛知 地酒 山田錦 贈答用 食中酒 — 5230円 — グランスック
-  https://hb.afl.rakuten.co.jp/hgc/g00uq4ln.sgrg2d27.g00uq4ln.sgrg339d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgrandsuk%2F1707201%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgrandsuk%2Fi%2F10000001%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 日本酒 勲碧 (くんぺき) 純米大吟醸 雄町 桜酵母 720ml/1800ml 岡山県産雄町100% 愛知 地酒 蔵元直送 [ 華やかな香り 天然酵母 ギフト ] — 2970円 — グランスック
   https://hb.afl.rakuten.co.jp/hgc/g00uq4ln.sgrg2d27.g00uq4ln.sgrg339d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgrandsuk%2F4507221%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgrandsuk%2Fi%2F10000004%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] 【2026ミラノ酒チャレンジ金賞受賞】 日本酒 純米大吟醸 杜氏渾身ノ酒 720ml 1800ml 山田錦100% ギフト プレゼント 高級 勲碧 蔵元直送 酒 お酒 敬老の日 お礼 お祝い 内祝い お父さん 誕生日 父の日 還暦祝い 退職祝 愛知 地酒 山田錦 贈答用 食中酒 — 5230円 — グランスック
+  https://hb.afl.rakuten.co.jp/hgc/g00uq4ln.sgrg2d27.g00uq4ln.sgrg339d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgrandsuk%2F1707201%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgrandsuk%2Fi%2F10000001%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
+- [needs_review] 【最高級 雫取り】 日本酒 勲碧 (くんぺき) 純米大吟醸 斗瓶取り 720ml/1800ml 愛知 地酒 蔵元直送 [ 山田錦 桐箱入 贈答用 ギフト プレゼント ] — 7330円 — グランスック
+  https://hb.afl.rakuten.co.jp/hgc/g00uq4ln.sgrg2d27.g00uq4ln.sgrg339d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgrandsuk%2F0207201%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgrandsuk%2Fi%2F10000010%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [reject] 【ふるさと納税】 酒 大吟醸酒 勲碧 大吟醸 山田錦 勲碧 特別純米酒 720ml 各1本 計2本 [勲碧酒造 愛知県 江南市 ko23btu470005] 720ml 1800ml 四合瓶 特産 地酒 辛口 やや辛口 晩酌 米 酒 蔵 大吟醸酒 純米 純米酒 ご当地 — 20000円 — 愛知県江南市
   https://hb.afl.rakuten.co.jp/hgc/g00uhujn.sgrg24c8.g00uhujn.sgrg3f49/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff232173-konan%2F179%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff232173-konan%2Fi%2F10000188%2F&rafcid=wsc_i_is_e1b9dec1-c522-41ba-9bd1-a4d539fddf65
 - [needs_review] 華やかな吟醸香とキレのある味わい｜純米大吟醸 山田錦 無濾過原酒 720ml・1800ml｜愛知 勲碧酒造 蔵元直送 食中酒 ギフトにもおすすめ — 2970円 — グランスック
@@ -503,6 +465,7 @@
 - 武蔵野ブラック 純米吟醸原酒 (musashino-black-junmai-ginjo-genshu)
 - 江戸開城 純米大吟醸原酒 The Premium (edo-kaijo-junmai-daiginjo-genshu-the-premium)
 - いづみ橋 純米大吟醸 とんぼラベル 山田錦 (izumibashi-tombo-junmai-daiginjo)
+- 手取川 純米大吟醸 白山市産山田錦 (tedorigawa-junmai-daiginjo)
 - 七本鎗 純米大吟醸 山田錦 (shichihonyari-junmai-daiginjo)
 - 黒松剣菱 (kuromatsu-kenbishi)
 - 若波 純米吟醸 山田錦 (wakanami-junmai-ginjo-yamadanishiki)
@@ -528,7 +491,6 @@
 - 出羽ノ雪 本醸造 (yamagata-dewanoyuki-honjozo)
 - 奥能登 生酛純米 (ishikawa-okunoto-kimoto-junmai)
 - 奥能登の白菊 特別純米酒 (ishikawa-okunotonoshiragiku-tokubetsujunmai)
-- 大那 超辛口純米 五百万石 (tochigi-daina-chokarakuchi-junmai)
 - るみ子の酒 あるがまま 生酛純米 (mie-rumikonosake-arugamama-kimoto)
 - 花垣 年輪譜 大吟醸十年古酒 (fukui-hanagaki-nenpufu-daiginjo-junen-koshu)
 - 手取川 山廃仕込 本醸造 (ishikawa-tedorigawa-yamahai-honjozo)
