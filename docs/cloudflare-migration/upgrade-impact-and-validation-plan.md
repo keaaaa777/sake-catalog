@@ -226,3 +226,42 @@ npx wrangler dev --local --ip 127.0.0.1 --port 8787
 3. WSL/LinuxでOpenNext buildとlocal Worker smoke testを再実施し、環境変数と静的route mappingを確認する。
 4. Supabase実DB検証が必要になった場合は、本番でない専用test project/credentialsを用意してから実施する。
 5. 外部接続の`fetch failed`についてSupabase側ログを確認するか、確認しない場合は未確定として扱う。
+
+## 12. 2026-11-24 Linux Actions / Worker / UI / Supabase追加確認
+
+### ブランチ範囲
+
+- 対象branch: `cloudflare-next15-opennext-validation`。検証commitは `066a5d4`、smoke診断更新 `3cf1308`、最終workflow調整 `94af960`。
+- push先は同じvalidation branchのみ。`main` (`5d62562`) と `origin/cloudflare-migration` (`aac5a32`) は変更していない。作業ツリーは最終commit時点でclean。
+- GitHub Actions workflowから生成差分のcommit/push jobを削除し、`contents: read`の検証専用に変更。Cloudflare credential、preview deploy、workers.dev公開、DNS操作はなし。
+
+### Linux GitHub Actions結果（commit `94af960`）
+
+| 項目 | 結果 |
+|---|---|
+| quality | 成功（data validation、SEO validation、lint、typecheck） |
+| Next.js build | 成功。静的ページ `2585/2585` |
+| OpenNext Cloudflare build | 成功 |
+| local Wrangler Worker | 成功。Worker起動後にhomeと`/search`がHTTP 200。検索ページshellの`FAMOUS BRANDS`を確認 |
+| 検索index API | JSON array 997件。Worker応答のCache-Controlに`s-maxage=86400`を確認 |
+| GitHub Actions | OpenNext run `45319061065` 成功、通常validation run `45319061166` 成功 |
+
+最初のsmokeは検索inputを初期HTMLに要求して失敗した。原因は`SearchClient`が`useSearchParams`をSuspense内で使うため初期SSRでfallbackが返り、inputはclient hydration後に現れること。これはsmoke側の期待違いであり、確認用markerをroute shellへ変更して再実行し、全項目成功した。browser上でhydration後の実操作は別途未確認。
+
+### ローカル検索画面
+
+- Supabase URL/anon key、楽天credential、GA4 IDを空にした環境でNext dev serverを`127.0.0.1`に起動。home、`/search`、検索indexはHTTP 200。検索HTMLに`type="search"`を含むことを確認。
+- computer-use browser操作はWindows上の現在Chrome URLを安全に判定できずツールが停止したため、検索語・絞り込み・sort・30件ページング・URL復元・Back/ForwardのUI操作は未確認。年齢確認には回答していない。
+- OpenNext Worker smokeでは`/search`のSSR shellを確認したが、client hydration後の検索操作は確認していない。
+
+### Supabase側ログ
+
+- 今回の環境にSupabase read-only connectorがなく、Supabase project logを確認できなかった。既存の誤接続記録にある`source=validation`の2回のinsert試行はどちらも`fetch failed`で、受信またはDB記録の有無は未確定のまま。
+- 本番credentialでの再試行はしていない。受信有無の確定にはSupabaseのread-only連携または該当時間帯の伏せ字済みログが必要。
+
+### 残りと次の判断
+
+1. Supabase read-onlyログで、該当時間帯のrequest/insert記録の有無を確認する。
+2. ブラウザ操作が可能な環境で年齢確認後の検索UI（filter/sort/paging/URL復元/history）を確認する。browser操作ができない場合は未確認を維持する。
+3. Cloudflare Workers上のproduction build/runtime bindingと本番環境変数の反映は未確認。現時点では非本番公開の可否判断へ進まない。
+4. 2項目のログ/UI回帰を確認した後、別途、非本番Cloudflare環境を作る判断を行う。
