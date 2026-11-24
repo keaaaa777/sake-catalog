@@ -83,7 +83,8 @@ jobs:
           fi
           grep -qi '<html' "$RUNNER_TEMP/home.html"
           curl --silent --show-error --fail http://127.0.0.1:8787/search -o "$RUNNER_TEMP/search.html"
-          grep -qi 'type="search"' "$RUNNER_TEMP/search.html"
+          # SearchClient reads useSearchParams inside Suspense; its controls hydrate client-side.
+          grep -q 'FAMOUS BRANDS' "$RUNNER_TEMP/search.html"
           curl --silent --show-error --fail -D "$RUNNER_TEMP/search-index-headers.txt" http://127.0.0.1:8787/api/sakes/search-index -o "$RUNNER_TEMP/search-index.json"
           grep -qi 'cache-control:.*s-maxage=86400' "$RUNNER_TEMP/search-index-headers.txt"
           node -e "const d=require(process.argv[1]); if(!Array.isArray(d)||d.length!==997) process.exit(1); console.log('Search index items:', d.length)" "$RUNNER_TEMP/search-index.json"
