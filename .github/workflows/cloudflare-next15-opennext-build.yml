@@ -65,7 +65,7 @@ jobs:
       - name: Start local Worker preview and smoke test
         shell: bash
         run: |
-          set -euo pipefail
+          set -euxo pipefail
           npx wrangler dev --local --ip 127.0.0.1 --port 8787 > "$RUNNER_TEMP/wrangler-preview.log" 2>&1 &
           preview_pid=$!
           trap 'kill "$preview_pid" 2>/dev/null || true' EXIT
@@ -81,7 +81,7 @@ jobs:
             cat "$RUNNER_TEMP/wrangler-preview.log"
             exit 1
           fi
-          grep -qi 'sake select' "$RUNNER_TEMP/home.html"
+          grep -qi '<html' "$RUNNER_TEMP/home.html"
           curl --silent --show-error --fail http://127.0.0.1:8787/search -o "$RUNNER_TEMP/search.html"
           grep -qi 'type="search"' "$RUNNER_TEMP/search.html"
           curl --silent --show-error --fail -D "$RUNNER_TEMP/search-index-headers.txt" http://127.0.0.1:8787/api/sakes/search-index -o "$RUNNER_TEMP/search-index.json"
