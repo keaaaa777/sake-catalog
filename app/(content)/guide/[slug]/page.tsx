@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { GUIDE_SLUGS, getGuideArticleBySlug, parseGuideBody } from '@/lib/guides'
 import { getEnGuideArticleBySlug } from '@/lib/i18n/en-content'
-import { isProductionDomain } from '@/lib/is-production-domain'
+import { isProductionEnvironment } from '@/lib/is-production-environment'
 import GuideSakeCards from '@/components/GuideSakeCards'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sake-catalog-japan.vercel.app'
@@ -37,7 +37,7 @@ export default async function GuideArticlePage(props: { params: Promise<{ slug: 
   const hasEn = Boolean(getEnGuideArticleBySlug(params.slug))
   const author = article.author ?? '雫 SAKE SELECT編集部'
   const updatedAt = article.updatedAt ?? article.publishedAt
-  const production = isProductionDomain()
+  const production = isProductionEnvironment()
   const relatedArticles = GUIDE_SLUGS
     .filter((slug) => slug !== article.slug)
     .slice(0, 3)

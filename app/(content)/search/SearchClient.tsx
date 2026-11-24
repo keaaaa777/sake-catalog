@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { FLAVOR_TYPES } from '@/lib/flavor'
@@ -33,7 +33,14 @@ export default function SearchClient() {
   const [temperature, setTemperature] = useState(() => searchParams.get('temp') || '')
   const [pairing, setPairing] = useState(() => searchParams.get('pairing') || '')
   const [sort, setSort] = useState<SortId>(() => (searchParams.get('sort') as SortId) || 'recommended')
-  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
+  const currentFilters = { query, flavor, prefecture, classification, taste, price, temperature, pairing, sort }
+  const currentFiltersRef = useRef(currentFilters)
+  currentFiltersRef.current = currentFilters
+  const [visibleCount, setVisibleCount] = useState(() => {
+    const page = Number(searchParams.get('page'))
+    return Number.isInteger(page) && page > 1 ? Math.min(page, 1000) * PAGE_SIZE : PAGE_SIZE
+  })
+  const skipFilterReset = useRef(true)
 
   const loadSakes = async () => {
     setLoading(true)
@@ -53,8 +60,56 @@ export default function SearchClient() {
     void loadSakes()
   }, [])
 
+  const serializedSearchParams = searchParams.toString()
+
+  // Keep controls and pagination in sync when the user navigates with Back/Forward.
   useEffect(() => {
+    const params = new URLSearchParams(serializedSearchParams)
+    const requestedSort = params.get('sort') as SortId | null
+    const nextValues = {
+      query: params.get('q') || '',
+      flavor: params.get('flavor') || '',
+      prefecture: params.get('pref') || '',
+      classification: params.get('class') || '',
+      taste: params.get('taste') || '',
+      price: params.get('price') || '',
+      temperature: params.get('temp') || '',
+      pairing: params.get('pairing') || '',
+      sort: requestedSort && ['recommended', 'name', 'dry', 'sweet', 'light', 'rich'].includes(requestedSort) ? requestedSort : 'recommended',
+    }
+    const current = currentFiltersRef.current
+    const filtersChanged = nextValues.query !== current.query
+      || nextValues.flavor !== current.flavor
+      || nextValues.prefecture !== current.prefecture
+      || nextValues.classification !== current.classification
+      || nextValues.taste !== current.taste
+      || nextValues.price !== current.price
+      || nextValues.temperature !== current.temperature
+      || nextValues.pairing !== current.pairing
+      || nextValues.sort !== current.sort
+    if (filtersChanged) skipFilterReset.current = true
+    setQuery(nextValues.query)
+    setFlavor(nextValues.flavor)
+    setPrefecture(nextValues.prefecture)
+    setClassification(nextValues.classification)
+    setTaste(nextValues.taste)
+    setPrice(nextValues.price)
+    setTemperature(nextValues.temperature)
+    setPairing(nextValues.pairing)
+    setSort(nextValues.sort)
+    const page = Number(params.get('page'))
+    setVisibleCount(Number.isInteger(page) && page > 1 ? Math.min(page, 1000) * PAGE_SIZE : PAGE_SIZE)
+  }, [serializedSearchParams])
+
+  useEffect(() => {
+    if (skipFilterReset.current) {
+      skipFilterReset.current = false
+      return
+    }
     setVisibleCount(PAGE_SIZE)
+  }, [classification, flavor, pairing, prefecture, price, query, sort, taste, temperature])
+
+  useEffect(() => {
     const timer = window.setTimeout(() => {
       const params = new URLSearchParams()
       if (query) params.set('q', query)
@@ -66,10 +121,11 @@ export default function SearchClient() {
       if (temperature) params.set('temp', temperature)
       if (pairing) params.set('pairing', pairing)
       if (sort !== 'recommended') params.set('sort', sort)
+      if (visibleCount > PAGE_SIZE) params.set('page', String(Math.ceil(visibleCount / PAGE_SIZE)))
       router.replace(params.size > 0 ? `${pathname}?${params}` : pathname, { scroll: false })
     }, 250)
     return () => window.clearTimeout(timer)
-  }, [classification, flavor, pairing, pathname, prefecture, price, query, router, sort, taste, temperature])
+  }, [classification, flavor, pairing, pathname, prefecture, price, query, router, sort, taste, temperature, visibleCount])
 
   const prefectures = useMemo(
     () => [...new Set(sakes.map((sake) => sake.prefecture))].sort((a, b) => a.localeCompare(b, 'ja')),

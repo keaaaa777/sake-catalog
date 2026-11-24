@@ -21,9 +21,8 @@ export default function EnPrivacyPage() {
             <h2 className="panel-header__title">Analytics</h2>
           </div>
           <p className="text-base leading-relaxed" style={{ color: 'var(--paper-white)' }}>
-            This site uses Google Analytics (GA4) and Vercel Analytics to understand traffic.
-            These tools may use cookies to collect data, but the data does not identify you
-            personally. Collected data is handled under each provider&apos;s own privacy policy.
+            This site uses Google Analytics (GA4) to understand traffic. It may use cookies
+            to collect data. Collected data is handled under Google&apos;s privacy policy.
           </p>
         </section>
 

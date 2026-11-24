@@ -21,10 +21,9 @@ export default function PrivacyPage() {
             <h2 className="panel-header__title">アクセス解析ツールについて</h2>
           </div>
           <p className="text-base leading-relaxed" style={{ color: 'var(--paper-white)' }}>
-            本サイトでは、Google Analytics(GA4)およびVercel Analyticsを利用して
-            アクセス状況を解析しています。これらのツールはCookie等を利用してデータを収集しますが、
-            個人を特定する情報は含まれません。収集されたデータは各サービス提供者のプライバシーポリシーに
-            基づき管理されます。
+            本サイトでは、Google Analytics(GA4)を利用して
+            アクセス状況を解析しています。このツールはCookie等を利用してデータを収集することがあります。
+            収集されたデータはGoogleのプライバシーポリシーに基づき管理されます。
           </p>
         </section>
 

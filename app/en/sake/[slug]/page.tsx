@@ -7,7 +7,7 @@ import { classificationEn } from '@/lib/i18n/classification'
 import { FLAVOR_TYPES } from '@/lib/flavor'
 import { buildAffiliateLinks } from '@/lib/affiliate'
 import { getOffersForSake, getOffersFetchedAt } from '@/lib/offers'
-import { isProductionDomain } from '@/lib/is-production-domain'
+import { isProductionEnvironment } from '@/lib/is-production-environment'
 import PurchaseButtons from '@/components/PurchaseButtons'
 import ProductOfferCard from '@/components/ProductOfferCard'
 import { isIndexableSake } from '@/lib/indexability'
@@ -94,7 +94,7 @@ export default async function EnSakeDetailPage(props: { params: Promise<{ slug: 
   const mallLinks = buildAffiliateLinks(sake)
   const offers = getOffersForSake(sake.slug)
   const offersFetchedAt = getOffersFetchedAt()
-  const production = isProductionDomain()
+  const production = isProductionEnvironment()
   const buttonMallLinks = offers.length > 0 ? mallLinks.filter((m) => m.mall !== 'rakuten') : mallLinks
 
   return (

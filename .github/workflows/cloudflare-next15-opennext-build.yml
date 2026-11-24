@@ -36,30 +36,7 @@ jobs:
       - name: Install current locked dependencies
         run: npm ci
 
-      - name: Migrate Next.js async request APIs
-        run: npx --yes @next/codemod@canary next-async-request-api .
-
-      - name: Apply candidate dependencies in the validation checkout
-        run: |
-          npm pkg set \
-            'dependencies.next=15.5.29' \
-            'dependencies.react=19.3.1' \
-            'dependencies.react-dom=19.3.1' \
-            'devDependencies.eslint-config-next=15.5.29' \
-            'devDependencies.@types/react=19.3.0' \
-            'devDependencies.@types/react-dom=19.3.0' \
-            'devDependencies.@opennextjs/cloudflare=1.20.17' \
-            'devDependencies.wrangler=4.165.0' \
-            'scripts.preview=opennextjs-cloudflare build && opennextjs-cloudflare preview' \
-            'scripts.cf-typegen=wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts'
-          for entry in '/.open-next/' '/.wrangler/' '.dev.vars*'; do
-            grep -Fxq "$entry" .gitignore || echo "$entry" >> .gitignore
-          done
-          rm -f patches/next+14.2.35.patch
-          npm install --package-lock-only --ignore-scripts --no-audit --no-fund
-          npm ci
-
-      - name: Confirm clean resolved dependency tree
+      - name: Confirm locked validation dependencies
         run: npm ls next react react-dom eslint-config-next @types/react @types/react-dom @opennextjs/cloudflare wrangler --depth=0
 
       - name: Run quality checks
@@ -73,6 +50,7 @@ jobs:
         env:
           NEXT_PUBLIC_SITE_URL: https://sake-catalog-preview.invalid
           SITEMAP_PHASE: "1"
+          SAKE_CATALOG_ENV: preview
 
       - name: Check generated static page count
         run: grep -qE 'Generating static pages \(2585/2585\)' "$RUNNER_TEMP/next-build.log"
@@ -82,6 +60,7 @@ jobs:
         env:
           NEXT_PUBLIC_SITE_URL: https://sake-catalog-preview.invalid
           SITEMAP_PHASE: "1"
+          SAKE_CATALOG_ENV: preview
 
       - name: Start local Worker preview and smoke test
         shell: bash
@@ -102,50 +81,13 @@ jobs:
             cat "$RUNNER_TEMP/wrangler-preview.log"
             exit 1
           fi
-          grep -q "雫 SAKE SELECT" "$RUNNER_TEMP/home.html"
-          curl --silent --show-error --fail http://127.0.0.1:8787/api/sakes/search-index -o "$RUNNER_TEMP/search-index.json"
-          node -e "const d=require(process.argv[1]); if(!Array.isArray(d)) process.exit(1); console.log('Search index items:', d.length)" "$RUNNER_TEMP/search-index.json"
+          grep -qi 'sake select' "$RUNNER_TEMP/home.html"
+          curl --silent --show-error --fail http://127.0.0.1:8787/search -o "$RUNNER_TEMP/search.html"
+          grep -qi 'type="search"' "$RUNNER_TEMP/search.html"
+          curl --silent --show-error --fail -D "$RUNNER_TEMP/search-index-headers.txt" http://127.0.0.1:8787/api/sakes/search-index -o "$RUNNER_TEMP/search-index.json"
+          grep -qi 'cache-control:.*s-maxage=86400' "$RUNNER_TEMP/search-index-headers.txt"
+          node -e "const d=require(process.argv[1]); if(!Array.isArray(d)||d.length!==997) process.exit(1); console.log('Search index items:', d.length)" "$RUNNER_TEMP/search-index.json"
 
-      - name: Save migration patch for review
-        if: always()
-        run: git diff --binary HEAD > "$RUNNER_TEMP/cloudflare-next15-codemod.patch"
 
-      - name: Upload migration patch
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: cloudflare-next15-codemod-patch
-          path: ${{ runner.temp }}/cloudflare-next15-codemod.patch
-          if-no-files-found: error
-          retention-days: 7
-
-  save-validated-changes:
-    needs: migrate-and-build
-    if: needs.migrate-and-build.result == 'success'
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout isolated validation branch
-        uses: actions/checkout@v4
-        with:
-          ref: cloudflare-next15-opennext-validation
-          fetch-depth: 1
-
-      - name: Download tested migration patch
-        uses: actions/download-artifact@v4
-        with:
-          name: cloudflare-next15-codemod-patch
-
-      - name: Commit tested dependencies and codemod changes
-        run: |
-          if [ ! -s cloudflare-next15-codemod.patch ]; then
-            echo "No migration changes to commit"
-            exit 0
-          fi
-          git apply --index cloudflare-next15-codemod.patch
-          git diff --cached --check
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Upgrade isolated Cloudflare validation to Next.js 15"
-          git push origin HEAD:cloudflare-next15-opennext-validation
+      # This workflow is read-only: it validates the isolated branch and never
+      # commits or pushes generated migration changes back to the repository.

@@ -9,7 +9,7 @@ import { PREFECTURE_SLUGS } from '@/lib/types'
 import { buildAffiliateLinks } from '@/lib/affiliate'
 import { getOfferImageUrl, getOffersForSake, getOffersFetchedAt } from '@/lib/offers'
 import { getEnSakeContent } from '@/lib/i18n/en-content'
-import { isProductionDomain } from '@/lib/is-production-domain'
+import { isProductionEnvironment } from '@/lib/is-production-environment'
 import { getGuidesLinkingTo } from '@/lib/guides'
 import { getClassificationSlug } from '@/lib/classification'
 import SakeThumb from '@/components/SakeThumb'
@@ -76,7 +76,7 @@ export default async function SakeDetailPage(props: { params: Promise<{ slug: st
   const offers = getOffersForSake(sake.slug)
   const offersFetchedAt = getOffersFetchedAt()
   const hasEn = Boolean(getEnSakeContent(sake.slug))
-  const production = isProductionDomain()
+  const production = isProductionEnvironment()
   const background = getSakeBackground(sake)
   // 楽天は比較カードで表示するため、その他モールのボタンからは重複を避けて除外する
   const buttonMallLinks = offers.length > 0 ? mallLinks.filter((m) => m.mall !== 'rakuten') : mallLinks

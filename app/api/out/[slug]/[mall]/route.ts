@@ -3,9 +3,10 @@ import { getSakeBySlug } from '@/lib/data'
 import { buildAffiliateLinks } from '@/lib/affiliate'
 import { logAffiliateClick } from '@/lib/affiliateLog'
 import { getOffersForSake } from '@/lib/offers'
-import { isProductionDomain } from '@/lib/is-production-domain'
+import { isProductionEnvironment } from '@/lib/is-production-environment'
 
 export const dynamic = 'force-dynamic'
+const REDIRECT_HEADERS = { 'Cache-Control': 'no-store' }
 
 export async function GET(
   request: NextRequest,
@@ -14,7 +15,7 @@ export async function GET(
   const params = await props.params;
   const sake = getSakeBySlug(params.slug)
   if (!sake) {
-    return NextResponse.redirect(new URL('/', request.url), { status: 302 })
+    return NextResponse.redirect(new URL('/', request.url), { status: 302, headers: REDIRECT_HEADERS })
   }
 
   // 商品紹介カード(楽天の複数店舗比較)からは ?offer=<配列index> で
@@ -32,13 +33,13 @@ export async function GET(
 
   // 銘柄・モール・オファー指定が不正な場合は外部への転送をせずトップへ戻す
   if (!targetUrl) {
-    return NextResponse.redirect(new URL('/', request.url), { status: 302 })
+    return NextResponse.redirect(new URL('/', request.url), { status: 302, headers: REDIRECT_HEADERS })
   }
 
   // 楽天アフィリエイトは申請時に登録した本番ドメインでのみ掲載が認められているため、
   // preview環境(本番以外のVercelデプロイ)では実リンクへ転送しない
-  if (!isProductionDomain()) {
-    return NextResponse.redirect(new URL(`/sake/${params.slug}`, request.url), { status: 302 })
+  if (!isProductionEnvironment()) {
+    return NextResponse.redirect(new URL(`/sake/${params.slug}`, request.url), { status: 302, headers: REDIRECT_HEADERS })
   }
 
   const sourceFlow = request.nextUrl.searchParams.get('source') || 'unknown'

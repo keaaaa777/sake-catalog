@@ -4,6 +4,16 @@
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-11-19",
   "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "SAKE_CATALOG_ENV": "preview"
+  },
+  "env": {
+    "production": {
+      "vars": {
+        "SAKE_CATALOG_ENV": "production"
+      }
+    }
+  },
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
